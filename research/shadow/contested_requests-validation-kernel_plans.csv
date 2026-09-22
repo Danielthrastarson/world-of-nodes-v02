@@ -1,0 +1,84 @@
+time_ms,agent,candidate,belief_failure,truth_failure,belief_ms,truth_ms,belief_cargo,truth_cargo,shadow_kernel_exact,interpretation
+31320000,8,0,NONE,DEATH,27950007,130680000,10,0,true,HIDDEN_STATE_OR_CAPACITY
+32400000,8,0,NONE,DEATH,29270003,129600000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+32520000,8,0,NONE,DEATH,27496005,151080000,10,0,true,HIDDEN_STATE_OR_CAPACITY
+36000000,8,0,NONE,DEATH,50420000,147600000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+39600000,8,0,NONE,DEATH,54736000,144000000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+43200000,8,0,NONE,DEATH,57865600,140400000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+46800000,8,0,NONE,DEATH,60992000,136800000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+50400000,8,0,NONE,DEATH,66992000,133200000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+54000000,8,0,NONE,DEATH,73370000,129600000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+54120000,8,0,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,41500000,133080000,10,0,true,HIDDEN_STATE_OR_CAPACITY
+57600000,8,0,NONE,NO_EDIBLE_CARGO,61225600,129632000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+58620000,12,0,DEATH,DEATH,132476000,132476000,0,0,true,CONDITIONAL_COMPARISON
+58620000,12,1,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,83314400,128580000,10,0,true,HIDDEN_STATE_OR_CAPACITY
+61200000,8,0,NONE,NO_EDIBLE_CARGO,63392000,126032000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+61200000,12,0,DEATH,DEATH,129896000,129896000,0,0,true,CONDITIONAL_COMPARISON
+61200000,12,1,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,84814400,126000000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+61560000,12,0,NO_EDIBLE_CARGO,DEATH,149904000,151136000,0,0,true,CONDITIONAL_COMPARISON
+64920000,25,0,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,43280000,122280000,10,0,true,HIDDEN_STATE_OR_CAPACITY
+75720000,8,0,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,35992000,105000000,10,0,true,HIDDEN_STATE_OR_CAPACITY
+75780000,8,0,NONE,NO_EDIBLE_CARGO,55295000,109916000,10,0,true,HIDDEN_STATE_OR_CAPACITY
+79200000,8,0,NONE,NO_EDIBLE_CARGO,56120000,99219200,4,0,true,HIDDEN_STATE_OR_CAPACITY
+82800000,8,0,NONE,NO_EDIBLE_CARGO,57526000,95619200,4,0,true,HIDDEN_STATE_OR_CAPACITY
+83160000,12,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,127058000,150662400,0,0,true,CONDITIONAL_COMPARISON
+86400000,8,0,NONE,NO_EDIBLE_CARGO,63212000,92019200,4,0,true,HIDDEN_STATE_OR_CAPACITY
+86400000,12,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,131614400,145089600,0,0,true,CONDITIONAL_COMPARISON
+86700000,12,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,87636000,147122400,0,0,true,CONDITIONAL_COMPARISON
+86700000,12,1,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,26896002,89522400,4,0,true,HIDDEN_STATE_OR_CAPACITY
+86760000,12,1,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,88920000,113947200,0,0,true,CONDITIONAL_COMPARISON
+89220000,12,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,85516000,115802400,0,0,true,CONDITIONAL_COMPARISON
+89220000,12,1,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,90531000,87034400,0,0,true,CONDITIONAL_COMPARISON
+90000000,12,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,87226000,115022400,0,0,true,CONDITIONAL_COMPARISON
+90000000,12,1,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,90921000,86254400,0,0,true,CONDITIONAL_COMPARISON
+90000000,25,0,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,84692000,84272000,0,0,true,CONDITIONAL_COMPARISON
+93420000,12,1,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,92001000,82834400,0,0,true,CONDITIONAL_COMPARISON
+93600000,12,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,90713500,111422400,0,0,true,CONDITIONAL_COMPARISON
+93600000,12,1,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,92046000,82654400,0,0,true,CONDITIONAL_COMPARISON
+93600000,25,0,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,89465000,80672000,0,0,true,CONDITIONAL_COMPARISON
+97200000,12,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,93863500,107822400,0,0,true,CONDITIONAL_COMPARISON
+97200000,12,1,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,93170000,79054400,0,0,true,CONDITIONAL_COMPARISON
+97200000,25,0,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,91265000,77072000,0,0,true,CONDITIONAL_COMPARISON
+98160000,25,0,NO_EDIBLE_CARGO,NONE,91745000,51338750,0,4,true,CONDITIONAL_COMPARISON
+99360000,16,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,86824000,121384000,0,0,true,CONDITIONAL_COMPARISON
+100800000,25,0,NONE,NO_EDIBLE_CARGO,52960000,73472000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+104400000,25,0,NONE,NO_EDIBLE_CARGO,61520000,69872000,4,0,true,HIDDEN_STATE_OR_CAPACITY
+106560000,25,0,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,66248000,67712000,0,0,true,CONDITIONAL_COMPARISON
+108000000,25,0,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,68192000,66272000,0,0,true,CONDITIONAL_COMPARISON
+108120000,25,0,NONE,NO_EDIBLE_CARGO,36190000,73400000,10,0,true,HIDDEN_STATE_OR_CAPACITY
+108180000,25,0,NONE,NO_EDIBLE_CARGO,55295000,73340000,10,0,true,HIDDEN_STATE_OR_CAPACITY
+108960000,12,0,NO_EDIBLE_CARGO,NO_EDIBLE_CARGO,88644000,105240000,0,0,true,CONDITIONAL_COMPARISON
+108960000,12,1,NONE,NONE,27070000,38422000,10,10,true,CONDITIONAL_COMPARISON
+118542000,25,0,NO_EDIBLE_CARGO,NONE,65390800,45855500,0,4,true,CONDITIONAL_COMPARISON
+118680000,25,0,NONE,NONE,27046000,45717500,4,4,true,CONDITIONAL_COMPARISON
+119160000,16,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,75768005,113062000,0,0,true,CONDITIONAL_COMPARISON
+119160000,16,1,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,25350677,58939750,10,0,true,HIDDEN_STATE_OR_CAPACITY
+120420000,16,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,109052004,111802000,0,0,true,CONDITIONAL_COMPARISON
+120420000,16,1,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,47491005,57679750,10,0,true,HIDDEN_STATE_OR_CAPACITY
+122400000,16,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,111916800,109822000,0,0,true,CONDITIONAL_COMPARISON
+122400000,16,1,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,48039335,55699750,4,0,true,HIDDEN_STATE_OR_CAPACITY
+124320000,16,1,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,48519335,53779750,0,0,true,CONDITIONAL_COMPARISON
+126000000,16,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,53578000,106222000,0,0,true,CONDITIONAL_COMPARISON
+126000000,16,1,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,49603500,52099750,0,0,true,CONDITIONAL_COMPARISON
+129600000,16,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,57984960,57978400,0,0,true,CONDITIONAL_COMPARISON
+129600000,16,1,NO_EDIBLE_CARGO,Claim { board: 1; quantity: 4 }: demand already claimed,53017600,12460800,0,0,true,CONDITIONAL_COMPARISON
+142080000,16,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,39366000,39366000,0,0,true,CONDITIONAL_COMPARISON
+144000000,16,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,49433500,40433500,0,0,true,CONDITIONAL_COMPARISON
+147600000,16,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,52583500,43583500,0,0,true,CONDITIONAL_COMPARISON
+152160000,8,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 4 }: demand already claimed,33190001,42948000,0,0,true,CONDITIONAL_COMPARISON
+154800000,8,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 4 }: demand already claimed,34400000,40308000,0,0,true,CONDITIONAL_COMPARISON
+155160000,8,0,NO_EDIBLE_CARGO,Claim { board: 1; quantity: 4 }: demand already claimed,23770671,18300800,0,0,true,CONDITIONAL_COMPARISON
+158400000,8,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 4 }: demand already claimed,32000000,31060800,0,0,true,CONDITIONAL_COMPARISON
+158760000,8,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 4 }: demand already claimed,15680000,14700800,0,0,true,CONDITIONAL_COMPARISON
+160140000,12,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,75220000,89125600,0,0,true,CONDITIONAL_COMPARISON
+160140000,12,1,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 1 }: demand already claimed,28021000,19720800,0,0,true,CONDITIONAL_COMPARISON
+162000000,8,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 4 }: demand already claimed,16392000,11460800,0,0,true,CONDITIONAL_COMPARISON
+162360000,12,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,76060000,83305600,0,0,true,CONDITIONAL_COMPARISON
+162360000,12,1,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 1 }: demand already claimed,29063500,17500800,0,0,true,CONDITIONAL_COMPARISON
+165600000,8,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 4 }: demand already claimed,17112000,15984960,0,0,true,CONDITIONAL_COMPARISON
+165960000,12,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,77104000,90505600,0,0,true,CONDITIONAL_COMPARISON
+165960000,12,1,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 1 }: demand already claimed,29716000,21100800,0,0,true,CONDITIONAL_COMPARISON
+168240000,8,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 4 }: demand already claimed,17640000,13344960,0,0,true,CONDITIONAL_COMPARISON
+169200000,8,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 4 }: demand already claimed,17832000,12384960,0,0,true,CONDITIONAL_COMPARISON
+169560000,12,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,77104000,83305600,0,0,true,CONDITIONAL_COMPARISON
+169560000,12,1,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,Claim { board: 1; quantity: 1 }: demand already claimed,29716000,17500800,0,0,true,CONDITIONAL_COMPARISON

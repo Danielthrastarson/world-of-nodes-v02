@@ -33,3 +33,11 @@ load, directional demand and forecast self-counting. It preserves all earlier
 results and the default policy; no transport priority or new NPC architecture is
 adopted. Reproduce with `python3 scripts/run_congestion.py NEW_OUTPUT_DIRECTORY`
 after an offline release build.
+
+
+The observational [shadow forecast/action-conformance audit](research/shadow/REPORT.md)
+compares personal forecasts with independent action arithmetic, kernel witnesses and
+preserved execution. Run it with `cargo build --release --bin shadow_probe` followed
+by `python3 scripts/run_shadow.py /tmp/won-shadow-reproduction 30` (new directory).
+It changes no autonomous policy; contract assumptions are in
+[SHADOW_AUDIT.md](docs/SHADOW_AUDIT.md).

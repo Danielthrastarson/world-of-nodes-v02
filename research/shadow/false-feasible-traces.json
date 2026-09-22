@@ -1,0 +1,82 @@
+[
+  {
+    "comparison": {
+      "time_ms": "86760000",
+      "agent": "12",
+      "candidate": "1",
+      "source": "2",
+      "board": "1",
+      "complete_tape": "true",
+      "forecast_gate": "POST_PLAN_NUTRITION_MARGIN",
+      "shadow_failure": "NO_EDIBLE_CARGO",
+      "elapsed_error_ms": "-17384000",
+      "nutrition_error_ms": "0",
+      "fatigue_error_ms": "0",
+      "cargo_error": "4",
+      "classification": "POLICY_REJECTED_AND_SHADOW_INFEASIBLE"
+    },
+    "candidate": "board: 1, source: Some(2), observed_at: Some(86760000), quantity: 2196, expiry: Some(172800000), confidence: 1.0, violations: [\"POST_PLAN_NUTRITION_MARGIN\"], plan: Some(Plan { elapsed: 71536000, nutrition: 0, starvation: 10400000, source_starvation: 0, meal_quanta: 0, delivered: 4, acquired: 4, steps: [\"to_board: edge=1 2->1 travel_ms=8000000 queue_ms=7200000 evidence_at=86760000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=9600000 queue_ms=14400000 evidence_at=86760000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=16000 legacy_free_slots=4 claim_q=4 meals=0 source_observed_at=86760000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=17920000 queue_ms=14400000 evidence_at=86760000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }]\n",
+    "physical_classification": "FALSE_FEASIBLE",
+    "meaning": "Margin still rejects the candidate; the physical forecast nevertheless predicts edible delivery."
+  },
+  {
+    "comparison": {
+      "time_ms": "86760000",
+      "agent": "13",
+      "candidate": "1",
+      "source": "2",
+      "board": "1",
+      "complete_tape": "true",
+      "forecast_gate": "POST_PLAN_NUTRITION_MARGIN",
+      "shadow_failure": "NO_EDIBLE_CARGO",
+      "elapsed_error_ms": "-17384000",
+      "nutrition_error_ms": "0",
+      "fatigue_error_ms": "0",
+      "cargo_error": "4",
+      "classification": "POLICY_REJECTED_AND_SHADOW_INFEASIBLE"
+    },
+    "candidate": "board: 1, source: Some(2), observed_at: Some(86760000), quantity: 2196, expiry: Some(172800000), confidence: 1.0, violations: [\"POST_PLAN_NUTRITION_MARGIN\"], plan: Some(Plan { elapsed: 71536000, nutrition: 0, starvation: 10400000, source_starvation: 0, meal_quanta: 0, delivered: 4, acquired: 4, steps: [\"to_board: edge=1 2->1 travel_ms=8000000 queue_ms=7200000 evidence_at=86760000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=9600000 queue_ms=14400000 evidence_at=86760000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=16000 legacy_free_slots=4 claim_q=4 meals=0 source_observed_at=86760000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=17920000 queue_ms=14400000 evidence_at=86760000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }]\n",
+    "physical_classification": "FALSE_FEASIBLE",
+    "meaning": "Margin still rejects the candidate; the physical forecast nevertheless predicts edible delivery."
+  },
+  {
+    "comparison": {
+      "time_ms": "86760000",
+      "agent": "14",
+      "candidate": "1",
+      "source": "2",
+      "board": "1",
+      "complete_tape": "true",
+      "forecast_gate": "POST_PLAN_NUTRITION_MARGIN",
+      "shadow_failure": "NO_EDIBLE_CARGO",
+      "elapsed_error_ms": "-17384000",
+      "nutrition_error_ms": "0",
+      "fatigue_error_ms": "0",
+      "cargo_error": "4",
+      "classification": "POLICY_REJECTED_AND_SHADOW_INFEASIBLE"
+    },
+    "candidate": "board: 1, source: Some(2), observed_at: Some(86760000), quantity: 2196, expiry: Some(172800000), confidence: 1.0, violations: [\"POST_PLAN_NUTRITION_MARGIN\"], plan: Some(Plan { elapsed: 71536000, nutrition: 0, starvation: 10400000, source_starvation: 0, meal_quanta: 0, delivered: 4, acquired: 4, steps: [\"to_board: edge=1 2->1 travel_ms=8000000 queue_ms=7200000 evidence_at=86760000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=9600000 queue_ms=14400000 evidence_at=86760000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=16000 legacy_free_slots=4 claim_q=4 meals=0 source_observed_at=86760000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=17920000 queue_ms=14400000 evidence_at=86760000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }]\n",
+    "physical_classification": "FALSE_FEASIBLE",
+    "meaning": "Margin still rejects the candidate; the physical forecast nevertheless predicts edible delivery."
+  },
+  {
+    "comparison": {
+      "time_ms": "86760000",
+      "agent": "15",
+      "candidate": "1",
+      "source": "2",
+      "board": "1",
+      "complete_tape": "true",
+      "forecast_gate": "POST_PLAN_NUTRITION_MARGIN",
+      "shadow_failure": "NO_EDIBLE_CARGO",
+      "elapsed_error_ms": "-17384000",
+      "nutrition_error_ms": "0",
+      "fatigue_error_ms": "0",
+      "cargo_error": "4",
+      "classification": "POLICY_REJECTED_AND_SHADOW_INFEASIBLE"
+    },
+    "candidate": "board: 1, source: Some(2), observed_at: Some(86760000), quantity: 2196, expiry: Some(172800000), confidence: 1.0, violations: [\"POST_PLAN_NUTRITION_MARGIN\"], plan: Some(Plan { elapsed: 71536000, nutrition: 0, starvation: 10400000, source_starvation: 0, meal_quanta: 0, delivered: 4, acquired: 4, steps: [\"to_board: edge=1 2->1 travel_ms=8000000 queue_ms=7200000 evidence_at=86760000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=9600000 queue_ms=14400000 evidence_at=86760000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=16000 legacy_free_slots=4 claim_q=4 meals=0 source_observed_at=86760000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=17920000 queue_ms=14400000 evidence_at=86760000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }]\n",
+    "physical_classification": "FALSE_FEASIBLE",
+    "meaning": "Margin still rejects the candidate; the physical forecast nevertheless predicts edible delivery."
+  }
+]

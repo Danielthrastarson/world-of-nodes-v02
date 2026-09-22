@@ -1,0 +1,55 @@
+
+running 7 tests
+test provisioning::shadow::mismatch_tests::aggregate_gather_rounding_differs_from_ten_atomic_actions ... ok
+test provisioning::shadow::mismatch_tests::expiry_interrupts_reserved_gather_without_refresh_or_material_loss ... ok
+test provisioning::shadow::mismatch_tests::known_stock_reservation_is_not_available_to_a_second_gatherer ... ok
+test provisioning::shadow::mismatch_tests::waiting_order_can_create_a_false_alive_prediction ... ok
+FORECAST_CONTRACT loose_loading: predicted_ms=30827778 kernel_ms=30800000 delivered=10
+test provisioning::shadow::mismatch_tests::legacy_loose_cargo_forecast_invents_gathering_work ... ok
+FORECAST_CONTRACT reserved_stock: predicted_delivery=1 kernel_delivery=0 kernel_refusal=Gather { batch: 0; communal: true }: batch not physically accessible
+test provisioning::shadow::mismatch_tests::legacy_quantity_forecast_ignores_observed_reserved_stock ... ok
+FORECAST_CONTRACT free_slots: predicted_ms=30827778 kernel_ms=30802778 delivered=1
+test provisioning::shadow::mismatch_tests::legacy_work_counts_free_slots_instead_of_claim_quantity ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 58 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 10 filtered out; finished in 0.00s
+

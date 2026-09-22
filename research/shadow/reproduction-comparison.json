@@ -1,0 +1,54 @@
+[
+  {
+    "file": "reference-captures.tsv.gz",
+    "identical": true
+  },
+  {
+    "file": "reference-memory.csv.gz",
+    "identical": true
+  },
+  {
+    "file": "reference-routes.csv.gz",
+    "identical": true
+  },
+  {
+    "file": "reference-plans.csv.gz",
+    "identical": true
+  },
+  {
+    "file": "reference-needs.csv.gz",
+    "identical": true
+  },
+  {
+    "file": "reference-primitives.csv.gz",
+    "identical": true
+  },
+  {
+    "file": "reference-self_count.csv.gz",
+    "identical": true
+  },
+  {
+    "file": "reference-route_feasibility.csv.gz",
+    "identical": true
+  },
+  {
+    "file": "reference-episodes.csv",
+    "identical": true
+  },
+  {
+    "file": "reference-static.csv",
+    "identical": true
+  },
+  {
+    "file": "reference-counterexample.csv",
+    "identical": true
+  },
+  {
+    "file": "reference-validation-kernel_plans.csv",
+    "identical": true
+  },
+  {
+    "file": "reference-episode-classifications.csv",
+    "identical": true
+  }
+]

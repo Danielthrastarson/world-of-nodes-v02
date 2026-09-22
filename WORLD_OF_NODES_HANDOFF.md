@@ -49,6 +49,15 @@ under the starvation grace rule. These results support interacting transport and
 policy mechanisms, not adoption of commitment, reduced migration or a transport
 priority rule. All default behavior and earlier evidence remain preserved.
 
+The [shadow forecast audit](docs/SHADOW_AUDIT.md) now has
+[observational evidence](research/shadow/REPORT.md). All 240 audit-on/off pairs
+preserve historical hashes and all 297 earlier research files remain unchanged.
+Primitive contracts conform in the tested fixtures, while composite forecasts show
+queue-order, self-counting and acquisition-model discrepancies. Conditional kernel
+witnesses separate these defects from information gaps, capacity competition and
+explicit margins. No BDI/GOAP architecture, new institution, default forecast fix or
+policy change is adopted. Existing negative provisioning findings remain intact.
+
 ## Principle
 
 **The simulation is the source of the graphics.** The rendered world is a projection of underlying simulated state. Do not program a desired settlement outcome; program causal rules that can produce it. Do not animate a result when its cause can be simulated.

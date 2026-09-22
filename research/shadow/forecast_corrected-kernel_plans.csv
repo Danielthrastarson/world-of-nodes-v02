@@ -1,0 +1,22 @@
+time_ms,agent,candidate,belief_failure,truth_failure,belief_ms,truth_ms,belief_cargo,truth_cargo,shadow_kernel_exact,interpretation
+14700000,0,0,NO_EDIBLE_CARGO,DEATH,56940000,132900000,0,0,true,CONDITIONAL_COMPARISON
+18000000,0,0,NO_EDIBLE_CARGO,DEATH,57180000,151200000,0,0,true,CONDITIONAL_COMPARISON
+18120000,0,0,NONE,DEATH,57180000,151080000,5,0,true,HIDDEN_STATE_OR_CAPACITY
+21600000,0,0,NONE,DEATH,60900000,147600000,3,0,true,HIDDEN_STATE_OR_CAPACITY
+28800000,0,0,NO_EDIBLE_CARGO,DEATH,73725000,140400000,0,0,true,CONDITIONAL_COMPARISON
+28860000,0,0,NONE,DEATH,53820000,140340000,3,0,true,HIDDEN_STATE_OR_CAPACITY
+32400000,0,0,NO_EDIBLE_CARGO,DEATH,80700000,136800000,0,0,true,CONDITIONAL_COMPARISON
+36000000,0,0,NO_EDIBLE_CARGO,DEATH,84960000,133200000,0,0,true,CONDITIONAL_COMPARISON
+39600000,0,0,NO_EDIBLE_CARGO,DEATH,67425000,129600000,0,0,true,CONDITIONAL_COMPARISON
+72420000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,110602000,126075000,0,0,true,CONDITIONAL_COMPARISON
+75600000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,108576000,152352000,0,0,true,CONDITIONAL_COMPARISON
+97320000,0,0,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,62880000,109934666,3,0,true,HIDDEN_STATE_OR_CAPACITY
+100800000,0,0,NONE,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,66420000,106412000,1,0,true,HIDDEN_STATE_OR_CAPACITY
+101820000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,67500000,105391999,0,0,true,CONDITIONAL_COMPARISON
+103860000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,69060000,102699000,0,0,true,CONDITIONAL_COMPARISON
+104400000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,69480000,86883000,0,0,true,CONDITIONAL_COMPARISON
+105840000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,70785000,85467000,0,0,true,CONDITIONAL_COMPARISON
+108000000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,73500000,83283000,0,0,true,CONDITIONAL_COMPARISON
+111600000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,78000000,74148000,0,0,true,CONDITIONAL_COMPARISON
+115200000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,83520000,70548000,0,0,true,CONDITIONAL_COMPARISON
+118800000,0,0,NO_EDIBLE_CARGO,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable,94680000,67020000,0,0,true,CONDITIONAL_COMPARISON

@@ -1,0 +1,6054 @@
+{
+  "committed": {
+    "counts_seed0": {
+      "candidate:no_complete_sequence": 17952,
+      "candidates": 35500,
+      "decisions": 141024,
+      "episode:CAPACITY_COMPETITION": 6728,
+      "episode:MATCH": 12,
+      "episode:RISK_COMMITMENT_PREFERENCE": 4894,
+      "episode:UNAVAILABLE_INFORMATION": 20,
+      "episode:WORLD_CHANGED_AFTER_PREDICTION": 32,
+      "episode_status:Arrived": 64,
+      "episode_status:Died": 26,
+      "episode_status:Interrupted": 11596,
+      "need:ACCESS_IN_PROGRESS": 660,
+      "need:CAPACITY_BLOCKED": 5392,
+      "need:SPOILED": 25624,
+      "need:UNKNOWN": 73518,
+      "need:UNRESOLVED": 1604,
+      "plan:PARTIAL_UNRESOLVED": 11688,
+      "plan:POLICY_ACCEPTABLE_AND_SHADOW_FEASIBLE": 12,
+      "plan:POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 5848,
+      "primitive:eat:COMPLETED:true": 360,
+      "primitive:gather:COMPLETED:true": 836,
+      "primitive:sleep:CENSORED:false": 2252,
+      "primitive:sleep:CENSORED:true": 8,
+      "primitive:sleep:COMPLETED:true": 26148,
+      "route:queue_order_difference": 39764,
+      "route_feasibility:CORRECT_FEASIBLE": 142944,
+      "route_feasibility:CORRECT_INFEASIBLE": 10280,
+      "self_count:affected_candidate": 3280,
+      "self_count:gate_changed": 1432,
+      "self_count:reactive_action_changed": 748
+    },
+    "episodes": {
+      "n": 11686,
+      "primary": {
+        "CAPACITY_COMPETITION": 11560,
+        "MATCH": 12,
+        "RISK_COMMITMENT_PREFERENCE": 4,
+        "UNAVAILABLE_INFORMATION": 20,
+        "WORLD_CHANGED_AFTER_PREDICTION": 90
+      },
+      "status": {
+        "Arrived": 64,
+        "Died": 26,
+        "Interrupted": 11596
+      }
+    },
+    "errors": {
+      "actual_primitive:eat:cargo_error": {
+        "exact": 360,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 360,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:fatigue_error_ms": {
+        "exact": 360,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 360,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:nutrition_error_ms": {
+        "exact": 360,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 360,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:time_error_ms": {
+        "exact": 360,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 360,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:cargo_error": {
+        "exact": 836,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 836,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:fatigue_error_ms": {
+        "exact": 836,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 836,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:nutrition_error_ms": {
+        "exact": 836,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 836,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:time_error_ms": {
+        "exact": 836,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 836,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:cargo_error": {
+        "exact": 26148,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 26148,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:fatigue_error_ms": {
+        "exact": 26148,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 26148,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:nutrition_error_ms": {
+        "exact": 26148,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 26148,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:time_error_ms": {
+        "exact": 26148,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 26148,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_travel:fatigue_error_ms": {
+        "exact": 24,
+        "max": 0,
+        "mean": -15677166.625,
+        "mean_absolute": 15677166.625,
+        "median": -8000000,
+        "min": -64800000,
+        "n": 64,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:nutrition_error_ms": {
+        "exact": 24,
+        "max": 36000000,
+        "mean": 11204166.625,
+        "mean_absolute": 11204166.625,
+        "median": 3480000,
+        "min": 0,
+        "n": 64,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_fatigue_error_ms": {
+        "exact": 24,
+        "max": 0,
+        "mean": -15677166.625,
+        "mean_absolute": 15677166.625,
+        "median": -8000000,
+        "min": -64800000,
+        "n": 64,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:policy_nutrition_error_ms": {
+        "exact": 24,
+        "max": 36000000,
+        "mean": 11204166.625,
+        "mean_absolute": 11204166.625,
+        "median": 3480000,
+        "min": 0,
+        "n": 64,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_time_error_ms": {
+        "exact": 12,
+        "max": 432000,
+        "mean": -17444166.625,
+        "mean_absolute": 17498166.625,
+        "median": -13968000,
+        "min": -79488000,
+        "n": 64,
+        "p05": -79488000,
+        "p95": 432000
+      },
+      "actual_travel:queue_error_ms": {
+        "exact": 12,
+        "max": 4320000,
+        "mean": -11808888.888888888,
+        "mean_absolute": 12288888.888888888,
+        "median": -7200000,
+        "min": -57888000,
+        "n": 72,
+        "p05": -57888000,
+        "p95": 4320000
+      },
+      "actual_travel:time_error_ms": {
+        "exact": 12,
+        "max": 6912000,
+        "mean": -16364166.625,
+        "mean_absolute": 17228166.625,
+        "median": -8000000,
+        "min": -79488000,
+        "n": 64,
+        "p05": -79488000,
+        "p95": 6912000
+      },
+      "claimed_feasible_plan:cargo_error": {
+        "exact": 12,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 12,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:elapsed_error_ms": {
+        "exact": 12,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 12,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:fatigue_error_ms": {
+        "exact": 12,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 12,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:nutrition_error_ms": {
+        "exact": 12,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 12,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:cargo_error": {
+        "exact": 12,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 12,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:elapsed_error_ms": {
+        "exact": 12,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 12,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:fatigue_error_ms": {
+        "exact": 12,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 12,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:nutrition_error_ms": {
+        "exact": 12,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 12,
+        "p05": 0,
+        "p95": 0
+      },
+      "queue:belief_minus_frozen_ms": {
+        "exact": 58,
+        "max": 0,
+        "mean": -14855258.826962357,
+        "mean_absolute": 14855258.826962357,
+        "median": -13368000,
+        "min": -103680000,
+        "n": 6854,
+        "p05": -37668000,
+        "p95": -948000
+      },
+      "queue:frozen_minus_actual_ms": {
+        "exact": 40,
+        "max": 57600000,
+        "mean": -4369777.777777778,
+        "mean_absolute": 14817777.777777778,
+        "median": 0,
+        "min": -57888000,
+        "n": 72,
+        "p05": -57888000,
+        "p95": 57600000
+      },
+      "route_arithmetic:fatigue_error_ms": {
+        "exact": 200652,
+        "max": 7200000,
+        "mean": -120663.2586405959,
+        "mean_absolute": 190947.05752327747,
+        "median": 0,
+        "min": -9024000,
+        "n": 214800,
+        "p05": -558400,
+        "p95": 0
+      },
+      "route_arithmetic:nutrition_error_ms": {
+        "exact": 194024,
+        "max": 8400000,
+        "mean": 212924.74072625698,
+        "mean_absolute": 212924.74072625698,
+        "median": 0,
+        "min": 0,
+        "n": 214800,
+        "p05": 0,
+        "p95": 1800000
+      },
+      "route_arithmetic:ordering_error_ms": {
+        "exact": 175036,
+        "max": 28764000,
+        "mean": 218295.56789571696,
+        "mean_absolute": 1027163.649981378,
+        "median": 0,
+        "min": -10800000,
+        "n": 214800,
+        "p05": -3228000,
+        "p95": 0
+      },
+      "self_count:matched_traversal_delay_ms": {
+        "exact": 0,
+        "max": 7200000,
+        "mean": 7200000.0,
+        "mean_absolute": 7200000.0,
+        "median": 7200000,
+        "min": 7200000,
+        "n": 6180,
+        "p05": 7200000,
+        "p95": 7200000
+      },
+      "self_count:queue_delay_difference_ms": {
+        "exact": 0,
+        "max": 14400000,
+        "mean": 13565853.658536585,
+        "mean_absolute": 13565853.658536585,
+        "median": 14400000,
+        "min": 7200000,
+        "n": 3280,
+        "p05": 7200000,
+        "p95": 14400000
+      },
+      "self_count:total_forecast_difference_ms": {
+        "exact": 0,
+        "max": 32076000,
+        "mean": 18836836.585365854,
+        "mean_absolute": 22348287.80487805,
+        "median": 21765000,
+        "min": -24319000,
+        "n": 3280,
+        "p05": -21673000,
+        "p95": 29212000
+      }
+    },
+    "historical_hashes_match": true,
+    "kernel_samples": {
+      "belief_failure": {
+        "NONE": 3,
+        "NO_EDIBLE_CARGO": 31
+      },
+      "belief_success": 3,
+      "disagreement_examples": [
+        {
+          "agent": "0",
+          "belief_cargo": "5",
+          "belief_failure": "NONE",
+          "belief_ms": "57180000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "18120000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "151080000"
+        },
+        {
+          "agent": "4",
+          "belief_cargo": "3",
+          "belief_failure": "NONE",
+          "belief_ms": "64500000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "25320000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "151080000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "2",
+          "belief_failure": "NONE",
+          "belief_ms": "67920000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "82920000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "151080000"
+        }
+      ],
+      "forecast_vs_frozen_truth": {
+        "CORRECT_INFEASIBLE": 31,
+        "FALSE_FEASIBLE": 3
+      },
+      "n": 34,
+      "shadow_exact": 34,
+      "truth_failure": {
+        "DEATH": 20,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 8,
+        "MEAL_UNAVAILABLE": 3,
+        "NO_EDIBLE_CARGO": 3
+      },
+      "truth_success": 0
+    },
+    "memory_age": {
+      "food_freshness": {
+        "0-2h": {
+          "exact": 32104,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 32104,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 1184,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 1184,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 1816,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 1816,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "exact": 2880,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 2880,
+          "p05": 0,
+          "p95": 0
+        }
+      },
+      "food_quantity": {
+        "0-2h": {
+          "exact": 32104,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 32104,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 0,
+          "max": 224,
+          "mean": 202.97297297297297,
+          "mean_absolute": 202.97297297297297,
+          "median": 224,
+          "min": 168,
+          "n": 1184,
+          "p05": 168,
+          "p95": 224
+        },
+        "2-6h": {
+          "exact": 0,
+          "max": 144,
+          "mean": 83.73568281938326,
+          "mean_absolute": 83.73568281938326,
+          "median": 92,
+          "min": 52,
+          "n": 1816,
+          "p05": 52,
+          "p95": 144
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "exact": 0,
+          "max": 200,
+          "mean": 142.51666666666668,
+          "mean_absolute": 142.51666666666668,
+          "median": 144,
+          "min": 92,
+          "n": 2880,
+          "p05": 116,
+          "p95": 200
+        }
+      },
+      "queue_same_bank": {
+        "0-2h": {
+          "exact": 165216,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 165216,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 13668,
+          "max": 46,
+          "mean": 8.868375257079576,
+          "mean_absolute": 11.20249960449296,
+          "median": 4,
+          "min": -26,
+          "n": 50568,
+          "p05": -8,
+          "p95": 38
+        },
+        "2-6h": {
+          "exact": 2816,
+          "max": 12,
+          "mean": -0.08885362951209837,
+          "mean_absolute": 6.165807219357398,
+          "median": 0,
+          "min": -46,
+          "n": 10084,
+          "p05": -38,
+          "p95": 12
+        },
+        "24h+": {
+          "exact": 39792,
+          "max": 46,
+          "mean": 14.162743569758378,
+          "mean_absolute": 14.848885424785658,
+          "median": 4,
+          "min": -18,
+          "n": 128300,
+          "p05": 0,
+          "p95": 46
+        },
+        "6-12h": {
+          "exact": 5060,
+          "max": 34,
+          "mean": 3.0269266480965644,
+          "mean_absolute": 8.123181677499225,
+          "median": 4,
+          "min": -38,
+          "n": 25848,
+          "p05": -14,
+          "p95": 20
+        }
+      },
+      "request": {
+        "0-2h": {
+          "exact": 55256,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 55256,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 20408,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 20408,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 3452,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 3452,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "exact": 52236,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 52236,
+          "p05": 0,
+          "p95": 0
+        },
+        "6-12h": {
+          "exact": 9672,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 9672,
+          "p05": 0,
+          "p95": 0
+        }
+      }
+    },
+    "outcomes": {
+      "event_hash": "d821bd7a701bbfab",
+      "food_consumed": "740",
+      "food_delivered": "0",
+      "jobs_accepted": "0",
+      "starvation_person_hours": "1036.000000",
+      "state_hash": "9461f7349827e231",
+      "survivors_36h": "16",
+      "survivors_48h": "16",
+      "survivors_72h": "16"
+    },
+    "pairs": 30,
+    "physical_plan_confusion": {
+      "CORRECT_FEASIBLE": 12,
+      "CORRECT_INFEASIBLE": 5848
+    },
+    "plans": {
+      "classification": {
+        "PARTIAL_UNRESOLVED": 11688,
+        "POLICY_ACCEPTABLE_AND_SHADOW_FEASIBLE": 12,
+        "POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 5848
+      },
+      "executable_belief_tapes_by_gate": {
+        "PASS": 12
+      },
+      "primary_gate": {
+        "INSUFFICIENT_EXPECTED_QUANTITY": 456,
+        "PASS": 12,
+        "POST_PLAN_NUTRITION_MARGIN": 5392,
+        "SOURCE_PREDICTED_SPOILED": 11688
+      },
+      "shadow_failures": {
+        "NONE": 11700,
+        "NO_EDIBLE_CARGO": 5848
+      }
+    },
+    "route_feasibility": {
+      "CORRECT_FEASIBLE": 142944,
+      "CORRECT_INFEASIBLE": 10280
+    },
+    "self_count": {
+      "action_changed": 748,
+      "affected": 3280,
+      "changed_legs": {
+        "to_source: edge=0 7200000->0|return: edge=0 7200000->0": 720,
+        "to_source: edge=1 7200000->0": 380,
+        "to_source: edge=1 7200000->0|return: edge=1 7200000->0": 2180
+      },
+      "conditional_false_zero_witnesses": 748,
+      "gate_changed": 1432
+    },
+    "static_cases": 130,
+    "static_exact": 130,
+    "unmet_need": {
+      "ACCESS_IN_PROGRESS": 660,
+      "CAPACITY_BLOCKED": 5392,
+      "SPOILED": 25624,
+      "UNKNOWN": 73518,
+      "UNRESOLVED": 1604
+    }
+  },
+  "contested_requests": {
+    "counts_seed0": {
+      "candidate:no_complete_sequence": 5770,
+      "candidates": 19918,
+      "decisions": 158432,
+      "episode:CAPACITY_COMPETITION": 17400,
+      "episode:MATCH": 24,
+      "episode:RISK_COMMITMENT_PREFERENCE": 11981,
+      "episode:UNAVAILABLE_INFORMATION": 31,
+      "episode:WORLD_CHANGED_AFTER_PREDICTION": 53,
+      "episode_status:Arrived": 108,
+      "episode_status:Died": 14,
+      "episode_status:Interrupted": 29367,
+      "need:ACCESS_IN_PROGRESS": 868,
+      "need:CAPACITY_BLOCKED": 1048,
+      "need:SPOILED": 40832,
+      "need:UNKNOWN": 53098,
+      "need:UNRESOLVED": 5116,
+      "plan:POLICY_ACCEPTABLE_AND_SHADOW_FEASIBLE": 236,
+      "plan:POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 7560,
+      "plan:RISK_COMMITMENT_PREFERENCE": 6352,
+      "plan:arithmetic_difference": 6464,
+      "primitive:eat:COMPLETED:true": 516,
+      "primitive:gather:COMPLETED:true": 1432,
+      "primitive:sleep:CENSORED:false": 2232,
+      "primitive:sleep:CENSORED:true": 8,
+      "primitive:sleep:COMPLETED:true": 35732,
+      "route:queue_order_difference": 66138,
+      "route_feasibility:CORRECT_FEASIBLE": 187883,
+      "route_feasibility:CORRECT_INFEASIBLE": 15165,
+      "self_count:affected_candidate": 8448,
+      "self_count:gate_changed": 2920,
+      "self_count:reactive_action_changed": 144
+    },
+    "episodes": {
+      "n": 29489,
+      "primary": {
+        "CAPACITY_COMPETITION": 21698,
+        "MATCH": 24,
+        "RISK_COMMITMENT_PREFERENCE": 7642,
+        "UNAVAILABLE_INFORMATION": 31,
+        "WORLD_CHANGED_AFTER_PREDICTION": 94
+      },
+      "status": {
+        "Arrived": 108,
+        "Died": 14,
+        "Interrupted": 29367
+      }
+    },
+    "errors": {
+      "actual_primitive:eat:cargo_error": {
+        "exact": 516,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 516,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:fatigue_error_ms": {
+        "exact": 516,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 516,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:nutrition_error_ms": {
+        "exact": 516,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 516,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:time_error_ms": {
+        "exact": 516,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 516,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:cargo_error": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:fatigue_error_ms": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:nutrition_error_ms": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:time_error_ms": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:cargo_error": {
+        "exact": 35732,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 35732,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:fatigue_error_ms": {
+        "exact": 35732,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 35732,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:nutrition_error_ms": {
+        "exact": 35732,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 35732,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:time_error_ms": {
+        "exact": 35732,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 35732,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_travel:fatigue_error_ms": {
+        "exact": 39,
+        "max": 50400000,
+        "mean": -2104599.1481481483,
+        "mean_absolute": 13668451.0,
+        "median": 0,
+        "min": -64800000,
+        "n": 108,
+        "p05": -33600000,
+        "p95": 50400000
+      },
+      "actual_travel:nutrition_error_ms": {
+        "exact": 39,
+        "max": 36000000,
+        "mean": 4617888.037037037,
+        "mean_absolute": 9631073.222222222,
+        "median": 0,
+        "min": -28800000,
+        "n": 108,
+        "p05": -21600000,
+        "p95": 33600000
+      },
+      "actual_travel:policy_fatigue_error_ms": {
+        "exact": 39,
+        "max": 36000000,
+        "mean": -3363858.407407407,
+        "mean_absolute": 12409191.74074074,
+        "median": 0,
+        "min": -64800000,
+        "n": 108,
+        "p05": -33600000,
+        "p95": 36000000
+      },
+      "actual_travel:policy_nutrition_error_ms": {
+        "exact": 39,
+        "max": 36000000,
+        "mean": 4682332.481481481,
+        "mean_absolute": 9566628.777777778,
+        "median": 0,
+        "min": -28800000,
+        "n": 108,
+        "p05": -21600000,
+        "p95": 33600000
+      },
+      "actual_travel:policy_time_error_ms": {
+        "exact": 24,
+        "max": 36000000,
+        "mean": -2990925.074074074,
+        "mean_absolute": 13157591.74074074,
+        "median": -48000,
+        "min": -79488000,
+        "n": 108,
+        "p05": -33600000,
+        "p95": 36000000
+      },
+      "actual_travel:queue_error_ms": {
+        "exact": 24,
+        "max": 36000000,
+        "mean": -1026538.0714285715,
+        "mean_absolute": 12297252.357142856,
+        "median": -48000,
+        "min": -57888000,
+        "n": 112,
+        "p05": -30800000,
+        "p95": 36000000
+      },
+      "actual_travel:time_error_ms": {
+        "exact": 24,
+        "max": 55600000,
+        "mean": 129519.37037037036,
+        "mean_absolute": 16278036.185185185,
+        "median": -48000,
+        "min": -79488000,
+        "n": 108,
+        "p05": -33600000,
+        "p95": 54000000
+      },
+      "claimed_feasible_plan:cargo_error": {
+        "exact": 6588,
+        "max": 4,
+        "mean": 0.6422018348623854,
+        "mean_absolute": 0.6422018348623854,
+        "median": 0,
+        "min": 0,
+        "n": 7848,
+        "p05": 0,
+        "p95": 4
+      },
+      "claimed_feasible_plan:elapsed_error_ms": {
+        "exact": 124,
+        "max": 0,
+        "mean": -6441982.607033639,
+        "mean_absolute": 6441982.607033639,
+        "median": -4800000,
+        "min": -18151000,
+        "n": 7848,
+        "p05": -17791000,
+        "p95": -1053500
+      },
+      "claimed_feasible_plan:fatigue_error_ms": {
+        "exact": 7504,
+        "max": 0,
+        "mean": -44318.469418960245,
+        "mean_absolute": 44318.469418960245,
+        "median": 0,
+        "min": -4039999,
+        "n": 7848,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:nutrition_error_ms": {
+        "exact": 5068,
+        "max": 7683336,
+        "mean": 1100522.0657492355,
+        "mean_absolute": 1100522.0657492355,
+        "median": 0,
+        "min": 0,
+        "n": 7848,
+        "p05": 0,
+        "p95": 5475000
+      },
+      "conditional_complete_plan:cargo_error": {
+        "exact": 6588,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 6588,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:elapsed_error_ms": {
+        "exact": 124,
+        "max": 0,
+        "mean": -4796037.705525197,
+        "mean_absolute": 4796037.705525197,
+        "median": -4425000,
+        "min": -13516998,
+        "n": 6588,
+        "p05": -12076998,
+        "p95": -963500
+      },
+      "conditional_complete_plan:fatigue_error_ms": {
+        "exact": 6244,
+        "max": 0,
+        "mean": -52794.67941712204,
+        "mean_absolute": 52794.67941712204,
+        "median": 0,
+        "min": -4039999,
+        "n": 6588,
+        "p05": -1,
+        "p95": 0
+      },
+      "conditional_complete_plan:nutrition_error_ms": {
+        "exact": 3920,
+        "max": 7683336,
+        "mean": 1263471.7419550698,
+        "mean_absolute": 1263471.7419550698,
+        "median": 0,
+        "min": 0,
+        "n": 6588,
+        "p05": 0,
+        "p95": 5609003
+      },
+      "queue:belief_minus_frozen_ms": {
+        "exact": 66,
+        "max": 198000,
+        "mean": -22939022.28106262,
+        "mean_absolute": 22939085.180637732,
+        "median": -21288000,
+        "min": -101028000,
+        "n": 25183,
+        "p05": -51828000,
+        "p95": -1260000
+      },
+      "queue:frozen_minus_actual_ms": {
+        "exact": 51,
+        "max": 93888000,
+        "mean": 7956846.153846154,
+        "mean_absolute": 17900846.153846152,
+        "median": 0,
+        "min": -57888000,
+        "n": 104,
+        "p05": -30800000,
+        "p95": 72288000
+      },
+      "route_arithmetic:fatigue_error_ms": {
+        "exact": 248408,
+        "max": 7200000,
+        "mean": -170149.4538363893,
+        "mean_absolute": 223382.7401551481,
+        "median": 0,
+        "min": -9226934,
+        "n": 283600,
+        "p05": -1416000,
+        "p95": 0
+      },
+      "route_arithmetic:nutrition_error_ms": {
+        "exact": 235316,
+        "max": 9228000,
+        "mean": 269683.5607757405,
+        "mean_absolute": 269683.5607757405,
+        "median": 0,
+        "min": 0,
+        "n": 283600,
+        "p05": 0,
+        "p95": 2130000
+      },
+      "route_arithmetic:ordering_error_ms": {
+        "exact": 217462,
+        "max": 35964000,
+        "mean": 426410.4935119887,
+        "mean_absolute": 1074517.258251058,
+        "median": 0,
+        "min": -18800000,
+        "n": 283600,
+        "p05": -2460000,
+        "p95": 1444000
+      },
+      "self_count:matched_traversal_delay_ms": {
+        "exact": 0,
+        "max": 7200000,
+        "mean": 7200000.0,
+        "mean_absolute": 7200000.0,
+        "median": 7200000,
+        "min": 7200000,
+        "n": 16896,
+        "p05": 7200000,
+        "p95": 7200000
+      },
+      "self_count:queue_delay_difference_ms": {
+        "exact": 0,
+        "max": 14400000,
+        "mean": 14400000.0,
+        "mean_absolute": 14400000.0,
+        "median": 14400000,
+        "min": 14400000,
+        "n": 8448,
+        "p05": 14400000,
+        "p95": 14400000
+      },
+      "self_count:total_forecast_difference_ms": {
+        "exact": 0,
+        "max": 22454000,
+        "mean": 16754353.133996213,
+        "mean_absolute": 16754353.133996213,
+        "median": 16200000,
+        "min": 14400000,
+        "n": 8448,
+        "p05": 14400000,
+        "p95": 18836000
+      }
+    },
+    "historical_hashes_match": true,
+    "kernel_samples": {
+      "belief_failure": {
+        "DEATH": 2,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 26,
+        "NONE": 30,
+        "NO_EDIBLE_CARGO": 25
+      },
+      "belief_success": 30,
+      "disagreement_examples": [
+        {
+          "agent": "8",
+          "belief_cargo": "10",
+          "belief_failure": "NONE",
+          "belief_ms": "27950007",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "31320000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "130680000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "29270003",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "32400000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "129600000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "10",
+          "belief_failure": "NONE",
+          "belief_ms": "27496005",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "32520000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "151080000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "50420000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "36000000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "147600000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "54736000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "39600000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "144000000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "57865600",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "43200000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "140400000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "60992000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "46800000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "136800000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "66992000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "50400000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "133200000"
+        }
+      ],
+      "forecast_vs_frozen_truth": {
+        "CORRECT_FEASIBLE": 2,
+        "CORRECT_INFEASIBLE": 42,
+        "FALSE_FEASIBLE": 37,
+        "FALSE_INFEASIBLE": 2
+      },
+      "n": 83,
+      "shadow_exact": 83,
+      "truth_failure": {
+        "Claim { board: 1; quantity: 1 }: demand already claimed": 4,
+        "Claim { board: 1; quantity: 4 }: demand already claimed": 10,
+        "DEATH": 12,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 32,
+        "NONE": 4,
+        "NO_EDIBLE_CARGO": 21
+      },
+      "truth_success": 4
+    },
+    "memory_age": {
+      "food_freshness": {
+        "0-2h": {
+          "exact": 54764,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 54764,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 1708,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 1708,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 2644,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 2644,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "exact": 2880,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 2880,
+          "p05": 0,
+          "p95": 0
+        }
+      },
+      "food_quantity": {
+        "0-2h": {
+          "exact": 54764,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 54764,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 0,
+          "max": 388,
+          "mean": 336.27166276346605,
+          "mean_absolute": 336.27166276346605,
+          "median": 324,
+          "min": 300,
+          "n": 1708,
+          "p05": 300,
+          "p95": 388
+        },
+        "2-6h": {
+          "exact": 0,
+          "max": 180,
+          "mean": 93.85779122541604,
+          "mean_absolute": 93.85779122541604,
+          "median": 72,
+          "min": 24,
+          "n": 2644,
+          "p05": 48,
+          "p95": 180
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "exact": 0,
+          "max": 300,
+          "mean": 199.36666666666667,
+          "mean_absolute": 199.36666666666667,
+          "median": 228,
+          "min": 96,
+          "n": 2880,
+          "p05": 96,
+          "p95": 300
+        }
+      },
+      "queue_same_bank": {
+        "0-2h": {
+          "exact": 204888,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 204888,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 32474,
+          "max": 21,
+          "mean": 3.470538001707942,
+          "mean_absolute": 6.50745582342508,
+          "median": 0,
+          "min": -21,
+          "n": 91338,
+          "p05": -12,
+          "p95": 21
+        },
+        "2-6h": {
+          "exact": 13064,
+          "max": 21,
+          "mean": 0.4793574538357604,
+          "mean_absolute": 5.8100885752889955,
+          "median": 0,
+          "min": -21,
+          "n": 26644,
+          "p05": -21,
+          "p95": 17
+        },
+        "24h+": {
+          "exact": 46980,
+          "max": 21,
+          "mean": 7.9589363241678726,
+          "mean_absolute": 8.873673420164014,
+          "median": 6,
+          "min": -17,
+          "n": 132672,
+          "p05": -4,
+          "p95": 21
+        },
+        "6-12h": {
+          "exact": 22815,
+          "max": 21,
+          "mean": 1.4334726982361068,
+          "mean_absolute": 6.098835435769527,
+          "median": 0,
+          "min": -21,
+          "n": 55729,
+          "p05": -17,
+          "p95": 17
+        }
+      },
+      "request": {
+        "0-2h": {
+          "exact": 68388,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 68388,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 3328,
+          "max": 252,
+          "mean": -13.97308682424526,
+          "mean_absolute": 75.08846243856775,
+          "median": 0,
+          "min": -252,
+          "n": 51276,
+          "p05": -216,
+          "p95": 120
+        },
+        "2-6h": {
+          "exact": 3356,
+          "max": 132,
+          "mean": -26.003628666465072,
+          "mean_absolute": 63.860296341094646,
+          "median": 0,
+          "min": -210,
+          "n": 13228,
+          "p05": -168,
+          "p95": 108
+        },
+        "24h+": {
+          "exact": 8424,
+          "max": 108,
+          "mean": -37.656954649100584,
+          "mean_absolute": 50.88750950088675,
+          "median": -24,
+          "min": -216,
+          "n": 94728,
+          "p05": -132,
+          "p95": 46
+        },
+        "6-12h": {
+          "exact": 3872,
+          "max": 132,
+          "mean": -18.429451287793952,
+          "mean_absolute": 78.60078387458007,
+          "median": 0,
+          "min": -300,
+          "n": 28576,
+          "p05": -252,
+          "p95": 132
+        }
+      }
+    },
+    "outcomes": {
+      "event_hash": "c67da5c9419cf259",
+      "food_consumed": "1296",
+      "food_delivered": "0",
+      "jobs_accepted": "8",
+      "starvation_person_hours": "912.000000",
+      "state_hash": "e6b7d27205bc11a8",
+      "survivors_36h": "28",
+      "survivors_48h": "28",
+      "survivors_72h": "28"
+    },
+    "pairs": 30,
+    "physical_plan_confusion": {
+      "CORRECT_FEASIBLE": 6588,
+      "CORRECT_INFEASIBLE": 6300,
+      "FALSE_FEASIBLE": 1260
+    },
+    "plans": {
+      "classification": {
+        "POLICY_ACCEPTABLE_AND_SHADOW_FEASIBLE": 236,
+        "POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 7560,
+        "RISK_COMMITMENT_PREFERENCE": 6352
+      },
+      "executable_belief_tapes_by_gate": {
+        "PASS": 236,
+        "POST_PLAN_NUTRITION_MARGIN": 6352
+      },
+      "primary_gate": {
+        "CANNOT_COMPLETE_PLAN_ALIVE": 1316,
+        "PASS": 236,
+        "POST_PLAN_NUTRITION_MARGIN": 12044,
+        "SOURCE_PREDICTED_SPOILED": 552
+      },
+      "shadow_failures": {
+        "DEATH": 516,
+        "NONE": 6588,
+        "NO_EDIBLE_CARGO": 3200,
+        "SPOILED": 3844
+      }
+    },
+    "route_feasibility": {
+      "CORRECT_FEASIBLE": 187883,
+      "CORRECT_INFEASIBLE": 15165
+    },
+    "self_count": {
+      "action_changed": 144,
+      "affected": 8448,
+      "changed_legs": {
+        "to_source: edge=1 14400000->7200000|return: edge=1 14400000->7200000": 2520,
+        "to_source: edge=1 7200000->0|return: edge=1 7200000->0": 5928
+      },
+      "gate_changed": 2920
+    },
+    "static_cases": 130,
+    "static_exact": 130,
+    "unmet_need": {
+      "ACCESS_IN_PROGRESS": 868,
+      "CAPACITY_BLOCKED": 1048,
+      "SPOILED": 40832,
+      "UNKNOWN": 53098,
+      "UNRESOLVED": 5116
+    }
+  },
+  "current": {
+    "counts_seed0": {
+      "candidate:no_complete_sequence": 19712,
+      "candidates": 58760,
+      "decisions": 161788,
+      "episode:CAPACITY_COMPETITION": 5528,
+      "episode:MATCH": 32,
+      "episode:RISK_COMMITMENT_PREFERENCE": 1150,
+      "episode:UNAVAILABLE_INFORMATION": 4,
+      "episode:WORLD_CHANGED_AFTER_PREDICTION": 24,
+      "episode_status:Arrived": 60,
+      "episode_status:Died": 22,
+      "episode_status:Interrupted": 6656,
+      "need:ACCESS_IN_PROGRESS": 776,
+      "need:SPOILED": 40404,
+      "need:UNKNOWN": 56206,
+      "need:UNRESOLVED": 908,
+      "plan:POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 31488,
+      "plan:RISK_COMMITMENT_PREFERENCE": 7560,
+      "plan:arithmetic_difference": 828,
+      "primitive:eat:COMPLETED:true": 464,
+      "primitive:gather:COMPLETED:true": 1432,
+      "primitive:sleep:CENSORED:false": 32,
+      "primitive:sleep:COMPLETED:true": 36904,
+      "route:queue_order_difference": 3976,
+      "route_feasibility:CORRECT_FEASIBLE": 208084,
+      "route_feasibility:CORRECT_INFEASIBLE": 3980
+    },
+    "episodes": {
+      "n": 6738,
+      "primary": {
+        "CAPACITY_COMPETITION": 6620,
+        "MATCH": 32,
+        "MATCH_PREDICTED_DEATH": 4,
+        "UNAVAILABLE_INFORMATION": 4,
+        "WORLD_CHANGED_AFTER_PREDICTION": 78
+      },
+      "status": {
+        "Arrived": 60,
+        "Died": 22,
+        "Interrupted": 6656
+      }
+    },
+    "errors": {
+      "actual_primitive:eat:cargo_error": {
+        "exact": 464,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 464,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:fatigue_error_ms": {
+        "exact": 464,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 464,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:nutrition_error_ms": {
+        "exact": 464,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 464,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:time_error_ms": {
+        "exact": 464,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 464,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:cargo_error": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:fatigue_error_ms": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:nutrition_error_ms": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:time_error_ms": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:cargo_error": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:fatigue_error_ms": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:nutrition_error_ms": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:time_error_ms": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_travel:fatigue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -12952533.333333334,
+        "mean_absolute": 12952533.333333334,
+        "median": 0,
+        "min": -64800000,
+        "n": 60,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:nutrition_error_ms": {
+        "exact": 36,
+        "max": 36000000,
+        "mean": 10053333.333333334,
+        "mean_absolute": 10053333.333333334,
+        "median": 0,
+        "min": 0,
+        "n": 60,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_fatigue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -12952533.333333334,
+        "mean_absolute": 12952533.333333334,
+        "median": 0,
+        "min": -64800000,
+        "n": 60,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:policy_nutrition_error_ms": {
+        "exact": 36,
+        "max": 36000000,
+        "mean": 10053333.333333334,
+        "mean_absolute": 10053333.333333334,
+        "median": 0,
+        "min": 0,
+        "n": 60,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_time_error_ms": {
+        "exact": 32,
+        "max": 0,
+        "mean": -13934933.333333334,
+        "mean_absolute": 13934933.333333334,
+        "median": 0,
+        "min": -79488000,
+        "n": 60,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "actual_travel:queue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -10163764.705882354,
+        "mean_absolute": 10163764.705882354,
+        "median": 0,
+        "min": -57888000,
+        "n": 68,
+        "p05": -57888000,
+        "p95": 0
+      },
+      "actual_travel:time_error_ms": {
+        "exact": 32,
+        "max": 0,
+        "mean": -13934933.333333334,
+        "mean_absolute": 13934933.333333334,
+        "median": 0,
+        "min": -79488000,
+        "n": 60,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "claimed_feasible_plan:cargo_error": {
+        "exact": 7560,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 7560,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:elapsed_error_ms": {
+        "exact": 6732,
+        "max": 0,
+        "mean": -0.4444444444444444,
+        "mean_absolute": 0.4444444444444444,
+        "median": 0,
+        "min": -15,
+        "n": 7560,
+        "p05": -3,
+        "p95": 0
+      },
+      "claimed_feasible_plan:fatigue_error_ms": {
+        "exact": 7560,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 7560,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:nutrition_error_ms": {
+        "exact": 7424,
+        "max": 6,
+        "mean": 0.042328042328042326,
+        "mean_absolute": 0.042328042328042326,
+        "median": 0,
+        "min": 0,
+        "n": 7560,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:cargo_error": {
+        "exact": 7560,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 7560,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:elapsed_error_ms": {
+        "exact": 6732,
+        "max": 0,
+        "mean": -0.4444444444444444,
+        "mean_absolute": 0.4444444444444444,
+        "median": 0,
+        "min": -15,
+        "n": 7560,
+        "p05": -3,
+        "p95": 0
+      },
+      "conditional_complete_plan:fatigue_error_ms": {
+        "exact": 7560,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 7560,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:nutrition_error_ms": {
+        "exact": 7424,
+        "max": 6,
+        "mean": 0.042328042328042326,
+        "mean_absolute": 0.042328042328042326,
+        "median": 0,
+        "min": 0,
+        "n": 7560,
+        "p05": 0,
+        "p95": 0
+      },
+      "queue:belief_minus_frozen_ms": {
+        "exact": 82,
+        "max": 0,
+        "mean": -12523668.437832093,
+        "mean_absolute": 12523668.437832093,
+        "median": -12288000,
+        "min": -28668000,
+        "n": 5646,
+        "p05": -25968000,
+        "p95": -948000
+      },
+      "queue:frozen_minus_actual_ms": {
+        "exact": 44,
+        "max": 0,
+        "mean": -10158117.647058824,
+        "mean_absolute": 10158117.647058824,
+        "median": 0,
+        "min": -57888000,
+        "n": 68,
+        "p05": -57888000,
+        "p95": 0
+      },
+      "route_arithmetic:fatigue_error_ms": {
+        "exact": 317596,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 317596,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:nutrition_error_ms": {
+        "exact": 317596,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 317596,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:ordering_error_ms": {
+        "exact": 313620,
+        "max": 28800000,
+        "mean": 97257.7740273807,
+        "mean_absolute": 97257.7740273807,
+        "median": 0,
+        "min": 0,
+        "n": 317596,
+        "p05": 0,
+        "p95": 0
+      }
+    },
+    "historical_hashes_match": true,
+    "kernel_samples": {
+      "belief_failure": {
+        "DEATH": 7,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 29,
+        "NONE": 12,
+        "NO_EDIBLE_CARGO": 20
+      },
+      "belief_success": 12,
+      "disagreement_examples": [
+        {
+          "agent": "0",
+          "belief_cargo": "10",
+          "belief_failure": "NONE",
+          "belief_ms": "73412020",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "14700000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "132900000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "83264007",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "18000000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "129600000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "68432005",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "21600000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "147600000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "79232000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "25200000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "144000000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "90032000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "28800000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "140400000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "99392000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "32400000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "136800000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "108752000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "36000000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "133200000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "118112000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "39600000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "129600000"
+        }
+      ],
+      "forecast_vs_frozen_truth": {
+        "CORRECT_INFEASIBLE": 56,
+        "FALSE_FEASIBLE": 12
+      },
+      "n": 68,
+      "shadow_exact": 68,
+      "truth_failure": {
+        "DEATH": 21,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 47
+      },
+      "truth_success": 0
+    },
+    "memory_age": {
+      "food_freshness": {
+        "0-2h": {
+          "exact": 60240,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 60240,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "n": 0
+        },
+        "2-6h": {
+          "n": 0
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "n": 0
+        }
+      },
+      "food_quantity": {
+        "0-2h": {
+          "exact": 60240,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 60240,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "n": 0
+        },
+        "2-6h": {
+          "n": 0
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "n": 0
+        }
+      },
+      "queue_same_bank": {
+        "0-2h": {
+          "exact": 162788,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 162788,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 46232,
+          "max": 46,
+          "mean": 5.61202218379152,
+          "mean_absolute": 7.334724789790685,
+          "median": 0,
+          "min": -26,
+          "n": 67076,
+          "p05": 0,
+          "p95": 34
+        },
+        "2-6h": {
+          "exact": 8504,
+          "max": 12,
+          "mean": -0.616938616938617,
+          "mean_absolute": 3.466977466977467,
+          "median": 0,
+          "min": -46,
+          "n": 10296,
+          "p05": -38,
+          "p95": 12
+        },
+        "24h+": {
+          "exact": 147244,
+          "max": 46,
+          "mean": 10.28131455399061,
+          "mean_absolute": 10.589896713615023,
+          "median": 0,
+          "min": -22,
+          "n": 213000,
+          "p05": 0,
+          "p95": 42
+        },
+        "6-12h": {
+          "exact": 19376,
+          "max": 34,
+          "mean": 1.543637966500147,
+          "mean_absolute": 5.245077872465472,
+          "median": 0,
+          "min": -38,
+          "n": 27224,
+          "p05": -26,
+          "p95": 16
+        }
+      },
+      "request": {
+        "0-2h": {
+          "exact": 55256,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 55256,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 21324,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 21324,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 1792,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 1792,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "exact": 75408,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 75408,
+          "p05": 0,
+          "p95": 0
+        },
+        "6-12h": {
+          "exact": 8008,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 8008,
+          "p05": 0,
+          "p95": 0
+        }
+      }
+    },
+    "outcomes": {
+      "event_hash": "056700f14dd3919c",
+      "food_consumed": "1264",
+      "food_delivered": "0",
+      "jobs_accepted": "0",
+      "starvation_person_hours": "944.000000",
+      "state_hash": "a73b33d1ecabd5d1",
+      "survivors_36h": "28",
+      "survivors_48h": "28",
+      "survivors_72h": "28"
+    },
+    "pairs": 30,
+    "physical_plan_confusion": {
+      "CORRECT_FEASIBLE": 7560,
+      "CORRECT_INFEASIBLE": 31488
+    },
+    "plans": {
+      "classification": {
+        "POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 31488,
+        "RISK_COMMITMENT_PREFERENCE": 7560
+      },
+      "executable_belief_tapes_by_gate": {
+        "POST_PLAN_NUTRITION_MARGIN": 7560
+      },
+      "primary_gate": {
+        "CANNOT_COMPLETE_PLAN_ALIVE": 2696,
+        "POST_PLAN_NUTRITION_MARGIN": 36352
+      },
+      "shadow_failures": {
+        "DEATH": 1124,
+        "NONE": 7560,
+        "NO_EDIBLE_CARGO": 11760,
+        "SPOILED": 18604
+      }
+    },
+    "route_feasibility": {
+      "CORRECT_FEASIBLE": 208084,
+      "CORRECT_INFEASIBLE": 3980
+    },
+    "self_count": {
+      "action_changed": 0,
+      "affected": 0,
+      "changed_legs": {},
+      "gate_changed": 0
+    },
+    "static_cases": 130,
+    "static_exact": 130,
+    "unmet_need": {
+      "ACCESS_IN_PROGRESS": 776,
+      "SPOILED": 40404,
+      "UNKNOWN": 56206,
+      "UNRESOLVED": 908
+    }
+  },
+  "forecast_corrected": {
+    "counts_seed0": {
+      "candidate:no_complete_sequence": 21308,
+      "candidates": 50096,
+      "decisions": 154436,
+      "episode:CAPACITY_COMPETITION": 7948,
+      "episode:MATCH": 20,
+      "episode:RISK_COMMITMENT_PREFERENCE": 1582,
+      "episode:UNAVAILABLE_INFORMATION": 20,
+      "episode:WORLD_CHANGED_AFTER_PREDICTION": 24,
+      "episode_status:Arrived": 64,
+      "episode_status:Died": 22,
+      "episode_status:Interrupted": 9508,
+      "need:ACCESS_IN_PROGRESS": 736,
+      "need:CAPACITY_BLOCKED": 956,
+      "need:SPOILED": 33496,
+      "need:UNKNOWN": 66694,
+      "need:UNRESOLVED": 1176,
+      "plan:PARTIAL_UNRESOLVED": 13816,
+      "plan:POLICY_ACCEPTABLE_AND_SHADOW_FEASIBLE": 1076,
+      "plan:POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 13896,
+      "primitive:eat:COMPLETED:true": 432,
+      "primitive:gather:COMPLETED:true": 1216,
+      "primitive:sleep:CENSORED:false": 2052,
+      "primitive:sleep:CENSORED:true": 4,
+      "primitive:sleep:COMPLETED:true": 32832,
+      "route:queue_order_difference": 11944,
+      "route_feasibility:CORRECT_FEASIBLE": 180716,
+      "route_feasibility:CORRECT_INFEASIBLE": 6156,
+      "self_count:affected_candidate": 1660,
+      "self_count:gate_changed": 1072,
+      "self_count:reactive_action_changed": 1044
+    },
+    "episodes": {
+      "n": 9594,
+      "primary": {
+        "CAPACITY_COMPETITION": 9424,
+        "MATCH": 20,
+        "MATCH_PREDICTED_DEATH": 4,
+        "RISK_COMMITMENT_PREFERENCE": 36,
+        "UNAVAILABLE_INFORMATION": 20,
+        "WORLD_CHANGED_AFTER_PREDICTION": 90
+      },
+      "status": {
+        "Arrived": 64,
+        "Died": 22,
+        "Interrupted": 9508
+      }
+    },
+    "errors": {
+      "actual_primitive:eat:cargo_error": {
+        "exact": 432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:fatigue_error_ms": {
+        "exact": 432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:nutrition_error_ms": {
+        "exact": 432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:time_error_ms": {
+        "exact": 432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:cargo_error": {
+        "exact": 1216,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1216,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:fatigue_error_ms": {
+        "exact": 1216,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1216,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:nutrition_error_ms": {
+        "exact": 1216,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1216,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:time_error_ms": {
+        "exact": 1216,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1216,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:cargo_error": {
+        "exact": 32832,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 32832,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:fatigue_error_ms": {
+        "exact": 32832,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 32832,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:nutrition_error_ms": {
+        "exact": 32832,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 32832,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:time_error_ms": {
+        "exact": 32832,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 32832,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_travel:fatigue_error_ms": {
+        "exact": 24,
+        "max": 0,
+        "mean": -15010750.0,
+        "mean_absolute": 15010750.0,
+        "median": -8000000,
+        "min": -64800000,
+        "n": 64,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:nutrition_error_ms": {
+        "exact": 24,
+        "max": 36000000,
+        "mean": 11620750.0,
+        "mean_absolute": 11620750.0,
+        "median": 3480000,
+        "min": 0,
+        "n": 64,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_fatigue_error_ms": {
+        "exact": 24,
+        "max": 0,
+        "mean": -15046250.0,
+        "mean_absolute": 15046250.0,
+        "median": -8000000,
+        "min": -64800000,
+        "n": 64,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:policy_nutrition_error_ms": {
+        "exact": 24,
+        "max": 36000000,
+        "mean": 11656250.0,
+        "mean_absolute": 11656250.0,
+        "median": 3480000,
+        "min": 0,
+        "n": 64,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_time_error_ms": {
+        "exact": 20,
+        "max": 0,
+        "mean": -15967250.0,
+        "mean_absolute": 15967250.0,
+        "median": -8000000,
+        "min": -79488000,
+        "n": 64,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "actual_travel:queue_error_ms": {
+        "exact": 24,
+        "max": 0,
+        "mean": -11520888.888888888,
+        "mean_absolute": 11520888.888888888,
+        "median": -7200000,
+        "min": -57888000,
+        "n": 72,
+        "p05": -57888000,
+        "p95": 0
+      },
+      "actual_travel:time_error_ms": {
+        "exact": 20,
+        "max": 0,
+        "mean": -15931750.0,
+        "mean_absolute": 15931750.0,
+        "median": -8000000,
+        "min": -79488000,
+        "n": 64,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "claimed_feasible_plan:cargo_error": {
+        "exact": 1076,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1076,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:elapsed_error_ms": {
+        "exact": 1076,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1076,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:fatigue_error_ms": {
+        "exact": 1076,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1076,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:nutrition_error_ms": {
+        "exact": 1076,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1076,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:cargo_error": {
+        "exact": 1076,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1076,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:elapsed_error_ms": {
+        "exact": 1076,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1076,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:fatigue_error_ms": {
+        "exact": 1076,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1076,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:nutrition_error_ms": {
+        "exact": 1076,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1076,
+        "p05": 0,
+        "p95": 0
+      },
+      "queue:belief_minus_frozen_ms": {
+        "exact": 82,
+        "max": 0,
+        "mean": -12721815.441734418,
+        "mean_absolute": 12721815.441734418,
+        "median": -12288000,
+        "min": -100740000,
+        "n": 8118,
+        "p05": -26508000,
+        "p95": -840000
+      },
+      "queue:frozen_minus_actual_ms": {
+        "exact": 48,
+        "max": 0,
+        "mean": -9593777.777777778,
+        "mean_absolute": 9593777.777777778,
+        "median": 0,
+        "min": -57888000,
+        "n": 72,
+        "p05": -57888000,
+        "p95": 0
+      },
+      "route_arithmetic:fatigue_error_ms": {
+        "exact": 268212,
+        "max": 7164000,
+        "mean": -16449.785256739127,
+        "mean_absolute": 41796.11556558831,
+        "median": 0,
+        "min": -5760000,
+        "n": 272884,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:nutrition_error_ms": {
+        "exact": 267672,
+        "max": 6300000,
+        "mean": 36848.70984007857,
+        "mean_absolute": 36848.70984007857,
+        "median": 0,
+        "min": 0,
+        "n": 272884,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:ordering_error_ms": {
+        "exact": 260940,
+        "max": 28800000,
+        "mean": 244531.01877720936,
+        "mean_absolute": 325167.24615587573,
+        "median": 0,
+        "min": -6300000,
+        "n": 272884,
+        "p05": 0,
+        "p95": 0
+      },
+      "self_count:matched_traversal_delay_ms": {
+        "exact": 0,
+        "max": 7200000,
+        "mean": 7200000.0,
+        "mean_absolute": 7200000.0,
+        "median": 7200000,
+        "min": 7200000,
+        "n": 3320,
+        "p05": 7200000,
+        "p95": 7200000
+      },
+      "self_count:queue_delay_difference_ms": {
+        "exact": 0,
+        "max": 14400000,
+        "mean": 14400000.0,
+        "mean_absolute": 14400000.0,
+        "median": 14400000,
+        "min": 14400000,
+        "n": 1660,
+        "p05": 14400000,
+        "p95": 14400000
+      },
+      "self_count:total_forecast_difference_ms": {
+        "exact": 0,
+        "max": 28710000,
+        "mean": 23006466.795180723,
+        "mean_absolute": 23006466.795180723,
+        "median": 21945000,
+        "min": 16545000,
+        "n": 1660,
+        "p05": 18900000,
+        "p95": 28087320
+      }
+    },
+    "historical_hashes_match": true,
+    "kernel_samples": {
+      "belief_failure": {
+        "NONE": 8,
+        "NO_EDIBLE_CARGO": 47
+      },
+      "belief_success": 8,
+      "disagreement_examples": [
+        {
+          "agent": "0",
+          "belief_cargo": "5",
+          "belief_failure": "NONE",
+          "belief_ms": "57180000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "18120000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "151080000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "3",
+          "belief_failure": "NONE",
+          "belief_ms": "60900000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "21600000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "147600000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "3",
+          "belief_failure": "NONE",
+          "belief_ms": "53820000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "28860000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "140340000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "3",
+          "belief_failure": "NONE",
+          "belief_ms": "62880000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "97320000",
+          "truth_cargo": "0",
+          "truth_failure": "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable",
+          "truth_ms": "109934666"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "1",
+          "belief_failure": "NONE",
+          "belief_ms": "66420000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "100800000",
+          "truth_cargo": "0",
+          "truth_failure": "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable",
+          "truth_ms": "106412000"
+        },
+        {
+          "agent": "4",
+          "belief_cargo": "3",
+          "belief_failure": "NONE",
+          "belief_ms": "64500000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "25320000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "151080000"
+        },
+        {
+          "agent": "4",
+          "belief_cargo": "1",
+          "belief_failure": "NONE",
+          "belief_ms": "68100000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "28800000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "147600000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "2",
+          "belief_failure": "NONE",
+          "belief_ms": "67920000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "82920000",
+          "truth_cargo": "0",
+          "truth_failure": "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable",
+          "truth_ms": "144379999"
+        }
+      ],
+      "forecast_vs_frozen_truth": {
+        "CORRECT_INFEASIBLE": 47,
+        "FALSE_FEASIBLE": 8
+      },
+      "n": 55,
+      "shadow_exact": 55,
+      "truth_failure": {
+        "DEATH": 17,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 32,
+        "MEAL_UNAVAILABLE": 4,
+        "NO_EDIBLE_CARGO": 2
+      },
+      "truth_success": 0
+    },
+    "memory_age": {
+      "food_freshness": {
+        "0-2h": {
+          "exact": 46768,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 46768,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "n": 0
+        },
+        "2-6h": {
+          "exact": 960,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 960,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "exact": 720,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 720,
+          "p05": 0,
+          "p95": 0
+        }
+      },
+      "food_quantity": {
+        "0-2h": {
+          "exact": 46768,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 46768,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "n": 0
+        },
+        "2-6h": {
+          "exact": 0,
+          "max": 168,
+          "mean": 99.81666666666666,
+          "mean_absolute": 99.81666666666666,
+          "median": 76,
+          "min": 52,
+          "n": 960,
+          "p05": 76,
+          "p95": 168
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "exact": 0,
+          "max": 192,
+          "mean": 183.6,
+          "mean_absolute": 183.6,
+          "median": 192,
+          "min": 168,
+          "n": 720,
+          "p05": 168,
+          "p95": 192
+        }
+      },
+      "queue_same_bank": {
+        "0-2h": {
+          "exact": 167604,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 167604,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 30332,
+          "max": 46,
+          "mean": 5.706524822695036,
+          "mean_absolute": 7.66822695035461,
+          "median": 0,
+          "min": -26,
+          "n": 56400,
+          "p05": -4,
+          "p95": 34
+        },
+        "2-6h": {
+          "exact": 4488,
+          "max": 12,
+          "mean": 0.2816297355253753,
+          "mean_absolute": 5.316654753395282,
+          "median": 0,
+          "min": -46,
+          "n": 11192,
+          "p05": -8,
+          "p95": 8
+        },
+        "24h+": {
+          "exact": 91320,
+          "max": 46,
+          "mean": 12.474866743134742,
+          "mean_absolute": 12.88482558531813,
+          "median": 0,
+          "min": -22,
+          "n": 177852,
+          "p05": 0,
+          "p95": 46
+        },
+        "6-12h": {
+          "exact": 11296,
+          "max": 34,
+          "mean": 2.5448979591836736,
+          "mean_absolute": 6.986297376093295,
+          "median": 0,
+          "min": -38,
+          "n": 27440,
+          "p05": -14,
+          "p95": 20
+        }
+      },
+      "request": {
+        "0-2h": {
+          "exact": 55256,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 55256,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 16496,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 16496,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 3160,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 3160,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "exact": 69092,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 69092,
+          "p05": 0,
+          "p95": 0
+        },
+        "6-12h": {
+          "exact": 10432,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 10432,
+          "p05": 0,
+          "p95": 0
+        }
+      }
+    },
+    "outcomes": {
+      "event_hash": "8d5b93f05b6e7c8f",
+      "food_consumed": "1072",
+      "food_delivered": "0",
+      "jobs_accepted": "0",
+      "starvation_person_hours": "992.000000",
+      "state_hash": "3d88968286ee4c8f",
+      "survivors_36h": "24",
+      "survivors_48h": "24",
+      "survivors_72h": "24"
+    },
+    "pairs": 30,
+    "physical_plan_confusion": {
+      "CORRECT_FEASIBLE": 1076,
+      "CORRECT_INFEASIBLE": 13896
+    },
+    "plans": {
+      "classification": {
+        "PARTIAL_UNRESOLVED": 13816,
+        "POLICY_ACCEPTABLE_AND_SHADOW_FEASIBLE": 1076,
+        "POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 13896
+      },
+      "executable_belief_tapes_by_gate": {
+        "PASS": 1076
+      },
+      "primary_gate": {
+        "INSUFFICIENT_EXPECTED_QUANTITY": 1548,
+        "PASS": 1076,
+        "POST_PLAN_NUTRITION_MARGIN": 12216,
+        "SOURCE_PREDICTED_SPOILED": 13948
+      },
+      "shadow_failures": {
+        "NONE": 14892,
+        "NO_EDIBLE_CARGO": 13896
+      }
+    },
+    "route_feasibility": {
+      "CORRECT_FEASIBLE": 180716,
+      "CORRECT_INFEASIBLE": 6156
+    },
+    "self_count": {
+      "action_changed": 1044,
+      "affected": 1660,
+      "changed_legs": {
+        "to_source: edge=0 7200000->0|return: edge=0 7200000->0": 132,
+        "to_source: edge=1 14400000->7200000|return: edge=1 14400000->7200000": 528,
+        "to_source: edge=1 7200000->0|return: edge=1 7200000->0": 1000
+      },
+      "conditional_false_zero_witnesses": 988,
+      "gate_changed": 1072
+    },
+    "static_cases": 130,
+    "static_exact": 130,
+    "unmet_need": {
+      "ACCESS_IN_PROGRESS": 736,
+      "CAPACITY_BLOCKED": 956,
+      "SPOILED": 33496,
+      "UNKNOWN": 66694,
+      "UNRESOLVED": 1176
+    }
+  },
+  "known_source": {
+    "counts_seed0": {
+      "candidate:no_complete_sequence": 4316,
+      "candidates": 43678,
+      "decisions": 160612,
+      "episode:CAPACITY_COMPETITION": 5528,
+      "episode:MATCH": 32,
+      "episode:RISK_COMMITMENT_PREFERENCE": 1150,
+      "episode:UNAVAILABLE_INFORMATION": 4,
+      "episode:WORLD_CHANGED_AFTER_PREDICTION": 24,
+      "episode_status:Arrived": 60,
+      "episode_status:Died": 22,
+      "episode_status:Interrupted": 6656,
+      "need:ACCESS_IN_PROGRESS": 788,
+      "need:CAPACITY_BLOCKED": 23382,
+      "need:KNOWN_BUT_TOO_FAR": 31432,
+      "need:SPOILED": 37896,
+      "need:UNRESOLVED": 1812,
+      "plan:POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 31752,
+      "plan:RISK_COMMITMENT_PREFERENCE": 7610,
+      "plan:arithmetic_difference": 828,
+      "primitive:eat:COMPLETED:true": 468,
+      "primitive:gather:COMPLETED:true": 1456,
+      "primitive:sleep:CENSORED:false": 32,
+      "primitive:sleep:COMPLETED:true": 36904,
+      "route:queue_order_difference": 105766,
+      "route_feasibility:CORRECT_FEASIBLE": 208738,
+      "route_feasibility:CORRECT_INFEASIBLE": 33848,
+      "route_feasibility:FALSE_FEASIBLE": 23382
+    },
+    "episodes": {
+      "n": 6738,
+      "primary": {
+        "CAPACITY_COMPETITION": 6620,
+        "MATCH": 32,
+        "MATCH_PREDICTED_DEATH": 4,
+        "UNAVAILABLE_INFORMATION": 4,
+        "WORLD_CHANGED_AFTER_PREDICTION": 78
+      },
+      "status": {
+        "Arrived": 60,
+        "Died": 22,
+        "Interrupted": 6656
+      }
+    },
+    "errors": {
+      "actual_primitive:eat:cargo_error": {
+        "exact": 468,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 468,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:fatigue_error_ms": {
+        "exact": 468,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 468,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:nutrition_error_ms": {
+        "exact": 468,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 468,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:time_error_ms": {
+        "exact": 468,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 468,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:cargo_error": {
+        "exact": 1456,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1456,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:fatigue_error_ms": {
+        "exact": 1456,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1456,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:nutrition_error_ms": {
+        "exact": 1456,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1456,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:time_error_ms": {
+        "exact": 1456,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1456,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:cargo_error": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:fatigue_error_ms": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:nutrition_error_ms": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:time_error_ms": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_travel:fatigue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -12952533.333333334,
+        "mean_absolute": 12952533.333333334,
+        "median": 0,
+        "min": -64800000,
+        "n": 60,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:nutrition_error_ms": {
+        "exact": 36,
+        "max": 36000000,
+        "mean": 10053333.333333334,
+        "mean_absolute": 10053333.333333334,
+        "median": 0,
+        "min": 0,
+        "n": 60,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_fatigue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -12952533.333333334,
+        "mean_absolute": 12952533.333333334,
+        "median": 0,
+        "min": -64800000,
+        "n": 60,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:policy_nutrition_error_ms": {
+        "exact": 36,
+        "max": 36000000,
+        "mean": 10053333.333333334,
+        "mean_absolute": 10053333.333333334,
+        "median": 0,
+        "min": 0,
+        "n": 60,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_time_error_ms": {
+        "exact": 32,
+        "max": 0,
+        "mean": -13934933.333333334,
+        "mean_absolute": 13934933.333333334,
+        "median": 0,
+        "min": -79488000,
+        "n": 60,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "actual_travel:queue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -10163764.705882354,
+        "mean_absolute": 10163764.705882354,
+        "median": 0,
+        "min": -57888000,
+        "n": 68,
+        "p05": -57888000,
+        "p95": 0
+      },
+      "actual_travel:time_error_ms": {
+        "exact": 32,
+        "max": 0,
+        "mean": -13934933.333333334,
+        "mean_absolute": 13934933.333333334,
+        "median": 0,
+        "min": -79488000,
+        "n": 60,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "claimed_feasible_plan:cargo_error": {
+        "exact": 7610,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 7610,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:elapsed_error_ms": {
+        "exact": 6782,
+        "max": 0,
+        "mean": -0.44152431011826543,
+        "mean_absolute": 0.44152431011826543,
+        "median": 0,
+        "min": -15,
+        "n": 7610,
+        "p05": -3,
+        "p95": 0
+      },
+      "claimed_feasible_plan:fatigue_error_ms": {
+        "exact": 7610,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 7610,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:nutrition_error_ms": {
+        "exact": 7474,
+        "max": 6,
+        "mean": 0.04204993429697766,
+        "mean_absolute": 0.04204993429697766,
+        "median": 0,
+        "min": 0,
+        "n": 7610,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:cargo_error": {
+        "exact": 7610,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 7610,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:elapsed_error_ms": {
+        "exact": 6782,
+        "max": 0,
+        "mean": -0.44152431011826543,
+        "mean_absolute": 0.44152431011826543,
+        "median": 0,
+        "min": -15,
+        "n": 7610,
+        "p05": -3,
+        "p95": 0
+      },
+      "conditional_complete_plan:fatigue_error_ms": {
+        "exact": 7610,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 7610,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:nutrition_error_ms": {
+        "exact": 7474,
+        "max": 6,
+        "mean": 0.04204993429697766,
+        "mean_absolute": 0.04204993429697766,
+        "median": 0,
+        "min": 0,
+        "n": 7610,
+        "p05": 0,
+        "p95": 0
+      },
+      "queue:belief_minus_frozen_ms": {
+        "exact": 82,
+        "max": 0,
+        "mean": -12523668.437832093,
+        "mean_absolute": 12523668.437832093,
+        "median": -12288000,
+        "min": -28668000,
+        "n": 5646,
+        "p05": -25968000,
+        "p95": -948000
+      },
+      "queue:frozen_minus_actual_ms": {
+        "exact": 44,
+        "max": 0,
+        "mean": -10158117.647058824,
+        "mean_absolute": 10158117.647058824,
+        "median": 0,
+        "min": -57888000,
+        "n": 68,
+        "p05": -57888000,
+        "p95": 0
+      },
+      "route_arithmetic:fatigue_error_ms": {
+        "exact": 422732,
+        "max": 7200000,
+        "mean": 28626.68519283488,
+        "mean_absolute": 28626.68519283488,
+        "median": 0,
+        "min": 0,
+        "n": 426064,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:nutrition_error_ms": {
+        "exact": 426064,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 426064,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:ordering_error_ms": {
+        "exact": 320298,
+        "max": 50340000,
+        "mean": 2022359.5367456533,
+        "mean_absolute": 4532380.971722558,
+        "median": 0,
+        "min": -21600000,
+        "n": 426064,
+        "p05": -18800000,
+        "p95": 28620000
+      }
+    },
+    "historical_hashes_match": true,
+    "kernel_samples": {
+      "belief_failure": {
+        "DEATH": 7,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 28,
+        "NONE": 13,
+        "NO_EDIBLE_CARGO": 20
+      },
+      "belief_success": 13,
+      "disagreement_examples": [
+        {
+          "agent": "0",
+          "belief_cargo": "10",
+          "belief_failure": "NONE",
+          "belief_ms": "73412020",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "14700000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "132900000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "83264007",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "18000000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "129600000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "68432005",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "21600000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "147600000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "79232000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "25200000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "144000000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "90032000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "28800000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "140400000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "99392000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "32400000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "136800000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "108752000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "36000000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "133200000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "118112000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "39600000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "129600000"
+        }
+      ],
+      "forecast_vs_frozen_truth": {
+        "CORRECT_FEASIBLE": 1,
+        "CORRECT_INFEASIBLE": 55,
+        "FALSE_FEASIBLE": 12
+      },
+      "n": 68,
+      "shadow_exact": 68,
+      "truth_failure": {
+        "DEATH": 21,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 46,
+        "NONE": 1
+      },
+      "truth_success": 1
+    },
+    "memory_age": {
+      "food_freshness": {
+        "0-2h": {
+          "exact": 63264,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 63264,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 17152,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 17152,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 10096,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 10096,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "exact": 13852,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 13852,
+          "p05": 0,
+          "p95": 0
+        },
+        "6-12h": {
+          "exact": 11908,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 11908,
+          "p05": 0,
+          "p95": 0
+        }
+      },
+      "food_quantity": {
+        "0-2h": {
+          "exact": 63264,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 63264,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 0,
+          "max": 592,
+          "mean": 457.9500932835821,
+          "mean_absolute": 457.9500932835821,
+          "median": 472,
+          "min": 228,
+          "n": 17152,
+          "p05": 288,
+          "p95": 592
+        },
+        "2-6h": {
+          "exact": 7854,
+          "max": 44,
+          "mean": 9.16877971473851,
+          "mean_absolute": 9.16877971473851,
+          "median": 0,
+          "min": 0,
+          "n": 10096,
+          "p05": 0,
+          "p95": 44
+        },
+        "24h+": {
+          "exact": 0,
+          "max": 1120,
+          "mean": 848.678024833959,
+          "mean_absolute": 848.678024833959,
+          "median": 868,
+          "min": 592,
+          "n": 13852,
+          "p05": 640,
+          "p95": 1120
+        },
+        "6-12h": {
+          "exact": 0,
+          "max": 228,
+          "mean": 152.2190124286194,
+          "mean_absolute": 152.2190124286194,
+          "median": 144,
+          "min": 44,
+          "n": 11908,
+          "p05": 68,
+          "p95": 228
+        }
+      },
+      "queue_same_bank": {
+        "0-2h": {
+          "exact": 163892,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 163892,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 63424,
+          "max": 46,
+          "mean": 4.556473309104639,
+          "mean_absolute": 5.919950913295889,
+          "median": 0,
+          "min": -26,
+          "n": 84748,
+          "p05": 0,
+          "p95": 30
+        },
+        "2-6h": {
+          "exact": 18600,
+          "max": 12,
+          "mean": -0.3114947038054139,
+          "mean_absolute": 1.750490388387603,
+          "median": 0,
+          "min": -46,
+          "n": 20392,
+          "p05": 0,
+          "p95": 12
+        },
+        "24h+": {
+          "exact": 159672,
+          "max": 46,
+          "mean": 9.629387842465754,
+          "mean_absolute": 9.92248144977169,
+          "median": 0,
+          "min": -22,
+          "n": 224256,
+          "p05": 0,
+          "p95": 42
+        },
+        "6-12h": {
+          "exact": 31284,
+          "max": 34,
+          "mean": 0.9126474849927552,
+          "mean_absolute": 3.519975160422273,
+          "median": 0,
+          "min": -38,
+          "n": 38648,
+          "p05": 0,
+          "p95": 16
+        }
+      },
+      "request": {
+        "0-2h": {
+          "exact": 55256,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 55256,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 21804,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 21804,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 1792,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 1792,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "exact": 74236,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 74236,
+          "p05": 0,
+          "p95": 0
+        },
+        "6-12h": {
+          "exact": 7524,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 7524,
+          "p05": 0,
+          "p95": 0
+        }
+      }
+    },
+    "outcomes": {
+      "event_hash": "b5bead60d9e8bedf",
+      "food_consumed": "1288",
+      "food_delivered": "0",
+      "jobs_accepted": "0",
+      "starvation_person_hours": "920.000000",
+      "state_hash": "90ba5b34bcb61c59",
+      "survivors_36h": "28",
+      "survivors_48h": "28",
+      "survivors_72h": "28"
+    },
+    "pairs": 30,
+    "physical_plan_confusion": {
+      "CORRECT_FEASIBLE": 7610,
+      "CORRECT_INFEASIBLE": 31752
+    },
+    "plans": {
+      "classification": {
+        "POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 31752,
+        "RISK_COMMITMENT_PREFERENCE": 7610
+      },
+      "executable_belief_tapes_by_gate": {
+        "POST_PLAN_NUTRITION_MARGIN": 7610
+      },
+      "primary_gate": {
+        "CANNOT_COMPLETE_PLAN_ALIVE": 2692,
+        "POST_PLAN_NUTRITION_MARGIN": 36670
+      },
+      "shadow_failures": {
+        "DEATH": 1124,
+        "NONE": 7610,
+        "NO_EDIBLE_CARGO": 11760,
+        "SPOILED": 18868
+      }
+    },
+    "route_feasibility": {
+      "CORRECT_FEASIBLE": 208738,
+      "CORRECT_INFEASIBLE": 33848,
+      "FALSE_FEASIBLE": 23382
+    },
+    "self_count": {
+      "action_changed": 0,
+      "affected": 0,
+      "changed_legs": {},
+      "gate_changed": 0
+    },
+    "static_cases": 130,
+    "static_exact": 130,
+    "unmet_need": {
+      "ACCESS_IN_PROGRESS": 788,
+      "CAPACITY_BLOCKED": 23382,
+      "KNOWN_BUT_TOO_FAR": 31432,
+      "SPOILED": 37896,
+      "UNRESOLVED": 1812
+    }
+  },
+  "reactive": {
+    "counts_seed0": {
+      "candidate:no_complete_sequence": 20344,
+      "candidates": 41500,
+      "decisions": 151176,
+      "episode:CAPACITY_COMPETITION": 6084,
+      "episode:MATCH": 16,
+      "episode:RISK_COMMITMENT_PREFERENCE": 4490,
+      "episode:UNAVAILABLE_INFORMATION": 20,
+      "episode:WORLD_CHANGED_AFTER_PREDICTION": 32,
+      "episode_status:Arrived": 68,
+      "episode_status:Died": 22,
+      "episode_status:Interrupted": 10552,
+      "need:ACCESS_IN_PROGRESS": 744,
+      "need:CAPACITY_BLOCKED": 3352,
+      "need:SPOILED": 30540,
+      "need:UNKNOWN": 70146,
+      "need:UNRESOLVED": 3984,
+      "plan:PARTIAL_UNRESOLVED": 11492,
+      "plan:POLICY_ACCEPTABLE_AND_SHADOW_FEASIBLE": 92,
+      "plan:POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 9572,
+      "primitive:eat:COMPLETED:true": 420,
+      "primitive:gather:COMPLETED:true": 1020,
+      "primitive:sleep:CENSORED:false": 2244,
+      "primitive:sleep:CENSORED:true": 8,
+      "primitive:sleep:COMPLETED:true": 30064,
+      "route:queue_order_difference": 29620,
+      "route_feasibility:CORRECT_FEASIBLE": 168968,
+      "route_feasibility:CORRECT_INFEASIBLE": 7932,
+      "self_count:affected_candidate": 7236,
+      "self_count:gate_changed": 2028,
+      "self_count:reactive_action_changed": 72
+    },
+    "episodes": {
+      "n": 10642,
+      "primary": {
+        "CAPACITY_COMPETITION": 10432,
+        "MATCH": 16,
+        "RISK_COMMITMENT_PREFERENCE": 84,
+        "UNAVAILABLE_INFORMATION": 20,
+        "WORLD_CHANGED_AFTER_PREDICTION": 90
+      },
+      "status": {
+        "Arrived": 68,
+        "Died": 22,
+        "Interrupted": 10552
+      }
+    },
+    "errors": {
+      "actual_primitive:eat:cargo_error": {
+        "exact": 420,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 420,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:fatigue_error_ms": {
+        "exact": 420,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 420,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:nutrition_error_ms": {
+        "exact": 420,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 420,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:time_error_ms": {
+        "exact": 420,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 420,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:cargo_error": {
+        "exact": 1020,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1020,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:fatigue_error_ms": {
+        "exact": 1020,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1020,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:nutrition_error_ms": {
+        "exact": 1020,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1020,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:time_error_ms": {
+        "exact": 1020,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1020,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:cargo_error": {
+        "exact": 30064,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 30064,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:fatigue_error_ms": {
+        "exact": 30064,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 30064,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:nutrition_error_ms": {
+        "exact": 30064,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 30064,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:time_error_ms": {
+        "exact": 30064,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 30064,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_travel:fatigue_error_ms": {
+        "exact": 20,
+        "max": 0,
+        "mean": -17298261.411764707,
+        "mean_absolute": 17298261.411764707,
+        "median": -14184444,
+        "min": -64800000,
+        "n": 68,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:nutrition_error_ms": {
+        "exact": 24,
+        "max": 36000000,
+        "mean": 10726026.11764706,
+        "mean_absolute": 10726026.11764706,
+        "median": 3840000,
+        "min": 0,
+        "n": 68,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_fatigue_error_ms": {
+        "exact": 20,
+        "max": 0,
+        "mean": -17488849.647058822,
+        "mean_absolute": 17488849.647058822,
+        "median": -14184444,
+        "min": -64800000,
+        "n": 68,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:policy_nutrition_error_ms": {
+        "exact": 24,
+        "max": 36000000,
+        "mean": 10758967.294117646,
+        "mean_absolute": 10758967.294117646,
+        "median": 4400000,
+        "min": 0,
+        "n": 68,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_time_error_ms": {
+        "exact": 16,
+        "max": 0,
+        "mean": -18355673.17647059,
+        "mean_absolute": 18355673.17647059,
+        "median": -14184444,
+        "min": -79488000,
+        "n": 68,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "actual_travel:queue_error_ms": {
+        "exact": 16,
+        "max": 0,
+        "mean": -13225333.333333334,
+        "mean_absolute": 13225333.333333334,
+        "median": -10140000,
+        "min": -57888000,
+        "n": 72,
+        "p05": -57888000,
+        "p95": 0
+      },
+      "actual_travel:time_error_ms": {
+        "exact": 16,
+        "max": 0,
+        "mean": -18165084.94117647,
+        "mean_absolute": 18165084.94117647,
+        "median": -14184444,
+        "min": -79488000,
+        "n": 68,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "claimed_feasible_plan:cargo_error": {
+        "exact": 92,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 92,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:elapsed_error_ms": {
+        "exact": 92,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 92,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:fatigue_error_ms": {
+        "exact": 92,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 92,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:nutrition_error_ms": {
+        "exact": 92,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 92,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:cargo_error": {
+        "exact": 92,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 92,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:elapsed_error_ms": {
+        "exact": 92,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 92,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:fatigue_error_ms": {
+        "exact": 92,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 92,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:nutrition_error_ms": {
+        "exact": 92,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 92,
+        "p05": 0,
+        "p95": 0
+      },
+      "queue:belief_minus_frozen_ms": {
+        "exact": 66,
+        "max": 0,
+        "mean": -12809083.356847791,
+        "mean_absolute": 12809083.356847791,
+        "median": -12468000,
+        "min": -100740000,
+        "n": 6294,
+        "p05": -26688000,
+        "p95": -948000
+      },
+      "queue:frozen_minus_actual_ms": {
+        "exact": 40,
+        "max": 28800000,
+        "mean": -7085777.777777778,
+        "mean_absolute": 12101777.777777778,
+        "median": 0,
+        "min": -57888000,
+        "n": 72,
+        "p05": -57888000,
+        "p95": 28800000
+      },
+      "route_arithmetic:fatigue_error_ms": {
+        "exact": 234060,
+        "max": 7200000,
+        "mean": -103180.83985696337,
+        "mean_absolute": 163975.27302599789,
+        "median": 0,
+        "min": -13450000,
+        "n": 248328,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:nutrition_error_ms": {
+        "exact": 231360,
+        "max": 8400000,
+        "mean": 120948.60308946233,
+        "mean_absolute": 120948.60308946233,
+        "median": 0,
+        "min": 0,
+        "n": 248328,
+        "p05": 0,
+        "p95": 683200
+      },
+      "route_arithmetic:ordering_error_ms": {
+        "exact": 218708,
+        "max": 28800000,
+        "mean": 239571.30569247124,
+        "mean_absolute": 699446.6383170645,
+        "median": 0,
+        "min": -18132000,
+        "n": 248328,
+        "p05": -1427200,
+        "p95": 0
+      },
+      "self_count:matched_traversal_delay_ms": {
+        "exact": 0,
+        "max": 7200000,
+        "mean": 7200000.0,
+        "mean_absolute": 7200000.0,
+        "median": 7200000,
+        "min": 7200000,
+        "n": 13888,
+        "p05": 7200000,
+        "p95": 7200000
+      },
+      "self_count:queue_delay_difference_ms": {
+        "exact": 0,
+        "max": 14400000,
+        "mean": 13818905.472636815,
+        "mean_absolute": 13818905.472636815,
+        "median": 14400000,
+        "min": 7200000,
+        "n": 7236,
+        "p05": 7200000,
+        "p95": 14400000
+      },
+      "self_count:total_forecast_difference_ms": {
+        "exact": 0,
+        "max": 32640000,
+        "mean": 19736743.807628524,
+        "mean_absolute": 21571166.140409067,
+        "median": 20745000,
+        "min": -25704000,
+        "n": 7236,
+        "p05": 8732000,
+        "p95": 29664000
+      }
+    },
+    "historical_hashes_match": true,
+    "kernel_samples": {
+      "belief_failure": {
+        "NONE": 5,
+        "NO_EDIBLE_CARGO": 41
+      },
+      "belief_success": 5,
+      "disagreement_examples": [
+        {
+          "agent": "0",
+          "belief_cargo": "5",
+          "belief_failure": "NONE",
+          "belief_ms": "57180000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "18120000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "151080000"
+        },
+        {
+          "agent": "0",
+          "belief_cargo": "3",
+          "belief_failure": "NONE",
+          "belief_ms": "53520000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "28860000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "140340000"
+        },
+        {
+          "agent": "4",
+          "belief_cargo": "3",
+          "belief_failure": "NONE",
+          "belief_ms": "64500000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "25320000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "151080000"
+        },
+        {
+          "agent": "8",
+          "belief_cargo": "2",
+          "belief_failure": "NONE",
+          "belief_ms": "67920000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "82920000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "151080000"
+        },
+        {
+          "agent": "12",
+          "belief_cargo": "2",
+          "belief_failure": "NONE",
+          "belief_ms": "67200000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "104520000",
+          "truth_cargo": "0",
+          "truth_failure": "MEAL_UNAVAILABLE",
+          "truth_ms": "104596000"
+        }
+      ],
+      "forecast_vs_frozen_truth": {
+        "CORRECT_INFEASIBLE": 41,
+        "FALSE_FEASIBLE": 5
+      },
+      "n": 46,
+      "shadow_exact": 46,
+      "truth_failure": {
+        "DEATH": 23,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 12,
+        "MEAL_UNAVAILABLE": 11
+      },
+      "truth_success": 0
+    },
+    "memory_age": {
+      "food_freshness": {
+        "0-2h": {
+          "exact": 35284,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 35284,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 4856,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 4856,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 1816,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 1816,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "exact": 2880,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 2880,
+          "p05": 0,
+          "p95": 0
+        }
+      },
+      "food_quantity": {
+        "0-2h": {
+          "exact": 35284,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 35284,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 0,
+          "max": 404,
+          "mean": 288.74135090609553,
+          "mean_absolute": 288.74135090609553,
+          "median": 276,
+          "min": 192,
+          "n": 4856,
+          "p05": 192,
+          "p95": 404
+        },
+        "2-6h": {
+          "exact": 0,
+          "max": 168,
+          "mean": 96.42290748898678,
+          "mean_absolute": 96.42290748898678,
+          "median": 92,
+          "min": 76,
+          "n": 1816,
+          "p05": 76,
+          "p95": 168
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "exact": 0,
+          "max": 200,
+          "mean": 154.51666666666668,
+          "mean_absolute": 154.51666666666668,
+          "median": 168,
+          "min": 92,
+          "n": 2880,
+          "p05": 116,
+          "p95": 200
+        }
+      },
+      "queue_same_bank": {
+        "0-2h": {
+          "exact": 175668,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 175668,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 25940,
+          "max": 46,
+          "mean": 7.059631803628602,
+          "mean_absolute": 9.810965848452508,
+          "median": 0,
+          "min": -26,
+          "n": 59968,
+          "p05": -12,
+          "p95": 34
+        },
+        "2-6h": {
+          "exact": 3576,
+          "max": 12,
+          "mean": -0.03923047906450396,
+          "mean_absolute": 6.089777442474538,
+          "median": 0,
+          "min": -46,
+          "n": 10604,
+          "p05": -38,
+          "p95": 12
+        },
+        "24h+": {
+          "exact": 63348,
+          "max": 46,
+          "mean": 15.112865337339525,
+          "mean_absolute": 15.412564872985524,
+          "median": 4,
+          "min": -22,
+          "n": 146440,
+          "p05": 0,
+          "p95": 46
+        },
+        "6-12h": {
+          "exact": 10076,
+          "max": 34,
+          "mean": 3.837527142674671,
+          "mean_absolute": 8.11342444756674,
+          "median": 4,
+          "min": -38,
+          "n": 31316,
+          "p05": -14,
+          "p95": 16
+        }
+      },
+      "request": {
+        "0-2h": {
+          "exact": 55256,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 55256,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 20080,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 20080,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 3500,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 3500,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "exact": 62840,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 62840,
+          "p05": 0,
+          "p95": 0
+        },
+        "6-12h": {
+          "exact": 9500,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 9500,
+          "p05": 0,
+          "p95": 0
+        }
+      }
+    },
+    "outcomes": {
+      "event_hash": "00b2d22978a370eb",
+      "food_consumed": "900",
+      "food_delivered": "0",
+      "jobs_accepted": "0",
+      "starvation_person_hours": "1020.000000",
+      "state_hash": "98c779b899d8487d",
+      "survivors_36h": "20",
+      "survivors_48h": "20",
+      "survivors_72h": "20"
+    },
+    "pairs": 30,
+    "physical_plan_confusion": {
+      "CORRECT_FEASIBLE": 92,
+      "CORRECT_INFEASIBLE": 9572
+    },
+    "plans": {
+      "classification": {
+        "PARTIAL_UNRESOLVED": 11492,
+        "POLICY_ACCEPTABLE_AND_SHADOW_FEASIBLE": 92,
+        "POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 9572
+      },
+      "executable_belief_tapes_by_gate": {
+        "PASS": 92
+      },
+      "primary_gate": {
+        "INSUFFICIENT_EXPECTED_QUANTITY": 496,
+        "PASS": 92,
+        "POST_PLAN_NUTRITION_MARGIN": 9076,
+        "SOURCE_PREDICTED_SPOILED": 11492
+      },
+      "shadow_failures": {
+        "NONE": 11584,
+        "NO_EDIBLE_CARGO": 9572
+      }
+    },
+    "route_feasibility": {
+      "CORRECT_FEASIBLE": 168968,
+      "CORRECT_INFEASIBLE": 7932
+    },
+    "self_count": {
+      "action_changed": 72,
+      "affected": 7236,
+      "changed_legs": {
+        "to_source: edge=0 7200000->0|return: edge=0 7200000->0": 716,
+        "to_source: edge=1 14400000->7200000|return: edge=1 14400000->7200000": 76,
+        "to_source: edge=1 21600000->14400000|return: edge=1 21600000->14400000": 1816,
+        "to_source: edge=1 28800000->21600000|return: edge=1 28800000->21600000": 684,
+        "to_source: edge=1 7200000->0": 584,
+        "to_source: edge=1 7200000->0|return: edge=1 7200000->0": 3360
+      },
+      "conditional_false_zero_witnesses": 756,
+      "gate_changed": 2028
+    },
+    "static_cases": 130,
+    "static_exact": 130,
+    "unmet_need": {
+      "ACCESS_IN_PROGRESS": 744,
+      "CAPACITY_BLOCKED": 3352,
+      "SPOILED": 30540,
+      "UNKNOWN": 70146,
+      "UNRESOLVED": 3984
+    }
+  },
+  "reference": {
+    "counts_seed0": {
+      "candidate:no_complete_sequence": 7546,
+      "candidates": 24390,
+      "decisions": 161788,
+      "episode:CAPACITY_COMPETITION": 5528,
+      "episode:MATCH": 32,
+      "episode:RISK_COMMITMENT_PREFERENCE": 1150,
+      "episode:UNAVAILABLE_INFORMATION": 4,
+      "episode:WORLD_CHANGED_AFTER_PREDICTION": 24,
+      "episode_status:Arrived": 60,
+      "episode_status:Died": 22,
+      "episode_status:Interrupted": 6656,
+      "need:ACCESS_IN_PROGRESS": 776,
+      "need:SPOILED": 40404,
+      "need:UNKNOWN": 56206,
+      "need:UNRESOLVED": 908,
+      "plan:POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 15476,
+      "plan:RISK_COMMITMENT_PREFERENCE": 1368,
+      "plan:arithmetic_difference": 148,
+      "primitive:eat:COMPLETED:true": 464,
+      "primitive:gather:COMPLETED:true": 1432,
+      "primitive:sleep:CENSORED:false": 32,
+      "primitive:sleep:COMPLETED:true": 36904,
+      "route:queue_order_difference": 3976,
+      "route_feasibility:CORRECT_FEASIBLE": 208084,
+      "route_feasibility:CORRECT_INFEASIBLE": 3980
+    },
+    "episodes": {
+      "n": 6738,
+      "primary": {
+        "CAPACITY_COMPETITION": 6620,
+        "MATCH": 32,
+        "MATCH_PREDICTED_DEATH": 4,
+        "UNAVAILABLE_INFORMATION": 4,
+        "WORLD_CHANGED_AFTER_PREDICTION": 78
+      },
+      "status": {
+        "Arrived": 60,
+        "Died": 22,
+        "Interrupted": 6656
+      }
+    },
+    "errors": {
+      "actual_primitive:eat:cargo_error": {
+        "exact": 464,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 464,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:fatigue_error_ms": {
+        "exact": 464,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 464,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:nutrition_error_ms": {
+        "exact": 464,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 464,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:eat:time_error_ms": {
+        "exact": 464,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 464,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:cargo_error": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:fatigue_error_ms": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:nutrition_error_ms": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:gather:time_error_ms": {
+        "exact": 1432,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1432,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:cargo_error": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:fatigue_error_ms": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:nutrition_error_ms": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:time_error_ms": {
+        "exact": 36904,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 36904,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_travel:fatigue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -12952533.333333334,
+        "mean_absolute": 12952533.333333334,
+        "median": 0,
+        "min": -64800000,
+        "n": 60,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:nutrition_error_ms": {
+        "exact": 36,
+        "max": 36000000,
+        "mean": 10053333.333333334,
+        "mean_absolute": 10053333.333333334,
+        "median": 0,
+        "min": 0,
+        "n": 60,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_fatigue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -12952533.333333334,
+        "mean_absolute": 12952533.333333334,
+        "median": 0,
+        "min": -64800000,
+        "n": 60,
+        "p05": -64800000,
+        "p95": 0
+      },
+      "actual_travel:policy_nutrition_error_ms": {
+        "exact": 36,
+        "max": 36000000,
+        "mean": 10053333.333333334,
+        "mean_absolute": 10053333.333333334,
+        "median": 0,
+        "min": 0,
+        "n": 60,
+        "p05": 0,
+        "p95": 36000000
+      },
+      "actual_travel:policy_time_error_ms": {
+        "exact": 32,
+        "max": 0,
+        "mean": -13934933.333333334,
+        "mean_absolute": 13934933.333333334,
+        "median": 0,
+        "min": -79488000,
+        "n": 60,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "actual_travel:queue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -10163764.705882354,
+        "mean_absolute": 10163764.705882354,
+        "median": 0,
+        "min": -57888000,
+        "n": 68,
+        "p05": -57888000,
+        "p95": 0
+      },
+      "actual_travel:time_error_ms": {
+        "exact": 32,
+        "max": 0,
+        "mean": -13934933.333333334,
+        "mean_absolute": 13934933.333333334,
+        "median": 0,
+        "min": -79488000,
+        "n": 60,
+        "p05": -79488000,
+        "p95": 0
+      },
+      "claimed_feasible_plan:cargo_error": {
+        "exact": 1368,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1368,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:elapsed_error_ms": {
+        "exact": 1220,
+        "max": 0,
+        "mean": -0.39766081871345027,
+        "mean_absolute": 0.39766081871345027,
+        "median": 0,
+        "min": -10,
+        "n": 1368,
+        "p05": -3,
+        "p95": 0
+      },
+      "claimed_feasible_plan:fatigue_error_ms": {
+        "exact": 1368,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1368,
+        "p05": 0,
+        "p95": 0
+      },
+      "claimed_feasible_plan:nutrition_error_ms": {
+        "exact": 1368,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1368,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:cargo_error": {
+        "exact": 1368,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1368,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:elapsed_error_ms": {
+        "exact": 1220,
+        "max": 0,
+        "mean": -0.39766081871345027,
+        "mean_absolute": 0.39766081871345027,
+        "median": 0,
+        "min": -10,
+        "n": 1368,
+        "p05": -3,
+        "p95": 0
+      },
+      "conditional_complete_plan:fatigue_error_ms": {
+        "exact": 1368,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1368,
+        "p05": 0,
+        "p95": 0
+      },
+      "conditional_complete_plan:nutrition_error_ms": {
+        "exact": 1368,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 1368,
+        "p05": 0,
+        "p95": 0
+      },
+      "queue:belief_minus_frozen_ms": {
+        "exact": 82,
+        "max": 0,
+        "mean": -12523668.437832093,
+        "mean_absolute": 12523668.437832093,
+        "median": -12288000,
+        "min": -28668000,
+        "n": 5646,
+        "p05": -25968000,
+        "p95": -948000
+      },
+      "queue:frozen_minus_actual_ms": {
+        "exact": 44,
+        "max": 0,
+        "mean": -10158117.647058824,
+        "mean_absolute": 10158117.647058824,
+        "median": 0,
+        "min": -57888000,
+        "n": 68,
+        "p05": -57888000,
+        "p95": 0
+      },
+      "route_arithmetic:fatigue_error_ms": {
+        "exact": 317596,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 317596,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:nutrition_error_ms": {
+        "exact": 317596,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 317596,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:ordering_error_ms": {
+        "exact": 313620,
+        "max": 28800000,
+        "mean": 97257.7740273807,
+        "mean_absolute": 97257.7740273807,
+        "median": 0,
+        "min": 0,
+        "n": 317596,
+        "p05": 0,
+        "p95": 0
+      }
+    },
+    "historical_hashes_match": true,
+    "kernel_samples": {
+      "belief_failure": {
+        "DEATH": 3,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 21,
+        "NONE": 6,
+        "NO_EDIBLE_CARGO": 11
+      },
+      "belief_success": 6,
+      "disagreement_examples": [
+        {
+          "agent": "12",
+          "belief_cargo": "10",
+          "belief_failure": "NONE",
+          "belief_ms": "119552000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "41520000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "131280000"
+        },
+        {
+          "agent": "12",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "123872000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "43200000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "129600000"
+        },
+        {
+          "agent": "12",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "109472000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "46800000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "147600000"
+        },
+        {
+          "agent": "12",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "116672000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "50400000",
+          "truth_cargo": "0",
+          "truth_failure": "DEATH",
+          "truth_ms": "144000000"
+        },
+        {
+          "agent": "16",
+          "belief_cargo": "10",
+          "belief_failure": "NONE",
+          "belief_ms": "78264000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "83160000",
+          "truth_cargo": "0",
+          "truth_failure": "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable",
+          "truth_ms": "121862400"
+        },
+        {
+          "agent": "12",
+          "belief_cargo": "4",
+          "belief_failure": "NONE",
+          "belief_ms": "75992000",
+          "candidate": "0",
+          "classification": "FALSE_FEASIBLE",
+          "interpretation": "HIDDEN_STATE_OR_CAPACITY",
+          "shadow_kernel_exact": "true",
+          "time_ms": "90000000",
+          "truth_cargo": "0",
+          "truth_failure": "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable",
+          "truth_ms": "113040000"
+        }
+      ],
+      "forecast_vs_frozen_truth": {
+        "CORRECT_INFEASIBLE": 35,
+        "FALSE_FEASIBLE": 6
+      },
+      "n": 41,
+      "shadow_exact": 41,
+      "truth_failure": {
+        "DEATH": 10,
+        "Gather { batch: 0; communal: true }: gather inputs/capacity unavailable": 31
+      },
+      "truth_success": 0
+    },
+    "memory_age": {
+      "food_freshness": {
+        "0-2h": {
+          "exact": 60240,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 60240,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "n": 0
+        },
+        "2-6h": {
+          "n": 0
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "n": 0
+        }
+      },
+      "food_quantity": {
+        "0-2h": {
+          "exact": 60240,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 60240,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "n": 0
+        },
+        "2-6h": {
+          "n": 0
+        },
+        "24h+": {
+          "n": 0
+        },
+        "6-12h": {
+          "n": 0
+        }
+      },
+      "queue_same_bank": {
+        "0-2h": {
+          "exact": 162788,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 162788,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 46232,
+          "max": 46,
+          "mean": 5.61202218379152,
+          "mean_absolute": 7.334724789790685,
+          "median": 0,
+          "min": -26,
+          "n": 67076,
+          "p05": 0,
+          "p95": 34
+        },
+        "2-6h": {
+          "exact": 8504,
+          "max": 12,
+          "mean": -0.616938616938617,
+          "mean_absolute": 3.466977466977467,
+          "median": 0,
+          "min": -46,
+          "n": 10296,
+          "p05": -38,
+          "p95": 12
+        },
+        "24h+": {
+          "exact": 147244,
+          "max": 46,
+          "mean": 10.28131455399061,
+          "mean_absolute": 10.589896713615023,
+          "median": 0,
+          "min": -22,
+          "n": 213000,
+          "p05": 0,
+          "p95": 42
+        },
+        "6-12h": {
+          "exact": 19376,
+          "max": 34,
+          "mean": 1.543637966500147,
+          "mean_absolute": 5.245077872465472,
+          "median": 0,
+          "min": -38,
+          "n": 27224,
+          "p05": -26,
+          "p95": 16
+        }
+      },
+      "request": {
+        "0-2h": {
+          "exact": 55256,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 55256,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 0,
+          "max": 192,
+          "mean": -52.49746764209342,
+          "mean_absolute": 170.32751828925154,
+          "median": 12,
+          "min": -312,
+          "n": 21324,
+          "p05": -312,
+          "p95": 144
+        },
+        "2-6h": {
+          "exact": 16,
+          "max": 48,
+          "mean": -222.88839285714286,
+          "mean_absolute": 223.10267857142858,
+          "median": -238,
+          "min": -306,
+          "n": 1792,
+          "p05": -300,
+          "p95": -84
+        },
+        "24h+": {
+          "exact": 0,
+          "max": 192,
+          "mean": -2.0681094844048378,
+          "mean_absolute": 152.29217059197964,
+          "median": 60,
+          "min": -264,
+          "n": 75408,
+          "p05": -216,
+          "p95": 192
+        },
+        "6-12h": {
+          "exact": 0,
+          "max": 96,
+          "mean": -163.6103896103896,
+          "mean_absolute": 199.16683316683316,
+          "median": -270,
+          "min": -360,
+          "n": 8008,
+          "p05": -330,
+          "p95": 96
+        }
+      }
+    },
+    "outcomes": {
+      "event_hash": "89b7b642ce88e347",
+      "food_consumed": "1264",
+      "food_delivered": "0",
+      "jobs_accepted": "0",
+      "starvation_person_hours": "944.000000",
+      "state_hash": "e801c9f7f2b1cd42",
+      "survivors_36h": "28",
+      "survivors_48h": "28",
+      "survivors_72h": "28"
+    },
+    "pairs": 30,
+    "physical_plan_confusion": {
+      "CORRECT_FEASIBLE": 1368,
+      "CORRECT_INFEASIBLE": 15476
+    },
+    "plans": {
+      "classification": {
+        "POLICY_REJECTED_AND_SHADOW_INFEASIBLE": 15476,
+        "RISK_COMMITMENT_PREFERENCE": 1368
+      },
+      "executable_belief_tapes_by_gate": {
+        "POST_PLAN_NUTRITION_MARGIN": 1368
+      },
+      "primary_gate": {
+        "CANNOT_COMPLETE_PLAN_ALIVE": 1272,
+        "POST_PLAN_NUTRITION_MARGIN": 15572
+      },
+      "shadow_failures": {
+        "DEATH": 564,
+        "NONE": 1368,
+        "NO_EDIBLE_CARGO": 4592,
+        "SPOILED": 10320
+      }
+    },
+    "route_feasibility": {
+      "CORRECT_FEASIBLE": 208084,
+      "CORRECT_INFEASIBLE": 3980
+    },
+    "self_count": {
+      "action_changed": 0,
+      "affected": 0,
+      "changed_legs": {},
+      "gate_changed": 0
+    },
+    "static_cases": 130,
+    "static_exact": 130,
+    "unmet_need": {
+      "ACCESS_IN_PROGRESS": 776,
+      "SPOILED": 40404,
+      "UNKNOWN": 56206,
+      "UNRESOLVED": 908
+    }
+  },
+  "stale_depletion": {
+    "counts_seed0": {
+      "decisions": 124446,
+      "episode:CAPACITY_COMPETITION": 10509,
+      "episode:MATCH": 32,
+      "episode:RISK_COMMITMENT_PREFERENCE": 42,
+      "episode:UNAVAILABLE_INFORMATION": 4,
+      "episode:WORLD_CHANGED_AFTER_PREDICTION": 24,
+      "episode_status:Arrived": 60,
+      "episode_status:Died": 4,
+      "episode_status:Interrupted": 10547,
+      "need:PHYSICALLY_UNAVAILABLE": 124086,
+      "primitive:sleep:CENSORED:false": 10534,
+      "primitive:sleep:CENSORED:true": 25,
+      "primitive:sleep:COMPLETED:true": 10864,
+      "route:queue_order_difference": 264272,
+      "route_feasibility:CORRECT_FEASIBLE": 95070,
+      "route_feasibility:CORRECT_INFEASIBLE": 131018,
+      "route_feasibility:FALSE_FEASIBLE": 22804
+    },
+    "episodes": {
+      "n": 10611,
+      "primary": {
+        "CAPACITY_COMPETITION": 10509,
+        "MATCH": 32,
+        "MATCH_PREDICTED_DEATH": 4,
+        "UNAVAILABLE_INFORMATION": 4,
+        "WORLD_CHANGED_AFTER_PREDICTION": 62
+      },
+      "status": {
+        "Arrived": 60,
+        "Died": 4,
+        "Interrupted": 10547
+      }
+    },
+    "errors": {
+      "actual_primitive:sleep:cargo_error": {
+        "exact": 10864,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 10864,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:fatigue_error_ms": {
+        "exact": 10864,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 10864,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:nutrition_error_ms": {
+        "exact": 10864,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 10864,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_primitive:sleep:time_error_ms": {
+        "exact": 10864,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 10864,
+        "p05": 0,
+        "p95": 0
+      },
+      "actual_travel:fatigue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -12954956.133333333,
+        "mean_absolute": 12954956.133333333,
+        "median": 0,
+        "min": -64787999,
+        "n": 60,
+        "p05": -64787999,
+        "p95": 0
+      },
+      "actual_travel:nutrition_error_ms": {
+        "exact": 36,
+        "max": 35987999,
+        "mean": 10052555.666666666,
+        "mean_absolute": 10052555.666666666,
+        "median": 0,
+        "min": 0,
+        "n": 60,
+        "p05": 0,
+        "p95": 35987999
+      },
+      "actual_travel:policy_fatigue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -12954956.133333333,
+        "mean_absolute": 12954956.133333333,
+        "median": 0,
+        "min": -64787999,
+        "n": 60,
+        "p05": -64787999,
+        "p95": 0
+      },
+      "actual_travel:policy_nutrition_error_ms": {
+        "exact": 36,
+        "max": 35987999,
+        "mean": 10052555.666666666,
+        "mean_absolute": 10052555.666666666,
+        "median": 0,
+        "min": 0,
+        "n": 60,
+        "p05": 0,
+        "p95": 35987999
+      },
+      "actual_travel:policy_time_error_ms": {
+        "exact": 32,
+        "max": 0,
+        "mean": -13938957.0,
+        "mean_absolute": 13938957.0,
+        "median": 0,
+        "min": -79524006,
+        "n": 60,
+        "p05": -79524006,
+        "p95": 0
+      },
+      "actual_travel:queue_error_ms": {
+        "exact": 36,
+        "max": 0,
+        "mean": -10797521.8125,
+        "mean_absolute": 10797521.8125,
+        "median": 0,
+        "min": -57924006,
+        "n": 64,
+        "p05": -57924006,
+        "p95": 0
+      },
+      "actual_travel:time_error_ms": {
+        "exact": 32,
+        "max": 0,
+        "mean": -13938957.0,
+        "mean_absolute": 13938957.0,
+        "median": 0,
+        "min": -79524006,
+        "n": 60,
+        "p05": -79524006,
+        "p95": 0
+      },
+      "queue:belief_minus_frozen_ms": {
+        "exact": 81,
+        "max": 0,
+        "mean": -12632886.926774103,
+        "mean_absolute": 12632886.926774103,
+        "median": -12324006,
+        "min": -28764006,
+        "n": 10611,
+        "p05": -25644006,
+        "p95": -1164006
+      },
+      "queue:frozen_minus_actual_ms": {
+        "exact": 40,
+        "max": 0,
+        "mean": -10796021.4375,
+        "mean_absolute": 10796021.4375,
+        "median": 0,
+        "min": -57924006,
+        "n": 64,
+        "p05": -57924006,
+        "p95": 0
+      },
+      "route_arithmetic:fatigue_error_ms": {
+        "exact": 345285,
+        "max": 7200000,
+        "mean": 269655.61517292436,
+        "mean_absolute": 269655.61517292436,
+        "median": 0,
+        "min": 0,
+        "n": 372822,
+        "p05": 0,
+        "p95": 2340000
+      },
+      "route_arithmetic:nutrition_error_ms": {
+        "exact": 372822,
+        "max": 0,
+        "mean": 0.0,
+        "mean_absolute": 0.0,
+        "median": 0,
+        "min": 0,
+        "n": 372822,
+        "p05": 0,
+        "p95": 0
+      },
+      "route_arithmetic:ordering_error_ms": {
+        "exact": 108550,
+        "max": 43196097,
+        "mean": 7510486.815670749,
+        "mean_absolute": 13100098.229256857,
+        "median": 4332001,
+        "min": -21600000,
+        "n": 372822,
+        "p05": -21600000,
+        "p95": 28800000
+      }
+    },
+    "historical_hashes_match": true,
+    "kernel_samples": {
+      "belief_failure": {},
+      "belief_success": 0,
+      "disagreement_examples": [],
+      "forecast_vs_frozen_truth": {},
+      "n": 0,
+      "shadow_exact": 0,
+      "truth_failure": {},
+      "truth_success": 0
+    },
+    "memory_age": {
+      "food_freshness": {
+        "0-2h": {
+          "exact": 5404,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 5404,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 21173,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 21173,
+          "p05": 0,
+          "p95": 0
+        },
+        "2-6h": {
+          "exact": 9376,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 9376,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "exact": 20983,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 20983,
+          "p05": 0,
+          "p95": 0
+        },
+        "6-12h": {
+          "exact": 10953,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 10953,
+          "p05": 0,
+          "p95": 0
+        }
+      },
+      "food_quantity": {
+        "0-2h": {
+          "exact": 0,
+          "max": 6,
+          "mean": 6.0,
+          "mean_absolute": 6.0,
+          "median": 6,
+          "min": 6,
+          "n": 5404,
+          "p05": 6,
+          "p95": 6
+        },
+        "12-24h": {
+          "exact": 0,
+          "max": 6,
+          "mean": 6.0,
+          "mean_absolute": 6.0,
+          "median": 6,
+          "min": 6,
+          "n": 21173,
+          "p05": 6,
+          "p95": 6
+        },
+        "2-6h": {
+          "exact": 0,
+          "max": 6,
+          "mean": 6.0,
+          "mean_absolute": 6.0,
+          "median": 6,
+          "min": 6,
+          "n": 9376,
+          "p05": 6,
+          "p95": 6
+        },
+        "24h+": {
+          "exact": 0,
+          "max": 6,
+          "mean": 6.0,
+          "mean_absolute": 6.0,
+          "median": 6,
+          "min": 6,
+          "n": 20983,
+          "p05": 6,
+          "p95": 6
+        },
+        "6-12h": {
+          "exact": 0,
+          "max": 6,
+          "mean": 6.0,
+          "mean_absolute": 6.0,
+          "median": 6,
+          "min": 6,
+          "n": 10953,
+          "p05": 6,
+          "p95": 6
+        }
+      },
+      "queue_same_bank": {
+        "0-2h": {
+          "exact": 141415,
+          "max": 0,
+          "mean": -0.03783543176904489,
+          "mean_absolute": 0.03783543176904489,
+          "median": 0,
+          "min": -45,
+          "n": 141534,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 119737,
+          "max": 45,
+          "mean": 4.310195065588255,
+          "mean_absolute": 5.212104941208455,
+          "median": 0,
+          "min": -25,
+          "n": 147130,
+          "p05": 0,
+          "p95": 37
+        },
+        "2-6h": {
+          "exact": 36280,
+          "max": 12,
+          "mean": -0.40862703840084164,
+          "mean_absolute": 1.036507101525513,
+          "median": 0,
+          "min": -45,
+          "n": 38020,
+          "p05": 0,
+          "p95": 0
+        },
+        "24h+": {
+          "exact": 93072,
+          "max": 45,
+          "mean": 3.750673281360737,
+          "mean_absolute": 4.2405575242145055,
+          "median": 0,
+          "min": -21,
+          "n": 105825,
+          "p05": 0,
+          "p95": 41
+        },
+        "6-12h": {
+          "exact": 57651,
+          "max": 33,
+          "mean": 0.6596706242818844,
+          "mean_absolute": 2.3332056683263116,
+          "median": 0,
+          "min": -37,
+          "n": 65275,
+          "p05": 0,
+          "p95": 16
+        }
+      },
+      "request": {
+        "0-2h": {
+          "exact": 67493,
+          "max": 0,
+          "mean": 0.0,
+          "mean_absolute": 0.0,
+          "median": 0,
+          "min": 0,
+          "n": 67493,
+          "p05": 0,
+          "p95": 0
+        },
+        "12-24h": {
+          "exact": 0,
+          "max": 144,
+          "mean": -37.65627028319612,
+          "mean_absolute": 129.430669900591,
+          "median": 7,
+          "min": -300,
+          "n": 29273,
+          "p05": -300,
+          "p95": 144
+        },
+        "2-6h": {
+          "exact": 124,
+          "max": 48,
+          "mean": -159.02758620689656,
+          "mean_absolute": 159.24827586206897,
+          "median": -185,
+          "min": -264,
+          "n": 1740,
+          "p05": -264,
+          "p95": 0
+        },
+        "24h+": {
+          "exact": 0,
+          "max": 144,
+          "mean": -104.42450078528158,
+          "mean_absolute": 138.25173883778325,
+          "median": -204,
+          "min": -252,
+          "n": 17828,
+          "p05": -204,
+          "p95": 93
+        },
+        "6-12h": {
+          "exact": 0,
+          "max": 48,
+          "mean": -128.15828402366864,
+          "mean_absolute": 151.1947731755424,
+          "median": -95,
+          "min": -348,
+          "n": 8112,
+          "p05": -319,
+          "p95": 48
+        }
+      }
+    },
+    "outcomes": {
+      "event_hash": "34e983cd262f016a",
+      "food_consumed": "6",
+      "food_delivered": "0",
+      "jobs_accepted": "0",
+      "starvation_person_hours": "1200.000000",
+      "state_hash": "94036e737ffb5922",
+      "survivors_36h": "1",
+      "survivors_48h": "0",
+      "survivors_72h": "0"
+    },
+    "pairs": 30,
+    "physical_plan_confusion": {},
+    "plans": {
+      "classification": {},
+      "executable_belief_tapes_by_gate": {},
+      "primary_gate": {},
+      "shadow_failures": {}
+    },
+    "route_feasibility": {
+      "CORRECT_FEASIBLE": 95070,
+      "CORRECT_INFEASIBLE": 131018,
+      "FALSE_FEASIBLE": 22804
+    },
+    "self_count": {
+      "action_changed": 0,
+      "affected": 0,
+      "changed_legs": {},
+      "gate_changed": 0
+    },
+    "static_cases": 130,
+    "static_exact": 130,
+    "unmet_need": {
+      "PHYSICALLY_UNAVAILABLE": 124086
+    }
+  }
+}
