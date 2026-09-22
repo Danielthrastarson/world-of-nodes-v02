@@ -518,3 +518,6 @@ pub fn reference_scenario(seed: u64, distance_mm: u64, carrying_capacity: u64) -
         gathering_ms_per_unit: 2000,
     }
 }
+
+/// Versioned local provisioning experiment.
+pub mod provisioning;
