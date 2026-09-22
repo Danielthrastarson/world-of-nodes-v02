@@ -1,0 +1,82 @@
+[
+  {
+    "agent": 0,
+    "fatigue_override_h": 10.0,
+    "first_node_override_without_meal_h": 9.0,
+    "hunger_override_h": 9.0,
+    "latest_wait_for_arrival_before_critical_h": 6.000000000133332,
+    "latest_wait_for_arrival_before_first_override_h": 6.000000000133332,
+    "requested_first_override_budget_h": 6.777777777777778,
+    "requested_hunger_budget_h": 6.777777777777778
+  },
+  {
+    "agent": 1,
+    "fatigue_override_h": 10.0,
+    "first_node_override_without_meal_h": 9.0,
+    "hunger_override_h": 9.0,
+    "latest_wait_for_arrival_before_critical_h": 6.000000000133332,
+    "latest_wait_for_arrival_before_first_override_h": 6.000000000133332,
+    "requested_first_override_budget_h": 6.777777777777778,
+    "requested_hunger_budget_h": 6.777777777777778
+  },
+  {
+    "agent": 2,
+    "fatigue_override_h": 10.0,
+    "first_node_override_without_meal_h": 9.0,
+    "hunger_override_h": 9.0,
+    "latest_wait_for_arrival_before_critical_h": 6.000000000133332,
+    "latest_wait_for_arrival_before_first_override_h": 6.000000000133332,
+    "requested_first_override_budget_h": 6.777777777777778,
+    "requested_hunger_budget_h": 6.777777777777778
+  },
+  {
+    "agent": 3,
+    "fatigue_override_h": 10.0,
+    "first_node_override_without_meal_h": 9.0,
+    "hunger_override_h": 9.0,
+    "latest_wait_for_arrival_before_critical_h": 6.000000000133332,
+    "latest_wait_for_arrival_before_first_override_h": 6.000000000133332,
+    "requested_first_override_budget_h": 6.777777777777778,
+    "requested_hunger_budget_h": 6.777777777777778
+  },
+  {
+    "agent": 4,
+    "fatigue_override_h": 4.800000000000001,
+    "first_node_override_without_meal_h": 4.800000000000001,
+    "hunger_override_h": 5.800000000000001,
+    "latest_wait_for_arrival_before_critical_h": 2.133333333466464,
+    "latest_wait_for_arrival_before_first_override_h": 1.4666666667933907,
+    "requested_first_override_budget_h": 2.133333333333334,
+    "requested_hunger_budget_h": 3.133333333333334
+  },
+  {
+    "agent": 5,
+    "fatigue_override_h": 4.800000000000001,
+    "first_node_override_without_meal_h": 4.800000000000001,
+    "hunger_override_h": 5.800000000000001,
+    "latest_wait_for_arrival_before_critical_h": 2.133333333466464,
+    "latest_wait_for_arrival_before_first_override_h": 1.4666666667933907,
+    "requested_first_override_budget_h": 2.133333333333334,
+    "requested_hunger_budget_h": 3.133333333333334
+  },
+  {
+    "agent": 6,
+    "fatigue_override_h": 4.800000000000001,
+    "first_node_override_without_meal_h": 4.800000000000001,
+    "hunger_override_h": 5.800000000000001,
+    "latest_wait_for_arrival_before_critical_h": 2.133333333466464,
+    "latest_wait_for_arrival_before_first_override_h": 1.4666666667933907,
+    "requested_first_override_budget_h": 2.133333333333334,
+    "requested_hunger_budget_h": 3.133333333333334
+  },
+  {
+    "agent": 7,
+    "fatigue_override_h": 4.800000000000001,
+    "first_node_override_without_meal_h": 4.800000000000001,
+    "hunger_override_h": 5.800000000000001,
+    "latest_wait_for_arrival_before_critical_h": 2.133333333466464,
+    "latest_wait_for_arrival_before_first_override_h": 1.4666666667933907,
+    "requested_first_override_budget_h": 2.133333333333334,
+    "requested_hunger_budget_h": 3.133333333333334
+  }
+]

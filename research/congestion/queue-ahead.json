@@ -1,0 +1,2414 @@
+[
+  {
+    "agent": 16,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 1,
+    "to_node": 1
+  },
+  {
+    "agent": 17,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 2,
+    "to_node": 1
+  },
+  {
+    "agent": 18,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 3,
+    "to_node": 1
+  },
+  {
+    "agent": 19,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 4,
+    "to_node": 1
+  },
+  {
+    "agent": 20,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 5,
+    "to_node": 1
+  },
+  {
+    "agent": 21,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 6,
+    "to_node": 1
+  },
+  {
+    "agent": 22,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 7,
+    "to_node": 1
+  },
+  {
+    "agent": 23,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 8,
+    "to_node": 1
+  },
+  {
+    "agent": 24,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 9,
+    "to_node": 1
+  },
+  {
+    "agent": 25,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 10,
+    "to_node": 1
+  },
+  {
+    "agent": 26,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 11,
+    "to_node": 1
+  },
+  {
+    "agent": 27,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 12,
+    "to_node": 1
+  },
+  {
+    "agent": 28,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 13,
+    "to_node": 1
+  },
+  {
+    "agent": 29,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 14,
+    "to_node": 1
+  },
+  {
+    "agent": 30,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 15,
+    "to_node": 1
+  },
+  {
+    "agent": 31,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 16,
+    "to_node": 1
+  },
+  {
+    "agent": 32,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 17,
+    "to_node": 1
+  },
+  {
+    "agent": 33,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 18,
+    "to_node": 1
+  },
+  {
+    "agent": 34,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 19,
+    "to_node": 1
+  },
+  {
+    "agent": 35,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 20,
+    "to_node": 1
+  },
+  {
+    "agent": 36,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 21,
+    "to_node": 1
+  },
+  {
+    "agent": 37,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 22,
+    "to_node": 1
+  },
+  {
+    "agent": 38,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 23,
+    "to_node": 1
+  },
+  {
+    "agent": 39,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 24,
+    "to_node": 1
+  },
+  {
+    "agent": 40,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 25,
+    "to_node": 1
+  },
+  {
+    "agent": 41,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 26,
+    "to_node": 1
+  },
+  {
+    "agent": 42,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 27,
+    "to_node": 1
+  },
+  {
+    "agent": 43,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 28,
+    "to_node": 1
+  },
+  {
+    "agent": 44,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 29,
+    "to_node": 1
+  },
+  {
+    "agent": 45,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 30,
+    "to_node": 1
+  },
+  {
+    "agent": 46,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 31,
+    "to_node": 1
+  },
+  {
+    "agent": 47,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 32,
+    "to_node": 1
+  },
+  {
+    "agent": 48,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 33,
+    "to_node": 1
+  },
+  {
+    "agent": 49,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 34,
+    "to_node": 1
+  },
+  {
+    "agent": 16,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 1,
+    "to_node": 1
+  },
+  {
+    "agent": 17,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 2,
+    "to_node": 1
+  },
+  {
+    "agent": 18,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 3,
+    "to_node": 1
+  },
+  {
+    "agent": 19,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 4,
+    "to_node": 1
+  },
+  {
+    "agent": 20,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 5,
+    "to_node": 1
+  },
+  {
+    "agent": 21,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 6,
+    "to_node": 1
+  },
+  {
+    "agent": 22,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 7,
+    "to_node": 1
+  },
+  {
+    "agent": 23,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 8,
+    "to_node": 1
+  },
+  {
+    "agent": 24,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 9,
+    "to_node": 1
+  },
+  {
+    "agent": 25,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 10,
+    "to_node": 1
+  },
+  {
+    "agent": 26,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 11,
+    "to_node": 1
+  },
+  {
+    "agent": 27,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 12,
+    "to_node": 1
+  },
+  {
+    "agent": 28,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 13,
+    "to_node": 1
+  },
+  {
+    "agent": 29,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 14,
+    "to_node": 1
+  },
+  {
+    "agent": 30,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 15,
+    "to_node": 1
+  },
+  {
+    "agent": 31,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 16,
+    "to_node": 1
+  },
+  {
+    "agent": 32,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 17,
+    "to_node": 1
+  },
+  {
+    "agent": 33,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 18,
+    "to_node": 1
+  },
+  {
+    "agent": 34,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 19,
+    "to_node": 1
+  },
+  {
+    "agent": 35,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 20,
+    "to_node": 1
+  },
+  {
+    "agent": 36,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 21,
+    "to_node": 1
+  },
+  {
+    "agent": 37,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 22,
+    "to_node": 1
+  },
+  {
+    "agent": 38,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 23,
+    "to_node": 1
+  },
+  {
+    "agent": 39,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 24,
+    "to_node": 1
+  },
+  {
+    "agent": 40,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 25,
+    "to_node": 1
+  },
+  {
+    "agent": 41,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 26,
+    "to_node": 1
+  },
+  {
+    "agent": 42,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 27,
+    "to_node": 1
+  },
+  {
+    "agent": 43,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 28,
+    "to_node": 1
+  },
+  {
+    "agent": 44,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 29,
+    "to_node": 1
+  },
+  {
+    "agent": 45,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 30,
+    "to_node": 1
+  },
+  {
+    "agent": 46,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 31,
+    "to_node": 1
+  },
+  {
+    "agent": 47,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 32,
+    "to_node": 1
+  },
+  {
+    "agent": 48,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 33,
+    "to_node": 1
+  },
+  {
+    "agent": 49,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 34,
+    "to_node": 1
+  },
+  {
+    "agent": 0,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 35,
+    "to_node": 0
+  },
+  {
+    "agent": 16,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 1,
+    "to_node": 1
+  },
+  {
+    "agent": 17,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 2,
+    "to_node": 1
+  },
+  {
+    "agent": 18,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 3,
+    "to_node": 1
+  },
+  {
+    "agent": 19,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 4,
+    "to_node": 1
+  },
+  {
+    "agent": 20,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 5,
+    "to_node": 1
+  },
+  {
+    "agent": 21,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 6,
+    "to_node": 1
+  },
+  {
+    "agent": 22,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 7,
+    "to_node": 1
+  },
+  {
+    "agent": 23,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 8,
+    "to_node": 1
+  },
+  {
+    "agent": 24,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 9,
+    "to_node": 1
+  },
+  {
+    "agent": 25,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 10,
+    "to_node": 1
+  },
+  {
+    "agent": 26,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 11,
+    "to_node": 1
+  },
+  {
+    "agent": 27,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 12,
+    "to_node": 1
+  },
+  {
+    "agent": 28,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 13,
+    "to_node": 1
+  },
+  {
+    "agent": 29,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 14,
+    "to_node": 1
+  },
+  {
+    "agent": 30,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 15,
+    "to_node": 1
+  },
+  {
+    "agent": 31,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 16,
+    "to_node": 1
+  },
+  {
+    "agent": 32,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 17,
+    "to_node": 1
+  },
+  {
+    "agent": 33,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 18,
+    "to_node": 1
+  },
+  {
+    "agent": 34,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 19,
+    "to_node": 1
+  },
+  {
+    "agent": 35,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 20,
+    "to_node": 1
+  },
+  {
+    "agent": 36,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 21,
+    "to_node": 1
+  },
+  {
+    "agent": 37,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 22,
+    "to_node": 1
+  },
+  {
+    "agent": 38,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 23,
+    "to_node": 1
+  },
+  {
+    "agent": 39,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 24,
+    "to_node": 1
+  },
+  {
+    "agent": 40,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 25,
+    "to_node": 1
+  },
+  {
+    "agent": 41,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 26,
+    "to_node": 1
+  },
+  {
+    "agent": 42,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 27,
+    "to_node": 1
+  },
+  {
+    "agent": 43,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 28,
+    "to_node": 1
+  },
+  {
+    "agent": 44,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 29,
+    "to_node": 1
+  },
+  {
+    "agent": 45,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 30,
+    "to_node": 1
+  },
+  {
+    "agent": 46,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 31,
+    "to_node": 1
+  },
+  {
+    "agent": 47,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 32,
+    "to_node": 1
+  },
+  {
+    "agent": 48,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 33,
+    "to_node": 1
+  },
+  {
+    "agent": 49,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 34,
+    "to_node": 1
+  },
+  {
+    "agent": 0,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 35,
+    "to_node": 0
+  },
+  {
+    "agent": 1,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 36,
+    "to_node": 0
+  },
+  {
+    "agent": 16,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 1,
+    "to_node": 1
+  },
+  {
+    "agent": 17,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 2,
+    "to_node": 1
+  },
+  {
+    "agent": 18,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 3,
+    "to_node": 1
+  },
+  {
+    "agent": 19,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 4,
+    "to_node": 1
+  },
+  {
+    "agent": 20,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 5,
+    "to_node": 1
+  },
+  {
+    "agent": 21,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 6,
+    "to_node": 1
+  },
+  {
+    "agent": 22,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 7,
+    "to_node": 1
+  },
+  {
+    "agent": 23,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 8,
+    "to_node": 1
+  },
+  {
+    "agent": 24,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 9,
+    "to_node": 1
+  },
+  {
+    "agent": 25,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 10,
+    "to_node": 1
+  },
+  {
+    "agent": 26,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 11,
+    "to_node": 1
+  },
+  {
+    "agent": 27,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 12,
+    "to_node": 1
+  },
+  {
+    "agent": 28,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 13,
+    "to_node": 1
+  },
+  {
+    "agent": 29,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 14,
+    "to_node": 1
+  },
+  {
+    "agent": 30,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 15,
+    "to_node": 1
+  },
+  {
+    "agent": 31,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 16,
+    "to_node": 1
+  },
+  {
+    "agent": 32,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 17,
+    "to_node": 1
+  },
+  {
+    "agent": 33,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 18,
+    "to_node": 1
+  },
+  {
+    "agent": 34,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 19,
+    "to_node": 1
+  },
+  {
+    "agent": 35,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 20,
+    "to_node": 1
+  },
+  {
+    "agent": 36,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 21,
+    "to_node": 1
+  },
+  {
+    "agent": 37,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 22,
+    "to_node": 1
+  },
+  {
+    "agent": 38,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 23,
+    "to_node": 1
+  },
+  {
+    "agent": 39,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 24,
+    "to_node": 1
+  },
+  {
+    "agent": 40,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 25,
+    "to_node": 1
+  },
+  {
+    "agent": 41,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 26,
+    "to_node": 1
+  },
+  {
+    "agent": 42,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 27,
+    "to_node": 1
+  },
+  {
+    "agent": 43,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 28,
+    "to_node": 1
+  },
+  {
+    "agent": 44,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 29,
+    "to_node": 1
+  },
+  {
+    "agent": 45,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 30,
+    "to_node": 1
+  },
+  {
+    "agent": 46,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 31,
+    "to_node": 1
+  },
+  {
+    "agent": 47,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 32,
+    "to_node": 1
+  },
+  {
+    "agent": 48,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 33,
+    "to_node": 1
+  },
+  {
+    "agent": 49,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 34,
+    "to_node": 1
+  },
+  {
+    "agent": 0,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 35,
+    "to_node": 0
+  },
+  {
+    "agent": 1,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 36,
+    "to_node": 0
+  },
+  {
+    "agent": 2,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 37,
+    "to_node": 0
+  },
+  {
+    "agent": 24,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 1,
+    "to_node": 1
+  },
+  {
+    "agent": 25,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 2,
+    "to_node": 1
+  },
+  {
+    "agent": 26,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 3,
+    "to_node": 1
+  },
+  {
+    "agent": 27,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 4,
+    "to_node": 1
+  },
+  {
+    "agent": 28,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 5,
+    "to_node": 1
+  },
+  {
+    "agent": 29,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 6,
+    "to_node": 1
+  },
+  {
+    "agent": 30,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 7,
+    "to_node": 1
+  },
+  {
+    "agent": 31,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 8,
+    "to_node": 1
+  },
+  {
+    "agent": 32,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 9,
+    "to_node": 1
+  },
+  {
+    "agent": 33,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 10,
+    "to_node": 1
+  },
+  {
+    "agent": 34,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 11,
+    "to_node": 1
+  },
+  {
+    "agent": 35,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 12,
+    "to_node": 1
+  },
+  {
+    "agent": 36,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 13,
+    "to_node": 1
+  },
+  {
+    "agent": 37,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 14,
+    "to_node": 1
+  },
+  {
+    "agent": 38,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 15,
+    "to_node": 1
+  },
+  {
+    "agent": 39,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 16,
+    "to_node": 1
+  },
+  {
+    "agent": 40,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 17,
+    "to_node": 1
+  },
+  {
+    "agent": 41,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 18,
+    "to_node": 1
+  },
+  {
+    "agent": 42,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 19,
+    "to_node": 1
+  },
+  {
+    "agent": 43,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 20,
+    "to_node": 1
+  },
+  {
+    "agent": 44,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 21,
+    "to_node": 1
+  },
+  {
+    "agent": 45,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 22,
+    "to_node": 1
+  },
+  {
+    "agent": 46,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 23,
+    "to_node": 1
+  },
+  {
+    "agent": 47,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 24,
+    "to_node": 1
+  },
+  {
+    "agent": 48,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 25,
+    "to_node": 1
+  },
+  {
+    "agent": 49,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 26,
+    "to_node": 1
+  },
+  {
+    "agent": 0,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 27,
+    "to_node": 0
+  },
+  {
+    "agent": 1,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 28,
+    "to_node": 0
+  },
+  {
+    "agent": 2,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 29,
+    "to_node": 0
+  },
+  {
+    "agent": 3,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 30,
+    "to_node": 0
+  },
+  {
+    "agent": 24,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 1,
+    "to_node": 1
+  },
+  {
+    "agent": 25,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 2,
+    "to_node": 1
+  },
+  {
+    "agent": 26,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 3,
+    "to_node": 1
+  },
+  {
+    "agent": 27,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 4,
+    "to_node": 1
+  },
+  {
+    "agent": 28,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 5,
+    "to_node": 1
+  },
+  {
+    "agent": 29,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 6,
+    "to_node": 1
+  },
+  {
+    "agent": 30,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 7,
+    "to_node": 1
+  },
+  {
+    "agent": 31,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 8,
+    "to_node": 1
+  },
+  {
+    "agent": 32,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 9,
+    "to_node": 1
+  },
+  {
+    "agent": 33,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 10,
+    "to_node": 1
+  },
+  {
+    "agent": 34,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 11,
+    "to_node": 1
+  },
+  {
+    "agent": 35,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 12,
+    "to_node": 1
+  },
+  {
+    "agent": 36,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 13,
+    "to_node": 1
+  },
+  {
+    "agent": 37,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 14,
+    "to_node": 1
+  },
+  {
+    "agent": 38,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 15,
+    "to_node": 1
+  },
+  {
+    "agent": 39,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 16,
+    "to_node": 1
+  },
+  {
+    "agent": 40,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 17,
+    "to_node": 1
+  },
+  {
+    "agent": 41,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 18,
+    "to_node": 1
+  },
+  {
+    "agent": 42,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 19,
+    "to_node": 1
+  },
+  {
+    "agent": 43,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 20,
+    "to_node": 1
+  },
+  {
+    "agent": 44,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 21,
+    "to_node": 1
+  },
+  {
+    "agent": 45,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 22,
+    "to_node": 1
+  },
+  {
+    "agent": 46,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 23,
+    "to_node": 1
+  },
+  {
+    "agent": 47,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 24,
+    "to_node": 1
+  },
+  {
+    "agent": 48,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 25,
+    "to_node": 1
+  },
+  {
+    "agent": 49,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 26,
+    "to_node": 1
+  },
+  {
+    "agent": 0,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 27,
+    "to_node": 0
+  },
+  {
+    "agent": 1,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 28,
+    "to_node": 0
+  },
+  {
+    "agent": 2,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 29,
+    "to_node": 0
+  },
+  {
+    "agent": 3,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 30,
+    "to_node": 0
+  },
+  {
+    "agent": 4,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 13.2,
+    "rank": 31,
+    "to_node": 0
+  },
+  {
+    "agent": 24,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 1,
+    "to_node": 1
+  },
+  {
+    "agent": 25,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 2,
+    "to_node": 1
+  },
+  {
+    "agent": 26,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 3,
+    "to_node": 1
+  },
+  {
+    "agent": 27,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 4,
+    "to_node": 1
+  },
+  {
+    "agent": 28,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 5,
+    "to_node": 1
+  },
+  {
+    "agent": 29,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 6,
+    "to_node": 1
+  },
+  {
+    "agent": 30,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 7,
+    "to_node": 1
+  },
+  {
+    "agent": 31,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 8,
+    "to_node": 1
+  },
+  {
+    "agent": 32,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 9,
+    "to_node": 1
+  },
+  {
+    "agent": 33,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 10,
+    "to_node": 1
+  },
+  {
+    "agent": 34,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 11,
+    "to_node": 1
+  },
+  {
+    "agent": 35,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 12,
+    "to_node": 1
+  },
+  {
+    "agent": 36,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 13,
+    "to_node": 1
+  },
+  {
+    "agent": 37,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 14,
+    "to_node": 1
+  },
+  {
+    "agent": 38,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 15,
+    "to_node": 1
+  },
+  {
+    "agent": 39,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 16,
+    "to_node": 1
+  },
+  {
+    "agent": 40,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 17,
+    "to_node": 1
+  },
+  {
+    "agent": 41,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 18,
+    "to_node": 1
+  },
+  {
+    "agent": 42,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 19,
+    "to_node": 1
+  },
+  {
+    "agent": 43,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 20,
+    "to_node": 1
+  },
+  {
+    "agent": 44,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 21,
+    "to_node": 1
+  },
+  {
+    "agent": 45,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 22,
+    "to_node": 1
+  },
+  {
+    "agent": 46,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 23,
+    "to_node": 1
+  },
+  {
+    "agent": 47,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 24,
+    "to_node": 1
+  },
+  {
+    "agent": 48,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 25,
+    "to_node": 1
+  },
+  {
+    "agent": 49,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 26,
+    "to_node": 1
+  },
+  {
+    "agent": 0,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 27,
+    "to_node": 0
+  },
+  {
+    "agent": 1,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 28,
+    "to_node": 0
+  },
+  {
+    "agent": 2,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 29,
+    "to_node": 0
+  },
+  {
+    "agent": 3,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 30,
+    "to_node": 0
+  },
+  {
+    "agent": 4,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 13.2,
+    "rank": 31,
+    "to_node": 0
+  },
+  {
+    "agent": 5,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 13.2,
+    "rank": 32,
+    "to_node": 0
+  },
+  {
+    "agent": 24,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 1,
+    "to_node": 1
+  },
+  {
+    "agent": 25,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 2,
+    "to_node": 1
+  },
+  {
+    "agent": 26,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 3,
+    "to_node": 1
+  },
+  {
+    "agent": 27,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 4,
+    "to_node": 1
+  },
+  {
+    "agent": 28,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 5,
+    "to_node": 1
+  },
+  {
+    "agent": 29,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 6,
+    "to_node": 1
+  },
+  {
+    "agent": 30,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 7,
+    "to_node": 1
+  },
+  {
+    "agent": 31,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 8,
+    "to_node": 1
+  },
+  {
+    "agent": 32,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 9,
+    "to_node": 1
+  },
+  {
+    "agent": 33,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 10,
+    "to_node": 1
+  },
+  {
+    "agent": 34,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 11,
+    "to_node": 1
+  },
+  {
+    "agent": 35,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 12,
+    "to_node": 1
+  },
+  {
+    "agent": 36,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 13,
+    "to_node": 1
+  },
+  {
+    "agent": 37,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 14,
+    "to_node": 1
+  },
+  {
+    "agent": 38,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 15,
+    "to_node": 1
+  },
+  {
+    "agent": 39,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 16,
+    "to_node": 1
+  },
+  {
+    "agent": 40,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 17,
+    "to_node": 1
+  },
+  {
+    "agent": 41,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 18,
+    "to_node": 1
+  },
+  {
+    "agent": 42,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 19,
+    "to_node": 1
+  },
+  {
+    "agent": 43,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 20,
+    "to_node": 1
+  },
+  {
+    "agent": 44,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 21,
+    "to_node": 1
+  },
+  {
+    "agent": 45,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 22,
+    "to_node": 1
+  },
+  {
+    "agent": 46,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 23,
+    "to_node": 1
+  },
+  {
+    "agent": 47,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 24,
+    "to_node": 1
+  },
+  {
+    "agent": 48,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 25,
+    "to_node": 1
+  },
+  {
+    "agent": 49,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "joined_h": 0.0,
+    "rank": 26,
+    "to_node": 1
+  },
+  {
+    "agent": 0,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 27,
+    "to_node": 0
+  },
+  {
+    "agent": 1,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 28,
+    "to_node": 0
+  },
+  {
+    "agent": 2,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 29,
+    "to_node": 0
+  },
+  {
+    "agent": 3,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 8.0,
+    "rank": 30,
+    "to_node": 0
+  },
+  {
+    "agent": 4,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 13.2,
+    "rank": 31,
+    "to_node": 0
+  },
+  {
+    "agent": 5,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 13.2,
+    "rank": 32,
+    "to_node": 0
+  },
+  {
+    "agent": 6,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 1,
+    "joined_h": 13.2,
+    "rank": 33,
+    "to_node": 0
+  }
+]

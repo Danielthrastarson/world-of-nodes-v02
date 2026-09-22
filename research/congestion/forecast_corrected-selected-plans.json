@@ -1,0 +1,178 @@
+[
+  {
+    "agent": "0",
+    "detail": "plan=VisitBoardForRequest { id: 0, request_id: 0, board_node: 0, created_at: 18120000, reason: \"visit remembered board to claim locally; predicted_ms=14813334 arrival_nutrition_ms=49866666 arrival_starvation_ms=0\", quantity: 10, paused: false, reached_x: false, status: \"ACTIVE\", evidence: PolicyMemory { nodes: {0: NodeView { node: 0, observed_at: 0, food: [], edges: [EdgeView { id: 0, edge: Edge { a: 0, b: 1, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }], board: Some(Board { node: 0, quantity: 600, created_at: 0, refreshed_at: 0, claims: [] }), people: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] }, 1: NodeView { node: 1, observed_at: 7200000, food: [], edges: [EdgeView { id: 0, edge: Edge { a: 0, b: 1, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }, EdgeView { id: 1, edge: Edge { a: 1, b: 2, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }], board: None, people: [0, 1, 2, 3] }, 2: NodeView { node: 2, observed_at: 18120000, food: [FoodView { batch: 0, quantity: 2956, available: 2956, owner: None, holder: Deposit(2), expires_at: 172800000 }], edges: [EdgeView { id: 1, edge: Edge { a: 1, b: 2, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }], board: None, people: [0, 1, 2, 3] }} }, changes: {}, created_nutrition: 64680000, created_fatigue: 32520000 } forecast=AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 21600000, outcome: \"PASS\", detail: \"visit remembered board to claim locally; predicted_ms=14813334 arrival_nutrition_ms=49866666 arrival_starvation_ms=0\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(18120000), quantity: 2956, expiry: Some(172800000), confidence: 1.0, violations: [], plan: Some(Plan { elapsed: 57180000, nutrition: 25500000, starvation: 0, source_starvation: 0, meal_quanta: 5, delivered: 5, acquired: 10, steps: [\"to_board: edge=1 2->1 start=18120000 queue_ms=0 nominal_ms=7200000 total_ms=7200000 n_before=64680000 n_after=57480000 fatigue_before=32520000 after=39720000 evidence_at=18120000 queue_order=before_travel conditional=true\", \"to_board: edge=0 1->0 start=25320000 queue_ms=0 nominal_ms=7200000 total_ms=7613334 n_before=57480000 n_after=49866666 fatigue_before=39720000 after=47333334 evidence_at=7200000 queue_order=before_travel conditional=true\", \"claim: node=0 target=10 board_observed_at=0 unclaimed_then=600 conditional=true\", \"next_policy: node=Node(0) wait_ms=6666\", \"to_source: edge=0 0->1 start=32940000 queue_ms=0 nominal_ms=7200000 total_ms=8000000 n_before=49860000 n_after=41860000 fatigue_before=47340000 after=55340000 evidence_at=7200000 queue_order=before_travel conditional=true\", \"to_source: edge=1 1->2 start=40940000 queue_ms=0 nominal_ms=7200000 total_ms=9148000 n_before=41860000 n_after=32712000 fatigue_before=55340000 after=64488000 evidence_at=18120000 queue_order=before_travel conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=1 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=50090667 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=32709333 after=36309333 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=9333\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=2 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=50102667 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=36297333 after=39897333 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=57333\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=3 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=4 load=2 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=5 load=3 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=6 load=4 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=7 load=5 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=8 load=6 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=9 load=7 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=18120000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=10 load=8 original_expiry=172800000 owner=Commons(0) conditional=true\", \"return: edge=1 2->1 start=50181336 queue_ms=0 nominal_ms=7200000 total_ms=10690668 n_before=39818664 n_after=29127996 fatigue_before=64581336 after=75272004 evidence_at=18120000 queue_order=before_travel conditional=true\", \"meal: t=60872004 node=Node(1) batch=18446744073709551615 owner=Commons(0) q=3 nutrition_before=29127996 after=39927996 expiry=172800000 load_after=5 cargo_remaining=5 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(1) wait_ms=27996\", \"return: edge=0 1->0 start=60900000 queue_ms=0 nominal_ms=7200000 total_ms=14400000 n_before=39900000 n_after=25500000 fatigue_before=75300000 after=86400000 evidence_at=7200000 queue_order=before_travel conditional=true\"], failure: None, shadow: Some((60545007, 4134993, 0, \"POST_PLAN_NUTRITION_MARGIN\")) }) }] }",
+    "fatigue_ms": "32520000",
+    "kind": "INTENT_CREATED",
+    "location": "Node(2)",
+    "nutrition_ms": "64680000",
+    "plan": "0",
+    "reason": "VOLUNTARY_BOARD_DECISION",
+    "time_ms": "18120000"
+  },
+  {
+    "agent": "0",
+    "detail": "node=1 edge=1",
+    "fatigue_ms": "43200000",
+    "kind": "INTENT_REACHED_X",
+    "location": "Node(1)",
+    "nutrition_ms": "54000000",
+    "plan": "0",
+    "reason": "PHYSICAL_ARRIVAL",
+    "time_ms": "28800000"
+  },
+  {
+    "agent": "1",
+    "detail": "node=1 edge=1",
+    "fatigue_ms": "43200000",
+    "kind": "INTENT_REACHED_X",
+    "location": "Node(1)",
+    "nutrition_ms": "54000000",
+    "plan": "0",
+    "reason": "PHYSICAL_ARRIVAL",
+    "time_ms": "28800000"
+  },
+  {
+    "agent": "2",
+    "detail": "node=1 edge=1",
+    "fatigue_ms": "43200000",
+    "kind": "INTENT_REACHED_X",
+    "location": "Node(1)",
+    "nutrition_ms": "54000000",
+    "plan": "0",
+    "reason": "PHYSICAL_ARRIVAL",
+    "time_ms": "28800000"
+  },
+  {
+    "agent": "3",
+    "detail": "node=1 edge=1",
+    "fatigue_ms": "43200000",
+    "kind": "INTENT_REACHED_X",
+    "location": "Node(1)",
+    "nutrition_ms": "54000000",
+    "plan": "0",
+    "reason": "PHYSICAL_ARRIVAL",
+    "time_ms": "28800000"
+  },
+  {
+    "agent": "0",
+    "detail": "changes={\"QUEUE_SERVICE:1:0->1\"}",
+    "fatigue_ms": "43200000",
+    "kind": "INTENT_CANCELLED",
+    "location": "Node(1)",
+    "nutrition_ms": "54000000",
+    "plan": "0",
+    "reason": "PERSONAL_BUFFER_PROVISIONING",
+    "time_ms": "28800000"
+  },
+  {
+    "agent": "0",
+    "detail": "edge=1 from=1 to=2 target=2 food=true previous_plan=Some(0) selected_at=18120000 new_information=true changes={\"QUEUE_SERVICE:1:0->1\"} decision=Decision { intent: Travel { edge: 1, target: 2, food: true }, reason: \"seek remembered food; source=2 observed_at=21600000 believed_quantity=2956 expires_at=172800000; predicted_ms=15202667 arrival_nutrition_ms=38797333 arrival_starvation_ms=0\" }",
+    "fatigue_ms": "43200000",
+    "kind": "BOARD_REVERSAL",
+    "location": "Node(1)",
+    "nutrition_ms": "54000000",
+    "plan": "0",
+    "reason": "PERSONAL_BUFFER_PROVISIONING",
+    "time_ms": "28800000"
+  },
+  {
+    "agent": "1",
+    "detail": "edge=1 from=1 to=2 target=2 food=true previous_plan=Some(0) selected_at=18120000 new_information=true changes={\"QUEUE_SERVICE:1:0->1\"} decision=Decision { intent: Travel { edge: 1, target: 2, food: true }, reason: \"seek remembered food; source=2 observed_at=21600000 believed_quantity=2956 expires_at=172800000; predicted_ms=15202667 arrival_nutrition_ms=38797333 arrival_starvation_ms=0\" }",
+    "fatigue_ms": "43200000",
+    "kind": "BOARD_REVERSAL",
+    "location": "Node(1)",
+    "nutrition_ms": "54000000",
+    "plan": "0",
+    "reason": "PERSONAL_BUFFER_PROVISIONING",
+    "time_ms": "28800000"
+  },
+  {
+    "agent": "2",
+    "detail": "edge=1 from=1 to=2 target=2 food=true previous_plan=Some(0) selected_at=18120000 new_information=true changes={\"QUEUE_SERVICE:1:0->1\"} decision=Decision { intent: Travel { edge: 1, target: 2, food: true }, reason: \"seek remembered food; source=2 observed_at=21600000 believed_quantity=2956 expires_at=172800000; predicted_ms=15202667 arrival_nutrition_ms=38797333 arrival_starvation_ms=0\" }",
+    "fatigue_ms": "43200000",
+    "kind": "BOARD_REVERSAL",
+    "location": "Node(1)",
+    "nutrition_ms": "54000000",
+    "plan": "0",
+    "reason": "PERSONAL_BUFFER_PROVISIONING",
+    "time_ms": "28800000"
+  },
+  {
+    "agent": "3",
+    "detail": "edge=1 from=1 to=2 target=2 food=true previous_plan=Some(0) selected_at=18120000 new_information=true changes={\"QUEUE_SERVICE:1:0->1\"} decision=Decision { intent: Travel { edge: 1, target: 2, food: true }, reason: \"seek remembered food; source=2 observed_at=21600000 believed_quantity=2956 expires_at=172800000; predicted_ms=15202667 arrival_nutrition_ms=38797333 arrival_starvation_ms=0\" }",
+    "fatigue_ms": "43200000",
+    "kind": "BOARD_REVERSAL",
+    "location": "Node(1)",
+    "nutrition_ms": "54000000",
+    "plan": "0",
+    "reason": "PERSONAL_BUFFER_PROVISIONING",
+    "time_ms": "28800000"
+  },
+  {
+    "agent": "0",
+    "detail": "plan=VisitBoardForRequest { id: 1, request_id: 0, board_node: 0, created_at: 28860000, reason: \"visit remembered board to claim locally; predicted_ms=8000000 arrival_nutrition_ms=45940000 arrival_starvation_ms=0\", quantity: 10, paused: false, reached_x: false, status: \"ACTIVE\", evidence: PolicyMemory { nodes: {0: NodeView { node: 0, observed_at: 0, food: [], edges: [EdgeView { id: 0, edge: Edge { a: 0, b: 1, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }], board: Some(Board { node: 0, quantity: 600, created_at: 0, refreshed_at: 0, claims: [] }), people: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] }, 1: NodeView { node: 1, observed_at: 28860000, food: [], edges: [EdgeView { id: 0, edge: Edge { a: 0, b: 1, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }, EdgeView { id: 1, edge: Edge { a: 1, b: 2, nominal_ms: 7200000, capacity: 4 }, queued: 3, occupied: 0 }], board: None, people: [0, 1, 2, 3] }, 2: NodeView { node: 2, observed_at: 21600000, food: [FoodView { batch: 0, quantity: 2956, available: 2956, owner: None, holder: Deposit(2), expires_at: 172800000 }], edges: [EdgeView { id: 1, edge: Edge { a: 1, b: 2, nominal_ms: 7200000, capacity: 4 }, queued: 4, occupied: 0 }], board: None, people: [0, 1, 2, 3, 4, 5, 6, 7] }} }, changes: {}, created_nutrition: 53940000, created_fatigue: 43260000 } forecast=AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 21600000, outcome: \"PASS\", detail: \"visit remembered board to claim locally; predicted_ms=8000000 arrival_nutrition_ms=45940000 arrival_starvation_ms=0\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(21600000), quantity: 2956, expiry: Some(172800000), confidence: 0.845306871887266, violations: [], plan: Some(Plan { elapsed: 53820000, nutrition: 25320000, starvation: 0, source_starvation: 0, meal_quanta: 7, delivered: 3, acquired: 10, steps: [\"self_exclusion: node=1 edge=1 observed_at=28860000 queued_before=4 subtraction=1 repeated_subtraction=false\", \"to_board: edge=0 1->0 start=28860000 queue_ms=0 nominal_ms=7200000 total_ms=8000000 n_before=53940000 n_after=45940000 fatigue_before=43260000 after=51260000 evidence_at=28860000 queue_order=before_travel conditional=true\", \"claim: node=0 target=10 board_observed_at=0 unclaimed_then=600 conditional=true\", \"next_policy: node=Node(0) wait_ms=40000\", \"to_source: edge=0 0->1 start=36900000 queue_ms=0 nominal_ms=7200000 total_ms=8340000 n_before=45900000 n_after=37560000 fatigue_before=51300000 after=59640000 evidence_at=28860000 queue_order=before_travel conditional=true\", \"to_source: edge=1 1->2 start=45240000 queue_ms=0 nominal_ms=7200000 total_ms=9600000 n_before=37560000 n_after=27960000 fatigue_before=59640000 after=69240000 evidence_at=28860000 queue_order=before_travel conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=1 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=54842667 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=27957333 after=31557333 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=57333\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=2 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=54902667 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=31497333 after=35097333 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=57333\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=3 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=54962667 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=35037333 after=38637333 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=57333\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=4 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=55022667 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=38577333 after=42177333 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=57333\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=5 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=6 load=2 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=7 load=3 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=8 load=4 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=9 load=5 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=21600000 believed_quantity=2956 believed_available=2956 work_ms=2667 q=1 acquired=10 load=6 original_expiry=172800000 owner=Commons(0) conditional=true\", \"return: edge=1 2->1 start=55096002 queue_ms=0 nominal_ms=7200000 total_ms=13148001 n_before=42103998 n_after=28955997 fatigue_before=69496002 after=82644003 evidence_at=28860000 queue_order=before_travel conditional=true\", \"meal: t=68244003 node=Node(1) batch=18446744073709551615 owner=Commons(0) q=3 nutrition_before=28955997 after=39755997 expiry=172800000 load_after=3 cargo_remaining=3 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(1) wait_ms=35997\", \"return: edge=0 1->0 start=68280000 queue_ms=0 nominal_ms=7200000 total_ms=14400000 n_before=39720000 n_after=25320000 fatigue_before=82680000 after=86400000 evidence_at=28860000 queue_order=before_travel conditional=true\"], failure: None, shadow: Some((61580012, 0, 7640012, \"POST_PLAN_NUTRITION_MARGIN\")) }) }] }",
+    "fatigue_ms": "43260000",
+    "kind": "INTENT_CREATED",
+    "location": "Node(1)",
+    "nutrition_ms": "53940000",
+    "plan": "1",
+    "reason": "VOLUNTARY_BOARD_DECISION",
+    "time_ms": "28860000"
+  },
+  {
+    "agent": "0",
+    "detail": "changes={\"QUEUE_SERVICE:1:0->1\"}",
+    "fatigue_ms": "45240000",
+    "kind": "INTENT_CANCELLED",
+    "location": "Node(1)",
+    "nutrition_ms": "51960000",
+    "plan": "1",
+    "reason": "PERSONAL_BUFFER_PROVISIONING",
+    "time_ms": "30840000"
+  },
+  {
+    "agent": "0",
+    "detail": "plan=VisitBoardForRequest { id: 2, request_id: 0, board_node: 0, created_at: 97320000, reason: \"visit remembered board to claim locally; predicted_ms=15433334 arrival_nutrition_ms=49246666 arrival_starvation_ms=0\", quantity: 10, paused: false, reached_x: false, status: \"ACTIVE\", evidence: PolicyMemory { nodes: {0: NodeView { node: 0, observed_at: 0, food: [], edges: [EdgeView { id: 0, edge: Edge { a: 0, b: 1, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }], board: Some(Board { node: 0, quantity: 600, created_at: 0, refreshed_at: 0, claims: [] }), people: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] }, 1: NodeView { node: 1, observed_at: 53940000, food: [], edges: [EdgeView { id: 0, edge: Edge { a: 0, b: 1, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }, EdgeView { id: 1, edge: Edge { a: 1, b: 2, nominal_ms: 7200000, capacity: 4 }, queued: 8, occupied: 0 }], board: None, people: [0, 1, 2, 3, 16, 17, 18, 19] }, 2: NodeView { node: 2, observed_at: 97320000, food: [FoodView { batch: 0, quantity: 2428, available: 2428, owner: None, holder: Deposit(2), expires_at: 172800000 }], edges: [EdgeView { id: 1, edge: Edge { a: 1, b: 2, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }], board: None, people: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] }} }, changes: {}, created_nutrition: 64680000, created_fatigue: 38100000 } forecast=AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 21600000, outcome: \"PASS\", detail: \"visit remembered board to claim locally; predicted_ms=15433334 arrival_nutrition_ms=49246666 arrival_starvation_ms=0\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(97320000), quantity: 2428, expiry: Some(172800000), confidence: 1.0, violations: [], plan: Some(Plan { elapsed: 62880000, nutrition: 27000000, starvation: 0, source_starvation: 0, meal_quanta: 7, delivered: 3, acquired: 10, steps: [\"to_board: edge=1 2->1 start=97320000 queue_ms=0 nominal_ms=7200000 total_ms=7433334 n_before=64680000 n_after=57246666 fatigue_before=38100000 after=45533334 evidence_at=97320000 queue_order=before_travel conditional=true\", \"to_board: edge=0 1->0 start=104753334 queue_ms=0 nominal_ms=7200000 total_ms=8000000 n_before=57246666 n_after=49246666 fatigue_before=45533334 after=53533334 evidence_at=53940000 queue_order=before_travel conditional=true\", \"claim: node=0 target=10 board_observed_at=0 unclaimed_then=600 conditional=true\", \"next_policy: node=Node(0) wait_ms=46666\", \"to_source: edge=0 0->1 start=112800000 queue_ms=0 nominal_ms=7200000 total_ms=8796000 n_before=49200000 n_after=40404000 fatigue_before=53580000 after=62376000 evidence_at=53940000 queue_order=before_travel conditional=true\", \"to_source: edge=1 1->2 start=121596000 queue_ms=0 nominal_ms=7200000 total_ms=9600000 n_before=40404000 n_after=30804000 fatigue_before=62376000 after=71976000 evidence_at=97320000 queue_order=before_travel conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=2667 q=1 acquired=1 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=131198667 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=30801333 after=34401333 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=21333\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=4000 q=1 acquired=2 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=131224000 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=34376000 after=37976000 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=56000\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=4000 q=1 acquired=3 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=131284000 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=37916000 after=41516000 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=56000\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=4000 q=1 acquired=4 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=4000 q=1 acquired=5 load=2 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=4000 q=1 acquired=6 load=3 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=4000 q=1 acquired=7 load=4 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=4000 q=1 acquired=8 load=5 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=4000 q=1 acquired=9 load=6 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=97320000 believed_quantity=2428 believed_available=2428 work_ms=4000 q=1 acquired=10 load=7 original_expiry=172800000 owner=Commons(0) conditional=true\", \"return: edge=1 2->1 start=131368000 queue_ms=0 nominal_ms=7200000 total_ms=14400000 n_before=41432000 n_after=27032000 fatigue_before=72148000 after=86400000 evidence_at=97320000 queue_order=before_travel conditional=true\", \"meal: t=145768000 node=Node(1) batch=18446744073709551615 owner=Commons(0) q=4 nutrition_before=27032000 after=41432000 expiry=172800000 load_after=3 cargo_remaining=3 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(1) wait_ms=32000\", \"return: edge=0 1->0 start=145800000 queue_ms=0 nominal_ms=7200000 total_ms=14400000 n_before=41400000 n_after=27000000 fatigue_before=86400000 after=86400000 evidence_at=53940000 queue_order=before_travel conditional=true\"], failure: None, shadow: Some((69368008, 0, 4688008, \"POST_PLAN_NUTRITION_MARGIN\")) }) }] }",
+    "fatigue_ms": "38100000",
+    "kind": "INTENT_CREATED",
+    "location": "Node(2)",
+    "nutrition_ms": "64680000",
+    "plan": "2",
+    "reason": "VOLUNTARY_BOARD_DECISION",
+    "time_ms": "97320000"
+  },
+  {
+    "agent": "0",
+    "detail": "changes={}",
+    "fatigue_ms": "42600000",
+    "kind": "INTENT_CANCELLED",
+    "location": "Node(2)",
+    "nutrition_ms": "60180000",
+    "plan": "2",
+    "reason": "PERSONAL_BUFFER_PROVISIONING",
+    "time_ms": "101820000"
+  },
+  {
+    "agent": "0",
+    "detail": "plan=VisitBoardForRequest { id: 3, request_id: 0, board_node: 0, created_at: 101826000, reason: \"visit remembered board to claim locally; predicted_ms=16122000 arrival_nutrition_ms=44052000 arrival_starvation_ms=0\", quantity: 7, paused: false, reached_x: false, status: \"ACTIVE\", evidence: PolicyMemory { nodes: {0: NodeView { node: 0, observed_at: 0, food: [], edges: [EdgeView { id: 0, edge: Edge { a: 0, b: 1, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }], board: Some(Board { node: 0, quantity: 600, created_at: 0, refreshed_at: 0, claims: [] }), people: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] }, 1: NodeView { node: 1, observed_at: 53940000, food: [], edges: [EdgeView { id: 0, edge: Edge { a: 0, b: 1, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }, EdgeView { id: 1, edge: Edge { a: 1, b: 2, nominal_ms: 7200000, capacity: 4 }, queued: 8, occupied: 0 }], board: None, people: [0, 1, 2, 3, 16, 17, 18, 19] }, 2: NodeView { node: 2, observed_at: 101826000, food: [FoodView { batch: 0, quantity: 2388, available: 2388, owner: None, holder: Deposit(2), expires_at: 172800000 }], edges: [EdgeView { id: 1, edge: Edge { a: 1, b: 2, nominal_ms: 7200000, capacity: 4 }, queued: 0, occupied: 0 }], board: None, people: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] }} }, changes: {}, created_nutrition: 60174000, created_fatigue: 42606000 } forecast=AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 21600000, outcome: \"PASS\", detail: \"visit remembered board to claim locally; predicted_ms=16122000 arrival_nutrition_ms=44052000 arrival_starvation_ms=0\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(101826000), quantity: 2388, expiry: Some(172800000), confidence: 1.0, violations: [], plan: Some(Plan { elapsed: 67374000, nutrition: 25200000, starvation: 0, source_starvation: 0, meal_quanta: 9, delivered: 1, acquired: 7, steps: [\"to_board: edge=1 2->1 start=101826000 queue_ms=0 nominal_ms=7200000 total_ms=7934000 n_before=60174000 n_after=52240000 fatigue_before=42606000 after=50540000 evidence_at=101826000 queue_order=before_travel conditional=true\", \"to_board: edge=0 1->0 start=109760000 queue_ms=0 nominal_ms=7200000 total_ms=8188000 n_before=52240000 n_after=44052000 fatigue_before=50540000 after=58728000 evidence_at=53940000 queue_order=before_travel conditional=true\", \"claim: node=0 target=7 board_observed_at=0 unclaimed_then=600 conditional=true\", \"next_policy: node=Node(0) wait_ms=12000\", \"to_source: edge=0 0->1 start=117960000 queue_ms=0 nominal_ms=7200000 total_ms=9600000 n_before=44040000 n_after=34440000 fatigue_before=58740000 after=68340000 evidence_at=53940000 queue_order=before_travel conditional=true\", \"meal: t=127560000 node=Node(1) batch=1 owner=Agent(0) q=3 nutrition_before=34440000 after=45240000 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(1) wait_ms=60000\", \"to_source: edge=1 1->2 start=127620000 queue_ms=0 nominal_ms=7200000 total_ms=12600000 n_before=45180000 n_after=32580000 fatigue_before=68400000 after=81000000 evidence_at=101826000 queue_order=before_travel conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=101826000 believed_quantity=2388 believed_available=2388 work_ms=4000 q=1 acquired=1 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=140224000 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=32576000 after=36176000 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=56000\", \"acquire: node=2 source_batch=0 source_observed_at=101826000 believed_quantity=2388 believed_available=2388 work_ms=4000 q=1 acquired=2 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"meal: t=140284000 node=Node(2) batch=18446744073709551615 owner=Commons(0) q=1 nutrition_before=36116000 after=39716000 expiry=172800000 load_after=0 cargo_remaining=0 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(2) wait_ms=56000\", \"acquire: node=2 source_batch=0 source_observed_at=101826000 believed_quantity=2388 believed_available=2388 work_ms=4000 q=1 acquired=3 load=1 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=101826000 believed_quantity=2388 believed_available=2388 work_ms=4000 q=1 acquired=4 load=2 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=101826000 believed_quantity=2388 believed_available=2388 work_ms=4000 q=1 acquired=5 load=3 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=101826000 believed_quantity=2388 believed_available=2388 work_ms=4000 q=1 acquired=6 load=4 original_expiry=172800000 owner=Commons(0) conditional=true\", \"acquire: node=2 source_batch=0 source_observed_at=101826000 believed_quantity=2388 believed_available=2388 work_ms=4000 q=1 acquired=7 load=5 original_expiry=172800000 owner=Commons(0) conditional=true\", \"return: edge=1 2->1 start=140360000 queue_ms=0 nominal_ms=7200000 total_ms=14400000 n_before=39640000 n_after=25240000 fatigue_before=81140000 after=86400000 evidence_at=101826000 queue_order=before_travel conditional=true\", \"meal: t=154760000 node=Node(1) batch=18446744073709551615 owner=Commons(0) q=4 nutrition_before=25240000 after=39640000 expiry=172800000 load_after=1 cargo_remaining=1 evidence=own_inventory_or_conditionally_acquired_remembered_batch\", \"next_policy: node=Node(1) wait_ms=40000\", \"return: edge=0 1->0 start=154800000 queue_ms=0 nominal_ms=7200000 total_ms=14400000 n_before=39600000 n_after=25200000 fatigue_before=86400000 after=86400000 evidence_at=53940000 queue_order=before_travel conditional=true\"], failure: None, shadow: Some((82730000, 0, 22556000, \"POST_PLAN_NUTRITION_MARGIN\")) }) }] }",
+    "fatigue_ms": "42606000",
+    "kind": "INTENT_CREATED",
+    "location": "Node(2)",
+    "nutrition_ms": "60174000",
+    "plan": "3",
+    "reason": "VOLUNTARY_BOARD_DECISION",
+    "time_ms": "101826000"
+  },
+  {
+    "agent": "0",
+    "detail": "changes={}",
+    "fatigue_ms": "42660000",
+    "kind": "INTENT_CANCELLED",
+    "location": "Node(2)",
+    "nutrition_ms": "60120000",
+    "plan": "3",
+    "reason": "PERSONAL_BUFFER_PROVISIONING",
+    "time_ms": "101880000"
+  }
+]

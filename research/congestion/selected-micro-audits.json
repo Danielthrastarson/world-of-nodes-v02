@@ -1,0 +1,170 @@
+[
+  {
+    "agent": 0,
+    "ahead": 0,
+    "direction": "same",
+    "events": 5
+  },
+  {
+    "agent": 0,
+    "ahead": 3,
+    "direction": "same",
+    "events": 8
+  },
+  {
+    "agent": 0,
+    "ahead": 4,
+    "direction": "same",
+    "events": 275
+  },
+  {
+    "agent": 0,
+    "ahead": 8,
+    "direction": "same",
+    "events": 590
+  },
+  {
+    "agent": 0,
+    "ahead": 11,
+    "direction": "same",
+    "events": 593
+  },
+  {
+    "agent": 0,
+    "ahead": 12,
+    "direction": "same",
+    "events": 713
+  },
+  {
+    "agent": 0,
+    "ahead": 40,
+    "direction": "same",
+    "events": 713
+  },
+  {
+    "agent": 0,
+    "ahead": 0,
+    "direction": "opposite",
+    "events": 5
+  },
+  {
+    "agent": 0,
+    "ahead": 3,
+    "direction": "opposite",
+    "events": 8
+  },
+  {
+    "agent": 0,
+    "ahead": 4,
+    "direction": "opposite",
+    "events": 275
+  },
+  {
+    "agent": 0,
+    "ahead": 8,
+    "direction": "opposite",
+    "events": 590
+  },
+  {
+    "agent": 0,
+    "ahead": 11,
+    "direction": "opposite",
+    "events": 593
+  },
+  {
+    "agent": 0,
+    "ahead": 12,
+    "direction": "opposite",
+    "events": 713
+  },
+  {
+    "agent": 0,
+    "ahead": 40,
+    "direction": "opposite",
+    "events": 713
+  },
+  {
+    "agent": 4,
+    "ahead": 0,
+    "direction": "same",
+    "events": 5
+  },
+  {
+    "agent": 4,
+    "ahead": 3,
+    "direction": "same",
+    "events": 8
+  },
+  {
+    "agent": 4,
+    "ahead": 4,
+    "direction": "same",
+    "events": 528
+  },
+  {
+    "agent": 4,
+    "ahead": 8,
+    "direction": "same",
+    "events": 525
+  },
+  {
+    "agent": 4,
+    "ahead": 11,
+    "direction": "same",
+    "events": 525
+  },
+  {
+    "agent": 4,
+    "ahead": 12,
+    "direction": "same",
+    "events": 525
+  },
+  {
+    "agent": 4,
+    "ahead": 40,
+    "direction": "same",
+    "events": 309
+  },
+  {
+    "agent": 4,
+    "ahead": 0,
+    "direction": "opposite",
+    "events": 5
+  },
+  {
+    "agent": 4,
+    "ahead": 3,
+    "direction": "opposite",
+    "events": 8
+  },
+  {
+    "agent": 4,
+    "ahead": 4,
+    "direction": "opposite",
+    "events": 528
+  },
+  {
+    "agent": 4,
+    "ahead": 8,
+    "direction": "opposite",
+    "events": 525
+  },
+  {
+    "agent": 4,
+    "ahead": 11,
+    "direction": "opposite",
+    "events": 525
+  },
+  {
+    "agent": 4,
+    "ahead": 12,
+    "direction": "opposite",
+    "events": 525
+  },
+  {
+    "agent": 4,
+    "ahead": 40,
+    "direction": "opposite",
+    "events": 525
+  }
+]

@@ -27,3 +27,9 @@ The acceptance follow-up ran 120 paired experiments. Prior source knowledge stil
 The persistence follow-up ran 150 paired experiments against the meal-aware control. Remembering goals alone and the isolated 12h-priority ablation leave physical behavior unchanged. Resumable and committed goals still produce zero board arrivals, jobs and deliveries, with 16 survivors versus the diagnostic control's 20. Traces distinguish local goal churn from route reversals with changed queue evidence; committed agents can remain queued until critical hunger intervenes. No intention architecture or diagnostic policy is adopted as the default.
 
 V0.1 source, seeds, tests, and raw outputs were never supplied, so its reported negative results remain inherited claims, not reproduced evidence. The archived handoff preserves them unchanged.
+
+The [congestion research report](research/congestion/REPORT.md) isolates shared-edge
+load, directional demand and forecast self-counting. It preserves all earlier
+results and the default policy; no transport priority or new NPC architecture is
+adopted. Reproduce with `python3 scripts/run_congestion.py NEW_OUTPUT_DIRECTORY`
+after an offline release build.

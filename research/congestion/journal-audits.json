@@ -1,0 +1,40 @@
+{
+  "forecast_corrected": {
+    "agents_forming_intentions": 12,
+    "cancellations": {
+      "PERSONAL_BUFFER_PROVISIONING": 36
+    },
+    "counts": {
+      "BOARD_REVERSAL": 4,
+      "DECISION": 1076,
+      "DIRECTION_REVERSAL": 20,
+      "F_X_F": 4,
+      "INTENT_CANCELLED": 36,
+      "INTENT_CREATED": 36,
+      "INTENT_REACHED_X": 4,
+      "OPPOSITE_TRAVERSAL": 8,
+      "QUEUE_INTERRUPTION": 9508
+    },
+    "physical_events_audited": 244423
+  },
+  "reactive": {
+    "agents_forming_intentions": 16,
+    "cancellations": {
+      "EATING": 16,
+      "NO_JUSTIFIED_CURRENT_ACTION": 4,
+      "PERSONAL_BUFFER_PROVISIONING": 72
+    },
+    "counts": {
+      "BOARD_REVERSAL": 8,
+      "DECISION": 4680,
+      "DIRECTION_REVERSAL": 24,
+      "F_X_F": 8,
+      "INTENT_CANCELLED": 92,
+      "INTENT_CREATED": 92,
+      "INTENT_REACHED_X": 8,
+      "OPPOSITE_TRAVERSAL": 16,
+      "QUEUE_INTERRUPTION": 10552
+    },
+    "physical_events_audited": 238959
+  }
+}

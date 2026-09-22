@@ -1,0 +1,258 @@
+[
+  {
+    "admitted_h": 6.0,
+    "agent": 12,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 13,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 14,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 15,
+    "focal": 0,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 12,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 13,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 14,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 15,
+    "focal": 1,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 12,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 13,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 14,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 15,
+    "focal": 2,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 12,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 13,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 14,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 6.0,
+    "agent": 15,
+    "focal": 3,
+    "fork_h": 8.0,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 20,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 21,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 22,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 23,
+    "focal": 4,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 20,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 21,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 22,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 23,
+    "focal": 5,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 20,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 21,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 22,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 23,
+    "focal": 6,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 20,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 21,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 22,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  },
+  {
+    "admitted_h": 11.333333333333334,
+    "agent": 23,
+    "focal": 7,
+    "fork_h": 13.2,
+    "from_node": 0,
+    "to_node": 1
+  }
+]

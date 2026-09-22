@@ -1,0 +1,84 @@
+{
+  "directional_differences": [
+    {
+      "agent": "4",
+      "ahead": 40,
+      "outcomes": {
+        "mixed": {
+          "actual_queue_h": "4.800000000",
+          "admission_h": "",
+          "agent": "4",
+          "ahead": "40",
+          "arrival_h": "",
+          "critical_hunger": "true",
+          "elapsed_until_admission_or_stop_h": "5.800000000",
+          "fatigue_h": "20.000000000",
+          "first_sleep_h": "18.000000000",
+          "nutrition_h": "6.000000000",
+          "outcome": "CRITICAL_HUNGER_REVERSAL",
+          "sleep_h": "1.000000000",
+          "start_h": "13.200000000",
+          "stop_h": "19.000000000"
+        },
+        "observed": {
+          "actual_queue_h": "4.800000000",
+          "admission_h": "",
+          "agent": "4",
+          "ahead": "40",
+          "arrival_h": "",
+          "critical_hunger": "true",
+          "elapsed_until_admission_or_stop_h": "5.800000000",
+          "fatigue_h": "20.000000000",
+          "first_sleep_h": "18.000000000",
+          "nutrition_h": "6.000000000",
+          "outcome": "CRITICAL_HUNGER_REVERSAL",
+          "sleep_h": "1.000000000",
+          "start_h": "13.200000000",
+          "stop_h": "19.000000000"
+        },
+        "opposite": {
+          "actual_queue_h": "4.800000000",
+          "admission_h": "",
+          "agent": "4",
+          "ahead": "40",
+          "arrival_h": "",
+          "critical_hunger": "true",
+          "elapsed_until_admission_or_stop_h": "5.800000000",
+          "fatigue_h": "20.000000000",
+          "first_sleep_h": "18.000000000",
+          "nutrition_h": "6.000000000",
+          "outcome": "CRITICAL_HUNGER_REVERSAL",
+          "sleep_h": "1.000000000",
+          "start_h": "13.200000000",
+          "stop_h": "19.000000000"
+        },
+        "same": {
+          "actual_queue_h": "4.200000000",
+          "admission_h": "",
+          "agent": "4",
+          "ahead": "40",
+          "arrival_h": "",
+          "critical_hunger": "false",
+          "elapsed_until_admission_or_stop_h": "4.200000000",
+          "fatigue_h": "21.400000000",
+          "first_sleep_h": "",
+          "nutrition_h": "7.600000000",
+          "outcome": "OTHER_REVERSAL",
+          "sleep_h": "0.000000000",
+          "start_h": "13.200000000",
+          "stop_h": "17.400000000"
+        }
+      }
+    }
+  ],
+  "first_failure": {
+    "0-mixed": 12,
+    "0-observed": 12,
+    "0-opposite": 12,
+    "0-same": 12,
+    "4-mixed": 4,
+    "4-observed": 4,
+    "4-opposite": 4,
+    "4-same": 4
+  }
+}

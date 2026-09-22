@@ -1,0 +1,262 @@
+{
+  "exact_focal_replays": [
+    {
+      "agent": 0,
+      "events": 545,
+      "stop_h": "17.000000000"
+    },
+    {
+      "agent": 1,
+      "events": 545,
+      "stop_h": "17.000000000"
+    },
+    {
+      "agent": 2,
+      "events": 545,
+      "stop_h": "17.000000000"
+    },
+    {
+      "agent": 3,
+      "events": 545,
+      "stop_h": "17.000000000"
+    },
+    {
+      "agent": 4,
+      "events": 471,
+      "stop_h": "19.000000000"
+    },
+    {
+      "agent": 5,
+      "events": 471,
+      "stop_h": "19.000000000"
+    },
+    {
+      "agent": 6,
+      "events": 471,
+      "stop_h": "19.000000000"
+    },
+    {
+      "agent": 7,
+      "events": 471,
+      "stop_h": "19.000000000"
+    }
+  ],
+  "physical": {
+    "0-0": {
+      "events": 1765,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "0-100": {
+      "events": 23230,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "0-25": {
+      "events": 18184,
+      "fifo_overtakes": 0,
+      "rejected": {
+        "edge traversal is atomic": 3
+      }
+    },
+    "0-50": {
+      "events": 14050,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "0-75": {
+      "events": 18370,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "1-0": {
+      "events": 1765,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "1-100": {
+      "events": 23230,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "1-25": {
+      "events": 18184,
+      "fifo_overtakes": 0,
+      "rejected": {
+        "edge traversal is atomic": 3
+      }
+    },
+    "1-50": {
+      "events": 14050,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "1-75": {
+      "events": 18370,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "2-0": {
+      "events": 1765,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "2-100": {
+      "events": 23230,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "2-25": {
+      "events": 18184,
+      "fifo_overtakes": 0,
+      "rejected": {
+        "edge traversal is atomic": 3
+      }
+    },
+    "2-50": {
+      "events": 14050,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "2-75": {
+      "events": 18370,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "3-0": {
+      "events": 1765,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "3-100": {
+      "events": 23230,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "3-25": {
+      "events": 18184,
+      "fifo_overtakes": 0,
+      "rejected": {
+        "edge traversal is atomic": 3
+      }
+    },
+    "3-50": {
+      "events": 14050,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "3-75": {
+      "events": 18370,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "4-0": {
+      "events": 8050,
+      "fifo_overtakes": 0,
+      "rejected": {
+        "edge traversal is atomic": 4
+      }
+    },
+    "4-100": {
+      "events": 18202,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "4-25": {
+      "events": 9602,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "4-50": {
+      "events": 12612,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "4-75": {
+      "events": 15192,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "5-0": {
+      "events": 8050,
+      "fifo_overtakes": 0,
+      "rejected": {
+        "edge traversal is atomic": 4
+      }
+    },
+    "5-100": {
+      "events": 18202,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "5-25": {
+      "events": 9602,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "5-50": {
+      "events": 12612,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "5-75": {
+      "events": 15192,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "6-0": {
+      "events": 8050,
+      "fifo_overtakes": 0,
+      "rejected": {
+        "edge traversal is atomic": 4
+      }
+    },
+    "6-100": {
+      "events": 18202,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "6-25": {
+      "events": 9602,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "6-50": {
+      "events": 12612,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "6-75": {
+      "events": 15192,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "7-0": {
+      "events": 8050,
+      "fifo_overtakes": 0,
+      "rejected": {
+        "edge traversal is atomic": 4
+      }
+    },
+    "7-100": {
+      "events": 18202,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "7-25": {
+      "events": 9602,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "7-50": {
+      "events": 12612,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    },
+    "7-75": {
+      "events": 15192,
+      "fifo_overtakes": 0,
+      "rejected": {}
+    }
+  }
+}

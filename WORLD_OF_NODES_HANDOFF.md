@@ -37,6 +37,18 @@ causes the failure or select a final intention architecture. Preserve all earlie
 evidence and default behavior. No further behavior change or scope expansion is
 authorized by this report.
 
+The subsequent [shared-edge congestion experiment](docs/CONGESTION_EXPERIMENT.md)
+has [conditional transport and paired forecast results](research/congestion/REPORT.md).
+Pending migration competes for shared FIFO capacity until existing hunger/fatigue
+overrides interrupt board visits. Equal physiological demand has the same physical
+cost in either direction. Reducing pending load allows the earlier cohort to reach
+C; later arrivals also encounter existing occupants and earlier returners. A separate
+forecast self-count correction changes behavior and survival but still produces zero
+board arrivals, jobs or deliveries. Traffic does not make all physical returns fatal
+under the starvation grace rule. These results support interacting transport and
+policy mechanisms, not adoption of commitment, reduced migration or a transport
+priority rule. All default behavior and earlier evidence remain preserved.
+
 ## Principle
 
 **The simulation is the source of the graphics.** The rendered world is a projection of underlying simulated state. Do not program a desired settlement outcome; program causal rules that can produce it. Do not animate a result when its cause can be simulated.
