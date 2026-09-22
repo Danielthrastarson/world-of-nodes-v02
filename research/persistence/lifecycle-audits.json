@@ -1,0 +1,164 @@
+{
+  "committed": {
+    "counts": {
+      "BOARD_REVERSAL": 8,
+      "DECISION": 8932,
+      "DIRECTION_REVERSAL": 20,
+      "F_X_F": 8,
+      "INTENT_CANCELLED": 12,
+      "INTENT_CREATED": 12,
+      "INTENT_PAUSED": 8,
+      "INTENT_REACHED_X": 8,
+      "OPPOSITE_TRAVERSAL": 16,
+      "QUEUE_INTERRUPTION": 11596
+    },
+    "horizon_status": {
+      "CANCELLED:FOOD_TIMING_INVALID": 12
+    },
+    "no_material_information_cancellations": {
+      "FOOD_TIMING_INVALID": 4
+    },
+    "plan_completion_rate": 0.0,
+    "reasons": {
+      "DIRECTION_REVERSAL:CRITICAL_HUNGER": 8,
+      "DIRECTION_REVERSAL:OTHER_POLICY_OVERRIDE": 12,
+      "INTENT_CANCELLED:FOOD_TIMING_INVALID": 12,
+      "INTENT_PAUSED:CRITICAL_FATIGUE": 4,
+      "INTENT_PAUSED:CRITICAL_HUNGER": 4
+    },
+    "rows": 20620,
+    "uninformed_board_reversal_rate": 0.0,
+    "uninformed_reversal_rate": 0.0
+  },
+  "reactive": {
+    "counts": {
+      "BOARD_REVERSAL": 8,
+      "DECISION": 4680,
+      "DIRECTION_REVERSAL": 24,
+      "F_X_F": 8,
+      "INTENT_CANCELLED": 92,
+      "INTENT_CREATED": 92,
+      "INTENT_REACHED_X": 8,
+      "OPPOSITE_TRAVERSAL": 16,
+      "QUEUE_INTERRUPTION": 10552
+    },
+    "horizon_status": {
+      "CANCELLED:EATING": 16,
+      "CANCELLED:NO_JUSTIFIED_CURRENT_ACTION": 4,
+      "CANCELLED:PERSONAL_BUFFER_PROVISIONING": 72
+    },
+    "no_material_information_cancellations": {
+      "EATING": 8,
+      "PERSONAL_BUFFER_PROVISIONING": 72
+    },
+    "plan_completion_rate": 0.0,
+    "reasons": {
+      "DIRECTION_REVERSAL:OTHER_POLICY_OVERRIDE": 16,
+      "DIRECTION_REVERSAL:PERSONAL_BUFFER_PROVISIONING": 8,
+      "INTENT_CANCELLED:EATING": 16,
+      "INTENT_CANCELLED:NO_JUSTIFIED_CURRENT_ACTION": 4,
+      "INTENT_CANCELLED:PERSONAL_BUFFER_PROVISIONING": 72
+    },
+    "rows": 15480,
+    "uninformed_board_reversal_rate": 0.0,
+    "uninformed_reversal_rate": 0.0
+  },
+  "remembered": {
+    "counts": {
+      "BOARD_REVERSAL": 8,
+      "DECISION": 13672,
+      "DIRECTION_REVERSAL": 24,
+      "F_X_F": 8,
+      "INTENT_CANCELLED": 16,
+      "INTENT_CREATED": 16,
+      "INTENT_PAUSED": 88,
+      "INTENT_REACHED_X": 8,
+      "INTENT_RESUMED": 76,
+      "OPPOSITE_TRAVERSAL": 16,
+      "QUEUE_INTERRUPTION": 10552
+    },
+    "horizon_status": {
+      "CANCELLED:FOOD_TIMING_INVALID": 16
+    },
+    "no_material_information_cancellations": {
+      "FOOD_TIMING_INVALID": 4
+    },
+    "plan_completion_rate": 0.0,
+    "reasons": {
+      "DIRECTION_REVERSAL:OTHER_POLICY_OVERRIDE": 16,
+      "DIRECTION_REVERSAL:PERSONAL_BUFFER_PROVISIONING": 8,
+      "INTENT_CANCELLED:FOOD_TIMING_INVALID": 16,
+      "INTENT_PAUSED:EATING": 12,
+      "INTENT_PAUSED:NO_JUSTIFIED_CURRENT_ACTION": 4,
+      "INTENT_PAUSED:PERSONAL_BUFFER_PROVISIONING": 72
+    },
+    "rows": 24484,
+    "uninformed_board_reversal_rate": 0.0,
+    "uninformed_reversal_rate": 0.0
+  },
+  "resumable": {
+    "counts": {
+      "BOARD_REVERSAL": 8,
+      "DECISION": 4624,
+      "DIRECTION_REVERSAL": 24,
+      "F_X_F": 8,
+      "INTENT_CANCELLED": 16,
+      "INTENT_CREATED": 16,
+      "INTENT_PAUSED": 4,
+      "INTENT_REACHED_X": 8,
+      "INTENT_RESUMED": 4,
+      "OPPOSITE_TRAVERSAL": 16,
+      "QUEUE_INTERRUPTION": 11604
+    },
+    "horizon_status": {
+      "CANCELLED:FOOD_TIMING_INVALID": 8,
+      "CANCELLED:ORDINARY_SELF_PROVISION_OVERRIDE": 8
+    },
+    "no_material_information_cancellations": {},
+    "plan_completion_rate": 0.0,
+    "reasons": {
+      "DIRECTION_REVERSAL:ORDINARY_SELF_PROVISION_OVERRIDE": 8,
+      "DIRECTION_REVERSAL:OTHER_POLICY_OVERRIDE": 16,
+      "INTENT_CANCELLED:FOOD_TIMING_INVALID": 8,
+      "INTENT_CANCELLED:ORDINARY_SELF_PROVISION_OVERRIDE": 8,
+      "INTENT_PAUSED:ORDINARY_SELF_PROVISION_OVERRIDE": 4
+    },
+    "rows": 16332,
+    "uninformed_board_reversal_rate": 0.0,
+    "uninformed_reversal_rate": 0.0
+  },
+  "self_priority": {
+    "counts": {
+      "ABLATION_ELIGIBLE": 16,
+      "BOARD_REVERSAL": 8,
+      "DECISION": 4680,
+      "DIRECTION_REVERSAL": 24,
+      "F_X_F": 8,
+      "INTENT_CANCELLED": 92,
+      "INTENT_CREATED": 92,
+      "INTENT_REACHED_X": 8,
+      "OPPOSITE_TRAVERSAL": 16,
+      "QUEUE_INTERRUPTION": 10552
+    },
+    "horizon_status": {
+      "CANCELLED:EATING": 16,
+      "CANCELLED:NO_JUSTIFIED_CURRENT_ACTION": 4,
+      "CANCELLED:PERSONAL_BUFFER_PROVISIONING": 72
+    },
+    "no_material_information_cancellations": {
+      "EATING": 8,
+      "PERSONAL_BUFFER_PROVISIONING": 72
+    },
+    "plan_completion_rate": 0.0,
+    "reasons": {
+      "DIRECTION_REVERSAL:OTHER_POLICY_OVERRIDE": 16,
+      "DIRECTION_REVERSAL:PERSONAL_BUFFER_PROVISIONING": 8,
+      "INTENT_CANCELLED:EATING": 16,
+      "INTENT_CANCELLED:NO_JUSTIFIED_CURRENT_ACTION": 4,
+      "INTENT_CANCELLED:PERSONAL_BUFFER_PROVISIONING": 72
+    },
+    "rows": 15496,
+    "uninformed_board_reversal_rate": 0.0,
+    "uninformed_reversal_rate": 0.0
+  }
+}

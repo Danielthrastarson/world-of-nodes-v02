@@ -1,0 +1,117 @@
+{
+  "committed": {
+    "capacity_violations": 0,
+    "consumed": 740,
+    "events": {
+      "Admitted": 72,
+      "Arrived": 64,
+      "Consumed": 360,
+      "Decision": 141024,
+      "Died": 34,
+      "F_X_F": 8,
+      "GatherStarted": 836,
+      "Gathered": 836,
+      "Interrupted": 38820,
+      "OPPOSITE_TRAVERSAL": 16,
+      "PerformanceChanged": 332,
+      "Queued": 11686,
+      "SleepStarted": 28412,
+      "Spoiled": 17,
+      "StarvationStarted": 62
+    },
+    "fifo_overtakes": 0,
+    "spoiled": 2260
+  },
+  "reactive": {
+    "capacity_violations": 0,
+    "consumed": 900,
+    "events": {
+      "Admitted": 72,
+      "Arrived": 68,
+      "Consumed": 420,
+      "Decision": 151176,
+      "Died": 30,
+      "F_X_F": 8,
+      "GatherStarted": 1020,
+      "Gathered": 1020,
+      "Interrupted": 41740,
+      "OPPOSITE_TRAVERSAL": 16,
+      "PerformanceChanged": 364,
+      "Queued": 10642,
+      "SleepStarted": 32320,
+      "Spoiled": 21,
+      "StarvationStarted": 66
+    },
+    "fifo_overtakes": 0,
+    "spoiled": 2100
+  },
+  "remembered": {
+    "capacity_violations": 0,
+    "consumed": 900,
+    "events": {
+      "Admitted": 72,
+      "Arrived": 68,
+      "Consumed": 420,
+      "Decision": 151176,
+      "Died": 30,
+      "F_X_F": 8,
+      "GatherStarted": 1020,
+      "Gathered": 1020,
+      "Interrupted": 41740,
+      "OPPOSITE_TRAVERSAL": 16,
+      "PerformanceChanged": 364,
+      "Queued": 10642,
+      "SleepStarted": 32320,
+      "Spoiled": 21,
+      "StarvationStarted": 66
+    },
+    "fifo_overtakes": 0,
+    "spoiled": 2100
+  },
+  "resumable": {
+    "capacity_violations": 0,
+    "consumed": 732,
+    "events": {
+      "Admitted": 72,
+      "Arrived": 64,
+      "Consumed": 352,
+      "Decision": 141016,
+      "Died": 34,
+      "F_X_F": 8,
+      "GatherStarted": 828,
+      "Gathered": 828,
+      "Interrupted": 38592,
+      "OPPOSITE_TRAVERSAL": 16,
+      "PerformanceChanged": 332,
+      "Queued": 11694,
+      "SleepStarted": 28408,
+      "Spoiled": 17,
+      "StarvationStarted": 62
+    },
+    "fifo_overtakes": 0,
+    "spoiled": 2268
+  },
+  "self_priority": {
+    "capacity_violations": 0,
+    "consumed": 900,
+    "events": {
+      "Admitted": 72,
+      "Arrived": 68,
+      "Consumed": 420,
+      "Decision": 151176,
+      "Died": 30,
+      "F_X_F": 8,
+      "GatherStarted": 1020,
+      "Gathered": 1020,
+      "Interrupted": 41740,
+      "OPPOSITE_TRAVERSAL": 16,
+      "PerformanceChanged": 364,
+      "Queued": 10642,
+      "SleepStarted": 32320,
+      "Spoiled": 21,
+      "StarvationStarted": 66
+    },
+    "fifo_overtakes": 0,
+    "spoiled": 2100
+  }
+}

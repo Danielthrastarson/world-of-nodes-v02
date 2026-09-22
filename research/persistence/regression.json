@@ -1,0 +1,6 @@
+{
+  "implementation_commit": "06c99a1",
+  "delivery_runs_reproduced": 180,
+  "acceptance_runs_reproduced": 120,
+  "comparison": "All original run CSV fields, including state and event hashes, match exactly."
+}

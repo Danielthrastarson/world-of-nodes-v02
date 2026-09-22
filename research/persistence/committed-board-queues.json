@@ -1,0 +1,182 @@
+[
+  {
+    "agent": 0,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.033333333333333,
+    "left_h": 6.0,
+    "wait_h": 0.9666666666666667
+  },
+  {
+    "agent": 1,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.033333333333333,
+    "left_h": 6.0,
+    "wait_h": 0.9666666666666667
+  },
+  {
+    "agent": 2,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.033333333333333,
+    "left_h": 6.0,
+    "wait_h": 0.9666666666666667
+  },
+  {
+    "agent": 3,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.033333333333333,
+    "left_h": 6.0,
+    "wait_h": 0.9666666666666667
+  },
+  {
+    "agent": 4,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.033333333333333,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.7444444444444445
+  },
+  {
+    "agent": 5,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.033333333333333,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.7444444444444445
+  },
+  {
+    "agent": 6,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.033333333333333,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.7444444444444445
+  },
+  {
+    "agent": 7,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.033333333333333,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.7444444444444445
+  },
+  {
+    "agent": 0,
+    "detail": "queue for route; was=Queued { edge: 0, to: 0, joined: 28800000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.0,
+    "left_h": 17.0,
+    "wait_h": 9.0
+  },
+  {
+    "agent": 1,
+    "detail": "queue for route; was=Queued { edge: 0, to: 0, joined: 28800000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.0,
+    "left_h": 17.0,
+    "wait_h": 9.0
+  },
+  {
+    "agent": 2,
+    "detail": "queue for route; was=Queued { edge: 0, to: 0, joined: 28800000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.0,
+    "left_h": 17.0,
+    "wait_h": 9.0
+  },
+  {
+    "agent": 3,
+    "detail": "queue for route; was=Queued { edge: 0, to: 0, joined: 28800000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.0,
+    "left_h": 17.0,
+    "wait_h": 9.0
+  },
+  {
+    "agent": 4,
+    "detail": "sleep; was=Queued { edge: 0, to: 0, joined: 47520000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 13.2,
+    "left_h": 18.0,
+    "wait_h": 4.8
+  },
+  {
+    "agent": 5,
+    "detail": "sleep; was=Queued { edge: 0, to: 0, joined: 47520000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 13.2,
+    "left_h": 18.0,
+    "wait_h": 4.8
+  },
+  {
+    "agent": 6,
+    "detail": "sleep; was=Queued { edge: 0, to: 0, joined: 47520000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 13.2,
+    "left_h": 18.0,
+    "wait_h": 4.8
+  },
+  {
+    "agent": 7,
+    "detail": "sleep; was=Queued { edge: 0, to: 0, joined: 47520000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 13.2,
+    "left_h": 18.0,
+    "wait_h": 4.8
+  },
+  {
+    "agent": 8,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 31.016666666666666,
+    "wait_h": 7.983333333333333
+  },
+  {
+    "agent": 9,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 31.016666666666666,
+    "wait_h": 7.983333333333333
+  },
+  {
+    "agent": 10,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 31.016666666666666,
+    "wait_h": 7.983333333333333
+  },
+  {
+    "agent": 11,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 31.016666666666666,
+    "wait_h": 7.983333333333333
+  }
+]

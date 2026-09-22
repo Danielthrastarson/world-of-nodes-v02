@@ -1,0 +1,74 @@
+[
+  {
+    "agent": 16,
+    "event": "Event { id: 22682, at: 30800000, agent: Some(16), cause: Some(22636), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 8.555555555555555
+  },
+  {
+    "agent": 17,
+    "event": "Event { id: 22683, at: 30800000, agent: Some(17), cause: Some(22637), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 8.555555555555555
+  },
+  {
+    "agent": 18,
+    "event": "Event { id: 22684, at: 30800000, agent: Some(18), cause: Some(22638), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 8.555555555555555
+  },
+  {
+    "agent": 19,
+    "event": "Event { id: 22685, at: 30800000, agent: Some(19), cause: Some(22639), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 8.555555555555555
+  },
+  {
+    "agent": 20,
+    "event": "Event { id: 30048, at: 40800000, agent: Some(20), cause: Some(30018), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 11.333333333333334
+  },
+  {
+    "agent": 21,
+    "event": "Event { id: 30049, at: 40800000, agent: Some(21), cause: Some(30019), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 11.333333333333334
+  },
+  {
+    "agent": 22,
+    "event": "Event { id: 30050, at: 40800000, agent: Some(22), cause: Some(30020), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 11.333333333333334
+  },
+  {
+    "agent": 23,
+    "event": "Event { id: 30051, at: 40800000, agent: Some(23), cause: Some(30021), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 11.333333333333334
+  },
+  {
+    "agent": 24,
+    "event": "Event { id: 42146, at: 57888000, agent: Some(24), cause: Some(42108), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 16.08
+  },
+  {
+    "agent": 25,
+    "event": "Event { id: 42147, at: 57888000, agent: Some(25), cause: Some(42109), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 16.08
+  },
+  {
+    "agent": 26,
+    "event": "Event { id: 42148, at: 57888000, agent: Some(26), cause: Some(42110), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 16.08
+  },
+  {
+    "agent": 27,
+    "event": "Event { id: 42149, at: 57888000, agent: Some(27), cause: Some(42111), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "joined_h": 0.0,
+    "time_h": 16.08
+  }
+]

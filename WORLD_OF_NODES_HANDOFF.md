@@ -26,6 +26,17 @@ the two forecast variants worsen survival. No diagnostic variant becomes the
 default. Preserve the previous evidence, physical rules, board locality, migration
 and starvation-reset behavior; this result authorizes no broader systems.
 
+The bounded [temporal-consistency experiment](docs/PERSISTENCE_EXPERIMENT.md) now
+has [150 paired results](research/persistence/REPORT.md). None completes a board
+visit. Goal memory alone is behaviorally identical to the meal-aware control;
+resumption/commitment change arbitration but encounter FIFO delay and survival
+interrupts. The isolated ordinary-12h-priority ablation changes no decisions in
+that history. Local goal churn exists, while the registered uninformed board-route
+reversal count is zero. These observations do not establish that forgetting alone
+causes the failure or select a final intention architecture. Preserve all earlier
+evidence and default behavior. No further behavior change or scope expansion is
+authorized by this report.
+
 ## Principle
 
 **The simulation is the source of the graphics.** The rendered world is a projection of underlying simulated state. Do not program a desired settlement outcome; program causal rules that can produce it. Do not animate a result when its cause can be simulated.

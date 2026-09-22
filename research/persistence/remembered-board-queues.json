@@ -1,0 +1,830 @@
+[
+  {
+    "agent": 0,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18120000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.033333333333333,
+    "left_h": 5.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 1,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18120000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.033333333333333,
+    "left_h": 5.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 2,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18120000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.033333333333333,
+    "left_h": 5.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 3,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18120000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.033333333333333,
+    "left_h": 5.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 0,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18182000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.0505555555555555,
+    "left_h": 5.066666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 1,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18182000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.0505555555555555,
+    "left_h": 5.066666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 2,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18182000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.0505555555555555,
+    "left_h": 5.066666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 3,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18182000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.0505555555555555,
+    "left_h": 5.066666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 0,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18242000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.067222222222222,
+    "left_h": 5.083333333333333,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 1,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18242000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.067222222222222,
+    "left_h": 5.083333333333333,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 2,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18242000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.067222222222222,
+    "left_h": 5.083333333333333,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 3,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18242000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.067222222222222,
+    "left_h": 5.083333333333333,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 0,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18302000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.083888888888889,
+    "left_h": 5.1,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 1,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18302000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.083888888888889,
+    "left_h": 5.1,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 2,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18302000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.083888888888889,
+    "left_h": 5.1,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 3,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18302000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.083888888888889,
+    "left_h": 5.1,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 0,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18362000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.100555555555555,
+    "left_h": 5.116666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 1,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18362000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.100555555555555,
+    "left_h": 5.116666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 2,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18362000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.100555555555555,
+    "left_h": 5.116666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 3,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18362000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.100555555555555,
+    "left_h": 5.116666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 0,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18422000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.117222222222222,
+    "left_h": 5.133333333333334,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 1,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18422000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.117222222222222,
+    "left_h": 5.133333333333334,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 2,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18422000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.117222222222222,
+    "left_h": 5.133333333333334,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 3,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 18422000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 5.117222222222222,
+    "left_h": 5.133333333333334,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 0,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.1338888888888885,
+    "left_h": 6.0,
+    "wait_h": 0.8661111111111112
+  },
+  {
+    "agent": 1,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.1338888888888885,
+    "left_h": 6.0,
+    "wait_h": 0.8661111111111112
+  },
+  {
+    "agent": 2,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.1338888888888885,
+    "left_h": 6.0,
+    "wait_h": 0.8661111111111112
+  },
+  {
+    "agent": 3,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.1338888888888885,
+    "left_h": 6.0,
+    "wait_h": 0.8661111111111112
+  },
+  {
+    "agent": 4,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25320000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.033333333333333,
+    "left_h": 7.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 5,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25320000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.033333333333333,
+    "left_h": 7.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 6,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25320000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.033333333333333,
+    "left_h": 7.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 7,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25320000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.033333333333333,
+    "left_h": 7.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 4,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25382000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.0505555555555555,
+    "left_h": 7.066666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 5,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25382000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.0505555555555555,
+    "left_h": 7.066666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 6,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25382000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.0505555555555555,
+    "left_h": 7.066666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 7,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25382000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.0505555555555555,
+    "left_h": 7.066666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 4,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25442000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.067222222222222,
+    "left_h": 7.083333333333333,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 5,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25442000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.067222222222222,
+    "left_h": 7.083333333333333,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 6,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25442000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.067222222222222,
+    "left_h": 7.083333333333333,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 7,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25442000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.067222222222222,
+    "left_h": 7.083333333333333,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 4,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25502000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.083888888888889,
+    "left_h": 7.1,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 5,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25502000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.083888888888889,
+    "left_h": 7.1,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 6,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25502000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.083888888888889,
+    "left_h": 7.1,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 7,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25502000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.083888888888889,
+    "left_h": 7.1,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 4,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25562000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.100555555555555,
+    "left_h": 7.116666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 5,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25562000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.100555555555555,
+    "left_h": 7.116666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 6,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25562000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.100555555555555,
+    "left_h": 7.116666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 7,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25562000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.100555555555555,
+    "left_h": 7.116666666666666,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 4,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25622000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.117222222222222,
+    "left_h": 7.133333333333334,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 5,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25622000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.117222222222222,
+    "left_h": 7.133333333333334,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 6,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25622000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.117222222222222,
+    "left_h": 7.133333333333334,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 7,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 25622000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 7.117222222222222,
+    "left_h": 7.133333333333334,
+    "wait_h": 0.01611111111111111
+  },
+  {
+    "agent": 4,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.1338888888888885,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.6438888888888887
+  },
+  {
+    "agent": 5,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.1338888888888885,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.6438888888888887
+  },
+  {
+    "agent": 6,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.1338888888888885,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.6438888888888887
+  },
+  {
+    "agent": 7,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.1338888888888885,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.6438888888888887
+  },
+  {
+    "agent": 0,
+    "detail": "eat accessible food; was=Queued { edge: 0, to: 0, joined: 28860000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.016666666666667,
+    "left_h": 11.016666666666667,
+    "wait_h": 3.0
+  },
+  {
+    "agent": 1,
+    "detail": "eat accessible food; was=Queued { edge: 0, to: 0, joined: 28860000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.016666666666667,
+    "left_h": 11.016666666666667,
+    "wait_h": 3.0
+  },
+  {
+    "agent": 2,
+    "detail": "eat accessible food; was=Queued { edge: 0, to: 0, joined: 28860000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.016666666666667,
+    "left_h": 11.016666666666667,
+    "wait_h": 3.0
+  },
+  {
+    "agent": 3,
+    "detail": "eat accessible food; was=Queued { edge: 0, to: 0, joined: 28860000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.016666666666667,
+    "left_h": 11.016666666666667,
+    "wait_h": 3.0
+  },
+  {
+    "agent": 8,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 23.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 9,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 23.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 10,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 23.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 11,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 23.05,
+    "wait_h": 0.016666666666666666
+  },
+  {
+    "agent": 8,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82982223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.0506175,
+    "left_h": 23.066666666666666,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 9,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82982223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.0506175,
+    "left_h": 23.066666666666666,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 10,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82982223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.0506175,
+    "left_h": 23.066666666666666,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 11,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82982223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.0506175,
+    "left_h": 23.066666666666666,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 8,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83042223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.067284166666667,
+    "left_h": 23.083333333333332,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 9,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83042223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.067284166666667,
+    "left_h": 23.083333333333332,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 10,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83042223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.067284166666667,
+    "left_h": 23.083333333333332,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 11,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83042223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.067284166666667,
+    "left_h": 23.083333333333332,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 8,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83102223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.083950833333333,
+    "left_h": 23.1,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 9,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83102223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.083950833333333,
+    "left_h": 23.1,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 10,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83102223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.083950833333333,
+    "left_h": 23.1,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 11,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83102223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.083950833333333,
+    "left_h": 23.1,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 8,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83162223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.1006175,
+    "left_h": 23.116666666666667,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 9,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83162223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.1006175,
+    "left_h": 23.116666666666667,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 10,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83162223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.1006175,
+    "left_h": 23.116666666666667,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 11,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83162223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.1006175,
+    "left_h": 23.116666666666667,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 8,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83222223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.117284166666668,
+    "left_h": 23.133333333333333,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 9,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83222223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.117284166666668,
+    "left_h": 23.133333333333333,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 10,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83222223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.117284166666668,
+    "left_h": 23.133333333333333,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 11,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 83222223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.117284166666668,
+    "left_h": 23.133333333333333,
+    "wait_h": 0.016049166666666666
+  },
+  {
+    "agent": 8,
+    "detail": "eat accessible food; was=Queued { edge: 1, to: 1, joined: 83282223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.133950833333333,
+    "left_h": 29.016666666666666,
+    "wait_h": 5.882715833333333
+  },
+  {
+    "agent": 9,
+    "detail": "eat accessible food; was=Queued { edge: 1, to: 1, joined: 83282223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.133950833333333,
+    "left_h": 29.016666666666666,
+    "wait_h": 5.882715833333333
+  },
+  {
+    "agent": 10,
+    "detail": "eat accessible food; was=Queued { edge: 1, to: 1, joined: 83282223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.133950833333333,
+    "left_h": 29.016666666666666,
+    "wait_h": 5.882715833333333
+  },
+  {
+    "agent": 11,
+    "detail": "eat accessible food; was=Queued { edge: 1, to: 1, joined: 83282223 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.133950833333333,
+    "left_h": 29.016666666666666,
+    "wait_h": 5.882715833333333
+  },
+  {
+    "agent": 12,
+    "detail": "eat accessible food; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 34.81666666666667,
+    "wait_h": 5.783333333333333
+  },
+  {
+    "agent": 13,
+    "detail": "eat accessible food; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 34.81666666666667,
+    "wait_h": 5.783333333333333
+  },
+  {
+    "agent": 14,
+    "detail": "eat accessible food; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 34.81666666666667,
+    "wait_h": 5.783333333333333
+  },
+  {
+    "agent": 15,
+    "detail": "eat accessible food; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 34.81666666666667,
+    "wait_h": 5.783333333333333
+  }
+]

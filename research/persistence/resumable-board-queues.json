@@ -1,0 +1,218 @@
+[
+  {
+    "agent": 0,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.033333333333333,
+    "left_h": 6.0,
+    "wait_h": 0.9666666666666667
+  },
+  {
+    "agent": 1,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.033333333333333,
+    "left_h": 6.0,
+    "wait_h": 0.9666666666666667
+  },
+  {
+    "agent": 2,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.033333333333333,
+    "left_h": 6.0,
+    "wait_h": 0.9666666666666667
+  },
+  {
+    "agent": 3,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 5.033333333333333,
+    "left_h": 6.0,
+    "wait_h": 0.9666666666666667
+  },
+  {
+    "agent": 4,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.033333333333333,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.7444444444444445
+  },
+  {
+    "agent": 5,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.033333333333333,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.7444444444444445
+  },
+  {
+    "agent": 6,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.033333333333333,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.7444444444444445
+  },
+  {
+    "agent": 7,
+    "detail": "edge=1 from=2 to=1",
+    "edge": 1,
+    "end": "Admitted",
+    "joined_h": 7.033333333333333,
+    "left_h": 10.777777777777779,
+    "wait_h": 3.7444444444444445
+  },
+  {
+    "agent": 0,
+    "detail": "queue for route; was=Queued { edge: 0, to: 0, joined: 28800000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.0,
+    "left_h": 11.016666666666667,
+    "wait_h": 3.0166666666666666
+  },
+  {
+    "agent": 1,
+    "detail": "queue for route; was=Queued { edge: 0, to: 0, joined: 28800000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.0,
+    "left_h": 11.016666666666667,
+    "wait_h": 3.0166666666666666
+  },
+  {
+    "agent": 2,
+    "detail": "queue for route; was=Queued { edge: 0, to: 0, joined: 28800000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.0,
+    "left_h": 11.016666666666667,
+    "wait_h": 3.0166666666666666
+  },
+  {
+    "agent": 3,
+    "detail": "queue for route; was=Queued { edge: 0, to: 0, joined: 28800000 }",
+    "edge": 0,
+    "end": "Interrupted",
+    "joined_h": 8.0,
+    "left_h": 11.016666666666667,
+    "wait_h": 3.0166666666666666
+  },
+  {
+    "agent": 8,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 29.016666666666666,
+    "wait_h": 5.983333333333333
+  },
+  {
+    "agent": 9,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 29.016666666666666,
+    "wait_h": 5.983333333333333
+  },
+  {
+    "agent": 10,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 29.016666666666666,
+    "wait_h": 5.983333333333333
+  },
+  {
+    "agent": 11,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 82920000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 23.033333333333335,
+    "left_h": 29.016666666666666,
+    "wait_h": 5.983333333333333
+  },
+  {
+    "agent": 8,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 29.816666666666666,
+    "wait_h": 0.7833333333333333
+  },
+  {
+    "agent": 9,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 29.816666666666666,
+    "wait_h": 0.7833333333333333
+  },
+  {
+    "agent": 10,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 29.816666666666666,
+    "wait_h": 0.7833333333333333
+  },
+  {
+    "agent": 11,
+    "detail": "new gathering action; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 29.816666666666666,
+    "wait_h": 0.7833333333333333
+  },
+  {
+    "agent": 12,
+    "detail": "cancel invalid research route; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 33.75,
+    "wait_h": 4.716666666666667
+  },
+  {
+    "agent": 13,
+    "detail": "cancel invalid research route; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 33.75,
+    "wait_h": 4.716666666666667
+  },
+  {
+    "agent": 14,
+    "detail": "cancel invalid research route; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 33.75,
+    "wait_h": 4.716666666666667
+  },
+  {
+    "agent": 15,
+    "detail": "cancel invalid research route; was=Queued { edge: 1, to: 1, joined: 104520000 }",
+    "edge": 1,
+    "end": "Interrupted",
+    "joined_h": 29.033333333333335,
+    "left_h": 33.75,
+    "wait_h": 4.716666666666667
+  }
+]

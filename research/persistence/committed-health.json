@@ -1,0 +1,29 @@
+[
+  {
+    "alive_nutrition_max": 16.882222222,
+    "alive_nutrition_median": 15.401111111,
+    "alive_nutrition_min": 12.882222222,
+    "continuously_nourished_per_run": 4.0,
+    "survivors_per_run": 16.0,
+    "time_h": 36,
+    "zero_nutrition_hours_per_run": 894.266666664
+  },
+  {
+    "alive_nutrition_max": 16.882222222,
+    "alive_nutrition_median": 15.401111111,
+    "alive_nutrition_min": 12.882222222,
+    "continuously_nourished_per_run": 4.0,
+    "survivors_per_run": 16.0,
+    "time_h": 48,
+    "zero_nutrition_hours_per_run": 894.266666664
+  },
+  {
+    "alive_nutrition_max": 0.0,
+    "alive_nutrition_median": 0.0,
+    "alive_nutrition_min": 0.0,
+    "continuously_nourished_per_run": 0.0,
+    "survivors_per_run": 16.0,
+    "time_h": 72,
+    "zero_nutrition_hours_per_run": 1036.0
+  }
+]
