@@ -3,9 +3,10 @@
   "implementation_commits": [
     "000283b",
     "e0f4e4c",
-    "c923fac"
+    "c923fac",
+    "49e6a94"
   ],
-  "source_commit": "c923fac0cc13a2f326393f10ac115679388cbf2d",
+  "source_commit": "e9f6d03878efb048d3d3a606d66183c2306631da",
   "source_sha256": {
     "src/bin/acceptance_probe.rs": "593e0cb7723807bea9153d294257054e919cc294c904b09130c6108c0e26d811",
     "src/bin/coherence_probe.rs": "ff3ce3ab5648516a6c663aa005d5d6653bcd44abed8b5c6564a40ece7c059038",
@@ -30,14 +31,14 @@
     "src/provisioning/policy.rs": "9ecc8f0d30c25ccb22d2c4dd6bb71e386813e1f6faa83f9fc67df44022c8de28",
     "src/provisioning/runtime.rs": "aed032d96ad75b328172f55d5c494be036646571bd3f662666c03e123916a8fa",
     "src/provisioning/shadow/mod.rs": "a0196ea8b9a1892448a452514bab0d084eb9632d7732afce0dbd96fa8deecfa6",
-    "src/provisioning/shadow/observer.rs": "c2f3dcfd2d44d0c742cc85ab43ef1fbeb578b603717b6c694fe8771bf4a434c8",
+    "src/provisioning/shadow/observer.rs": "5eaeb3774c03047ac2c7bdbd53ac1c7248ae80b350a2d30c2d27cc922ba87300",
     "src/provisioning/shadow/oracle.rs": "cb24ec2d3b4df6e299af5264225bf42963e9d71a3985ae07608e598d9e317c66",
     "src/provisioning/shadow/physics.rs": "a611c8af07fb9ce3cbe895baacdb8ee93243da64bcf88caf97f2254290bf6b19",
     "src/provisioning/shadow/plan.rs": "d970d4a7afbc6d12c333470cc82a0f174a1f0054f5cba2aaff84f09f19bbc6bf",
     "src/provisioning/shadow/static_cases.rs": "fd637716d3efce580aaaf51f17886ae48a28c09ef6d0c48c02e2674a04a6d7ef",
     "src/provisioning/tests.rs": "5814a3a632959474e37741215803bad0ee7465fdd03092d2ce614affaba659d3",
     "scripts/analyze_acceptance.py": "d5970d8994b1fbfa222812a99de3c36d547781fd0c963b6fff16c1b879c57970",
-    "scripts/analyze_coherence.py": "0482cdf59eab8424e8cf08a0333e4a5d26de100583871d8479ae29fc566f5a76",
+    "scripts/analyze_coherence.py": "112711600a0646d3fd4f5641359927698ff03572b64adbac430944595a90f4b4",
     "scripts/analyze_congestion.py": "1920e541270cc14861a29c59650fae1df32216fe7d68ff40eafd02a36c19e30b",
     "scripts/analyze_delivery.py": "6e37d791f2be3e740248e8ff3dfa2eab2d292ebc71cb983a1ccb8cab4fd554d0",
     "scripts/analyze_persistence.py": "f8d2b07756c6b4b0a62c248cf7c0f06c5aa9f322a91f40b87c713f057724f058",
@@ -106,7 +107,12 @@
     "earlier_byte_identical_detailed_files": 100,
     "final_runner_pairs": 30,
     "first_pass_data_files_unchanged": 106,
-    "only_changed_data": "phase1/static.csv (expanded coverage)"
+    "only_changed_data": "phase1/static.csv (expanded coverage)",
+    "first_pass_data_comparison_scope": "Before observer mode-dispatch correction",
+    "observer_revalidation_pairs": 1,
+    "observer_revalidation_changed_files": [
+      "phase3/coherent-shadow-routes.csv.gz"
+    ]
   },
   "scope_notes": [
     "Default Current policy unchanged; CoherentForecast is opt-in research only.",
@@ -120,7 +126,8 @@
     "Repeated seeds demonstrate deterministic reproduction, not independent stochastic samples.",
     "Corrected live event hashes differ due to reasons/forecast numbers; all selected intents and physical checkpoints match.",
     "The old belief oracle remains preserved. New endpoint comparison stops at focal death.",
-    "Final source-prefilter coverage correction and first-pass data are explicitly retained; final full run follows expanded static validation."
+    "Final source-prefilter coverage correction and first-pass data are explicitly retained; final full run follows expanded static validation.",
+    "Observer now dispatches route probes to the active forecast mode. Fresh seed0 paired replay exactly reproduces counts, run outcomes and physical/event checkpoints; only corrected hypothetical-route probe output changes. Other seeds had shadow capture disabled, so their rows are unaffected."
   ],
   "reproduce": [
     "cargo test",
@@ -128,5 +135,7 @@
     "cargo clippy --all-targets -- -D warnings",
     "cargo build --release --bin coherence_probe",
     "python3 scripts/run_coherence.py NEW_DIRECTORY 30"
-  ]
+  ],
+  "corrected_conditional_route_steps_exact": 317596,
+  "legacy_conditional_route_step_discrepancies": 3976
 }

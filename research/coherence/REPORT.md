@@ -139,6 +139,12 @@ For each live arm, conditional candidates classify as 7,560 correct-feasible and
 31,488 correct-infeasible, with zero false-feasible/false-infeasible. Every one of
 the 7,560 physically executable candidates still fails the six-hour margin.
 
+The corrected live route audit also matches all **317,596 known-route step
+predictions** under the same waiting assumptions. The legacy route probe has 3,976
+step-arithmetic discrepancies on those states. Both route survival classifications
+are 208,084 correct-feasible and 3,980 correct-infeasible in this particular history;
+those timing defects do not flip its route survival classifications.
+
 These results condition on the agent's remembered stock and estimated waiting.
 They do not imply that the real world will supply that stock or that waiting time.
 
@@ -201,8 +207,10 @@ previous severe undernourishment result are unchanged. Migration remains valid.
 ## 6. Mechanical error versus queue information versus world changes
 
 Corrected conditional arithmetic matches the tested mechanics, but **actual travel
-error remains**. The control and corrected arms produce byte-identical queue-episode
-evidence and identical physical outcomes.
+error remains**. The control and corrected arms produce byte-identical selected-edge episode
+evidence and identical physical outcomes. The observer now dispatches to the
+corrected estimator; only the broader hypothetical-route probe file changes in
+this fixture. Selected-edge policy-error columns remain identical too.
 
 | Comparison | n | Mean signed error | Range |
 |---|---:|---:|---:|
@@ -289,8 +297,12 @@ checks historical replay hashes, and retains compressed decision/forecast traces
 The runner completed all phases again after extending static validation. The earlier
 clean one-seed reproduction and the final expanded run are distinguished in the
 provenance; retained first-pass evidence is not silently overwritten.
-The final run reproduces **106 shared data files byte-for-byte** from the first pass;
-the only changed shared data file is the static table expanded from 481 to 540 rows.
+Before the observer's mode-dispatch correction, the final run reproduced **106
+shared data files byte-for-byte** from the first pass; only the expanded static
+table differed. The subsequent observer-only revalidation reproduced both seed-0
+run rows, counts and all checkpoints, while updating only the corrected hypothetical
+route-probe file. Original legacy probes remain in the first-pass archive.
+See [reproduction.json](reproduction.json) for the exact changed files.
 The report's counts, raw gate tables and kernel witnesses are reproduced by
 `scripts/analyze_coherence.py`. Checksums and source revision are recorded alongside
 this report. Exactness is limited to tested inputs and stipulated beliefs; it is

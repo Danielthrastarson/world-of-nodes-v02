@@ -973,7 +973,16 @@
         "mean": -10158117.647058824,
         "exact": 44
       },
-      "frozen_no_admission": 1092
+      "frozen_no_admission": 1092,
+      "conditional_route_steps": {
+        "n": 317596,
+        "exact": 313620,
+        "discrepancies": 3976
+      },
+      "conditional_route_feasibility": {
+        "CORRECT_FEASIBLE": 208084,
+        "CORRECT_INFEASIBLE": 3980
+      }
     },
     "coherent": {
       "runs": 30,
@@ -1396,7 +1405,16 @@
         "mean": -10158117.647058824,
         "exact": 44
       },
-      "frozen_no_admission": 1092
+      "frozen_no_admission": 1092,
+      "conditional_route_steps": {
+        "n": 317596,
+        "exact": 317596,
+        "discrepancies": 0
+      },
+      "conditional_route_feasibility": {
+        "CORRECT_FEASIBLE": 208084,
+        "CORRECT_INFEASIBLE": 3980
+      }
     }
   },
   "paired_live": {

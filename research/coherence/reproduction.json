@@ -111,5 +111,38 @@
   "expanded_coverage_file": [
     "phase1/static.csv"
   ],
-  "earlier_clean_one_seed_reproduction": "../coherence-first-pass/reproduction.json"
+  "earlier_clean_one_seed_reproduction": "../coherence-first-pass/reproduction.json",
+  "first_pass_comparison_scope": "Final 30-pair run before observer mode-dispatch correction",
+  "observer_dispatch_revalidation": {
+    "pairs": 1,
+    "all_run_counts_and_checkpoint_rows_identical": true,
+    "changed_observer_files": [
+      "coherent-shadow-routes.csv.gz"
+    ],
+    "unchanged_observer_files": [
+      "coherent-shadow-captures.tsv.gz",
+      "coherent-shadow-episodes.csv.gz",
+      "coherent-shadow-kernel_plans.csv.gz",
+      "coherent-shadow-memory.csv.gz",
+      "coherent-shadow-needs.csv.gz",
+      "coherent-shadow-plans.csv.gz",
+      "coherent-shadow-primitives.csv.gz",
+      "coherent-shadow-route_feasibility.csv.gz",
+      "coherent-shadow-self_count.csv.gz",
+      "coherent-shadow-self_count_witness.csv.gz",
+      "control-shadow-captures.tsv.gz",
+      "control-shadow-episodes.csv.gz",
+      "control-shadow-kernel_plans.csv.gz",
+      "control-shadow-memory.csv.gz",
+      "control-shadow-needs.csv.gz",
+      "control-shadow-plans.csv.gz",
+      "control-shadow-primitives.csv.gz",
+      "control-shadow-route_feasibility.csv.gz",
+      "control-shadow-routes.csv.gz",
+      "control-shadow-self_count.csv.gz",
+      "control-shadow-self_count_witness.csv.gz"
+    ],
+    "corrected_route_steps_exact": 317596,
+    "legacy_route_step_discrepancies": 3976
+  }
 }
