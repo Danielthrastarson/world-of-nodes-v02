@@ -1,0 +1,8 @@
+{
+  "prior_affected_candidates": 7236,
+  "affected_still_numerically_changed": 7236,
+  "prior_gate_changes": 2028,
+  "prior_gate_changes_still_changes": 1752,
+  "prior_rejection_to_pass": 788,
+  "prior_passes_retained": 788
+}

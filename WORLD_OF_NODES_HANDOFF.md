@@ -58,6 +58,16 @@ witnesses separate these defects from information gaps, capacity competition and
 explicit margins. No BDI/GOAP architecture, new institution, default forecast fix or
 policy change is adopted. Existing negative provisioning findings remain intact.
 
+The [forecast coherence increment](docs/FORECAST_COHERENCE.md) now has
+[static, offline and live evidence](research/coherence/REPORT.md). The six proven
+mechanics defects are corrected only in an explicit research forecast mode. All
+540 covered composite/source-prefilter kernel comparisons and 130 primitive checks pass. Offline
+forecasts change, but the isolated 30-pair live delivery comparison changes zero
+selected actions and preserves physical state hashes: zero board return arrivals,
+jobs and deliveries; 28 survivors and 944 starvation-person-hours. The current
+no-meal-credit assumption and six-hour end margin remain intact. No correction is
+adopted as default; no new architecture or institution is authorized by the result.
+
 ## Principle
 
 **The simulation is the source of the graphics.** The rendered world is a projection of underlying simulated state. Do not program a desired settlement outcome; program causal rules that can produce it. Do not animate a result when its cause can be simulated.

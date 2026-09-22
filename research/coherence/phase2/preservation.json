@@ -1,0 +1,50 @@
+{
+  "reference": {
+    "event_hash": "89b7b642ce88e347",
+    "state_hash": "e801c9f7f2b1cd42",
+    "historical_match": true,
+    "kernel_exact": 40
+  },
+  "current": {
+    "event_hash": "056700f14dd3919c",
+    "state_hash": "a73b33d1ecabd5d1",
+    "historical_match": true,
+    "kernel_exact": 57
+  },
+  "known_source": {
+    "event_hash": "b5bead60d9e8bedf",
+    "state_hash": "90ba5b34bcb61c59",
+    "historical_match": true,
+    "kernel_exact": 64
+  },
+  "reactive": {
+    "event_hash": "00b2d22978a370eb",
+    "state_hash": "98c779b899d8487d",
+    "historical_match": true,
+    "kernel_exact": 47
+  },
+  "committed": {
+    "event_hash": "d821bd7a701bbfab",
+    "state_hash": "9461f7349827e231",
+    "historical_match": true,
+    "kernel_exact": 46
+  },
+  "forecast_corrected": {
+    "event_hash": "8d5b93f05b6e7c8f",
+    "state_hash": "3d88968286ee4c8f",
+    "historical_match": true,
+    "kernel_exact": 50
+  },
+  "contested_requests": {
+    "event_hash": "c67da5c9419cf259",
+    "state_hash": "e6b7d27205bc11a8",
+    "historical_match": true,
+    "kernel_exact": 65
+  },
+  "stale_depletion": {
+    "event_hash": "34e983cd262f016a",
+    "state_hash": "94036e737ffb5922",
+    "historical_match": true,
+    "kernel_exact": 2
+  }
+}

@@ -1,0 +1,17 @@
+seed,key,count
+0,candidate_newly_evaluated,4444
+0,decision_points,124446
+0,intent_changed_on_same_inputs,5440
+0,kernel_exact,2
+0,live_acceptance_evaluations,1200
+0,live_gate:,1200
+0,new_candidate_evaluations,4444
+0,new_candidate_gate:CANNOT_REACH_SOURCE_ALIVE,4444
+0,new_gate:DEFERRED:,22990
+0,new_gate:DEFERRED:FATIGUE_CONSTRAINT,18783
+0,new_gate:DEFERRED:OTHER_EXPLICIT_REASON,66750
+0,new_gate:EVALUATION:,11479
+0,new_gate:EVALUATION:CANNOT_REACH_SOURCE_ALIVE,4444
+0,new_physical:CORRECT_INFEASIBLE,4444
+0,reason_changed_on_same_inputs,53678
+0,unique_agents_reaching_f,28

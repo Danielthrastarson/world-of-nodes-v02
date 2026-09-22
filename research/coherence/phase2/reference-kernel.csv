@@ -1,0 +1,41 @@
+time_ms,agent,board,source,exact,forecast_ms,kernel_ms,forecast_cargo,kernel_cargo,kernel_failure
+41520000,12,0,2,true,119552000,119552000,10,10,NONE
+43200000,12,0,2,true,123872000,123872000,4,4,NONE
+46800000,12,0,2,true,109472000,109472000,4,4,NONE
+50400000,12,0,2,true,116672000,116672000,4,4,NONE
+52320000,12,0,2,true,120512000,120512000,0,0,NONE
+54000000,12,0,2,true,123872000,123872000,0,0,NONE
+57600000,12,0,2,true,131072000,131072000,0,0,NONE
+58620000,16,0,2,true,132476000,132476000,0,0,DEATH
+61200000,12,0,2,true,133200000,133200000,0,0,DEATH
+61560000,16,0,2,true,116784000,116784000,0,0,NONE
+64920000,12,0,2,true,116840000,116840000,0,0,NONE
+83160000,16,0,2,true,78264000,78264000,10,10,NONE
+86280000,16,0,2,true,86544000,86544000,0,0,NONE
+86400000,16,0,2,true,86856000,86856000,0,0,NONE
+86520000,12,0,2,true,65600015,65600015,10,10,NONE
+90000000,12,0,2,true,75992000,75992000,4,4,NONE
+90000000,16,0,2,true,96216000,96216000,0,0,NONE
+93600000,12,0,2,true,86720000,86720000,0,0,NONE
+94320000,20,0,2,true,132776000,132776000,0,0,DEATH
+97200000,12,0,2,true,96080000,96080000,0,0,NONE
+100800000,12,0,2,true,105440000,105440000,0,0,NONE
+104400000,12,0,2,true,114800000,114800000,0,0,NONE
+108000000,12,0,2,true,66420000,66420000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+111600000,12,0,2,true,109652000,109652000,0,0,NONE
+115200000,12,0,2,true,59220000,59220000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+118800000,12,0,2,true,66420000,66420000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+122400000,12,0,2,true,73440000,73440000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+126000000,12,0,2,true,77040000,77040000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+129600000,16,0,2,true,60338500,60338500,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+133200000,16,0,2,true,65944000,65944000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+136800000,16,0,2,true,69544000,69544000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+140400000,20,0,2,true,70996000,70996000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+144000000,20,0,2,true,58433500,58433500,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+147600000,20,0,2,true,63796000,63796000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+151200000,16,0,2,true,58088500,58088500,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+154800000,12,0,2,true,36180000,36180000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+158400000,12,0,2,true,40500000,40500000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+162000000,12,0,2,true,45000000,45000000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+165600000,12,0,2,true,49500000,49500000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable
+169200000,12,0,2,true,58320000,58320000,0,0,Gather { batch: 0; communal: true }: gather inputs/capacity unavailable

@@ -41,3 +41,10 @@ preserved execution. Run it with `cargo build --release --bin shadow_probe` foll
 by `python3 scripts/run_shadow.py /tmp/won-shadow-reproduction 30` (new directory).
 It changes no autonomous policy; contract assumptions are in
 [SHADOW_AUDIT.md](docs/SHADOW_AUDIT.md).
+
+The [forecast coherence correction](research/coherence/REPORT.md) is an opt-in
+research variant. Covered composite forecasts now conform to the kernel; the
+30-pair live delivery comparison changes no selected actions or physical outcomes
+and still delivers zero communal food. The default policy remains unchanged.
+Reproduce with `cargo build --release --bin coherence_probe` and
+`python3 scripts/run_coherence.py NEW_OUTPUT_DIRECTORY 30`.

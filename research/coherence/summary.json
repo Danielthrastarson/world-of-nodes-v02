@@ -1,0 +1,1620 @@
+{
+  "static": {
+    "composite_cases": 540,
+    "composite_exact": 540,
+    "primitive_cases": 130,
+    "primitive_exact": 130
+  },
+  "offline": {
+    "committed": {
+      "board_bound_x_arrivals": 8,
+      "board_directed_intents": 12,
+      "board_queue_joins": 12,
+      "candidate_changed": 6228,
+      "changed:cargo": 1128,
+      "changed:nutrition": 2880,
+      "changed:time": 3280,
+      "decision_points": 141024,
+      "intent_changed_on_same_inputs": 748,
+      "kernel_exact": 46,
+      "live_acceptance_evaluations": 35500,
+      "live_gate:INSUFFICIENT_EXPECTED_QUANTITY": 456,
+      "live_gate:NO_KNOWN_SOURCE": 17952,
+      "live_gate:PASS": 12,
+      "live_gate:POST_PLAN_NUTRITION_MARGIN": 5392,
+      "live_gate:SOURCE_PREDICTED_SPOILED": 11688,
+      "matched_candidates": 35500,
+      "matched_physical_classifications": 17548,
+      "new_candidate_evaluations": 35500,
+      "new_candidate_gate:NO_KNOWN_SOURCE": 17952,
+      "new_candidate_gate:PASS": 760,
+      "new_candidate_gate:SOURCE_PREDICTED_SPOILED": 16788,
+      "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 38124,
+      "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 67400,
+      "new_gate:EVALUATION:NO_KNOWN_SOURCE": 17952,
+      "new_gate:EVALUATION:PASS": 760,
+      "new_gate:EVALUATION:SOURCE_PREDICTED_SPOILED": 16788,
+      "new_partial_prefilter": 17952,
+      "new_physical:CORRECT_FEASIBLE": 760,
+      "new_physical:CORRECT_INFEASIBLE": 16788,
+      "physical_feasibility_changed": 748,
+      "primary_gate_changed": 5848,
+      "reason_changed_on_same_inputs": 54502,
+      "rejection_to_pass": 748,
+      "self_only_candidate_change_retained_by_all": 3280,
+      "self_only_candidate_changed": 3280,
+      "self_only_intent_change_retained_by_all": 748,
+      "self_only_intent_changed": 748,
+      "unique_agents_reaching_f": 16,
+      "deltas": {
+        "ms": {
+          "n": 17548,
+          "min": -32076000,
+          "median": 0.0,
+          "max": 24319000,
+          "mean": -3520904.0346478233,
+          "exact": 14268
+        },
+        "nutrition": {
+          "n": 17548,
+          "min": -25468000,
+          "median": 0.0,
+          "max": 31880000,
+          "mean": 1806788.693868247,
+          "exact": 14668
+        },
+        "fatigue": {
+          "n": 17548,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "exact": 17548
+        },
+        "cargo": {
+          "n": 17548,
+          "min": -6,
+          "median": 0.0,
+          "max": 5,
+          "mean": 0.004103031684522453,
+          "exact": 16420
+        }
+      },
+      "kernel_rows": 46
+    },
+    "contested_requests": {
+      "board_bound_x_arrivals": 16,
+      "board_directed_intents": 148,
+      "board_queue_joins": 148,
+      "candidate_changed": 14024,
+      "changed:cargo": 5544,
+      "changed:fatigue": 3084,
+      "changed:nutrition": 7648,
+      "changed:time": 13988,
+      "decision_points": 158432,
+      "intent_changed_on_same_inputs": 1079,
+      "kernel_exact": 65,
+      "live_acceptance_evaluations": 51308,
+      "live_gate:": 34350,
+      "live_gate:CANNOT_COMPLETE_PLAN_ALIVE": 1316,
+      "live_gate:NO_KNOWN_SOURCE": 5710,
+      "live_gate:PASS": 236,
+      "live_gate:POST_PLAN_NUTRITION_MARGIN": 9084,
+      "live_gate:REQUEST_ALREADY_CLAIMED": 60,
+      "live_gate:SOURCE_PREDICTED_SPOILED": 552,
+      "matched_candidates": 19918,
+      "matched_physical_classifications": 14148,
+      "new_candidate_evaluations": 19918,
+      "new_candidate_gate:CANNOT_COMPLETE_PLAN_ALIVE": 460,
+      "new_candidate_gate:NO_KNOWN_SOURCE": 5710,
+      "new_candidate_gate:PASS": 1944,
+      "new_candidate_gate:POST_PLAN_NUTRITION_MARGIN": 6660,
+      "new_candidate_gate:REQUEST_ALREADY_CLAIMED": 60,
+      "new_candidate_gate:SOURCE_PREDICTED_SPOILED": 5084,
+      "new_gate:DEFERRED:": 22760,
+      "new_gate:DEFERRED:CARRY_CAPACITY_ZERO": 5820,
+      "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 28500,
+      "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 50044,
+      "new_gate:EVALUATION:": 34350,
+      "new_gate:EVALUATION:CANNOT_COMPLETE_PLAN_ALIVE": 460,
+      "new_gate:EVALUATION:NO_KNOWN_SOURCE": 5710,
+      "new_gate:EVALUATION:PASS": 1944,
+      "new_gate:EVALUATION:POST_PLAN_NUTRITION_MARGIN": 5056,
+      "new_gate:EVALUATION:REQUEST_ALREADY_CLAIMED": 60,
+      "new_gate:EVALUATION:SOURCE_PREDICTED_SPOILED": 3728,
+      "new_partial_prefilter": 5770,
+      "new_physical:CORRECT_FEASIBLE": 8604,
+      "new_physical:CORRECT_INFEASIBLE": 5544,
+      "physical_feasibility_changed": 796,
+      "primary_gate_changed": 6384,
+      "reason_changed_on_same_inputs": 22979,
+      "rejection_to_pass": 1708,
+      "unique_agents_reaching_f": 28,
+      "deltas": {
+        "ms": {
+          "n": 14148,
+          "min": -77352500,
+          "median": -15615000.0,
+          "max": 12960000,
+          "mean": -17382979.34549053,
+          "exact": 160
+        },
+        "nutrition": {
+          "n": 14148,
+          "min": -7683336,
+          "median": 0.0,
+          "max": 24050000,
+          "mean": 6506639.193101498,
+          "exact": 6500
+        },
+        "fatigue": {
+          "n": 14148,
+          "min": -17320000,
+          "median": 0.0,
+          "max": 1519999,
+          "mean": -2129755.5894826124,
+          "exact": 11064
+        },
+        "cargo": {
+          "n": 14148,
+          "min": -10,
+          "median": 0.0,
+          "max": 0,
+          "mean": -1.9100932994062765,
+          "exact": 8604
+        }
+      },
+      "kernel_rows": 65
+    },
+    "current": {
+      "candidate_changed": 32316,
+      "changed:cargo": 31488,
+      "changed:fatigue": 856,
+      "changed:nutrition": 6792,
+      "changed:time": 20704,
+      "decision_points": 161788,
+      "kernel_exact": 57,
+      "live_acceptance_evaluations": 58760,
+      "live_gate:CANNOT_COMPLETE_PLAN_ALIVE": 2696,
+      "live_gate:NO_KNOWN_SOURCE": 19712,
+      "live_gate:POST_PLAN_NUTRITION_MARGIN": 36352,
+      "matched_candidates": 58760,
+      "matched_physical_classifications": 39048,
+      "new_candidate_evaluations": 58760,
+      "new_candidate_gate:CANNOT_COMPLETE_PLAN_ALIVE": 1124,
+      "new_candidate_gate:NO_KNOWN_SOURCE": 19712,
+      "new_candidate_gate:POST_PLAN_NUTRITION_MARGIN": 7560,
+      "new_candidate_gate:SOURCE_PREDICTED_SPOILED": 30364,
+      "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 42808,
+      "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 60220,
+      "new_gate:EVALUATION:CANNOT_COMPLETE_PLAN_ALIVE": 1124,
+      "new_gate:EVALUATION:NO_KNOWN_SOURCE": 19712,
+      "new_gate:EVALUATION:POST_PLAN_NUTRITION_MARGIN": 7560,
+      "new_gate:EVALUATION:SOURCE_PREDICTED_SPOILED": 30364,
+      "new_partial_prefilter": 19712,
+      "new_physical:CORRECT_FEASIBLE": 7560,
+      "new_physical:CORRECT_INFEASIBLE": 31488,
+      "primary_gate_changed": 30364,
+      "reason_changed_on_same_inputs": 41910,
+      "unique_agents_reaching_f": 28,
+      "deltas": {
+        "ms": {
+          "n": 39048,
+          "min": -57680000,
+          "median": -1352000.0,
+          "max": 15,
+          "mean": -26704656.169022743,
+          "exact": 18344
+        },
+        "nutrition": {
+          "n": 39048,
+          "min": -6,
+          "median": 0.0,
+          "max": 31219999,
+          "mean": 1389970.4886293793,
+          "exact": 32256
+        },
+        "fatigue": {
+          "n": 39048,
+          "min": -15919999,
+          "median": 0.0,
+          "max": 0,
+          "mean": -161763.5950624872,
+          "exact": 38192
+        },
+        "cargo": {
+          "n": 39048,
+          "min": -10,
+          "median": -4.0,
+          "max": 0,
+          "mean": -3.296558082360172,
+          "exact": 7560
+        }
+      },
+      "kernel_rows": 57
+    },
+    "forecast_corrected": {
+      "board_bound_x_arrivals": 4,
+      "board_directed_intents": 36,
+      "board_queue_joins": 36,
+      "candidate_changed": 13896,
+      "changed:cargo": 772,
+      "decision_points": 154436,
+      "kernel_exact": 50,
+      "live_acceptance_evaluations": 50096,
+      "live_gate:INSUFFICIENT_EXPECTED_QUANTITY": 1548,
+      "live_gate:NO_KNOWN_SOURCE": 21308,
+      "live_gate:PASS": 1076,
+      "live_gate:POST_PLAN_NUTRITION_MARGIN": 12216,
+      "live_gate:SOURCE_PREDICTED_SPOILED": 13948,
+      "matched_candidates": 50096,
+      "matched_physical_classifications": 28788,
+      "new_candidate_evaluations": 50096,
+      "new_candidate_gate:NO_KNOWN_SOURCE": 21308,
+      "new_candidate_gate:PASS": 1076,
+      "new_candidate_gate:SOURCE_PREDICTED_SPOILED": 27712,
+      "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 40764,
+      "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 63576,
+      "new_gate:EVALUATION:NO_KNOWN_SOURCE": 21308,
+      "new_gate:EVALUATION:PASS": 1076,
+      "new_gate:EVALUATION:SOURCE_PREDICTED_SPOILED": 27712,
+      "new_partial_prefilter": 21308,
+      "new_physical:CORRECT_FEASIBLE": 1076,
+      "new_physical:CORRECT_INFEASIBLE": 27712,
+      "primary_gate_changed": 13764,
+      "reason_changed_on_same_inputs": 47246,
+      "unique_agents_reaching_f": 24,
+      "deltas": {
+        "ms": {
+          "n": 28788,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "exact": 28788
+        },
+        "nutrition": {
+          "n": 28788,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "exact": 28788
+        },
+        "fatigue": {
+          "n": 28788,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "exact": 28788
+        },
+        "cargo": {
+          "n": 28788,
+          "min": -6,
+          "median": 0.0,
+          "max": 0,
+          "mean": -0.07850493261081005,
+          "exact": 28016
+        }
+      },
+      "kernel_rows": 50
+    },
+    "known_source": {
+      "candidate_changed": 32580,
+      "candidate_newly_evaluated": 15082,
+      "changed:cargo": 31752,
+      "changed:fatigue": 844,
+      "changed:nutrition": 7032,
+      "changed:time": 20968,
+      "decision_points": 160612,
+      "kernel_exact": 64,
+      "live_acceptance_evaluations": 43678,
+      "live_gate:CANNOT_COMPLETE_PLAN_ALIVE": 2692,
+      "live_gate:NO_KNOWN_SOURCE": 4316,
+      "live_gate:POST_PLAN_NUTRITION_MARGIN": 36670,
+      "matched_candidates": 43678,
+      "matched_physical_classifications": 39362,
+      "new_candidate_evaluations": 58760,
+      "new_candidate_gate:CANNOT_COMPLETE_PLAN_ALIVE": 1124,
+      "new_candidate_gate:CANNOT_REACH_SOURCE_ALIVE": 15082,
+      "new_candidate_gate:NO_KNOWN_SOURCE": 4316,
+      "new_candidate_gate:POST_PLAN_NUTRITION_MARGIN": 7610,
+      "new_candidate_gate:SOURCE_PREDICTED_SPOILED": 30628,
+      "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 44012,
+      "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 57840,
+      "new_gate:EVALUATION:CANNOT_COMPLETE_PLAN_ALIVE": 1124,
+      "new_gate:EVALUATION:CANNOT_REACH_SOURCE_ALIVE": 15082,
+      "new_gate:EVALUATION:NO_KNOWN_SOURCE": 4316,
+      "new_gate:EVALUATION:POST_PLAN_NUTRITION_MARGIN": 7610,
+      "new_gate:EVALUATION:SOURCE_PREDICTED_SPOILED": 30628,
+      "new_partial_prefilter": 4316,
+      "new_physical:CORRECT_FEASIBLE": 7610,
+      "new_physical:CORRECT_INFEASIBLE": 46834,
+      "primary_gate_changed": 30628,
+      "reason_changed_on_same_inputs": 41910,
+      "unique_agents_reaching_f": 28,
+      "deltas": {
+        "ms": {
+          "n": 39362,
+          "min": -57680000,
+          "median": -2192000.0,
+          "max": 15,
+          "mean": -26858278.667344138,
+          "exact": 18394
+        },
+        "nutrition": {
+          "n": 39362,
+          "min": -6,
+          "median": 0.0,
+          "max": 31219999,
+          "mean": 1413006.9812509527,
+          "exact": 32330
+        },
+        "fatigue": {
+          "n": 39362,
+          "min": -15919999,
+          "median": 0.0,
+          "max": 0,
+          "mean": -156934.60921701134,
+          "exact": 38518
+        },
+        "cargo": {
+          "n": 39362,
+          "min": -10,
+          "median": -4.0,
+          "max": 0,
+          "mean": -3.299222600477618,
+          "exact": 7610
+        }
+      },
+      "kernel_rows": 64
+    },
+    "reactive": {
+      "board_bound_x_arrivals": 8,
+      "board_directed_intents": 92,
+      "board_queue_joins": 92,
+      "candidate_changed": 10156,
+      "changed:cargo": 1292,
+      "changed:nutrition": 4260,
+      "changed:time": 7236,
+      "decision_points": 151176,
+      "intent_changed_on_same_inputs": 72,
+      "kernel_exact": 47,
+      "live_acceptance_evaluations": 41500,
+      "live_gate:INSUFFICIENT_EXPECTED_QUANTITY": 496,
+      "live_gate:NO_KNOWN_SOURCE": 20344,
+      "live_gate:PASS": 92,
+      "live_gate:POST_PLAN_NUTRITION_MARGIN": 9076,
+      "live_gate:SOURCE_PREDICTED_SPOILED": 11492,
+      "matched_candidates": 41500,
+      "matched_physical_classifications": 21156,
+      "new_candidate_evaluations": 41500,
+      "new_candidate_gate:NO_KNOWN_SOURCE": 20344,
+      "new_candidate_gate:PASS": 880,
+      "new_candidate_gate:SOURCE_PREDICTED_SPOILED": 20276,
+      "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 44236,
+      "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 65440,
+      "new_gate:EVALUATION:NO_KNOWN_SOURCE": 20344,
+      "new_gate:EVALUATION:PASS": 880,
+      "new_gate:EVALUATION:SOURCE_PREDICTED_SPOILED": 20276,
+      "new_partial_prefilter": 20344,
+      "new_physical:CORRECT_FEASIBLE": 880,
+      "new_physical:CORRECT_INFEASIBLE": 20276,
+      "physical_feasibility_changed": 788,
+      "primary_gate_changed": 9572,
+      "reason_changed_on_same_inputs": 54962,
+      "rejection_to_pass": 788,
+      "self_only_candidate_change_retained_by_all": 7236,
+      "self_only_candidate_changed": 7236,
+      "self_only_intent_change_retained_by_all": 72,
+      "self_only_intent_changed": 72,
+      "unique_agents_reaching_f": 20,
+      "deltas": {
+        "ms": {
+          "n": 21156,
+          "min": -32640000,
+          "median": 0.0,
+          "max": 25704000,
+          "mean": -6750570.910947249,
+          "exact": 13920
+        },
+        "nutrition": {
+          "n": 21156,
+          "min": -12853000,
+          "median": 0.0,
+          "max": 27343000,
+          "mean": 2350544.8946870863,
+          "exact": 16896
+        },
+        "fatigue": {
+          "n": 21156,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "exact": 21156
+        },
+        "cargo": {
+          "n": 21156,
+          "min": -6,
+          "median": 0.0,
+          "max": 5,
+          "mean": 0.016071090943467575,
+          "exact": 19864
+        }
+      },
+      "kernel_rows": 47,
+      "self_only_affected_still_changed": 7236,
+      "self_only_affected_rejection_to_pass": 788
+    },
+    "reference": {
+      "candidate_changed": 15624,
+      "changed:cargo": 15476,
+      "changed:fatigue": 856,
+      "changed:nutrition": 3900,
+      "changed:time": 11032,
+      "decision_points": 161788,
+      "kernel_exact": 40,
+      "live_acceptance_evaluations": 58760,
+      "live_gate:": 34370,
+      "live_gate:CANNOT_COMPLETE_PLAN_ALIVE": 1272,
+      "live_gate:NO_KNOWN_SOURCE": 7546,
+      "live_gate:POST_PLAN_NUTRITION_MARGIN": 15572,
+      "matched_candidates": 24390,
+      "matched_physical_classifications": 16844,
+      "new_candidate_evaluations": 24390,
+      "new_candidate_gate:CANNOT_COMPLETE_PLAN_ALIVE": 564,
+      "new_candidate_gate:NO_KNOWN_SOURCE": 7546,
+      "new_candidate_gate:POST_PLAN_NUTRITION_MARGIN": 1368,
+      "new_candidate_gate:SOURCE_PREDICTED_SPOILED": 14912,
+      "new_gate:DEFERRED:": 24336,
+      "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 29544,
+      "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 49148,
+      "new_gate:EVALUATION:": 34370,
+      "new_gate:EVALUATION:CANNOT_COMPLETE_PLAN_ALIVE": 564,
+      "new_gate:EVALUATION:NO_KNOWN_SOURCE": 7546,
+      "new_gate:EVALUATION:POST_PLAN_NUTRITION_MARGIN": 1368,
+      "new_gate:EVALUATION:SOURCE_PREDICTED_SPOILED": 14912,
+      "new_partial_prefilter": 7546,
+      "new_physical:CORRECT_FEASIBLE": 1368,
+      "new_physical:CORRECT_INFEASIBLE": 15476,
+      "primary_gate_changed": 14912,
+      "reason_changed_on_same_inputs": 41910,
+      "unique_agents_reaching_f": 28,
+      "deltas": {
+        "ms": {
+          "n": 16844,
+          "min": -57680000,
+          "median": -53609000.0,
+          "max": 10,
+          "mean": -34028295.36024697,
+          "exact": 5812
+        },
+        "nutrition": {
+          "n": 16844,
+          "min": 0,
+          "median": 0.0,
+          "max": 31219999,
+          "mean": 2268527.576585134,
+          "exact": 12944
+        },
+        "fatigue": {
+          "n": 16844,
+          "min": -15919999,
+          "median": 0.0,
+          "max": 0,
+          "mean": -375002.6632628829,
+          "exact": 15988
+        },
+        "cargo": {
+          "n": 16844,
+          "min": -10,
+          "median": -4.0,
+          "max": 0,
+          "mean": -3.764901448587034,
+          "exact": 1368
+        }
+      },
+      "kernel_rows": 40
+    },
+    "stale_depletion": {
+      "candidate_newly_evaluated": 4444,
+      "decision_points": 124446,
+      "intent_changed_on_same_inputs": 5440,
+      "kernel_exact": 2,
+      "live_acceptance_evaluations": 1200,
+      "live_gate:": 1200,
+      "new_candidate_evaluations": 4444,
+      "new_candidate_gate:CANNOT_REACH_SOURCE_ALIVE": 4444,
+      "new_gate:DEFERRED:": 22990,
+      "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 18783,
+      "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 66750,
+      "new_gate:EVALUATION:": 11479,
+      "new_gate:EVALUATION:CANNOT_REACH_SOURCE_ALIVE": 4444,
+      "new_physical:CORRECT_INFEASIBLE": 4444,
+      "reason_changed_on_same_inputs": 53678,
+      "unique_agents_reaching_f": 28,
+      "deltas": {
+        "ms": {
+          "n": 0
+        },
+        "nutrition": {
+          "n": 0
+        },
+        "fatigue": {
+          "n": 0
+        },
+        "cargo": {
+          "n": 0
+        }
+      },
+      "kernel_rows": 2
+    }
+  },
+  "live": {
+    "control": {
+      "runs": 30,
+      "seed0": {
+        "scenario": "control",
+        "seed": "0",
+        "survivors_36h": "28",
+        "survivors_48h": "28",
+        "survivors_72h": "28",
+        "deaths": "22",
+        "food_initial": "3000",
+        "food_gathered": "1432",
+        "food_delivered": "0",
+        "food_consumed": "1264",
+        "food_spoiled": "1736",
+        "spoiled_in_transit": "0",
+        "spoiled_communal": "0",
+        "food_stranded_at_death": "0",
+        "food_carried_at_death": "0",
+        "request_hours": "72.000000",
+        "request_quantum_hours": "43200.000000",
+        "jobs_accepted": "0",
+        "jobs_cancelled": "0",
+        "failed_stale_trips": "0",
+        "infeasible_abandons": "0",
+        "food_search_distance_m": "403200.000000",
+        "completed_food_trips": "28",
+        "queue_person_hours": "809.582222",
+        "loaded_queue_hours": "0.000000",
+        "unloaded_queue_hours": "809.582222",
+        "queue_overtakes": "0",
+        "idle_person_hours": "1105.969358",
+        "sleep_person_hours": "615.275556",
+        "starvation_person_hours": "944.000000",
+        "lease_expiries": "0",
+        "food_remaining": "0",
+        "waste_remaining": "1736",
+        "inaccessible_dead_personal_food": "0",
+        "alive_at_c": "0",
+        "alive_at_f": "28",
+        "accounting_error": "0",
+        "event_hash": "056700f14dd3919c",
+        "state_hash": "a73b33d1ecabd5d1",
+        "diag_at_job_priority_nutrition_margin": "39048",
+        "diag_at_job_priority_no_known_source": "1174",
+        "diag_at_job_priority_passes_gate": "0",
+        "diag_gate_no_known_source": "101548",
+        "diag_gate_nutrition_margin": "59952",
+        "diag_gate_shelf_life": "0",
+        "diag_gate_claims_suppress": "0",
+        "diag_gate_passes_gate": "0",
+        "diag_request_observers": "50",
+        "diag_request_observations": "55256",
+        "diag_board_evaluations_without_source": "55256",
+        "diag_jobs_accepted": "0",
+        "diag_source_sought": "0",
+        "diag_jobs_reaching_f": "0",
+        "diag_jobs_acquiring_cargo": "0",
+        "diag_returns_started": "0",
+        "diag_returns_completed": "0",
+        "diag_jobs_delivered": "0",
+        "diag_delivered_quanta": "0",
+        "diag_carrier_cargo_consumed": "0",
+        "diag_communal_cargo_spoiled_transit": "0",
+        "diag_abandonments": "0",
+        "diag_queue_joins": "6738",
+        "diag_queue_voluntary_exits": "6656",
+        "diag_repeated_job_edge_joins": "0",
+        "diag_sleep_starts": "9400",
+        "diag_sleep_renewals": "27540",
+        "diag_sleep_interruptions": "6764",
+        "diag_decision_reversals": "26558",
+        "diag_claim_expiries": "0",
+        "diag_replacement_attempts": "0",
+        "diag_duplicate_attempts": "0",
+        "diag_carrier_deaths": "0",
+        "diag_predicted_fatal_return_decisions": "0",
+        "diag_actual_fatal_returns": "0",
+        "diag_commitment_churn": "0",
+        "diag_return_edge_admissions": "0",
+        "diag_first_delivery_ms": "0"
+      },
+      "counts_seed0": {
+        "candidate_changed": 32316,
+        "changed:cargo": 31488,
+        "changed:fatigue": 856,
+        "changed:nutrition": 6792,
+        "changed:time": 20704,
+        "decision_points": 161788,
+        "kernel_exact": 57,
+        "live_acceptance_evaluations": 58760,
+        "live_gate:CANNOT_COMPLETE_PLAN_ALIVE": 2696,
+        "live_gate:NO_KNOWN_SOURCE": 19712,
+        "live_gate:POST_PLAN_NUTRITION_MARGIN": 36352,
+        "matched_candidates": 58760,
+        "matched_physical_classifications": 39048,
+        "new_candidate_evaluations": 58760,
+        "new_candidate_gate:CANNOT_COMPLETE_PLAN_ALIVE": 1124,
+        "new_candidate_gate:NO_KNOWN_SOURCE": 19712,
+        "new_candidate_gate:POST_PLAN_NUTRITION_MARGIN": 7560,
+        "new_candidate_gate:SOURCE_PREDICTED_SPOILED": 30364,
+        "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 42808,
+        "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 60220,
+        "new_gate:EVALUATION:CANNOT_COMPLETE_PLAN_ALIVE": 1124,
+        "new_gate:EVALUATION:NO_KNOWN_SOURCE": 19712,
+        "new_gate:EVALUATION:POST_PLAN_NUTRITION_MARGIN": 7560,
+        "new_gate:EVALUATION:SOURCE_PREDICTED_SPOILED": 30364,
+        "new_partial_prefilter": 19712,
+        "new_physical:CORRECT_FEASIBLE": 7560,
+        "new_physical:CORRECT_INFEASIBLE": 31488,
+        "primary_gate_changed": 30364,
+        "reason_changed_on_same_inputs": 41910,
+        "unique_agents_reaching_f": 28
+      },
+      "outcome_ranges": {
+        "survivors_36h": [
+          "28"
+        ],
+        "survivors_48h": [
+          "28"
+        ],
+        "survivors_72h": [
+          "28"
+        ],
+        "deaths": [
+          "22"
+        ],
+        "food_initial": [
+          "3000"
+        ],
+        "food_gathered": [
+          "1432"
+        ],
+        "food_delivered": [
+          "0"
+        ],
+        "food_consumed": [
+          "1264"
+        ],
+        "food_spoiled": [
+          "1736"
+        ],
+        "spoiled_in_transit": [
+          "0"
+        ],
+        "spoiled_communal": [
+          "0"
+        ],
+        "food_stranded_at_death": [
+          "0"
+        ],
+        "food_carried_at_death": [
+          "0"
+        ],
+        "request_hours": [
+          "72.000000"
+        ],
+        "request_quantum_hours": [
+          "43200.000000"
+        ],
+        "jobs_accepted": [
+          "0"
+        ],
+        "jobs_cancelled": [
+          "0"
+        ],
+        "failed_stale_trips": [
+          "0"
+        ],
+        "infeasible_abandons": [
+          "0"
+        ],
+        "food_search_distance_m": [
+          "403200.000000"
+        ],
+        "completed_food_trips": [
+          "28"
+        ],
+        "queue_person_hours": [
+          "809.582222"
+        ],
+        "loaded_queue_hours": [
+          "0.000000"
+        ],
+        "unloaded_queue_hours": [
+          "809.582222"
+        ],
+        "queue_overtakes": [
+          "0"
+        ],
+        "idle_person_hours": [
+          "1105.969358"
+        ],
+        "sleep_person_hours": [
+          "615.275556"
+        ],
+        "starvation_person_hours": [
+          "944.000000"
+        ],
+        "lease_expiries": [
+          "0"
+        ],
+        "food_remaining": [
+          "0"
+        ],
+        "waste_remaining": [
+          "1736"
+        ],
+        "inaccessible_dead_personal_food": [
+          "0"
+        ],
+        "alive_at_c": [
+          "0"
+        ],
+        "alive_at_f": [
+          "28"
+        ],
+        "accounting_error": [
+          "0"
+        ],
+        "event_hash": [
+          "056700f14dd3919c"
+        ],
+        "state_hash": [
+          "02c75241be1d666e",
+          "1125fda115b98e9f",
+          "38236d54716c4397",
+          "3e775a7b5ca47001",
+          "4d96059cd59cfae8",
+          "50bee3e0c6323589",
+          "50ee9a7ccba0c715",
+          "521a4ff9c9be5de3",
+          "54c8169125eaba91",
+          "573c44ffcc10f106",
+          "581f013dfeec4f33",
+          "5bb9d1a8d3b12b7d",
+          "60311a65b0838db1",
+          "76ce9b9d5211a713",
+          "7ad0b6e4e923c05b",
+          "7f6895b315c61aaa",
+          "8d8045c03580b241",
+          "98826922a44343ef",
+          "a73b33d1ecabd5d1",
+          "bf50aae04f7c9e7a",
+          "c197172a27af004a",
+          "c7a8612cd9f9a5fe",
+          "d48a5daa4567d202",
+          "db7047a88b54e418",
+          "dc22f32e2fb749fe",
+          "e38a4c25fe587261",
+          "e74d376175413b3c",
+          "f449a7f5a0c110f8",
+          "f9581354422b1930",
+          "fb9fad13223c1b97"
+        ],
+        "diag_at_job_priority_nutrition_margin": [
+          "39048"
+        ],
+        "diag_at_job_priority_no_known_source": [
+          "1174"
+        ],
+        "diag_at_job_priority_passes_gate": [
+          "0"
+        ],
+        "diag_gate_no_known_source": [
+          "101548"
+        ],
+        "diag_gate_nutrition_margin": [
+          "59952"
+        ],
+        "diag_gate_shelf_life": [
+          "0"
+        ],
+        "diag_gate_claims_suppress": [
+          "0"
+        ],
+        "diag_gate_passes_gate": [
+          "0"
+        ],
+        "diag_request_observers": [
+          "50"
+        ],
+        "diag_request_observations": [
+          "55256"
+        ],
+        "diag_board_evaluations_without_source": [
+          "55256"
+        ],
+        "diag_jobs_accepted": [
+          "0"
+        ],
+        "diag_source_sought": [
+          "0"
+        ],
+        "diag_jobs_reaching_f": [
+          "0"
+        ],
+        "diag_jobs_acquiring_cargo": [
+          "0"
+        ],
+        "diag_returns_started": [
+          "0"
+        ],
+        "diag_returns_completed": [
+          "0"
+        ],
+        "diag_jobs_delivered": [
+          "0"
+        ],
+        "diag_delivered_quanta": [
+          "0"
+        ],
+        "diag_carrier_cargo_consumed": [
+          "0"
+        ],
+        "diag_communal_cargo_spoiled_transit": [
+          "0"
+        ],
+        "diag_abandonments": [
+          "0"
+        ],
+        "diag_queue_joins": [
+          "6738"
+        ],
+        "diag_queue_voluntary_exits": [
+          "6656"
+        ],
+        "diag_repeated_job_edge_joins": [
+          "0"
+        ],
+        "diag_sleep_starts": [
+          "9400"
+        ],
+        "diag_sleep_renewals": [
+          "27540"
+        ],
+        "diag_sleep_interruptions": [
+          "6764"
+        ],
+        "diag_decision_reversals": [
+          "26558"
+        ],
+        "diag_claim_expiries": [
+          "0"
+        ],
+        "diag_replacement_attempts": [
+          "0"
+        ],
+        "diag_duplicate_attempts": [
+          "0"
+        ],
+        "diag_carrier_deaths": [
+          "0"
+        ],
+        "diag_predicted_fatal_return_decisions": [
+          "0"
+        ],
+        "diag_actual_fatal_returns": [
+          "0"
+        ],
+        "diag_commitment_churn": [
+          "0"
+        ],
+        "diag_return_edge_admissions": [
+          "0"
+        ],
+        "diag_first_delivery_ms": [
+          "0"
+        ]
+      },
+      "forecast_execution_errors": {
+        "time_error_ms": {
+          "n": 60,
+          "min": -79488000,
+          "median": 0.0,
+          "max": 0,
+          "mean": -13934933.333333334,
+          "exact": 32
+        },
+        "queue_error_ms": {
+          "n": 68,
+          "min": -57888000,
+          "median": 0.0,
+          "max": 0,
+          "mean": -10163764.705882354,
+          "exact": 36
+        },
+        "nutrition_error_ms": {
+          "n": 60,
+          "min": 0,
+          "median": 0.0,
+          "max": 36000000,
+          "mean": 10053333.333333334,
+          "exact": 36
+        },
+        "fatigue_error_ms": {
+          "n": 60,
+          "min": -64800000,
+          "median": 0.0,
+          "max": 0,
+          "mean": -12952533.333333334,
+          "exact": 36
+        }
+      },
+      "completed_arrivals": 60,
+      "queue_information_errors": {
+        "n": 5646,
+        "min": -28668000,
+        "median": -12288000.0,
+        "max": 0,
+        "mean": -12523668.437832093,
+        "exact": 82
+      },
+      "world_change_queue_errors": {
+        "n": 68,
+        "min": -57888000,
+        "median": 0.0,
+        "max": 0,
+        "mean": -10158117.647058824,
+        "exact": 44
+      },
+      "frozen_no_admission": 1092
+    },
+    "coherent": {
+      "runs": 30,
+      "seed0": {
+        "scenario": "coherent",
+        "seed": "0",
+        "survivors_36h": "28",
+        "survivors_48h": "28",
+        "survivors_72h": "28",
+        "deaths": "22",
+        "food_initial": "3000",
+        "food_gathered": "1432",
+        "food_delivered": "0",
+        "food_consumed": "1264",
+        "food_spoiled": "1736",
+        "spoiled_in_transit": "0",
+        "spoiled_communal": "0",
+        "food_stranded_at_death": "0",
+        "food_carried_at_death": "0",
+        "request_hours": "72.000000",
+        "request_quantum_hours": "43200.000000",
+        "jobs_accepted": "0",
+        "jobs_cancelled": "0",
+        "failed_stale_trips": "0",
+        "infeasible_abandons": "0",
+        "food_search_distance_m": "403200.000000",
+        "completed_food_trips": "28",
+        "queue_person_hours": "809.582222",
+        "loaded_queue_hours": "0.000000",
+        "unloaded_queue_hours": "809.582222",
+        "queue_overtakes": "0",
+        "idle_person_hours": "1105.969358",
+        "sleep_person_hours": "615.275556",
+        "starvation_person_hours": "944.000000",
+        "lease_expiries": "0",
+        "food_remaining": "0",
+        "waste_remaining": "1736",
+        "inaccessible_dead_personal_food": "0",
+        "alive_at_c": "0",
+        "alive_at_f": "28",
+        "accounting_error": "0",
+        "event_hash": "7d2dbfa9fb645cb6",
+        "state_hash": "a73b33d1ecabd5d1",
+        "diag_at_job_priority_nutrition_margin": "39048",
+        "diag_at_job_priority_no_known_source": "1174",
+        "diag_at_job_priority_passes_gate": "0",
+        "diag_gate_no_known_source": "101548",
+        "diag_gate_nutrition_margin": "59952",
+        "diag_gate_shelf_life": "0",
+        "diag_gate_claims_suppress": "0",
+        "diag_gate_passes_gate": "0",
+        "diag_request_observers": "50",
+        "diag_request_observations": "55256",
+        "diag_board_evaluations_without_source": "55256",
+        "diag_jobs_accepted": "0",
+        "diag_source_sought": "0",
+        "diag_jobs_reaching_f": "0",
+        "diag_jobs_acquiring_cargo": "0",
+        "diag_returns_started": "0",
+        "diag_returns_completed": "0",
+        "diag_jobs_delivered": "0",
+        "diag_delivered_quanta": "0",
+        "diag_carrier_cargo_consumed": "0",
+        "diag_communal_cargo_spoiled_transit": "0",
+        "diag_abandonments": "0",
+        "diag_queue_joins": "6738",
+        "diag_queue_voluntary_exits": "6656",
+        "diag_repeated_job_edge_joins": "0",
+        "diag_sleep_starts": "9400",
+        "diag_sleep_renewals": "27540",
+        "diag_sleep_interruptions": "6764",
+        "diag_decision_reversals": "26558",
+        "diag_claim_expiries": "0",
+        "diag_replacement_attempts": "0",
+        "diag_duplicate_attempts": "0",
+        "diag_carrier_deaths": "0",
+        "diag_predicted_fatal_return_decisions": "0",
+        "diag_actual_fatal_returns": "0",
+        "diag_commitment_churn": "0",
+        "diag_return_edge_admissions": "0",
+        "diag_first_delivery_ms": "0"
+      },
+      "counts_seed0": {
+        "candidate_changed": 32316,
+        "changed:cargo": 31488,
+        "changed:fatigue": 856,
+        "changed:nutrition": 6792,
+        "changed:time": 20704,
+        "decision_points": 161788,
+        "kernel_exact": 57,
+        "live_acceptance_evaluations": 58760,
+        "live_gate:CANNOT_COMPLETE_PLAN_ALIVE": 1124,
+        "live_gate:NO_KNOWN_SOURCE": 19712,
+        "live_gate:POST_PLAN_NUTRITION_MARGIN": 7560,
+        "live_gate:SOURCE_PREDICTED_SPOILED": 30364,
+        "matched_candidates": 58760,
+        "matched_physical_classifications": 39048,
+        "new_candidate_evaluations": 58760,
+        "new_candidate_gate:CANNOT_COMPLETE_PLAN_ALIVE": 1124,
+        "new_candidate_gate:NO_KNOWN_SOURCE": 19712,
+        "new_candidate_gate:POST_PLAN_NUTRITION_MARGIN": 7560,
+        "new_candidate_gate:SOURCE_PREDICTED_SPOILED": 30364,
+        "new_gate:DEFERRED:FATIGUE_CONSTRAINT": 42808,
+        "new_gate:DEFERRED:OTHER_EXPLICIT_REASON": 60220,
+        "new_gate:EVALUATION:CANNOT_COMPLETE_PLAN_ALIVE": 1124,
+        "new_gate:EVALUATION:NO_KNOWN_SOURCE": 19712,
+        "new_gate:EVALUATION:POST_PLAN_NUTRITION_MARGIN": 7560,
+        "new_gate:EVALUATION:SOURCE_PREDICTED_SPOILED": 30364,
+        "new_partial_prefilter": 19712,
+        "new_physical:CORRECT_FEASIBLE": 7560,
+        "new_physical:CORRECT_INFEASIBLE": 31488,
+        "primary_gate_changed": 30364,
+        "reason_changed_on_same_inputs": 41910,
+        "unique_agents_reaching_f": 28
+      },
+      "outcome_ranges": {
+        "survivors_36h": [
+          "28"
+        ],
+        "survivors_48h": [
+          "28"
+        ],
+        "survivors_72h": [
+          "28"
+        ],
+        "deaths": [
+          "22"
+        ],
+        "food_initial": [
+          "3000"
+        ],
+        "food_gathered": [
+          "1432"
+        ],
+        "food_delivered": [
+          "0"
+        ],
+        "food_consumed": [
+          "1264"
+        ],
+        "food_spoiled": [
+          "1736"
+        ],
+        "spoiled_in_transit": [
+          "0"
+        ],
+        "spoiled_communal": [
+          "0"
+        ],
+        "food_stranded_at_death": [
+          "0"
+        ],
+        "food_carried_at_death": [
+          "0"
+        ],
+        "request_hours": [
+          "72.000000"
+        ],
+        "request_quantum_hours": [
+          "43200.000000"
+        ],
+        "jobs_accepted": [
+          "0"
+        ],
+        "jobs_cancelled": [
+          "0"
+        ],
+        "failed_stale_trips": [
+          "0"
+        ],
+        "infeasible_abandons": [
+          "0"
+        ],
+        "food_search_distance_m": [
+          "403200.000000"
+        ],
+        "completed_food_trips": [
+          "28"
+        ],
+        "queue_person_hours": [
+          "809.582222"
+        ],
+        "loaded_queue_hours": [
+          "0.000000"
+        ],
+        "unloaded_queue_hours": [
+          "809.582222"
+        ],
+        "queue_overtakes": [
+          "0"
+        ],
+        "idle_person_hours": [
+          "1105.969358"
+        ],
+        "sleep_person_hours": [
+          "615.275556"
+        ],
+        "starvation_person_hours": [
+          "944.000000"
+        ],
+        "lease_expiries": [
+          "0"
+        ],
+        "food_remaining": [
+          "0"
+        ],
+        "waste_remaining": [
+          "1736"
+        ],
+        "inaccessible_dead_personal_food": [
+          "0"
+        ],
+        "alive_at_c": [
+          "0"
+        ],
+        "alive_at_f": [
+          "28"
+        ],
+        "accounting_error": [
+          "0"
+        ],
+        "event_hash": [
+          "7d2dbfa9fb645cb6"
+        ],
+        "state_hash": [
+          "02c75241be1d666e",
+          "1125fda115b98e9f",
+          "38236d54716c4397",
+          "3e775a7b5ca47001",
+          "4d96059cd59cfae8",
+          "50bee3e0c6323589",
+          "50ee9a7ccba0c715",
+          "521a4ff9c9be5de3",
+          "54c8169125eaba91",
+          "573c44ffcc10f106",
+          "581f013dfeec4f33",
+          "5bb9d1a8d3b12b7d",
+          "60311a65b0838db1",
+          "76ce9b9d5211a713",
+          "7ad0b6e4e923c05b",
+          "7f6895b315c61aaa",
+          "8d8045c03580b241",
+          "98826922a44343ef",
+          "a73b33d1ecabd5d1",
+          "bf50aae04f7c9e7a",
+          "c197172a27af004a",
+          "c7a8612cd9f9a5fe",
+          "d48a5daa4567d202",
+          "db7047a88b54e418",
+          "dc22f32e2fb749fe",
+          "e38a4c25fe587261",
+          "e74d376175413b3c",
+          "f449a7f5a0c110f8",
+          "f9581354422b1930",
+          "fb9fad13223c1b97"
+        ],
+        "diag_at_job_priority_nutrition_margin": [
+          "39048"
+        ],
+        "diag_at_job_priority_no_known_source": [
+          "1174"
+        ],
+        "diag_at_job_priority_passes_gate": [
+          "0"
+        ],
+        "diag_gate_no_known_source": [
+          "101548"
+        ],
+        "diag_gate_nutrition_margin": [
+          "59952"
+        ],
+        "diag_gate_shelf_life": [
+          "0"
+        ],
+        "diag_gate_claims_suppress": [
+          "0"
+        ],
+        "diag_gate_passes_gate": [
+          "0"
+        ],
+        "diag_request_observers": [
+          "50"
+        ],
+        "diag_request_observations": [
+          "55256"
+        ],
+        "diag_board_evaluations_without_source": [
+          "55256"
+        ],
+        "diag_jobs_accepted": [
+          "0"
+        ],
+        "diag_source_sought": [
+          "0"
+        ],
+        "diag_jobs_reaching_f": [
+          "0"
+        ],
+        "diag_jobs_acquiring_cargo": [
+          "0"
+        ],
+        "diag_returns_started": [
+          "0"
+        ],
+        "diag_returns_completed": [
+          "0"
+        ],
+        "diag_jobs_delivered": [
+          "0"
+        ],
+        "diag_delivered_quanta": [
+          "0"
+        ],
+        "diag_carrier_cargo_consumed": [
+          "0"
+        ],
+        "diag_communal_cargo_spoiled_transit": [
+          "0"
+        ],
+        "diag_abandonments": [
+          "0"
+        ],
+        "diag_queue_joins": [
+          "6738"
+        ],
+        "diag_queue_voluntary_exits": [
+          "6656"
+        ],
+        "diag_repeated_job_edge_joins": [
+          "0"
+        ],
+        "diag_sleep_starts": [
+          "9400"
+        ],
+        "diag_sleep_renewals": [
+          "27540"
+        ],
+        "diag_sleep_interruptions": [
+          "6764"
+        ],
+        "diag_decision_reversals": [
+          "26558"
+        ],
+        "diag_claim_expiries": [
+          "0"
+        ],
+        "diag_replacement_attempts": [
+          "0"
+        ],
+        "diag_duplicate_attempts": [
+          "0"
+        ],
+        "diag_carrier_deaths": [
+          "0"
+        ],
+        "diag_predicted_fatal_return_decisions": [
+          "0"
+        ],
+        "diag_actual_fatal_returns": [
+          "0"
+        ],
+        "diag_commitment_churn": [
+          "0"
+        ],
+        "diag_return_edge_admissions": [
+          "0"
+        ],
+        "diag_first_delivery_ms": [
+          "0"
+        ]
+      },
+      "forecast_execution_errors": {
+        "time_error_ms": {
+          "n": 60,
+          "min": -79488000,
+          "median": 0.0,
+          "max": 0,
+          "mean": -13934933.333333334,
+          "exact": 32
+        },
+        "queue_error_ms": {
+          "n": 68,
+          "min": -57888000,
+          "median": 0.0,
+          "max": 0,
+          "mean": -10163764.705882354,
+          "exact": 36
+        },
+        "nutrition_error_ms": {
+          "n": 60,
+          "min": 0,
+          "median": 0.0,
+          "max": 36000000,
+          "mean": 10053333.333333334,
+          "exact": 36
+        },
+        "fatigue_error_ms": {
+          "n": 60,
+          "min": -64800000,
+          "median": 0.0,
+          "max": 0,
+          "mean": -12952533.333333334,
+          "exact": 36
+        }
+      },
+      "completed_arrivals": 60,
+      "queue_information_errors": {
+        "n": 5646,
+        "min": -28668000,
+        "median": -12288000.0,
+        "max": 0,
+        "mean": -12523668.437832093,
+        "exact": 82
+      },
+      "world_change_queue_errors": {
+        "n": 68,
+        "min": -57888000,
+        "median": 0.0,
+        "max": 0,
+        "mean": -10158117.647058824,
+        "exact": 44
+      },
+      "frozen_no_admission": 1092
+    }
+  },
+  "paired_live": {
+    "pairs": 30,
+    "control_historical_hashes_preserved": true,
+    "same_state_hash": 30,
+    "same_event_hash": 0,
+    "decision_comparisons": [
+      {
+        "seed": "0",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "1",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "2",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "3",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "4",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "5",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "6",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "7",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "8",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "9",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "10",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "11",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "12",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "13",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "14",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "15",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "16",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "17",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "18",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "19",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "20",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "21",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "22",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "23",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "24",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "25",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "26",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "27",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "28",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      },
+      {
+        "seed": "29",
+        "matched_decision_points": "161788",
+        "different_intents": "0",
+        "only_control": "0",
+        "only_corrected": "0"
+      }
+    ]
+  }
+}
