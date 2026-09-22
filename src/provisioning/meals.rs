@@ -176,6 +176,9 @@ impl Journal {
                 self.count("board_intention_episodes");
             }
         } else if !matches!(live.intent, Intent::Wait) {
+            if self.board_bound.contains(&o.agent) && self.detailed {
+                self.rows.push(format!("BOARD_EXIT\t{}\t{}\tnutrition={}\tintent={:?}\treason={}\taudit={a:?}\tobservation={o:?}\tmemory={m:?}",o.now,o.agent,o.nutrition,live.intent,live.reason));
+            }
             self.board_bound.remove(&o.agent);
         }
         let reason = live
@@ -203,5 +206,25 @@ impl World {
     }
     pub fn take_meal_research_decisions(&mut self) -> BTreeMap<(Time, usize), String> {
         std::mem::take(&mut self.meals.decisions)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn consuming_all_cargo_is_quantity_failure_not_spoilage() {
+        let w = acceptance::fixture("known_source", 0, false).unwrap();
+        let mut o = w.observe(0).unwrap();
+        o.local.as_mut().unwrap().board.as_mut().unwrap().quantity = 1;
+        let mut m = w.agents[0].memory.clone();
+        m.nodes.insert(0, o.local.clone().unwrap());
+        let a = policy::conditional_contract(&o, &m);
+        let p = a.candidates[0].plan.as_ref().unwrap();
+        assert_eq!(p.acquired, 1);
+        assert_eq!(p.meal_quanta, 1);
+        assert_eq!(p.delivered, 0);
+        assert!(o.now + p.elapsed < 48 * HOUR);
+        assert_eq!(p.failure, Some("INSUFFICIENT_EXPECTED_QUANTITY"));
     }
 }

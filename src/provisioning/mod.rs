@@ -8,6 +8,7 @@ mod goods;
 pub mod meals;
 pub mod persistence;
 mod policy;
+pub mod reasoning;
 mod runtime;
 pub mod shadow;
 use goods::Goods;

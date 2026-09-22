@@ -433,7 +433,15 @@ fn simulate(
             .map(|f| f.quantity)
             .sum();
         if sim.plan.delivered == 0 {
-            sim.plan.failure = Some("SOURCE_PREDICTED_SPOILED");
+            // Historical audit labels are preserved. In the new conditional arm,
+            // eating all request-limited cargo is a quantity failure, not spoilage.
+            sim.plan.failure = Some(
+                if meals && !historical_cadence && source.food.expires_at > sim.now() {
+                    "INSUFFICIENT_EXPECTED_QUANTITY"
+                } else {
+                    "SOURCE_PREDICTED_SPOILED"
+                },
+            );
         }
     }
     sim.plan
