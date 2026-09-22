@@ -14,8 +14,9 @@ Three comparisons are kept separate:
 3. Actual selected action episodes: admission, arrival, cancellation, death. Unexecuted
    plans have no observed completion error; interrupted waits are censored.
 
-Every evaluated candidate is captured with observation, personal memory and the
-   existing candidate sequence. The audit cannot pass true state into prediction.
+Every policy decision is captured with observation, personal memory, the selected
+   action and evaluated communal candidate sequences; known-route estimates are
+   recorded separately. The audit cannot pass true state into prediction.
 Primitive conformance fixtures test independent descriptions against the kernel,
 including threshold crossings, food deadlines, ownership, and integer rounding.
 
@@ -75,3 +76,32 @@ seed-0 replay therefore selects the first agent with a complete tape per the sam
 stratum for reference/current/known-source. This is broader coverage of unchanged
 histories, not a behavioral intervention. Samples are deduplicated by time, agent,
 and candidate. Every supplementary run must match the preserved event/state hash.
+
+## Physical feasibility versus policy acceptance
+
+The raw `plans.csv` selection classification records whether the policy permits a
+candidate and whether the independent shadow completes it. It is **not** the
+physical-feasibility confusion matrix: the six-hour margin is not a physical law.
+The analyzer derives the physical matrix from captured starvation, source-starvation,
+absolute expiry, delivered quantity and complete-tape fields, independently of the
+margin gate. Partial forecasts remain unresolved.
+
+Inspection found contested-request tapes with predicted edible delivery but shadow
+arrival after spoilage. Kernel sample coverage was therefore stratified additionally
+by board and physical discrepancy in supplemental validation. This only changes
+which copied states the research instrument checks.
+
+Self-counting is evaluated separately: an old zero-cargo prediction can have a
+positive conditional kernel witness after removing the planning agent's own known
+membership from hypothetical future traversals. Those witnesses keep all other
+remembered information and physical rules. They establish conditional false-zero
+forecasts, not a guarantee of success against unseen real traffic. No global search
+for arbitrary alternative plans is performed or claimed complete.
+
+
+Final episode attribution uses the recorded starting physiology and elapsed time.
+No admission in a frozen-demand fork means the focal cannot be admitted before its
+death in that fork, not zero delay. Expected deaths are recorded as matched physical
+failures, not assigned to the preference category. Raw online classifications remain
+available for audit; the final `episode-classifications.csv` files are authoritative
+for the causal totals. No clock, policy or action is changed by this analysis.

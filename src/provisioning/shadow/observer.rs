@@ -16,6 +16,9 @@ struct Pending {
     initial_n: Time,
     initial_f: Time,
     initial_s: Time,
+    policy_time: Time,
+    policy_nutrition: Time,
+    policy_fatigue: Time,
 }
 #[derive(Clone, Debug)]
 struct Primitive {
@@ -37,6 +40,10 @@ pub(crate) struct Journal {
     primitives: BTreeMap<usize, Primitive>,
 }
 pub const HEADERS: &[(&str, &str)] = &[
+    (
+        "self_count_witness",
+        "time_ms,agent,board,old_cargo,corrected_cargo,kernel_delivered,kernel_failure,elapsed_exact",
+    ),
     (
         "route_feasibility",
         "time_ms,agent,target,forecast_alive,shadow_alive,classification",
@@ -63,7 +70,7 @@ pub const HEADERS: &[(&str, &str)] = &[
     ),
     (
         "episodes",
-        "time_ms,agent,end_ms,from,to,edge,status,predicted_queue_ms,frozen_queue_ms,realized_queue_ms,predicted_total_ms,frozen_total_ms,actual_total_ms,time_error_ms,nutrition_error_ms,fatigue_error_ms,queue_error_ms,category",
+        "time_ms,agent,end_ms,from,to,edge,status,predicted_queue_ms,frozen_queue_ms,realized_queue_ms,predicted_total_ms,frozen_total_ms,actual_total_ms,time_error_ms,nutrition_error_ms,fatigue_error_ms,queue_error_ms,category,policy_time_error_ms,policy_nutrition_error_ms,policy_fatigue_error_ms",
     ),
     (
         "self_count",
@@ -162,7 +169,7 @@ impl Journal {
         self.row(
             "episodes",
             format!(
-                "{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}",
+                "{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}",
                 p.at,
                 id,
                 e.at,
@@ -200,7 +207,22 @@ impl Journal {
                 } else {
                     String::new()
                 },
-                category
+                category,
+                if completed {
+                    (p.policy_time - dt).to_string()
+                } else {
+                    String::new()
+                },
+                if completed {
+                    (p.policy_nutrition - a.nutrition).to_string()
+                } else {
+                    String::new()
+                },
+                if completed {
+                    (p.policy_fatigue - a.fatigue).to_string()
+                } else {
+                    String::new()
+                }
             ),
         );
     }
@@ -276,7 +298,7 @@ impl Journal {
         if w.config.persistence.is_none() {
             assert_eq!(&counterdecision, d);
         }
-        if !audit.candidates.is_empty() {
+        if self.detailed {
             self.row(
                 "captures",
                 format!(
@@ -300,7 +322,7 @@ impl Journal {
                 if c.violations.is_empty() {
                     "FALSE_FEASIBLE"
                 } else {
-                    "CORRECT_INFEASIBLE_CONDITIONAL"
+                    "POLICY_REJECTED_AND_SHADOW_INFEASIBLE"
                 }
             } else if p.starvation >= 24 * HOUR || p.source_starvation >= 24 * HOUR {
                 "FALSE_INFEASIBLE"
@@ -309,7 +331,7 @@ impl Journal {
             } else if !c.violations.is_empty() {
                 "REJECTED_OTHER_GATE"
             } else {
-                "CORRECT_FEASIBLE_CONDITIONAL"
+                "POLICY_ACCEPTABLE_AND_SHADOW_FEASIBLE"
             };
             self.count(format!("plan:{classification}"));
             if complete
@@ -344,12 +366,22 @@ impl Journal {
                 && complete
                 && self.oracle_keys.len() < 160
                 && (o.agent == 0 || self.all_agents_oracle)
-                && self.oracle_keys.insert(format!(
-                    "{}:{:?}:{}",
-                    audit.outcome,
-                    o.location,
-                    o.now / HOUR
-                ))
+                && self.oracle_keys.insert(if self.all_agents_oracle {
+                    format!(
+                        "{}:{:?}:{}:board={}:physical_mismatch={}",
+                        audit.outcome,
+                        o.location,
+                        o.now / HOUR,
+                        c.board,
+                        r.failure.is_some()
+                            && p.starvation < 24 * HOUR
+                            && p.source_starvation < 24 * HOUR
+                            && p.delivered > 0
+                            && c.expiry.is_some_and(|t| t > o.now + p.elapsed)
+                    )
+                } else {
+                    format!("{}:{:?}:{}", audit.outcome, o.location, o.now / HOUR)
+                })
             {
                 let belief = super::oracle::belief(o, m, c, &tape);
                 let truth = super::oracle::truth(w, o.agent, c, &tape);
@@ -415,11 +447,35 @@ impl Journal {
             }
 
             for (p, q) in old.candidates.iter().zip(&ca.candidates) {
+                let corrected_candidate = q.clone();
                 if let (Some(p), Some(q)) = (&p.plan, &q.plan)
                     && (p.elapsed != q.elapsed
                         || p.delivered != q.delivered
                         || p.nutrition != q.nutrition)
                 {
+                    if self.detailed
+                        && self.all_agents_oracle
+                        && p.delivered == 0
+                        && q.delivered > 0
+                        && ca.outcome == "PASS"
+                        && let Some(tape) = plan::tape(&corrected_candidate, m)
+                    {
+                        let kernel = super::oracle::belief(o, m, &corrected_candidate, &tape);
+                        self.row(
+                            "self_count_witness",
+                            format!(
+                                "{},{},{},{},{},{},{},{}",
+                                o.now,
+                                o.agent,
+                                corrected_candidate.board,
+                                p.delivered,
+                                q.delivered,
+                                kernel.delivered,
+                                kernel.failure,
+                                kernel.elapsed == q.elapsed
+                            ),
+                        );
+                    }
                     self.count("self_count:affected_candidate");
                     if old.outcome != ca.outcome {
                         self.count("self_count:gate_changed");
@@ -523,6 +579,9 @@ impl Journal {
                     initial_n: o.nutrition,
                     initial_f: o.fatigue,
                     initial_s: o.starvation,
+                    policy_time: step.travel_ms + step.queue_ms,
+                    policy_nutrition: (o.nutrition - step.travel_ms - step.queue_ms).max(0),
+                    policy_fatigue: (o.fatigue + step.travel_ms + step.queue_ms).min(24 * HOUR),
                 },
             );
         }
