@@ -5,6 +5,8 @@ use super::{
     performance,
 };
 use std::collections::{BTreeMap, BTreeSet};
+mod forecast;
+pub(crate) use forecast::{AcceptanceAudit, ForecastMode};
 #[derive(Clone, Debug, Default, PartialEq, Eq)]
 pub struct PolicyMemory {
     pub nodes: BTreeMap<usize, NodeView>,
@@ -72,6 +74,7 @@ struct Route {
     time: Time,
     starvation: Time,
     nutrition: Time,
+    steps: Vec<forecast::TravelStep>,
 }
 fn after(o: &Observation, elapsed: Time) -> (Time, Time) {
     (
@@ -94,6 +97,7 @@ fn route(o: &Observation, m: &PolicyMemory, target: usize) -> Option<Route> {
             time: 0,
             starvation: o.starvation,
             nutrition: o.nutrition,
+            steps: vec![],
         });
     }
     let mut edges: BTreeMap<usize, (EdgeView, Time)> = BTreeMap::new();
@@ -105,6 +109,7 @@ fn route(o: &Observation, m: &PolicyMemory, target: usize) -> Option<Route> {
         }
     }
     let mut dist = BTreeMap::from([(start, (0i64, usize::MAX))]);
+    let mut paths = BTreeMap::from([(start, vec![])]);
     let mut visited = BTreeSet::new();
     loop {
         let (&node, &(time, first)) = dist
@@ -118,10 +123,11 @@ fn route(o: &Observation, m: &PolicyMemory, target: usize) -> Option<Route> {
                 time,
                 starvation,
                 nutrition,
+                steps: paths[&node].clone(),
             });
         }
         visited.insert(node);
-        for (e, _) in edges.values() {
+        for (e, observed_at) in edges.values() {
             if e.edge.capacity == 0 {
                 continue;
             }
@@ -161,6 +167,17 @@ fn route(o: &Observation, m: &PolicyMemory, target: usize) -> Option<Route> {
             let first_edge = if node == start { e.id } else { first };
             if dist.get(&to).is_none_or(|x| candidate < x.0) {
                 dist.insert(to, (candidate, first_edge));
+                let mut path = paths[&node].clone();
+                path.push(forecast::TravelStep {
+                    from: node,
+                    to,
+                    edge: e.id,
+                    travel_ms: trip,
+                    queue_ms: delay,
+                    observed_at: *observed_at,
+                    nominal_ms: e.edge.nominal_ms,
+                });
+                paths.insert(to, path);
             }
         }
     }
@@ -332,6 +349,21 @@ fn acquire(o: &Observation, s: &Source, communal: bool) -> Decision {
     }
 }
 pub fn decide(o: &Observation, m: &PolicyMemory, rng: &mut u64) -> Decision {
+    decide_impl(
+        o,
+        m,
+        rng,
+        ForecastMode::Legacy(6 * HOUR),
+        &mut AcceptanceAudit::disabled(),
+    )
+}
+fn decide_impl(
+    o: &Observation,
+    m: &PolicyMemory,
+    rng: &mut u64,
+    mode: ForecastMode,
+    audit: &mut AcceptanceAudit,
+) -> Decision {
     if matches!(o.action, Action::Dead | Action::Travel) {
         return choice(Intent::Wait, "atomic traversal or dead");
     }
@@ -406,62 +438,7 @@ pub fn decide(o: &Observation, m: &PolicyMemory, rng: &mut u64) -> Decision {
     }
     // Voluntary jobs require personally known demand and source, with a survival margin.
     if o.communal && o.nutrition > 6 * HOUR && o.job.is_none() && o.load < o.capacity {
-        let mut best: Option<(f64, usize, u64, Route)> = None;
-        for view in m.nodes.values() {
-            if let Some(board) = &view.board {
-                let demand = board.unclaimed(o.now);
-                if demand == 0 {
-                    continue;
-                }
-                let Some(to_board) = route(o, m, board.node) else {
-                    continue;
-                };
-                for source in &known {
-                    if source.node == board.node {
-                        continue;
-                    }
-                    // Estimate each leg from its actual intended origin using memory only.
-                    let mut predicted = o.clone();
-                    predicted.location = Location::Node(board.node);
-                    predicted.action = Action::Idle;
-                    (predicted.nutrition, predicted.starvation) = after(o, to_board.time);
-                    predicted.fatigue = (o.fatigue + to_board.time).min(24 * HOUR);
-                    let Some(outbound) = route(&predicted, m, source.node) else {
-                        continue;
-                    };
-                    let work = ((o.capacity - o.load) as u128 * 2000 * SCALE).div_ceil(performance(
-                        outbound.nutrition,
-                        (predicted.fatigue + outbound.time).min(24 * HOUR),
-                    )) as Time;
-                    let elapsed = to_board.time + outbound.time + work;
-                    predicted.location = Location::Node(source.node);
-                    (predicted.nutrition, predicted.starvation) = after(o, elapsed);
-                    predicted.fatigue = (o.fatigue + elapsed).min(24 * HOUR);
-                    let Some(inbound) = route(&predicted, m, board.node) else {
-                        continue;
-                    };
-                    let total = elapsed + inbound.time;
-                    let (nutrition, starvation) = after(o, total);
-                    if starvation > 0
-                        || nutrition < 6 * HOUR
-                        || source.food.expires_at <= o.now + total
-                    {
-                        continue;
-                    }
-                    let q = demand.min(o.capacity - o.load).min(source.food.quantity);
-                    let remaining =
-                        (source.food.expires_at - o.now - total) as f64 / (48 * HOUR) as f64;
-                    let urgency = 1.0 + (board.quantity.min(600) as f64 / 600.0);
-                    let score = q as f64 / (total.max(1) as f64)
-                        * urgency
-                        * source.confidence
-                        * remaining.min(1.0);
-                    if best.as_ref().is_none_or(|(s, _, _, _)| score > *s) {
-                        best = Some((score, board.node, q, to_board.clone()));
-                    }
-                }
-            }
-        }
+        let best = forecast::evaluate(o, m, &known, mode, audit);
         if let Some((score, node, q, r)) = best {
             if matches!(o.location,Location::Node(n) if n==node) {
                 return choice(
@@ -587,7 +564,48 @@ pub fn decide_variant(
             return choice(Intent::Wait, "diagnostic accepted-job FIFO commitment");
         }
     }
-    decide(o, m, rng)
+    match variant {
+        DiagnosticPolicy::MealAware => decide_impl(
+            o,
+            m,
+            rng,
+            ForecastMode::Meals,
+            &mut AcceptanceAudit::disabled(),
+        ),
+        DiagnosticPolicy::ZeroMargin => decide_impl(
+            o,
+            m,
+            rng,
+            ForecastMode::Legacy(0),
+            &mut AcceptanceAudit::disabled(),
+        ),
+        DiagnosticPolicy::ThreeHourMargin => decide_impl(
+            o,
+            m,
+            rng,
+            ForecastMode::Legacy(3 * HOUR),
+            &mut AcceptanceAudit::disabled(),
+        ),
+        _ => decide(o, m, rng),
+    }
+}
+
+pub(crate) fn decide_audited(
+    o: &Observation,
+    m: &PolicyMemory,
+    rng: &mut u64,
+    variant: super::DiagnosticPolicy,
+) -> (Decision, AcceptanceAudit) {
+    let mode = match variant {
+        super::DiagnosticPolicy::MealAware => ForecastMode::Meals,
+        super::DiagnosticPolicy::ZeroMargin => ForecastMode::Legacy(0),
+        super::DiagnosticPolicy::ThreeHourMargin => ForecastMode::Legacy(3 * HOUR),
+        _ => ForecastMode::Legacy(6 * HOUR),
+    };
+    let mut audit = AcceptanceAudit::new(o, m, mode);
+    let d = decide_impl(o, m, rng, mode, &mut audit);
+    audit.finish(o, &d);
+    (d, audit)
 }
 
 /// Read-only audit of the *existing* voluntary-job gate, using the same route

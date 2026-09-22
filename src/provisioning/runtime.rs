@@ -473,6 +473,9 @@ impl World {
             self.metrics.physiology_ms += dt as u128;
             let zero_time = (dt - a.nutrition).max(0);
             self.metrics.deficit_ms += zero_time as u128;
+            if self.config.acceptance_audit {
+                *self.acceptance.zero_ms.entry(id).or_default() += zero_time as u128;
+            }
             if zero_time > 0 {
                 a.starvation += zero_time;
             }
@@ -841,8 +844,18 @@ impl World {
                     .insert(local.node, local.clone());
             }
             let a = &mut self.agents[id];
-            let decision =
-                policy::decide_variant(&o, &a.memory, &mut a.rng, self.config.diagnostic_policy);
+            let decision = if self.config.acceptance_audit {
+                let (d, audit) = policy::decide_audited(
+                    &o,
+                    &a.memory,
+                    &mut a.rng,
+                    self.config.diagnostic_policy,
+                );
+                self.acceptance.record(&o, &d, audit);
+                d
+            } else {
+                policy::decide_variant(&o, &a.memory, &mut a.rng, self.config.diagnostic_policy)
+            };
             self.diagnostics.observe(&o, &a.memory, &decision);
             if let (Action::Queued { edge, .. }, Some((target, true))) = (&o.action, o.goal) {
                 let leaving = match decision.intent {

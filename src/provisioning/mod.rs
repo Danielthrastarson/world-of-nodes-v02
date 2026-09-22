@@ -1,4 +1,5 @@
 //! Provisioning model P1. The legacy kernel remains available for historical reproduction.
+pub mod acceptance;
 pub mod decomposition;
 pub mod experiment;
 mod goods;
@@ -29,11 +30,15 @@ pub enum DiagnosticPolicy {
     QueueCommitment,
     SleepCommitment,
     JobCommitment,
+    MealAware,
+    ZeroMargin,
+    ThreeHourMargin,
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
     pub diagnostic_policy: DiagnosticPolicy,
     pub initial_request: u64,
+    pub acceptance_audit: bool,
     pub seed: u64,
     pub nodes: usize,
     pub edges: Vec<Edge>,
@@ -55,6 +60,7 @@ impl Default for Config {
         Self {
             diagnostic_policy: DiagnosticPolicy::Current,
             initial_request: 0,
+            acceptance_audit: false,
             seed: 0,
             nodes: 3,
             edges: vec![
@@ -204,6 +210,7 @@ pub struct Observation {
     pub job: Option<Job>,
     pub goal: Option<(usize, bool)>,
     pub communal: bool,
+    pub decision_interval: Time,
 }
 #[derive(Clone, Debug, Default, PartialEq, Eq)]
 pub struct Metrics {
@@ -256,6 +263,7 @@ pub struct World {
     pub(crate) event_count: u64,
     pub(crate) event_hash: u64,
     pub(crate) diagnostics: decomposition::Diagnostics,
+    pub(crate) acceptance: acceptance::Journal,
     request_backlog: u64,
     gather_communal: BTreeMap<usize, bool>,
     initialized: bool,
@@ -352,6 +360,7 @@ impl World {
         let mut w = Self {
             request_backlog: config.initial_request,
             diagnostics: decomposition::Diagnostics::default(),
+            acceptance: acceptance::Journal::default(),
             config,
             now: 0,
             agents,
@@ -452,6 +461,7 @@ impl World {
             job: a.job.clone(),
             goal: a.goal,
             communal: self.config.communal,
+            decision_interval: self.config.policy_ms,
         })
     }
     fn log(&mut self, agent: Option<usize>, kind: &str, detail: String) {
