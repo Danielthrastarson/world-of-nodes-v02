@@ -542,7 +542,7 @@ impl Journal {
             let Location::Node(from) = o.location else {
                 return;
             };
-            let Some(route) = policy::route(o, m, target) else {
+            let Some(route) = audited_route(w, o, m, target) else {
                 return;
             };
             let Some(step) = route.steps.first() else {
@@ -694,7 +694,7 @@ impl Journal {
             }
         }
         for &target in m.nodes.keys() {
-            let Some(r) = policy::route(o, m, target) else {
+            let Some(r) = audited_route(w, o, m, target) else {
                 continue;
             };
             let mut b = Body {
@@ -837,7 +837,7 @@ impl Journal {
             )
         } else if known
             .iter()
-            .all(|v| policy::route(o, m, v.node).is_none_or(|r| r.starvation >= 24 * HOUR))
+            .all(|v| audited_route(w, o, m, v.node).is_none_or(|r| r.starvation >= 24 * HOUR))
         {
             (
                 "KNOWN_BUT_TOO_FAR",
@@ -862,5 +862,20 @@ impl Journal {
                 o.now, o.agent, o.nutrition, category, detail
             ),
         );
+    }
+}
+
+// The old estimator remains the audit target for every preserved arm. The new
+// research arm must be compared with the estimator it actually uses.
+fn audited_route(
+    w: &World,
+    o: &Observation,
+    m: &PolicyMemory,
+    target: usize,
+) -> Option<policy::Route> {
+    if w.config.diagnostic_policy == DiagnosticPolicy::CoherentForecast {
+        policy::coherent::route(o, m, target)
+    } else {
+        policy::route(o, m, target)
     }
 }
