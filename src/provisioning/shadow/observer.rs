@@ -28,6 +28,7 @@ struct Primitive {
 pub(crate) struct Journal {
     pub enabled: bool,
     pub detailed: bool,
+    pub all_agents_oracle: bool,
     pub rows: BTreeMap<&'static str, Vec<String>>,
     pub counts: BTreeMap<String, u64>,
     pending: BTreeMap<usize, Pending>,
@@ -342,7 +343,7 @@ impl Journal {
             if self.detailed
                 && complete
                 && self.oracle_keys.len() < 160
-                && o.agent == 0
+                && (o.agent == 0 || self.all_agents_oracle)
                 && self.oracle_keys.insert(format!(
                     "{}:{:?}:{}",
                     audit.outcome,

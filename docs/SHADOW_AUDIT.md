@@ -65,3 +65,13 @@ information, not stale same-bank counts.
 A current-state kernel fork retains other agents' current actions but gives them no
 new commands. Its delay is a conditional current-demand estimate. It is neither an
 exact prediction of future autonomous traffic nor a proof of global impossibility.
+
+## Kernel sample coverage amendment
+
+Initial full audits selected the first complete tape per gate/location/hour for
+agent 0, at most 160 per arm. Inspection showed that agent 0 never reaches the
+complete-job gate in the reference/current histories. A supplementary read-only
+seed-0 replay therefore selects the first agent with a complete tape per the same
+stratum for reference/current/known-source. This is broader coverage of unchanged
+histories, not a behavioral intervention. Samples are deduplicated by time, agent,
+and candidate. Every supplementary run must match the preserved event/state hash.

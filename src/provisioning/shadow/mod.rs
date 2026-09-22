@@ -14,12 +14,50 @@ impl World {
         self.shadow.enabled = true;
         self.shadow.detailed = detailed;
     }
+    pub fn enable_shadow_kernel_validation(&mut self) {
+        self.shadow.all_agents_oracle = true;
+    }
     pub fn take_shadow_rows(&mut self) -> std::collections::BTreeMap<&'static str, Vec<String>> {
         std::mem::take(&mut self.shadow.rows)
     }
     pub fn shadow_counts(&self) -> &std::collections::BTreeMap<String, u64> {
         &self.shadow.counts
     }
+}
+
+/// Reconstruct the already-published stale-depletion intervention, unchanged.
+/// The audit starts after this scripted historical initial condition, before
+/// the first autonomous decision; it does not manufacture new NPC knowledge.
+pub fn historical_fixture(name: &str, seed: u64) -> Result<World, String> {
+    let mut w = World::new(experiment::configuration(name, seed, false)?)?;
+    if name == "stale_depletion" {
+        w.config.autonomous = false;
+        for _ in 0..6 {
+            w.apply_intents(vec![(
+                49,
+                Intent::Gather {
+                    batch: 0,
+                    communal: false,
+                },
+            )])?;
+            w.advance_to(w.now + 2000)?;
+        }
+        let batch = w
+            .goods
+            .batches
+            .iter()
+            .find(|b| b.holder == Holder::Agent(49) && b.quantity > 0)
+            .unwrap()
+            .id;
+        w.apply_intents(vec![(49, Intent::Eat { batch, quantity: 6 })])?;
+        w.log(
+            None,
+            "FixtureComplete",
+            "source physically depleted by agent 49; other agents retain t=0 observations".into(),
+        );
+        w.config.autonomous = true;
+    }
+    Ok(w)
 }
 
 #[cfg(test)]
@@ -129,6 +167,35 @@ mod mismatch_tests {
         w.advance_to(8 * HOUR).unwrap();
         assert_eq!(w.agents[4].action, Action::Dead);
         assert_eq!(w.agents[4].death_time, Some(p.elapsed));
+    }
+    #[test]
+    fn aggregate_gather_rounding_differs_from_ten_atomic_actions() {
+        let mut w = World::new(Config {
+            starts: vec![0],
+            food: vec![(0, 10, 0, 48 * HOUR)],
+            initial_nutrition: 24 * HOUR,
+            initial_fatigue: 16 * HOUR,
+            autonomous: false,
+            ..Config::default()
+        })
+        .unwrap();
+        let aggregate =
+            (10_u128 * 2000 * SCALE).div_ceil(performance(24 * HOUR, 16 * HOUR)) as Time;
+        for _ in 0..10 {
+            w.apply_intents(vec![(
+                0,
+                Intent::Gather {
+                    batch: 0,
+                    communal: false,
+                },
+            )])
+            .unwrap();
+            while w.agents[0].action != Action::Idle {
+                w.advance_to(w.next_time(HOUR)).unwrap();
+            }
+        }
+        assert_eq!(aggregate, 26667);
+        assert_eq!(w.now, 26670);
     }
     #[test]
     fn expiry_interrupts_reserved_gather_without_refresh_or_material_loss() {

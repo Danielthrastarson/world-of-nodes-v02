@@ -236,7 +236,16 @@ pub fn institutional_rows() -> Vec<String> {
         "withdraw_immediate",
         w.goods.load(0) == 0 && w.agents[0].nutrition == before + HOUR,
     );
-    let b = w.goods.move_part(0, 2, Owner::Agent(99), Holder::Loose(0));
+    let mut deceased = w.agents[0].clone();
+    deceased.id = 1;
+    deceased.action = Action::Dead;
+    deceased.job = None;
+    deceased.nutrition = 0;
+    deceased.starvation = 24 * HOUR;
+    deceased.death_time = Some(w.now);
+    w.config.starts.push(0);
+    w.agents.push(deceased);
+    let b = w.goods.move_part(0, 2, Owner::Agent(1), Holder::Loose(0));
     w.apply_intents(vec![(
         0,
         Intent::Pickup {

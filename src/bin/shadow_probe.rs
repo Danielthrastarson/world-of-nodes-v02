@@ -10,6 +10,7 @@ fn fixture(name: &str, seed: u64) -> Result<World, String> {
             seed,
             ..Config::default()
         }),
+        "contested_requests" | "stale_depletion" => shadow::historical_fixture(name, seed),
         "current" | "known_source" => acceptance::fixture(name, seed, false),
         _ => persistence::fixture(name, seed, false),
     }
@@ -68,9 +69,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let mut baseline = fixture(name, seed)?;
         let mut audited = fixture(name, seed)?;
         audited.enable_shadow_audit(seed == 0);
+        if args.get(3).is_some_and(|v| v == "kernel-validation") {
+            audited.enable_shadow_kernel_validation();
+        }
         for h in 0..=72 {
-            baseline.advance_to(h * HOUR)?;
-            audited.advance_to(h * HOUR)?;
+            baseline.advance_to((h * HOUR).max(baseline.now()))?;
+            audited.advance_to((h * HOUR).max(audited.now()))?;
             assert_eq!(
                 baseline.event_hash(),
                 audited.event_hash(),
