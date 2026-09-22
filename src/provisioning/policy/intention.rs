@@ -217,15 +217,13 @@ pub(crate) fn decide_persistent(
         ));
     }
     let mut candidate_rng = *rng;
-    let mut audit = AcceptanceAudit::new(o, m, ForecastMode::Meals);
-    let base = decide_impl(
-        o,
-        m,
-        &mut candidate_rng,
-        ForecastMode::Meals,
-        &mut audit,
-        false,
-    );
+    let mode = if arm == Arm::ForecastCorrected {
+        ForecastMode::MealsSelfExcluded
+    } else {
+        ForecastMode::Meals
+    };
+    let mut audit = AcceptanceAudit::new(o, m, mode);
+    let base = decide_impl(o, m, &mut candidate_rng, mode, &mut audit, false);
     audit.finish(o, &base);
     let mut d = base.clone();
     let mut used_base = true;

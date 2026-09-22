@@ -401,6 +401,14 @@ impl World {
     }
     pub(super) fn next_time(&self, target: Time) -> Time {
         let mut next = target;
+        if let Some((&t, _)) = self
+            .transport_research
+            .replay
+            .range((self.now + 1)..)
+            .next()
+        {
+            next = next.min(t);
+        }
         if self.config.autonomous {
             next = next.min(self.next_policy);
         }
@@ -792,6 +800,12 @@ impl World {
         let mut ids: Vec<_> = std::mem::take(&mut self.wake)
             .into_iter()
             .filter(|&id| !matches!(self.agents[id].action, Action::Dead | Action::Travel))
+            .filter(|id| {
+                self.transport_research
+                    .actors
+                    .as_ref()
+                    .is_none_or(|ids| ids.contains(id))
+            })
             .collect();
         let observed: BTreeSet<_> = ids
             .iter()
@@ -848,6 +862,15 @@ impl World {
                     .insert(local.node, local.clone());
             }
             let a = &mut self.agents[id];
+            if self.transport_research.audit_forecasts {
+                let (d, audit) = policy::audit_meals(
+                    &o,
+                    &a.memory,
+                    &mut a.rng.clone(),
+                    self.config.persistence == Some(persistence::Arm::ForecastCorrected),
+                );
+                self.acceptance.record(&o, &d, audit);
+            }
             let decision = if let Some(arm) = self.config.persistence {
                 let state = self.persistence.states.entry(id).or_default();
                 let d = policy::decide_persistent(&o, &a.memory, &mut a.rng, arm, state);
@@ -886,8 +909,26 @@ impl World {
                 format!("node={node} remembered food absent/inaccessible"),
             );
         }
+        if let Some(commands) = self.transport_research.replay.remove(&self.now) {
+            for (id, intent) in commands {
+                decisions.push((
+                    id,
+                    Decision {
+                        intent,
+                        reason: "research recorded background command".into(),
+                    },
+                    self.agents[id].nutrition,
+                    self.agents[id].starvation,
+                ));
+            }
+        }
         decisions.sort_by_key(|(id, _, _, _)| *id);
         for (id, d, n, s) in decisions {
+            if self.transport_research.record {
+                self.transport_research
+                    .tape
+                    .push((self.now, id, d.intent.clone()));
+            }
             self.log(
                 Some(id),
                 "Decision",

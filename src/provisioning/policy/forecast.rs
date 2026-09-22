@@ -7,12 +7,13 @@ use crate::provisioning::goods::headroom;
 pub(crate) enum ForecastMode {
     Legacy(Time),
     Meals,
+    MealsSelfExcluded,
 }
 impl ForecastMode {
     pub fn margin(self) -> Time {
         match self {
             Self::Legacy(n) => n,
-            Self::Meals => 6 * HOUR,
+            Self::Meals | Self::MealsSelfExcluded => 6 * HOUR,
         }
     }
 }
@@ -236,9 +237,10 @@ pub(super) fn evaluate(
             let q = demand.min(o.capacity - o.load).min(source.food.quantity);
             let maybe = match mode {
                 ForecastMode::Legacy(_) => legacy(o, m, board.node, source, &to_board, q),
-                ForecastMode::Meals => {
-                    let mut p = physical(o, m, board.node, source, q, true);
-                    let shadow = physical(o, m, board.node, source, q, false);
+                ForecastMode::Meals | ForecastMode::MealsSelfExcluded => {
+                    let corrected = mode == ForecastMode::MealsSelfExcluded;
+                    let mut p = physical(o, m, board.node, source, q, true, corrected);
+                    let shadow = physical(o, m, board.node, source, q, false, corrected);
                     let gates = violations(&shadow, source.food.expires_at, o.now, 6 * HOUR);
                     p.shadow = Some((
                         shadow.elapsed,
@@ -462,7 +464,32 @@ fn physical(
     s: &Source,
     target: u64,
     meals: bool,
+    exclude_self: bool,
 ) -> Plan {
+    // Only self membership witnessed in the actual local observation is removed.
+    // Keep the copied evidence constant on every hypothetical leg; never infer
+    // future departures or subtract the same membership twice.
+    let mut evidence = m.clone();
+    let mut initial = o.clone();
+    let mut normalization = None;
+    if exclude_self
+        && let (Location::Node(node), Action::Queued { edge, .. }) = (&o.location, &o.action)
+        && let Some(view) = evidence.nodes.get_mut(node)
+        && view.observed_at == o.now
+        && let Some(e) = view.edges.iter_mut().find(|e| e.id == *edge)
+    {
+        normalization = Some(format!(
+            "self_exclusion: node={node} edge={edge} observed_at={} queued_before={} subtraction=1 repeated_subtraction=false",
+            view.observed_at, e.queued
+        ));
+        e.queued = e.queued.saturating_sub(1);
+        initial.action = Action::Idle;
+    }
+    let (o, m) = if exclude_self {
+        (&initial, &evidence)
+    } else {
+        (o, m)
+    };
     let own: u64 = o.own.iter().map(|f| f.quantity).sum();
     let mut sim = Sim {
         initial: o,
@@ -479,6 +506,9 @@ fn physical(
             .map(|f| f.quantity)
             .sum(),
     };
+    if let Some(note) = normalization {
+        sim.plan.steps.push(note);
+    }
     sim.travel(board, "to_board");
     if sim.plan.failure.is_none() {
         sim.plan.steps.push(format!("claim: node={board} target={target} board_observed_at={} unclaimed_then={} conditional=true",m.nodes[&board].observed_at,m.nodes[&board].board.as_ref().unwrap().unclaimed(o.now)));
@@ -563,6 +593,73 @@ mod tests {
         let mut m = w.agents[0].memory.clone();
         m.nodes.insert(0, o.local.clone().unwrap());
         (w, o, m)
+    }
+    #[test]
+    fn self_exclusion_is_once_per_observed_membership_on_every_hypothetical_leg() {
+        let (w, mut o, mut m) = inputs();
+        o.now = 5 * HOUR;
+        o.location = Location::Node(2);
+        o.nutrition = 18 * HOUR;
+        o.fatigue = 9 * HOUR;
+        o.action = Action::Queued {
+            edge: 1,
+            to: 1,
+            joined: o.now,
+        };
+        let mut v = w.node_view(2);
+        v.observed_at = o.now;
+        v.edges[0].queued = 4;
+        m.nodes.insert(2, v.clone());
+        o.local = Some(v);
+        let original = format!("{m:?}");
+        let source = sources(&o, &m).into_iter().find(|s| s.node == 2).unwrap();
+        let old = physical(&o, &m, 0, &source, 10, true, false);
+        let corrected = physical(&o, &m, 0, &source, 10, true, true);
+        assert!(
+            old.steps
+                .iter()
+                .any(|s| s.contains("edge=1") && s.contains("queue_ms=7200000"))
+        );
+        assert!(
+            !corrected
+                .steps
+                .iter()
+                .any(|s| s.contains("queue_ms=7200000"))
+        );
+        assert!(
+            old.steps
+                .iter()
+                .find(|s| s.starts_with("to_board:"))
+                .unwrap()
+                .contains("queue_ms=0")
+        );
+        assert!(
+            corrected
+                .steps
+                .iter()
+                .find(|s| s.starts_with("to_board:"))
+                .unwrap()
+                .contains("queue_ms=0")
+        );
+        assert_eq!(format!("{m:?}"), original);
+        // Explicit copied evidence with three OTHER applicants is the same plan.
+        m.nodes.get_mut(&2).unwrap().edges[0].queued = 3;
+        o.action = Action::Idle;
+        let manual = physical(&o, &m, 0, &source, 10, true, false);
+        assert_eq!(corrected.elapsed, manual.elapsed);
+        assert_eq!(corrected.delivered, manual.delivered);
+        assert_eq!(corrected.nutrition, manual.nutrition);
+        assert!(corrected.elapsed < old.elapsed);
+    }
+    #[test]
+    fn self_exclusion_does_not_discount_queues_without_membership_evidence() {
+        let (_, o, mut m) = inputs();
+        m.nodes.get_mut(&2).unwrap().edges[0].queued = 4;
+        let source = sources(&o, &m).into_iter().find(|s| s.node == 2).unwrap();
+        assert_eq!(
+            format!("{:?}", physical(&o, &m, 0, &source, 10, true, false)),
+            format!("{:?}", physical(&o, &m, 0, &source, 10, true, true))
+        );
     }
     #[test]
     fn zero_margin_changes_only_the_no_meal_threshold_and_never_allows_fatal_plan() {

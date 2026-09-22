@@ -1,5 +1,6 @@
 //! Provisioning model P1. The legacy kernel remains available for historical reproduction.
 pub mod acceptance;
+pub mod congestion;
 pub mod decomposition;
 pub mod experiment;
 mod goods;
@@ -268,6 +269,7 @@ pub struct World {
     pub(crate) diagnostics: decomposition::Diagnostics,
     pub(crate) acceptance: acceptance::Journal,
     pub(crate) persistence: persistence::Journal,
+    pub(crate) transport_research: congestion::Instrument,
     request_backlog: u64,
     gather_communal: BTreeMap<usize, bool>,
     initialized: bool,
@@ -366,6 +368,7 @@ impl World {
             diagnostics: decomposition::Diagnostics::default(),
             acceptance: acceptance::Journal::default(),
             persistence: persistence::Journal::default(),
+            transport_research: congestion::Instrument::default(),
             config,
             now: 0,
             agents,

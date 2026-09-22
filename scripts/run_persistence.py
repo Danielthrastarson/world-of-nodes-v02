@@ -44,7 +44,7 @@ def close_seed():
 
 
 with (root / f'{case}-execution.log').open('w') as log:
-    process = subprocess.Popen(['target/release/persistence_probe', case, str(root), str(seeds)],
+    process = subprocess.Popen(['target/release/persistence_probe', case, str(root), str(seeds)] + sys.argv[4:],
                                stdout=subprocess.PIPE, stderr=log)
     header = process.stdout.readline().split(b'\t', 2)[2]
     assert header.startswith(b'time_ms\tagent\t')

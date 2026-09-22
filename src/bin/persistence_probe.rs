@@ -24,6 +24,27 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         dir.join(format!("{name}-parameters.txt")),
     )?);
     let mut jobs = BufWriter::new(fs::File::create(dir.join(format!("{name}-jobs.tsv")))?);
+    let audit_forecasts = args.get(3).is_some_and(|x| x == "forecast-audit");
+    let mut forecast_output = if audit_forecasts {
+        Some(BufWriter::new(fs::File::create(
+            dir.join(format!("{name}-forecasts.tsv")),
+        )?))
+    } else {
+        None
+    };
+    if let Some(f) = &mut forecast_output {
+        writeln!(f, "scenario\tseed\t{}", acceptance::JOURNAL_HEADER)?;
+    }
+    let mut forecast_counts = if audit_forecasts {
+        Some(BufWriter::new(fs::File::create(
+            dir.join(format!("{name}-forecast-counts.csv")),
+        )?))
+    } else {
+        None
+    };
+    if let Some(f) = &mut forecast_counts {
+        writeln!(f, "scenario,seed,scope,stage,gate,count")?;
+    }
     let mut journal = BufWriter::new(std::io::stdout().lock());
     writeln!(journal, "scenario\tseed\t{HEADER}")?;
     writeln!(
@@ -48,6 +69,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     writeln!(jobs, "scenario\tseed\tjob")?;
     for seed in 0..count {
         let mut w = persistence::fixture(name, seed, seed == 0)?;
+        if audit_forecasts {
+            w.enable_transport_forecast_audit();
+        }
         writeln!(
             params,
             "seed={seed} {:?}\ninitial_memories={:?}",
@@ -56,6 +80,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         )?;
         for h in 0..=72 {
             w.advance_to(h * HOUR)?;
+            if let Some(f) = &mut forecast_output {
+                for r in w.take_acceptance_records() {
+                    if seed == 0 {
+                        writeln!(f, "{name}\t{seed}\t{r}")?;
+                    }
+                }
+            }
             for record in w.take_persistence_records() {
                 writeln!(journal, "{name}\t{seed}\t{}", record.tsv())?;
             }
@@ -76,6 +107,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                         a.location
                     )?;
                 }
+            }
+        }
+        if let Some(f) = &mut forecast_counts {
+            for ((scope, stage, gate), count) in w.acceptance_counts() {
+                writeln!(f, "{name},{seed},{scope},{stage},{gate},{count}")?;
             }
         }
         for (agent, p) in w.persistence_plans() {

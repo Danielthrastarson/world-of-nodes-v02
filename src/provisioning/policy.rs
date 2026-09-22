@@ -617,6 +617,23 @@ pub(crate) fn decide_audited(
     (d, audit)
 }
 
+pub(crate) fn audit_meals(
+    o: &Observation,
+    m: &PolicyMemory,
+    rng: &mut u64,
+    corrected: bool,
+) -> (Decision, AcceptanceAudit) {
+    let mode = if corrected {
+        ForecastMode::MealsSelfExcluded
+    } else {
+        ForecastMode::Meals
+    };
+    let mut audit = AcceptanceAudit::new(o, m, mode);
+    let d = decide_impl(o, m, rng, mode, &mut audit, false);
+    audit.finish(o, &d);
+    (d, audit)
+}
+
 /// Read-only audit of the *existing* voluntary-job gate, using the same route
 /// estimator and known sources as decide. Never grants information or changes an intent.
 pub(crate) fn audit_job_gate(o: &Observation, m: &PolicyMemory) -> Vec<(String, String)> {

@@ -7,6 +7,7 @@ pub enum Arm {
     Resumable,
     Committed,
     SelfPriority,
+    ForecastCorrected,
 }
 impl Arm {
     pub fn parse(name: &str) -> Result<Self, String> {
@@ -16,6 +17,7 @@ impl Arm {
             "resumable" => Ok(Self::Resumable),
             "committed" => Ok(Self::Committed),
             "self_priority" => Ok(Self::SelfPriority),
+            "forecast_corrected" => Ok(Self::ForecastCorrected),
             _ => Err(format!("unknown arm {name}")),
         }
     }
