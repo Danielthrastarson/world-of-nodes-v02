@@ -1,0 +1,192 @@
+[
+  {
+    "scenario": "reference",
+    "survivors_mean": 28.0,
+    "survivors_min": 28,
+    "survivors_max": 28,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "prior_information",
+    "survivors_mean": 28.0,
+    "survivors_min": 28,
+    "survivors_max": 28,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "self_only",
+    "survivors_mean": 28.0,
+    "survivors_min": 28,
+    "survivors_max": 28,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "no_transport",
+    "survivors_mean": 0.0,
+    "survivors_min": 0,
+    "survivors_max": 0,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "no_food",
+    "survivors_mean": 0.0,
+    "survivors_min": 0,
+    "survivors_max": 0,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "scarce",
+    "survivors_mean": 0.0,
+    "survivors_min": 0,
+    "survivors_max": 0,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "unequal_access",
+    "survivors_mean": 50.0,
+    "survivors_min": 50,
+    "survivors_max": 50,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "contested_requests",
+    "survivors_mean": 27.2,
+    "survivors_min": 24,
+    "survivors_max": 28,
+    "jobs_mean": 8.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "reverse_order",
+    "survivors_mean": 28.0,
+    "survivors_min": 28,
+    "survivors_max": 28,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "capacity_1",
+    "survivors_mean": 7.0,
+    "survivors_min": 7,
+    "survivors_max": 7,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "capacity_2",
+    "survivors_mean": 14.0,
+    "survivors_min": 14,
+    "survivors_max": 14,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "distance_6h",
+    "survivors_mean": 4.0,
+    "survivors_min": 4,
+    "survivors_max": 4,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "distance_12h",
+    "survivors_mean": 0.0,
+    "survivors_min": 0,
+    "survivors_max": 0,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "shelf_12h",
+    "survivors_mean": 0.0,
+    "survivors_min": 0,
+    "survivors_max": 0,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "shelf_24h",
+    "survivors_mean": 0.0,
+    "survivors_min": 0,
+    "survivors_max": 0,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "near_fresh_far_old",
+    "survivors_mean": 0.0,
+    "survivors_min": 0,
+    "survivors_max": 0,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "stale_depletion",
+    "survivors_mean": 0.0,
+    "survivors_min": 0,
+    "survivors_max": 0,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 28.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "cadence_30s",
+    "survivors_mean": 28.0,
+    "survivors_min": 28,
+    "survivors_max": 28,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  },
+  {
+    "scenario": "cadence_120s",
+    "survivors_mean": 28.0,
+    "survivors_min": 28,
+    "survivors_max": 28,
+    "jobs_mean": 0.0,
+    "delivery_mean": 0.0,
+    "stale_failures_mean": 0.0,
+    "spoiled_transit_mean": 0.0
+  }
+]

@@ -1,6 +1,6 @@
 # Experiment S1 — can local rules sustain a settlement?
 
-Status: settlement model and success measurements remain proposed. The clock, stock, travel, and gathering kernel is implemented and tested; a controlled transport probe is recorded in [the transport report](../research/TRANSPORT_REPORT.md). The settlement experiment has not run or passed.
+Status: deferred while the bounded [provisioning experiment](PROVISIONING_SPEC.md) is evaluated. Settlement model and success measurements remain proposed. The clock, stock, travel, and gathering kernel is implemented and tested; a controlled transport probe is recorded in [the transport report](../research/TRANSPORT_REPORT.md). The settlement experiment has not run or passed.
 
 ## Falsifiable question
 

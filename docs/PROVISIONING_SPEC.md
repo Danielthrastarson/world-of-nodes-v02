@@ -45,3 +45,5 @@ Eat/pickup/drop/claim are instantaneous local actions; sleep uses one-minute ato
 The prior-information control injects documented t=0 observations as an explicit information-only initial-condition intervention; it does not claim to simulate prehistory. The stale-depletion fixture places actor 49 at F with six quanta, seeds t=0 source memories, then records actual one-quantum gathering and consumption by actor 49 during a 12-second controlled preparation period before autonomous decisions. It is a targeted mechanism fixture, not the 3000-quantum reference.
 
 At a coincident event: integrate physiology/progress, settle arrivals, spoil expired food, process deaths, finish valid gathering/sleep, expire board leases, observe/decide, then admit queues. A death or expiry cannot be reversed by a same-time meal. Caller advance partition is independent of the fixed decision cadence.
+
+Instantaneous transfers/eating complete locally, then the agent waits for its next scheduled decision; timed action completions wake decisions early. There is no unbounded same-timestamp decision loop.

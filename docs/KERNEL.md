@@ -1,4 +1,6 @@
-# Headless kernel — first implementation
+# Headless kernel — preserved legacy implementation
+
+This document describes the original transport kernel, retained for reproduction. The active provisioning increment is specified in [PROVISIONING_SPEC.md](PROVISIONING_SPEC.md); its modules do not change this legacy experiment.
 
 Implemented: 50 stable agent identities, a seeded three-node terrain graph, finite food/wood/stone stocks, shared carrying limits, individual edge occupancy, time-based travel/gathering, local pickup/drop, interruptible gathering reservations, and causal completion events.
 
