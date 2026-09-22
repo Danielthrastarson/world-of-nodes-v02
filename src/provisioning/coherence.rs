@@ -58,10 +58,34 @@ fn validate_candidate(
     m: &PolicyMemory,
     c: &Candidate,
 ) -> Result<Option<String>, String> {
-    let Some(tape) = plan::tape(c, m) else {
+    let Some(p) = c.plan.as_ref() else {
         return Ok(None);
     };
-    let p = c.plan.as_ref().unwrap();
+    let tape = if let Some(tape) = plan::tape(c, m) {
+        tape
+    } else {
+        let Some(source) = c.source else {
+            return Ok(None);
+        };
+        let r = policy::coherent::route(o, m, source).ok_or("missing prefilter route")?;
+        let food = &m.nodes[&source].food[0];
+        let mut tape = vec![plan::Step::Claim {
+            board: c.board,
+            quantity: 1,
+        }];
+        tape.extend(r.steps.iter().map(|s| plan::Step::Travel {
+            edge: s.edge,
+            to: s.to,
+            nominal: s.nominal_ms,
+            queue: s.queue_ms,
+        }));
+        tape.push(plan::Step::Gather {
+            batch: food.batch,
+            quantity: 1,
+            deposit: matches!(food.holder, Holder::Deposit(_)),
+        });
+        tape
+    };
     let k = oracle::belief_endpoint(o, m, c, &tape);
     let fatigue = (o.fatigue + p.elapsed).min(24 * HOUR);
     let exact = p.elapsed == k.elapsed
@@ -94,7 +118,7 @@ mod tests {
     #[test]
     fn corrected_forecast_matches_static_kernel_matrix() {
         let rows = static_validation().unwrap();
-        assert!(rows.len() > 400, "{}", rows.len());
+        assert_eq!(rows.len(), 540);
     }
 }
 

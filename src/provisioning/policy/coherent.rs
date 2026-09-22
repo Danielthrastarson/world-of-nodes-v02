@@ -63,7 +63,7 @@ fn evidence(o: &Observation, m: &PolicyMemory) -> (Observation, PolicyMemory) {
     (o, m)
 }
 
-pub(super) fn route(o: &Observation, m: &PolicyMemory, target: usize) -> Option<Route> {
+pub(crate) fn route(o: &Observation, m: &PolicyMemory, target: usize) -> Option<Route> {
     let (o, m) = evidence(o, m);
     route_normalized(&o, &m, target)
 }
@@ -133,6 +133,32 @@ fn route_normalized(o: &Observation, m: &PolicyMemory, target: usize) -> Option<
                 states.insert(to, (b, if node == start { e.id } else { first }, path));
             }
         }
+    }
+}
+
+/// Diagnostic source prefilter uses the same stopped physical endpoint, even
+/// when expiry/death prevents acquiring the first quantum.
+pub(super) fn prefilter(o: &Observation, r: &Route, f: &FoodView, observed_at: Time) -> Plan {
+    let mut body = State::new(o);
+    body.wait(r.time);
+    let arrival = body.elapsed;
+    if body.alive() && f.expires_at > o.now + body.elapsed && matches!(f.holder, Holder::Deposit(_))
+    {
+        body.work(2000, f.expires_at - o.now);
+    }
+    Plan {
+        elapsed: body.elapsed,
+        nutrition: body.nutrition,
+        starvation: body.starvation,
+        source_starvation: r.starvation,
+        steps: vec![format!(
+            "source_prefilter_only: route={:?} gather_one_ms={} expiry={} observed_at={}; full job not evaluated",
+            r.steps,
+            body.elapsed - arrival,
+            f.expires_at,
+            observed_at
+        )],
+        ..Plan::default()
     }
 }
 

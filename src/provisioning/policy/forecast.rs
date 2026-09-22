@@ -324,18 +324,22 @@ pub(super) fn evaluate(
                         } else {
                             0
                         };
-                        partial = Some(Plan {
-                            elapsed: r.time + work,
-                            nutrition: (r.nutrition - work).max(0),
-                            starvation: r.starvation + (work - r.nutrition).max(0),
-                            source_starvation: r.starvation,
-                            steps: vec![format!(
-                                "source_prefilter_only: route={:?} gather_one_ms={work} expiry={} observed_at={}; full job not evaluated",
-                                r.steps, f.expires_at, v.observed_at
-                            )],
-                            ..Plan::default()
+                        partial = Some(if mode.coherent() {
+                            coherent::prefilter(o, &r, f, v.observed_at)
+                        } else {
+                            Plan {
+                                elapsed: r.time + work,
+                                nutrition: (r.nutrition - work).max(0),
+                                starvation: r.starvation + (work - r.nutrition).max(0),
+                                source_starvation: r.starvation,
+                                steps: vec![format!(
+                                    "source_prefilter_only: route={:?} gather_one_ms={work} expiry={} observed_at={}; full job not evaluated",
+                                    r.steps, f.expires_at, v.observed_at
+                                )],
+                                ..Plan::default()
+                            }
                         });
-                        if f.expires_at <= o.now + r.time + work {
+                        if f.expires_at <= o.now + partial.as_ref().unwrap().elapsed {
                             "SOURCE_PREDICTED_SPOILED"
                         } else {
                             "OTHER_EXPLICIT_REASON"
