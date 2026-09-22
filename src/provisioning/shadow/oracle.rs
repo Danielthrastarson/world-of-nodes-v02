@@ -3,12 +3,13 @@ use super::plan::Step;
 use crate::provisioning::policy::forecast::Candidate;
 use crate::provisioning::*;
 #[derive(Debug)]
-pub(super) struct Outcome {
+pub(crate) struct Outcome {
     pub elapsed: Time,
     pub delivered: u64,
     pub failure: String,
     pub nutrition: Time,
     pub fatigue: Time,
+    pub starvation: Time,
 }
 fn fork(w: &World) -> World {
     // Deliberately do not clone potentially huge audit/trace journals.
@@ -34,7 +35,7 @@ fn finish(w: &mut World, id: usize, deadline: Time) {
         w.advance_to(w.next_time(deadline)).unwrap();
     }
 }
-pub(super) fn edge(w: &World, id: usize, edge: usize) -> (Option<Time>, Option<Time>) {
+pub(crate) fn edge(w: &World, id: usize, edge: usize) -> (Option<Time>, Option<Time>) {
     let mut f = fork(w);
     let start = f.now;
     f.config.trace = true;
@@ -69,7 +70,14 @@ pub(super) fn edge(w: &World, id: usize, edge: usize) -> (Option<Time>, Option<T
         .map(|e| e.at - start);
     (admission, arrival)
 }
-fn execute(mut w: World, id: usize, c: &Candidate, tape: &[Step], belief_queue: bool) -> Outcome {
+fn execute(
+    mut w: World,
+    id: usize,
+    c: &Candidate,
+    tape: &[Step],
+    belief_queue: bool,
+    stop_at_death: bool,
+) -> Outcome {
     let start = w.now;
     let mut failure = "NONE".to_string();
     w.config.trace = true;
@@ -80,7 +88,18 @@ fn execute(mut w: World, id: usize, c: &Candidate, tape: &[Step], belief_queue: 
                 edge, to, queue, ..
             } => {
                 if belief_queue {
-                    w.advance_to(w.now + queue).unwrap();
+                    let dt = if stop_at_death {
+                        queue.min(
+                            w.agents[id].nutrition + (24 * HOUR - w.agents[id].starvation).max(0),
+                        )
+                    } else {
+                        queue
+                    };
+                    w.advance_to(w.now + dt).unwrap();
+                    if stop_at_death && w.agents[id].action == Action::Dead {
+                        failure = "DEATH".into();
+                        break;
+                    }
                 }
                 w.apply_intents(vec![(
                     id,
@@ -94,6 +113,11 @@ fn execute(mut w: World, id: usize, c: &Candidate, tape: &[Step], belief_queue: 
                 finish(&mut w, id, start + 144 * HOUR);
             }
             Step::Wait(dt) => {
+                let dt = if stop_at_death {
+                    dt.min(w.agents[id].nutrition + (24 * HOUR - w.agents[id].starvation).max(0))
+                } else {
+                    dt
+                };
                 w.advance_to(w.now + dt).unwrap();
             }
             Step::Claim { board, quantity } => {
@@ -196,12 +220,30 @@ fn execute(mut w: World, id: usize, c: &Candidate, tape: &[Step], belief_queue: 
         failure,
         nutrition: w.agents[id].nutrition,
         fatigue: w.agents[id].fatigue,
+        starvation: w.agents[id].starvation,
     }
 }
-pub(super) fn truth(w: &World, id: usize, c: &Candidate, tape: &[Step]) -> Outcome {
-    execute(fork(w), id, c, tape, false)
+pub(crate) fn truth(w: &World, id: usize, c: &Candidate, tape: &[Step]) -> Outcome {
+    execute(fork(w), id, c, tape, false, false)
 }
-pub(super) fn belief(o: &Observation, m: &PolicyMemory, c: &Candidate, tape: &[Step]) -> Outcome {
+pub(crate) fn belief(o: &Observation, m: &PolicyMemory, c: &Candidate, tape: &[Step]) -> Outcome {
+    belief_impl(o, m, c, tape, false)
+}
+pub(crate) fn belief_endpoint(
+    o: &Observation,
+    m: &PolicyMemory,
+    c: &Candidate,
+    tape: &[Step],
+) -> Outcome {
+    belief_impl(o, m, c, tape, true)
+}
+fn belief_impl(
+    o: &Observation,
+    m: &PolicyMemory,
+    c: &Candidate,
+    tape: &[Step],
+    stop_at_death: bool,
+) -> Outcome {
     let max_node = m
         .nodes
         .values()
@@ -310,5 +352,5 @@ pub(super) fn belief(o: &Observation, m: &PolicyMemory, c: &Candidate, tape: &[S
             b.material = Material::Waste;
         }
     }
-    execute(w, o.agent, c, tape, true)
+    execute(w, o.agent, c, tape, true, stop_at_death)
 }

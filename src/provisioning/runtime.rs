@@ -890,6 +890,11 @@ impl World {
                 policy::decide_variant(&o, &a.memory, &mut a.rng, self.config.diagnostic_policy)
             };
             self.diagnostics.observe(&o, &a.memory, &decision);
+            if self.coherence.enabled {
+                let mut journal = std::mem::take(&mut self.coherence);
+                journal.observe(self, &o, &decision, rng_before);
+                self.coherence = journal;
+            }
             if self.shadow.enabled {
                 let mut journal = std::mem::take(&mut self.shadow);
                 journal.observe(self, &o, &decision, rng_before);

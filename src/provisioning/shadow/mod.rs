@@ -1,11 +1,11 @@
 //! Research-only shadow action conformance. Nothing here submits live commands.
-mod physics;
+pub(crate) mod physics;
 mod static_cases;
 pub use static_cases::{institutional_rows, queue_counterexample, static_rows};
 
 mod observer;
-mod oracle;
-mod plan;
+pub(crate) mod oracle;
+pub(crate) mod plan;
 use super::*;
 pub use observer::HEADERS;
 pub(crate) use observer::Journal;

@@ -8,12 +8,19 @@ pub(crate) enum ForecastMode {
     Legacy(Time),
     Meals,
     MealsSelfExcluded,
+    Coherent,
+    CoherentMeals,
 }
 impl ForecastMode {
+    pub fn coherent(self) -> bool {
+        matches!(self, Self::Coherent | Self::CoherentMeals)
+    }
     pub fn margin(self) -> Time {
         match self {
             Self::Legacy(n) => n,
-            Self::Meals | Self::MealsSelfExcluded => 6 * HOUR,
+            Self::Meals | Self::MealsSelfExcluded | Self::Coherent | Self::CoherentMeals => {
+                6 * HOUR
+            }
         }
     }
 }
@@ -224,7 +231,7 @@ pub(super) fn evaluate(
             reject(a, board.node, None, "REQUEST_ALREADY_CLAIMED");
             continue;
         }
-        let Some(to_board) = route(o, m, board.node) else {
+        let Some(to_board) = route_for(o, m, board.node, mode) else {
             reject(a, board.node, None, "OTHER_EXPLICIT_REASON");
             continue;
         };
@@ -234,8 +241,23 @@ pub(super) fn evaluate(
                 continue;
             }
             considered = true;
-            let q = demand.min(o.capacity - o.load).min(source.food.quantity);
+            let q = demand
+                .min(o.capacity - o.load)
+                .min(source.food.quantity)
+                .min(if mode.coherent() {
+                    source.food.available
+                } else {
+                    u64::MAX
+                });
             let maybe = match mode {
+                ForecastMode::Coherent | ForecastMode::CoherentMeals => Some(coherent::predict(
+                    o,
+                    m,
+                    board.node,
+                    source,
+                    q,
+                    mode == ForecastMode::CoherentMeals,
+                )),
                 ForecastMode::Legacy(_) => legacy(o, m, board.node, source, &to_board, q),
                 ForecastMode::Meals | ForecastMode::MealsSelfExcluded => {
                     let corrected = mode == ForecastMode::MealsSelfExcluded;
@@ -293,7 +315,7 @@ pub(super) fn evaluate(
                         "INSUFFICIENT_EXPECTED_QUANTITY"
                     } else if !accessible(f, o.agent) {
                         "OTHER_EXPLICIT_REASON"
-                    } else if let Some(r) = route(o, m, v.node) {
+                    } else if let Some(r) = route_for(o, m, v.node, mode) {
                         let work = if matches!(f.holder, Holder::Deposit(_)) {
                             (2000 * SCALE).div_ceil(performance(
                                 r.nutrition,

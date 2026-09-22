@@ -5,6 +5,7 @@ use super::{
     performance,
 };
 use std::collections::{BTreeMap, BTreeSet};
+pub(crate) mod coherent;
 pub(crate) mod forecast;
 mod intention;
 pub(crate) use forecast::{AcceptanceAudit, ForecastMode};
@@ -375,7 +376,7 @@ fn decide_impl(
     if let Some(d) = eat(o) {
         return d;
     }
-    let known = sources(o, m);
+    let known = sources_for(o, m, mode);
     let feasible = known.iter().find(|s| s.route.starvation < 24 * HOUR);
     if o.nutrition <= 6 * HOUR
         && let Some(s) = feasible
@@ -405,7 +406,7 @@ fn decide_impl(
             .iter()
             .find(|f| f.owner == Owner::Commons(0) && f.quantity > 0)
         {
-            let Some(r) = route(o, m, job.destination) else {
+            let Some(r) = route_for(o, m, job.destination, mode) else {
                 return choice(Intent::CancelJob, "delivery route unavailable in memory");
             };
             if r.starvation >= 24 * HOUR || cargo.expires_at <= o.now + r.time {
@@ -491,7 +492,7 @@ fn decide_impl(
         }
         let mut options: Vec<_> = unknown
             .into_iter()
-            .filter_map(|n| route(o, m, n).map(|r| (n, r)))
+            .filter_map(|n| route_for(o, m, n, mode).map(|r| (n, r)))
             .collect();
         options.sort_by_key(|(_, r)| (r.starvation >= 24 * HOUR, r.time));
         if let Some((_, first)) = options.first() {
@@ -571,6 +572,14 @@ pub fn decide_variant(
         }
     }
     match variant {
+        DiagnosticPolicy::CoherentForecast => decide_impl(
+            o,
+            m,
+            rng,
+            ForecastMode::Coherent,
+            &mut AcceptanceAudit::disabled(),
+            false,
+        ),
         DiagnosticPolicy::MealAware => decide_impl(
             o,
             m,
@@ -606,6 +615,7 @@ pub(crate) fn decide_audited(
     variant: super::DiagnosticPolicy,
 ) -> (Decision, AcceptanceAudit) {
     let mode = match variant {
+        super::DiagnosticPolicy::CoherentForecast => ForecastMode::Coherent,
         super::DiagnosticPolicy::MealAware => ForecastMode::Meals,
         super::DiagnosticPolicy::ZeroMargin => ForecastMode::Legacy(0),
         super::DiagnosticPolicy::ThreeHourMargin => ForecastMode::Legacy(3 * HOUR),
@@ -706,4 +716,52 @@ pub(crate) fn audit_job_gate(o: &Observation, m: &PolicyMemory) -> Vec<(String, 
         }
     }
     out
+}
+
+fn route_for(
+    o: &Observation,
+    m: &PolicyMemory,
+    target: usize,
+    mode: ForecastMode,
+) -> Option<Route> {
+    if mode.coherent() {
+        coherent::route(o, m, target)
+    } else {
+        route(o, m, target)
+    }
+}
+fn sources_for(o: &Observation, m: &PolicyMemory, mode: ForecastMode) -> Vec<Source> {
+    if mode.coherent() {
+        coherent::sources(o, m)
+    } else {
+        sources(o, m)
+    }
+}
+pub(crate) fn audit_coherent(
+    o: &Observation,
+    m: &PolicyMemory,
+    rng: &mut u64,
+    meals: bool,
+) -> (Decision, AcceptanceAudit) {
+    let mode = if meals {
+        ForecastMode::CoherentMeals
+    } else {
+        ForecastMode::Coherent
+    };
+    let mut a = AcceptanceAudit::new(o, m, mode);
+    let d = decide_impl(o, m, rng, mode, &mut a, false);
+    a.finish(o, &d);
+    (d, a)
+}
+
+pub(crate) fn coherent_contract(o: &Observation, m: &PolicyMemory, meals: bool) -> AcceptanceAudit {
+    let mode = if meals {
+        ForecastMode::CoherentMeals
+    } else {
+        ForecastMode::Coherent
+    };
+    let mut a = AcceptanceAudit::new(o, m, mode);
+    let known = sources_for(o, m, mode);
+    forecast::evaluate(o, m, &known, mode, &mut a);
+    a
 }

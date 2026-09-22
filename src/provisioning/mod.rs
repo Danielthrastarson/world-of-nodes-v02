@@ -1,5 +1,6 @@
 //! Provisioning model P1. The legacy kernel remains available for historical reproduction.
 pub mod acceptance;
+pub mod coherence;
 pub mod congestion;
 pub mod decomposition;
 pub mod experiment;
@@ -36,6 +37,7 @@ pub enum DiagnosticPolicy {
     MealAware,
     ZeroMargin,
     ThreeHourMargin,
+    CoherentForecast,
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
@@ -272,6 +274,7 @@ pub struct World {
     pub(crate) persistence: persistence::Journal,
     pub(crate) transport_research: congestion::Instrument,
     pub(crate) shadow: shadow::Journal,
+    pub(crate) coherence: coherence::Journal,
     request_backlog: u64,
     gather_communal: BTreeMap<usize, bool>,
     initialized: bool,
@@ -367,6 +370,7 @@ impl World {
         };
         let mut w = Self {
             shadow: shadow::Journal::default(),
+            coherence: coherence::Journal::default(),
             request_backlog: config.initial_request,
             diagnostics: decomposition::Diagnostics::default(),
             acceptance: acceptance::Journal::default(),
@@ -486,6 +490,7 @@ impl World {
             detail,
         };
         self.shadow.event(&e, &self.agents, &self.goods);
+        self.coherence.event(&e, &self.agents);
         self.diagnostics.event(&e);
         if self.config.persistence.is_some() {
             self.persistence.event(&e, &self.agents);
