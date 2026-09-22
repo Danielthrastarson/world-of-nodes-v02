@@ -103,6 +103,10 @@ impl World {
         };
         match intent {
             Intent::Wait => {}
+            Intent::CancelAction => {
+                self.cancel_action(id, "cancel invalid research route");
+                self.agents[id].goal = None;
+            }
             Intent::Eat { batch, quantity } => {
                 let b = self.local_batch(id, batch)?;
                 if b.material != Material::Food
@@ -844,7 +848,12 @@ impl World {
                     .insert(local.node, local.clone());
             }
             let a = &mut self.agents[id];
-            let decision = if self.config.acceptance_audit {
+            let decision = if let Some(arm) = self.config.persistence {
+                let state = self.persistence.states.entry(id).or_default();
+                let d = policy::decide_persistent(&o, &a.memory, &mut a.rng, arm, state);
+                self.persistence.collect_decision(id);
+                d
+            } else if self.config.acceptance_audit {
                 let (d, audit) = policy::decide_audited(
                     &o,
                     &a.memory,

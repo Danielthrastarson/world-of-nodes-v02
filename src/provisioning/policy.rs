@@ -6,7 +6,9 @@ use super::{
 };
 use std::collections::{BTreeMap, BTreeSet};
 mod forecast;
+mod intention;
 pub(crate) use forecast::{AcceptanceAudit, ForecastMode};
+pub(crate) use intention::decide_persistent;
 #[derive(Clone, Debug, Default, PartialEq, Eq)]
 pub struct PolicyMemory {
     pub nodes: BTreeMap<usize, NodeView>,
@@ -45,6 +47,7 @@ pub enum Intent {
         quantity: u64,
     },
     CancelJob,
+    CancelAction,
     DiscardWaste,
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
@@ -355,6 +358,7 @@ pub fn decide(o: &Observation, m: &PolicyMemory, rng: &mut u64) -> Decision {
         rng,
         ForecastMode::Legacy(6 * HOUR),
         &mut AcceptanceAudit::disabled(),
+        false,
     )
 }
 fn decide_impl(
@@ -363,6 +367,7 @@ fn decide_impl(
     rng: &mut u64,
     mode: ForecastMode,
     audit: &mut AcceptanceAudit,
+    skip_self_provision: bool,
 ) -> Decision {
     if matches!(o.action, Action::Dead | Action::Travel) {
         return choice(Intent::Wait, "atomic traversal or dead");
@@ -388,7 +393,8 @@ fn decide_impl(
         return choice(Intent::Wait, "finish one-quantum atomic gathering");
     }
     // A discovered local source provides an opportunity, not a compulsory return home.
-    if o.nutrition < 12 * HOUR
+    if !skip_self_provision
+        && o.nutrition < 12 * HOUR
         && let Some(s) = feasible
     {
         return acquire(o, s, false);
@@ -571,6 +577,7 @@ pub fn decide_variant(
             rng,
             ForecastMode::Meals,
             &mut AcceptanceAudit::disabled(),
+            false,
         ),
         DiagnosticPolicy::ZeroMargin => decide_impl(
             o,
@@ -578,6 +585,7 @@ pub fn decide_variant(
             rng,
             ForecastMode::Legacy(0),
             &mut AcceptanceAudit::disabled(),
+            false,
         ),
         DiagnosticPolicy::ThreeHourMargin => decide_impl(
             o,
@@ -585,6 +593,7 @@ pub fn decide_variant(
             rng,
             ForecastMode::Legacy(3 * HOUR),
             &mut AcceptanceAudit::disabled(),
+            false,
         ),
         _ => decide(o, m, rng),
     }
@@ -603,7 +612,7 @@ pub(crate) fn decide_audited(
         _ => ForecastMode::Legacy(6 * HOUR),
     };
     let mut audit = AcceptanceAudit::new(o, m, mode);
-    let d = decide_impl(o, m, rng, mode, &mut audit);
+    let d = decide_impl(o, m, rng, mode, &mut audit, false);
     audit.finish(o, &d);
     (d, audit)
 }

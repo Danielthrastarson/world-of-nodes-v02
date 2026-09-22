@@ -3,6 +3,7 @@ pub mod acceptance;
 pub mod decomposition;
 pub mod experiment;
 mod goods;
+pub mod persistence;
 mod policy;
 mod runtime;
 use goods::Goods;
@@ -36,6 +37,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub persistence: Option<persistence::Arm>,
     pub diagnostic_policy: DiagnosticPolicy,
     pub initial_request: u64,
     pub acceptance_audit: bool,
@@ -58,6 +60,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            persistence: None,
             diagnostic_policy: DiagnosticPolicy::Current,
             initial_request: 0,
             acceptance_audit: false,
@@ -264,6 +267,7 @@ pub struct World {
     pub(crate) event_hash: u64,
     pub(crate) diagnostics: decomposition::Diagnostics,
     pub(crate) acceptance: acceptance::Journal,
+    pub(crate) persistence: persistence::Journal,
     request_backlog: u64,
     gather_communal: BTreeMap<usize, bool>,
     initialized: bool,
@@ -361,6 +365,7 @@ impl World {
             request_backlog: config.initial_request,
             diagnostics: decomposition::Diagnostics::default(),
             acceptance: acceptance::Journal::default(),
+            persistence: persistence::Journal::default(),
             config,
             now: 0,
             agents,
@@ -475,6 +480,9 @@ impl World {
             detail,
         };
         self.diagnostics.event(&e);
+        if self.config.persistence.is_some() {
+            self.persistence.event(&e, &self.agents);
+        }
         for byte in format!("{e:?}").bytes() {
             self.event_hash ^= byte as u64;
             self.event_hash = self.event_hash.wrapping_mul(0x100000001b3);
