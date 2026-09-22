@@ -1,0 +1,46 @@
+{
+  "source_commit": "14466cb2f01cadf931d4365345a4a0768777887b",
+  "rustc": "rustc 1.98.1 (48a229cea 2026-09-01) (Fedora 1.98.1-1.fc44)",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "commands": [
+    "cargo run --offline --release --bin transport_probe > research/transport-probe.csv",
+    "cargo run --offline --release --bin transport_probe -- --trace"
+  ],
+  "trace_compression": "gzip, mtime=0; excerpt filters agent 0 non-rejections; full trace includes all rejections",
+  "sha256": {
+    "research/transport-probe.csv": "53cce164289d06f146f163c5bb57099faa04083e53d1fadf63248da55d029317",
+    "research/transport-trace-seed-0.txt.gz": "f23b22a1fc6f3d225f9e57132eace1837c8a95faf6bc7f09518ba5988462c008",
+    "research/transport-trace-excerpt.txt": "2e068f27d564e8b0d8d3cc3ea65cb6b36a4f04110dc69127671837ce5bf00866"
+  }
+}

@@ -1,0 +1,13 @@
+# seed=0 distance_mm=100000 carry_units=10 transport=true horizon_ms=600000
+Event { id: 0, time_ms: 0, agent: 0, cause: None, location: Idle { node: 0 }, kind: Accepted(Travel { edge: 0 }) }
+Event { id: 4604, time_ms: 100000, agent: 0, cause: Some(0), location: Idle { node: 1 }, kind: Arrived }
+Event { id: 4608, time_ms: 100000, agent: 0, cause: None, location: Idle { node: 1 }, kind: Accepted(Gather { resource: Wood, amount: 10 }) }
+Event { id: 5456, time_ms: 120000, agent: 0, cause: Some(4608), location: Idle { node: 1 }, kind: Gathered { resource: Wood, amount: 10 } }
+Event { id: 9144, time_ms: 200000, agent: 0, cause: None, location: Idle { node: 1 }, kind: Accepted(Travel { edge: 0 }) }
+Event { id: 13676, time_ms: 300000, agent: 0, cause: Some(9144), location: Idle { node: 0 }, kind: Arrived }
+Event { id: 13680, time_ms: 300000, agent: 0, cause: None, location: Idle { node: 0 }, kind: Accepted(Drop { resource: Wood, amount: 10 }) }
+Event { id: 18288, time_ms: 400000, agent: 0, cause: None, location: Idle { node: 0 }, kind: Accepted(Travel { edge: 0 }) }
+Event { id: 22892, time_ms: 500000, agent: 0, cause: Some(18288), location: Idle { node: 1 }, kind: Arrived }
+Event { id: 22896, time_ms: 500000, agent: 0, cause: None, location: Idle { node: 1 }, kind: Accepted(Gather { resource: Wood, amount: 10 }) }
+Event { id: 23744, time_ms: 520000, agent: 0, cause: Some(22896), location: Idle { node: 1 }, kind: Gathered { resource: Wood, amount: 10 } }
+# final_stock=[500, 267, 226] delivered_wood=80 audit=Ok(())
