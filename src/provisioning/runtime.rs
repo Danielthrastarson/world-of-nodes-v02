@@ -118,6 +118,9 @@ impl World {
                 self.goods.batches[batch].quantity -= quantity;
                 self.goods.consumed += quantity as u128;
                 self.metrics.consumed += quantity;
+                if b.owner == Owner::Commons(0) && b.holder == Holder::Agent(id) {
+                    self.diagnostics.cargo_eaten(id, quantity);
+                }
                 self.agents[id].nutrition += quantity as Time * HOUR;
                 self.agents[id].starvation = 0;
                 self.agents[id].consumed += quantity;
@@ -305,6 +308,9 @@ impl World {
                 self.goods
                     .move_part(batch, quantity, b.owner, Holder::Commons(node));
                 self.metrics.delivered += quantity;
+                if node == 0 {
+                    self.request_backlog = self.request_backlog.saturating_sub(quantity);
+                }
                 if let Some(board) = self.boards.iter_mut().find(|b| b.node == node) {
                     board.quantity = board.quantity.saturating_sub(quantity);
                     board.claims.retain(|c| c.agent != id);
@@ -389,7 +395,7 @@ impl World {
             }
         }
     }
-    fn next_time(&self, target: Time) -> Time {
+    pub(super) fn next_time(&self, target: Time) -> Time {
         let mut next = target;
         if self.config.autonomous {
             next = next.min(self.next_policy);
@@ -570,6 +576,9 @@ impl World {
                 )
             {
                 self.metrics.spoiled_transit += b.quantity;
+                if b.owner == Owner::Commons(0) {
+                    self.diagnostics.cargo_spoiled(b.quantity);
+                }
             }
             self.log(
                 None,
@@ -749,7 +758,11 @@ impl World {
                 })
                 .map(|b| b.quantity)
                 .sum();
-            let quantity = need.saturating_sub(accessible);
+            let quantity = need.saturating_sub(accessible).max(if node == 0 {
+                self.request_backlog
+            } else {
+                0
+            });
             let changed = self.boards[index].quantity != quantity;
             self.boards[index].quantity = quantity;
             self.boards[index].refreshed_at = self.now;
@@ -822,7 +835,9 @@ impl World {
                     .insert(local.node, local.clone());
             }
             let a = &mut self.agents[id];
-            let decision = policy::decide(&o, &a.memory, &mut a.rng);
+            let decision =
+                policy::decide_variant(&o, &a.memory, &mut a.rng, self.config.diagnostic_policy);
+            self.diagnostics.observe(&o, &a.memory, &decision);
             if let (Action::Queued { edge, .. }, Some((target, true))) = (&o.action, o.goal) {
                 let leaving = match decision.intent {
                     Intent::Travel { edge: next, .. } => next != *edge,

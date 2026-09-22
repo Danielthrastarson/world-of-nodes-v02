@@ -1,4 +1,5 @@
 //! Provisioning model P1. The legacy kernel remains available for historical reproduction.
+pub mod decomposition;
 pub mod experiment;
 mod goods;
 mod policy;
@@ -21,8 +22,18 @@ pub struct Edge {
     pub nominal_ms: Time,
     pub capacity: usize,
 }
+#[derive(Clone, Copy, Debug, Default, PartialEq, Eq)]
+pub enum DiagnosticPolicy {
+    #[default]
+    Current,
+    QueueCommitment,
+    SleepCommitment,
+    JobCommitment,
+}
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub diagnostic_policy: DiagnosticPolicy,
+    pub initial_request: u64,
     pub seed: u64,
     pub nodes: usize,
     pub edges: Vec<Edge>,
@@ -42,6 +53,8 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            diagnostic_policy: DiagnosticPolicy::Current,
+            initial_request: 0,
             seed: 0,
             nodes: 3,
             edges: vec![
@@ -242,6 +255,8 @@ pub struct World {
     pub(crate) events: Vec<Event>,
     pub(crate) event_count: u64,
     pub(crate) event_hash: u64,
+    pub(crate) diagnostics: decomposition::Diagnostics,
+    request_backlog: u64,
     gather_communal: BTreeMap<usize, bool>,
     initialized: bool,
     next_policy: Time,
@@ -325,7 +340,7 @@ impl World {
                 .iter()
                 .map(|&node| Board {
                     node,
-                    quantity: 0,
+                    quantity: config.initial_request,
                     created_at: 0,
                     refreshed_at: 0,
                     claims: vec![],
@@ -335,6 +350,8 @@ impl World {
             vec![]
         };
         let mut w = Self {
+            request_backlog: config.initial_request,
+            diagnostics: decomposition::Diagnostics::default(),
             config,
             now: 0,
             agents,
@@ -447,6 +464,7 @@ impl World {
             kind: kind.into(),
             detail,
         };
+        self.diagnostics.event(&e);
         for byte in format!("{e:?}").bytes() {
             self.event_hash ^= byte as u64;
             self.event_hash = self.event_hash.wrapping_mul(0x100000001b3);

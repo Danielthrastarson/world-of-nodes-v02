@@ -539,3 +539,127 @@ pub fn decide(o: &Observation, m: &PolicyMemory, rng: &mut u64) -> Decision {
 pub(crate) fn goal_is_fatal(o: &Observation, m: &PolicyMemory, target: usize) -> bool {
     route(o, m, target).is_none_or(|r| r.starvation >= 24 * HOUR)
 }
+
+/// Research variants remain observation-only. Current/Job are intentionally
+/// equivalent: P1 already preserves jobs across ordinary evaluations.
+pub fn decide_variant(
+    o: &Observation,
+    m: &PolicyMemory,
+    rng: &mut u64,
+    variant: super::DiagnosticPolicy,
+) -> Decision {
+    use super::DiagnosticPolicy;
+    if variant == DiagnosticPolicy::SleepCommitment
+        && matches!(o.action, Action::Sleep { .. })
+        && o.fatigue > 4 * HOUR
+    {
+        let critical = o.nutrition <= 6 * HOUR
+            && (eat(o).is_some() || sources(o, m).iter().any(|s| s.route.starvation < 24 * HOUR));
+        if !critical {
+            return choice(Intent::Sleep, "diagnostic coherent sleep recovery");
+        }
+    }
+    if variant == DiagnosticPolicy::QueueCommitment
+        && o.job.is_some()
+        && matches!(o.action, Action::Queued { .. })
+    {
+        let critical = o.nutrition <= 6 * HOUR
+            && (eat(o).is_some() || sources(o, m).iter().any(|s| s.route.starvation < 24 * HOUR));
+        let impossible = o.goal.is_some_and(|(target, food)| {
+            goal_is_fatal(o, m, target)
+                || (food
+                    && m.nodes.get(&target).is_some_and(|v| {
+                        !v.food
+                            .iter()
+                            .any(|f| f.quantity > 0 && f.expires_at > o.now)
+                    }))
+        });
+        let expired_cargo = o.job.as_ref().is_some_and(|j| {
+            route(o, m, j.destination).is_some_and(|r| {
+                !o.own.is_empty()
+                    && o.own
+                        .iter()
+                        .filter(|f| f.owner == Owner::Commons(0))
+                        .any(|f| f.expires_at <= o.now + r.time)
+            })
+        });
+        if !critical && !impossible && !expired_cargo {
+            return choice(Intent::Wait, "diagnostic accepted-job FIFO commitment");
+        }
+    }
+    decide(o, m, rng)
+}
+
+/// Read-only audit of the *existing* voluntary-job gate, using the same route
+/// estimator and known sources as decide. Never grants information or changes an intent.
+pub(crate) fn audit_job_gate(o: &Observation, m: &PolicyMemory) -> Vec<(String, String)> {
+    if !o.communal || o.job.is_some() {
+        return vec![];
+    }
+    let known = sources(o, m);
+    let mut out = vec![];
+    for view in m.nodes.values() {
+        let Some(b) = &view.board else { continue };
+        if b.quantity == 0 {
+            continue;
+        }
+        if b.unclaimed(o.now) == 0 {
+            out.push((
+                "claims_suppress".into(),
+                format!(
+                    "board={} recorded={} observed={}",
+                    b.node, b.quantity, view.observed_at
+                ),
+            ));
+            continue;
+        }
+        if known.iter().all(|s| s.node == b.node) {
+            out.push((
+                "no_known_source".into(),
+                format!("board={} observed={}", b.node, view.observed_at),
+            ));
+            continue;
+        }
+        if o.nutrition <= 6 * HOUR || o.load >= o.capacity {
+            continue;
+        }
+        let Some(to_board) = route(o, m, b.node) else {
+            continue;
+        };
+        for source in &known {
+            if source.node == b.node {
+                continue;
+            }
+            let mut predicted = o.clone();
+            predicted.location = Location::Node(b.node);
+            predicted.action = Action::Idle;
+            (predicted.nutrition, predicted.starvation) = after(o, to_board.time);
+            predicted.fatigue = (o.fatigue + to_board.time).min(24 * HOUR);
+            let Some(outbound) = route(&predicted, m, source.node) else {
+                continue;
+            };
+            let work = ((o.capacity - o.load) as u128 * 2000 * SCALE).div_ceil(performance(
+                outbound.nutrition,
+                (predicted.fatigue + outbound.time).min(24 * HOUR),
+            )) as Time;
+            let elapsed = to_board.time + outbound.time + work;
+            predicted.location = Location::Node(source.node);
+            (predicted.nutrition, predicted.starvation) = after(o, elapsed);
+            predicted.fatigue = (o.fatigue + elapsed).min(24 * HOUR);
+            let Some(inbound) = route(&predicted, m, b.node) else {
+                continue;
+            };
+            let total = elapsed + inbound.time;
+            let (n, s) = after(o, total);
+            let gate = if s > 0 || n < 6 * HOUR {
+                "nutrition_margin"
+            } else if source.food.expires_at <= o.now + total {
+                "shelf_life"
+            } else {
+                "passes_gate"
+            };
+            out.push((gate.into(),format!("board={} source={} nutrition={} to_board={} outward={} work={} inward={} total={} predicted_nutrition={} predicted_starvation={} expiry={}",b.node,source.node,o.nutrition,to_board.time,outbound.time,work,inbound.time,total,n,s,source.food.expires_at)));
+        }
+    }
+    out
+}
