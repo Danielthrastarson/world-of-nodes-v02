@@ -44,6 +44,10 @@ for arm in ['control','coherent']:
  summary['live'][arm]['world_change_queue_errors']=distribution([int(r['frozen_queue_ms'])-int(r['realized_queue_ms']) for r in episodes if r['frozen_queue_ms']!='' and (r['status']=='Arrived' or (r['status']=='Died' and r['queue_error_ms']!=''))])
  # A current-demand wait is conditional; no admission remains censored.
  summary['live'][arm]['frozen_no_admission']=sum(r['frozen_queue_ms']=='' for r in episodes)
+ route_errors=collections.Counter(int(r['ordering_error_ms']) for r in rows(root/'phase3'/f'{arm}-shadow-routes.csv'))
+ summary['live'][arm]['conditional_route_steps']={'n':sum(route_errors.values()),'exact':route_errors[0],'discrepancies':sum(n for e,n in route_errors.items() if e!=0)}
+ summary['live'][arm]['conditional_route_feasibility']=dict(collections.Counter(r['classification'] for r in rows(root/'phase3'/f'{arm}-shadow-route_feasibility.csv')))
+
 old={r['seed']:r for r in rows(root/'phase3'/'control-runs.csv')}
 new={r['seed']:r for r in rows(root/'phase3'/'coherent-runs.csv')}
 historical={r['seed']:r for r in rows(Path('research/acceptance/current-runs.csv'))}
