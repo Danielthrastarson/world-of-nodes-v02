@@ -11,9 +11,10 @@ are conditional transport instruments, not proposed NPC behavior.
 2. Report actual waiting as censored when an agent leaves before admission. Also
    calculate an omniscient FIFO service counterfactual with existing applicants
    remaining eligible and no later applications; this is not an agent forecast.
-   Integrate actual hunger/fatigue performance. Report the requested conservative
+   Integrate actual hunger/fatigue performance. Report the requested snapshot-speed
    budget (time to critical hunger minus immediate unqueued traversal duration),
-   plus the distinction that an already admitted traversal is atomic and may cross
+   (an optimistic bound when waiting increases fatigue), plus the distinction
+   that an already admitted traversal is atomic and may cross
    critical hunger. Do not equate those budgets with death or exact admission limits.
 3. Conditional micro-fixtures preserve the exact focal state at X. Background
    travelers use actual unprovisioned C-side waiting physiology at that time, with
@@ -47,3 +48,9 @@ Direction may be irrelevant for identical service demand in this symmetric share
 capacity model. Test it, do not presume opposing traffic has a special penalty.
 Retain failures and distinguish transport competition, planning coherence and the
 critical-hunger override from literal physical impossibility of surviving an edge.
+
+Evidence clarification: the cohort arriving at 13.2h first leaves its queue for
+sleep at 18h, then reverses toward food at 19h. Elapsed time to reversal is not
+identical to actual time queued. The exact FIFO projection necessarily conditions
+on future eligibility: report both frozen eligible demand and recorded background
+commands with only the focal held in place. Neither is available to the agent.

@@ -275,7 +275,7 @@ pub fn run(dir: &Path) -> Result<(), Box<dyn std::error::Error>> {
     let mut table = BufWriter::new(fs::File::create(dir.join("bottleneck.csv"))?);
     writeln!(
         table,
-        "agent,arrival_x_h,nutrition_h,fatigue_h,ahead,opposite,same,occupants,until_critical_h,until_zero_h,until_death_h,expiry_h,unqueued_travel_h,min_c_arrival_h,conservative_queue_budget_h,fixed_queue_admission_h,fixed_queue_arrival_h"
+        "agent,arrival_x_h,nutrition_h,fatigue_h,ahead,opposite,same,occupants,until_critical_h,until_zero_h,until_death_h,expiry_h,unqueued_travel_h,min_c_arrival_h,snapshot_speed_queue_budget_h,fixed_queue_admission_h,fixed_queue_arrival_h"
     )?;
     let mut outcomes = BufWriter::new(fs::File::create(dir.join("replays.csv"))?);
     let header = "case,agent,ahead,start_h,admission_h,arrival_h,stop_h,nutrition_h,fatigue_h,outcome,critical_hunger,elapsed_until_admission_or_stop_h,actual_queue_h,sleep_h,first_sleep_h";
@@ -389,6 +389,24 @@ pub fn run(dir: &Path) -> Result<(), Box<dyn std::error::Error>> {
                     let o = run_attempt(w, id, None)?;
                     write_out(&mut micros, direction, id, count, snapshot.now, &o)?;
                 }
+            }
+        }
+    }
+    Ok(())
+}
+
+/// Supplemental traces for already registered threshold points; no new intervention.
+pub fn selected_traces(dir: &Path) -> Result<(), Box<dyn std::error::Error>> {
+    let mut w = persistence::fixture("committed", 0, true)?;
+    for (id, t) in [(0, 8 * HOUR), (4, 13 * HOUR + 12 * MINUTE)] {
+        w.advance_to(t)?;
+        for direction in ["same", "opposite"] {
+            for count in [0, 3, 4, 8, 11, 12, 40] {
+                let path = dir.join(format!("micro-{id}-{direction}-{count}.trace"));
+                if path.exists() {
+                    return Err("refuse to overwrite trace".into());
+                }
+                run_attempt(micro(&w, id, count, direction), id, Some(&path))?;
             }
         }
     }
