@@ -8,6 +8,16 @@ This document supersedes the earlier requirement to implement V0.2 security firs
 
 The original handoff is preserved verbatim in [the security handoff archive](docs/archive/WORLD_OF_NODES_HANDOFF_SECURITY.md). Its V0.1 findings remain unverified inherited claims: no original source, seeds, or results were supplied. Do not reconstruct them and label that reproduction.
 
+## Current bounded research follow-up
+
+The accepted provisioning failure is preserved. The delivery decomposition separates
+physical feasibility from autonomous acceptance and commitment; see the
+[research contract](docs/DELIVERY_DECOMPOSITION.md), [physical bounds](docs/DELIVERY_BOUNDS.md)
+and [results](research/delivery/REPORT.md). The reference world and default policy
+remain unchanged. Research schedulers may inspect global state only as explicit
+counterfactual instruments, never as autonomous policies. No later systems or
+V0.3 are authorized by these results.
+
 ## Principle
 
 **The simulation is the source of the graphics.** The rendered world is a projection of underlying simulated state. Do not program a desired settlement outcome; program causal rules that can produce it. Do not animate a result when its cause can be simulated.

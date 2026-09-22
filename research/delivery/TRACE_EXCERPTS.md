@@ -1,0 +1,377 @@
+# Delivery mechanism traces
+
+Times below are simulated hours. Full compressed traces preserve event IDs and parent causes.
+
+## alive-witness
+
+- 0.000000h · event 0 · agent 0 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 1 · agent 1 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 2 · agent 2 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 53 · agent 0 · cause Some(50) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 5649 · agent 0 · cause Some(53) · **Arrived**: node=1 edge=0
+- 2.000000h · event 5702 · agent 0 · cause Some(5652) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 11298 · agent 0 · cause Some(5702) · **Arrived**: node=2 edge=1
+- 4.000556h · event 11351 · agent 0 · cause Some(11301) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 11354 · agent 0 · cause Some(11351) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.001111h · event 11360 · agent 0 · cause Some(11357) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.001111h · event 11363 · agent 0 · cause Some(11360) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=35996000
+- 4.001667h · event 11369 · agent 0 · cause Some(11366) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.001667h · event 11372 · agent 0 · cause Some(11369) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=39594000
+- 4.002222h · event 11378 · agent 0 · cause Some(11375) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.002222h · event 11381 · agent 0 · cause Some(11378) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=43192000
+- 4.002778h · event 11387 · agent 0 · cause Some(11384) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.002778h · event 11390 · agent 0 · cause Some(11387) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=46790000
+- 4.003333h · event 11396 · agent 0 · cause Some(11393) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.003333h · event 11399 · agent 0 · cause Some(11396) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=50388000
+- 4.003889h · event 11405 · agent 0 · cause Some(11402) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.003889h · event 11408 · agent 0 · cause Some(11405) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=53986000
+- 4.004444h · event 11414 · agent 0 · cause Some(11411) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 8.016049h · event 22853 · agent 0 · cause Some(22850) · **Delivered**: node=0 q=10 original_target=10
+- 8.016049h · event 22854 · agent 1 · cause Some(22851) · **Delivered**: node=0 q=10 original_target=10
+- 8.016049h · event 22855 · agent 2 · cause Some(22852) · **Delivered**: node=0 q=10 original_target=10
+- 8.016049h · event 22856 · agent 0 · cause Some(22853) · **JobAccepted**: board=0 q=10 lease_expires=72057778
+- 8.016049h · event 22857 · agent 1 · cause Some(22854) · **JobAccepted**: board=0 q=10 lease_expires=72057778
+- 8.016049h · event 22858 · agent 2 · cause Some(22855) · **JobAccepted**: board=0 q=10 lease_expires=72057778
+- 20.016049h · event 58090 · agent None · cause None · **LeaseExpired**: board=0 count=3; workers not notified
+- 22.850866h · event 66140 · agent 0 · cause Some(66137) · **Delivered**: node=0 q=10 original_target=10
+- 22.850866h · event 66141 · agent 1 · cause Some(66138) · **Delivered**: node=0 q=10 original_target=10
+- 22.850866h · event 66142 · agent 2 · cause Some(66139) · **Delivered**: node=0 q=10 original_target=10
+- 22.850866h · event 66143 · agent 0 · cause Some(66140) · **JobAccepted**: board=0 q=10 lease_expires=125463116
+- 22.850866h · event 66144 · agent 1 · cause Some(66141) · **JobAccepted**: board=0 q=10 lease_expires=125463116
+- 34.850866h · event 100960 · agent None · cause None · **LeaseExpired**: board=0 count=3; workers not notified
+- 34.880346h · event 101011 · agent 0 · cause Some(101008) · **Delivered**: node=0 q=10 original_target=10
+- 34.880346h · event 101012 · agent 1 · cause Some(101009) · **Delivered**: node=0 q=10 original_target=10
+- 48.000000h · event 139102 · agent None · cause None · **Spoiled**: batch=0 q=2730 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 139103 · agent None · cause None · **Spoiled**: batch=7 q=26 holder=Commons(0) created=0 deadline=172800000
+
+## best-witness
+
+- 0.000000h · event 0 · agent 0 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 1 · agent 1 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 2 · agent 2 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 3 · agent 3 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 4 · agent 4 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 5 · agent 5 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 6 · agent 6 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 7 · agent 7 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 62 · agent 0 · cause Some(50) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 4588 · agent 0 · cause Some(62) · **Arrived**: node=1 edge=0
+- 2.000000h · event 4638 · agent 0 · cause Some(4596) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 9164 · agent 0 · cause Some(4638) · **Arrived**: node=2 edge=1
+- 4.000556h · event 9226 · agent 0 · cause Some(9176) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 9230 · agent 0 · cause Some(9226) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.001111h · event 9238 · agent 0 · cause Some(9234) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.001111h · event 9242 · agent 0 · cause Some(9238) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=35996000
+- 4.001667h · event 9250 · agent 0 · cause Some(9246) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.001667h · event 9254 · agent 0 · cause Some(9250) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=39594000
+- 4.002222h · event 9262 · agent 0 · cause Some(9258) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.002222h · event 9266 · agent 0 · cause Some(9262) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=43192000
+- 4.002778h · event 9274 · agent 0 · cause Some(9270) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.002778h · event 9278 · agent 0 · cause Some(9274) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=46790000
+- 4.003333h · event 9286 · agent 0 · cause Some(9282) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.003333h · event 9290 · agent 0 · cause Some(9286) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=50388000
+- 4.003889h · event 9298 · agent 0 · cause Some(9294) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.003889h · event 9302 · agent 0 · cause Some(9298) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=53986000
+- 4.004444h · event 9310 · agent 0 · cause Some(9306) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 10.222222h · event 23908 · agent 0 · cause Some(23904) · **Delivered**: node=0 q=10 original_target=10
+- 10.222222h · event 23909 · agent 1 · cause Some(23905) · **Delivered**: node=0 q=10 original_target=10
+- 10.222222h · event 23910 · agent 2 · cause Some(23906) · **Delivered**: node=0 q=10 original_target=10
+- 10.222222h · event 23911 · agent 3 · cause Some(23907) · **Delivered**: node=0 q=10 original_target=10
+- 12.000000h · event 28514 · agent None · cause None · **LeaseExpired**: board=0 count=8; workers not notified
+- 15.866667h · event 38343 · agent 4 · cause Some(38335) · **Delivered**: node=0 q=10 original_target=10
+- 15.866667h · event 38344 · agent 5 · cause Some(38336) · **Delivered**: node=0 q=10 original_target=10
+- 15.866667h · event 38345 · agent 6 · cause Some(38337) · **Delivered**: node=0 q=10 original_target=10
+- 15.866667h · event 38346 · agent 7 · cause Some(38338) · **Delivered**: node=0 q=10 original_target=10
+- 22.222222h · event 54839 · agent None · cause None · **LeaseExpired**: board=0 count=4; workers not notified
+- 27.866667h · event 69144 · agent None · cause None · **LeaseExpired**: board=0 count=4; workers not notified
+- 34.000000h · event 86329 · agent None · cause None · **LeaseExpired**: board=0 count=4; workers not notified
+- 41.000000h · event 93028 · agent None · cause None · **LeaseExpired**: board=0 count=4; workers not notified
+- 48.000000h · event 96257 · agent None · cause None · **Spoiled**: batch=0 q=2156 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 96258 · agent None · cause None · **Spoiled**: batch=17 q=280 holder=Commons(0) created=0 deadline=172800000
+- 51.053272h · event 98455 · agent None · cause None · **LeaseExpired**: board=0 count=4; workers not notified
+
+## contested-5
+
+- 0.000000h · event 100 · agent 0 · cause Some(1) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 10088 · agent 0 · cause Some(100) · **Arrived**: node=1 edge=0
+- 2.000000h · event 10200 · agent 0 · cause Some(10097) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 20392 · agent 0 · cause Some(10200) · **Arrived**: node=2 edge=1
+- 4.000556h · event 20508 · agent 0 · cause Some(20401) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 20513 · agent 0 · cause Some(20512) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.017222h · event 20610 · agent 0 · cause Some(20523) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.017222h · event 20615 · agent 0 · cause Some(20614) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=35938000
+- 4.033889h · event 20710 · agent 0 · cause Some(20623) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.033889h · event 20715 · agent 0 · cause Some(20714) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=39478000
+- 4.050556h · event 20810 · agent 0 · cause Some(20723) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.050556h · event 20815 · agent 0 · cause Some(20814) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=43018000
+- 4.067222h · event 20910 · agent 0 · cause Some(20823) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.067222h · event 20915 · agent 0 · cause Some(20914) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=46558000
+- 4.083889h · event 21010 · agent 0 · cause Some(20923) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.084444h · event 21022 · agent 0 · cause Some(21015) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085000h · event 21034 · agent 0 · cause Some(21027) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085556h · event 21046 · agent 0 · cause Some(21039) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086111h · event 21058 · agent 0 · cause Some(21051) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086667h · event 21070 · agent 0 · cause Some(21063) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 13.900000h · event 72068 · agent 8 · cause Some(72067) · **JobAccepted**: board=1 q=4 lease_expires=93240000
+- 13.900000h · event 72070 · agent 9 · cause Some(72069) · **JobAccepted**: board=1 q=4 lease_expires=93240000
+- 13.900000h · event 72072 · agent 10 · cause Some(72071) · **JobAccepted**: board=1 q=4 lease_expires=93240000
+- 13.900000h · event 72074 · agent 11 · cause Some(72073) · **JobAccepted**: board=1 q=4 lease_expires=93240000
+- 25.900000h · event 143195 · agent None · cause None · **LeaseExpired**: board=1 count=4; workers not notified
+- 31.266667h · event 174846 · agent 12 · cause Some(174845) · **JobAccepted**: board=1 q=10 lease_expires=155760000
+- 31.266667h · event 174848 · agent 13 · cause Some(174847) · **JobAccepted**: board=1 q=10 lease_expires=155760000
+- 31.266667h · event 174850 · agent 14 · cause Some(174849) · **JobAccepted**: board=1 q=10 lease_expires=155760000
+- 31.266667h · event 174852 · agent 15 · cause Some(174851) · **JobAccepted**: board=1 q=10 lease_expires=155760000
+- 42.333333h · event 218860 · agent 8 · cause Some(218859) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 42.333333h · event 218863 · agent 9 · cause Some(218862) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 42.333333h · event 218866 · agent 10 · cause Some(218865) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 42.333333h · event 218869 · agent 11 · cause Some(218868) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 43.266667h · event 220447 · agent None · cause None · **LeaseExpired**: board=1 count=4; workers not notified
+- 45.233333h · event 225065 · agent 12 · cause Some(225064) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 45.233333h · event 225068 · agent 13 · cause Some(225067) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 45.233333h · event 225071 · agent 14 · cause Some(225070) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 45.233333h · event 225074 · agent 15 · cause Some(225073) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 48.000000h · event 236175 · agent None · cause None · **Spoiled**: batch=0 q=1696 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 236176 · agent None · cause None · **Spoiled**: batch=1 q=6 holder=Agent(26) created=0 deadline=172800000
+
+## contested
+
+- 0.000000h · event 100 · agent 0 · cause Some(1) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 10030 · agent 0 · cause Some(100) · **Arrived**: node=1 edge=0
+- 2.000000h · event 10142 · agent 0 · cause Some(10039) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 20334 · agent 0 · cause Some(10142) · **Arrived**: node=2 edge=1
+- 4.000556h · event 20450 · agent 0 · cause Some(20343) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 20455 · agent 0 · cause Some(20454) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.017222h · event 20552 · agent 0 · cause Some(20465) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.017222h · event 20557 · agent 0 · cause Some(20556) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=35938000
+- 4.033889h · event 20652 · agent 0 · cause Some(20565) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.033889h · event 20657 · agent 0 · cause Some(20656) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=39478000
+- 4.050556h · event 20752 · agent 0 · cause Some(20665) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.050556h · event 20757 · agent 0 · cause Some(20756) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=43018000
+- 4.067222h · event 20852 · agent 0 · cause Some(20765) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.067222h · event 20857 · agent 0 · cause Some(20856) · **Consumed**: batch=5 q=1 owner=Agent(0) nutrition_ms=46558000
+- 4.083889h · event 20952 · agent 0 · cause Some(20865) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.084444h · event 20964 · agent 0 · cause Some(20957) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085000h · event 20976 · agent 0 · cause Some(20969) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085556h · event 20988 · agent 0 · cause Some(20981) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086111h · event 21000 · agent 0 · cause Some(20993) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086667h · event 21012 · agent 0 · cause Some(21005) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 30.266667h · event 162707 · agent 12 · cause Some(162706) · **JobAccepted**: board=1 q=10 lease_expires=152160000
+- 30.266667h · event 162709 · agent 13 · cause Some(162708) · **JobAccepted**: board=1 q=10 lease_expires=152160000
+- 30.266667h · event 162711 · agent 14 · cause Some(162710) · **JobAccepted**: board=1 q=10 lease_expires=152160000
+- 30.266667h · event 162713 · agent 15 · cause Some(162712) · **JobAccepted**: board=1 q=10 lease_expires=152160000
+- 32.966667h · event 180114 · agent 25 · cause Some(180113) · **JobAccepted**: board=1 q=4 lease_expires=161880000
+- 32.966667h · event 180116 · agent 26 · cause Some(180115) · **JobAccepted**: board=1 q=4 lease_expires=161880000
+- 32.966667h · event 180118 · agent 27 · cause Some(180117) · **JobAccepted**: board=1 q=4 lease_expires=161880000
+- 32.966667h · event 180120 · agent 28 · cause Some(180119) · **JobAccepted**: board=1 q=4 lease_expires=161880000
+- 42.266667h · event 216995 · agent None · cause None · **LeaseExpired**: board=1 count=4; workers not notified
+- 44.466667h · event 221450 · agent 12 · cause Some(221449) · **JobCancelled**: request=1; reason=delivery survival-infeasible or cargo predicted spoiled; remote board unchanged
+- 44.466667h · event 221453 · agent 13 · cause Some(221452) · **JobCancelled**: request=1; reason=delivery survival-infeasible or cargo predicted spoiled; remote board unchanged
+- 44.466667h · event 221456 · agent 14 · cause Some(221455) · **JobCancelled**: request=1; reason=delivery survival-infeasible or cargo predicted spoiled; remote board unchanged
+- 44.466667h · event 221459 · agent 15 · cause Some(221458) · **JobCancelled**: request=1; reason=delivery survival-infeasible or cargo predicted spoiled; remote board unchanged
+- 44.966667h · event 222424 · agent None · cause None · **LeaseExpired**: board=1 count=4; workers not notified
+- 48.000000h · event 232729 · agent None · cause None · **Spoiled**: batch=0 q=1568 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 232730 · agent None · cause None · **Spoiled**: batch=1 q=6 holder=Agent(29) created=0 deadline=172800000
+- 48.000000h · event 232783 · agent 25 · cause Some(232782) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 48.000000h · event 232785 · agent 26 · cause Some(232784) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 48.000000h · event 232787 · agent 27 · cause Some(232786) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+- 48.000000h · event 232789 · agent 28 · cause Some(232788) · **JobCancelled**: request=1; reason=accepted job cannot acquire expected cargo; remote board unchanged
+
+## current
+
+- 0.000000h · event 100 · agent 0 · cause Some(1) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 5578 · agent 0 · cause Some(100) · **Arrived**: node=1 edge=0
+- 2.000000h · event 5640 · agent 0 · cause Some(5583) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 10642 · agent 0 · cause Some(5640) · **Arrived**: node=2 edge=1
+- 4.000556h · event 10716 · agent 0 · cause Some(10651) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 10721 · agent 0 · cause Some(10720) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.017222h · event 10774 · agent 0 · cause Some(10729) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.017222h · event 10779 · agent 0 · cause Some(10778) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=35938000
+- 4.033889h · event 10832 · agent 0 · cause Some(10787) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.033889h · event 10837 · agent 0 · cause Some(10836) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=39478000
+- 4.050556h · event 10890 · agent 0 · cause Some(10845) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.050556h · event 10895 · agent 0 · cause Some(10894) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=43018000
+- 4.067222h · event 10948 · agent 0 · cause Some(10903) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.067222h · event 10953 · agent 0 · cause Some(10952) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=46558000
+- 4.083889h · event 11006 · agent 0 · cause Some(10961) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.084444h · event 11018 · agent 0 · cause Some(11011) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085000h · event 11030 · agent 0 · cause Some(11023) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085556h · event 11042 · agent 0 · cause Some(11035) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086111h · event 11054 · agent 0 · cause Some(11047) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086667h · event 11066 · agent 0 · cause Some(11059) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 48.000000h · event 183070 · agent None · cause None · **Spoiled**: batch=0 q=1568 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 183071 · agent None · cause None · **Spoiled**: batch=1 q=6 holder=Agent(0) created=0 deadline=172800000
+
+## earliest-witness
+
+- 0.000000h · event 0 · agent 0 · cause None · **JobAccepted**: board=0 q=1 lease_expires=43200000
+- 0.000000h · event 51 · agent 0 · cause Some(50) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 5883 · agent 0 · cause Some(51) · **Arrived**: node=1 edge=0
+- 2.000000h · event 5934 · agent 0 · cause Some(5884) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 11766 · agent 0 · cause Some(5934) · **Arrived**: node=2 edge=1
+- 4.000556h · event 11817 · agent 0 · cause Some(11767) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 11818 · agent 0 · cause Some(11817) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.001111h · event 11820 · agent 0 · cause Some(11819) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.001111h · event 11821 · agent 0 · cause Some(11820) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=35996000
+- 4.001667h · event 11823 · agent 0 · cause Some(11822) · **Gathered**: source_batch=0 q=1 owner=Commons(0)
+- 4.001667h · event 11825 · agent 0 · cause Some(11824) · **Admitted**: edge=1 from=2 to=1
+- 6.001667h · event 17706 · agent 0 · cause Some(11825) · **Arrived**: node=1 edge=1
+- 6.001667h · event 17708 · agent 0 · cause Some(17707) · **Admitted**: edge=0 from=1 to=0
+- 8.000000h · event 23540 · agent 0 · cause Some(17708) · **PerformanceChanged**: old_ppm=1000000 new_ppm=720000 nutrition_ms=21600000 fatigue_ms=43200000
+- 8.002315h · event 23590 · agent 0 · cause Some(23540) · **Arrived**: node=0 edge=0
+- 8.002315h · event 23591 · agent 0 · cause Some(23590) · **Delivered**: node=0 q=1 original_target=1
+- 8.002315h · event 23592 · agent 0 · cause Some(23591) · **JobAccepted**: board=0 q=1 lease_expires=72008334
+- 8.002315h · event 23594 · agent 0 · cause Some(23593) · **Admitted**: edge=0 from=0 to=1
+- 10.780093h · event 31729 · agent 0 · cause Some(23594) · **Arrived**: node=1 edge=0
+- 10.780093h · event 31731 · agent 0 · cause Some(31730) · **Admitted**: edge=1 from=1 to=2
+- 20.002315h · event 58965 · agent None · cause None · **LeaseExpired**: board=0 count=1; workers not notified
+- 21.771184h · event 64161 · agent 0 · cause Some(64160) · **Delivered**: node=0 q=1 original_target=1
+- 21.771184h · event 64162 · agent 0 · cause Some(64161) · **JobAccepted**: board=0 q=1 lease_expires=121576263
+- 33.771184h · event 99450 · agent None · cause None · **LeaseExpired**: board=0 count=1; workers not notified
+- 48.000000h · event 106683 · agent None · cause None · **Spoiled**: batch=0 q=2966 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 106684 · agent None · cause None · **Spoiled**: batch=2 q=1 holder=Agent(0) created=0 deadline=172800000
+
+## job
+
+- 0.000000h · event 100 · agent 0 · cause Some(1) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 5578 · agent 0 · cause Some(100) · **Arrived**: node=1 edge=0
+- 2.000000h · event 5640 · agent 0 · cause Some(5583) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 10642 · agent 0 · cause Some(5640) · **Arrived**: node=2 edge=1
+- 4.000556h · event 10716 · agent 0 · cause Some(10651) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 10721 · agent 0 · cause Some(10720) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.017222h · event 10774 · agent 0 · cause Some(10729) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.017222h · event 10779 · agent 0 · cause Some(10778) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=35938000
+- 4.033889h · event 10832 · agent 0 · cause Some(10787) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.033889h · event 10837 · agent 0 · cause Some(10836) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=39478000
+- 4.050556h · event 10890 · agent 0 · cause Some(10845) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.050556h · event 10895 · agent 0 · cause Some(10894) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=43018000
+- 4.067222h · event 10948 · agent 0 · cause Some(10903) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.067222h · event 10953 · agent 0 · cause Some(10952) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=46558000
+- 4.083889h · event 11006 · agent 0 · cause Some(10961) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.084444h · event 11018 · agent 0 · cause Some(11011) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085000h · event 11030 · agent 0 · cause Some(11023) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085556h · event 11042 · agent 0 · cause Some(11035) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086111h · event 11054 · agent 0 · cause Some(11047) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086667h · event 11066 · agent 0 · cause Some(11059) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 48.000000h · event 183070 · agent None · cause None · **Spoiled**: batch=0 q=1568 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 183071 · agent None · cause None · **Spoiled**: batch=1 q=6 holder=Agent(0) created=0 deadline=172800000
+
+## nourished-witness
+
+- 0.000000h · event 0 · agent 0 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 1 · agent 1 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 2 · agent 2 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 3 · agent 3 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 4 · agent 4 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 5 · agent 5 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 6 · agent 6 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 7 · agent 7 · cause None · **JobAccepted**: board=0 q=10 lease_expires=43200000
+- 0.000000h · event 62 · agent 0 · cause Some(50) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 4588 · agent 0 · cause Some(62) · **Arrived**: node=1 edge=0
+- 2.000000h · event 4638 · agent 0 · cause Some(4596) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 9164 · agent 0 · cause Some(4638) · **Arrived**: node=2 edge=1
+- 4.000556h · event 9226 · agent 0 · cause Some(9176) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 9230 · agent 0 · cause Some(9226) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.001111h · event 9238 · agent 0 · cause Some(9234) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.001111h · event 9242 · agent 0 · cause Some(9238) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=35996000
+- 4.001667h · event 9250 · agent 0 · cause Some(9246) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.001667h · event 9254 · agent 0 · cause Some(9250) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=39594000
+- 4.002222h · event 9262 · agent 0 · cause Some(9258) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.002222h · event 9266 · agent 0 · cause Some(9262) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=43192000
+- 4.002778h · event 9274 · agent 0 · cause Some(9270) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.002778h · event 9278 · agent 0 · cause Some(9274) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=46790000
+- 4.003333h · event 9286 · agent 0 · cause Some(9282) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.003333h · event 9290 · agent 0 · cause Some(9286) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=50388000
+- 4.003889h · event 9298 · agent 0 · cause Some(9294) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.003889h · event 9302 · agent 0 · cause Some(9298) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=53986000
+- 4.004444h · event 9310 · agent 0 · cause Some(9306) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 10.222222h · event 24004 · agent 0 · cause Some(24000) · **Delivered**: node=0 q=10 original_target=10
+- 10.222222h · event 24005 · agent 1 · cause Some(24001) · **Delivered**: node=0 q=10 original_target=10
+- 10.222222h · event 24006 · agent 2 · cause Some(24002) · **Delivered**: node=0 q=10 original_target=10
+- 10.222222h · event 24007 · agent 3 · cause Some(24003) · **Delivered**: node=0 q=10 original_target=10
+- 12.000000h · event 28442 · agent None · cause None · **LeaseExpired**: board=0 count=8; workers not notified
+- 15.866667h · event 37295 · agent 4 · cause Some(37283) · **Delivered**: node=0 q=10 original_target=10
+- 15.866667h · event 37296 · agent 5 · cause Some(37284) · **Delivered**: node=0 q=10 original_target=10
+- 15.866667h · event 37297 · agent 6 · cause Some(37285) · **Delivered**: node=0 q=10 original_target=10
+- 15.866667h · event 37298 · agent 7 · cause Some(37286) · **Delivered**: node=0 q=10 original_target=10
+- 22.222222h · event 52695 · agent None · cause None · **LeaseExpired**: board=0 count=4; workers not notified
+- 27.866667h · event 66996 · agent None · cause None · **LeaseExpired**: board=0 count=4; workers not notified
+- 31.800000h · event 77525 · agent None · cause None · **LeaseExpired**: board=0 count=4; workers not notified
+- 48.000000h · event 97424 · agent None · cause None · **Spoiled**: batch=0 q=2112 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 97425 · agent None · cause None · **Spoiled**: batch=17 q=12 holder=Commons(0) created=0 deadline=172800000
+- 50.694444h · event 99866 · agent None · cause None · **LeaseExpired**: board=0 count=4; workers not notified
+
+## queue
+
+- 0.000000h · event 100 · agent 0 · cause Some(1) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 5578 · agent 0 · cause Some(100) · **Arrived**: node=1 edge=0
+- 2.000000h · event 5640 · agent 0 · cause Some(5583) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 10642 · agent 0 · cause Some(5640) · **Arrived**: node=2 edge=1
+- 4.000556h · event 10716 · agent 0 · cause Some(10651) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 10721 · agent 0 · cause Some(10720) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.017222h · event 10774 · agent 0 · cause Some(10729) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.017222h · event 10779 · agent 0 · cause Some(10778) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=35938000
+- 4.033889h · event 10832 · agent 0 · cause Some(10787) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.033889h · event 10837 · agent 0 · cause Some(10836) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=39478000
+- 4.050556h · event 10890 · agent 0 · cause Some(10845) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.050556h · event 10895 · agent 0 · cause Some(10894) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=43018000
+- 4.067222h · event 10948 · agent 0 · cause Some(10903) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.067222h · event 10953 · agent 0 · cause Some(10952) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=46558000
+- 4.083889h · event 11006 · agent 0 · cause Some(10961) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.084444h · event 11018 · agent 0 · cause Some(11011) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085000h · event 11030 · agent 0 · cause Some(11023) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085556h · event 11042 · agent 0 · cause Some(11035) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086111h · event 11054 · agent 0 · cause Some(11047) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086667h · event 11066 · agent 0 · cause Some(11059) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 48.000000h · event 183070 · agent None · cause None · **Spoiled**: batch=0 q=1568 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 183071 · agent None · cause None · **Spoiled**: batch=1 q=6 holder=Agent(0) created=0 deadline=172800000
+
+## reference
+
+- 0.000000h · event 100 · agent 0 · cause Some(1) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 5578 · agent 0 · cause Some(100) · **Arrived**: node=1 edge=0
+- 2.000000h · event 5640 · agent 0 · cause Some(5583) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 10642 · agent 0 · cause Some(5640) · **Arrived**: node=2 edge=1
+- 4.000556h · event 10716 · agent 0 · cause Some(10651) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 10721 · agent 0 · cause Some(10720) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.017222h · event 10775 · agent 0 · cause Some(10730) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.017222h · event 10780 · agent 0 · cause Some(10779) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=35938000
+- 4.033889h · event 10833 · agent 0 · cause Some(10788) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.033889h · event 10838 · agent 0 · cause Some(10837) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=39478000
+- 4.050556h · event 10891 · agent 0 · cause Some(10846) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.050556h · event 10896 · agent 0 · cause Some(10895) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=43018000
+- 4.067222h · event 10949 · agent 0 · cause Some(10904) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.067222h · event 10954 · agent 0 · cause Some(10953) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=46558000
+- 4.083889h · event 11007 · agent 0 · cause Some(10962) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.084444h · event 11019 · agent 0 · cause Some(11012) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085000h · event 11031 · agent 0 · cause Some(11024) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085556h · event 11043 · agent 0 · cause Some(11036) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086111h · event 11055 · agent 0 · cause Some(11048) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086667h · event 11067 · agent 0 · cause Some(11060) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 48.000000h · event 183083 · agent None · cause None · **Spoiled**: batch=0 q=1568 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 183084 · agent None · cause None · **Spoiled**: batch=1 q=6 holder=Agent(0) created=0 deadline=172800000
+
+## sleep
+
+- 0.000000h · event 100 · agent 0 · cause Some(1) · **Admitted**: edge=0 from=0 to=1
+- 2.000000h · event 5578 · agent 0 · cause Some(100) · **Arrived**: node=1 edge=0
+- 2.000000h · event 5640 · agent 0 · cause Some(5583) · **Admitted**: edge=1 from=1 to=2
+- 4.000000h · event 10642 · agent 0 · cause Some(5640) · **Arrived**: node=2 edge=1
+- 4.000556h · event 10716 · agent 0 · cause Some(10651) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.000556h · event 10721 · agent 0 · cause Some(10720) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=32398000
+- 4.017222h · event 10774 · agent 0 · cause Some(10729) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.017222h · event 10779 · agent 0 · cause Some(10778) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=35938000
+- 4.033889h · event 10832 · agent 0 · cause Some(10787) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.033889h · event 10837 · agent 0 · cause Some(10836) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=39478000
+- 4.050556h · event 10890 · agent 0 · cause Some(10845) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.050556h · event 10895 · agent 0 · cause Some(10894) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=43018000
+- 4.067222h · event 10948 · agent 0 · cause Some(10903) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.067222h · event 10953 · agent 0 · cause Some(10952) · **Consumed**: batch=1 q=1 owner=Agent(0) nutrition_ms=46558000
+- 4.083889h · event 11006 · agent 0 · cause Some(10961) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.084444h · event 11018 · agent 0 · cause Some(11011) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085000h · event 11030 · agent 0 · cause Some(11023) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.085556h · event 11042 · agent 0 · cause Some(11035) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086111h · event 11054 · agent 0 · cause Some(11047) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 4.086667h · event 11066 · agent 0 · cause Some(11059) · **Gathered**: source_batch=0 q=1 owner=Agent(0)
+- 48.000000h · event 189880 · agent None · cause None · **Spoiled**: batch=0 q=1656 holder=Deposit(2) created=0 deadline=172800000
+- 48.000000h · event 189881 · agent None · cause None · **Spoiled**: batch=1 q=6 holder=Agent(0) created=0 deadline=172800000
+

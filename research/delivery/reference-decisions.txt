@@ -1,0 +1,316 @@
+t=0 agent=0 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=1 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=2 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=3 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=4 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=5 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=6 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=7 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=8 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=9 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=10 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=11 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=12 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=13 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=14 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=15 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=16 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=17 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=18 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=19 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=20 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=21 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=22 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=23 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=24 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=25 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=26 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=27 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=28 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=29 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=30 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=31 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=32 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=33 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=34 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=35 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=36 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=37 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=38 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=39 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=40 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=41 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=42 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=43 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=44 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=45 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=46 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=47 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=48 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=0 agent=49 at=Node(0) nutrition=43200000 fatigue=14400000 known_nodes=[0] job=None intent=Travel { edge: 0, target: 1, food: false } reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0
+t=60000 agent=4 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=5 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=6 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=7 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=8 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=9 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=10 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=11 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=12 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=13 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=14 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=15 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=16 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=17 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=18 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=19 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=20 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=21 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=22 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=23 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=24 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=25 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=26 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=27 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=28 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=29 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=30 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=31 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=32 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=33 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=34 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=35 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=36 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=37 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=38 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=39 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=40 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=41 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=42 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=43 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=44 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=45 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=46 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=47 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=48 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=60000 agent=49 at=Node(0) nutrition=43140000 fatigue=14460000 known_nodes=[0] job=None intent=Wait reason=remain FIFO; explore unknown location; no resource target; predicted_ms=86400000 arrival_starvation_ms=43260000
+t=14400000 agent=0 at=Node(2) nutrition=28800000 fatigue=28800000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=14400000 agent=1 at=Node(2) nutrition=28800000 fatigue=28800000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=14400000 agent=2 at=Node(2) nutrition=28800000 fatigue=28800000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=14400000 agent=3 at=Node(2) nutrition=28800000 fatigue=28800000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=14402000 agent=0 at=Node(2) nutrition=28798000 fatigue=28802000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 1, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=14402000 agent=1 at=Node(2) nutrition=28798000 fatigue=28802000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 2, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=14402000 agent=2 at=Node(2) nutrition=28798000 fatigue=28802000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 3, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=14402000 agent=3 at=Node(2) nutrition=28798000 fatigue=28802000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 4, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=14460000 agent=12 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=13 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=14 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=15 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=16 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=17 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=18 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=19 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=20 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=21 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=22 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=23 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=24 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=25 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=26 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=27 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=28 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=29 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=30 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=31 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=32 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=33 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=34 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=35 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=36 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=37 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=38 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=39 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=40 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=41 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=42 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=43 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=44 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=45 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=46 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=47 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=48 GATE no_known_source board=0 observed=14460000
+t=14460000 agent=49 GATE no_known_source board=0 observed=14460000
+t=14712000 agent=0 at=Node(2) nutrition=46488000 fatigue=29112000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=14712000 agent=1 at=Node(2) nutrition=46488000 fatigue=29112000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=14712000 agent=2 at=Node(2) nutrition=46488000 fatigue=29112000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=14712000 agent=3 at=Node(2) nutrition=46488000 fatigue=29112000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=21600000 agent=4 at=Node(2) nutrition=21600000 fatigue=36000000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=21600000 agent=5 at=Node(2) nutrition=21600000 fatigue=36000000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=21600000 agent=6 at=Node(2) nutrition=21600000 fatigue=36000000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=21600000 agent=7 at=Node(2) nutrition=21600000 fatigue=36000000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=21602500 agent=4 at=Node(2) nutrition=21597500 fatigue=36002500 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 5, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=21602500 agent=5 at=Node(2) nutrition=21597500 fatigue=36002500 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 6, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=21602500 agent=6 at=Node(2) nutrition=21597500 fatigue=36002500 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 7, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=21602500 agent=7 at=Node(2) nutrition=21597500 fatigue=36002500 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 8, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=22032000 agent=4 at=Node(2) nutrition=46368000 fatigue=36432000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=22032000 agent=5 at=Node(2) nutrition=46368000 fatigue=36432000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=22032000 agent=6 at=Node(2) nutrition=46368000 fatigue=36432000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=22032000 agent=7 at=Node(2) nutrition=46368000 fatigue=36432000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=30800000 agent=8 at=Node(2) nutrition=12400000 fatigue=45200000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=30800000 agent=9 at=Node(2) nutrition=12400000 fatigue=45200000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=30800000 agent=10 at=Node(2) nutrition=12400000 fatigue=45200000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=30800000 agent=11 at=Node(2) nutrition=12400000 fatigue=45200000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=30802778 agent=8 at=Node(2) nutrition=12397222 fatigue=45202778 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 9, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=30802778 agent=9 at=Node(2) nutrition=12397222 fatigue=45202778 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 10, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=30802778 agent=10 at=Node(2) nutrition=12397222 fatigue=45202778 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 11, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=30802778 agent=11 at=Node(2) nutrition=12397222 fatigue=45202778 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 12, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=31333338 agent=8 at=Node(2) nutrition=44266662 fatigue=45733338 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=31333338 agent=9 at=Node(2) nutrition=44266662 fatigue=45733338 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=31333338 agent=10 at=Node(2) nutrition=44266662 fatigue=45733338 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=31333338 agent=11 at=Node(2) nutrition=44266662 fatigue=45733338 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=40800000 agent=12 at=Node(2) nutrition=2400000 fatigue=55200000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=40800000 agent=13 at=Node(2) nutrition=2400000 fatigue=55200000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=40800000 agent=14 at=Node(2) nutrition=2400000 fatigue=55200000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=40800000 agent=15 at=Node(2) nutrition=2400000 fatigue=55200000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=40802778 agent=12 at=Node(2) nutrition=2397222 fatigue=55202778 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 13, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=40802778 agent=13 at=Node(2) nutrition=2397222 fatigue=55202778 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 14, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=40802778 agent=14 at=Node(2) nutrition=2397222 fatigue=55202778 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 15, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=40802778 agent=15 at=Node(2) nutrition=2397222 fatigue=55202778 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 16, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=41160000 agent=12 GATE nutrition_margin board=0 source=2 nutrition=23640000 to_board=27816000 outward=57600000 work=80000 inward=57600000 total=143096000 predicted_nutrition=0 predicted_starvation=119456000 expiry=172800000
+t=41160000 agent=13 GATE nutrition_margin board=0 source=2 nutrition=23640000 to_board=27816000 outward=57600000 work=80000 inward=57600000 total=143096000 predicted_nutrition=0 predicted_starvation=119456000 expiry=172800000
+t=41160000 agent=14 GATE nutrition_margin board=0 source=2 nutrition=23640000 to_board=27816000 outward=57600000 work=80000 inward=57600000 total=143096000 predicted_nutrition=0 predicted_starvation=119456000 expiry=172800000
+t=41160000 agent=15 GATE nutrition_margin board=0 source=2 nutrition=23640000 to_board=27816000 outward=57600000 work=80000 inward=57600000 total=143096000 predicted_nutrition=0 predicted_starvation=119456000 expiry=172800000
+t=41520000 agent=12 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=44880000 to_board=20256000 outward=41616000 work=80000 inward=57600000 total=119552000 predicted_nutrition=0 predicted_starvation=74672000 expiry=172800000
+t=41520000 agent=13 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=44880000 to_board=20256000 outward=41616000 work=80000 inward=57600000 total=119552000 predicted_nutrition=0 predicted_starvation=74672000 expiry=172800000
+t=41520000 agent=14 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=44880000 to_board=20256000 outward=41616000 work=80000 inward=57600000 total=119552000 predicted_nutrition=0 predicted_starvation=74672000 expiry=172800000
+t=41520000 agent=15 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=44880000 to_board=20256000 outward=41616000 work=80000 inward=57600000 total=119552000 predicted_nutrition=0 predicted_starvation=74672000 expiry=172800000
+t=41533338 agent=12 at=Node(2) nutrition=44866662 fatigue=55933338 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=41533338 agent=13 at=Node(2) nutrition=44866662 fatigue=55933338 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=41533338 agent=14 at=Node(2) nutrition=44866662 fatigue=55933338 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=41533338 agent=15 at=Node(2) nutrition=44866662 fatigue=55933338 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=57888000 agent=16 at=Node(2) nutrition=0 fatigue=72288000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=57888000 agent=17 at=Node(2) nutrition=0 fatigue=72288000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=57888000 agent=18 at=Node(2) nutrition=0 fatigue=72288000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=57888000 agent=19 at=Node(2) nutrition=0 fatigue=72288000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=57896000 agent=16 at=Node(2) nutrition=0 fatigue=72296000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 17, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=57896000 agent=17 at=Node(2) nutrition=0 fatigue=72296000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 18, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=57896000 agent=18 at=Node(2) nutrition=0 fatigue=72296000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 19, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=57896000 agent=19 at=Node(2) nutrition=0 fatigue=72296000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 20, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=58260000 agent=16 GATE nutrition_margin board=0 source=2 nutrition=24836000 to_board=41404000 outward=57600000 work=80000 inward=57600000 total=156684000 predicted_nutrition=0 predicted_starvation=131848000 expiry=172800000
+t=58260000 agent=17 GATE nutrition_margin board=0 source=2 nutrition=24836000 to_board=41404000 outward=57600000 work=80000 inward=57600000 total=156684000 predicted_nutrition=0 predicted_starvation=131848000 expiry=172800000
+t=58260000 agent=18 GATE nutrition_margin board=0 source=2 nutrition=24836000 to_board=41404000 outward=57600000 work=80000 inward=57600000 total=156684000 predicted_nutrition=0 predicted_starvation=131848000 expiry=172800000
+t=58260000 agent=19 GATE nutrition_margin board=0 source=2 nutrition=24836000 to_board=41404000 outward=57600000 work=80000 inward=57600000 total=156684000 predicted_nutrition=0 predicted_starvation=131848000 expiry=172800000
+t=58620000 agent=16 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46076000 to_board=29881000 outward=47883000 work=80000 inward=57600000 total=135444000 predicted_nutrition=0 predicted_starvation=89368000 expiry=172800000
+t=58620000 agent=17 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46076000 to_board=29881000 outward=47883000 work=80000 inward=57600000 total=135444000 predicted_nutrition=0 predicted_starvation=89368000 expiry=172800000
+t=58620000 agent=18 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46076000 to_board=29881000 outward=47883000 work=80000 inward=57600000 total=135444000 predicted_nutrition=0 predicted_starvation=89368000 expiry=172800000
+t=58620000 agent=19 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46076000 to_board=29881000 outward=47883000 work=80000 inward=57600000 total=135444000 predicted_nutrition=0 predicted_starvation=89368000 expiry=172800000
+t=58644000 agent=16 at=Node(2) nutrition=46052000 fatigue=73044000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=58644000 agent=17 at=Node(2) nutrition=46052000 fatigue=73044000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=58644000 agent=18 at=Node(2) nutrition=46052000 fatigue=73044000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=58644000 agent=19 at=Node(2) nutrition=46052000 fatigue=73044000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=64800000 agent=0 at=Node(2) nutrition=61200000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=1 at=Node(2) nutrition=61200000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=2 at=Node(2) nutrition=61200000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=3 at=Node(2) nutrition=61200000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=4 at=Node(2) nutrition=46800000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=5 at=Node(2) nutrition=46800000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=6 at=Node(2) nutrition=46800000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=7 at=Node(2) nutrition=46800000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=8 at=Node(2) nutrition=54000000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=9 at=Node(2) nutrition=54000000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=10 at=Node(2) nutrition=54000000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=11 at=Node(2) nutrition=54000000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=12 at=Node(2) nutrition=43200000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=13 at=Node(2) nutrition=43200000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=14 at=Node(2) nutrition=43200000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=15 at=Node(2) nutrition=43200000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=16 at=Node(2) nutrition=61496000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=17 at=Node(2) nutrition=61496000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=18 at=Node(2) nutrition=61496000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=19 at=Node(2) nutrition=61496000 fatigue=79200000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=28 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=29 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=30 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=31 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=32 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=33 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=34 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=35 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=36 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=37 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=38 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=39 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=40 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=41 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=42 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=43 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=44 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=45 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=46 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=47 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=48 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=64800000 agent=49 at=Node(0) nutrition=0 fatigue=79200000 known_nodes=[0] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=86688000 agent=20 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=86688000 agent=21 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=86688000 agent=22 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=86688000 agent=23 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=86688000 agent=24 at=Node(1) nutrition=0 fatigue=86400000 known_nodes=[0, 1] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=86688000 agent=25 at=Node(1) nutrition=0 fatigue=86400000 known_nodes=[0, 1] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=86688000 agent=26 at=Node(1) nutrition=0 fatigue=86400000 known_nodes=[0, 1] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=86688000 agent=27 at=Node(1) nutrition=0 fatigue=86400000 known_nodes=[0, 1] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=86696000 agent=20 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 21, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=86696000 agent=21 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 22, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=86696000 agent=22 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 23, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=86696000 agent=23 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 24, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=87060000 agent=20 GATE nutrition_margin board=0 source=2 nutrition=24836000 to_board=41404000 outward=57600000 work=80000 inward=57600000 total=156684000 predicted_nutrition=0 predicted_starvation=131848000 expiry=172800000
+t=87060000 agent=20 at=Node(2) nutrition=24836000 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=87060000 agent=21 GATE nutrition_margin board=0 source=2 nutrition=24836000 to_board=41404000 outward=57600000 work=80000 inward=57600000 total=156684000 predicted_nutrition=0 predicted_starvation=131848000 expiry=172800000
+t=87060000 agent=21 at=Node(2) nutrition=24836000 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=87060000 agent=22 GATE nutrition_margin board=0 source=2 nutrition=24836000 to_board=41404000 outward=57600000 work=80000 inward=57600000 total=156684000 predicted_nutrition=0 predicted_starvation=131848000 expiry=172800000
+t=87060000 agent=22 at=Node(2) nutrition=24836000 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=87060000 agent=23 GATE nutrition_margin board=0 source=2 nutrition=24836000 to_board=41404000 outward=57600000 work=80000 inward=57600000 total=156684000 predicted_nutrition=0 predicted_starvation=131848000 expiry=172800000
+t=87060000 agent=23 at=Node(2) nutrition=24836000 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Sleep reason=critical fatigue or ongoing recovery
+t=94320000 agent=20 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46376000 to_board=29806000 outward=47658000 work=80000 inward=57600000 total=135144000 predicted_nutrition=0 predicted_starvation=88768000 expiry=172800000
+t=94320000 agent=21 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46376000 to_board=29806000 outward=47658000 work=80000 inward=57600000 total=135144000 predicted_nutrition=0 predicted_starvation=88768000 expiry=172800000
+t=94320000 agent=22 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46376000 to_board=29806000 outward=47658000 work=80000 inward=57600000 total=135144000 predicted_nutrition=0 predicted_starvation=88768000 expiry=172800000
+t=94320000 agent=23 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46376000 to_board=29806000 outward=47658000 work=80000 inward=57600000 total=135144000 predicted_nutrition=0 predicted_starvation=88768000 expiry=172800000
+t=94344000 agent=20 at=Node(2) nutrition=46352000 fatigue=73368000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=94344000 agent=21 at=Node(2) nutrition=46352000 fatigue=73368000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=94344000 agent=22 at=Node(2) nutrition=46352000 fatigue=73368000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=94344000 agent=23 at=Node(2) nutrition=46352000 fatigue=73368000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=119100000 agent=24 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=119100000 agent=25 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=119100000 agent=26 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=119100000 agent=27 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Gather { batch: 0, communal: false } reason=one quantum from observed deposit; communal=false
+t=119108000 agent=24 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 25, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=119108000 agent=25 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 26, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=119108000 agent=26 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 27, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=119108000 agent=27 at=Node(2) nutrition=0 fatigue=86400000 known_nodes=[0, 1, 2] job=None intent=Eat { batch: 28, quantity: 1 } reason=locally accessible food; exact ownership/ration ceiling
+t=119520000 agent=24 GATE nutrition_margin board=0 source=2 nutrition=24788000 to_board=41452000 outward=57600000 work=80000 inward=57600000 total=156732000 predicted_nutrition=0 predicted_starvation=131944000 expiry=172800000
+t=119520000 agent=25 GATE nutrition_margin board=0 source=2 nutrition=24788000 to_board=41452000 outward=57600000 work=80000 inward=57600000 total=156732000 predicted_nutrition=0 predicted_starvation=131944000 expiry=172800000
+t=119520000 agent=26 GATE nutrition_margin board=0 source=2 nutrition=24788000 to_board=41452000 outward=57600000 work=80000 inward=57600000 total=156732000 predicted_nutrition=0 predicted_starvation=131944000 expiry=172800000
+t=119520000 agent=27 GATE nutrition_margin board=0 source=2 nutrition=24788000 to_board=41452000 outward=57600000 work=80000 inward=57600000 total=156732000 predicted_nutrition=0 predicted_starvation=131944000 expiry=172800000
+t=126720000 agent=24 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46388000 to_board=29803000 outward=47649000 work=80000 inward=57600000 total=135132000 predicted_nutrition=0 predicted_starvation=88744000 expiry=172800000
+t=126720000 agent=25 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46388000 to_board=29803000 outward=47649000 work=80000 inward=57600000 total=135132000 predicted_nutrition=0 predicted_starvation=88744000 expiry=172800000
+t=126720000 agent=26 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46388000 to_board=29803000 outward=47649000 work=80000 inward=57600000 total=135132000 predicted_nutrition=0 predicted_starvation=88744000 expiry=172800000
+t=126720000 agent=27 AT_JOB_PRIORITY nutrition_margin board=0 source=2 nutrition=46388000 to_board=29803000 outward=47649000 work=80000 inward=57600000 total=135132000 predicted_nutrition=0 predicted_starvation=88744000 expiry=172800000
+t=126744000 agent=24 at=Node(2) nutrition=46364000 fatigue=73416000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=126744000 agent=25 at=Node(2) nutrition=46364000 fatigue=73416000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=126744000 agent=26 at=Node(2) nutrition=46364000 fatigue=73416000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=126744000 agent=27 at=Node(2) nutrition=46364000 fatigue=73416000 known_nodes=[0, 1, 2] job=None intent=Wait reason=no locally justified work; remaining near resources is allowed
+t=172800000 agent=12 AT_JOB_PRIORITY no_known_source board=0 observed=21600000
+t=172800000 agent=13 AT_JOB_PRIORITY no_known_source board=0 observed=21600000
+t=172800000 agent=14 AT_JOB_PRIORITY no_known_source board=0 observed=21600000
+t=172800000 agent=15 AT_JOB_PRIORITY no_known_source board=0 observed=21600000
+t=172800000 agent=16 AT_JOB_PRIORITY no_known_source board=0 observed=30780000
+t=172800000 agent=17 AT_JOB_PRIORITY no_known_source board=0 observed=30780000
+t=172800000 agent=18 AT_JOB_PRIORITY no_known_source board=0 observed=30780000
+t=172800000 agent=19 AT_JOB_PRIORITY no_known_source board=0 observed=30780000
+t=172800000 agent=20 AT_JOB_PRIORITY no_known_source board=0 observed=40800000
+t=172800000 agent=21 AT_JOB_PRIORITY no_known_source board=0 observed=40800000
+t=172800000 agent=22 AT_JOB_PRIORITY no_known_source board=0 observed=40800000
+t=172800000 agent=23 AT_JOB_PRIORITY no_known_source board=0 observed=40800000
+t=172800000 agent=24 AT_JOB_PRIORITY no_known_source board=0 observed=57840000
+t=172800000 agent=25 AT_JOB_PRIORITY no_known_source board=0 observed=57840000
+t=172800000 agent=26 AT_JOB_PRIORITY no_known_source board=0 observed=57840000
+t=172800000 agent=27 AT_JOB_PRIORITY no_known_source board=0 observed=57840000

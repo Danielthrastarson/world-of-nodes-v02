@@ -1,0 +1,1 @@
+{"accepted job cannot acquire expected cargo": 4, "delivery survival-infeasible or cargo predicted spoiled": 4, "job_gate:claims_suppress": 732, "job_gate:no_known_source": 102822, "job_gate:nutrition_margin": 27056, "job_gate:passes_gate": 456, "job_gate:shelf_life": 552}

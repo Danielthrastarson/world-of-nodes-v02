@@ -1,0 +1,1 @@
+{"job_gate:no_known_source": 103300, "job_gate:nutrition_margin": 58664}

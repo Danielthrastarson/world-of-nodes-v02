@@ -1,0 +1,1103 @@
+{
+  "queue": {
+    "survivors_36h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "survivors_48h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "survivors_72h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "deaths": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_initial": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_gathered": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_delivered": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_spoiled": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "spoiled_in_transit": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "spoiled_communal": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_stranded_at_death": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_carried_at_death": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "request_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "request_quantum_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "jobs_accepted": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "jobs_cancelled": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "failed_stale_trips": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "infeasible_abandons": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_search_distance_m": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "completed_food_trips": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "queue_person_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "loaded_queue_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "unloaded_queue_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "queue_overtakes": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "idle_person_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "sleep_person_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "starvation_person_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "lease_expiries": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_remaining": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "waste_remaining": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "inaccessible_dead_personal_food": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "alive_at_c": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "alive_at_f": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "accounting_error": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_at_job_priority_nutrition_margin": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_at_job_priority_no_known_source": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_at_job_priority_passes_gate": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_no_known_source": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_nutrition_margin": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_shelf_life": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_claims_suppress": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_passes_gate": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_request_observers": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_request_observations": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_board_evaluations_without_source": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_accepted": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_source_sought": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_reaching_f": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_returns_started": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_returns_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_delivered": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_delivered_quanta": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_abandonments": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_queue_joins": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_queue_voluntary_exits": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_repeated_job_edge_joins": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_sleep_starts": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_sleep_renewals": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_sleep_interruptions": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_decision_reversals": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_claim_expiries": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_replacement_attempts": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_duplicate_attempts": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_carrier_deaths": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_predicted_fatal_return_decisions": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_actual_fatal_returns": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_commitment_churn": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_return_edge_admissions": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_first_delivery_ms": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    }
+  },
+  "sleep": {
+    "survivors_36h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "survivors_48h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "survivors_72h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "deaths": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_initial": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_gathered": {
+      "mean_delta": -88.0,
+      "min_delta": -88.0,
+      "max_delta": -88.0
+    },
+    "food_delivered": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_consumed": {
+      "mean_delta": -88.0,
+      "min_delta": -88.0,
+      "max_delta": -88.0
+    },
+    "food_spoiled": {
+      "mean_delta": 88.0,
+      "min_delta": 88.0,
+      "max_delta": 88.0
+    },
+    "spoiled_in_transit": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "spoiled_communal": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_stranded_at_death": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_carried_at_death": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "request_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "request_quantum_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "jobs_accepted": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "jobs_cancelled": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "failed_stale_trips": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "infeasible_abandons": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_search_distance_m": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "completed_food_trips": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "queue_person_hours": {
+      "mean_delta": -76.02666599999998,
+      "min_delta": -76.02666599999998,
+      "max_delta": -76.02666599999998
+    },
+    "loaded_queue_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "unloaded_queue_hours": {
+      "mean_delta": -76.02666599999998,
+      "min_delta": -76.02666599999998,
+      "max_delta": -76.02666599999998
+    },
+    "queue_overtakes": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "idle_person_hours": {
+      "mean_delta": -18.673829999999953,
+      "min_delta": -18.673829999999953,
+      "max_delta": -18.673829999999953
+    },
+    "sleep_person_hours": {
+      "mean_delta": 130.24888799999997,
+      "min_delta": 130.24888799999997,
+      "max_delta": 130.24888799999997
+    },
+    "starvation_person_hours": {
+      "mean_delta": 88.0,
+      "min_delta": 88.0,
+      "max_delta": 88.0
+    },
+    "lease_expiries": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_remaining": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "waste_remaining": {
+      "mean_delta": 88.0,
+      "min_delta": 88.0,
+      "max_delta": 88.0
+    },
+    "inaccessible_dead_personal_food": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "alive_at_c": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "alive_at_f": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "accounting_error": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_at_job_priority_nutrition_margin": {
+      "mean_delta": -1964.0,
+      "min_delta": -1964.0,
+      "max_delta": -1964.0
+    },
+    "diag_at_job_priority_no_known_source": {
+      "mean_delta": 100.0,
+      "min_delta": 100.0,
+      "max_delta": 100.0
+    },
+    "diag_at_job_priority_passes_gate": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_no_known_source": {
+      "mean_delta": 1752.0,
+      "min_delta": 1752.0,
+      "max_delta": 1752.0
+    },
+    "diag_gate_nutrition_margin": {
+      "mean_delta": -1288.0,
+      "min_delta": -1288.0,
+      "max_delta": -1288.0
+    },
+    "diag_gate_shelf_life": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_claims_suppress": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_passes_gate": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_request_observers": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_request_observations": {
+      "mean_delta": 212.0,
+      "min_delta": 212.0,
+      "max_delta": 212.0
+    },
+    "diag_board_evaluations_without_source": {
+      "mean_delta": 212.0,
+      "min_delta": 212.0,
+      "max_delta": 212.0
+    },
+    "diag_jobs_accepted": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_source_sought": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_reaching_f": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_returns_started": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_returns_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_delivered": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_delivered_quanta": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_abandonments": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_queue_joins": {
+      "mean_delta": -6630.0,
+      "min_delta": -6630.0,
+      "max_delta": -6630.0
+    },
+    "diag_queue_voluntary_exits": {
+      "mean_delta": -6634.0,
+      "min_delta": -6634.0,
+      "max_delta": -6634.0
+    },
+    "diag_repeated_job_edge_joins": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_sleep_starts": {
+      "mean_delta": -9290.0,
+      "min_delta": -9290.0,
+      "max_delta": -9290.0
+    },
+    "diag_sleep_renewals": {
+      "mean_delta": 17102.0,
+      "min_delta": 17102.0,
+      "max_delta": 17102.0
+    },
+    "diag_sleep_interruptions": {
+      "mean_delta": -6702.0,
+      "min_delta": -6702.0,
+      "max_delta": -6702.0
+    },
+    "diag_decision_reversals": {
+      "mean_delta": -25178.0,
+      "min_delta": -25178.0,
+      "max_delta": -25178.0
+    },
+    "diag_claim_expiries": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_replacement_attempts": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_duplicate_attempts": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_carrier_deaths": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_predicted_fatal_return_decisions": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_actual_fatal_returns": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_commitment_churn": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_return_edge_admissions": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_first_delivery_ms": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    }
+  },
+  "job": {
+    "survivors_36h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "survivors_48h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "survivors_72h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "deaths": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_initial": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_gathered": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_delivered": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_spoiled": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "spoiled_in_transit": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "spoiled_communal": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_stranded_at_death": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_carried_at_death": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "request_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "request_quantum_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "jobs_accepted": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "jobs_cancelled": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "failed_stale_trips": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "infeasible_abandons": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_search_distance_m": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "completed_food_trips": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "queue_person_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "loaded_queue_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "unloaded_queue_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "queue_overtakes": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "idle_person_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "sleep_person_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "starvation_person_hours": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "lease_expiries": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "food_remaining": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "waste_remaining": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "inaccessible_dead_personal_food": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "alive_at_c": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "alive_at_f": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "accounting_error": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_at_job_priority_nutrition_margin": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_at_job_priority_no_known_source": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_at_job_priority_passes_gate": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_no_known_source": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_nutrition_margin": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_shelf_life": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_claims_suppress": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_gate_passes_gate": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_request_observers": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_request_observations": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_board_evaluations_without_source": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_accepted": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_source_sought": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_reaching_f": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_returns_started": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_returns_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_jobs_delivered": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_delivered_quanta": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_abandonments": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_queue_joins": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_queue_voluntary_exits": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_repeated_job_edge_joins": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_sleep_starts": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_sleep_renewals": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_sleep_interruptions": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_decision_reversals": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_claim_expiries": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_replacement_attempts": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_duplicate_attempts": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_carrier_deaths": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_predicted_fatal_return_decisions": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_actual_fatal_returns": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_commitment_churn": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_return_edge_admissions": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "diag_first_delivery_ms": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    }
+  }
+}

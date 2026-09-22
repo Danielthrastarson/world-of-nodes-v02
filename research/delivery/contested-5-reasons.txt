@@ -1,0 +1,1 @@
+{"accepted job cannot acquire expected cargo": 8, "job_gate:claims_suppress": 220, "job_gate:no_known_source": 100118, "job_gate:nutrition_margin": 30356, "job_gate:passes_gate": 460, "job_gate:shelf_life": 88}
