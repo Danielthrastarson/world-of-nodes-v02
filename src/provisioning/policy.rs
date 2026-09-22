@@ -11,6 +11,10 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    LoadCargo {
+        batch: usize,
+        quantity: u64,
+    },
     Wait,
     Sleep,
     Eat {
@@ -292,6 +296,14 @@ fn acquire(o: &Observation, s: &Source, communal: bool) -> Decision {
             },
             format!("one quantum from observed deposit; communal={communal}"),
         )
+    } else if communal {
+        choice(
+            Intent::LoadCargo {
+                batch: s.food.batch,
+                quantity: 1,
+            },
+            "load physical goods for accepted communal job",
+        )
     } else if matches!(s.food.owner, Owner::Commons(_)) {
         choice(
             Intent::Wait,
@@ -367,7 +379,7 @@ pub fn decide(o: &Observation, m: &PolicyMemory, rng: &mut u64) -> Decision {
         }
         if job.acquired < job.target
             && o.load < o.capacity
-            && let Some(s) = feasible.filter(|s| matches!(s.food.holder, Holder::Deposit(_)))
+            && let Some(s) = feasible.filter(|s| s.node != job.destination)
         {
             return acquire(o, s, true);
         }
@@ -391,10 +403,30 @@ pub fn decide(o: &Observation, m: &PolicyMemory, rng: &mut u64) -> Decision {
                     continue;
                 };
                 for source in &known {
-                    // Conservative round trip to acquire then deliver; no hidden future queue state.
-                    let total = to_board.time
-                        + 2 * source.route.time
-                        + ((o.capacity - o.load) * 2000) as Time;
+                    if source.node == board.node {
+                        continue;
+                    }
+                    // Estimate each leg from its actual intended origin using memory only.
+                    let mut predicted = o.clone();
+                    predicted.location = Location::Node(board.node);
+                    predicted.action = Action::Idle;
+                    (predicted.nutrition, predicted.starvation) = after(o, to_board.time);
+                    predicted.fatigue = (o.fatigue + to_board.time).min(24 * HOUR);
+                    let Some(outbound) = route(&predicted, m, source.node) else {
+                        continue;
+                    };
+                    let work = ((o.capacity - o.load) as u128 * 2000 * SCALE).div_ceil(performance(
+                        outbound.nutrition,
+                        (predicted.fatigue + outbound.time).min(24 * HOUR),
+                    )) as Time;
+                    let elapsed = to_board.time + outbound.time + work;
+                    predicted.location = Location::Node(source.node);
+                    (predicted.nutrition, predicted.starvation) = after(o, elapsed);
+                    predicted.fatigue = (o.fatigue + elapsed).min(24 * HOUR);
+                    let Some(inbound) = route(&predicted, m, board.node) else {
+                        continue;
+                    };
+                    let total = elapsed + inbound.time;
                     let (nutrition, starvation) = after(o, total);
                     if starvation > 0
                         || nutrition < 6 * HOUR
@@ -488,4 +520,8 @@ pub fn decide(o: &Observation, m: &PolicyMemory, rng: &mut u64) -> Decision {
         Intent::Wait,
         "no locally justified work; remaining near resources is allowed",
     )
+}
+
+pub(crate) fn goal_is_fatal(o: &Observation, m: &PolicyMemory, target: usize) -> bool {
+    route(o, m, target).is_none_or(|r| r.starvation >= 24 * HOUR)
 }

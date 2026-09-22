@@ -123,6 +123,7 @@ pub struct Agent {
     pub last_event: Option<u64>,
     pub death_time: Option<Time>,
     pub consumed: u64,
+    pub travel_since_food: u128,
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Claim {
@@ -304,6 +305,7 @@ impl World {
                 last_event: None,
                 death_time: None,
                 consumed: 0,
+                travel_since_food: 0,
             })
             .collect();
         let mut goods = Goods::default();
@@ -398,7 +400,7 @@ impl World {
     }
     fn node_view(&self, node: usize) -> NodeView {
         NodeView{node,observed_at:self.now,food:self.goods.batches.iter().filter(|b|b.quantity>0&&b.material==Material::Food&&matches!(b.holder,Holder::Deposit(n)|Holder::Loose(n)|Holder::Commons(n) if n==node)).map(|b|self.food_view(b)).collect(),
-            edges:self.config.edges.iter().enumerate().filter(|(_,e)|e.a==node||e.b==node).map(|(id,e)|EdgeView{id,edge:e.clone(),queued:self.agents.iter().filter(|a|matches!(a.action,Action::Queued{edge,..} if edge==id)).count(),occupied:self.agents.iter().filter(|a|matches!(a.location,Location::Edge{edge,..} if edge==id)&&a.action!=Action::Dead).count()}).collect(),
+            edges:self.config.edges.iter().enumerate().filter(|(_,e)|e.a==node||e.b==node).map(|(id,e)|EdgeView{id,edge:e.clone(),queued:self.agents.iter().filter(|a|a.location==Location::Node(node)&&matches!(a.action,Action::Queued{edge,..} if edge==id)).count(),occupied:0}).collect(),
             board:self.boards.iter().find(|b|b.node==node).cloned(),people:self.agents.iter().filter(|a|a.location==Location::Node(node)&&a.action!=Action::Dead).map(|a|a.id).collect()}
     }
     pub fn observe(&self, id: usize) -> Option<Observation> {

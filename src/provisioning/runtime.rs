@@ -164,6 +164,33 @@ impl World {
                     format!("batch={batch} reserved=1 communal={communal}"),
                 );
             }
+            Intent::LoadCargo { batch, quantity } => {
+                let b = self.local_batch(id, batch)?;
+                let job = self.agents[id]
+                    .job
+                    .as_ref()
+                    .ok_or("cargo loading requires an accepted job")?;
+                if node == job.destination
+                    || quantity == 0
+                    || quantity > b.quantity
+                    || quantity > job.target.saturating_sub(job.acquired)
+                    || self.goods.load(id) + quantity > self.config.carrying_capacity
+                    || b.material != Material::Food
+                    || b.expires_at() <= self.now
+                    || !matches!(b.holder, Holder::Loose(_) | Holder::Commons(_))
+                {
+                    return Err("cargo loading precondition".into());
+                }
+                self.cancel_action(id, "load communal cargo");
+                self.goods
+                    .move_part(batch, quantity, Owner::Commons(0), Holder::Agent(id));
+                self.agents[id].job.as_mut().unwrap().acquired += quantity;
+                self.log(
+                    Some(id),
+                    "CargoLoaded",
+                    format!("batch={batch} q={quantity} owner=Commons(0)"),
+                );
+            }
             Intent::Pickup { batch, quantity } => {
                 let b = self.local_batch(id, batch)?;
                 if !matches!(b.holder, Holder::Loose(_))
@@ -193,9 +220,6 @@ impl World {
                 }
                 if matches!(self.agents[id].action,Action::Queued{edge:x,..}if x==edge) {
                     return Ok(());
-                }
-                if self.agents[id].goal.is_some_and(|(_, was_food)| was_food) && !food {
-                    self.metrics.infeasible_abandons += 1;
                 }
                 self.cancel_action(id, "queue for route");
                 self.agents[id].goal = Some((target, food));
@@ -344,7 +368,9 @@ impl World {
                 })
                 .collect();
             queue.sort_unstable();
-            for (_, id, to) in queue.into_iter().take(slots) {
+            for (joined, id, to) in queue.into_iter().take(slots) {
+                // Independent instrumentation against the still-waiting eligible set.
+                self.metrics.overtakes += self.agents.iter().filter(|a| matches!(a.action, Action::Queued {edge:e,joined:t,..} if e==edge && (t,a.id)<(joined,id))).count() as u64;
                 let Location::Node(from) = self.agents[id].location else {
                     unreachable!()
                 };
@@ -463,9 +489,7 @@ impl World {
                         let before = *progress;
                         *progress = (*progress + rate * dt as u128)
                             .min(self.config.edges[*edge].nominal_ms as u128 * SCALE);
-                        if a.goal.is_some_and(|(_, food)| food) {
-                            self.metrics.food_travel_mm += (*progress - before) / SCALE;
-                        }
+                        a.travel_since_food += *progress - before;
                     }
                 }
                 Action::Gather { remaining, .. } => {
@@ -499,9 +523,6 @@ impl World {
                 self.agents[id].action = Action::Idle;
                 self.wake.insert(id);
                 self.log(Some(id), "Arrived", format!("node={to} edge={edge}"));
-                if self.agents[id].goal == Some((to, true)) {
-                    self.metrics.food_trips += 1;
-                }
             }
         }
         let expired: Vec<_> = self
@@ -577,6 +598,7 @@ impl World {
                     }
                     self.goods.move_part(batch, q, owner, holder);
                 }
+                self.gather_communal.remove(&id);
                 self.cancel_job(id, "starvation death");
                 self.agents[id].action = Action::Dead;
                 self.agents[id].death_time = Some(self.now);
@@ -742,6 +764,18 @@ impl World {
         for id in ids {
             let o = self.observe(id).unwrap();
             if let Some(local) = &o.local {
+                if self.agents[id].travel_since_food > 0
+                    && local.food.iter().any(|f| {
+                        f.quantity > 0
+                            && (f.owner == Owner::None
+                                || f.owner == Owner::Agent(id)
+                                || f.owner == Owner::Commons(0))
+                    })
+                {
+                    self.metrics.food_trips += 1;
+                    self.metrics.food_travel_mm += self.agents[id].travel_since_food / SCALE;
+                    self.agents[id].travel_since_food = 0;
+                }
                 if self.agents[id].goal == Some((local.node, true)) {
                     let expected = self.agents[id]
                         .memory
@@ -767,6 +801,16 @@ impl World {
             }
             let a = &mut self.agents[id];
             let decision = policy::decide(&o, &a.memory, &mut a.rng);
+            if let (Action::Queued { edge, .. }, Some((target, true))) = (&o.action, o.goal) {
+                let leaving = match decision.intent {
+                    Intent::Travel { edge: next, .. } => next != *edge,
+                    Intent::Eat { .. } | Intent::Sleep | Intent::CancelJob => true,
+                    _ => false,
+                };
+                if leaving && policy::goal_is_fatal(&o, &a.memory, target) {
+                    self.metrics.infeasible_abandons += 1;
+                }
+            }
             decisions.push((id, decision, o.nutrition, o.starvation));
         }
         stale_events.sort_unstable();
