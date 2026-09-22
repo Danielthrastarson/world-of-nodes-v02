@@ -1,19 +1,13 @@
 # World of Nodes
 
-A causal kingdom simulation. Current scope: **V0.2 — The Price of Security**.
+**The simulation is the source of the graphics.** A causal kingdom simulation with primitive rendering of real agents, stocks, movement, work, and observed state.
 
-[WORLD_OF_NODES_HANDOFF.md](WORLD_OF_NODES_HANDOFF.md) is the current authoritative project specification.
+Current scope: a small emergent settlement experiment with about 50 agents, food, wood, stone, needs, gathering, carrying, farming, construction, and local job selection.
 
-## Research status
+- [Current design contract](WORLD_OF_NODES_HANDOFF.md)
+- [Settlement experiment and implementation gates](docs/SETTLEMENT_EXPERIMENT.md)
+- [Preserved earlier security handoff](docs/archive/WORLD_OF_NODES_HANDOFF_SECURITY.md)
 
-This repository begins with the handoff only. No V0.1 source, seeds, executable tests, or raw research outputs were supplied. V0.1 has **not been reproduced**. The handoff reports that zero mobilization performed best in its tested security grid, while high mobilization harmed labor, food supply, and population. These are inherited claims, not independently verified results.
+The 2026-09-22 design change defers the earlier V0.2 military/security work until settlement and transport foundations are validated. It does not establish that the security/economy loop passed.
 
-Preserve that negative result. If the original artifacts become available, archive and reproduce them before comparing versions. Any implementation created without them must be labeled a new V0.2 model, not a reproduction of V0.1.
-
-## V0.2 scope
-
-Repair meaningful civilian vulnerability, movement scheduling, seasonal labor, physical raids, and spatial interception. Preserve conservation, exclusivity, locality, travel time, capacity, transformation, agency, and one coherent clock.
-
-Use seeded Monte Carlo experiments to try to falsify the security/economy loop. Report assumptions, failures, causal traces, and evidence. Do not tune toward a desired military optimum or expand to V0.3 before understanding the results.
-
-No simulation code or experimental results exist in this repository yet.
+No simulation code or experimental results exist here yet. V0.1 source, seeds, tests, and raw outputs were never supplied, so its reported negative results remain inherited claims, not reproduced evidence. The archived handoff preserves them unchanged.
