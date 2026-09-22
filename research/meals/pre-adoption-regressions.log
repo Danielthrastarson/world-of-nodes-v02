@@ -1,0 +1,8 @@
+replay reference: hashes unchanged; 0 direct intent differences; 0 kernel mismatches
+replay current: hashes unchanged; 0 direct intent differences; 0 kernel mismatches
+replay known_source: hashes unchanged; 0 direct intent differences; 0 kernel mismatches
+replay reactive: hashes unchanged; 72 direct intent differences; 0 kernel mismatches
+replay committed: hashes unchanged; 748 direct intent differences; 0 kernel mismatches
+replay forecast_corrected: hashes unchanged; 0 direct intent differences; 0 kernel mismatches
+replay contested_requests: hashes unchanged; 1079 direct intent differences; 0 kernel mismatches
+replay stale_depletion: hashes unchanged; 5440 direct intent differences; 0 kernel mismatches

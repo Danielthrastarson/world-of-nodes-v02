@@ -1,0 +1,16 @@
+seed,key,count
+0,acceptance_evaluations,58760
+0,candidate_evaluations,58760
+0,candidate_gate:CANNOT_COMPLETE_PLAN_ALIVE,1124
+0,candidate_gate:NO_KNOWN_SOURCE,19712
+0,candidate_gate:POST_PLAN_NUTRITION_MARGIN,7560
+0,candidate_gate:SOURCE_PREDICTED_SPOILED,30364
+0,decisions,161788
+0,decisions_with_remembered_request,161788
+0,decisions_with_source_memory,60240
+0,gate:CANNOT_COMPLETE_PLAN_ALIVE,1124
+0,gate:NO_KNOWN_SOURCE,19712
+0,gate:POST_PLAN_NUTRITION_MARGIN,7560
+0,gate:SOURCE_PREDICTED_SPOILED,30364
+0,physically_executable_candidates,7560
+0,unique_f_arrivals,28

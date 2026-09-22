@@ -13,8 +13,8 @@ and irreversible abstraction choices require a project-owner decision.
 
 | Milestone | Status | Capability and gate |
 |---|---|---|
-| F0 Forecast / decision foundation | ACTIVE | Adopt tested mechanical corrections; isolate conditional meals; distinguish beliefs, goals, undertaking, atomic action. Covered contracts agree with execution; decisions use personal history only; interruption is explicit; invariants hold. Provisioning need not succeed. |
-| F1 Generalized autonomous agent | NOT STARTED | Same policy on line, branch, alternative routes, dead end, bottleneck, unequal sources. Test discovery, memory, physiology, routes, migration, FIFO and interruptions. No geography-specific policy, hidden resources or semantic IDs. |
+| F0 Forecast / decision foundation | PASSED | Adopt tested mechanical corrections; isolate conditional meals; distinguish beliefs, goals, undertaking, atomic action. Covered contracts agree with execution; decisions use personal history only; interruption is explicit; invariants hold. Provisioning need not succeed. |
+| F1 Generalized autonomous agent | ACTIVE | Same policy on line, branch, alternative routes, dead end, bottleneck, unequal sources. Test discovery, memory, physiology, routes, migration, FIFO and interruptions. No geography-specific policy, hidden resources or semantic IDs. |
 | F2 Autonomous provisioning | NOT STARTED | Trace demand through voluntary undertaking, acquisition, transport, consumption. Compare self-provision, migration, idle and physical controls. Demonstrate a plausible controlled chain or identify behavioral/institutional vs architecture cause of absence. |
 | F3 Renewable production | NOT STARTED | Located fertile land + actual labor + time → harvest. Account for natural transformation; finite initial stock no longer sole possible nourishment. Explain failures; do not guarantee sustainability. |
 | F4 Dynamic labor | NOT STARTED | Known shortages and opportunities alter voluntary production, gathering, carrying, rest, exploration. No worker ratios or omniscient job manager; measure churn. |
@@ -50,3 +50,5 @@ transport, cooperation or productive capacity.
 F0 begins at `33dc4b1`; adopted correction and meal study specification:
 [CONDITIONAL_MEALS.md](CONDITIONAL_MEALS.md). Historical evidence remains in
 `research/coherence`, `research/shadow`, and earlier research directories.
+
+F0 passed: [evidence](../research/meals/REPORT.md), [provenance](../research/meals/provenance.json), [decision vocabulary](DECISION_FOUNDATION.md). Conditional meals remain research-only. F1 specification: [GEOGRAPHY_EXPERIMENT.md](GEOGRAPHY_EXPERIMENT.md).

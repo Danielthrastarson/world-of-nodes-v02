@@ -1,0 +1,20 @@
+{
+  "no_meal": null,
+  "conditional_meals": {
+    "final_nutrition": {
+      "min": 25219998,
+      "mean": 26896931.653284673,
+      "max": 28760000
+    },
+    "deliverable": {
+      "min": 1,
+      "mean": 2.113138686131387,
+      "max": 5
+    },
+    "meal_quanta": {
+      "min": 5,
+      "mean": 7.886861313868613,
+      "max": 9
+    }
+  }
+}

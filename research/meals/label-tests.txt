@@ -1,0 +1,153 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.19s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 73 tests
+test provisioning::acceptance::tests::source_prior_is_timestamped_local_memory_not_fresh_world_information ... ok
+test provisioning::decomposition::tests::coherent_sleep_defers_noncritical_meal_but_interrupts_for_critical_meal ... ok
+test provisioning::decomposition::tests::lease_replacement_is_measured_without_remotely_cancelling_worker ... ok
+test provisioning::decomposition::tests::queue_commitment_yields_to_critical_local_food ... ok
+test provisioning::persistence::tests::own_arrival_completes_intention_without_creating_claim_and_death_cancels ... ok
+test provisioning::decomposition::tests::queue_commitment_keeps_fifo_place_but_does_not_change_admission ... ok
+test provisioning::policy::coherent::tests::corrected_policy_is_pure_and_preserves_risk_margin_and_no_meal_assumption ... ok
+test provisioning::policy::coherent::tests::observed_self_is_removed_once_without_discounting_other_travelers ... ok
+test provisioning::policy::coherent::tests::queue_wait_changes_physiology_before_movement ... ok
+test provisioning::policy::coherent::tests::spoilage_interrupts_forecast_gather_at_original_deadline ... ok
+test provisioning::decomposition::tests::posted_request_is_local_and_survives_initial_refresh_without_food_knowledge ... ok
+test provisioning::policy::forecast::tests::meals_reduce_cargo_obey_ceiling_and_require_only_remembered_evidence ... ok
+test provisioning::policy::forecast::tests::predicted_source_expiry_and_remembered_reservations_are_not_ignored ... ok
+test provisioning::policy::forecast::tests::self_exclusion_does_not_discount_queues_without_membership_evidence ... ok
+test provisioning::policy::forecast::tests::meal_forecast_replays_with_exact_physical_time_ownership_and_nutrition ... ok
+test provisioning::policy::forecast::tests::zero_margin_changes_only_the_no_meal_threshold_and_never_allows_fatal_plan ... ok
+test provisioning::policy::forecast::tests::self_exclusion_is_once_per_observed_membership_on_every_hypothetical_leg ... ok
+test provisioning::policy::intention::tests::an_immediate_legal_meal_does_not_erase_a_survivable_intention ... ok
+test provisioning::policy::intention::tests::commitment_cancels_predicted_death_and_locally_learned_blockage ... ok
+test provisioning::policy::intention::tests::commitment_distinguishes_ordinary_self_provisioning_from_survival ... ok
+test provisioning::policy::intention::tests::expired_committed_goal_does_not_leave_a_cancelled_agent_in_its_old_queue ... ok
+test provisioning::policy::intention::tests::intention_cannot_access_changed_remote_truth ... ok
+test provisioning::policy::intention::tests::material_information_excludes_clock_and_small_stock_changes_but_includes_queue_service ... ok
+test provisioning::policy::intention::tests::eating_and_sleep_pause_then_resume_without_claiming_or_reserving ... ok
+test provisioning::policy::intention::tests::self_priority_ablation_has_no_goal_memory_across_meal_interrupt ... ok
+test provisioning::reasoning::tests::undertaking_is_distinct_from_atomic_action_and_claim_lease ... ok
+test provisioning::reasoning::tests::same_personal_history_and_rng_produce_same_decision ... ok
+test provisioning::shadow::mismatch_tests::expiry_interrupts_reserved_gather_without_refresh_or_material_loss ... ok
+test provisioning::shadow::mismatch_tests::aggregate_gather_rounding_differs_from_ten_atomic_actions ... ok
+test provisioning::shadow::mismatch_tests::known_stock_reservation_is_not_available_to_a_second_gatherer ... ok
+test provisioning::shadow::mismatch_tests::legacy_quantity_forecast_ignores_observed_reserved_stock ... ok
+test provisioning::shadow::mismatch_tests::legacy_loose_cargo_forecast_invents_gathering_work ... ok
+test provisioning::shadow::mismatch_tests::waiting_order_can_create_a_false_alive_prediction ... ok
+test provisioning::shadow::mismatch_tests::legacy_work_counts_free_slots_instead_of_claim_quantity ... ok
+test provisioning::shadow::static_cases::tests::independent_primitives_match_kernel ... ok
+test provisioning::shadow::tests::independent_belief_tape_matches_kernel_without_other_actors ... ok
+test provisioning::shadow::tests::known_wait_must_precede_physiological_movement ... ok
+test provisioning::tests::accepted_job_searches_other_sources_when_local_stock_is_at_destination ... ok
+test provisioning::tests::communal_carrier_eating_reduces_delivery ... ok
+test provisioning::tests::communal_consumption_is_immediate_capped_and_preserves_owner ... ok
+test provisioning::tests::communal_gathering_ownership_delivery_and_partial_consumption ... ok
+test provisioning::tests::communal_hauling_requires_job_and_does_not_create_personal_property ... ok
+test provisioning::tests::dead_personal_property_is_inaccessible_even_to_starving_neighbours ... ok
+test provisioning::tests::death_does_not_remotely_clear_board_claim ... ok
+test provisioning::tests::expired_claim_does_not_cancel_original_worker_or_duplicate_goods ... ok
+test provisioning::tests::exploration_has_no_hidden_food_target_under_relabeling ... ok
+test provisioning::tests::fifo_is_independent_of_submission_order_and_supports_zero_capacity ... ok
+test provisioning::coherence::tests::corrected_forecast_matches_static_kernel_matrix ... ok
+test provisioning::tests::local_eating_cancels_queue_without_advancing_it ... ok
+test provisioning::tests::local_observation_does_not_reveal_destinations_or_remote_changes ... ok
+test provisioning::tests::mid_edge_death_preserves_position_property_and_material ... ok
+test provisioning::tests::nearer_feasible_food_beats_fatal_or_predictably_spoiled_food ... ok
+test provisioning::tests::no_food_death_is_exactly_36h_and_not_before ... ok
+test provisioning::tests::physical_return_trip_can_spoil_communal_cargo_mid_edge ... ok
+test provisioning::tests::physiology_changes_speed_during_a_trip_not_only_at_departure ... ok
+test provisioning::tests::policy_does_not_force_a_return_from_food ... ok
+test provisioning::tests::remote_queue_and_inflight_positions_are_not_local_observations ... ok
+test provisioning::tests::reservation_contention_interruption_and_spoilage_are_conservative ... ok
+test provisioning::coherence::tests::conditional_meals_match_static_kernel_matrix ... ok
+test provisioning::tests::sleep_recovery_continues_across_atomic_sleep_ticks ... ok
+test provisioning::tests::split_gather_transfer_never_refresh_age ... ok
+test provisioning::decomposition::bounds_tests::earliest_first_quantum_attains_the_relaxed_lower_bound ... ok
+test provisioning::decomposition::tests::counterfactual_delivers_through_real_physics_and_preserves_locked_parameters ... ok
+test provisioning::congestion::tests::conditional_transport_has_atomic_arrival_and_direction_symmetric_service ... ok
+test provisioning::decomposition::bounds_tests::starvation_grace_support_bound_is_not_nutritional_success ... ok
+test provisioning::tests::reversed_policy_evaluation_is_identical ... ok
+test provisioning::tests::live_advance_partition_does_not_change_state_or_events ... ok
+test provisioning::congestion::tests::disabled_research_instrument_has_no_effect ... ok
+test provisioning::shadow::tests::audit_preserves_rng_state_events_and_decisions ... ok
+test provisioning::tests::stale_depletion_fixture_changes_truth_without_refreshing_absent_memories ... ok
+test provisioning::decomposition::tests::reference_state_and_events_are_preserved_exactly ... ok
+test provisioning::acceptance::tests::hourly_journaling_preserves_control_hashes_and_accounts_for_zero_nutrition ... ok
+test provisioning::persistence::tests::reactive_and_remembered_reproduce_frozen_meal_aware_physics ... ok
+
+test result: ok. 73 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 22.04s
+
+     Running unittests src/bin/acceptance_probe.rs (target/debug/deps/acceptance_probe-2ca54d01afaf5c57)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/coherence_probe.rs (target/debug/deps/coherence_probe-1d53807bc18ea1ad)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/congestion_probe.rs (target/debug/deps/congestion_probe-5bf7ef8400f2de52)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/delivery_probe.rs (target/debug/deps/delivery_probe-99ed104647872446)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/meal_probe.rs (target/debug/deps/meal_probe-a63b1d546b7f1a8d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/persistence_probe.rs (target/debug/deps/persistence_probe-706e2353a8e0aec9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/provisioning_probe.rs (target/debug/deps/provisioning_probe-0634b1464b1be6ca)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/shadow_probe.rs (target/debug/deps/shadow_probe-21dea276f006b051)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/transport_probe.rs (target/debug/deps/transport_probe-b08817f9e4add97b)
+
+running 2 tests
+test tests::disabling_transport_prevents_remote_delivery ... ok
+test tests::fixed_command_cadence_is_independent_of_advance_chunk ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/foundation.rs (target/debug/deps/foundation-07624fe71afd0d9f)
+
+running 10 tests
+test arrival_is_required_and_travel_excludes_work_and_stock_access ... ok
+test distance_changes_arrival_without_whole_tick_rounding ... ok
+test mixed_resources_share_one_load_limit ... ok
+test last_deposit_unit_is_reserved_once_and_cancel_releases_it ... ok
+test individual_edge_capacity_allows_progress_and_is_shared_between_directions ... ok
+test overflow_and_invalid_commands_are_atomic ... ok
+test transfers_preserve_material_and_enforce_shared_carrying_capacity ... ok
+test seeded_initialization_and_identity_are_reproducible ... ok
+test completion_times_and_events_do_not_depend_on_advance_partition ... ok
+test randomized_command_sequences_preserve_invariants ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.55s
+

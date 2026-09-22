@@ -1,0 +1,92 @@
+Event { id: 13132, at: 17700000, agent: Some(0), cause: Some(13090), kind: "Decision", detail: "intent=Wait nutrition_ms=43500000 starvation_ms=0 reason=no locally justified work; remaining near resources is allowed" }
+Event { id: 13384, at: 18060000, agent: Some(0), cause: Some(13342), kind: "Decision", detail: "intent=Eat { batch: 1, quantity: 6 } nutrition_ms=43140000 starvation_ms=0 reason=locally accessible food; exact ownership/ration ceiling" }
+Event { id: 13430, at: 18120000, agent: Some(0), cause: Some(13385), kind: "Decision", detail: "intent=Travel { edge: 1, target: 0, food: false } nutrition_ms=64680000 starvation_ms=0 reason=visit remembered board to claim locally; predicted_ms=14813334 arrival_nutrition_ms=49866666 arrival_starvation_ms=0" }
+Event { id: 13431, at: 18120000, agent: Some(0), cause: Some(13430), kind: "Queued", detail: "edge=1 target=0 remembered_food=false" }
+Event { id: 13476, at: 18180000, agent: Some(0), cause: Some(13431), kind: "Decision", detail: "intent=Wait nutrition_ms=64620000 starvation_ms=0 reason=remain FIFO; visit remembered board to claim locally; predicted_ms=14820000 arrival_starvation_ms=0" }
+Event { id: 15986, at: 21600000, agent: Some(0), cause: Some(15924), kind: "Admitted", detail: "edge=1 from=2 to=1" }
+Event { id: 21226, at: 28800000, agent: Some(0), cause: Some(21176), kind: "Arrived", detail: "node=1 edge=1" }
+Event { id: 21230, at: 28800000, agent: Some(0), cause: Some(21226), kind: "Decision", detail: "intent=Travel { edge: 1, target: 2, food: true } nutrition_ms=54000000 starvation_ms=0 reason=seek remembered food; source=2 observed_at=21600000 believed_quantity=2956 expires_at=172800000; predicted_ms=15362667 arrival_nutrition_ms=38637333 arrival_starvation_ms=0" }
+Event { id: 21231, at: 28800000, agent: Some(0), cause: Some(21230), kind: "Queued", detail: "edge=1 target=2 remembered_food=true" }
+Event { id: 21284, at: 28860000, agent: Some(0), cause: Some(21231), kind: "Decision", detail: "intent=Travel { edge: 0, target: 0, food: false } nutrition_ms=53940000 starvation_ms=0 reason=visit remembered board to claim locally; predicted_ms=8000000 arrival_nutrition_ms=45940000 arrival_starvation_ms=0" }
+Event { id: 21285, at: 28860000, agent: Some(0), cause: Some(21284), kind: "Interrupted", detail: "queue for route; was=Queued { edge: 1, to: 2, joined: 28800000 }" }
+Event { id: 21286, at: 28860000, agent: Some(0), cause: Some(21285), kind: "Queued", detail: "edge=0 target=0 remembered_food=false" }
+Event { id: 21334, at: 28920000, agent: Some(0), cause: Some(21286), kind: "Decision", detail: "intent=Wait nutrition_ms=53880000 starvation_ms=0 reason=remain FIFO; visit remembered board to claim locally; predicted_ms=8000000 arrival_starvation_ms=0" }
+Event { id: 22770, at: 30840000, agent: Some(0), cause: Some(22712), kind: "Decision", detail: "intent=Travel { edge: 1, target: 2, food: true } nutrition_ms=51960000 starvation_ms=0 reason=seek remembered food; source=2 observed_at=21600000 believed_quantity=2956 expires_at=172800000; predicted_ms=15770667 arrival_nutrition_ms=36189333 arrival_starvation_ms=0" }
+Event { id: 22771, at: 30840000, agent: Some(0), cause: Some(22770), kind: "Interrupted", detail: "queue for route; was=Queued { edge: 0, to: 0, joined: 28860000 }" }
+Event { id: 22772, at: 30840000, agent: Some(0), cause: Some(22771), kind: "Queued", detail: "edge=1 target=2 remembered_food=true" }
+Event { id: 22820, at: 30900000, agent: Some(0), cause: Some(22772), kind: "Decision", detail: "intent=Wait nutrition_ms=51900000 starvation_ms=0 reason=remain FIFO; seek remembered food; source=2 observed_at=21600000 believed_quantity=2956 expires_at=172800000; predicted_ms=15782667 arrival_starvation_ms=0" }
+Event { id: 39518, at: 53952000, agent: Some(0), cause: Some(39464), kind: "Admitted", detail: "edge=1 from=1 to=2" }
+Event { id: 52974, at: 67860000, agent: Some(0), cause: Some(44980), kind: "Arrived", detail: "node=2 edge=1" }
+Event { id: 52978, at: 67860000, agent: Some(0), cause: Some(52974), kind: "Decision", detail: "intent=Gather { batch: 0, communal: false } nutrition_ms=14940000 starvation_ms=0 reason=one quantum from observed deposit; communal=false" }
+Event { id: 53116, at: 67865000, agent: Some(0), cause: Some(53112), kind: "Decision", detail: "intent=Eat { batch: 1, quantity: 1 } nutrition_ms=14935000 starvation_ms=0 reason=locally accessible food; exact ownership/ration ceiling" }
+Event { id: 53124, at: 67920000, agent: Some(0), cause: Some(53117), kind: "Decision", detail: "intent=Gather { batch: 0, communal: false } nutrition_ms=18480000 starvation_ms=0 reason=one quantum from observed deposit; communal=false" }
+Event { id: 53266, at: 67925000, agent: Some(0), cause: Some(53262), kind: "Decision", detail: "intent=Eat { batch: 1, quantity: 1 } nutrition_ms=18475000 starvation_ms=0 reason=locally accessible food; exact ownership/ration ceiling" }
+Event { id: 53274, at: 67980000, agent: Some(0), cause: Some(53267), kind: "Decision", detail: "intent=Sleep nutrition_ms=22020000 starvation_ms=0 reason=critical fatigue or ongoing recovery" }
+Event { id: 53345, at: 68040000, agent: Some(0), cause: Some(53344), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68040000 }" }
+Event { id: 53471, at: 68100000, agent: Some(0), cause: Some(53470), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68100000 }" }
+Event { id: 53597, at: 68160000, agent: Some(0), cause: Some(53596), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68160000 }" }
+Event { id: 53671, at: 68220000, agent: Some(0), cause: Some(53670), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68220000 }" }
+Event { id: 53797, at: 68280000, agent: Some(0), cause: Some(53796), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68280000 }" }
+Event { id: 53923, at: 68340000, agent: Some(0), cause: Some(53922), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68340000 }" }
+Event { id: 53996, at: 68400000, agent: Some(0), cause: Some(53924), kind: "Decision", detail: "intent=Gather { batch: 0, communal: false } nutrition_ms=21600000 starvation_ms=0 reason=one quantum from observed deposit; communal=false" }
+Event { id: 53997, at: 68400000, agent: Some(0), cause: Some(53996), kind: "Interrupted", detail: "new gathering action; was=Sleep { until: 68400000 }" }
+Event { id: 54126, at: 68405000, agent: Some(0), cause: Some(54122), kind: "Decision", detail: "intent=Eat { batch: 1, quantity: 1 } nutrition_ms=21595000 starvation_ms=0 reason=locally accessible food; exact ownership/ration ceiling" }
+Event { id: 54134, at: 68460000, agent: Some(0), cause: Some(54127), kind: "Decision", detail: "intent=Sleep nutrition_ms=25140000 starvation_ms=0 reason=critical fatigue or ongoing recovery" }
+Event { id: 54257, at: 68520000, agent: Some(0), cause: Some(54256), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68520000 }" }
+Event { id: 54399, at: 68580000, agent: Some(0), cause: Some(54398), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68580000 }" }
+Event { id: 54517, at: 68640000, agent: Some(0), cause: Some(54516), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68640000 }" }
+Event { id: 54635, at: 68700000, agent: Some(0), cause: Some(54634), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68700000 }" }
+Event { id: 54701, at: 68760000, agent: Some(0), cause: Some(54700), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68760000 }" }
+Event { id: 54819, at: 68820000, agent: Some(0), cause: Some(54818), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68820000 }" }
+Event { id: 54937, at: 68880000, agent: Some(0), cause: Some(54936), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68880000 }" }
+Event { id: 55003, at: 68940000, agent: Some(0), cause: Some(55002), kind: "Interrupted", detail: "sleep; was=Sleep { until: 68940000 }" }
+Event { id: 55121, at: 69000000, agent: Some(0), cause: Some(55120), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69000000 }" }
+Event { id: 55239, at: 69060000, agent: Some(0), cause: Some(55238), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69060000 }" }
+Event { id: 55305, at: 69120000, agent: Some(0), cause: Some(55304), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69120000 }" }
+Event { id: 55423, at: 69180000, agent: Some(0), cause: Some(55422), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69180000 }" }
+Event { id: 55541, at: 69240000, agent: Some(0), cause: Some(55540), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69240000 }" }
+Event { id: 55607, at: 69300000, agent: Some(0), cause: Some(55606), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69300000 }" }
+Event { id: 55725, at: 69360000, agent: Some(0), cause: Some(55724), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69360000 }" }
+Event { id: 55843, at: 69420000, agent: Some(0), cause: Some(55842), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69420000 }" }
+Event { id: 55909, at: 69480000, agent: Some(0), cause: Some(55908), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69480000 }" }
+Event { id: 56027, at: 69540000, agent: Some(0), cause: Some(56026), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69540000 }" }
+Event { id: 56145, at: 69600000, agent: Some(0), cause: Some(56144), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69600000 }" }
+Event { id: 56211, at: 69660000, agent: Some(0), cause: Some(56210), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69660000 }" }
+Event { id: 56329, at: 69720000, agent: Some(0), cause: Some(56328), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69720000 }" }
+Event { id: 56447, at: 69780000, agent: Some(0), cause: Some(56446), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69780000 }" }
+Event { id: 56513, at: 69840000, agent: Some(0), cause: Some(56512), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69840000 }" }
+Event { id: 56631, at: 69900000, agent: Some(0), cause: Some(56630), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69900000 }" }
+Event { id: 56749, at: 69960000, agent: Some(0), cause: Some(56748), kind: "Interrupted", detail: "sleep; was=Sleep { until: 69960000 }" }
+Event { id: 56815, at: 70020000, agent: Some(0), cause: Some(56814), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70020000 }" }
+Event { id: 56933, at: 70080000, agent: Some(0), cause: Some(56932), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70080000 }" }
+Event { id: 57051, at: 70140000, agent: Some(0), cause: Some(57050), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70140000 }" }
+Event { id: 57117, at: 70200000, agent: Some(0), cause: Some(57116), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70200000 }" }
+Event { id: 57235, at: 70260000, agent: Some(0), cause: Some(57234), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70260000 }" }
+Event { id: 57353, at: 70320000, agent: Some(0), cause: Some(57352), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70320000 }" }
+Event { id: 57419, at: 70380000, agent: Some(0), cause: Some(57418), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70380000 }" }
+Event { id: 57537, at: 70440000, agent: Some(0), cause: Some(57536), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70440000 }" }
+Event { id: 57655, at: 70500000, agent: Some(0), cause: Some(57654), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70500000 }" }
+Event { id: 57721, at: 70560000, agent: Some(0), cause: Some(57720), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70560000 }" }
+Event { id: 57839, at: 70620000, agent: Some(0), cause: Some(57838), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70620000 }" }
+Event { id: 57957, at: 70680000, agent: Some(0), cause: Some(57956), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70680000 }" }
+Event { id: 58023, at: 70740000, agent: Some(0), cause: Some(58022), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70740000 }" }
+Event { id: 58141, at: 70800000, agent: Some(0), cause: Some(58140), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70800000 }" }
+Event { id: 58259, at: 70860000, agent: Some(0), cause: Some(58258), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70860000 }" }
+Event { id: 58325, at: 70920000, agent: Some(0), cause: Some(58324), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70920000 }" }
+Event { id: 58443, at: 70980000, agent: Some(0), cause: Some(58442), kind: "Interrupted", detail: "sleep; was=Sleep { until: 70980000 }" }
+Event { id: 58561, at: 71040000, agent: Some(0), cause: Some(58560), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71040000 }" }
+Event { id: 58627, at: 71100000, agent: Some(0), cause: Some(58626), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71100000 }" }
+Event { id: 58745, at: 71160000, agent: Some(0), cause: Some(58744), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71160000 }" }
+Event { id: 58863, at: 71220000, agent: Some(0), cause: Some(58862), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71220000 }" }
+Event { id: 58929, at: 71280000, agent: Some(0), cause: Some(58928), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71280000 }" }
+Event { id: 59047, at: 71340000, agent: Some(0), cause: Some(59046), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71340000 }" }
+Event { id: 59165, at: 71400000, agent: Some(0), cause: Some(59164), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71400000 }" }
+Event { id: 59231, at: 71460000, agent: Some(0), cause: Some(59230), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71460000 }" }
+Event { id: 59349, at: 71520000, agent: Some(0), cause: Some(59348), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71520000 }" }
+Event { id: 59467, at: 71580000, agent: Some(0), cause: Some(59466), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71580000 }" }
+Event { id: 59533, at: 71640000, agent: Some(0), cause: Some(59532), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71640000 }" }
+Event { id: 59651, at: 71700000, agent: Some(0), cause: Some(59650), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71700000 }" }
+Event { id: 59769, at: 71760000, agent: Some(0), cause: Some(59768), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71760000 }" }
+Event { id: 59835, at: 71820000, agent: Some(0), cause: Some(59834), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71820000 }" }
+Event { id: 59953, at: 71880000, agent: Some(0), cause: Some(59952), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71880000 }" }
+Event { id: 60071, at: 71940000, agent: Some(0), cause: Some(60070), kind: "Interrupted", detail: "sleep; was=Sleep { until: 71940000 }" }
