@@ -197,6 +197,75 @@ mod mismatch_tests {
         assert_eq!(aggregate, 26667);
         assert_eq!(w.now, 26670);
     }
+    fn legacy_inputs() -> (Observation, PolicyMemory) {
+        let w = acceptance::fixture("known_source", 0, false).unwrap();
+        let o = w.observe(0).unwrap();
+        let mut m = w.agents[0].memory.clone();
+        m.nodes.insert(0, o.local.clone().unwrap());
+        (o, m)
+    }
+    #[test]
+    fn legacy_work_counts_free_slots_instead_of_claim_quantity() {
+        let (o, mut m) = legacy_inputs();
+        m.nodes
+            .get_mut(&0)
+            .unwrap()
+            .board
+            .as_mut()
+            .unwrap()
+            .quantity = 1;
+        let (_, audit) = policy::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::Current);
+        let c = &audit.candidates[0];
+        let tape = plan::tape(c, &m).unwrap();
+        let k = oracle::belief(&o, &m, c, &tape);
+        let r = plan::predict(&o, &m, c, &tape);
+        let p = c.plan.as_ref().unwrap();
+        assert_eq!(k.failure, "NONE");
+        assert_eq!(k.elapsed, r.body.elapsed);
+        assert!(p.elapsed > k.elapsed);
+        println!(
+            "FORECAST_CONTRACT free_slots: predicted_ms={} kernel_ms={} delivered={}",
+            p.elapsed, k.elapsed, k.delivered
+        );
+    }
+    #[test]
+    fn legacy_loose_cargo_forecast_invents_gathering_work() {
+        let (o, mut m) = legacy_inputs();
+        m.nodes.get_mut(&2).unwrap().food[0].holder = Holder::Loose(2);
+        let (_, audit) = policy::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::Current);
+        let c = &audit.candidates[0];
+        let tape = plan::tape(c, &m).unwrap();
+        let k = oracle::belief(&o, &m, c, &tape);
+        let r = plan::predict(&o, &m, c, &tape);
+        let p = c.plan.as_ref().unwrap();
+        assert_eq!(k.failure, "NONE");
+        assert_eq!(k.elapsed, r.body.elapsed);
+        assert!(p.elapsed > k.elapsed);
+        println!(
+            "FORECAST_CONTRACT loose_loading: predicted_ms={} kernel_ms={} delivered={}",
+            p.elapsed, k.elapsed, k.delivered
+        );
+    }
+    #[test]
+    fn legacy_quantity_forecast_ignores_observed_reserved_stock() {
+        let (o, mut m) = legacy_inputs();
+        let food = &mut m.nodes.get_mut(&2).unwrap().food[0];
+        food.quantity = 1;
+        food.available = 0;
+        let (_, audit) = policy::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::Current);
+        let c = &audit.candidates[0];
+        let tape = plan::tape(c, &m).unwrap();
+        let k = oracle::belief(&o, &m, c, &tape);
+        let r = plan::predict(&o, &m, c, &tape);
+        assert_eq!(c.plan.as_ref().unwrap().delivered, 1);
+        assert_eq!(r.failure, Some("SOURCE_UNAVAILABLE"));
+        assert_ne!(k.failure, "NONE");
+        assert_eq!(k.delivered, 0);
+        println!(
+            "FORECAST_CONTRACT reserved_stock: predicted_delivery=1 kernel_delivery=0 kernel_refusal={}",
+            k.failure
+        );
+    }
     #[test]
     fn expiry_interrupts_reserved_gather_without_refresh_or_material_loss() {
         let mut w = World::new(Config {
