@@ -861,6 +861,7 @@ impl World {
                     .nodes
                     .insert(local.node, local.clone());
             }
+            let rng_before = self.agents[id].rng;
             let a = &mut self.agents[id];
             if self.transport_research.audit_forecasts {
                 let (d, audit) = policy::audit_meals(
@@ -889,13 +890,18 @@ impl World {
                 policy::decide_variant(&o, &a.memory, &mut a.rng, self.config.diagnostic_policy)
             };
             self.diagnostics.observe(&o, &a.memory, &decision);
+            if self.shadow.enabled {
+                let mut journal = std::mem::take(&mut self.shadow);
+                journal.observe(self, &o, &decision, rng_before);
+                self.shadow = journal;
+            }
             if let (Action::Queued { edge, .. }, Some((target, true))) = (&o.action, o.goal) {
                 let leaving = match decision.intent {
                     Intent::Travel { edge: next, .. } => next != *edge,
                     Intent::Eat { .. } | Intent::Sleep | Intent::CancelJob => true,
                     _ => false,
                 };
-                if leaving && policy::goal_is_fatal(&o, &a.memory, target) {
+                if leaving && policy::goal_is_fatal(&o, &self.agents[id].memory, target) {
                     self.metrics.infeasible_abandons += 1;
                 }
             }

@@ -7,6 +7,7 @@ mod goods;
 pub mod persistence;
 mod policy;
 mod runtime;
+pub mod shadow;
 use goods::Goods;
 pub use goods::{Batch, Holder, Material, Owner};
 pub use policy::{Decision, Intent, PolicyMemory};
@@ -270,6 +271,7 @@ pub struct World {
     pub(crate) acceptance: acceptance::Journal,
     pub(crate) persistence: persistence::Journal,
     pub(crate) transport_research: congestion::Instrument,
+    pub(crate) shadow: shadow::Journal,
     request_backlog: u64,
     gather_communal: BTreeMap<usize, bool>,
     initialized: bool,
@@ -364,6 +366,7 @@ impl World {
             vec![]
         };
         let mut w = Self {
+            shadow: shadow::Journal::default(),
             request_backlog: config.initial_request,
             diagnostics: decomposition::Diagnostics::default(),
             acceptance: acceptance::Journal::default(),
@@ -482,6 +485,7 @@ impl World {
             kind: kind.into(),
             detail,
         };
+        self.shadow.event(&e, &self.agents, &self.goods);
         self.diagnostics.event(&e);
         if self.config.persistence.is_some() {
             self.persistence.event(&e, &self.agents);

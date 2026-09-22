@@ -5,7 +5,7 @@ use super::{
     performance,
 };
 use std::collections::{BTreeMap, BTreeSet};
-mod forecast;
+pub(crate) mod forecast;
 mod intention;
 pub(crate) use forecast::{AcceptanceAudit, ForecastMode};
 pub(crate) use intention::decide_persistent;
@@ -72,12 +72,12 @@ fn random(rng: &mut u64) -> u64 {
     z ^ (z >> 31)
 }
 #[derive(Clone, Debug)]
-struct Route {
-    first: usize,
-    time: Time,
-    starvation: Time,
-    nutrition: Time,
-    steps: Vec<forecast::TravelStep>,
+pub(crate) struct Route {
+    pub(crate) first: usize,
+    pub(crate) time: Time,
+    pub(crate) starvation: Time,
+    pub(crate) nutrition: Time,
+    pub(crate) steps: Vec<forecast::TravelStep>,
 }
 fn after(o: &Observation, elapsed: Time) -> (Time, Time) {
     (
@@ -90,7 +90,7 @@ fn after(o: &Observation, elapsed: Time) -> (Time, Time) {
     )
 }
 // Estimate from remembered edge occupancy and current personal state; no future truth.
-fn route(o: &Observation, m: &PolicyMemory, target: usize) -> Option<Route> {
+pub(crate) fn route(o: &Observation, m: &PolicyMemory, target: usize) -> Option<Route> {
     let Location::Node(start) = o.location else {
         return None;
     };
