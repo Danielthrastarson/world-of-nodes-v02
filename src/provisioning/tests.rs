@@ -326,11 +326,11 @@ fn live_advance_partition_does_not_change_state_or_events() {
     };
     let mut a = World::new(cfg).unwrap();
     let mut b = a.clone();
-    a.advance_to(8 * HOUR).unwrap();
-    for t in (0..8 * HOUR).step_by(137_137) {
+    a.advance_to(72 * HOUR).unwrap();
+    for t in (0..72 * HOUR).step_by(137_137) {
         b.advance_to(t).unwrap();
     }
-    b.advance_to(8 * HOUR).unwrap();
+    b.advance_to(72 * HOUR).unwrap();
     assert_eq!(a.agents, b.agents);
     assert_eq!(a.goods, b.goods);
     assert_eq!(a.metrics, b.metrics);
@@ -627,4 +627,105 @@ fn stale_depletion_fixture_changes_truth_without_refreshing_absent_memories() {
     assert_eq!(result.world.goods.initial[0], 6);
     assert_eq!(result.world.goods.consumed, 6);
     result.world.audit().unwrap();
+}
+#[test]
+fn accepted_job_searches_other_sources_when_local_stock_is_at_destination() {
+    let mut w = manual(1);
+    w.goods
+        .move_part(0, 1, Owner::Commons(0), Holder::Commons(0));
+    w.boards[0].quantity = 2;
+    act(
+        &mut w,
+        0,
+        Intent::Claim {
+            board: 0,
+            quantity: 2,
+        },
+    );
+    let mut memory = PolicyMemory::default();
+    for node in 0..3 {
+        memory.nodes.insert(node, w.node_view(node));
+    }
+    let d = policy::decide(&w.observe(0).unwrap(), &memory, &mut 4);
+    assert!(
+        matches!(d.intent, Intent::Travel { target: 2, .. }),
+        "{d:?}"
+    );
+}
+#[test]
+fn physical_return_trip_can_spoil_communal_cargo_mid_edge() {
+    let mut w = manual(1);
+    w.goods.batches[0].spoil_after = 8 * HOUR;
+    w.boards[0].quantity = 10;
+    act(
+        &mut w,
+        0,
+        Intent::Claim {
+            board: 0,
+            quantity: 10,
+        },
+    );
+    act(
+        &mut w,
+        0,
+        Intent::Travel {
+            edge: 0,
+            target: 2,
+            food: true,
+        },
+    );
+    w.advance_to(2 * HOUR).unwrap();
+    act(
+        &mut w,
+        0,
+        Intent::Travel {
+            edge: 1,
+            target: 2,
+            food: true,
+        },
+    );
+    w.advance_to(4 * HOUR).unwrap();
+    assert_eq!(w.agents[0].location, Location::Node(2));
+    for _ in 0..10 {
+        act(
+            &mut w,
+            0,
+            Intent::Gather {
+                batch: 0,
+                communal: true,
+            },
+        );
+        w.advance_to(w.now + 2000).unwrap();
+    }
+    act(
+        &mut w,
+        0,
+        Intent::Travel {
+            edge: 1,
+            target: 0,
+            food: false,
+        },
+    );
+    w.advance_to(7 * HOUR).unwrap();
+    assert_eq!(w.agents[0].location, Location::Node(1));
+    act(
+        &mut w,
+        0,
+        Intent::Travel {
+            edge: 0,
+            target: 0,
+            food: false,
+        },
+    );
+    w.advance_to(8 * HOUR).unwrap();
+    assert_eq!(w.agents[0].action, Action::Travel);
+    assert_eq!(w.metrics.spoiled_transit, 10);
+    assert!(
+        w.goods
+            .batches
+            .iter()
+            .filter(|b| b.holder == Holder::Agent(0) && b.quantity > 0)
+            .all(|b| b.owner == Owner::Commons(0) && b.material == Material::Waste)
+    );
+    w.audit().unwrap();
 }

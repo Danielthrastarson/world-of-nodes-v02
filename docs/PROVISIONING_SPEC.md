@@ -31,3 +31,17 @@ FIFO keys are (join time, AgentId), shared both directions, with timestamp-batch
 Retain the old transport kernel and its evidence as a frozen legacy baseline. New provisioning is versioned separately within the Rust crate. Preserve old invariants; compare intentional FIFO changes separately, never overwrite old CSVs.
 
 Run seeds 0–29 for reference, prior memory, self-only, no transport, scarcity, stale information, unequal access, contested demand, reversed processing, congestion, distance, spoilage stress and near/fresh versus far/old food. Publish all requested metrics, raw results, configuration and source hashes, paired effects, failed cases and actual causal traces. No minimum survival is an acceptance criterion. Report no institutional effect and dead mechanics without rebalancing.
+
+## Disclosed implementation choices (P1)
+
+The policy uses a six-quantum personal buffer and requires at least six predicted nutrition-hours remaining before volunteering for a complete request trip. These are explicit heuristics, not survival guarantees. Request urgency is `1 + min(recorded_demand, 600)/600`; freshness weight is remaining shelf life after estimated delivery divided by 48h, capped at one. Source-memory confidence uses the locked 12h decay. Policies only claim requests while physically at their board. A visit to a remembered board may prove unnecessary or fail.
+
+Adjacent-edge observations expose only the queue at the observer's own endpoint. In-flight and opposite-end traffic is unobserved; estimates use nominal service time and remembered visible queue length. Equal-time admission is by AgentId. Seed streams affect equivalent choices, not quotas. No general face-to-face information exchange exists: personal discoveries are not automatically broadcast.
+
+Board demand is refreshed from cooperating people physically present (their public local shortage signals) only when a local actor observes the board. It is the sum of deficits to 12h among people below 8h, minus their edible personal supplies and accessible communal stock. A deserted board retains recorded demand. Lease expiry is a deterministic known deadline, not a remote report. Jobs/claims never reserve distant matter.
+
+Eat/pickup/drop/claim are instantaneous local actions; sleep uses one-minute atomic intervals. Sleep continues toward fatigue 4h unless interrupted. Gathering one quantum uses the kernel's 2 seconds of unimpaired work. Food metabolism does not depend on work. Carried waste occupies capacity until dropped at a node. Node-local communal property of a dead carrier remains accessible; personal dead property is not.
+
+The prior-information control injects documented t=0 observations as an explicit information-only initial-condition intervention; it does not claim to simulate prehistory. The stale-depletion fixture places actor 49 at F with six quanta, seeds t=0 source memories, then records actual one-quantum gathering and consumption by actor 49 during a 12-second controlled preparation period before autonomous decisions. It is a targeted mechanism fixture, not the 3000-quantum reference.
+
+At a coincident event: integrate physiology/progress, settle arrivals, spoil expired food, process deaths, finish valid gathering/sleep, expire board leases, observe/decide, then admit queues. A death or expiry cannot be reversed by a same-time meal. Caller advance partition is independent of the fixed decision cadence.

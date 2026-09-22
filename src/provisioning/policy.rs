@@ -277,7 +277,19 @@ fn eat(o: &Observation) -> Option<Decision> {
 }
 fn acquire(o: &Observation, s: &Source, communal: bool) -> Decision {
     if !matches!(o.location,Location::Node(n) if n==s.node) {
-        return toward(o, &s.route, s.node, true, "seek remembered food");
+        return toward(
+            o,
+            &s.route,
+            s.node,
+            true,
+            &format!(
+                "seek remembered food; source={} observed_at={} believed_quantity={} expires_at={}",
+                s.node,
+                o.now - s.age,
+                s.food.quantity,
+                s.food.expires_at
+            ),
+        );
     }
     if o.load >= o.capacity {
         return choice(
@@ -379,7 +391,9 @@ pub fn decide(o: &Observation, m: &PolicyMemory, rng: &mut u64) -> Decision {
         }
         if job.acquired < job.target
             && o.load < o.capacity
-            && let Some(s) = feasible.filter(|s| s.node != job.destination)
+            && let Some(s) = known
+                .iter()
+                .find(|s| s.route.starvation < 24 * HOUR && s.node != job.destination)
         {
             return acquire(o, s, true);
         }

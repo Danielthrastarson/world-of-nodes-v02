@@ -450,6 +450,7 @@ impl World {
     }
     fn integrate(&mut self, to: Time) {
         let dt = to - self.now;
+        let mut physiology_events = vec![];
         for b in &self.boards {
             if b.quantity > 0 {
                 self.metrics.request_ms += dt as u128;
@@ -483,6 +484,24 @@ impl World {
             {
                 self.wake.insert(id);
             }
+            let new_rate = performance(a.nutrition, a.fatigue);
+            if rate != new_rate && !matches!(a.action, Action::Sleep { .. }) {
+                physiology_events.push((
+                    id,
+                    "PerformanceChanged",
+                    format!(
+                        "old_ppm={rate} new_ppm={new_rate} nutrition_ms={} fatigue_ms={}",
+                        a.nutrition, a.fatigue
+                    ),
+                ));
+            }
+            if old_n > 0 && a.nutrition == 0 {
+                physiology_events.push((
+                    id,
+                    "StarvationStarted",
+                    format!("continuous_starvation_ms={}", a.starvation),
+                ));
+            }
             match &mut a.action {
                 Action::Travel => {
                     if let Location::Edge { edge, progress, .. } = &mut a.location {
@@ -509,6 +528,9 @@ impl World {
             }
         }
         self.now = to;
+        for (id, kind, detail) in physiology_events {
+            self.log(Some(id), kind, detail);
+        }
     }
     fn boundary(&mut self) {
         // Arrival first determines exact location at a coincident death; no decision yet.
