@@ -183,12 +183,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     )?;
     writeln!(jobs, "scenario\tseed\tjob_record")?;
     for (name, variant) in [
-        ("current", DiagnosticPolicy::Current),
+        ("current", DiagnosticPolicy::LegacyForecast),
         ("queue", DiagnosticPolicy::QueueCommitment),
         ("sleep", DiagnosticPolicy::SleepCommitment),
         ("job", DiagnosticPolicy::JobCommitment),
-        ("reference", DiagnosticPolicy::Current),
-        ("contested", DiagnosticPolicy::Current),
+        ("reference", DiagnosticPolicy::LegacyForecast),
+        ("contested", DiagnosticPolicy::LegacyForecast),
     ] {
         for seed in 0..seeds {
             let trace = seed == 0 || (name == "contested" && seed == 5);

@@ -32,7 +32,9 @@ pub struct Run {
     pub parameters: Config,
 }
 pub fn configuration(name: &str, seed: u64, trace: bool) -> Result<Config, String> {
+    // Published P1 matrix is a historical reproduction entry point.
     let mut c = Config {
+        diagnostic_policy: DiagnosticPolicy::LegacyForecast,
         seed,
         trace,
         ..Config::default()

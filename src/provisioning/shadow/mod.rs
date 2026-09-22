@@ -214,7 +214,7 @@ mod mismatch_tests {
             .as_mut()
             .unwrap()
             .quantity = 1;
-        let (_, audit) = policy::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::Current);
+        let (_, audit) = policy::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::LegacyForecast);
         let c = &audit.candidates[0];
         let tape = plan::tape(c, &m).unwrap();
         let k = oracle::belief(&o, &m, c, &tape);
@@ -232,7 +232,7 @@ mod mismatch_tests {
     fn legacy_loose_cargo_forecast_invents_gathering_work() {
         let (o, mut m) = legacy_inputs();
         m.nodes.get_mut(&2).unwrap().food[0].holder = Holder::Loose(2);
-        let (_, audit) = policy::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::Current);
+        let (_, audit) = policy::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::LegacyForecast);
         let c = &audit.candidates[0];
         let tape = plan::tape(c, &m).unwrap();
         let k = oracle::belief(&o, &m, c, &tape);
@@ -252,7 +252,7 @@ mod mismatch_tests {
         let food = &mut m.nodes.get_mut(&2).unwrap().food[0];
         food.quantity = 1;
         food.available = 0;
-        let (_, audit) = policy::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::Current);
+        let (_, audit) = policy::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::LegacyForecast);
         let c = &audit.candidates[0];
         let tape = plan::tape(c, &m).unwrap();
         let k = oracle::belief(&o, &m, c, &tape);

@@ -8,6 +8,7 @@ use world_of_nodes::provisioning::{coherence, decomposition::COUNTERS, *};
 fn fixture(name: &str, seed: u64) -> Result<World, String> {
     match name {
         "reference" => World::new(Config {
+            diagnostic_policy: DiagnosticPolicy::LegacyForecast,
             seed,
             ..Config::default()
         }),

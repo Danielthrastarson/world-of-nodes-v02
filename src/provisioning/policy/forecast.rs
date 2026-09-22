@@ -10,17 +10,23 @@ pub(crate) enum ForecastMode {
     MealsSelfExcluded,
     Coherent,
     CoherentMeals,
+    ConditionalMeals,
 }
 impl ForecastMode {
     pub fn coherent(self) -> bool {
-        matches!(self, Self::Coherent | Self::CoherentMeals)
+        matches!(
+            self,
+            Self::Coherent | Self::CoherentMeals | Self::ConditionalMeals
+        )
     }
     pub fn margin(self) -> Time {
         match self {
             Self::Legacy(n) => n,
-            Self::Meals | Self::MealsSelfExcluded | Self::Coherent | Self::CoherentMeals => {
-                6 * HOUR
-            }
+            Self::Meals
+            | Self::MealsSelfExcluded
+            | Self::Coherent
+            | Self::CoherentMeals
+            | Self::ConditionalMeals => 6 * HOUR,
         }
     }
 }
@@ -258,6 +264,9 @@ pub(super) fn evaluate(
                     q,
                     mode == ForecastMode::CoherentMeals,
                 )),
+                ForecastMode::ConditionalMeals => {
+                    Some(coherent::predict_conditional(o, m, board.node, source, q))
+                }
                 ForecastMode::Legacy(_) => legacy(o, m, board.node, source, &to_board, q),
                 ForecastMode::Meals | ForecastMode::MealsSelfExcluded => {
                     let corrected = mode == ForecastMode::MealsSelfExcluded;
@@ -690,7 +699,7 @@ mod tests {
     #[test]
     fn zero_margin_changes_only_the_no_meal_threshold_and_never_allows_fatal_plan() {
         let (_, o, m) = inputs();
-        let (_, a) = super::super::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::Current);
+        let (_, a) = super::super::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::LegacyForecast);
         let (d, b) = super::super::decide_audited(&o, &m, &mut 0, DiagnosticPolicy::ZeroMargin);
         let p = a.candidates[0].plan.as_ref().unwrap();
         let q = b.candidates[0].plan.as_ref().unwrap();

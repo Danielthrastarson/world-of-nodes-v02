@@ -873,7 +873,12 @@ fn audited_route(
     m: &PolicyMemory,
     target: usize,
 ) -> Option<policy::Route> {
-    if w.config.diagnostic_policy == DiagnosticPolicy::CoherentForecast {
+    if matches!(
+        w.config.diagnostic_policy,
+        DiagnosticPolicy::Current
+            | DiagnosticPolicy::CoherentForecast
+            | DiagnosticPolicy::ConditionalMeals
+    ) {
         policy::coherent::route(o, m, target)
     } else {
         policy::route(o, m, target)

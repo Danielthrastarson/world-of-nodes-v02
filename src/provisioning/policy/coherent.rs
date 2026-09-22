@@ -216,6 +216,7 @@ struct Simulation<'a> {
     load: u64,
     plan: Plan,
     meals: bool,
+    historical_cadence: bool,
 }
 impl Simulation<'_> {
     fn now(&self) -> Time {
@@ -232,9 +233,9 @@ impl Simulation<'_> {
         }
     }
     fn cadence(&mut self) {
-        if !self.meals {
+        if !self.historical_cadence {
             return;
-        } // Legacy no-meal plan had no tick pauses.
+        } // Retained solely for historical corrected-meal audit replay.
         let dt = self.initial.decision_interval.max(1)
             - self.now().rem_euclid(self.initial.decision_interval.max(1));
         self.plan.steps.push(format!(
@@ -312,6 +313,30 @@ pub(super) fn predict(
     q: u64,
     meals: bool,
 ) -> Plan {
+    simulate(o, m, board, source, q, meals, meals)
+}
+
+pub(super) fn predict_conditional(
+    o: &Observation,
+    m: &PolicyMemory,
+    board: usize,
+    source: &Source,
+    q: u64,
+) -> Plan {
+    simulate(o, m, board, source, q, true, false)
+}
+
+// Both live arms use the same immediate-action timing. Meals add only a legal
+// Eat action; policy reevaluation remains outside this conditional physical tape.
+fn simulate(
+    o: &Observation,
+    m: &PolicyMemory,
+    board: usize,
+    source: &Source,
+    q: u64,
+    meals: bool,
+    historical_cadence: bool,
+) -> Plan {
     let (initial, evidence) = evidence(o, m);
     let mut sim = Simulation {
         initial: &initial,
@@ -322,6 +347,7 @@ pub(super) fn predict(
         load: initial.load,
         plan: Plan::default(),
         meals,
+        historical_cadence,
     };
     sim.travel(board, "to_board");
     if sim.plan.failure.is_none() {

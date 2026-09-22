@@ -2,7 +2,7 @@
 
 **The simulation is the source of the graphics.** A causal kingdom simulation with primitive rendering of real agents, stocks, movement, work, and observed state.
 
-Current scope: **local provisioning under scarcity**—hunger, sleep, starvation, physical spoilage, local memory, communal requests, autonomous decisions, and FIFO transport. No farming, construction, trade, safety, graphics, or physics in this increment.
+Current work follows the [gated foundation roadmap](docs/ROADMAP.md): F0 forecast/decision coherence, then F1 geography/generalization. The six tested mechanical forecast corrections are adopted; conditional meal planning remains research-only. Earlier reports below describe their original historical policies. No later systems are implemented before their gates pass.
 
 - [Current design contract](WORLD_OF_NODES_HANDOFF.md)
 - [Locked provisioning specification](docs/PROVISIONING_SPEC.md)
@@ -16,7 +16,7 @@ Current scope: **local provisioning under scarcity**—hunger, sleep, starvation
 
 The 2026-09-22 design change defers the earlier V0.2 military/security work until settlement and transport foundations are validated. It does not establish that the security/economy loop passed.
 
-Run the new model with `cargo run --offline --release --bin provisioning_probe -- reference 0`. Run checks with `cargo test --offline`. The original `transport_probe` and its evidence remain preserved as a legacy baseline. The new provisioning model is versioned separately in the same crate.
+Reproduce the historical P1 model with `cargo run --offline --release --bin provisioning_probe -- reference 0`. New `World::new(Config::default())` uses the adopted coherent estimator. Run checks with `cargo test --offline`. The original `transport_probe` and its evidence remain preserved as a legacy baseline. The new provisioning model is versioned separately in the same crate.
 
 The reference produces migration toward food, 28 survivors at 72h, and zero communal deliveries. All those survivors have zero nutrition at 72h. This is a measured failure of communal provisioning, not a validated sustainable settlement.
 

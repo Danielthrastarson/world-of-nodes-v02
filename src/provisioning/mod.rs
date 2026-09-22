@@ -5,6 +5,7 @@ pub mod congestion;
 pub mod decomposition;
 pub mod experiment;
 mod goods;
+pub mod meals;
 pub mod persistence;
 mod policy;
 mod runtime;
@@ -31,6 +32,10 @@ pub struct Edge {
 pub enum DiagnosticPolicy {
     #[default]
     Current,
+    /// Explicit historical estimator; never the normal policy.
+    LegacyForecast,
+    /// Research only: corrected mechanics with conditional legal meals.
+    ConditionalMeals,
     QueueCommitment,
     SleepCommitment,
     JobCommitment,
@@ -275,6 +280,7 @@ pub struct World {
     pub(crate) transport_research: congestion::Instrument,
     pub(crate) shadow: shadow::Journal,
     pub(crate) coherence: coherence::Journal,
+    pub(crate) meals: meals::Journal,
     request_backlog: u64,
     gather_communal: BTreeMap<usize, bool>,
     initialized: bool,
@@ -371,6 +377,7 @@ impl World {
         let mut w = Self {
             shadow: shadow::Journal::default(),
             coherence: coherence::Journal::default(),
+            meals: meals::Journal::default(),
             request_backlog: config.initial_request,
             diagnostics: decomposition::Diagnostics::default(),
             acceptance: acceptance::Journal::default(),
@@ -491,6 +498,7 @@ impl World {
         };
         self.shadow.event(&e, &self.agents, &self.goods);
         self.coherence.event(&e, &self.agents);
+        self.meals.event(&e, &self.agents);
         self.diagnostics.event(&e);
         if self.config.persistence.is_some() {
             self.persistence.event(&e, &self.agents);

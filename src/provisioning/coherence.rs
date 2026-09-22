@@ -4,6 +4,12 @@ use policy::forecast::Candidate;
 use shadow::{oracle, plan};
 
 pub fn static_validation() -> Result<Vec<String>, String> {
+    validation(false)
+}
+pub fn conditional_meal_validation() -> Result<Vec<String>, String> {
+    validation(true)
+}
+fn validation(meals: bool) -> Result<Vec<String>, String> {
     let w = acceptance::fixture("known_source", 0, false)?;
     let base = w.observe(0).ok_or("missing agent")?;
     let mut memory = w.agents[0].memory.clone();
@@ -41,7 +47,11 @@ pub fn static_validation() -> Result<Vec<String>, String> {
                     m.nodes.get_mut(&0).unwrap().edges[0].queued = queued;
                     // Evaluate candidate even when the unchanged priority hierarchy would
                     // choose immediate survival first; this is a static model contract.
-                    let audit = policy::coherent_contract(&o, &m, false);
+                    let audit = if meals {
+                        policy::conditional_contract(&o, &m)
+                    } else {
+                        policy::coherent_contract(&o, &m, false)
+                    };
                     for c in &audit.candidates {
                         if let Some(row) = validate_candidate(&o, &m, c)? {
                             rows.push(format!("{name},{n},{f},{queued},{row}"));
@@ -115,6 +125,10 @@ fn validate_candidate(
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn conditional_meals_match_static_kernel_matrix() {
+        assert_eq!(conditional_meal_validation().unwrap().len(), 540);
+    }
     #[test]
     fn corrected_forecast_matches_static_kernel_matrix() {
         let rows = static_validation().unwrap();
@@ -234,7 +248,7 @@ impl Journal {
                 w.config.persistence == Some(persistence::Arm::ForecastCorrected),
             )
         } else {
-            policy::decide_audited(o, m, &mut rng.clone(), DiagnosticPolicy::Current)
+            policy::decide_audited(o, m, &mut rng.clone(), DiagnosticPolicy::LegacyForecast)
         };
         let (new, na) = policy::audit_coherent(o, m, &mut rng.clone(), meals);
         let self_only = if meals {
@@ -258,7 +272,10 @@ impl Journal {
                 self.count("self_only_intent_change_retained_by_all");
             }
         }
-        let actual = if w.config.diagnostic_policy == DiagnosticPolicy::CoherentForecast {
+        let actual = if matches!(
+            w.config.diagnostic_policy,
+            DiagnosticPolicy::Current | DiagnosticPolicy::CoherentForecast
+        ) {
             &na
         } else {
             &oa

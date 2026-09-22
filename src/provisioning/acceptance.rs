@@ -74,7 +74,7 @@ impl Journal {
 pub const JOURNAL_HEADER: &str = "time_ms\tagent\tlocation\tlocal_request\tstage\tprimary_gate\tmargin_ms\tnutrition_ms\tfatigue_ms\tstarvation_ms\tintent\taudit";
 pub fn fixture(name: &str, seed: u64, trace: bool) -> Result<World, String> {
     let variant = match name {
-        "current" | "known_source" => DiagnosticPolicy::Current,
+        "current" | "known_source" => DiagnosticPolicy::LegacyForecast,
         "meal_aware" => DiagnosticPolicy::MealAware,
         "zero_margin" => DiagnosticPolicy::ZeroMargin,
         "three_hour_margin" => DiagnosticPolicy::ThreeHourMargin,

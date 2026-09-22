@@ -2,6 +2,17 @@
 
 Updated 2026-09-22 following the owner's design change.
 
+## Current authorization — foundation roadmap
+
+The owner now authorizes [the gated foundation roadmap](docs/ROADMAP.md), starting
+with F0 mechanical adoption and conditional-meal research, then F1 geography after
+F0 passes. Earlier “no expansion” statements below describe historical study scopes;
+they do not override this newer authorization. Preserve all published evidence.
+Only the six mechanical corrections become normal prediction. Conditional meals,
+resumable/committed intentions and new institutions are not default behavior.
+Proceed through passed gates; stop expansion at a failed foundation or an owner-level
+institution/game-design decision. See [the registered F0 study](docs/CONDITIONAL_MEALS.md).
+
 ## Authority and scope
 
 This document supersedes the earlier requirement to implement V0.2 security first. The long-term first slice is a single emergent settlement. The immediate authorized increment is now [local provisioning under scarcity](docs/PROVISIONING_SPEC.md), whose locked rules take precedence for this work. Farming, construction, safety, rendering and later systems remain deferred. Military pressure follows settlement, transport, and economic validation. This is a scope change, not evidence that the security loop passed and not a claim of V0.3 completion.

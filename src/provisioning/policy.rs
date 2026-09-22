@@ -357,7 +357,7 @@ pub fn decide(o: &Observation, m: &PolicyMemory, rng: &mut u64) -> Decision {
         o,
         m,
         rng,
-        ForecastMode::Legacy(6 * HOUR),
+        ForecastMode::Coherent,
         &mut AcceptanceAudit::disabled(),
         false,
     )
@@ -572,14 +572,7 @@ pub fn decide_variant(
         }
     }
     match variant {
-        DiagnosticPolicy::CoherentForecast => decide_impl(
-            o,
-            m,
-            rng,
-            ForecastMode::Coherent,
-            &mut AcceptanceAudit::disabled(),
-            false,
-        ),
+        DiagnosticPolicy::Current | DiagnosticPolicy::CoherentForecast => decide(o, m, rng),
         DiagnosticPolicy::MealAware => decide_impl(
             o,
             m,
@@ -604,7 +597,22 @@ pub fn decide_variant(
             &mut AcceptanceAudit::disabled(),
             false,
         ),
-        _ => decide(o, m, rng),
+        DiagnosticPolicy::ConditionalMeals => decide_impl(
+            o,
+            m,
+            rng,
+            ForecastMode::ConditionalMeals,
+            &mut AcceptanceAudit::disabled(),
+            false,
+        ),
+        _ => decide_impl(
+            o,
+            m,
+            rng,
+            ForecastMode::Legacy(6 * HOUR),
+            &mut AcceptanceAudit::disabled(),
+            false,
+        ),
     }
 }
 
@@ -615,7 +623,10 @@ pub(crate) fn decide_audited(
     variant: super::DiagnosticPolicy,
 ) -> (Decision, AcceptanceAudit) {
     let mode = match variant {
-        super::DiagnosticPolicy::CoherentForecast => ForecastMode::Coherent,
+        super::DiagnosticPolicy::Current | super::DiagnosticPolicy::CoherentForecast => {
+            ForecastMode::Coherent
+        }
+        super::DiagnosticPolicy::ConditionalMeals => ForecastMode::ConditionalMeals,
         super::DiagnosticPolicy::MealAware => ForecastMode::Meals,
         super::DiagnosticPolicy::ZeroMargin => ForecastMode::Legacy(0),
         super::DiagnosticPolicy::ThreeHourMargin => ForecastMode::Legacy(3 * HOUR),
@@ -752,6 +763,13 @@ pub(crate) fn audit_coherent(
     let d = decide_impl(o, m, rng, mode, &mut a, false);
     a.finish(o, &d);
     (d, a)
+}
+
+pub(crate) fn conditional_contract(o: &Observation, m: &PolicyMemory) -> AcceptanceAudit {
+    let mode = ForecastMode::ConditionalMeals;
+    let mut a = AcceptanceAudit::new(o, m, mode);
+    forecast::evaluate(o, m, &sources_for(o, m, mode), mode, &mut a);
+    a
 }
 
 pub(crate) fn coherent_contract(o: &Observation, m: &PolicyMemory, meals: bool) -> AcceptanceAudit {
