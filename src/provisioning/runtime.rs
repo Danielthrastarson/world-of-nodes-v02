@@ -680,6 +680,12 @@ impl World {
         }
         for index in 0..self.boards.len() {
             let old = self.boards[index].claims.len();
+            for c in &self.boards[index].claims {
+                if c.expires_at <= self.now {
+                    self.diagnostics
+                        .claim_expired(c.agent, self.boards[index].node, c.expires_at);
+                }
+            }
             self.boards[index]
                 .claims
                 .retain(|c| c.expires_at > self.now);

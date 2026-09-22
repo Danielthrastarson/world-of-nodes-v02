@@ -2,6 +2,9 @@
 use super::*;
 
 pub const COUNTERS: &[&str] = &[
+    "at_job_priority_nutrition_margin",
+    "at_job_priority_no_known_source",
+    "at_job_priority_passes_gate",
     "gate_no_known_source",
     "gate_nutrition_margin",
     "gate_shelf_life",
@@ -49,9 +52,10 @@ pub struct JobRecord {
     pub acquired: u64,
     pub cargo_consumed: u64,
     pub returned: bool,
-    pub reached_c: bool,
+    pub reached_destination: bool,
     pub delivered: u64,
     pub ended: bool,
+    pub claim_expired: bool,
     pub reason: String,
     pub churn: u64,
     serving: bool,
@@ -79,6 +83,15 @@ fn value(text: &str, key: &str) -> Option<u64> {
         .ok()
 }
 impl Diagnostics {
+    pub(crate) fn claim_expired(&mut self, agent: usize, board: usize, deadline: Time) {
+        if let Some(j) =
+            self.jobs.iter_mut().rev().find(|j| {
+                j.agent == agent && j.board == board && j.accepted + 12 * HOUR == deadline
+            })
+        {
+            j.claim_expired = true;
+        }
+    }
     pub(crate) fn cargo_eaten(&mut self, id: usize, q: u64) {
         self.add("carrier_cargo_consumed", q);
         if let Some(&i) = self.active.get(&id) {
@@ -166,6 +179,21 @@ impl Diagnostics {
         }
         for (gate, detail) in policy::audit_job_gate(o, m) {
             self.add(&format!("gate_{gate}"), 1);
+            let at_priority = o.nutrition >= 12 * HOUR
+                && o.load < o.capacity
+                && o.fatigue < 22 * HOUR
+                && !matches!(o.action, Action::Gather { .. })
+                && !(matches!(o.action, Action::Sleep { .. }) && o.fatigue > 4 * HOUR);
+            if at_priority {
+                self.add(&format!("at_job_priority_{gate}"), 1);
+                if self.sampled.insert((o.agent, format!("priority:{gate}"))) {
+                    self.samples.push(format!(
+                        "t={} agent={} AT_JOB_PRIORITY {} {}",
+                        o.now, o.agent, gate, detail
+                    ));
+                }
+            }
+
             *self.reasons.entry(format!("job_gate:{gate}")).or_default() += 1;
             if self.sampled.insert((o.agent, format!("gate:{gate}"))) {
                 self.samples.push(format!(
@@ -189,7 +217,7 @@ impl Diagnostics {
                 let expired: Vec<_> = self
                     .jobs
                     .iter()
-                    .filter(|j| j.board == board && j.accepted + 12 * HOUR <= e.at)
+                    .filter(|j| j.board == board && j.claim_expired)
                     .collect();
                 let replacement = !expired.is_empty();
                 let duplicate = expired.iter().any(|j| !j.ended);
@@ -226,7 +254,7 @@ impl Diagnostics {
                     j.ended = true;
                     j.reason = reason.clone();
                     let carrier = j.acquired > 0;
-                    let fatal = j.returned && !j.reached_c;
+                    let fatal = j.returned && !j.reached_destination;
                     if reason == "starvation death" {
                         if carrier {
                             self.add("carrier_deaths", 1);
@@ -260,7 +288,7 @@ impl Diagnostics {
             "Admitted" => {
                 if let Some(&i) = self.active.get(&e.agent.unwrap())
                     && self.jobs[i].returned
-                    && !self.jobs[i].reached_c
+                    && !self.jobs[i].reached_destination
                 {
                     self.add("return_edge_admissions", 1);
                 }
@@ -274,8 +302,8 @@ impl Diagnostics {
                         self.add("jobs_reaching_f", 1);
                     }
                     let j = &mut self.jobs[i];
-                    if n == j.board && j.returned && !j.reached_c {
-                        j.reached_c = true;
+                    if n == j.board && j.returned && !j.reached_destination {
+                        j.reached_destination = true;
                         self.add("returns_completed", 1);
                     }
                 }
@@ -394,21 +422,24 @@ pub fn schedule_witness(p: Schedule, trace: bool) -> Result<(Witness, World), St
     let mut returning = [false; 50];
     let mut resting = [false; 50];
     let mut ever_starved = [false; 50];
+    let mut last_rescue = [false; 50];
     let mut deficit = 0u128;
     let mut previous = 0;
     while w.now < 72 * HOUR {
-        if w.now <= 48 * HOUR {
-            for (i, a) in w
-                .agents
-                .iter()
-                .enumerate()
-                .skip(p.carriers)
-                .take(p.residents)
-            {
-                if a.starvation > 0 {
-                    ever_starved[i] = true;
-                }
-                deficit += (w.now - previous).min(a.starvation).max(0) as u128;
+        for (i, a) in w
+            .agents
+            .iter()
+            .enumerate()
+            .skip(p.carriers)
+            .take(p.residents)
+        {
+            if w.now <= 48 * HOUR && a.starvation > 0 {
+                ever_starved[i] = true;
+            }
+            if a.death_time.is_none_or(|t| t >= previous) {
+                deficit += (w.now.min(a.death_time.unwrap_or(w.now)) - previous)
+                    .min(a.starvation)
+                    .max(0) as u128;
             }
         }
         previous = w.now;
@@ -444,7 +475,9 @@ pub fn schedule_witness(p: Schedule, trace: bool) -> Result<(Witness, World), St
                     if id < p.carriers + p.residents
                         && available_c > 0
                         && ((!p.rescue_only && a.nutrition < 11 * HOUR)
-                            || (p.rescue_only && a.starvation >= 22 * HOUR))
+                            || (p.rescue_only
+                                && (a.starvation >= 22 * HOUR
+                                    || (w.now >= 47 * HOUR + MINUTE && !last_rescue[id]))))
                         && let Some(b) = w.goods.batches.iter().find(|b| {
                             b.holder == Holder::Commons(0)
                                 && b.material == Material::Food
@@ -453,7 +486,8 @@ pub fn schedule_witness(p: Schedule, trace: bool) -> Result<(Witness, World), St
                     {
                         let q = goods::headroom(a.nutrition, Owner::Commons(0))
                             .min(b.quantity)
-                            .min(available_c);
+                            .min(available_c)
+                            .min(if p.rescue_only { 1 } else { u64::MAX });
                         if q > 0 {
                             intents.push((
                                 id,
@@ -463,6 +497,9 @@ pub fn schedule_witness(p: Schedule, trace: bool) -> Result<(Witness, World), St
                                 },
                             ));
                             available_c -= q;
+                            if p.rescue_only && w.now >= 47 * HOUR + MINUTE {
+                                last_rescue[id] = true;
+                            }
                             continue;
                         }
                     }
@@ -485,6 +522,12 @@ pub fn schedule_witness(p: Schedule, trace: bool) -> Result<(Witness, World), St
                         },
                     ));
                     returning[id] = false;
+                    continue;
+                }
+                // Even at perfect speed a new C-F-C cycle now misses expiry.
+                // This is global research scheduling, never an autonomous rule.
+                if node == 0 && w.now >= 40 * HOUR {
+                    intents.push((id, Intent::Sleep));
                     continue;
                 }
                 if node == 0 && a.job.is_none() {
@@ -573,6 +616,13 @@ pub fn schedule_witness(p: Schedule, trace: bool) -> Result<(Witness, World), St
         }
         let next = w.next_time(72 * HOUR);
         w.advance_to(next)?;
+    }
+    for a in w.agents.iter().skip(p.carriers).take(p.residents) {
+        if a.death_time.is_none_or(|t| t >= previous) {
+            deficit += (w.now.min(a.death_time.unwrap_or(w.now)) - previous)
+                .min(a.starvation)
+                .max(0) as u128;
+        }
     }
     let residents_alive_72 = w
         .agents
@@ -787,5 +837,71 @@ mod tests {
             3000
         );
         w.audit().unwrap();
+    }
+}
+
+/// Proven relaxations/certificates; see docs/DELIVERY_BOUNDS.md for assumptions.
+/// Quantity is an upper bound, NOT a claim that the bound is attainable.
+pub fn envelope_bounds() -> (Time, u64, u64, usize) {
+    let first = 8 * HOUR + (6000 * SCALE).div_ceil(performance(6 * HOUR, 12 * HOUR)) as Time;
+    let window = 48 * HOUR - 1 - 2 * HOUR - 2 * HOUR;
+    let returns = (4 * window / (4 * HOUR)) as u64;
+    (first, returns * 10, returns * 10 / 36, 47)
+}
+
+#[cfg(test)]
+mod bounds_tests {
+    use super::*;
+    #[test]
+    fn earliest_first_quantum_attains_the_relaxed_lower_bound() {
+        let (r, w) = schedule_witness(
+            Schedule {
+                carriers: 1,
+                cargo: 1,
+                meal_target_h: 9,
+                rest_at_h: 24,
+                ..Schedule::default()
+            },
+            true,
+        )
+        .unwrap();
+        assert_eq!(r.first_delivery, Some(envelope_bounds().0));
+        assert!(
+            w.events
+                .iter()
+                .filter(|e| e.kind == "Delivered")
+                .all(|e| e.at < 48 * HOUR)
+        );
+        assert!(!w.events.iter().any(|e| e.kind == "Rejected"));
+    }
+    #[test]
+    fn starvation_grace_support_bound_is_not_nutritional_success() {
+        let (r, w) = schedule_witness(
+            Schedule {
+                carriers: 3,
+                residents: 47,
+                meal_target_h: 23,
+                rest_at_h: 12,
+                rescue_only: true,
+                ..Schedule::default()
+            },
+            false,
+        )
+        .unwrap();
+        assert_eq!(r.residents_alive_72, 47);
+        assert_eq!(
+            w.agents
+                .iter()
+                .filter(|a| a.action != Action::Dead && a.location == Location::Node(0))
+                .count(),
+            50
+        );
+        assert_eq!(r.residents_without_starvation_48, 0);
+        assert!(
+            w.agents[3..]
+                .iter()
+                .all(|a| a.consumed == 2 && a.nutrition == 0 && a.starvation > 23 * HOUR)
+        );
+        assert!(r.resident_starvation_ms > 2700 * HOUR as u128);
     }
 }
