@@ -18,6 +18,14 @@ remain unchanged. Research schedulers may inspect global state only as explicit
 counterfactual instruments, never as autonomous policies. No later systems or
 V0.3 are authorized by these results.
 
+The subsequent [acceptance experiment](docs/ACCEPTANCE_EXPERIMENT.md) and
+[results](research/acceptance/REPORT.md) isolate prior source knowledge, meal-aware
+forecasting and the end nutrition margin. All 120 runs retain zero accepted jobs
+and deliveries. Some forecasts permit pre-claim board visits, but none completes;
+the two forecast variants worsen survival. No diagnostic variant becomes the
+default. Preserve the previous evidence, physical rules, board locality, migration
+and starvation-reset behavior; this result authorizes no broader systems.
+
 ## Principle
 
 **The simulation is the source of the graphics.** The rendered world is a projection of underlying simulated state. Do not program a desired settlement outcome; program causal rules that can produce it. Do not animate a result when its cause can be simulated.

@@ -1,0 +1,126 @@
+{
+  "audited_predicted_meals": 0,
+  "decision_details": [
+    {
+      "count": 39060,
+      "detail": "critical fatigue or ongoing recovery",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 33520,
+      "detail": "remain FIFO",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 26648,
+      "detail": "no locally justified work",
+      "stage": "EVALUATION"
+    },
+    {
+      "count": 17118,
+      "detail": "remain FIFO",
+      "stage": "EVALUATION"
+    },
+    {
+      "count": 16860,
+      "detail": "no locally justified work",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 10108,
+      "detail": "explore unknown location",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 744,
+      "detail": "one quantum from observed deposit",
+      "stage": "EVALUATION"
+    },
+    {
+      "count": 404,
+      "detail": "locally accessible food",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 300,
+      "detail": "one quantum from observed deposit",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 164,
+      "detail": "visit remembered board to claim locally",
+      "stage": "EVALUATION"
+    },
+    {
+      "count": 58,
+      "detail": "explore unknown location",
+      "stage": "EVALUATION"
+    },
+    {
+      "count": 8,
+      "detail": "seek remembered food",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 4,
+      "detail": "seek remembered food",
+      "stage": "EVALUATION"
+    }
+  ],
+  "deferrals": [
+    {
+      "count": 59944,
+      "reason": "JOB_ENTRY_REQUIRES_NUTRITION_ABOVE_6H",
+      "scope": "ALL"
+    },
+    {
+      "count": 39060,
+      "reason": "FATIGUE_OR_ONGOING_RECOVERY",
+      "scope": "ALL"
+    },
+    {
+      "count": 33468,
+      "reason": "JOB_ENTRY_REQUIRES_NUTRITION_ABOVE_6H",
+      "scope": "LOCAL"
+    },
+    {
+      "count": 6656,
+      "reason": "FATIGUE_OR_ONGOING_RECOVERY",
+      "scope": "LOCAL"
+    },
+    {
+      "count": 852,
+      "reason": "SELF_PROVISIONING_BELOW_12H_PRECEDES_JOBS",
+      "scope": "ALL"
+    },
+    {
+      "count": 404,
+      "reason": "LOCAL_EATING_PRECEDES_JOB_EVALUATION",
+      "scope": "ALL"
+    }
+  ],
+  "distinct_request_observers": 50,
+  "independent_violations": {
+    "CANNOT_COMPLETE_PLAN_ALIVE": 7252,
+    "NO_KNOWN_SOURCE": 19180,
+    "SOURCE_PREDICTED_SPOILED": 23800
+  },
+  "local_passes": 0,
+  "passing_agents": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "remote_passes": 1700,
+  "rows": 144996,
+  "shadows": 0
+}

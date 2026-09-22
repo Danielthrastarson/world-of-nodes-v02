@@ -8,6 +8,7 @@ Current scope: **local provisioning under scarcity**—hunger, sleep, starvation
 - [Locked provisioning specification](docs/PROVISIONING_SPEC.md)
 - [Preserved provisioning results](research/provisioning/REPORT.md)
 - [Delivery mechanism decomposition](research/delivery/REPORT.md)
+- [Acceptance gate decomposition](research/acceptance/REPORT.md)
 - [Physical feasibility bounds](docs/DELIVERY_BOUNDS.md)
 - [Deferred settlement experiment](docs/SETTLEMENT_EXPERIMENT.md)
 - [Preserved earlier security handoff](docs/archive/WORLD_OF_NODES_HANDOFF_SECURITY.md)
@@ -19,5 +20,7 @@ Run the new model with `cargo run --offline --release --bin provisioning_probe -
 The reference produces migration toward food, 28 survivors at 72h, and zero communal deliveries. All those survivors have zero nutrition at 72h. This is a measured failure of communal provisioning, not a validated sustainable settlement.
 
 The delivery follow-up demonstrates 280 physically transported quanta against zero autonomous delivery, with a 430-quantum upper bound (exact bulk optimum unresolved). A request visible at C still produces no accepted jobs across 30 paired seeds per isolated policy variant. The default policy and original negative evidence remain unchanged. Run `delivery_probe --matrix OUTPUT_DIRECTORY 30` and `delivery_probe --envelope OUTPUT_DIRECTORY` after building the release binaries; see the linked report for reproduction and limits.
+
+The acceptance follow-up ran 120 paired experiments. Prior source knowledge still produces no jobs; meal-aware and zero-margin forecasts permit some trips toward the board, but none reaches C to claim. Both forecast variants reduce 72h survivors from 28 to 20, with zero deliveries. Complete gate journals distinguish forecast passes from actual acceptance. These remain diagnostic variants; the default policy and both earlier evidence sets are preserved.
 
 V0.1 source, seeds, tests, and raw outputs were never supplied, so its reported negative results remain inherited claims, not reproduced evidence. The archived handoff preserves them unchanged.

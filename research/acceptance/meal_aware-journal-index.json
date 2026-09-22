@@ -1,0 +1,212 @@
+[
+  {
+    "scenario": "meal_aware",
+    "seed": 0,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 1,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 2,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 3,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 4,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 5,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 6,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 7,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 8,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 9,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 10,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 11,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 12,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 13,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 14,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 15,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 16,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 17,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 18,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 19,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 20,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 21,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 22,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 23,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 24,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 25,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 26,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 27,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 28,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  },
+  {
+    "scenario": "meal_aware",
+    "seed": 29,
+    "rows": 151176,
+    "canonical_sha256": "c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a",
+    "path": "journals/c4230a7e9edd2eb2f96b153a17a299f7789cdee704ccc7417f37049b2cb1c27a.tsv.gz"
+  }
+]

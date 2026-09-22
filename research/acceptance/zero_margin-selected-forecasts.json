@@ -1,0 +1,392 @@
+[
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: true, evaluated: true, margin: 0, outcome: \"NO_KNOWN_SOURCE\", detail: \"explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0\", candidates: [Candidate { board: 0, source: None, observed_at: None, quantity: 0, expiry: None, confidence: 0.0, violations: [\"NO_KNOWN_SOURCE\"], plan: None }] }",
+    "detail": "explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=36000000 arrival_starvation_ms=0",
+    "gate": "NO_KNOWN_SOURCE",
+    "intent": "Travel { edge: 0, target: 1, food: false }",
+    "location": "Node(0)",
+    "nutrition_h": 12.0,
+    "time_h": 0.0
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 8.0,
+    "time_h": 4.0
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 7.999444444444444,
+    "time_h": 4.000555555555556
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 8.983333333333333,
+    "time_h": 4.016666666666667
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 8.982777777777779,
+    "time_h": 4.017222222222222
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 9.966666666666667,
+    "time_h": 4.033333333333333
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 9.966111111111111,
+    "time_h": 4.033888888888889
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 10.95,
+    "time_h": 4.05
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 10.949444444444444,
+    "time_h": 4.0505555555555555
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 11.933333333333334,
+    "time_h": 4.066666666666666
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 11.932777777777778,
+    "time_h": 4.067222222222222
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 0, outcome: \"PASS\", detail: \"visit remembered board to claim locally; predicted_ms=14433334 arrival_nutrition_ms=32066666 arrival_starvation_ms=0\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(14700000), quantity: 2980, expiry: Some(172800000), confidence: 1.0, violations: [], plan: Some(Plan { elapsed: 73412005, nutrition: 0, starvation: 26912005, source_starvation: 0, meal_quanta: 0, delivered: 10, acquired: 10, steps: [\"to_board: edge=1 2->1 travel_ms=7200000 queue_ms=0 evidence_at=14700000 queue_order=legacy_after_travel\", \"to_board: edge=0 1->0 travel_ms=7233334 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\", \"to_source: edge=0 0->1 travel_ms=8000000 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=10046667 queue_ms=0 evidence_at=14700000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=33334 legacy_free_slots=10 claim_q=10 meals=0 source_observed_at=14700000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=12806668 queue_ms=0 evidence_at=14700000 queue_order=legacy_after_travel\", \"return: edge=0 1->0 travel_ms=28092002 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }] }",
+    "detail": "visit remembered board to claim locally; predicted_ms=14433334 arrival_nutrition_ms=32066666 arrival_starvation_ms=0",
+    "gate": "PASS",
+    "intent": "Travel { edge: 1, target: 0, food: false }",
+    "location": "Node(2)",
+    "nutrition_h": 12.916666666666666,
+    "time_h": 4.083333333333333
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 0, outcome: \"PASS\", detail: \"remain FIFO; visit remembered board to claim locally; predicted_ms=14440000 arrival_starvation_ms=0\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(14760000), quantity: 2980, expiry: Some(172800000), confidence: 1.0, violations: [], plan: Some(Plan { elapsed: 98072002, nutrition: 0, starvation: 51632002, source_starvation: 0, meal_quanta: 0, delivered: 10, acquired: 10, steps: [\"to_board: edge=1 2->1 travel_ms=7200000 queue_ms=0 evidence_at=14760000 queue_order=legacy_after_travel\", \"to_board: edge=0 1->0 travel_ms=7240000 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\", \"to_source: edge=0 0->1 travel_ms=8000000 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=10080000 queue_ms=7200000 evidence_at=14760000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=33334 legacy_free_slots=10 claim_q=10 meals=0 source_observed_at=14760000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=22318668 queue_ms=7200000 evidence_at=14760000 queue_order=legacy_after_travel\", \"return: edge=0 1->0 travel_ms=28800000 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }] }",
+    "detail": "remain FIFO; visit remembered board to claim locally; predicted_ms=14440000 arrival_starvation_ms=0",
+    "gate": "PASS",
+    "intent": "Wait",
+    "location": "Node(2)",
+    "nutrition_h": 12.9,
+    "time_h": 4.1
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 11.983333333333333,
+    "time_h": 5.016666666666667
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 11.982777777777779,
+    "time_h": 5.017222222222222
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 0, outcome: \"PASS\", detail: \"visit remembered board to claim locally; predicted_ms=14813334 arrival_nutrition_ms=31866666 arrival_starvation_ms=0\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(18120000), quantity: 2976, expiry: Some(172800000), confidence: 1.0, violations: [], plan: Some(Plan { elapsed: 78920004, nutrition: 0, starvation: 32240004, source_starvation: 0, meal_quanta: 0, delivered: 10, acquired: 10, steps: [\"to_board: edge=1 2->1 travel_ms=7200000 queue_ms=0 evidence_at=18120000 queue_order=legacy_after_travel\", \"to_board: edge=0 1->0 travel_ms=7613334 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\", \"to_source: edge=0 0->1 travel_ms=8000000 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=10866667 queue_ms=0 evidence_at=18120000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=33334 legacy_free_slots=10 claim_q=10 meals=0 source_observed_at=18120000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=16406669 queue_ms=0 evidence_at=18120000 queue_order=legacy_after_travel\", \"return: edge=0 1->0 travel_ms=28800000 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }] }",
+    "detail": "visit remembered board to claim locally; predicted_ms=14813334 arrival_nutrition_ms=31866666 arrival_starvation_ms=0",
+    "gate": "PASS",
+    "intent": "Travel { edge: 1, target: 0, food: false }",
+    "location": "Node(2)",
+    "nutrition_h": 12.966666666666667,
+    "time_h": 5.033333333333333
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 0, outcome: \"PASS\", detail: \"remain FIFO; visit remembered board to claim locally; predicted_ms=14820000 arrival_starvation_ms=0\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(18180000), quantity: 2976, expiry: Some(172800000), confidence: 1.0, violations: [], plan: Some(Plan { elapsed: 102380000, nutrition: 0, starvation: 55760000, source_starvation: 0, meal_quanta: 0, delivered: 10, acquired: 10, steps: [\"to_board: edge=1 2->1 travel_ms=7200000 queue_ms=0 evidence_at=18180000 queue_order=legacy_after_travel\", \"to_board: edge=0 1->0 travel_ms=7620000 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\", \"to_source: edge=0 0->1 travel_ms=8000000 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=10900000 queue_ms=7200000 evidence_at=18180000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=50000 legacy_free_slots=10 claim_q=10 meals=0 source_observed_at=18180000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=25410000 queue_ms=7200000 evidence_at=18180000 queue_order=legacy_after_travel\", \"return: edge=0 1->0 travel_ms=28800000 queue_ms=0 evidence_at=7200000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }] }",
+    "detail": "remain FIFO; visit remembered board to claim locally; predicted_ms=14820000 arrival_starvation_ms=0",
+    "gate": "PASS",
+    "intent": "Wait",
+    "location": "Node(2)",
+    "nutrition_h": 12.95,
+    "time_h": 5.05
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"seek remembered food; source=2 observed_at=21600000 believed_quantity=2976 expires_at=172800000; predicted_ms=15203334 arrival_nutrition_ms=20796666 arrival_starvation_ms=0\", candidates: [] }",
+    "detail": "seek remembered food; source=2 observed_at=21600000 believed_quantity=2976 expires_at=172800000; predicted_ms=15203334 arrival_nutrition_ms=20796666 arrival_starvation_ms=0",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Travel { edge: 1, target: 2, food: true }",
+    "location": "Node(1)",
+    "nutrition_h": 10.0,
+    "time_h": 8.0
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"remain FIFO; seek remembered food; source=2 observed_at=21600000 believed_quantity=2976 expires_at=172800000; predicted_ms=8002223 arrival_starvation_ms=0\", candidates: [] }",
+    "detail": "remain FIFO; seek remembered food; source=2 observed_at=21600000 believed_quantity=2976 expires_at=172800000; predicted_ms=8002223 arrival_starvation_ms=0",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Wait",
+    "location": "Node(1)",
+    "nutrition_h": 9.983333333333333,
+    "time_h": 8.016666666666667
+  },
+  {
+    "agent": 4,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 0, outcome: \"CANNOT_COMPLETE_PLAN_ALIVE\", detail: \"one quantum from observed deposit; communal=false\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(38820000), quantity: 2928, expiry: Some(172800000), confidence: 1.0, violations: [\"CANNOT_COMPLETE_PLAN_ALIVE\"], plan: Some(Plan { elapsed: 130532000, nutrition: 0, starvation: 86552000, source_starvation: 21672000, meal_quanta: 0, delivered: 10, acquired: 10, steps: [\"to_board: edge=1 2->1 travel_ms=8724000 queue_ms=0 evidence_at=38820000 queue_order=legacy_after_travel\", \"to_board: edge=0 1->0 travel_ms=9600000 queue_ms=0 evidence_at=14400000 queue_order=legacy_after_travel\", \"to_source: edge=0 0->1 travel_ms=16701000 queue_ms=0 evidence_at=14400000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=23427000 queue_ms=7200000 evidence_at=38820000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=80000 legacy_free_slots=10 claim_q=10 meals=0 source_observed_at=38820000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=28800000 queue_ms=7200000 evidence_at=38820000 queue_order=legacy_after_travel\", \"return: edge=0 1->0 travel_ms=28800000 queue_ms=0 evidence_at=14400000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "CANNOT_COMPLETE_PLAN_ALIVE",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 12.216666666666667,
+    "time_h": 10.783333333333333
+  },
+  {
+    "agent": 4,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 0, outcome: \"SOURCE_PREDICTED_SPOILED\", detail: \"one quantum from observed deposit; communal=false\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(39780000), quantity: 2840, expiry: Some(172800000), confidence: 1.0, violations: [\"SOURCE_PREDICTED_SPOILED\"], plan: Some(Plan { elapsed: 148805000, nutrition: 0, starvation: 84185000, source_starvation: 12105000, meal_quanta: 0, delivered: 10, acquired: 10, steps: [\"to_board: edge=1 2->1 travel_ms=8916000 queue_ms=7200000 evidence_at=39780000 queue_order=legacy_after_travel\", \"to_board: edge=0 1->0 travel_ms=13548000 queue_ms=0 evidence_at=14400000 queue_order=legacy_after_travel\", \"to_source: edge=0 0->1 travel_ms=14661000 queue_ms=0 evidence_at=14400000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=18000000 queue_ms=14400000 evidence_at=39780000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=80000 legacy_free_slots=10 claim_q=10 meals=0 source_observed_at=39780000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=28800000 queue_ms=14400000 evidence_at=39780000 queue_order=legacy_after_travel\", \"return: edge=0 1->0 travel_ms=28800000 queue_ms=0 evidence_at=14400000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "SOURCE_PREDICTED_SPOILED",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 17.95,
+    "time_h": 11.05
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 4.5,
+    "time_h": 13.5
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 4.499073888888889,
+    "time_h": 13.500926111111111
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 5.483333333333333,
+    "time_h": 13.516666666666667
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 5.482407222222222,
+    "time_h": 13.517592777777777
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 6.466666666666667,
+    "time_h": 13.533333333333333
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 6.465925833333333,
+    "time_h": 13.534074166666667
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 7.45,
+    "time_h": 13.55
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 7.449259166666667,
+    "time_h": 13.550740833333334
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 8.433333333333334,
+    "time_h": 13.566666666666666
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 8.4325925,
+    "time_h": 13.5674075
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 9.416666666666666,
+    "time_h": 13.583333333333334
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 9.415925833333333,
+    "time_h": 13.584074166666667
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 10.4,
+    "time_h": 13.6
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 10.399259166666667,
+    "time_h": 13.600740833333333
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"one quantum from observed deposit; communal=false\", candidates: [] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 11.383333333333333,
+    "time_h": 13.616666666666667
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: false, margin: 0, outcome: \"OTHER_EXPLICIT_REASON\", detail: \"locally accessible food; exact ownership/ration ceiling\", candidates: [] }",
+    "detail": "locally accessible food; exact ownership/ration ceiling",
+    "gate": "OTHER_EXPLICIT_REASON",
+    "intent": "Eat { batch: 1, quantity: 1 }",
+    "location": "Node(2)",
+    "nutrition_h": 11.3825925,
+    "time_h": 13.6174075
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 0, outcome: \"CANNOT_COMPLETE_PLAN_ALIVE\", detail: \"one quantum from observed deposit; communal=false\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(49080000), quantity: 2760, expiry: Some(172800000), confidence: 1.0, violations: [\"CANNOT_COMPLETE_PLAN_ALIVE\", \"SOURCE_PREDICTED_SPOILED\"], plan: Some(Plan { elapsed: 185432000, nutrition: 0, starvation: 140912000, source_starvation: 68832000, meal_quanta: 0, delivered: 10, acquired: 10, steps: [\"to_board: edge=1 2->1 travel_ms=10140000 queue_ms=14400000 evidence_at=49080000 queue_order=legacy_after_travel\", \"to_board: edge=0 1->0 travel_ms=18000000 queue_ms=0 evidence_at=38760000 queue_order=legacy_after_travel\", \"to_source: edge=0 0->1 travel_ms=27612000 queue_ms=0 evidence_at=38760000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=28800000 queue_ms=14400000 evidence_at=49080000 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=80000 legacy_free_slots=10 claim_q=10 meals=0 source_observed_at=49080000 expiry=172800000\", \"return: edge=1 2->1 travel_ms=28800000 queue_ms=14400000 evidence_at=49080000 queue_order=legacy_after_travel\", \"return: edge=0 1->0 travel_ms=28800000 queue_ms=0 evidence_at=38760000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }] }",
+    "detail": "one quantum from observed deposit; communal=false",
+    "gate": "CANNOT_COMPLETE_PLAN_ALIVE",
+    "intent": "Gather { batch: 0, communal: false }",
+    "location": "Node(2)",
+    "nutrition_h": 12.366666666666667,
+    "time_h": 13.633333333333333
+  },
+  {
+    "agent": 0,
+    "audit": "AcceptanceAudit { enabled: true, requests: 1, local: false, evaluated: true, margin: 0, outcome: \"CANNOT_COMPLETE_PLAN_ALIVE\", detail: \"no locally justified work; remaining near resources is allowed\", candidates: [Candidate { board: 0, source: Some(2), observed_at: Some(49096002), quantity: 2736, expiry: Some(172800000), confidence: 1.0, violations: [\"CANNOT_COMPLETE_PLAN_ALIVE\", \"SOURCE_PREDICTED_SPOILED\"], plan: Some(Plan { elapsed: 185406403, nutrition: 0, starvation: 140902405, source_starvation: 68870405, meal_quanta: 0, delivered: 4, acquired: 4, steps: [\"to_board: edge=1 2->1 travel_ms=10148001 queue_ms=14400000 evidence_at=49096002 queue_order=legacy_after_travel\", \"to_board: edge=0 1->0 travel_ms=18000000 queue_ms=0 evidence_at=38760000 queue_order=legacy_after_travel\", \"to_source: edge=0 0->1 travel_ms=27626402 queue_ms=0 evidence_at=38760000 queue_order=legacy_after_travel\", \"to_source: edge=1 1->2 travel_ms=28800000 queue_ms=14400000 evidence_at=49096002 queue_order=legacy_after_travel\", \"gather: node=2 work_ms=32000 legacy_free_slots=4 claim_q=4 meals=0 source_observed_at=49096002 expiry=172800000\", \"return: edge=1 2->1 travel_ms=28800000 queue_ms=14400000 evidence_at=49096002 queue_order=legacy_after_travel\", \"return: edge=0 1->0 travel_ms=28800000 queue_ms=0 evidence_at=38760000 queue_order=legacy_after_travel\"], failure: None, shadow: None }) }] }",
+    "detail": "no locally justified work; remaining near resources is allowed",
+    "gate": "CANNOT_COMPLETE_PLAN_ALIVE",
+    "intent": "Wait",
+    "location": "Node(2)",
+    "nutrition_h": 12.362221666666667,
+    "time_h": 13.637778333333333
+  }
+]

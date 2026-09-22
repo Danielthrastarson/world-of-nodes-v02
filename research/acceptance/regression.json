@@ -1,0 +1,6 @@
+{
+  "source_commit": "548455c",
+  "frozen_runs": "research/delivery/runs.csv",
+  "reproduced_runs": 180,
+  "comparison": "Every CSV field, including event and state hashes, identical."
+}

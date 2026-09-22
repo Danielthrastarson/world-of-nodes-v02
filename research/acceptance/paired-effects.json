@@ -1,0 +1,1562 @@
+{
+  "known_source": {
+    "accounting_error": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "alive_at_c": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "alive_at_f": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "completed_food_trips": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "deaths": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_abandonments": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_actual_fatal_returns": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_at_job_priority_no_known_source": {
+      "max_delta": 790.0,
+      "mean_delta": 790.0,
+      "min_delta": 790.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_at_job_priority_nutrition_margin": {
+      "max_delta": 314.0,
+      "mean_delta": 314.0,
+      "min_delta": 314.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_at_job_priority_passes_gate": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_board_evaluations_without_source": {
+      "max_delta": -55256.0,
+      "mean_delta": -55256.0,
+      "min_delta": -55256.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_carrier_cargo_consumed": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_carrier_deaths": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_claim_expiries": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_commitment_churn": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_decision_reversals": {
+      "max_delta": -2400.0,
+      "mean_delta": -2400.0,
+      "min_delta": -2400.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_delivered_quanta": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_duplicate_attempts": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_first_delivery_ms": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_gate_claims_suppress": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_gate_no_known_source": {
+      "max_delta": -46296.0,
+      "mean_delta": -46296.0,
+      "min_delta": -46296.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_gate_nutrition_margin": {
+      "max_delta": 15392.0,
+      "mean_delta": 15392.0,
+      "min_delta": 15392.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_gate_passes_gate": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_gate_shelf_life": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_accepted": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_delivered": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_reaching_f": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_predicted_fatal_return_decisions": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_queue_joins": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_queue_voluntary_exits": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_repeated_job_edge_joins": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_replacement_attempts": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_request_observations": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_request_observers": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_return_edge_admissions": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_returns_completed": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_returns_started": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_sleep_interruptions": {
+      "max_delta": -4.0,
+      "mean_delta": -4.0,
+      "min_delta": -4.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_sleep_renewals": {
+      "max_delta": 1208.0,
+      "mean_delta": 1208.0,
+      "min_delta": 1208.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_sleep_starts": {
+      "max_delta": -1208.0,
+      "mean_delta": -1208.0,
+      "min_delta": -1208.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_source_sought": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "failed_stale_trips": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_carried_at_death": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_consumed": {
+      "max_delta": 24.0,
+      "mean_delta": 24.0,
+      "min_delta": 24.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "food_delivered": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_gathered": {
+      "max_delta": 24.0,
+      "mean_delta": 24.0,
+      "min_delta": 24.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "food_initial": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_remaining": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_search_distance_m": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_spoiled": {
+      "max_delta": -24.0,
+      "mean_delta": -24.0,
+      "min_delta": -24.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "food_stranded_at_death": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "idle_person_hours": {
+      "max_delta": -0.13778000000002066,
+      "mean_delta": -0.13778000000002066,
+      "min_delta": -0.13778000000002066,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "inaccessible_dead_personal_food": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "infeasible_abandons": {
+      "max_delta": 902.0,
+      "mean_delta": 902.0,
+      "min_delta": 902.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "jobs_accepted": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "jobs_cancelled": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "lease_expiries": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "loaded_queue_hours": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "queue_overtakes": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "queue_person_hours": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "request_hours": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "request_quantum_hours": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "shadow_meal_passes": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "sleep_person_hours": {
+      "max_delta": 0.12000000000000455,
+      "mean_delta": 0.12000000000000455,
+      "min_delta": 0.12000000000000455,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "spoiled_communal": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "spoiled_in_transit": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "starvation_person_hours": {
+      "max_delta": -24.0,
+      "mean_delta": -24.0,
+      "min_delta": -24.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "survivors_36h": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "survivors_48h": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "survivors_72h": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "unloaded_queue_hours": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "waste_remaining": {
+      "max_delta": -24.0,
+      "mean_delta": -24.0,
+      "min_delta": -24.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    }
+  },
+  "meal_aware": {
+    "accounting_error": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "alive_at_c": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "alive_at_f": {
+      "max_delta": -8.0,
+      "mean_delta": -8.0,
+      "min_delta": -8.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "completed_food_trips": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "deaths": {
+      "max_delta": 8.0,
+      "mean_delta": 8.0,
+      "min_delta": 8.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_abandonments": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_actual_fatal_returns": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_at_job_priority_no_known_source": {
+      "max_delta": 2848.0,
+      "mean_delta": 2848.0,
+      "min_delta": 2848.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_at_job_priority_nutrition_margin": {
+      "max_delta": -17892.0,
+      "mean_delta": -17892.0,
+      "min_delta": -17892.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_at_job_priority_passes_gate": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_board_evaluations_without_source": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_carrier_cargo_consumed": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_carrier_deaths": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_claim_expiries": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_commitment_churn": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_decision_reversals": {
+      "max_delta": 7280.0,
+      "mean_delta": 7280.0,
+      "min_delta": 7280.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_delivered_quanta": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_duplicate_attempts": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_first_delivery_ms": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_gate_claims_suppress": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_gate_no_known_source": {
+      "max_delta": 4792.0,
+      "mean_delta": 4792.0,
+      "min_delta": 4792.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_gate_nutrition_margin": {
+      "max_delta": -18556.0,
+      "mean_delta": -18556.0,
+      "min_delta": -18556.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_gate_passes_gate": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_gate_shelf_life": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_accepted": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_delivered": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_reaching_f": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_predicted_fatal_return_decisions": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_queue_joins": {
+      "max_delta": 3904.0,
+      "mean_delta": 3904.0,
+      "min_delta": 3904.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_queue_voluntary_exits": {
+      "max_delta": 3896.0,
+      "mean_delta": 3896.0,
+      "min_delta": 3896.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_repeated_job_edge_joins": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_replacement_attempts": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_request_observations": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_request_observers": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_return_edge_admissions": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_returns_completed": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_returns_started": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_sleep_interruptions": {
+      "max_delta": 3768.0,
+      "mean_delta": 3768.0,
+      "min_delta": 3768.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_sleep_renewals": {
+      "max_delta": -6884.0,
+      "mean_delta": -6884.0,
+      "min_delta": -6884.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_sleep_starts": {
+      "max_delta": 2264.0,
+      "mean_delta": 2264.0,
+      "min_delta": 2264.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_source_sought": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "failed_stale_trips": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_carried_at_death": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_consumed": {
+      "max_delta": -364.0,
+      "mean_delta": -364.0,
+      "min_delta": -364.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "food_delivered": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_gathered": {
+      "max_delta": -412.0,
+      "mean_delta": -412.0,
+      "min_delta": -412.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "food_initial": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_remaining": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_search_distance_m": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_spoiled": {
+      "max_delta": 364.0,
+      "mean_delta": 364.0,
+      "min_delta": 364.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "food_stranded_at_death": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "idle_person_hours": {
+      "max_delta": -536.476494,
+      "mean_delta": -536.476494,
+      "min_delta": -536.476494,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "inaccessible_dead_personal_food": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "infeasible_abandons": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "jobs_accepted": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "jobs_cancelled": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "lease_expiries": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "loaded_queue_hours": {
+      "max_delta": 77.669624,
+      "mean_delta": 77.669624,
+      "min_delta": 77.669624,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "queue_overtakes": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "queue_person_hours": {
+      "max_delta": 327.354069,
+      "mean_delta": 327.354069,
+      "min_delta": 327.354069,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "request_hours": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "request_quantum_hours": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "shadow_meal_passes": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "sleep_person_hours": {
+      "max_delta": -95.51555600000006,
+      "mean_delta": -95.51555600000006,
+      "min_delta": -95.51555600000006,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "spoiled_communal": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "spoiled_in_transit": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "starvation_person_hours": {
+      "max_delta": 76.0,
+      "mean_delta": 76.0,
+      "min_delta": 76.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "survivors_36h": {
+      "max_delta": -8.0,
+      "mean_delta": -8.0,
+      "min_delta": -8.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "survivors_48h": {
+      "max_delta": -8.0,
+      "mean_delta": -8.0,
+      "min_delta": -8.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "survivors_72h": {
+      "max_delta": -8.0,
+      "mean_delta": -8.0,
+      "min_delta": -8.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "unloaded_queue_hours": {
+      "max_delta": 249.6844450000001,
+      "mean_delta": 249.6844450000001,
+      "min_delta": 249.6844450000001,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "waste_remaining": {
+      "max_delta": 364.0,
+      "mean_delta": 364.0,
+      "min_delta": 364.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    }
+  },
+  "zero_margin": {
+    "accounting_error": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "alive_at_c": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "alive_at_f": {
+      "max_delta": -8.0,
+      "mean_delta": -8.0,
+      "min_delta": -8.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "completed_food_trips": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "deaths": {
+      "max_delta": 8.0,
+      "mean_delta": 8.0,
+      "min_delta": 8.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_abandonments": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_actual_fatal_returns": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_at_job_priority_no_known_source": {
+      "max_delta": 1416.0,
+      "mean_delta": 1416.0,
+      "min_delta": 1416.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_at_job_priority_nutrition_margin": {
+      "max_delta": -13492.0,
+      "mean_delta": -13492.0,
+      "min_delta": -13492.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_at_job_priority_passes_gate": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_board_evaluations_without_source": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_carrier_cargo_consumed": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_carrier_deaths": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_claim_expiries": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_commitment_churn": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_decision_reversals": {
+      "max_delta": 7172.0,
+      "mean_delta": 7172.0,
+      "min_delta": 7172.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_delivered_quanta": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_duplicate_attempts": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_first_delivery_ms": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_gate_claims_suppress": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_gate_no_known_source": {
+      "max_delta": 88.0,
+      "mean_delta": 88.0,
+      "min_delta": 88.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_gate_nutrition_margin": {
+      "max_delta": -16828.0,
+      "mean_delta": -16828.0,
+      "min_delta": -16828.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_gate_passes_gate": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_gate_shelf_life": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_accepted": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_delivered": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_jobs_reaching_f": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_predicted_fatal_return_decisions": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_queue_joins": {
+      "max_delta": 3604.0,
+      "mean_delta": 3604.0,
+      "min_delta": 3604.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_queue_voluntary_exits": {
+      "max_delta": 3596.0,
+      "mean_delta": 3596.0,
+      "min_delta": 3596.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_repeated_job_edge_joins": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_replacement_attempts": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_request_observations": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_request_observers": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_return_edge_admissions": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_returns_completed": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_returns_started": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "diag_sleep_interruptions": {
+      "max_delta": 3404.0,
+      "mean_delta": 3404.0,
+      "min_delta": 3404.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_sleep_renewals": {
+      "max_delta": -7504.0,
+      "mean_delta": -7504.0,
+      "min_delta": -7504.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "diag_sleep_starts": {
+      "max_delta": 2352.0,
+      "mean_delta": 2352.0,
+      "min_delta": 2352.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "diag_source_sought": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "failed_stale_trips": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_carried_at_death": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_consumed": {
+      "max_delta": -340.0,
+      "mean_delta": -340.0,
+      "min_delta": -340.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "food_delivered": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_gathered": {
+      "max_delta": -388.0,
+      "mean_delta": -388.0,
+      "min_delta": -388.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "food_initial": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_remaining": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_search_distance_m": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "food_spoiled": {
+      "max_delta": 340.0,
+      "mean_delta": 340.0,
+      "min_delta": 340.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "food_stranded_at_death": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "idle_person_hours": {
+      "max_delta": -475.69743700000004,
+      "mean_delta": -475.69743700000004,
+      "min_delta": -475.69743700000004,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "inaccessible_dead_personal_food": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "infeasible_abandons": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "jobs_accepted": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "jobs_cancelled": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "lease_expiries": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "loaded_queue_hours": {
+      "max_delta": 93.3259,
+      "mean_delta": 93.3259,
+      "min_delta": 93.3259,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "queue_overtakes": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "queue_person_hours": {
+      "max_delta": 278.5481219999999,
+      "mean_delta": 278.5481219999999,
+      "min_delta": 278.5481219999999,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "request_hours": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "request_quantum_hours": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "shadow_meal_passes": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "sleep_person_hours": {
+      "max_delta": -104.45333400000004,
+      "mean_delta": -104.45333400000004,
+      "min_delta": -104.45333400000004,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "spoiled_communal": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "spoiled_in_transit": {
+      "max_delta": 0.0,
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "negative_pairs": 0,
+      "positive_pairs": 0
+    },
+    "starvation_person_hours": {
+      "max_delta": 52.0,
+      "mean_delta": 52.0,
+      "min_delta": 52.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "survivors_36h": {
+      "max_delta": -8.0,
+      "mean_delta": -8.0,
+      "min_delta": -8.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "survivors_48h": {
+      "max_delta": -8.0,
+      "mean_delta": -8.0,
+      "min_delta": -8.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "survivors_72h": {
+      "max_delta": -8.0,
+      "mean_delta": -8.0,
+      "min_delta": -8.0,
+      "negative_pairs": 30,
+      "positive_pairs": 0
+    },
+    "unloaded_queue_hours": {
+      "max_delta": 185.222222,
+      "mean_delta": 185.222222,
+      "min_delta": 185.222222,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    },
+    "waste_remaining": {
+      "max_delta": 340.0,
+      "mean_delta": 340.0,
+      "min_delta": 340.0,
+      "negative_pairs": 0,
+      "positive_pairs": 30
+    }
+  }
+}

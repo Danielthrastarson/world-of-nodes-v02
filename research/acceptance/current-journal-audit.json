@@ -1,0 +1,99 @@
+{
+  "audited_predicted_meals": 0,
+  "decision_details": [
+    {
+      "count": 42808,
+      "detail": "critical fatigue or ongoing recovery",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 42492,
+      "detail": "no locally justified work",
+      "stage": "EVALUATION"
+    },
+    {
+      "count": 26812,
+      "detail": "remain FIFO",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 25952,
+      "detail": "no locally justified work",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 15082,
+      "detail": "remain FIFO",
+      "stage": "EVALUATION"
+    },
+    {
+      "count": 6680,
+      "detail": "explore unknown location",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 1128,
+      "detail": "one quantum from observed deposit",
+      "stage": "EVALUATION"
+    },
+    {
+      "count": 464,
+      "detail": "locally accessible food",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 312,
+      "detail": "one quantum from observed deposit",
+      "stage": "DEFERRED"
+    },
+    {
+      "count": 58,
+      "detail": "explore unknown location",
+      "stage": "EVALUATION"
+    }
+  ],
+  "deferrals": [
+    {
+      "count": 59592,
+      "reason": "JOB_ENTRY_REQUIRES_NUTRITION_ABOVE_6H",
+      "scope": "ALL"
+    },
+    {
+      "count": 42808,
+      "reason": "FATIGUE_OR_ONGOING_RECOVERY",
+      "scope": "ALL"
+    },
+    {
+      "count": 33468,
+      "reason": "JOB_ENTRY_REQUIRES_NUTRITION_ABOVE_6H",
+      "scope": "LOCAL"
+    },
+    {
+      "count": 6656,
+      "reason": "FATIGUE_OR_ONGOING_RECOVERY",
+      "scope": "LOCAL"
+    },
+    {
+      "count": 464,
+      "reason": "LOCAL_EATING_PRECEDES_JOB_EVALUATION",
+      "scope": "ALL"
+    },
+    {
+      "count": 164,
+      "reason": "SELF_PROVISIONING_BELOW_12H_PRECEDES_JOBS",
+      "scope": "ALL"
+    }
+  ],
+  "distinct_request_observers": 50,
+  "independent_violations": {
+    "CANNOT_COMPLETE_PLAN_ALIVE": 2696,
+    "NO_KNOWN_SOURCE": 19712,
+    "POST_PLAN_NUTRITION_MARGIN": 39048,
+    "SOURCE_PREDICTED_SPOILED": 31488
+  },
+  "local_passes": 0,
+  "passing_agents": [],
+  "remote_passes": 0,
+  "rows": 161788,
+  "shadows": 0
+}
