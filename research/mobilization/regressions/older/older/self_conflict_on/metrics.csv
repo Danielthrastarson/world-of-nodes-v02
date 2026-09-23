@@ -1,0 +1,5 @@
+seed,key,count
+0,gate:NO_OBSERVED_SEVERE_NEED,600
+0,gate:NO_PERSONAL_CARGO,240
+0,gate:SELF_SURVIVAL_BUFFER,1200
+0,observed_opportunities,1440

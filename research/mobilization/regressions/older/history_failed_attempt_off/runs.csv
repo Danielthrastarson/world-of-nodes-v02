@@ -1,0 +1,2 @@
+seed,mode,case,arm,physical_signature,initial_choice,pressure,cost,alive,food_transferred,consumed,spoiled,starvation_h,care_travel_h,care_selected,care_refused,observed,anger_episodes,fear_episodes,grief_episodes,social_edges,accounting_error,overtakes,state_hash,event_hash
+0,history,failed_attempt,off,e9181b7031a1a7b6,GIVE,8,6,2,6,6,0,1.016666667,0.000000000,0,0,1,0,0,0,4,0,0,69310e2a88ec5f35,9eae9f7ad1585933

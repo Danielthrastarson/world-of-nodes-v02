@@ -1,0 +1,1554 @@
+{
+  "small": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 4.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 4084.0,
+        "evaluations": 4.0,
+        "volunteers": 4.0,
+        "arrivals": 1.0,
+        "completed": 1.0,
+        "active_end": 0.0,
+        "active_h": 2.0,
+        "duty_h": 2.0,
+        "muster_travel_h": 4.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 8.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 4084.0,
+      "evaluations": 4.0,
+      "volunteers": 4.0,
+      "arrivals": 1.0,
+      "completed": 1.0,
+      "active_end": 0.0,
+      "active_h": 2.0,
+      "duty_h": 2.0,
+      "muster_travel_h": 4.0,
+      "muster_queue_h": 0.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": 0.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 0.0,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": 0.0,
+      "residence_changes": 4.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "idle": 72.066666668,
+        "sleep": 15.933333331999973,
+        "travel": 7.999999999999991
+      },
+      "on": {
+        "idle": 62.133333331999964,
+        "military_duty": 1.9999999999999998,
+        "sleep": 23.86666666800007,
+        "travel": 7.999999999999991
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "idle": -9.933333336000032,
+      "military_duty": 1.9999999999999998,
+      "sleep": 7.933333336000098,
+      "travel": 0.0
+    },
+    "gates_and_counts": {
+      "LOCAL_ADMISSION_CLOSED": {
+        "count_per_run": 3.0000000000000013,
+        "unique_people_per_run": 3.0000000000000013
+      },
+      "PASS": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "TERM_COMPLETED": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "arrivals": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "evaluations": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "observations": {
+        "count_per_run": 4083.9999999999973,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "volunteers": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "large": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 4.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 4084.0,
+        "evaluations": 4.0,
+        "volunteers": 4.0,
+        "arrivals": 4.0,
+        "completed": 4.0,
+        "active_end": 0.0,
+        "active_h": 8.0,
+        "duty_h": 8.0,
+        "muster_travel_h": 4.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 8.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 4084.0,
+      "evaluations": 4.0,
+      "volunteers": 4.0,
+      "arrivals": 4.0,
+      "completed": 4.0,
+      "active_end": 0.0,
+      "active_h": 8.0,
+      "duty_h": 8.0,
+      "muster_travel_h": 4.0,
+      "muster_queue_h": 0.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": 0.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 0.0,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": 0.0,
+      "residence_changes": 4.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "idle": 72.066666668,
+        "sleep": 15.933333331999973,
+        "travel": 7.999999999999991
+      },
+      "on": {
+        "idle": 56.13333333199985,
+        "military_duty": 7.999999999999991,
+        "sleep": 23.86666666800007,
+        "travel": 7.999999999999991
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "idle": -15.933333336000146,
+      "military_duty": 7.999999999999991,
+      "sleep": 7.933333336000098,
+      "travel": 0.0
+    },
+    "gates_and_counts": {
+      "PASS": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "TERM_COMPLETED": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "arrivals": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "evaluations": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "observations": {
+        "count_per_run": 4083.9999999999973,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "volunteers": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "food_constrained": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 68.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 0.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 68.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 0.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 4.0,
+        "evaluations": 2644.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 68.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 0.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 68.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 0.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 4.0,
+      "evaluations": 2644.0,
+      "volunteers": 0.0,
+      "arrivals": 0.0,
+      "completed": 0.0,
+      "active_end": 0.0,
+      "active_h": 0.0,
+      "duty_h": 0.0,
+      "muster_travel_h": 0.0,
+      "muster_queue_h": 0.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": 0.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 0.0,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": 0.0,
+      "residence_changes": 0.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "idle": 84.00000000000018,
+        "sleep": 7.999999999999991,
+        "travel": 3.9999999999999956
+      },
+      "on": {
+        "idle": 84.00000000000018,
+        "sleep": 7.999999999999991,
+        "travel": 3.9999999999999956
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "idle": 0.0,
+      "sleep": 0.0,
+      "travel": 0.0
+    },
+    "gates_and_counts": {
+      "INSUFFICIENT_TIME": {
+        "count_per_run": 476.00000000000017,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "SIX_HOUR_MARGIN": {
+        "count_per_run": 2168.0,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "evaluations": {
+        "count_per_run": 2644.0000000000005,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "observations": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "caregiver": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 12.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 12.0,
+        "total_queue_h": 0.0,
+        "care_food": 13.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 17.966666667,
+        "residence_changes": 4.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 5706.0,
+        "evaluations": 725.0,
+        "volunteers": 4.0,
+        "arrivals": 4.0,
+        "completed": 4.0,
+        "active_end": 0.0,
+        "active_h": 8.0,
+        "duty_h": 8.0,
+        "muster_travel_h": 4.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 12.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 12.0,
+        "total_queue_h": 0.0,
+        "care_food": 17.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 4.0,
+        "residence_changes": 8.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 5706.0,
+      "evaluations": 725.0,
+      "volunteers": 4.0,
+      "arrivals": 4.0,
+      "completed": 4.0,
+      "active_end": 0.0,
+      "active_h": 8.0,
+      "duty_h": 8.0,
+      "muster_travel_h": 4.0,
+      "muster_queue_h": 0.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": 0.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 0.0,
+      "care_food": 4.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": -13.966666666999998,
+      "residence_changes": 4.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "idle": 93.0500000010001,
+        "sleep": 19.94999999899996,
+        "travel": 6.999999999999994
+      },
+      "on": {
+        "idle": 78.09999999899993,
+        "military_duty": 7.999999999999991,
+        "sleep": 25.900000001000034,
+        "travel": 7.999999999999991
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "idle": -14.950000002000166,
+      "military_duty": 7.999999999999991,
+      "sleep": 5.950000002000074,
+      "travel": 0.9999999999999973
+    },
+    "gates_and_counts": {
+      "CHILD": {
+        "count_per_run": 720.0,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "HIGHER_PRIORITY": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "PASS": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "TERM_COMPLETED": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "arrivals": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "evaluations": {
+        "count_per_run": 724.9999999999999,
+        "unique_people_per_run": 5.0
+      },
+      "observations": {
+        "count_per_run": 5705.999999999997,
+        "unique_people_per_run": 5.0
+      },
+      "volunteers": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "farmer": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 104.0,
+        "food_produced": 96.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 8.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 8.0,
+        "evaluations": 4.0,
+        "volunteers": 4.0,
+        "arrivals": 4.0,
+        "completed": 4.0,
+        "active_end": 0.0,
+        "active_h": 8.0,
+        "duty_h": 8.0,
+        "muster_travel_h": 4.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 24.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 4.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 8.0,
+      "evaluations": 4.0,
+      "volunteers": 4.0,
+      "arrivals": 4.0,
+      "completed": 4.0,
+      "active_end": 0.0,
+      "active_h": 8.0,
+      "duty_h": 8.0,
+      "muster_travel_h": 4.0,
+      "muster_queue_h": 0.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": -80.0,
+      "food_produced": -96.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 0.0,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": 0.0,
+      "residence_changes": -4.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "farming": 13.532708333333352,
+        "idle": 54.86479166800004,
+        "sleep": 16.225555556199986,
+        "travel": 11.376944445366656
+      },
+      "on": {
+        "idle": 76.00000000000009,
+        "military_duty": 7.999999999999991,
+        "sleep": 7.999999999999991,
+        "travel": 3.9999999999999956
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "farming": -13.532708333333352,
+      "idle": 21.135208332000047,
+      "military_duty": 7.999999999999991,
+      "sleep": -8.225555556199994,
+      "travel": -7.37694444536666
+    },
+    "gates_and_counts": {
+      "PASS": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "TERM_COMPLETED": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "arrivals": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "evaluations": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "observations": {
+        "count_per_run": 7.999999999999999,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "volunteers": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "distant": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 0.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 2116.0,
+        "evaluations": 4.0,
+        "volunteers": 4.0,
+        "arrivals": 4.0,
+        "completed": 4.0,
+        "active_end": 0.0,
+        "active_h": 8.0,
+        "duty_h": 8.0,
+        "muster_travel_h": 24.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 8.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 2116.0,
+      "evaluations": 4.0,
+      "volunteers": 4.0,
+      "arrivals": 4.0,
+      "completed": 4.0,
+      "active_end": 0.0,
+      "active_h": 8.0,
+      "duty_h": 8.0,
+      "muster_travel_h": 24.0,
+      "muster_queue_h": 0.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": 0.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 0.0,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": 0.0,
+      "residence_changes": 8.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "idle": 72.066666668,
+        "sleep": 0.06666666799999992,
+        "travel": 23.86666666800007
+      },
+      "on": {
+        "idle": 11.173333332000013,
+        "military_duty": 7.999999999999991,
+        "sleep": 23.999999999999947,
+        "travel": 52.826666667999895
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "idle": -60.89333333599998,
+      "military_duty": 7.999999999999991,
+      "sleep": 23.933333331999947,
+      "travel": 28.959999999999823
+    },
+    "gates_and_counts": {
+      "PASS": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "TERM_COMPLETED": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "arrivals": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "evaluations": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "observations": {
+        "count_per_run": 2115.9999999999995,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "volunteers": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "bottleneck": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.05,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 1.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 4065.0,
+        "evaluations": 4.0,
+        "volunteers": 4.0,
+        "arrivals": 4.0,
+        "completed": 4.0,
+        "active_end": 0.0,
+        "active_h": 8.0,
+        "duty_h": 8.0,
+        "muster_travel_h": 4.0,
+        "muster_queue_h": 6.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 12.118518889,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 8.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 4065.0,
+      "evaluations": 4.0,
+      "volunteers": 4.0,
+      "arrivals": 4.0,
+      "completed": 4.0,
+      "active_end": 0.0,
+      "active_h": 8.0,
+      "duty_h": 8.0,
+      "muster_travel_h": 4.0,
+      "muster_queue_h": 6.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": 0.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 12.068518889,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": 0.0,
+      "residence_changes": 7.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "idle": 72.066666668,
+        "sleep": 21.883333334000042,
+        "travel": 1.9999999999999998,
+        "queue": 0.05000000099999994
+      },
+      "on": {
+        "idle": 43.78888833199996,
+        "military_duty": 7.999999999999991,
+        "sleep": 23.86666666800007,
+        "travel": 8.225926111000001,
+        "queue": 12.118518889000004
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "idle": -28.27777833600004,
+      "military_duty": 7.999999999999991,
+      "queue": 12.068518888000003,
+      "sleep": 1.9833333340000294,
+      "travel": 6.2259261110000015
+    },
+    "gates_and_counts": {
+      "PASS": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "TERM_COMPLETED": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "arrivals": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "evaluations": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "observations": {
+        "count_per_run": 4065.0,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "volunteers": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 3.9999999999999996
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "unknown": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 4.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 0.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 72.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 0.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 4.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 0.0,
+      "evaluations": 0.0,
+      "volunteers": 0.0,
+      "arrivals": 0.0,
+      "completed": 0.0,
+      "active_end": 0.0,
+      "active_h": 0.0,
+      "duty_h": 0.0,
+      "muster_travel_h": 0.0,
+      "muster_queue_h": 0.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": 0.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 0.0,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": 0.0,
+      "residence_changes": 0.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "idle": 72.066666668,
+        "sleep": 15.933333331999973,
+        "travel": 7.999999999999991
+      },
+      "on": {
+        "idle": 72.066666668,
+        "sleep": 15.933333331999973,
+        "travel": 7.999999999999991
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "idle": 0.0,
+      "sleep": 0.0,
+      "travel": 0.0
+    },
+    "gates_and_counts": {},
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "history_help": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 30.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 0.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 2.0,
+        "starvation_h": 31.0,
+        "total_queue_h": 0.0,
+        "care_food": 6.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 4.0,
+        "residence_changes": 2.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 4.0,
+        "evaluations": 543.0,
+        "volunteers": 1.0,
+        "arrivals": 1.0,
+        "completed": 1.0,
+        "active_end": 0.0,
+        "active_h": 2.0,
+        "duty_h": 2.0,
+        "muster_travel_h": 1.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 30.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 0.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 2.0,
+        "starvation_h": 31.0,
+        "total_queue_h": 0.0,
+        "care_food": 6.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 4.0,
+        "residence_changes": 2.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 4.0,
+      "evaluations": 543.0,
+      "volunteers": 1.0,
+      "arrivals": 1.0,
+      "completed": 1.0,
+      "active_end": 0.0,
+      "active_h": 2.0,
+      "duty_h": 2.0,
+      "muster_travel_h": 1.0,
+      "muster_queue_h": 0.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": 0.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 0.0,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": 0.0,
+      "residence_changes": 0.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "idle": 43.33333333400003,
+        "sleep": 4.666666666000001,
+        "travel": 3.0000000000000018
+      },
+      "on": {
+        "idle": 41.33333333400001,
+        "sleep": 4.666666666000001,
+        "travel": 3.0000000000000018,
+        "military_duty": 1.9999999999999998
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "idle": -2.0000000000000213,
+      "military_duty": 1.9999999999999998,
+      "sleep": 0.0,
+      "travel": 0.0
+    },
+    "gates_and_counts": {
+      "HIGHER_PRIORITY": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "INSUFFICIENT_TIME": {
+        "count_per_run": 120.0,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "PASS": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "SIX_HOUR_MARGIN": {
+        "count_per_run": 421.0000000000003,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "TERM_COMPLETED": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "arrivals": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "evaluations": {
+        "count_per_run": 543.0000000000002,
+        "unique_people_per_run": 1.9999999999999998
+      },
+      "observations": {
+        "count_per_run": 3.9999999999999996,
+        "unique_people_per_run": 1.9999999999999998
+      },
+      "volunteers": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "history_refusal": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 24.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 6.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 2.0,
+        "starvation_h": 25.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 9.018518611,
+        "residence_changes": 2.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 3.0,
+        "evaluations": 542.0,
+        "volunteers": 1.0,
+        "arrivals": 1.0,
+        "completed": 1.0,
+        "active_end": 0.0,
+        "active_h": 2.0,
+        "duty_h": 2.0,
+        "muster_travel_h": 1.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 24.0,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 6.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 2.0,
+        "starvation_h": 25.0,
+        "total_queue_h": 0.0,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 4.0,
+        "residence_changes": 2.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 3.0,
+      "evaluations": 542.0,
+      "volunteers": 1.0,
+      "arrivals": 1.0,
+      "completed": 1.0,
+      "active_end": 0.0,
+      "active_h": 2.0,
+      "duty_h": 2.0,
+      "muster_travel_h": 1.0,
+      "muster_queue_h": 0.0,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": 0.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 0.0,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": -5.018518610999999,
+      "residence_changes": 0.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "idle": 43.331481389,
+        "sleep": 4.666666666000001,
+        "travel": 3.0018519440000038
+      },
+      "on": {
+        "idle": 41.33333333400001,
+        "sleep": 4.666666666000001,
+        "travel": 3.0000000000000018,
+        "military_duty": 1.9999999999999998
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "idle": -1.9981480549999873,
+      "military_duty": 1.9999999999999998,
+      "sleep": 0.0,
+      "travel": -0.0018519440000019927
+    },
+    "gates_and_counts": {
+      "INSUFFICIENT_TIME": {
+        "count_per_run": 120.0,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "PASS": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "SIX_HOUR_MARGIN": {
+        "count_per_run": 421.0000000000003,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "TERM_COMPLETED": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "arrivals": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "evaluations": {
+        "count_per_run": 542.0,
+        "unique_people_per_run": 1.9999999999999998
+      },
+      "observations": {
+        "count_per_run": 3.0000000000000013,
+        "unique_people_per_run": 1.9999999999999998
+      },
+      "volunteers": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  },
+  "civilian_traffic": {
+    "means": {
+      "off": {
+        "observations": 0.0,
+        "evaluations": 0.0,
+        "volunteers": 0.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 0.0,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 90.119506667,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 342.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 90.119506667,
+        "total_queue_h": 112.477777778,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 9.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      },
+      "on": {
+        "observations": 14997.0,
+        "evaluations": 439.0,
+        "volunteers": 9.0,
+        "arrivals": 0.0,
+        "completed": 0.0,
+        "active_end": 0.0,
+        "active_h": 0.0,
+        "duty_h": 0.0,
+        "muster_travel_h": 0.0,
+        "muster_queue_h": 22.066666667,
+        "soldier_starvation_h": 0.0,
+        "civilian_starvation_h": 90.119506667,
+        "military_food": 0.0,
+        "cart_travel_h": 0.0,
+        "food_consumed": 340.0,
+        "food_produced": 0.0,
+        "food_spoiled": 0.0,
+        "deaths": 0.0,
+        "starvation_h": 90.119506667,
+        "total_queue_h": 134.544444444,
+        "care_food": 0.0,
+        "care_travel_h": 0.0,
+        "care_queue_h": 0.0,
+        "household_separation_h": 0.0,
+        "residence_changes": 9.0,
+        "accounting_error": 0.0,
+        "overtakes": 0.0
+      }
+    },
+    "paired_delta_on_minus_off": {
+      "observations": 14997.0,
+      "evaluations": 439.0,
+      "volunteers": 9.0,
+      "arrivals": 0.0,
+      "completed": 0.0,
+      "active_end": 0.0,
+      "active_h": 0.0,
+      "duty_h": 0.0,
+      "muster_travel_h": 0.0,
+      "muster_queue_h": 22.066666667,
+      "soldier_starvation_h": 0.0,
+      "civilian_starvation_h": 0.0,
+      "military_food": 0.0,
+      "cart_travel_h": 0.0,
+      "food_consumed": -2.0,
+      "food_produced": 0.0,
+      "food_spoiled": 0.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "total_queue_h": 22.06666666599999,
+      "care_food": 0.0,
+      "care_travel_h": 0.0,
+      "care_queue_h": 0.0,
+      "household_separation_h": 0.0,
+      "residence_changes": 0.0,
+      "accounting_error": 0.0,
+      "overtakes": 0.0
+    },
+    "activity_person_hours": {
+      "off": {
+        "gather": 0.2304505560000008,
+        "idle": 183.6084383349999,
+        "sleep": 63.70000000300017,
+        "travel": 23.983333332,
+        "queue": 112.4777777780002
+      },
+      "on": {
+        "gather": 0.22934000100000101,
+        "idle": 163.5428822219999,
+        "queue": 134.54444444299997,
+        "sleep": 61.70000000300013,
+        "travel": 23.983333332
+      }
+    },
+    "activity_delta_on_minus_off": {
+      "gather": -0.001110554999999791,
+      "idle": -20.065556113000014,
+      "queue": 22.066666664999772,
+      "sleep": -2.0000000000000426,
+      "travel": 0.0
+    },
+    "gates_and_counts": {
+      "HIGHER_PRIORITY": {
+        "count_per_run": 0.9999999999999999,
+        "unique_people_per_run": 0.9999999999999999
+      },
+      "INSUFFICIENT_TIME": {
+        "count_per_run": 280.00000000000006,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "PASS": {
+        "count_per_run": 9.0,
+        "unique_people_per_run": 9.0
+      },
+      "SIX_HOUR_MARGIN": {
+        "count_per_run": 149.00000000000003,
+        "unique_people_per_run": 3.9999999999999996
+      },
+      "VOLUNTARY_WITHDRAWAL": {
+        "count_per_run": 9.0,
+        "unique_people_per_run": 9.0
+      },
+      "evaluations": {
+        "count_per_run": 438.99999999999983,
+        "unique_people_per_run": 11.0
+      },
+      "observations": {
+        "count_per_run": 14996.999999999993,
+        "unique_people_per_run": 14.000000000000002
+      },
+      "volunteers": {
+        "count_per_run": 9.0,
+        "unique_people_per_run": 9.0
+      }
+    },
+    "within_arm_physical_variation": {
+      "off": {},
+      "on": {}
+    }
+  }
+}

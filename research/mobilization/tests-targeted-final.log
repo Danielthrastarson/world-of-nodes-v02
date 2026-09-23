@@ -1,0 +1,18 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.33s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 10 tests
+test provisioning::military::tests::unchanged_personal_history_gives_same_military_choice_and_no_hidden_truth ... ok
+test provisioning::military::tests::active_service_eating_uses_real_goods_and_same_ration ... ok
+test provisioning::military::tests::term_expiry_does_not_cancel_sleep ... ok
+test provisioning::military::tests::arrival_is_physical_role_preserves_person_and_property ... ok
+test provisioning::military::tests::service_has_no_cart_access_right_and_fifo_not_priority ... ok
+test provisioning::military::tests::owner_cart_travels_with_volunteer_but_service_cannot_requisition ... ok
+test provisioning::military::tests::voluntary_withdrawal_and_care_priority_keep_relations ... ok
+test provisioning::military::tests::births_extend_person_substrate_without_automatic_military_knowledge ... ok
+test provisioning::military::tests::request_is_local_and_child_cannot_enlist ... ok
+test provisioning::military::tests::danger_declines_and_death_ends_role_without_inheritance ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 230 filtered out; finished in 0.12s
+

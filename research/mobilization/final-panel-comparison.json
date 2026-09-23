@@ -1,0 +1,8 @@
+{
+  "source_revision": "a898be6",
+  "original_arms_reproduced_exactly": 22,
+  "original_runs": 660,
+  "new_working_farmer_runs": 60,
+  "total_final_runs": 720,
+  "note": "Every original CSV and compressed trace exactly reproduced after service-expiry correction. Parameter debug text differs only as documented. Original panel preserved, not additional independent evidence."
+}

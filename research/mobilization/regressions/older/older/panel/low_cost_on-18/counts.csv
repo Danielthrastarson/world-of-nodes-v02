@@ -1,0 +1,224 @@
+seed,hour,place,event,count
+18,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+18,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,12,0,"Consumed",75
+18,12,0,"Gathered",475
+18,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+18,12,1,"Consumed",75
+18,12,1,"Gathered",475
+18,36,0,"Arrived",31
+18,36,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",626
+18,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,36,0,"Consumed",348
+18,36,0,"Gathered",1335
+18,36,0,"Interrupted:cultivation work",2
+18,36,0,"Interrupted:eat accessible food",83
+18,36,0,"Interrupted:new gathering action",33
+18,36,0,"Interrupted:sleep",15328
+18,36,0,"Queued",47
+18,36,0,"Rejected",13
+18,36,0,"SleepStarted",15415
+18,36,1,"Arrived",8
+18,36,1,"CapitalGate:INVEST",52
+18,36,1,"CapitalGate:NO_KNOWN_DEMAND",28
+18,36,1,"CapitalGate:SIX_HOUR_MARGIN",93
+18,36,1,"CartStarted",2
+18,36,1,"Consumed",130
+18,36,1,"Gathered",600
+18,36,1,"Harvested",3
+18,36,1,"Interrupted:cultivation work",3
+18,36,1,"Interrupted:eat accessible food",27
+18,36,1,"Interrupted:queue for route",10
+18,36,1,"Interrupted:sleep",9193
+18,36,1,"Pickup",15
+18,36,1,"Queued",41
+18,36,1,"Rejected",15
+18,36,1,"SleepStarted",9218
+18,36,2,"Arrived",47
+18,36,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",90
+18,36,2,"Interrupted:queue for route",4
+18,36,2,"Interrupted:sleep",1912
+18,36,2,"Queued",47
+18,36,2,"SleepStarted",1916
+18,48,0,"Arrived",67
+18,48,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",2799
+18,48,0,"CapitalGate:NO_KNOWN_DEMAND",30
+18,48,0,"Consumed",539
+18,48,0,"Gathered",1972
+18,48,0,"Harvested",4
+18,48,0,"Interrupted:cultivation work",2
+18,48,0,"Interrupted:eat accessible food",117
+18,48,0,"Interrupted:new gathering action",136
+18,48,0,"Interrupted:sleep",21971
+18,48,0,"Queued",186
+18,48,0,"Rejected",14
+18,48,0,"SleepStarted",22068
+18,48,1,"Arrived",16
+18,48,1,"CapitalGate:INVEST",52
+18,48,1,"CapitalGate:NO_KNOWN_DEMAND",35
+18,48,1,"CapitalGate:NO_TIME_PAYBACK",6
+18,48,1,"CapitalGate:SIX_HOUR_MARGIN",93
+18,48,1,"CartStarted",2
+18,48,1,"Consumed",135
+18,48,1,"Delivered",2
+18,48,1,"Gathered",600
+18,48,1,"Harvested",5
+18,48,1,"Interrupted:cultivation work",5
+18,48,1,"Interrupted:eat accessible food",27
+18,48,1,"Interrupted:queue for route",10
+18,48,1,"Interrupted:sleep",9569
+18,48,1,"JobAccepted",2
+18,48,1,"Pickup",27
+18,48,1,"Queued",54
+18,48,1,"Rejected",16
+18,48,1,"SleepStarted",9594
+18,48,2,"Arrived",91
+18,48,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",751
+18,48,2,"CapitalGate:NO_KNOWN_DEMAND",5
+18,48,2,"Interrupted:queue for route",4
+18,48,2,"Interrupted:sleep",1980
+18,48,2,"Queued",90
+18,48,2,"SleepStarted",1994
+18,48,2,"Spoiled",45
+18,72,0,"Arrived",79
+18,72,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",3002
+18,72,0,"CapitalGate:NO_KNOWN_DEMAND",30
+18,72,0,"Consumed",656
+18,72,0,"Delivered",2
+18,72,0,"Gathered",1972
+18,72,0,"Harvested",40
+18,72,0,"Interrupted:cultivation work",36
+18,72,0,"Interrupted:eat accessible food",129
+18,72,0,"Interrupted:new gathering action",136
+18,72,0,"Interrupted:sleep",39057
+18,72,0,"JobAccepted",2
+18,72,0,"Pickup",162
+18,72,0,"Queued",217
+18,72,0,"Rejected",26
+18,72,0,"SleepStarted",40479
+18,72,1,"Arrived",31
+18,72,1,"CapitalGate:INVEST",52
+18,72,1,"CapitalGate:NO_KNOWN_DEMAND",42
+18,72,1,"CapitalGate:NO_TIME_PAYBACK",12
+18,72,1,"CapitalGate:SIX_HOUR_MARGIN",333
+18,72,1,"CargoLoaded",6
+18,72,1,"CartStarted",2
+18,72,1,"Consumed",135
+18,72,1,"Delivered",2
+18,72,1,"Gathered",600
+18,72,1,"Harvested",5
+18,72,1,"Interrupted:cultivation work",5
+18,72,1,"Interrupted:eat accessible food",27
+18,72,1,"Interrupted:queue for route",11
+18,72,1,"Interrupted:sleep",9978
+18,72,1,"JobAccepted",2
+18,72,1,"Pickup",27
+18,72,1,"Queued",61
+18,72,1,"Rejected",16
+18,72,1,"SleepStarted",10004
+18,72,2,"Arrived",119
+18,72,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1319
+18,72,2,"CapitalGate:NO_KNOWN_DEMAND",5
+18,72,2,"Consumed",2
+18,72,2,"Interrupted:queue for route",5
+18,72,2,"Interrupted:sleep",3113
+18,72,2,"Queued",117
+18,72,2,"SleepStarted",4799
+18,72,2,"Spoiled",45
+18,120,0,"Arrived",79
+18,120,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",3002
+18,120,0,"CapitalGate:NO_KNOWN_DEMAND",30
+18,120,0,"Consumed",773
+18,120,0,"Delivered",2
+18,120,0,"Died",5
+18,120,0,"Gathered",1972
+18,120,0,"Harvested",80
+18,120,0,"Interrupted:cultivation work",307
+18,120,0,"Interrupted:eat accessible food",154
+18,120,0,"Interrupted:new gathering action",136
+18,120,0,"Interrupted:sleep",59737
+18,120,0,"JobAccepted",2
+18,120,0,"Pickup",310
+18,120,0,"Queued",231
+18,120,0,"Rejected",41
+18,120,0,"SleepStarted",62421
+18,120,1,"Arrived",48
+18,120,1,"CapitalGate:INVEST",52
+18,120,1,"CapitalGate:NO_KNOWN_DEMAND",42
+18,120,1,"CapitalGate:NO_TIME_PAYBACK",12
+18,120,1,"CapitalGate:SIX_HOUR_MARGIN",333
+18,120,1,"CargoLoaded",6
+18,120,1,"CartStarted",2
+18,120,1,"Consumed",135
+18,120,1,"Delivered",2
+18,120,1,"Died",16
+18,120,1,"Gathered",600
+18,120,1,"Harvested",5
+18,120,1,"Interrupted:cultivation work",5
+18,120,1,"Interrupted:eat accessible food",27
+18,120,1,"Interrupted:queue for route",11
+18,120,1,"Interrupted:sleep",14822
+18,120,1,"JobAccepted",2
+18,120,1,"Pickup",27
+18,120,1,"Queued",61
+18,120,1,"Rejected",16
+18,120,1,"SleepStarted",20232
+18,120,2,"Arrived",132
+18,120,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1319
+18,120,2,"CapitalGate:NO_KNOWN_DEMAND",5
+18,120,2,"Consumed",2
+18,120,2,"Died",5
+18,120,2,"Interrupted:queue for route",13
+18,120,2,"Interrupted:sleep",6825
+18,120,2,"Queued",130
+18,120,2,"SleepStarted",9255
+18,120,2,"Spoiled",45
+18,168,0,"Arrived",79
+18,168,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",3002
+18,168,0,"CapitalGate:NO_KNOWN_DEMAND",30
+18,168,0,"Consumed",836
+18,168,0,"Delivered",2
+18,168,0,"Died",5
+18,168,0,"Gathered",1972
+18,168,0,"Harvested",109
+18,168,0,"Interrupted:cultivation work",659
+18,168,0,"Interrupted:eat accessible food",164
+18,168,0,"Interrupted:new gathering action",136
+18,168,0,"Interrupted:sleep",74406
+18,168,0,"JobAccepted",2
+18,168,0,"Pickup",378
+18,168,0,"Queued",231
+18,168,0,"Rejected",47
+18,168,0,"SleepStarted",77164
+18,168,1,"Arrived",48
+18,168,1,"CapitalGate:INVEST",52
+18,168,1,"CapitalGate:NO_KNOWN_DEMAND",42
+18,168,1,"CapitalGate:NO_TIME_PAYBACK",12
+18,168,1,"CapitalGate:SIX_HOUR_MARGIN",333
+18,168,1,"CargoLoaded",6
+18,168,1,"CartStarted",2
+18,168,1,"Consumed",135
+18,168,1,"Delivered",2
+18,168,1,"Died",25
+18,168,1,"Gathered",600
+18,168,1,"Harvested",5
+18,168,1,"Interrupted:cultivation work",5
+18,168,1,"Interrupted:eat accessible food",27
+18,168,1,"Interrupted:queue for route",11
+18,168,1,"Interrupted:sleep",16722
+18,168,1,"JobAccepted",2
+18,168,1,"Pickup",27
+18,168,1,"Queued",61
+18,168,1,"Rejected",16
+18,168,1,"SleepStarted",24863
+18,168,2,"Arrived",132
+18,168,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1319
+18,168,2,"CapitalGate:NO_KNOWN_DEMAND",5
+18,168,2,"Consumed",2
+18,168,2,"Died",5
+18,168,2,"Interrupted:queue for route",13
+18,168,2,"Interrupted:sleep",6825
+18,168,2,"Queued",130
+18,168,2,"SleepStarted",9255
+18,168,2,"Spoiled",45

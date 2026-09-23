@@ -1,0 +1,5 @@
+seed,person,activity,hours
+0,0,idle,26.666666667
+0,0,sleep,4.333333333
+0,1,idle,26.000000000
+0,1,sleep,4.000000000
