@@ -1,0 +1,53 @@
+{
+  "revision": "76511cc7fa40a284f86151d47713d849a0be31c9",
+  "runs": 360,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "fixtures": [
+    "complementary",
+    "symmetric",
+    "low_cost",
+    "high_cost",
+    "colocated",
+    "separated"
+  ],
+  "preserved_files": 2195,
+  "direct_f9a_runs_identical": 180,
+  "money": false,
+  "offer_policy": "unchanged",
+  "market_nodes": [
+    0,
+    2
+  ],
+  "offer_lifetime_h": 12
+}

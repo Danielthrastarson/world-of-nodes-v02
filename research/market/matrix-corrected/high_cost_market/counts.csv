@@ -1,0 +1,4981 @@
+seed,hour,place,event,count
+0,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+0,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+0,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+0,12,0,"Consumed",75
+0,12,0,"Gathered",475
+0,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+0,12,1,"Consumed",75
+0,12,1,"Gathered",475
+0,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+0,36,0,"Consumed",175
+0,36,0,"Gathered",1075
+0,36,0,"Interrupted:eat accessible food",75
+0,36,0,"Interrupted:sleep",12000
+0,36,0,"Rejected",4
+0,36,0,"SleepStarted",12075
+0,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+0,36,1,"Consumed",131
+0,36,1,"Gathered",600
+0,36,1,"Harvested",6
+0,36,1,"Interrupted:cultivation work",6
+0,36,1,"Interrupted:eat accessible food",25
+0,36,1,"Interrupted:queue for route",15
+0,36,1,"Interrupted:sleep",12777
+0,36,1,"Pickup",30
+0,36,1,"Queued",40
+0,36,1,"Rejected",31
+0,36,1,"SleepStarted",12802
+0,36,2,"Arrived",8
+0,36,2,"Interrupted:queue for route",4
+0,36,2,"Interrupted:sleep",712
+0,36,2,"Queued",8
+0,36,2,"SleepStarted",716
+0,48,0,"Arrived",4
+0,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+0,48,0,"Consumed",281
+0,48,0,"Gathered",1431
+0,48,0,"Interrupted:eat accessible food",100
+0,48,0,"Interrupted:new gathering action",28
+0,48,0,"Interrupted:sleep",18668
+0,48,0,"Queued",24
+0,48,0,"Rejected",4
+0,48,0,"SleepStarted",18751
+0,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+0,48,1,"Consumed",137
+0,48,1,"Gathered",600
+0,48,1,"Harvested",6
+0,48,1,"Interrupted:cultivation work",6
+0,48,1,"Interrupted:eat accessible food",25
+0,48,1,"Interrupted:queue for route",21
+0,48,1,"Interrupted:sleep",12828
+0,48,1,"Pickup",30
+0,48,1,"Queued",52
+0,48,1,"Rejected",33
+0,48,1,"SleepStarted",12853
+0,48,2,"Arrived",12
+0,48,2,"Interrupted:queue for route",12
+0,48,2,"Interrupted:sleep",724
+0,48,2,"Queued",20
+0,48,2,"SleepStarted",728
+0,48,2,"Spoiled",26
+0,72,0,"Arrived",8
+0,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+0,72,0,"Consumed",356
+0,72,0,"Died",4
+0,72,0,"Gathered",1431
+0,72,0,"Harvested",25
+0,72,0,"Interrupted:cultivation work",25
+0,72,0,"Interrupted:eat accessible food",100
+0,72,0,"Interrupted:new gathering action",28
+0,72,0,"Interrupted:sleep",28112
+0,72,0,"Pickup",100
+0,72,0,"Queued",49
+0,72,0,"Rejected",9
+0,72,0,"SleepStarted",30375
+0,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+0,72,1,"Consumed",149
+0,72,1,"Gathered",600
+0,72,1,"Harvested",12
+0,72,1,"Interrupted:cultivation work",12
+0,72,1,"Interrupted:eat accessible food",31
+0,72,1,"Interrupted:queue for route",606
+0,72,1,"Interrupted:sleep",16256
+0,72,1,"Pickup",60
+0,72,1,"Queued",643
+0,72,1,"Rejected",34
+0,72,1,"SleepStarted",16287
+0,72,2,"Arrived",16
+0,72,2,"Died",4
+0,72,2,"Interrupted:queue for route",596
+0,72,2,"Interrupted:sleep",1540
+0,72,2,"Queued",604
+0,72,2,"SleepStarted",1548
+0,72,2,"Spoiled",26
+0,72,3,"Died",7
+0,120,0,"Arrived",14
+0,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+0,120,0,"Consumed",470
+0,120,0,"Died",12
+0,120,0,"Gathered",1431
+0,120,0,"Harvested",63
+0,120,0,"Interrupted:cultivation work",63
+0,120,0,"Interrupted:eat accessible food",121
+0,120,0,"Interrupted:new gathering action",28
+0,120,0,"Interrupted:sleep",46541
+0,120,0,"Pickup",252
+0,120,0,"Queued",87
+0,120,0,"Rejected",17
+0,120,0,"SleepStarted",51201
+0,120,1,"Arrived",8
+0,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+0,120,1,"Consumed",153
+0,120,1,"Died",4
+0,120,1,"Gathered",600
+0,120,1,"Harvested",14
+0,120,1,"Interrupted:cultivation work",14
+0,120,1,"Interrupted:eat accessible food",31
+0,120,1,"Interrupted:queue for route",606
+0,120,1,"Interrupted:sleep",17412
+0,120,1,"Pickup",72
+0,120,1,"Queued",645
+0,120,1,"Rejected",35
+0,120,1,"SleepStarted",19131
+0,120,2,"Arrived",30
+0,120,2,"Died",4
+0,120,2,"Interrupted:queue for route",610
+0,120,2,"Interrupted:sleep",3918
+0,120,2,"Queued",618
+0,120,2,"SleepStarted",3940
+0,120,2,"Spoiled",26
+0,120,3,"Died",7
+0,168,0,"Arrived",14
+0,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+0,168,0,"Consumed",536
+0,168,0,"Died",14
+0,168,0,"Gathered",1431
+0,168,0,"Harvested",85
+0,168,0,"Interrupted:cultivation work",85
+0,168,0,"Interrupted:eat accessible food",147
+0,168,0,"Interrupted:new gathering action",28
+0,168,0,"Interrupted:sleep",56861
+0,168,0,"Pickup",340
+0,168,0,"Queued",109
+0,168,0,"Rejected",24
+0,168,0,"SleepStarted",62027
+0,168,1,"Arrived",16
+0,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+0,168,1,"Consumed",153
+0,168,1,"Died",12
+0,168,1,"Gathered",600
+0,168,1,"Harvested",14
+0,168,1,"Interrupted:cultivation work",14
+0,168,1,"Interrupted:eat accessible food",31
+0,168,1,"Interrupted:queue for route",606
+0,168,1,"Interrupted:sleep",17892
+0,168,1,"Pickup",72
+0,168,1,"Queued",645
+0,168,1,"Rejected",35
+0,168,1,"SleepStarted",22367
+0,168,2,"Arrived",38
+0,168,2,"Died",4
+0,168,2,"Interrupted:queue for route",618
+0,168,2,"Interrupted:sleep",5050
+0,168,2,"Queued",626
+0,168,2,"SleepStarted",5080
+0,168,2,"Spoiled",26
+0,168,3,"Died",7
+1,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+1,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+1,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+1,12,0,"Consumed",75
+1,12,0,"Gathered",475
+1,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+1,12,1,"Consumed",75
+1,12,1,"Gathered",475
+1,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+1,36,0,"Consumed",175
+1,36,0,"Gathered",1075
+1,36,0,"Interrupted:eat accessible food",75
+1,36,0,"Interrupted:sleep",12000
+1,36,0,"Rejected",11
+1,36,0,"SleepStarted",12075
+1,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+1,36,1,"Consumed",132
+1,36,1,"Gathered",600
+1,36,1,"Harvested",7
+1,36,1,"Interrupted:cultivation work",7
+1,36,1,"Interrupted:eat accessible food",25
+1,36,1,"Interrupted:queue for route",14
+1,36,1,"Interrupted:sleep",12777
+1,36,1,"Pickup",35
+1,36,1,"Queued",39
+1,36,1,"Rejected",15
+1,36,1,"SleepStarted",12802
+1,36,2,"Arrived",8
+1,36,2,"Interrupted:queue for route",4
+1,36,2,"Interrupted:sleep",712
+1,36,2,"Queued",8
+1,36,2,"SleepStarted",716
+1,48,0,"Arrived",4
+1,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+1,48,0,"Consumed",285
+1,48,0,"Gathered",1446
+1,48,0,"Interrupted:eat accessible food",101
+1,48,0,"Interrupted:new gathering action",25
+1,48,0,"Interrupted:sleep",18674
+1,48,0,"Queued",18
+1,48,0,"Rejected",11
+1,48,0,"SleepStarted",18759
+1,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+1,48,1,"Consumed",139
+1,48,1,"Gathered",600
+1,48,1,"Harvested",7
+1,48,1,"Interrupted:cultivation work",7
+1,48,1,"Interrupted:eat accessible food",25
+1,48,1,"Interrupted:queue for route",18
+1,48,1,"Interrupted:sleep",12832
+1,48,1,"Pickup",35
+1,48,1,"Queued",50
+1,48,1,"Rejected",18
+1,48,1,"SleepStarted",12857
+1,48,2,"Arrived",12
+1,48,2,"Interrupted:queue for route",12
+1,48,2,"Interrupted:sleep",724
+1,48,2,"Queued",20
+1,48,2,"SleepStarted",728
+1,48,2,"Spoiled",27
+1,72,0,"Arrived",8
+1,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+1,72,0,"Consumed",363
+1,72,0,"Died",4
+1,72,0,"Gathered",1446
+1,72,0,"Harvested",26
+1,72,0,"Interrupted:cultivation work",25
+1,72,0,"Interrupted:eat accessible food",101
+1,72,0,"Interrupted:new gathering action",25
+1,72,0,"Interrupted:sleep",28591
+1,72,0,"Pickup",104
+1,72,0,"Queued",43
+1,72,0,"Rejected",13
+1,72,0,"SleepStarted",30412
+1,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+1,72,1,"Consumed",153
+1,72,1,"Gathered",600
+1,72,1,"Harvested",14
+1,72,1,"Interrupted:cultivation work",14
+1,72,1,"Interrupted:eat accessible food",32
+1,72,1,"Interrupted:queue for route",408
+1,72,1,"Interrupted:sleep",16675
+1,72,1,"Pickup",70
+1,72,1,"Queued",447
+1,72,1,"Rejected",21
+1,72,1,"SleepStarted",16707
+1,72,2,"Arrived",16
+1,72,2,"Died",4
+1,72,2,"Interrupted:queue for route",596
+1,72,2,"Interrupted:sleep",1540
+1,72,2,"Queued",604
+1,72,2,"SleepStarted",1548
+1,72,2,"Spoiled",27
+1,72,3,"Died",6
+1,120,0,"Arrived",15
+1,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+1,120,0,"Consumed",483
+1,120,0,"Died",11
+1,120,0,"Gathered",1446
+1,120,0,"Harvested",66
+1,120,0,"Interrupted:cultivation work",65
+1,120,0,"Interrupted:eat accessible food",122
+1,120,0,"Interrupted:new gathering action",25
+1,120,0,"Interrupted:sleep",47983
+1,120,0,"Pickup",264
+1,120,0,"Queued",81
+1,120,0,"Rejected",25
+1,120,0,"SleepStarted",52254
+1,120,1,"Arrived",8
+1,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+1,120,1,"Consumed",159
+1,120,1,"Died",4
+1,120,1,"Gathered",600
+1,120,1,"Harvested",17
+1,120,1,"Interrupted:cultivation work",17
+1,120,1,"Interrupted:eat accessible food",32
+1,120,1,"Interrupted:queue for route",408
+1,120,1,"Interrupted:sleep",18169
+1,120,1,"Pickup",88
+1,120,1,"Queued",450
+1,120,1,"Rejected",21
+1,120,1,"SleepStarted",19889
+1,120,2,"Arrived",31
+1,120,2,"Died",4
+1,120,2,"Interrupted:queue for route",611
+1,120,2,"Interrupted:sleep",4217
+1,120,2,"Queued",619
+1,120,2,"SleepStarted",4240
+1,120,2,"Spoiled",27
+1,120,3,"Died",6
+1,168,0,"Arrived",15
+1,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+1,168,0,"Consumed",555
+1,168,0,"Died",14
+1,168,0,"Gathered",1446
+1,168,0,"Harvested",90
+1,168,0,"Interrupted:cultivation work",89
+1,168,0,"Interrupted:eat accessible food",148
+1,168,0,"Interrupted:new gathering action",25
+1,168,0,"Interrupted:sleep",59278
+1,168,0,"Pickup",360
+1,168,0,"Queued",103
+1,168,0,"Rejected",35
+1,168,0,"SleepStarted",64297
+1,168,1,"Arrived",16
+1,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+1,168,1,"Consumed",159
+1,168,1,"Died",12
+1,168,1,"Gathered",600
+1,168,1,"Harvested",17
+1,168,1,"Interrupted:cultivation work",17
+1,168,1,"Interrupted:eat accessible food",32
+1,168,1,"Interrupted:queue for route",408
+1,168,1,"Interrupted:sleep",18649
+1,168,1,"Pickup",88
+1,168,1,"Queued",450
+1,168,1,"Rejected",21
+1,168,1,"SleepStarted",23125
+1,168,2,"Arrived",39
+1,168,2,"Died",4
+1,168,2,"Interrupted:queue for route",619
+1,168,2,"Interrupted:sleep",5349
+1,168,2,"Queued",627
+1,168,2,"SleepStarted",5380
+1,168,2,"Spoiled",27
+1,168,3,"Died",6
+2,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+2,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+2,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+2,12,0,"Consumed",75
+2,12,0,"Gathered",475
+2,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+2,12,1,"Consumed",75
+2,12,1,"Gathered",475
+2,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+2,36,0,"Consumed",175
+2,36,0,"Gathered",1075
+2,36,0,"Interrupted:eat accessible food",75
+2,36,0,"Interrupted:sleep",12000
+2,36,0,"Rejected",6
+2,36,0,"SleepStarted",12075
+2,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+2,36,1,"Consumed",132
+2,36,1,"Gathered",600
+2,36,1,"Harvested",7
+2,36,1,"Interrupted:cultivation work",7
+2,36,1,"Interrupted:eat accessible food",25
+2,36,1,"Interrupted:queue for route",14
+2,36,1,"Interrupted:sleep",12777
+2,36,1,"Pickup",35
+2,36,1,"Queued",39
+2,36,1,"Rejected",15
+2,36,1,"SleepStarted",12802
+2,36,2,"Arrived",8
+2,36,2,"Interrupted:queue for route",4
+2,36,2,"Interrupted:sleep",712
+2,36,2,"Queued",8
+2,36,2,"SleepStarted",716
+2,48,0,"Arrived",4
+2,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+2,48,0,"Consumed",285
+2,48,0,"Gathered",1446
+2,48,0,"Interrupted:eat accessible food",101
+2,48,0,"Interrupted:new gathering action",25
+2,48,0,"Interrupted:sleep",18674
+2,48,0,"Queued",18
+2,48,0,"Rejected",6
+2,48,0,"SleepStarted",18759
+2,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+2,48,1,"Consumed",139
+2,48,1,"Gathered",600
+2,48,1,"Harvested",7
+2,48,1,"Interrupted:cultivation work",7
+2,48,1,"Interrupted:eat accessible food",25
+2,48,1,"Interrupted:queue for route",18
+2,48,1,"Interrupted:sleep",12832
+2,48,1,"Pickup",35
+2,48,1,"Queued",50
+2,48,1,"Rejected",19
+2,48,1,"SleepStarted",12857
+2,48,2,"Arrived",12
+2,48,2,"Interrupted:queue for route",12
+2,48,2,"Interrupted:sleep",724
+2,48,2,"Queued",20
+2,48,2,"SleepStarted",728
+2,48,2,"Spoiled",27
+2,72,0,"Arrived",8
+2,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+2,72,0,"Consumed",363
+2,72,0,"Died",4
+2,72,0,"Gathered",1446
+2,72,0,"Harvested",26
+2,72,0,"Interrupted:cultivation work",25
+2,72,0,"Interrupted:eat accessible food",101
+2,72,0,"Interrupted:new gathering action",25
+2,72,0,"Interrupted:sleep",28591
+2,72,0,"Pickup",104
+2,72,0,"Queued",43
+2,72,0,"Rejected",17
+2,72,0,"SleepStarted",30412
+2,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+2,72,1,"Consumed",153
+2,72,1,"Gathered",600
+2,72,1,"Harvested",14
+2,72,1,"Interrupted:cultivation work",14
+2,72,1,"Interrupted:eat accessible food",32
+2,72,1,"Interrupted:queue for route",408
+2,72,1,"Interrupted:sleep",16675
+2,72,1,"Pickup",70
+2,72,1,"Queued",447
+2,72,1,"Rejected",21
+2,72,1,"SleepStarted",16707
+2,72,2,"Arrived",16
+2,72,2,"Died",4
+2,72,2,"Interrupted:queue for route",596
+2,72,2,"Interrupted:sleep",1540
+2,72,2,"Queued",604
+2,72,2,"SleepStarted",1548
+2,72,2,"Spoiled",27
+2,72,3,"Died",6
+2,120,0,"Arrived",15
+2,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+2,120,0,"Consumed",483
+2,120,0,"Died",11
+2,120,0,"Gathered",1446
+2,120,0,"Harvested",66
+2,120,0,"Interrupted:cultivation work",65
+2,120,0,"Interrupted:eat accessible food",122
+2,120,0,"Interrupted:new gathering action",25
+2,120,0,"Interrupted:sleep",47983
+2,120,0,"Pickup",264
+2,120,0,"Queued",81
+2,120,0,"Rejected",27
+2,120,0,"SleepStarted",52254
+2,120,1,"Arrived",8
+2,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+2,120,1,"Consumed",159
+2,120,1,"Died",4
+2,120,1,"Gathered",600
+2,120,1,"Harvested",17
+2,120,1,"Interrupted:cultivation work",17
+2,120,1,"Interrupted:eat accessible food",32
+2,120,1,"Interrupted:queue for route",408
+2,120,1,"Interrupted:sleep",18169
+2,120,1,"Pickup",88
+2,120,1,"Queued",450
+2,120,1,"Rejected",21
+2,120,1,"SleepStarted",19889
+2,120,2,"Arrived",31
+2,120,2,"Died",4
+2,120,2,"Interrupted:queue for route",611
+2,120,2,"Interrupted:sleep",4217
+2,120,2,"Queued",619
+2,120,2,"SleepStarted",4240
+2,120,2,"Spoiled",27
+2,120,3,"Died",6
+2,168,0,"Arrived",15
+2,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+2,168,0,"Consumed",555
+2,168,0,"Died",14
+2,168,0,"Gathered",1446
+2,168,0,"Harvested",90
+2,168,0,"Interrupted:cultivation work",89
+2,168,0,"Interrupted:eat accessible food",148
+2,168,0,"Interrupted:new gathering action",25
+2,168,0,"Interrupted:sleep",59278
+2,168,0,"Pickup",360
+2,168,0,"Queued",103
+2,168,0,"Rejected",31
+2,168,0,"SleepStarted",64297
+2,168,1,"Arrived",16
+2,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+2,168,1,"Consumed",159
+2,168,1,"Died",12
+2,168,1,"Gathered",600
+2,168,1,"Harvested",17
+2,168,1,"Interrupted:cultivation work",17
+2,168,1,"Interrupted:eat accessible food",32
+2,168,1,"Interrupted:queue for route",408
+2,168,1,"Interrupted:sleep",18649
+2,168,1,"Pickup",88
+2,168,1,"Queued",450
+2,168,1,"Rejected",21
+2,168,1,"SleepStarted",23125
+2,168,2,"Arrived",39
+2,168,2,"Died",4
+2,168,2,"Interrupted:queue for route",619
+2,168,2,"Interrupted:sleep",5349
+2,168,2,"Queued",627
+2,168,2,"SleepStarted",5380
+2,168,2,"Spoiled",27
+2,168,3,"Died",6
+3,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+3,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+3,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+3,12,0,"Consumed",75
+3,12,0,"Gathered",475
+3,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+3,12,1,"Consumed",75
+3,12,1,"Gathered",475
+3,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+3,36,0,"Consumed",175
+3,36,0,"Gathered",1075
+3,36,0,"Interrupted:eat accessible food",75
+3,36,0,"Interrupted:sleep",12000
+3,36,0,"Rejected",5
+3,36,0,"SleepStarted",12075
+3,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+3,36,1,"Consumed",132
+3,36,1,"Gathered",600
+3,36,1,"Harvested",7
+3,36,1,"Interrupted:cultivation work",7
+3,36,1,"Interrupted:eat accessible food",25
+3,36,1,"Interrupted:queue for route",14
+3,36,1,"Interrupted:sleep",12777
+3,36,1,"Pickup",35
+3,36,1,"Queued",39
+3,36,1,"Rejected",15
+3,36,1,"SleepStarted",12802
+3,36,2,"Arrived",8
+3,36,2,"Interrupted:queue for route",4
+3,36,2,"Interrupted:sleep",712
+3,36,2,"Queued",8
+3,36,2,"SleepStarted",716
+3,48,0,"Arrived",4
+3,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+3,48,0,"Consumed",285
+3,48,0,"Gathered",1446
+3,48,0,"Interrupted:eat accessible food",101
+3,48,0,"Interrupted:new gathering action",25
+3,48,0,"Interrupted:sleep",18674
+3,48,0,"Queued",18
+3,48,0,"Rejected",5
+3,48,0,"SleepStarted",18759
+3,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+3,48,1,"Consumed",139
+3,48,1,"Gathered",600
+3,48,1,"Harvested",7
+3,48,1,"Interrupted:cultivation work",7
+3,48,1,"Interrupted:eat accessible food",25
+3,48,1,"Interrupted:queue for route",18
+3,48,1,"Interrupted:sleep",12832
+3,48,1,"Pickup",35
+3,48,1,"Queued",50
+3,48,1,"Rejected",15
+3,48,1,"SleepStarted",12857
+3,48,2,"Arrived",12
+3,48,2,"Interrupted:queue for route",12
+3,48,2,"Interrupted:sleep",724
+3,48,2,"Queued",20
+3,48,2,"SleepStarted",728
+3,48,2,"Spoiled",27
+3,72,0,"Arrived",8
+3,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+3,72,0,"Consumed",363
+3,72,0,"Died",4
+3,72,0,"Gathered",1446
+3,72,0,"Harvested",26
+3,72,0,"Interrupted:cultivation work",25
+3,72,0,"Interrupted:eat accessible food",101
+3,72,0,"Interrupted:new gathering action",25
+3,72,0,"Interrupted:sleep",28591
+3,72,0,"Pickup",104
+3,72,0,"Queued",43
+3,72,0,"Rejected",12
+3,72,0,"SleepStarted",30412
+3,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+3,72,1,"Consumed",153
+3,72,1,"Gathered",600
+3,72,1,"Harvested",14
+3,72,1,"Interrupted:cultivation work",14
+3,72,1,"Interrupted:eat accessible food",32
+3,72,1,"Interrupted:queue for route",408
+3,72,1,"Interrupted:sleep",16675
+3,72,1,"Pickup",70
+3,72,1,"Queued",447
+3,72,1,"Rejected",17
+3,72,1,"SleepStarted",16707
+3,72,2,"Arrived",16
+3,72,2,"Died",4
+3,72,2,"Interrupted:queue for route",596
+3,72,2,"Interrupted:sleep",1540
+3,72,2,"Queued",604
+3,72,2,"SleepStarted",1548
+3,72,2,"Spoiled",27
+3,72,3,"Died",6
+3,120,0,"Arrived",15
+3,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+3,120,0,"Consumed",483
+3,120,0,"Died",11
+3,120,0,"Gathered",1446
+3,120,0,"Harvested",66
+3,120,0,"Interrupted:cultivation work",65
+3,120,0,"Interrupted:eat accessible food",122
+3,120,0,"Interrupted:new gathering action",25
+3,120,0,"Interrupted:sleep",47983
+3,120,0,"Pickup",264
+3,120,0,"Queued",81
+3,120,0,"Rejected",30
+3,120,0,"SleepStarted",52254
+3,120,1,"Arrived",8
+3,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+3,120,1,"Consumed",159
+3,120,1,"Died",4
+3,120,1,"Gathered",600
+3,120,1,"Harvested",17
+3,120,1,"Interrupted:cultivation work",17
+3,120,1,"Interrupted:eat accessible food",32
+3,120,1,"Interrupted:queue for route",408
+3,120,1,"Interrupted:sleep",18169
+3,120,1,"Pickup",88
+3,120,1,"Queued",450
+3,120,1,"Rejected",18
+3,120,1,"SleepStarted",19889
+3,120,2,"Arrived",31
+3,120,2,"Died",4
+3,120,2,"Interrupted:queue for route",611
+3,120,2,"Interrupted:sleep",4217
+3,120,2,"Queued",619
+3,120,2,"SleepStarted",4240
+3,120,2,"Spoiled",27
+3,120,3,"Died",6
+3,168,0,"Arrived",15
+3,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+3,168,0,"Consumed",555
+3,168,0,"Died",14
+3,168,0,"Gathered",1446
+3,168,0,"Harvested",90
+3,168,0,"Interrupted:cultivation work",89
+3,168,0,"Interrupted:eat accessible food",148
+3,168,0,"Interrupted:new gathering action",25
+3,168,0,"Interrupted:sleep",59278
+3,168,0,"Pickup",360
+3,168,0,"Queued",103
+3,168,0,"Rejected",39
+3,168,0,"SleepStarted",64297
+3,168,1,"Arrived",16
+3,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+3,168,1,"Consumed",159
+3,168,1,"Died",12
+3,168,1,"Gathered",600
+3,168,1,"Harvested",17
+3,168,1,"Interrupted:cultivation work",17
+3,168,1,"Interrupted:eat accessible food",32
+3,168,1,"Interrupted:queue for route",408
+3,168,1,"Interrupted:sleep",18649
+3,168,1,"Pickup",88
+3,168,1,"Queued",450
+3,168,1,"Rejected",18
+3,168,1,"SleepStarted",23125
+3,168,2,"Arrived",39
+3,168,2,"Died",4
+3,168,2,"Interrupted:queue for route",619
+3,168,2,"Interrupted:sleep",5349
+3,168,2,"Queued",627
+3,168,2,"SleepStarted",5380
+3,168,2,"Spoiled",27
+3,168,3,"Died",6
+4,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+4,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+4,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+4,12,0,"Consumed",75
+4,12,0,"Gathered",475
+4,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+4,12,1,"Consumed",75
+4,12,1,"Gathered",475
+4,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+4,36,0,"Consumed",175
+4,36,0,"Gathered",1075
+4,36,0,"Interrupted:eat accessible food",75
+4,36,0,"Interrupted:sleep",12000
+4,36,0,"Rejected",6
+4,36,0,"SleepStarted",12075
+4,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+4,36,1,"Consumed",131
+4,36,1,"Gathered",600
+4,36,1,"Harvested",6
+4,36,1,"Interrupted:cultivation work",6
+4,36,1,"Interrupted:eat accessible food",25
+4,36,1,"Interrupted:queue for route",15
+4,36,1,"Interrupted:sleep",12777
+4,36,1,"Pickup",30
+4,36,1,"Queued",40
+4,36,1,"Rejected",15
+4,36,1,"SleepStarted",12802
+4,36,2,"Arrived",8
+4,36,2,"Interrupted:queue for route",4
+4,36,2,"Interrupted:sleep",712
+4,36,2,"Queued",8
+4,36,2,"SleepStarted",716
+4,48,0,"Arrived",4
+4,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+4,48,0,"Consumed",281
+4,48,0,"Gathered",1431
+4,48,0,"Interrupted:eat accessible food",100
+4,48,0,"Interrupted:new gathering action",28
+4,48,0,"Interrupted:sleep",18668
+4,48,0,"Queued",24
+4,48,0,"Rejected",6
+4,48,0,"SleepStarted",18751
+4,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+4,48,1,"Consumed",137
+4,48,1,"Gathered",600
+4,48,1,"Harvested",6
+4,48,1,"Interrupted:cultivation work",6
+4,48,1,"Interrupted:eat accessible food",25
+4,48,1,"Interrupted:queue for route",21
+4,48,1,"Interrupted:sleep",12828
+4,48,1,"Pickup",30
+4,48,1,"Queued",52
+4,48,1,"Rejected",17
+4,48,1,"SleepStarted",12853
+4,48,2,"Arrived",12
+4,48,2,"Interrupted:queue for route",12
+4,48,2,"Interrupted:sleep",724
+4,48,2,"Queued",20
+4,48,2,"SleepStarted",728
+4,48,2,"Spoiled",26
+4,72,0,"Arrived",8
+4,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+4,72,0,"Consumed",356
+4,72,0,"Died",4
+4,72,0,"Gathered",1431
+4,72,0,"Harvested",25
+4,72,0,"Interrupted:cultivation work",25
+4,72,0,"Interrupted:eat accessible food",100
+4,72,0,"Interrupted:new gathering action",28
+4,72,0,"Interrupted:sleep",28112
+4,72,0,"Pickup",100
+4,72,0,"Queued",49
+4,72,0,"Rejected",15
+4,72,0,"SleepStarted",30375
+4,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+4,72,1,"Consumed",149
+4,72,1,"Gathered",600
+4,72,1,"Harvested",12
+4,72,1,"Interrupted:cultivation work",12
+4,72,1,"Interrupted:eat accessible food",31
+4,72,1,"Interrupted:queue for route",606
+4,72,1,"Interrupted:sleep",16256
+4,72,1,"Pickup",60
+4,72,1,"Queued",643
+4,72,1,"Rejected",20
+4,72,1,"SleepStarted",16287
+4,72,2,"Arrived",16
+4,72,2,"Died",4
+4,72,2,"Interrupted:queue for route",596
+4,72,2,"Interrupted:sleep",1540
+4,72,2,"Queued",604
+4,72,2,"SleepStarted",1548
+4,72,2,"Spoiled",26
+4,72,3,"Died",7
+4,120,0,"Arrived",14
+4,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+4,120,0,"Consumed",470
+4,120,0,"Died",12
+4,120,0,"Gathered",1431
+4,120,0,"Harvested",63
+4,120,0,"Interrupted:cultivation work",63
+4,120,0,"Interrupted:eat accessible food",121
+4,120,0,"Interrupted:new gathering action",28
+4,120,0,"Interrupted:sleep",46541
+4,120,0,"Pickup",252
+4,120,0,"Queued",87
+4,120,0,"Rejected",27
+4,120,0,"SleepStarted",51201
+4,120,1,"Arrived",8
+4,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+4,120,1,"Consumed",153
+4,120,1,"Died",4
+4,120,1,"Gathered",600
+4,120,1,"Harvested",14
+4,120,1,"Interrupted:cultivation work",14
+4,120,1,"Interrupted:eat accessible food",31
+4,120,1,"Interrupted:queue for route",606
+4,120,1,"Interrupted:sleep",17412
+4,120,1,"Pickup",72
+4,120,1,"Queued",645
+4,120,1,"Rejected",20
+4,120,1,"SleepStarted",19131
+4,120,2,"Arrived",30
+4,120,2,"Died",4
+4,120,2,"Interrupted:queue for route",610
+4,120,2,"Interrupted:sleep",3918
+4,120,2,"Queued",618
+4,120,2,"SleepStarted",3940
+4,120,2,"Spoiled",26
+4,120,3,"Died",7
+4,168,0,"Arrived",14
+4,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+4,168,0,"Consumed",536
+4,168,0,"Died",14
+4,168,0,"Gathered",1431
+4,168,0,"Harvested",85
+4,168,0,"Interrupted:cultivation work",85
+4,168,0,"Interrupted:eat accessible food",147
+4,168,0,"Interrupted:new gathering action",28
+4,168,0,"Interrupted:sleep",56861
+4,168,0,"Pickup",340
+4,168,0,"Queued",109
+4,168,0,"Rejected",31
+4,168,0,"SleepStarted",62027
+4,168,1,"Arrived",16
+4,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+4,168,1,"Consumed",153
+4,168,1,"Died",12
+4,168,1,"Gathered",600
+4,168,1,"Harvested",14
+4,168,1,"Interrupted:cultivation work",14
+4,168,1,"Interrupted:eat accessible food",31
+4,168,1,"Interrupted:queue for route",606
+4,168,1,"Interrupted:sleep",17892
+4,168,1,"Pickup",72
+4,168,1,"Queued",645
+4,168,1,"Rejected",20
+4,168,1,"SleepStarted",22367
+4,168,2,"Arrived",38
+4,168,2,"Died",4
+4,168,2,"Interrupted:queue for route",618
+4,168,2,"Interrupted:sleep",5050
+4,168,2,"Queued",626
+4,168,2,"SleepStarted",5080
+4,168,2,"Spoiled",26
+4,168,3,"Died",7
+5,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+5,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+5,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+5,12,0,"Consumed",75
+5,12,0,"Gathered",475
+5,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+5,12,1,"Consumed",75
+5,12,1,"Gathered",475
+5,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+5,36,0,"Consumed",175
+5,36,0,"Gathered",1075
+5,36,0,"Interrupted:eat accessible food",75
+5,36,0,"Interrupted:sleep",12000
+5,36,0,"Rejected",5
+5,36,0,"SleepStarted",12075
+5,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+5,36,1,"Consumed",131
+5,36,1,"Gathered",600
+5,36,1,"Harvested",6
+5,36,1,"Interrupted:cultivation work",6
+5,36,1,"Interrupted:eat accessible food",25
+5,36,1,"Interrupted:queue for route",15
+5,36,1,"Interrupted:sleep",12777
+5,36,1,"Pickup",30
+5,36,1,"Queued",40
+5,36,1,"Rejected",15
+5,36,1,"SleepStarted",12802
+5,36,2,"Arrived",8
+5,36,2,"Interrupted:queue for route",4
+5,36,2,"Interrupted:sleep",712
+5,36,2,"Queued",8
+5,36,2,"SleepStarted",716
+5,48,0,"Arrived",4
+5,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+5,48,0,"Consumed",281
+5,48,0,"Gathered",1431
+5,48,0,"Interrupted:eat accessible food",100
+5,48,0,"Interrupted:new gathering action",28
+5,48,0,"Interrupted:sleep",18668
+5,48,0,"Queued",24
+5,48,0,"Rejected",5
+5,48,0,"SleepStarted",18751
+5,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+5,48,1,"Consumed",137
+5,48,1,"Gathered",600
+5,48,1,"Harvested",6
+5,48,1,"Interrupted:cultivation work",6
+5,48,1,"Interrupted:eat accessible food",25
+5,48,1,"Interrupted:queue for route",21
+5,48,1,"Interrupted:sleep",12828
+5,48,1,"Pickup",30
+5,48,1,"Queued",52
+5,48,1,"Rejected",18
+5,48,1,"SleepStarted",12853
+5,48,2,"Arrived",12
+5,48,2,"Interrupted:queue for route",12
+5,48,2,"Interrupted:sleep",724
+5,48,2,"Queued",20
+5,48,2,"SleepStarted",728
+5,48,2,"Spoiled",26
+5,72,0,"Arrived",8
+5,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+5,72,0,"Consumed",356
+5,72,0,"Died",4
+5,72,0,"Gathered",1431
+5,72,0,"Harvested",25
+5,72,0,"Interrupted:cultivation work",25
+5,72,0,"Interrupted:eat accessible food",100
+5,72,0,"Interrupted:new gathering action",28
+5,72,0,"Interrupted:sleep",28112
+5,72,0,"Pickup",100
+5,72,0,"Queued",49
+5,72,0,"Rejected",15
+5,72,0,"SleepStarted",30375
+5,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+5,72,1,"Consumed",149
+5,72,1,"Gathered",600
+5,72,1,"Harvested",12
+5,72,1,"Interrupted:cultivation work",12
+5,72,1,"Interrupted:eat accessible food",31
+5,72,1,"Interrupted:queue for route",606
+5,72,1,"Interrupted:sleep",16256
+5,72,1,"Pickup",60
+5,72,1,"Queued",643
+5,72,1,"Rejected",24
+5,72,1,"SleepStarted",16287
+5,72,2,"Arrived",16
+5,72,2,"Died",4
+5,72,2,"Interrupted:queue for route",596
+5,72,2,"Interrupted:sleep",1540
+5,72,2,"Queued",604
+5,72,2,"SleepStarted",1548
+5,72,2,"Spoiled",26
+5,72,3,"Died",7
+5,120,0,"Arrived",14
+5,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+5,120,0,"Consumed",470
+5,120,0,"Died",12
+5,120,0,"Gathered",1431
+5,120,0,"Harvested",63
+5,120,0,"Interrupted:cultivation work",63
+5,120,0,"Interrupted:eat accessible food",121
+5,120,0,"Interrupted:new gathering action",28
+5,120,0,"Interrupted:sleep",46541
+5,120,0,"Pickup",252
+5,120,0,"Queued",87
+5,120,0,"Rejected",26
+5,120,0,"SleepStarted",51201
+5,120,1,"Arrived",8
+5,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+5,120,1,"Consumed",153
+5,120,1,"Died",4
+5,120,1,"Gathered",600
+5,120,1,"Harvested",14
+5,120,1,"Interrupted:cultivation work",14
+5,120,1,"Interrupted:eat accessible food",31
+5,120,1,"Interrupted:queue for route",606
+5,120,1,"Interrupted:sleep",17412
+5,120,1,"Pickup",72
+5,120,1,"Queued",645
+5,120,1,"Rejected",25
+5,120,1,"SleepStarted",19131
+5,120,2,"Arrived",30
+5,120,2,"Died",4
+5,120,2,"Interrupted:queue for route",610
+5,120,2,"Interrupted:sleep",3918
+5,120,2,"Queued",618
+5,120,2,"SleepStarted",3940
+5,120,2,"Spoiled",26
+5,120,3,"Died",7
+5,168,0,"Arrived",14
+5,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+5,168,0,"Consumed",536
+5,168,0,"Died",14
+5,168,0,"Gathered",1431
+5,168,0,"Harvested",85
+5,168,0,"Interrupted:cultivation work",85
+5,168,0,"Interrupted:eat accessible food",147
+5,168,0,"Interrupted:new gathering action",28
+5,168,0,"Interrupted:sleep",56861
+5,168,0,"Pickup",340
+5,168,0,"Queued",109
+5,168,0,"Rejected",30
+5,168,0,"SleepStarted",62027
+5,168,1,"Arrived",16
+5,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+5,168,1,"Consumed",153
+5,168,1,"Died",12
+5,168,1,"Gathered",600
+5,168,1,"Harvested",14
+5,168,1,"Interrupted:cultivation work",14
+5,168,1,"Interrupted:eat accessible food",31
+5,168,1,"Interrupted:queue for route",606
+5,168,1,"Interrupted:sleep",17892
+5,168,1,"Pickup",72
+5,168,1,"Queued",645
+5,168,1,"Rejected",25
+5,168,1,"SleepStarted",22367
+5,168,2,"Arrived",38
+5,168,2,"Died",4
+5,168,2,"Interrupted:queue for route",618
+5,168,2,"Interrupted:sleep",5050
+5,168,2,"Queued",626
+5,168,2,"SleepStarted",5080
+5,168,2,"Spoiled",26
+5,168,3,"Died",7
+6,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+6,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+6,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+6,12,0,"Consumed",75
+6,12,0,"Gathered",475
+6,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+6,12,1,"Consumed",75
+6,12,1,"Gathered",475
+6,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+6,36,0,"Consumed",175
+6,36,0,"Gathered",1075
+6,36,0,"Interrupted:eat accessible food",75
+6,36,0,"Interrupted:sleep",12000
+6,36,0,"Rejected",5
+6,36,0,"SleepStarted",12075
+6,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+6,36,1,"Consumed",131
+6,36,1,"Gathered",600
+6,36,1,"Harvested",6
+6,36,1,"Interrupted:cultivation work",6
+6,36,1,"Interrupted:eat accessible food",25
+6,36,1,"Interrupted:queue for route",15
+6,36,1,"Interrupted:sleep",12777
+6,36,1,"Pickup",30
+6,36,1,"Queued",40
+6,36,1,"Rejected",31
+6,36,1,"SleepStarted",12802
+6,36,2,"Arrived",8
+6,36,2,"Interrupted:queue for route",4
+6,36,2,"Interrupted:sleep",712
+6,36,2,"Queued",8
+6,36,2,"SleepStarted",716
+6,48,0,"Arrived",4
+6,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+6,48,0,"Consumed",281
+6,48,0,"Gathered",1431
+6,48,0,"Interrupted:eat accessible food",100
+6,48,0,"Interrupted:new gathering action",28
+6,48,0,"Interrupted:sleep",18668
+6,48,0,"Queued",24
+6,48,0,"Rejected",5
+6,48,0,"SleepStarted",18751
+6,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+6,48,1,"Consumed",137
+6,48,1,"Gathered",600
+6,48,1,"Harvested",6
+6,48,1,"Interrupted:cultivation work",6
+6,48,1,"Interrupted:eat accessible food",25
+6,48,1,"Interrupted:queue for route",21
+6,48,1,"Interrupted:sleep",12828
+6,48,1,"Pickup",30
+6,48,1,"Queued",52
+6,48,1,"Rejected",35
+6,48,1,"SleepStarted",12853
+6,48,2,"Arrived",12
+6,48,2,"Interrupted:queue for route",12
+6,48,2,"Interrupted:sleep",724
+6,48,2,"Queued",20
+6,48,2,"SleepStarted",728
+6,48,2,"Spoiled",26
+6,72,0,"Arrived",8
+6,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+6,72,0,"Consumed",356
+6,72,0,"Died",4
+6,72,0,"Gathered",1431
+6,72,0,"Harvested",25
+6,72,0,"Interrupted:cultivation work",25
+6,72,0,"Interrupted:eat accessible food",100
+6,72,0,"Interrupted:new gathering action",28
+6,72,0,"Interrupted:sleep",28112
+6,72,0,"Pickup",100
+6,72,0,"Queued",49
+6,72,0,"Rejected",14
+6,72,0,"SleepStarted",30375
+6,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+6,72,1,"Consumed",149
+6,72,1,"Gathered",600
+6,72,1,"Harvested",12
+6,72,1,"Interrupted:cultivation work",12
+6,72,1,"Interrupted:eat accessible food",31
+6,72,1,"Interrupted:queue for route",606
+6,72,1,"Interrupted:sleep",16256
+6,72,1,"Pickup",60
+6,72,1,"Queued",643
+6,72,1,"Rejected",37
+6,72,1,"SleepStarted",16287
+6,72,2,"Arrived",16
+6,72,2,"Died",4
+6,72,2,"Interrupted:queue for route",596
+6,72,2,"Interrupted:sleep",1540
+6,72,2,"Queued",604
+6,72,2,"SleepStarted",1548
+6,72,2,"Spoiled",26
+6,72,3,"Died",7
+6,120,0,"Arrived",14
+6,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+6,120,0,"Consumed",470
+6,120,0,"Died",12
+6,120,0,"Gathered",1431
+6,120,0,"Harvested",63
+6,120,0,"Interrupted:cultivation work",63
+6,120,0,"Interrupted:eat accessible food",121
+6,120,0,"Interrupted:new gathering action",28
+6,120,0,"Interrupted:sleep",46541
+6,120,0,"Pickup",252
+6,120,0,"Queued",87
+6,120,0,"Rejected",24
+6,120,0,"SleepStarted",51201
+6,120,1,"Arrived",8
+6,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+6,120,1,"Consumed",153
+6,120,1,"Died",4
+6,120,1,"Gathered",600
+6,120,1,"Harvested",14
+6,120,1,"Interrupted:cultivation work",14
+6,120,1,"Interrupted:eat accessible food",31
+6,120,1,"Interrupted:queue for route",606
+6,120,1,"Interrupted:sleep",17412
+6,120,1,"Pickup",72
+6,120,1,"Queued",645
+6,120,1,"Rejected",38
+6,120,1,"SleepStarted",19131
+6,120,2,"Arrived",30
+6,120,2,"Died",4
+6,120,2,"Interrupted:queue for route",610
+6,120,2,"Interrupted:sleep",3918
+6,120,2,"Queued",618
+6,120,2,"SleepStarted",3940
+6,120,2,"Spoiled",26
+6,120,3,"Died",7
+6,168,0,"Arrived",14
+6,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+6,168,0,"Consumed",536
+6,168,0,"Died",14
+6,168,0,"Gathered",1431
+6,168,0,"Harvested",85
+6,168,0,"Interrupted:cultivation work",85
+6,168,0,"Interrupted:eat accessible food",147
+6,168,0,"Interrupted:new gathering action",28
+6,168,0,"Interrupted:sleep",56861
+6,168,0,"Pickup",340
+6,168,0,"Queued",109
+6,168,0,"Rejected",29
+6,168,0,"SleepStarted",62027
+6,168,1,"Arrived",16
+6,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+6,168,1,"Consumed",153
+6,168,1,"Died",12
+6,168,1,"Gathered",600
+6,168,1,"Harvested",14
+6,168,1,"Interrupted:cultivation work",14
+6,168,1,"Interrupted:eat accessible food",31
+6,168,1,"Interrupted:queue for route",606
+6,168,1,"Interrupted:sleep",17892
+6,168,1,"Pickup",72
+6,168,1,"Queued",645
+6,168,1,"Rejected",38
+6,168,1,"SleepStarted",22367
+6,168,2,"Arrived",38
+6,168,2,"Died",4
+6,168,2,"Interrupted:queue for route",618
+6,168,2,"Interrupted:sleep",5050
+6,168,2,"Queued",626
+6,168,2,"SleepStarted",5080
+6,168,2,"Spoiled",26
+6,168,3,"Died",7
+7,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+7,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+7,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+7,12,0,"Consumed",75
+7,12,0,"Gathered",475
+7,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+7,12,1,"Consumed",75
+7,12,1,"Gathered",475
+7,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+7,36,0,"Consumed",175
+7,36,0,"Gathered",1075
+7,36,0,"Interrupted:eat accessible food",75
+7,36,0,"Interrupted:sleep",12000
+7,36,0,"Rejected",10
+7,36,0,"SleepStarted",12075
+7,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+7,36,1,"Consumed",131
+7,36,1,"Gathered",600
+7,36,1,"Harvested",6
+7,36,1,"Interrupted:cultivation work",6
+7,36,1,"Interrupted:eat accessible food",25
+7,36,1,"Interrupted:queue for route",15
+7,36,1,"Interrupted:sleep",12777
+7,36,1,"Pickup",30
+7,36,1,"Queued",40
+7,36,1,"Rejected",31
+7,36,1,"SleepStarted",12802
+7,36,2,"Arrived",8
+7,36,2,"Interrupted:queue for route",4
+7,36,2,"Interrupted:sleep",712
+7,36,2,"Queued",8
+7,36,2,"SleepStarted",716
+7,48,0,"Arrived",4
+7,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+7,48,0,"Consumed",281
+7,48,0,"Gathered",1431
+7,48,0,"Interrupted:eat accessible food",100
+7,48,0,"Interrupted:new gathering action",28
+7,48,0,"Interrupted:sleep",18668
+7,48,0,"Queued",24
+7,48,0,"Rejected",10
+7,48,0,"SleepStarted",18751
+7,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+7,48,1,"Consumed",137
+7,48,1,"Gathered",600
+7,48,1,"Harvested",6
+7,48,1,"Interrupted:cultivation work",6
+7,48,1,"Interrupted:eat accessible food",25
+7,48,1,"Interrupted:queue for route",21
+7,48,1,"Interrupted:sleep",12828
+7,48,1,"Pickup",30
+7,48,1,"Queued",52
+7,48,1,"Rejected",35
+7,48,1,"SleepStarted",12853
+7,48,2,"Arrived",12
+7,48,2,"Interrupted:queue for route",12
+7,48,2,"Interrupted:sleep",724
+7,48,2,"Queued",20
+7,48,2,"SleepStarted",728
+7,48,2,"Spoiled",26
+7,72,0,"Arrived",8
+7,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+7,72,0,"Consumed",356
+7,72,0,"Died",4
+7,72,0,"Gathered",1431
+7,72,0,"Harvested",25
+7,72,0,"Interrupted:cultivation work",25
+7,72,0,"Interrupted:eat accessible food",100
+7,72,0,"Interrupted:new gathering action",28
+7,72,0,"Interrupted:sleep",28112
+7,72,0,"Pickup",100
+7,72,0,"Queued",49
+7,72,0,"Rejected",19
+7,72,0,"SleepStarted",30375
+7,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+7,72,1,"Consumed",149
+7,72,1,"Gathered",600
+7,72,1,"Harvested",12
+7,72,1,"Interrupted:cultivation work",12
+7,72,1,"Interrupted:eat accessible food",31
+7,72,1,"Interrupted:queue for route",606
+7,72,1,"Interrupted:sleep",16256
+7,72,1,"Pickup",60
+7,72,1,"Queued",643
+7,72,1,"Rejected",37
+7,72,1,"SleepStarted",16287
+7,72,2,"Arrived",16
+7,72,2,"Died",4
+7,72,2,"Interrupted:queue for route",596
+7,72,2,"Interrupted:sleep",1540
+7,72,2,"Queued",604
+7,72,2,"SleepStarted",1548
+7,72,2,"Spoiled",26
+7,72,3,"Died",7
+7,120,0,"Arrived",14
+7,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+7,120,0,"Consumed",470
+7,120,0,"Died",12
+7,120,0,"Gathered",1431
+7,120,0,"Harvested",63
+7,120,0,"Interrupted:cultivation work",63
+7,120,0,"Interrupted:eat accessible food",121
+7,120,0,"Interrupted:new gathering action",28
+7,120,0,"Interrupted:sleep",46541
+7,120,0,"Pickup",252
+7,120,0,"Queued",87
+7,120,0,"Rejected",29
+7,120,0,"SleepStarted",51201
+7,120,1,"Arrived",8
+7,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+7,120,1,"Consumed",153
+7,120,1,"Died",4
+7,120,1,"Gathered",600
+7,120,1,"Harvested",14
+7,120,1,"Interrupted:cultivation work",14
+7,120,1,"Interrupted:eat accessible food",31
+7,120,1,"Interrupted:queue for route",606
+7,120,1,"Interrupted:sleep",17412
+7,120,1,"Pickup",72
+7,120,1,"Queued",645
+7,120,1,"Rejected",37
+7,120,1,"SleepStarted",19131
+7,120,2,"Arrived",30
+7,120,2,"Died",4
+7,120,2,"Interrupted:queue for route",610
+7,120,2,"Interrupted:sleep",3918
+7,120,2,"Queued",618
+7,120,2,"SleepStarted",3940
+7,120,2,"Spoiled",26
+7,120,3,"Died",7
+7,168,0,"Arrived",14
+7,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+7,168,0,"Consumed",536
+7,168,0,"Died",14
+7,168,0,"Gathered",1431
+7,168,0,"Harvested",85
+7,168,0,"Interrupted:cultivation work",85
+7,168,0,"Interrupted:eat accessible food",147
+7,168,0,"Interrupted:new gathering action",28
+7,168,0,"Interrupted:sleep",56861
+7,168,0,"Pickup",340
+7,168,0,"Queued",109
+7,168,0,"Rejected",34
+7,168,0,"SleepStarted",62027
+7,168,1,"Arrived",16
+7,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+7,168,1,"Consumed",153
+7,168,1,"Died",12
+7,168,1,"Gathered",600
+7,168,1,"Harvested",14
+7,168,1,"Interrupted:cultivation work",14
+7,168,1,"Interrupted:eat accessible food",31
+7,168,1,"Interrupted:queue for route",606
+7,168,1,"Interrupted:sleep",17892
+7,168,1,"Pickup",72
+7,168,1,"Queued",645
+7,168,1,"Rejected",37
+7,168,1,"SleepStarted",22367
+7,168,2,"Arrived",38
+7,168,2,"Died",4
+7,168,2,"Interrupted:queue for route",618
+7,168,2,"Interrupted:sleep",5050
+7,168,2,"Queued",626
+7,168,2,"SleepStarted",5080
+7,168,2,"Spoiled",26
+7,168,3,"Died",7
+8,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+8,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+8,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+8,12,0,"Consumed",75
+8,12,0,"Gathered",475
+8,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+8,12,1,"Consumed",75
+8,12,1,"Gathered",475
+8,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+8,36,0,"Consumed",175
+8,36,0,"Gathered",1075
+8,36,0,"Interrupted:eat accessible food",75
+8,36,0,"Interrupted:sleep",12000
+8,36,0,"Rejected",7
+8,36,0,"SleepStarted",12075
+8,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+8,36,1,"Consumed",131
+8,36,1,"Gathered",600
+8,36,1,"Harvested",6
+8,36,1,"Interrupted:cultivation work",6
+8,36,1,"Interrupted:eat accessible food",25
+8,36,1,"Interrupted:queue for route",15
+8,36,1,"Interrupted:sleep",12777
+8,36,1,"Pickup",30
+8,36,1,"Queued",40
+8,36,1,"Rejected",31
+8,36,1,"SleepStarted",12802
+8,36,2,"Arrived",8
+8,36,2,"Interrupted:queue for route",4
+8,36,2,"Interrupted:sleep",712
+8,36,2,"Queued",8
+8,36,2,"SleepStarted",716
+8,48,0,"Arrived",4
+8,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+8,48,0,"Consumed",281
+8,48,0,"Gathered",1431
+8,48,0,"Interrupted:eat accessible food",100
+8,48,0,"Interrupted:new gathering action",28
+8,48,0,"Interrupted:sleep",18668
+8,48,0,"Queued",24
+8,48,0,"Rejected",7
+8,48,0,"SleepStarted",18751
+8,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+8,48,1,"Consumed",137
+8,48,1,"Gathered",600
+8,48,1,"Harvested",6
+8,48,1,"Interrupted:cultivation work",6
+8,48,1,"Interrupted:eat accessible food",25
+8,48,1,"Interrupted:queue for route",21
+8,48,1,"Interrupted:sleep",12828
+8,48,1,"Pickup",30
+8,48,1,"Queued",52
+8,48,1,"Rejected",33
+8,48,1,"SleepStarted",12853
+8,48,2,"Arrived",12
+8,48,2,"Interrupted:queue for route",12
+8,48,2,"Interrupted:sleep",724
+8,48,2,"Queued",20
+8,48,2,"SleepStarted",728
+8,48,2,"Spoiled",26
+8,72,0,"Arrived",8
+8,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+8,72,0,"Consumed",356
+8,72,0,"Died",4
+8,72,0,"Gathered",1431
+8,72,0,"Harvested",25
+8,72,0,"Interrupted:cultivation work",25
+8,72,0,"Interrupted:eat accessible food",100
+8,72,0,"Interrupted:new gathering action",28
+8,72,0,"Interrupted:sleep",28112
+8,72,0,"Pickup",100
+8,72,0,"Queued",49
+8,72,0,"Rejected",16
+8,72,0,"SleepStarted",30375
+8,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+8,72,1,"Consumed",149
+8,72,1,"Gathered",600
+8,72,1,"Harvested",12
+8,72,1,"Interrupted:cultivation work",12
+8,72,1,"Interrupted:eat accessible food",31
+8,72,1,"Interrupted:queue for route",606
+8,72,1,"Interrupted:sleep",16256
+8,72,1,"Pickup",60
+8,72,1,"Queued",643
+8,72,1,"Rejected",35
+8,72,1,"SleepStarted",16287
+8,72,2,"Arrived",16
+8,72,2,"Died",4
+8,72,2,"Interrupted:queue for route",596
+8,72,2,"Interrupted:sleep",1540
+8,72,2,"Queued",604
+8,72,2,"SleepStarted",1548
+8,72,2,"Spoiled",26
+8,72,3,"Died",7
+8,120,0,"Arrived",14
+8,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+8,120,0,"Consumed",470
+8,120,0,"Died",12
+8,120,0,"Gathered",1431
+8,120,0,"Harvested",63
+8,120,0,"Interrupted:cultivation work",63
+8,120,0,"Interrupted:eat accessible food",121
+8,120,0,"Interrupted:new gathering action",28
+8,120,0,"Interrupted:sleep",46541
+8,120,0,"Pickup",252
+8,120,0,"Queued",87
+8,120,0,"Rejected",27
+8,120,0,"SleepStarted",51201
+8,120,1,"Arrived",8
+8,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+8,120,1,"Consumed",153
+8,120,1,"Died",4
+8,120,1,"Gathered",600
+8,120,1,"Harvested",14
+8,120,1,"Interrupted:cultivation work",14
+8,120,1,"Interrupted:eat accessible food",31
+8,120,1,"Interrupted:queue for route",606
+8,120,1,"Interrupted:sleep",17412
+8,120,1,"Pickup",72
+8,120,1,"Queued",645
+8,120,1,"Rejected",36
+8,120,1,"SleepStarted",19131
+8,120,2,"Arrived",30
+8,120,2,"Died",4
+8,120,2,"Interrupted:queue for route",610
+8,120,2,"Interrupted:sleep",3918
+8,120,2,"Queued",618
+8,120,2,"SleepStarted",3940
+8,120,2,"Spoiled",26
+8,120,3,"Died",7
+8,168,0,"Arrived",14
+8,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+8,168,0,"Consumed",536
+8,168,0,"Died",14
+8,168,0,"Gathered",1431
+8,168,0,"Harvested",85
+8,168,0,"Interrupted:cultivation work",85
+8,168,0,"Interrupted:eat accessible food",147
+8,168,0,"Interrupted:new gathering action",28
+8,168,0,"Interrupted:sleep",56861
+8,168,0,"Pickup",340
+8,168,0,"Queued",109
+8,168,0,"Rejected",30
+8,168,0,"SleepStarted",62027
+8,168,1,"Arrived",16
+8,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+8,168,1,"Consumed",153
+8,168,1,"Died",12
+8,168,1,"Gathered",600
+8,168,1,"Harvested",14
+8,168,1,"Interrupted:cultivation work",14
+8,168,1,"Interrupted:eat accessible food",31
+8,168,1,"Interrupted:queue for route",606
+8,168,1,"Interrupted:sleep",17892
+8,168,1,"Pickup",72
+8,168,1,"Queued",645
+8,168,1,"Rejected",36
+8,168,1,"SleepStarted",22367
+8,168,2,"Arrived",38
+8,168,2,"Died",4
+8,168,2,"Interrupted:queue for route",618
+8,168,2,"Interrupted:sleep",5050
+8,168,2,"Queued",626
+8,168,2,"SleepStarted",5080
+8,168,2,"Spoiled",26
+8,168,3,"Died",7
+9,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+9,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+9,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+9,12,0,"Consumed",75
+9,12,0,"Gathered",475
+9,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+9,12,1,"Consumed",75
+9,12,1,"Gathered",475
+9,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+9,36,0,"Consumed",175
+9,36,0,"Gathered",1075
+9,36,0,"Interrupted:eat accessible food",75
+9,36,0,"Interrupted:sleep",12000
+9,36,0,"Rejected",8
+9,36,0,"SleepStarted",12075
+9,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+9,36,1,"Consumed",131
+9,36,1,"Gathered",600
+9,36,1,"Harvested",6
+9,36,1,"Interrupted:cultivation work",6
+9,36,1,"Interrupted:eat accessible food",25
+9,36,1,"Interrupted:queue for route",15
+9,36,1,"Interrupted:sleep",12777
+9,36,1,"Pickup",30
+9,36,1,"Queued",40
+9,36,1,"Rejected",32
+9,36,1,"SleepStarted",12802
+9,36,2,"Arrived",8
+9,36,2,"Interrupted:queue for route",4
+9,36,2,"Interrupted:sleep",712
+9,36,2,"Queued",8
+9,36,2,"SleepStarted",716
+9,48,0,"Arrived",4
+9,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+9,48,0,"Consumed",281
+9,48,0,"Gathered",1431
+9,48,0,"Interrupted:eat accessible food",100
+9,48,0,"Interrupted:new gathering action",28
+9,48,0,"Interrupted:sleep",18668
+9,48,0,"Queued",24
+9,48,0,"Rejected",8
+9,48,0,"SleepStarted",18751
+9,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+9,48,1,"Consumed",137
+9,48,1,"Gathered",600
+9,48,1,"Harvested",6
+9,48,1,"Interrupted:cultivation work",6
+9,48,1,"Interrupted:eat accessible food",25
+9,48,1,"Interrupted:queue for route",21
+9,48,1,"Interrupted:sleep",12828
+9,48,1,"Pickup",30
+9,48,1,"Queued",52
+9,48,1,"Rejected",36
+9,48,1,"SleepStarted",12853
+9,48,2,"Arrived",12
+9,48,2,"Interrupted:queue for route",12
+9,48,2,"Interrupted:sleep",724
+9,48,2,"Queued",20
+9,48,2,"SleepStarted",728
+9,48,2,"Spoiled",26
+9,72,0,"Arrived",8
+9,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+9,72,0,"Consumed",356
+9,72,0,"Died",4
+9,72,0,"Gathered",1431
+9,72,0,"Harvested",25
+9,72,0,"Interrupted:cultivation work",25
+9,72,0,"Interrupted:eat accessible food",100
+9,72,0,"Interrupted:new gathering action",28
+9,72,0,"Interrupted:sleep",28112
+9,72,0,"Pickup",100
+9,72,0,"Queued",49
+9,72,0,"Rejected",16
+9,72,0,"SleepStarted",30375
+9,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+9,72,1,"Consumed",149
+9,72,1,"Gathered",600
+9,72,1,"Harvested",12
+9,72,1,"Interrupted:cultivation work",12
+9,72,1,"Interrupted:eat accessible food",31
+9,72,1,"Interrupted:queue for route",606
+9,72,1,"Interrupted:sleep",16256
+9,72,1,"Pickup",60
+9,72,1,"Queued",643
+9,72,1,"Rejected",37
+9,72,1,"SleepStarted",16287
+9,72,2,"Arrived",16
+9,72,2,"Died",4
+9,72,2,"Interrupted:queue for route",596
+9,72,2,"Interrupted:sleep",1540
+9,72,2,"Queued",604
+9,72,2,"SleepStarted",1548
+9,72,2,"Spoiled",26
+9,72,3,"Died",7
+9,120,0,"Arrived",14
+9,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+9,120,0,"Consumed",470
+9,120,0,"Died",12
+9,120,0,"Gathered",1431
+9,120,0,"Harvested",63
+9,120,0,"Interrupted:cultivation work",63
+9,120,0,"Interrupted:eat accessible food",121
+9,120,0,"Interrupted:new gathering action",28
+9,120,0,"Interrupted:sleep",46541
+9,120,0,"Pickup",252
+9,120,0,"Queued",87
+9,120,0,"Rejected",32
+9,120,0,"SleepStarted",51201
+9,120,1,"Arrived",8
+9,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+9,120,1,"Consumed",153
+9,120,1,"Died",4
+9,120,1,"Gathered",600
+9,120,1,"Harvested",14
+9,120,1,"Interrupted:cultivation work",14
+9,120,1,"Interrupted:eat accessible food",31
+9,120,1,"Interrupted:queue for route",606
+9,120,1,"Interrupted:sleep",17412
+9,120,1,"Pickup",72
+9,120,1,"Queued",645
+9,120,1,"Rejected",38
+9,120,1,"SleepStarted",19131
+9,120,2,"Arrived",30
+9,120,2,"Died",4
+9,120,2,"Interrupted:queue for route",610
+9,120,2,"Interrupted:sleep",3918
+9,120,2,"Queued",618
+9,120,2,"SleepStarted",3940
+9,120,2,"Spoiled",26
+9,120,3,"Died",7
+9,168,0,"Arrived",14
+9,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+9,168,0,"Consumed",536
+9,168,0,"Died",14
+9,168,0,"Gathered",1431
+9,168,0,"Harvested",85
+9,168,0,"Interrupted:cultivation work",85
+9,168,0,"Interrupted:eat accessible food",147
+9,168,0,"Interrupted:new gathering action",28
+9,168,0,"Interrupted:sleep",56861
+9,168,0,"Pickup",340
+9,168,0,"Queued",109
+9,168,0,"Rejected",40
+9,168,0,"SleepStarted",62027
+9,168,1,"Arrived",16
+9,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+9,168,1,"Consumed",153
+9,168,1,"Died",12
+9,168,1,"Gathered",600
+9,168,1,"Harvested",14
+9,168,1,"Interrupted:cultivation work",14
+9,168,1,"Interrupted:eat accessible food",31
+9,168,1,"Interrupted:queue for route",606
+9,168,1,"Interrupted:sleep",17892
+9,168,1,"Pickup",72
+9,168,1,"Queued",645
+9,168,1,"Rejected",38
+9,168,1,"SleepStarted",22367
+9,168,2,"Arrived",38
+9,168,2,"Died",4
+9,168,2,"Interrupted:queue for route",618
+9,168,2,"Interrupted:sleep",5050
+9,168,2,"Queued",626
+9,168,2,"SleepStarted",5080
+9,168,2,"Spoiled",26
+9,168,3,"Died",7
+10,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+10,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+10,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+10,12,0,"Consumed",75
+10,12,0,"Gathered",475
+10,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+10,12,1,"Consumed",75
+10,12,1,"Gathered",475
+10,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+10,36,0,"Consumed",175
+10,36,0,"Gathered",1075
+10,36,0,"Interrupted:eat accessible food",75
+10,36,0,"Interrupted:sleep",12000
+10,36,0,"Rejected",7
+10,36,0,"SleepStarted",12075
+10,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+10,36,1,"Consumed",131
+10,36,1,"Gathered",600
+10,36,1,"Harvested",6
+10,36,1,"Interrupted:cultivation work",6
+10,36,1,"Interrupted:eat accessible food",25
+10,36,1,"Interrupted:queue for route",15
+10,36,1,"Interrupted:sleep",12777
+10,36,1,"Pickup",30
+10,36,1,"Queued",40
+10,36,1,"Rejected",31
+10,36,1,"SleepStarted",12802
+10,36,2,"Arrived",8
+10,36,2,"Interrupted:queue for route",4
+10,36,2,"Interrupted:sleep",712
+10,36,2,"Queued",8
+10,36,2,"SleepStarted",716
+10,48,0,"Arrived",4
+10,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+10,48,0,"Consumed",281
+10,48,0,"Gathered",1431
+10,48,0,"Interrupted:eat accessible food",100
+10,48,0,"Interrupted:new gathering action",28
+10,48,0,"Interrupted:sleep",18668
+10,48,0,"Queued",24
+10,48,0,"Rejected",7
+10,48,0,"SleepStarted",18751
+10,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+10,48,1,"Consumed",137
+10,48,1,"Gathered",600
+10,48,1,"Harvested",6
+10,48,1,"Interrupted:cultivation work",6
+10,48,1,"Interrupted:eat accessible food",25
+10,48,1,"Interrupted:queue for route",21
+10,48,1,"Interrupted:sleep",12828
+10,48,1,"Pickup",30
+10,48,1,"Queued",52
+10,48,1,"Rejected",35
+10,48,1,"SleepStarted",12853
+10,48,2,"Arrived",12
+10,48,2,"Interrupted:queue for route",12
+10,48,2,"Interrupted:sleep",724
+10,48,2,"Queued",20
+10,48,2,"SleepStarted",728
+10,48,2,"Spoiled",26
+10,72,0,"Arrived",8
+10,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+10,72,0,"Consumed",356
+10,72,0,"Died",4
+10,72,0,"Gathered",1431
+10,72,0,"Harvested",25
+10,72,0,"Interrupted:cultivation work",25
+10,72,0,"Interrupted:eat accessible food",100
+10,72,0,"Interrupted:new gathering action",28
+10,72,0,"Interrupted:sleep",28112
+10,72,0,"Pickup",100
+10,72,0,"Queued",49
+10,72,0,"Rejected",12
+10,72,0,"SleepStarted",30375
+10,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+10,72,1,"Consumed",149
+10,72,1,"Gathered",600
+10,72,1,"Harvested",12
+10,72,1,"Interrupted:cultivation work",12
+10,72,1,"Interrupted:eat accessible food",31
+10,72,1,"Interrupted:queue for route",606
+10,72,1,"Interrupted:sleep",16256
+10,72,1,"Pickup",60
+10,72,1,"Queued",643
+10,72,1,"Rejected",39
+10,72,1,"SleepStarted",16287
+10,72,2,"Arrived",16
+10,72,2,"Died",4
+10,72,2,"Interrupted:queue for route",596
+10,72,2,"Interrupted:sleep",1540
+10,72,2,"Queued",604
+10,72,2,"SleepStarted",1548
+10,72,2,"Spoiled",26
+10,72,3,"Died",7
+10,120,0,"Arrived",14
+10,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+10,120,0,"Consumed",470
+10,120,0,"Died",12
+10,120,0,"Gathered",1431
+10,120,0,"Harvested",63
+10,120,0,"Interrupted:cultivation work",63
+10,120,0,"Interrupted:eat accessible food",121
+10,120,0,"Interrupted:new gathering action",28
+10,120,0,"Interrupted:sleep",46541
+10,120,0,"Pickup",252
+10,120,0,"Queued",87
+10,120,0,"Rejected",20
+10,120,0,"SleepStarted",51201
+10,120,1,"Arrived",8
+10,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+10,120,1,"Consumed",153
+10,120,1,"Died",4
+10,120,1,"Gathered",600
+10,120,1,"Harvested",14
+10,120,1,"Interrupted:cultivation work",14
+10,120,1,"Interrupted:eat accessible food",31
+10,120,1,"Interrupted:queue for route",606
+10,120,1,"Interrupted:sleep",17412
+10,120,1,"Pickup",72
+10,120,1,"Queued",645
+10,120,1,"Rejected",39
+10,120,1,"SleepStarted",19131
+10,120,2,"Arrived",30
+10,120,2,"Died",4
+10,120,2,"Interrupted:queue for route",610
+10,120,2,"Interrupted:sleep",3918
+10,120,2,"Queued",618
+10,120,2,"SleepStarted",3940
+10,120,2,"Spoiled",26
+10,120,3,"Died",7
+10,168,0,"Arrived",14
+10,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+10,168,0,"Consumed",536
+10,168,0,"Died",14
+10,168,0,"Gathered",1431
+10,168,0,"Harvested",85
+10,168,0,"Interrupted:cultivation work",85
+10,168,0,"Interrupted:eat accessible food",147
+10,168,0,"Interrupted:new gathering action",28
+10,168,0,"Interrupted:sleep",56861
+10,168,0,"Pickup",340
+10,168,0,"Queued",109
+10,168,0,"Rejected",25
+10,168,0,"SleepStarted",62027
+10,168,1,"Arrived",16
+10,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+10,168,1,"Consumed",153
+10,168,1,"Died",12
+10,168,1,"Gathered",600
+10,168,1,"Harvested",14
+10,168,1,"Interrupted:cultivation work",14
+10,168,1,"Interrupted:eat accessible food",31
+10,168,1,"Interrupted:queue for route",606
+10,168,1,"Interrupted:sleep",17892
+10,168,1,"Pickup",72
+10,168,1,"Queued",645
+10,168,1,"Rejected",39
+10,168,1,"SleepStarted",22367
+10,168,2,"Arrived",38
+10,168,2,"Died",4
+10,168,2,"Interrupted:queue for route",618
+10,168,2,"Interrupted:sleep",5050
+10,168,2,"Queued",626
+10,168,2,"SleepStarted",5080
+10,168,2,"Spoiled",26
+10,168,3,"Died",7
+11,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+11,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+11,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+11,12,0,"Consumed",75
+11,12,0,"Gathered",475
+11,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+11,12,1,"Consumed",75
+11,12,1,"Gathered",475
+11,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+11,36,0,"Consumed",175
+11,36,0,"Gathered",1075
+11,36,0,"Interrupted:eat accessible food",75
+11,36,0,"Interrupted:sleep",12000
+11,36,0,"Rejected",5
+11,36,0,"SleepStarted",12075
+11,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+11,36,1,"Consumed",131
+11,36,1,"Gathered",600
+11,36,1,"Harvested",6
+11,36,1,"Interrupted:cultivation work",6
+11,36,1,"Interrupted:eat accessible food",25
+11,36,1,"Interrupted:queue for route",15
+11,36,1,"Interrupted:sleep",12777
+11,36,1,"Pickup",30
+11,36,1,"Queued",40
+11,36,1,"Rejected",31
+11,36,1,"SleepStarted",12802
+11,36,2,"Arrived",8
+11,36,2,"Interrupted:queue for route",4
+11,36,2,"Interrupted:sleep",712
+11,36,2,"Queued",8
+11,36,2,"SleepStarted",716
+11,48,0,"Arrived",4
+11,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+11,48,0,"Consumed",281
+11,48,0,"Gathered",1431
+11,48,0,"Interrupted:eat accessible food",100
+11,48,0,"Interrupted:new gathering action",28
+11,48,0,"Interrupted:sleep",18668
+11,48,0,"Queued",24
+11,48,0,"Rejected",5
+11,48,0,"SleepStarted",18751
+11,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+11,48,1,"Consumed",137
+11,48,1,"Gathered",600
+11,48,1,"Harvested",6
+11,48,1,"Interrupted:cultivation work",6
+11,48,1,"Interrupted:eat accessible food",25
+11,48,1,"Interrupted:queue for route",21
+11,48,1,"Interrupted:sleep",12828
+11,48,1,"Pickup",30
+11,48,1,"Queued",52
+11,48,1,"Rejected",32
+11,48,1,"SleepStarted",12853
+11,48,2,"Arrived",12
+11,48,2,"Interrupted:queue for route",12
+11,48,2,"Interrupted:sleep",724
+11,48,2,"Queued",20
+11,48,2,"SleepStarted",728
+11,48,2,"Spoiled",26
+11,72,0,"Arrived",8
+11,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+11,72,0,"Consumed",356
+11,72,0,"Died",4
+11,72,0,"Gathered",1431
+11,72,0,"Harvested",25
+11,72,0,"Interrupted:cultivation work",25
+11,72,0,"Interrupted:eat accessible food",100
+11,72,0,"Interrupted:new gathering action",28
+11,72,0,"Interrupted:sleep",28112
+11,72,0,"Pickup",100
+11,72,0,"Queued",49
+11,72,0,"Rejected",9
+11,72,0,"SleepStarted",30375
+11,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+11,72,1,"Consumed",149
+11,72,1,"Gathered",600
+11,72,1,"Harvested",12
+11,72,1,"Interrupted:cultivation work",12
+11,72,1,"Interrupted:eat accessible food",31
+11,72,1,"Interrupted:queue for route",606
+11,72,1,"Interrupted:sleep",16256
+11,72,1,"Pickup",60
+11,72,1,"Queued",643
+11,72,1,"Rejected",35
+11,72,1,"SleepStarted",16287
+11,72,2,"Arrived",16
+11,72,2,"Died",4
+11,72,2,"Interrupted:queue for route",596
+11,72,2,"Interrupted:sleep",1540
+11,72,2,"Queued",604
+11,72,2,"SleepStarted",1548
+11,72,2,"Spoiled",26
+11,72,3,"Died",7
+11,120,0,"Arrived",14
+11,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+11,120,0,"Consumed",470
+11,120,0,"Died",12
+11,120,0,"Gathered",1431
+11,120,0,"Harvested",63
+11,120,0,"Interrupted:cultivation work",63
+11,120,0,"Interrupted:eat accessible food",121
+11,120,0,"Interrupted:new gathering action",28
+11,120,0,"Interrupted:sleep",46541
+11,120,0,"Pickup",252
+11,120,0,"Queued",87
+11,120,0,"Rejected",22
+11,120,0,"SleepStarted",51201
+11,120,1,"Arrived",8
+11,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+11,120,1,"Consumed",153
+11,120,1,"Died",4
+11,120,1,"Gathered",600
+11,120,1,"Harvested",14
+11,120,1,"Interrupted:cultivation work",14
+11,120,1,"Interrupted:eat accessible food",31
+11,120,1,"Interrupted:queue for route",606
+11,120,1,"Interrupted:sleep",17412
+11,120,1,"Pickup",72
+11,120,1,"Queued",645
+11,120,1,"Rejected",36
+11,120,1,"SleepStarted",19131
+11,120,2,"Arrived",30
+11,120,2,"Died",4
+11,120,2,"Interrupted:queue for route",610
+11,120,2,"Interrupted:sleep",3918
+11,120,2,"Queued",618
+11,120,2,"SleepStarted",3940
+11,120,2,"Spoiled",26
+11,120,3,"Died",7
+11,168,0,"Arrived",14
+11,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+11,168,0,"Consumed",536
+11,168,0,"Died",14
+11,168,0,"Gathered",1431
+11,168,0,"Harvested",85
+11,168,0,"Interrupted:cultivation work",85
+11,168,0,"Interrupted:eat accessible food",147
+11,168,0,"Interrupted:new gathering action",28
+11,168,0,"Interrupted:sleep",56861
+11,168,0,"Pickup",340
+11,168,0,"Queued",109
+11,168,0,"Rejected",28
+11,168,0,"SleepStarted",62027
+11,168,1,"Arrived",16
+11,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+11,168,1,"Consumed",153
+11,168,1,"Died",12
+11,168,1,"Gathered",600
+11,168,1,"Harvested",14
+11,168,1,"Interrupted:cultivation work",14
+11,168,1,"Interrupted:eat accessible food",31
+11,168,1,"Interrupted:queue for route",606
+11,168,1,"Interrupted:sleep",17892
+11,168,1,"Pickup",72
+11,168,1,"Queued",645
+11,168,1,"Rejected",36
+11,168,1,"SleepStarted",22367
+11,168,2,"Arrived",38
+11,168,2,"Died",4
+11,168,2,"Interrupted:queue for route",618
+11,168,2,"Interrupted:sleep",5050
+11,168,2,"Queued",626
+11,168,2,"SleepStarted",5080
+11,168,2,"Spoiled",26
+11,168,3,"Died",7
+12,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+12,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+12,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+12,12,0,"Consumed",75
+12,12,0,"Gathered",475
+12,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+12,12,1,"Consumed",75
+12,12,1,"Gathered",475
+12,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+12,36,0,"Consumed",175
+12,36,0,"Gathered",1075
+12,36,0,"Interrupted:eat accessible food",75
+12,36,0,"Interrupted:sleep",12000
+12,36,0,"Rejected",6
+12,36,0,"SleepStarted",12075
+12,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+12,36,1,"Consumed",131
+12,36,1,"Gathered",600
+12,36,1,"Harvested",6
+12,36,1,"Interrupted:cultivation work",6
+12,36,1,"Interrupted:eat accessible food",25
+12,36,1,"Interrupted:queue for route",15
+12,36,1,"Interrupted:sleep",12777
+12,36,1,"Pickup",30
+12,36,1,"Queued",40
+12,36,1,"Rejected",31
+12,36,1,"SleepStarted",12802
+12,36,2,"Arrived",8
+12,36,2,"Interrupted:queue for route",4
+12,36,2,"Interrupted:sleep",712
+12,36,2,"Queued",8
+12,36,2,"SleepStarted",716
+12,48,0,"Arrived",4
+12,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+12,48,0,"Consumed",281
+12,48,0,"Gathered",1431
+12,48,0,"Interrupted:eat accessible food",100
+12,48,0,"Interrupted:new gathering action",28
+12,48,0,"Interrupted:sleep",18668
+12,48,0,"Queued",24
+12,48,0,"Rejected",6
+12,48,0,"SleepStarted",18751
+12,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+12,48,1,"Consumed",137
+12,48,1,"Gathered",600
+12,48,1,"Harvested",6
+12,48,1,"Interrupted:cultivation work",6
+12,48,1,"Interrupted:eat accessible food",25
+12,48,1,"Interrupted:queue for route",21
+12,48,1,"Interrupted:sleep",12828
+12,48,1,"Pickup",30
+12,48,1,"Queued",52
+12,48,1,"Rejected",33
+12,48,1,"SleepStarted",12853
+12,48,2,"Arrived",12
+12,48,2,"Interrupted:queue for route",12
+12,48,2,"Interrupted:sleep",724
+12,48,2,"Queued",20
+12,48,2,"SleepStarted",728
+12,48,2,"Spoiled",26
+12,72,0,"Arrived",8
+12,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+12,72,0,"Consumed",356
+12,72,0,"Died",4
+12,72,0,"Gathered",1431
+12,72,0,"Harvested",25
+12,72,0,"Interrupted:cultivation work",25
+12,72,0,"Interrupted:eat accessible food",100
+12,72,0,"Interrupted:new gathering action",28
+12,72,0,"Interrupted:sleep",28112
+12,72,0,"Pickup",100
+12,72,0,"Queued",49
+12,72,0,"Rejected",15
+12,72,0,"SleepStarted",30375
+12,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+12,72,1,"Consumed",149
+12,72,1,"Gathered",600
+12,72,1,"Harvested",12
+12,72,1,"Interrupted:cultivation work",12
+12,72,1,"Interrupted:eat accessible food",31
+12,72,1,"Interrupted:queue for route",606
+12,72,1,"Interrupted:sleep",16256
+12,72,1,"Pickup",60
+12,72,1,"Queued",643
+12,72,1,"Rejected",36
+12,72,1,"SleepStarted",16287
+12,72,2,"Arrived",16
+12,72,2,"Died",4
+12,72,2,"Interrupted:queue for route",596
+12,72,2,"Interrupted:sleep",1540
+12,72,2,"Queued",604
+12,72,2,"SleepStarted",1548
+12,72,2,"Spoiled",26
+12,72,3,"Died",7
+12,120,0,"Arrived",14
+12,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+12,120,0,"Consumed",470
+12,120,0,"Died",12
+12,120,0,"Gathered",1431
+12,120,0,"Harvested",63
+12,120,0,"Interrupted:cultivation work",63
+12,120,0,"Interrupted:eat accessible food",121
+12,120,0,"Interrupted:new gathering action",28
+12,120,0,"Interrupted:sleep",46541
+12,120,0,"Pickup",252
+12,120,0,"Queued",87
+12,120,0,"Rejected",22
+12,120,0,"SleepStarted",51201
+12,120,1,"Arrived",8
+12,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+12,120,1,"Consumed",153
+12,120,1,"Died",4
+12,120,1,"Gathered",600
+12,120,1,"Harvested",14
+12,120,1,"Interrupted:cultivation work",14
+12,120,1,"Interrupted:eat accessible food",31
+12,120,1,"Interrupted:queue for route",606
+12,120,1,"Interrupted:sleep",17412
+12,120,1,"Pickup",72
+12,120,1,"Queued",645
+12,120,1,"Rejected",36
+12,120,1,"SleepStarted",19131
+12,120,2,"Arrived",30
+12,120,2,"Died",4
+12,120,2,"Interrupted:queue for route",610
+12,120,2,"Interrupted:sleep",3918
+12,120,2,"Queued",618
+12,120,2,"SleepStarted",3940
+12,120,2,"Spoiled",26
+12,120,3,"Died",7
+12,168,0,"Arrived",14
+12,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+12,168,0,"Consumed",536
+12,168,0,"Died",14
+12,168,0,"Gathered",1431
+12,168,0,"Harvested",85
+12,168,0,"Interrupted:cultivation work",85
+12,168,0,"Interrupted:eat accessible food",147
+12,168,0,"Interrupted:new gathering action",28
+12,168,0,"Interrupted:sleep",56861
+12,168,0,"Pickup",340
+12,168,0,"Queued",109
+12,168,0,"Rejected",29
+12,168,0,"SleepStarted",62027
+12,168,1,"Arrived",16
+12,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+12,168,1,"Consumed",153
+12,168,1,"Died",12
+12,168,1,"Gathered",600
+12,168,1,"Harvested",14
+12,168,1,"Interrupted:cultivation work",14
+12,168,1,"Interrupted:eat accessible food",31
+12,168,1,"Interrupted:queue for route",606
+12,168,1,"Interrupted:sleep",17892
+12,168,1,"Pickup",72
+12,168,1,"Queued",645
+12,168,1,"Rejected",36
+12,168,1,"SleepStarted",22367
+12,168,2,"Arrived",38
+12,168,2,"Died",4
+12,168,2,"Interrupted:queue for route",618
+12,168,2,"Interrupted:sleep",5050
+12,168,2,"Queued",626
+12,168,2,"SleepStarted",5080
+12,168,2,"Spoiled",26
+12,168,3,"Died",7
+13,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+13,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+13,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+13,12,0,"Consumed",75
+13,12,0,"Gathered",475
+13,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+13,12,1,"Consumed",75
+13,12,1,"Gathered",475
+13,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+13,36,0,"Consumed",175
+13,36,0,"Gathered",1075
+13,36,0,"Interrupted:eat accessible food",75
+13,36,0,"Interrupted:sleep",12000
+13,36,0,"Rejected",8
+13,36,0,"SleepStarted",12075
+13,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+13,36,1,"Consumed",131
+13,36,1,"Gathered",600
+13,36,1,"Harvested",6
+13,36,1,"Interrupted:cultivation work",6
+13,36,1,"Interrupted:eat accessible food",25
+13,36,1,"Interrupted:queue for route",15
+13,36,1,"Interrupted:sleep",12777
+13,36,1,"Pickup",30
+13,36,1,"Queued",40
+13,36,1,"Rejected",31
+13,36,1,"SleepStarted",12802
+13,36,2,"Arrived",8
+13,36,2,"Interrupted:queue for route",4
+13,36,2,"Interrupted:sleep",712
+13,36,2,"Queued",8
+13,36,2,"SleepStarted",716
+13,48,0,"Arrived",4
+13,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+13,48,0,"Consumed",281
+13,48,0,"Gathered",1431
+13,48,0,"Interrupted:eat accessible food",100
+13,48,0,"Interrupted:new gathering action",28
+13,48,0,"Interrupted:sleep",18668
+13,48,0,"Queued",24
+13,48,0,"Rejected",8
+13,48,0,"SleepStarted",18751
+13,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+13,48,1,"Consumed",137
+13,48,1,"Gathered",600
+13,48,1,"Harvested",6
+13,48,1,"Interrupted:cultivation work",6
+13,48,1,"Interrupted:eat accessible food",25
+13,48,1,"Interrupted:queue for route",21
+13,48,1,"Interrupted:sleep",12828
+13,48,1,"Pickup",30
+13,48,1,"Queued",52
+13,48,1,"Rejected",32
+13,48,1,"SleepStarted",12853
+13,48,2,"Arrived",12
+13,48,2,"Interrupted:queue for route",12
+13,48,2,"Interrupted:sleep",724
+13,48,2,"Queued",20
+13,48,2,"SleepStarted",728
+13,48,2,"Spoiled",26
+13,72,0,"Arrived",8
+13,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+13,72,0,"Consumed",356
+13,72,0,"Died",4
+13,72,0,"Gathered",1431
+13,72,0,"Harvested",25
+13,72,0,"Interrupted:cultivation work",25
+13,72,0,"Interrupted:eat accessible food",100
+13,72,0,"Interrupted:new gathering action",28
+13,72,0,"Interrupted:sleep",28112
+13,72,0,"Pickup",100
+13,72,0,"Queued",49
+13,72,0,"Rejected",15
+13,72,0,"SleepStarted",30375
+13,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+13,72,1,"Consumed",149
+13,72,1,"Gathered",600
+13,72,1,"Harvested",12
+13,72,1,"Interrupted:cultivation work",12
+13,72,1,"Interrupted:eat accessible food",31
+13,72,1,"Interrupted:queue for route",606
+13,72,1,"Interrupted:sleep",16256
+13,72,1,"Pickup",60
+13,72,1,"Queued",643
+13,72,1,"Rejected",34
+13,72,1,"SleepStarted",16287
+13,72,2,"Arrived",16
+13,72,2,"Died",4
+13,72,2,"Interrupted:queue for route",596
+13,72,2,"Interrupted:sleep",1540
+13,72,2,"Queued",604
+13,72,2,"SleepStarted",1548
+13,72,2,"Spoiled",26
+13,72,3,"Died",7
+13,120,0,"Arrived",14
+13,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+13,120,0,"Consumed",470
+13,120,0,"Died",12
+13,120,0,"Gathered",1431
+13,120,0,"Harvested",63
+13,120,0,"Interrupted:cultivation work",63
+13,120,0,"Interrupted:eat accessible food",121
+13,120,0,"Interrupted:new gathering action",28
+13,120,0,"Interrupted:sleep",46541
+13,120,0,"Pickup",252
+13,120,0,"Queued",87
+13,120,0,"Rejected",28
+13,120,0,"SleepStarted",51201
+13,120,1,"Arrived",8
+13,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+13,120,1,"Consumed",153
+13,120,1,"Died",4
+13,120,1,"Gathered",600
+13,120,1,"Harvested",14
+13,120,1,"Interrupted:cultivation work",14
+13,120,1,"Interrupted:eat accessible food",31
+13,120,1,"Interrupted:queue for route",606
+13,120,1,"Interrupted:sleep",17412
+13,120,1,"Pickup",72
+13,120,1,"Queued",645
+13,120,1,"Rejected",35
+13,120,1,"SleepStarted",19131
+13,120,2,"Arrived",30
+13,120,2,"Died",4
+13,120,2,"Interrupted:queue for route",610
+13,120,2,"Interrupted:sleep",3918
+13,120,2,"Queued",618
+13,120,2,"SleepStarted",3940
+13,120,2,"Spoiled",26
+13,120,3,"Died",7
+13,168,0,"Arrived",14
+13,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+13,168,0,"Consumed",536
+13,168,0,"Died",14
+13,168,0,"Gathered",1431
+13,168,0,"Harvested",85
+13,168,0,"Interrupted:cultivation work",85
+13,168,0,"Interrupted:eat accessible food",147
+13,168,0,"Interrupted:new gathering action",28
+13,168,0,"Interrupted:sleep",56861
+13,168,0,"Pickup",340
+13,168,0,"Queued",109
+13,168,0,"Rejected",37
+13,168,0,"SleepStarted",62027
+13,168,1,"Arrived",16
+13,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+13,168,1,"Consumed",153
+13,168,1,"Died",12
+13,168,1,"Gathered",600
+13,168,1,"Harvested",14
+13,168,1,"Interrupted:cultivation work",14
+13,168,1,"Interrupted:eat accessible food",31
+13,168,1,"Interrupted:queue for route",606
+13,168,1,"Interrupted:sleep",17892
+13,168,1,"Pickup",72
+13,168,1,"Queued",645
+13,168,1,"Rejected",35
+13,168,1,"SleepStarted",22367
+13,168,2,"Arrived",38
+13,168,2,"Died",4
+13,168,2,"Interrupted:queue for route",618
+13,168,2,"Interrupted:sleep",5050
+13,168,2,"Queued",626
+13,168,2,"SleepStarted",5080
+13,168,2,"Spoiled",26
+13,168,3,"Died",7
+14,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+14,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+14,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+14,12,0,"Consumed",75
+14,12,0,"Gathered",475
+14,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+14,12,1,"Consumed",75
+14,12,1,"Gathered",475
+14,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+14,36,0,"Consumed",175
+14,36,0,"Gathered",1075
+14,36,0,"Interrupted:eat accessible food",75
+14,36,0,"Interrupted:sleep",12000
+14,36,0,"Rejected",16
+14,36,0,"SleepStarted",12075
+14,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+14,36,1,"Consumed",131
+14,36,1,"Gathered",600
+14,36,1,"Harvested",6
+14,36,1,"Interrupted:cultivation work",6
+14,36,1,"Interrupted:eat accessible food",25
+14,36,1,"Interrupted:queue for route",15
+14,36,1,"Interrupted:sleep",12777
+14,36,1,"Pickup",30
+14,36,1,"Queued",40
+14,36,1,"Rejected",33
+14,36,1,"SleepStarted",12802
+14,36,2,"Arrived",8
+14,36,2,"Interrupted:queue for route",4
+14,36,2,"Interrupted:sleep",712
+14,36,2,"Queued",8
+14,36,2,"SleepStarted",716
+14,48,0,"Arrived",4
+14,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+14,48,0,"Consumed",281
+14,48,0,"Gathered",1431
+14,48,0,"Interrupted:eat accessible food",100
+14,48,0,"Interrupted:new gathering action",28
+14,48,0,"Interrupted:sleep",18668
+14,48,0,"Queued",24
+14,48,0,"Rejected",16
+14,48,0,"SleepStarted",18751
+14,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+14,48,1,"Consumed",137
+14,48,1,"Gathered",600
+14,48,1,"Harvested",6
+14,48,1,"Interrupted:cultivation work",6
+14,48,1,"Interrupted:eat accessible food",25
+14,48,1,"Interrupted:queue for route",21
+14,48,1,"Interrupted:sleep",12828
+14,48,1,"Pickup",30
+14,48,1,"Queued",52
+14,48,1,"Rejected",34
+14,48,1,"SleepStarted",12853
+14,48,2,"Arrived",12
+14,48,2,"Interrupted:queue for route",12
+14,48,2,"Interrupted:sleep",724
+14,48,2,"Queued",20
+14,48,2,"SleepStarted",728
+14,48,2,"Spoiled",26
+14,72,0,"Arrived",8
+14,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+14,72,0,"Consumed",356
+14,72,0,"Died",4
+14,72,0,"Gathered",1431
+14,72,0,"Harvested",25
+14,72,0,"Interrupted:cultivation work",25
+14,72,0,"Interrupted:eat accessible food",100
+14,72,0,"Interrupted:new gathering action",28
+14,72,0,"Interrupted:sleep",28112
+14,72,0,"Pickup",100
+14,72,0,"Queued",49
+14,72,0,"Rejected",27
+14,72,0,"SleepStarted",30375
+14,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+14,72,1,"Consumed",149
+14,72,1,"Gathered",600
+14,72,1,"Harvested",12
+14,72,1,"Interrupted:cultivation work",12
+14,72,1,"Interrupted:eat accessible food",31
+14,72,1,"Interrupted:queue for route",606
+14,72,1,"Interrupted:sleep",16256
+14,72,1,"Pickup",60
+14,72,1,"Queued",643
+14,72,1,"Rejected",37
+14,72,1,"SleepStarted",16287
+14,72,2,"Arrived",16
+14,72,2,"Died",4
+14,72,2,"Interrupted:queue for route",596
+14,72,2,"Interrupted:sleep",1540
+14,72,2,"Queued",604
+14,72,2,"SleepStarted",1548
+14,72,2,"Spoiled",26
+14,72,3,"Died",7
+14,120,0,"Arrived",14
+14,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+14,120,0,"Consumed",470
+14,120,0,"Died",12
+14,120,0,"Gathered",1431
+14,120,0,"Harvested",63
+14,120,0,"Interrupted:cultivation work",63
+14,120,0,"Interrupted:eat accessible food",121
+14,120,0,"Interrupted:new gathering action",28
+14,120,0,"Interrupted:sleep",46541
+14,120,0,"Pickup",252
+14,120,0,"Queued",87
+14,120,0,"Rejected",38
+14,120,0,"SleepStarted",51201
+14,120,1,"Arrived",8
+14,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+14,120,1,"Consumed",153
+14,120,1,"Died",4
+14,120,1,"Gathered",600
+14,120,1,"Harvested",14
+14,120,1,"Interrupted:cultivation work",14
+14,120,1,"Interrupted:eat accessible food",31
+14,120,1,"Interrupted:queue for route",606
+14,120,1,"Interrupted:sleep",17412
+14,120,1,"Pickup",72
+14,120,1,"Queued",645
+14,120,1,"Rejected",38
+14,120,1,"SleepStarted",19131
+14,120,2,"Arrived",30
+14,120,2,"Died",4
+14,120,2,"Interrupted:queue for route",610
+14,120,2,"Interrupted:sleep",3918
+14,120,2,"Queued",618
+14,120,2,"SleepStarted",3940
+14,120,2,"Spoiled",26
+14,120,3,"Died",7
+14,168,0,"Arrived",14
+14,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+14,168,0,"Consumed",536
+14,168,0,"Died",14
+14,168,0,"Gathered",1431
+14,168,0,"Harvested",85
+14,168,0,"Interrupted:cultivation work",85
+14,168,0,"Interrupted:eat accessible food",147
+14,168,0,"Interrupted:new gathering action",28
+14,168,0,"Interrupted:sleep",56861
+14,168,0,"Pickup",340
+14,168,0,"Queued",109
+14,168,0,"Rejected",44
+14,168,0,"SleepStarted",62027
+14,168,1,"Arrived",16
+14,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+14,168,1,"Consumed",153
+14,168,1,"Died",12
+14,168,1,"Gathered",600
+14,168,1,"Harvested",14
+14,168,1,"Interrupted:cultivation work",14
+14,168,1,"Interrupted:eat accessible food",31
+14,168,1,"Interrupted:queue for route",606
+14,168,1,"Interrupted:sleep",17892
+14,168,1,"Pickup",72
+14,168,1,"Queued",645
+14,168,1,"Rejected",38
+14,168,1,"SleepStarted",22367
+14,168,2,"Arrived",38
+14,168,2,"Died",4
+14,168,2,"Interrupted:queue for route",618
+14,168,2,"Interrupted:sleep",5050
+14,168,2,"Queued",626
+14,168,2,"SleepStarted",5080
+14,168,2,"Spoiled",26
+14,168,3,"Died",7
+15,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+15,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+15,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+15,12,0,"Consumed",75
+15,12,0,"Gathered",475
+15,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+15,12,1,"Consumed",75
+15,12,1,"Gathered",475
+15,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+15,36,0,"Consumed",175
+15,36,0,"Gathered",1075
+15,36,0,"Interrupted:eat accessible food",75
+15,36,0,"Interrupted:sleep",12000
+15,36,0,"Rejected",6
+15,36,0,"SleepStarted",12075
+15,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+15,36,1,"Consumed",131
+15,36,1,"Gathered",600
+15,36,1,"Harvested",6
+15,36,1,"Interrupted:cultivation work",6
+15,36,1,"Interrupted:eat accessible food",25
+15,36,1,"Interrupted:queue for route",15
+15,36,1,"Interrupted:sleep",12777
+15,36,1,"Pickup",30
+15,36,1,"Queued",40
+15,36,1,"Rejected",15
+15,36,1,"SleepStarted",12802
+15,36,2,"Arrived",8
+15,36,2,"Interrupted:queue for route",4
+15,36,2,"Interrupted:sleep",712
+15,36,2,"Queued",8
+15,36,2,"SleepStarted",716
+15,48,0,"Arrived",4
+15,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+15,48,0,"Consumed",281
+15,48,0,"Gathered",1431
+15,48,0,"Interrupted:eat accessible food",100
+15,48,0,"Interrupted:new gathering action",28
+15,48,0,"Interrupted:sleep",18668
+15,48,0,"Queued",24
+15,48,0,"Rejected",6
+15,48,0,"SleepStarted",18751
+15,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+15,48,1,"Consumed",137
+15,48,1,"Gathered",600
+15,48,1,"Harvested",6
+15,48,1,"Interrupted:cultivation work",6
+15,48,1,"Interrupted:eat accessible food",25
+15,48,1,"Interrupted:queue for route",21
+15,48,1,"Interrupted:sleep",12828
+15,48,1,"Pickup",30
+15,48,1,"Queued",52
+15,48,1,"Rejected",17
+15,48,1,"SleepStarted",12853
+15,48,2,"Arrived",12
+15,48,2,"Interrupted:queue for route",12
+15,48,2,"Interrupted:sleep",724
+15,48,2,"Queued",20
+15,48,2,"SleepStarted",728
+15,48,2,"Spoiled",26
+15,72,0,"Arrived",8
+15,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+15,72,0,"Consumed",356
+15,72,0,"Died",4
+15,72,0,"Gathered",1431
+15,72,0,"Harvested",25
+15,72,0,"Interrupted:cultivation work",25
+15,72,0,"Interrupted:eat accessible food",100
+15,72,0,"Interrupted:new gathering action",28
+15,72,0,"Interrupted:sleep",28112
+15,72,0,"Pickup",100
+15,72,0,"Queued",49
+15,72,0,"Rejected",12
+15,72,0,"SleepStarted",30375
+15,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+15,72,1,"Consumed",149
+15,72,1,"Gathered",600
+15,72,1,"Harvested",12
+15,72,1,"Interrupted:cultivation work",12
+15,72,1,"Interrupted:eat accessible food",31
+15,72,1,"Interrupted:queue for route",606
+15,72,1,"Interrupted:sleep",16256
+15,72,1,"Pickup",60
+15,72,1,"Queued",643
+15,72,1,"Rejected",18
+15,72,1,"SleepStarted",16287
+15,72,2,"Arrived",16
+15,72,2,"Died",4
+15,72,2,"Interrupted:queue for route",596
+15,72,2,"Interrupted:sleep",1540
+15,72,2,"Queued",604
+15,72,2,"SleepStarted",1548
+15,72,2,"Spoiled",26
+15,72,3,"Died",7
+15,120,0,"Arrived",14
+15,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+15,120,0,"Consumed",470
+15,120,0,"Died",12
+15,120,0,"Gathered",1431
+15,120,0,"Harvested",63
+15,120,0,"Interrupted:cultivation work",63
+15,120,0,"Interrupted:eat accessible food",121
+15,120,0,"Interrupted:new gathering action",28
+15,120,0,"Interrupted:sleep",46541
+15,120,0,"Pickup",252
+15,120,0,"Queued",87
+15,120,0,"Rejected",22
+15,120,0,"SleepStarted",51201
+15,120,1,"Arrived",8
+15,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+15,120,1,"Consumed",153
+15,120,1,"Died",4
+15,120,1,"Gathered",600
+15,120,1,"Harvested",14
+15,120,1,"Interrupted:cultivation work",14
+15,120,1,"Interrupted:eat accessible food",31
+15,120,1,"Interrupted:queue for route",606
+15,120,1,"Interrupted:sleep",17412
+15,120,1,"Pickup",72
+15,120,1,"Queued",645
+15,120,1,"Rejected",18
+15,120,1,"SleepStarted",19131
+15,120,2,"Arrived",30
+15,120,2,"Died",4
+15,120,2,"Interrupted:queue for route",610
+15,120,2,"Interrupted:sleep",3918
+15,120,2,"Queued",618
+15,120,2,"SleepStarted",3940
+15,120,2,"Spoiled",26
+15,120,3,"Died",7
+15,168,0,"Arrived",14
+15,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+15,168,0,"Consumed",536
+15,168,0,"Died",14
+15,168,0,"Gathered",1431
+15,168,0,"Harvested",85
+15,168,0,"Interrupted:cultivation work",85
+15,168,0,"Interrupted:eat accessible food",147
+15,168,0,"Interrupted:new gathering action",28
+15,168,0,"Interrupted:sleep",56861
+15,168,0,"Pickup",340
+15,168,0,"Queued",109
+15,168,0,"Rejected",25
+15,168,0,"SleepStarted",62027
+15,168,1,"Arrived",16
+15,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+15,168,1,"Consumed",153
+15,168,1,"Died",12
+15,168,1,"Gathered",600
+15,168,1,"Harvested",14
+15,168,1,"Interrupted:cultivation work",14
+15,168,1,"Interrupted:eat accessible food",31
+15,168,1,"Interrupted:queue for route",606
+15,168,1,"Interrupted:sleep",17892
+15,168,1,"Pickup",72
+15,168,1,"Queued",645
+15,168,1,"Rejected",18
+15,168,1,"SleepStarted",22367
+15,168,2,"Arrived",38
+15,168,2,"Died",4
+15,168,2,"Interrupted:queue for route",618
+15,168,2,"Interrupted:sleep",5050
+15,168,2,"Queued",626
+15,168,2,"SleepStarted",5080
+15,168,2,"Spoiled",26
+15,168,3,"Died",7
+16,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+16,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+16,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+16,12,0,"Consumed",75
+16,12,0,"Gathered",475
+16,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+16,12,1,"Consumed",75
+16,12,1,"Gathered",475
+16,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+16,36,0,"Consumed",175
+16,36,0,"Gathered",1075
+16,36,0,"Interrupted:eat accessible food",75
+16,36,0,"Interrupted:sleep",12000
+16,36,0,"Rejected",6
+16,36,0,"SleepStarted",12075
+16,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+16,36,1,"Consumed",131
+16,36,1,"Gathered",600
+16,36,1,"Harvested",6
+16,36,1,"Interrupted:cultivation work",6
+16,36,1,"Interrupted:eat accessible food",25
+16,36,1,"Interrupted:queue for route",15
+16,36,1,"Interrupted:sleep",12777
+16,36,1,"Pickup",30
+16,36,1,"Queued",40
+16,36,1,"Rejected",31
+16,36,1,"SleepStarted",12802
+16,36,2,"Arrived",8
+16,36,2,"Interrupted:queue for route",4
+16,36,2,"Interrupted:sleep",712
+16,36,2,"Queued",8
+16,36,2,"SleepStarted",716
+16,48,0,"Arrived",4
+16,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+16,48,0,"Consumed",281
+16,48,0,"Gathered",1431
+16,48,0,"Interrupted:eat accessible food",100
+16,48,0,"Interrupted:new gathering action",28
+16,48,0,"Interrupted:sleep",18668
+16,48,0,"Queued",24
+16,48,0,"Rejected",6
+16,48,0,"SleepStarted",18751
+16,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+16,48,1,"Consumed",137
+16,48,1,"Gathered",600
+16,48,1,"Harvested",6
+16,48,1,"Interrupted:cultivation work",6
+16,48,1,"Interrupted:eat accessible food",25
+16,48,1,"Interrupted:queue for route",21
+16,48,1,"Interrupted:sleep",12828
+16,48,1,"Pickup",30
+16,48,1,"Queued",52
+16,48,1,"Rejected",35
+16,48,1,"SleepStarted",12853
+16,48,2,"Arrived",12
+16,48,2,"Interrupted:queue for route",12
+16,48,2,"Interrupted:sleep",724
+16,48,2,"Queued",20
+16,48,2,"SleepStarted",728
+16,48,2,"Spoiled",26
+16,72,0,"Arrived",8
+16,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+16,72,0,"Consumed",356
+16,72,0,"Died",4
+16,72,0,"Gathered",1431
+16,72,0,"Harvested",25
+16,72,0,"Interrupted:cultivation work",25
+16,72,0,"Interrupted:eat accessible food",100
+16,72,0,"Interrupted:new gathering action",28
+16,72,0,"Interrupted:sleep",28112
+16,72,0,"Pickup",100
+16,72,0,"Queued",49
+16,72,0,"Rejected",12
+16,72,0,"SleepStarted",30375
+16,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+16,72,1,"Consumed",149
+16,72,1,"Gathered",600
+16,72,1,"Harvested",12
+16,72,1,"Interrupted:cultivation work",12
+16,72,1,"Interrupted:eat accessible food",31
+16,72,1,"Interrupted:queue for route",606
+16,72,1,"Interrupted:sleep",16256
+16,72,1,"Pickup",60
+16,72,1,"Queued",643
+16,72,1,"Rejected",37
+16,72,1,"SleepStarted",16287
+16,72,2,"Arrived",16
+16,72,2,"Died",4
+16,72,2,"Interrupted:queue for route",596
+16,72,2,"Interrupted:sleep",1540
+16,72,2,"Queued",604
+16,72,2,"SleepStarted",1548
+16,72,2,"Spoiled",26
+16,72,3,"Died",7
+16,120,0,"Arrived",14
+16,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+16,120,0,"Consumed",470
+16,120,0,"Died",12
+16,120,0,"Gathered",1431
+16,120,0,"Harvested",63
+16,120,0,"Interrupted:cultivation work",63
+16,120,0,"Interrupted:eat accessible food",121
+16,120,0,"Interrupted:new gathering action",28
+16,120,0,"Interrupted:sleep",46541
+16,120,0,"Pickup",252
+16,120,0,"Queued",87
+16,120,0,"Rejected",23
+16,120,0,"SleepStarted",51201
+16,120,1,"Arrived",8
+16,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+16,120,1,"Consumed",153
+16,120,1,"Died",4
+16,120,1,"Gathered",600
+16,120,1,"Harvested",14
+16,120,1,"Interrupted:cultivation work",14
+16,120,1,"Interrupted:eat accessible food",31
+16,120,1,"Interrupted:queue for route",606
+16,120,1,"Interrupted:sleep",17412
+16,120,1,"Pickup",72
+16,120,1,"Queued",645
+16,120,1,"Rejected",37
+16,120,1,"SleepStarted",19131
+16,120,2,"Arrived",30
+16,120,2,"Died",4
+16,120,2,"Interrupted:queue for route",610
+16,120,2,"Interrupted:sleep",3918
+16,120,2,"Queued",618
+16,120,2,"SleepStarted",3940
+16,120,2,"Spoiled",26
+16,120,3,"Died",7
+16,168,0,"Arrived",14
+16,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+16,168,0,"Consumed",536
+16,168,0,"Died",14
+16,168,0,"Gathered",1431
+16,168,0,"Harvested",85
+16,168,0,"Interrupted:cultivation work",85
+16,168,0,"Interrupted:eat accessible food",147
+16,168,0,"Interrupted:new gathering action",28
+16,168,0,"Interrupted:sleep",56861
+16,168,0,"Pickup",340
+16,168,0,"Queued",109
+16,168,0,"Rejected",24
+16,168,0,"SleepStarted",62027
+16,168,1,"Arrived",16
+16,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+16,168,1,"Consumed",153
+16,168,1,"Died",12
+16,168,1,"Gathered",600
+16,168,1,"Harvested",14
+16,168,1,"Interrupted:cultivation work",14
+16,168,1,"Interrupted:eat accessible food",31
+16,168,1,"Interrupted:queue for route",606
+16,168,1,"Interrupted:sleep",17892
+16,168,1,"Pickup",72
+16,168,1,"Queued",645
+16,168,1,"Rejected",37
+16,168,1,"SleepStarted",22367
+16,168,2,"Arrived",38
+16,168,2,"Died",4
+16,168,2,"Interrupted:queue for route",618
+16,168,2,"Interrupted:sleep",5050
+16,168,2,"Queued",626
+16,168,2,"SleepStarted",5080
+16,168,2,"Spoiled",26
+16,168,3,"Died",7
+17,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+17,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+17,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+17,12,0,"Consumed",75
+17,12,0,"Gathered",475
+17,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+17,12,1,"Consumed",75
+17,12,1,"Gathered",475
+17,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+17,36,0,"Consumed",175
+17,36,0,"Gathered",1075
+17,36,0,"Interrupted:eat accessible food",75
+17,36,0,"Interrupted:sleep",12000
+17,36,0,"Rejected",7
+17,36,0,"SleepStarted",12075
+17,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+17,36,1,"Consumed",132
+17,36,1,"Gathered",600
+17,36,1,"Harvested",7
+17,36,1,"Interrupted:cultivation work",7
+17,36,1,"Interrupted:eat accessible food",25
+17,36,1,"Interrupted:queue for route",14
+17,36,1,"Interrupted:sleep",12777
+17,36,1,"Pickup",35
+17,36,1,"Queued",39
+17,36,1,"Rejected",15
+17,36,1,"SleepStarted",12802
+17,36,2,"Arrived",8
+17,36,2,"Interrupted:queue for route",4
+17,36,2,"Interrupted:sleep",712
+17,36,2,"Queued",8
+17,36,2,"SleepStarted",716
+17,48,0,"Arrived",4
+17,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+17,48,0,"Consumed",285
+17,48,0,"Gathered",1446
+17,48,0,"Interrupted:eat accessible food",101
+17,48,0,"Interrupted:new gathering action",25
+17,48,0,"Interrupted:sleep",18674
+17,48,0,"Queued",18
+17,48,0,"Rejected",7
+17,48,0,"SleepStarted",18759
+17,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+17,48,1,"Consumed",139
+17,48,1,"Gathered",600
+17,48,1,"Harvested",7
+17,48,1,"Interrupted:cultivation work",7
+17,48,1,"Interrupted:eat accessible food",25
+17,48,1,"Interrupted:queue for route",18
+17,48,1,"Interrupted:sleep",12832
+17,48,1,"Pickup",35
+17,48,1,"Queued",50
+17,48,1,"Rejected",20
+17,48,1,"SleepStarted",12857
+17,48,2,"Arrived",12
+17,48,2,"Interrupted:queue for route",12
+17,48,2,"Interrupted:sleep",724
+17,48,2,"Queued",20
+17,48,2,"SleepStarted",728
+17,48,2,"Spoiled",27
+17,72,0,"Arrived",8
+17,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+17,72,0,"Consumed",363
+17,72,0,"Died",4
+17,72,0,"Gathered",1446
+17,72,0,"Harvested",26
+17,72,0,"Interrupted:cultivation work",25
+17,72,0,"Interrupted:eat accessible food",101
+17,72,0,"Interrupted:new gathering action",25
+17,72,0,"Interrupted:sleep",28591
+17,72,0,"Pickup",104
+17,72,0,"Queued",43
+17,72,0,"Rejected",13
+17,72,0,"SleepStarted",30412
+17,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+17,72,1,"Consumed",153
+17,72,1,"Gathered",600
+17,72,1,"Harvested",14
+17,72,1,"Interrupted:cultivation work",14
+17,72,1,"Interrupted:eat accessible food",32
+17,72,1,"Interrupted:queue for route",408
+17,72,1,"Interrupted:sleep",16675
+17,72,1,"Pickup",70
+17,72,1,"Queued",447
+17,72,1,"Rejected",22
+17,72,1,"SleepStarted",16707
+17,72,2,"Arrived",16
+17,72,2,"Died",4
+17,72,2,"Interrupted:queue for route",596
+17,72,2,"Interrupted:sleep",1540
+17,72,2,"Queued",604
+17,72,2,"SleepStarted",1548
+17,72,2,"Spoiled",27
+17,72,3,"Died",6
+17,120,0,"Arrived",15
+17,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+17,120,0,"Consumed",483
+17,120,0,"Died",11
+17,120,0,"Gathered",1446
+17,120,0,"Harvested",66
+17,120,0,"Interrupted:cultivation work",65
+17,120,0,"Interrupted:eat accessible food",122
+17,120,0,"Interrupted:new gathering action",25
+17,120,0,"Interrupted:sleep",47983
+17,120,0,"Pickup",264
+17,120,0,"Queued",81
+17,120,0,"Rejected",22
+17,120,0,"SleepStarted",52254
+17,120,1,"Arrived",8
+17,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+17,120,1,"Consumed",159
+17,120,1,"Died",4
+17,120,1,"Gathered",600
+17,120,1,"Harvested",17
+17,120,1,"Interrupted:cultivation work",17
+17,120,1,"Interrupted:eat accessible food",32
+17,120,1,"Interrupted:queue for route",408
+17,120,1,"Interrupted:sleep",18169
+17,120,1,"Pickup",88
+17,120,1,"Queued",450
+17,120,1,"Rejected",22
+17,120,1,"SleepStarted",19889
+17,120,2,"Arrived",31
+17,120,2,"Died",4
+17,120,2,"Interrupted:queue for route",611
+17,120,2,"Interrupted:sleep",4217
+17,120,2,"Queued",619
+17,120,2,"SleepStarted",4240
+17,120,2,"Spoiled",27
+17,120,3,"Died",6
+17,168,0,"Arrived",15
+17,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+17,168,0,"Consumed",555
+17,168,0,"Died",14
+17,168,0,"Gathered",1446
+17,168,0,"Harvested",90
+17,168,0,"Interrupted:cultivation work",89
+17,168,0,"Interrupted:eat accessible food",148
+17,168,0,"Interrupted:new gathering action",25
+17,168,0,"Interrupted:sleep",59278
+17,168,0,"Pickup",360
+17,168,0,"Queued",103
+17,168,0,"Rejected",29
+17,168,0,"SleepStarted",64297
+17,168,1,"Arrived",16
+17,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+17,168,1,"Consumed",159
+17,168,1,"Died",12
+17,168,1,"Gathered",600
+17,168,1,"Harvested",17
+17,168,1,"Interrupted:cultivation work",17
+17,168,1,"Interrupted:eat accessible food",32
+17,168,1,"Interrupted:queue for route",408
+17,168,1,"Interrupted:sleep",18649
+17,168,1,"Pickup",88
+17,168,1,"Queued",450
+17,168,1,"Rejected",22
+17,168,1,"SleepStarted",23125
+17,168,2,"Arrived",39
+17,168,2,"Died",4
+17,168,2,"Interrupted:queue for route",619
+17,168,2,"Interrupted:sleep",5349
+17,168,2,"Queued",627
+17,168,2,"SleepStarted",5380
+17,168,2,"Spoiled",27
+17,168,3,"Died",6
+18,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+18,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,12,0,"Consumed",75
+18,12,0,"Gathered",475
+18,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+18,12,1,"Consumed",75
+18,12,1,"Gathered",475
+18,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,36,0,"Consumed",175
+18,36,0,"Gathered",1075
+18,36,0,"Interrupted:eat accessible food",75
+18,36,0,"Interrupted:sleep",12000
+18,36,0,"Rejected",12
+18,36,0,"SleepStarted",12075
+18,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+18,36,1,"Consumed",133
+18,36,1,"Gathered",600
+18,36,1,"Harvested",8
+18,36,1,"Interrupted:cultivation work",8
+18,36,1,"Interrupted:eat accessible food",25
+18,36,1,"Interrupted:queue for route",13
+18,36,1,"Interrupted:sleep",12777
+18,36,1,"Pickup",40
+18,36,1,"Queued",38
+18,36,1,"Rejected",15
+18,36,1,"SleepStarted",12802
+18,36,2,"Arrived",8
+18,36,2,"Interrupted:queue for route",4
+18,36,2,"Interrupted:sleep",712
+18,36,2,"Queued",8
+18,36,2,"SleepStarted",716
+18,48,0,"Arrived",4
+18,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,48,0,"Consumed",289
+18,48,0,"Gathered",1461
+18,48,0,"Interrupted:eat accessible food",102
+18,48,0,"Interrupted:new gathering action",22
+18,48,0,"Interrupted:sleep",18680
+18,48,0,"Queued",12
+18,48,0,"Rejected",12
+18,48,0,"SleepStarted",18767
+18,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+18,48,1,"Consumed",141
+18,48,1,"Gathered",600
+18,48,1,"Harvested",8
+18,48,1,"Interrupted:cultivation work",8
+18,48,1,"Interrupted:eat accessible food",25
+18,48,1,"Interrupted:queue for route",15
+18,48,1,"Interrupted:sleep",12836
+18,48,1,"Pickup",40
+18,48,1,"Queued",48
+18,48,1,"Rejected",19
+18,48,1,"SleepStarted",12861
+18,48,2,"Arrived",12
+18,48,2,"Interrupted:queue for route",12
+18,48,2,"Interrupted:sleep",724
+18,48,2,"Queued",20
+18,48,2,"SleepStarted",728
+18,48,2,"Spoiled",28
+18,72,0,"Arrived",8
+18,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,72,0,"Consumed",370
+18,72,0,"Died",4
+18,72,0,"Gathered",1461
+18,72,0,"Harvested",27
+18,72,0,"Interrupted:cultivation work",25
+18,72,0,"Interrupted:eat accessible food",102
+18,72,0,"Interrupted:new gathering action",22
+18,72,0,"Interrupted:sleep",29070
+18,72,0,"Pickup",108
+18,72,0,"Queued",37
+18,72,0,"Rejected",20
+18,72,0,"SleepStarted",30449
+18,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+18,72,1,"Consumed",157
+18,72,1,"Gathered",600
+18,72,1,"Harvested",16
+18,72,1,"Interrupted:cultivation work",16
+18,72,1,"Interrupted:eat accessible food",33
+18,72,1,"Interrupted:queue for route",210
+18,72,1,"Interrupted:sleep",17094
+18,72,1,"Pickup",80
+18,72,1,"Queued",251
+18,72,1,"Rejected",23
+18,72,1,"SleepStarted",17127
+18,72,2,"Arrived",16
+18,72,2,"Died",4
+18,72,2,"Interrupted:queue for route",596
+18,72,2,"Interrupted:sleep",1540
+18,72,2,"Queued",604
+18,72,2,"SleepStarted",1548
+18,72,2,"Spoiled",28
+18,72,3,"Died",5
+18,120,0,"Arrived",16
+18,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,120,0,"Consumed",496
+18,120,0,"Died",10
+18,120,0,"Gathered",1461
+18,120,0,"Harvested",69
+18,120,0,"Interrupted:cultivation work",67
+18,120,0,"Interrupted:eat accessible food",123
+18,120,0,"Interrupted:new gathering action",22
+18,120,0,"Interrupted:sleep",49425
+18,120,0,"Pickup",276
+18,120,0,"Queued",75
+18,120,0,"Rejected",37
+18,120,0,"SleepStarted",53307
+18,120,1,"Arrived",8
+18,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+18,120,1,"Consumed",165
+18,120,1,"Died",4
+18,120,1,"Gathered",600
+18,120,1,"Harvested",20
+18,120,1,"Interrupted:cultivation work",20
+18,120,1,"Interrupted:eat accessible food",33
+18,120,1,"Interrupted:queue for route",210
+18,120,1,"Interrupted:sleep",18926
+18,120,1,"Pickup",104
+18,120,1,"Queued",255
+18,120,1,"Rejected",26
+18,120,1,"SleepStarted",20647
+18,120,2,"Arrived",32
+18,120,2,"Died",4
+18,120,2,"Interrupted:queue for route",612
+18,120,2,"Interrupted:sleep",4516
+18,120,2,"Queued",620
+18,120,2,"SleepStarted",4540
+18,120,2,"Spoiled",28
+18,120,3,"Died",5
+18,168,0,"Arrived",16
+18,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+18,168,0,"Consumed",574
+18,168,0,"Died",14
+18,168,0,"Gathered",1461
+18,168,0,"Harvested",95
+18,168,0,"Interrupted:cultivation work",93
+18,168,0,"Interrupted:eat accessible food",149
+18,168,0,"Interrupted:new gathering action",22
+18,168,0,"Interrupted:sleep",61695
+18,168,0,"Pickup",380
+18,168,0,"Queued",97
+18,168,0,"Rejected",45
+18,168,0,"SleepStarted",66567
+18,168,1,"Arrived",16
+18,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+18,168,1,"Consumed",165
+18,168,1,"Died",12
+18,168,1,"Gathered",600
+18,168,1,"Harvested",20
+18,168,1,"Interrupted:cultivation work",20
+18,168,1,"Interrupted:eat accessible food",33
+18,168,1,"Interrupted:queue for route",210
+18,168,1,"Interrupted:sleep",19406
+18,168,1,"Pickup",104
+18,168,1,"Queued",255
+18,168,1,"Rejected",26
+18,168,1,"SleepStarted",23883
+18,168,2,"Arrived",40
+18,168,2,"Died",4
+18,168,2,"Interrupted:queue for route",620
+18,168,2,"Interrupted:sleep",5648
+18,168,2,"Queued",628
+18,168,2,"SleepStarted",5680
+18,168,2,"Spoiled",28
+18,168,3,"Died",5
+19,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+19,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+19,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+19,12,0,"Consumed",75
+19,12,0,"Gathered",475
+19,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+19,12,1,"Consumed",75
+19,12,1,"Gathered",475
+19,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+19,36,0,"Consumed",175
+19,36,0,"Gathered",1075
+19,36,0,"Interrupted:eat accessible food",75
+19,36,0,"Interrupted:sleep",12000
+19,36,0,"Rejected",5
+19,36,0,"SleepStarted",12075
+19,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+19,36,1,"Consumed",131
+19,36,1,"Gathered",600
+19,36,1,"Harvested",6
+19,36,1,"Interrupted:cultivation work",6
+19,36,1,"Interrupted:eat accessible food",25
+19,36,1,"Interrupted:queue for route",15
+19,36,1,"Interrupted:sleep",12777
+19,36,1,"Pickup",30
+19,36,1,"Queued",40
+19,36,1,"Rejected",31
+19,36,1,"SleepStarted",12802
+19,36,2,"Arrived",8
+19,36,2,"Interrupted:queue for route",4
+19,36,2,"Interrupted:sleep",712
+19,36,2,"Queued",8
+19,36,2,"SleepStarted",716
+19,48,0,"Arrived",4
+19,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+19,48,0,"Consumed",281
+19,48,0,"Gathered",1431
+19,48,0,"Interrupted:eat accessible food",100
+19,48,0,"Interrupted:new gathering action",28
+19,48,0,"Interrupted:sleep",18668
+19,48,0,"Queued",24
+19,48,0,"Rejected",5
+19,48,0,"SleepStarted",18751
+19,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+19,48,1,"Consumed",137
+19,48,1,"Gathered",600
+19,48,1,"Harvested",6
+19,48,1,"Interrupted:cultivation work",6
+19,48,1,"Interrupted:eat accessible food",25
+19,48,1,"Interrupted:queue for route",21
+19,48,1,"Interrupted:sleep",12828
+19,48,1,"Pickup",30
+19,48,1,"Queued",52
+19,48,1,"Rejected",32
+19,48,1,"SleepStarted",12853
+19,48,2,"Arrived",12
+19,48,2,"Interrupted:queue for route",12
+19,48,2,"Interrupted:sleep",724
+19,48,2,"Queued",20
+19,48,2,"SleepStarted",728
+19,48,2,"Spoiled",26
+19,72,0,"Arrived",8
+19,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+19,72,0,"Consumed",356
+19,72,0,"Died",4
+19,72,0,"Gathered",1431
+19,72,0,"Harvested",25
+19,72,0,"Interrupted:cultivation work",25
+19,72,0,"Interrupted:eat accessible food",100
+19,72,0,"Interrupted:new gathering action",28
+19,72,0,"Interrupted:sleep",28112
+19,72,0,"Pickup",100
+19,72,0,"Queued",49
+19,72,0,"Rejected",12
+19,72,0,"SleepStarted",30375
+19,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+19,72,1,"Consumed",149
+19,72,1,"Gathered",600
+19,72,1,"Harvested",12
+19,72,1,"Interrupted:cultivation work",12
+19,72,1,"Interrupted:eat accessible food",31
+19,72,1,"Interrupted:queue for route",606
+19,72,1,"Interrupted:sleep",16256
+19,72,1,"Pickup",60
+19,72,1,"Queued",643
+19,72,1,"Rejected",35
+19,72,1,"SleepStarted",16287
+19,72,2,"Arrived",16
+19,72,2,"Died",4
+19,72,2,"Interrupted:queue for route",596
+19,72,2,"Interrupted:sleep",1540
+19,72,2,"Queued",604
+19,72,2,"SleepStarted",1548
+19,72,2,"Spoiled",26
+19,72,3,"Died",7
+19,120,0,"Arrived",14
+19,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+19,120,0,"Consumed",470
+19,120,0,"Died",12
+19,120,0,"Gathered",1431
+19,120,0,"Harvested",63
+19,120,0,"Interrupted:cultivation work",63
+19,120,0,"Interrupted:eat accessible food",121
+19,120,0,"Interrupted:new gathering action",28
+19,120,0,"Interrupted:sleep",46541
+19,120,0,"Pickup",252
+19,120,0,"Queued",87
+19,120,0,"Rejected",26
+19,120,0,"SleepStarted",51201
+19,120,1,"Arrived",8
+19,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+19,120,1,"Consumed",153
+19,120,1,"Died",4
+19,120,1,"Gathered",600
+19,120,1,"Harvested",14
+19,120,1,"Interrupted:cultivation work",14
+19,120,1,"Interrupted:eat accessible food",31
+19,120,1,"Interrupted:queue for route",606
+19,120,1,"Interrupted:sleep",17412
+19,120,1,"Pickup",72
+19,120,1,"Queued",645
+19,120,1,"Rejected",36
+19,120,1,"SleepStarted",19131
+19,120,2,"Arrived",30
+19,120,2,"Died",4
+19,120,2,"Interrupted:queue for route",610
+19,120,2,"Interrupted:sleep",3918
+19,120,2,"Queued",618
+19,120,2,"SleepStarted",3940
+19,120,2,"Spoiled",26
+19,120,3,"Died",7
+19,168,0,"Arrived",14
+19,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+19,168,0,"Consumed",536
+19,168,0,"Died",14
+19,168,0,"Gathered",1431
+19,168,0,"Harvested",85
+19,168,0,"Interrupted:cultivation work",85
+19,168,0,"Interrupted:eat accessible food",147
+19,168,0,"Interrupted:new gathering action",28
+19,168,0,"Interrupted:sleep",56861
+19,168,0,"Pickup",340
+19,168,0,"Queued",109
+19,168,0,"Rejected",35
+19,168,0,"SleepStarted",62027
+19,168,1,"Arrived",16
+19,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+19,168,1,"Consumed",153
+19,168,1,"Died",12
+19,168,1,"Gathered",600
+19,168,1,"Harvested",14
+19,168,1,"Interrupted:cultivation work",14
+19,168,1,"Interrupted:eat accessible food",31
+19,168,1,"Interrupted:queue for route",606
+19,168,1,"Interrupted:sleep",17892
+19,168,1,"Pickup",72
+19,168,1,"Queued",645
+19,168,1,"Rejected",36
+19,168,1,"SleepStarted",22367
+19,168,2,"Arrived",38
+19,168,2,"Died",4
+19,168,2,"Interrupted:queue for route",618
+19,168,2,"Interrupted:sleep",5050
+19,168,2,"Queued",626
+19,168,2,"SleepStarted",5080
+19,168,2,"Spoiled",26
+19,168,3,"Died",7
+20,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+20,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+20,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+20,12,0,"Consumed",75
+20,12,0,"Gathered",475
+20,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+20,12,1,"Consumed",75
+20,12,1,"Gathered",475
+20,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+20,36,0,"Consumed",175
+20,36,0,"Gathered",1075
+20,36,0,"Interrupted:eat accessible food",75
+20,36,0,"Interrupted:sleep",12000
+20,36,0,"Rejected",3
+20,36,0,"SleepStarted",12075
+20,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+20,36,1,"Consumed",132
+20,36,1,"Gathered",600
+20,36,1,"Harvested",7
+20,36,1,"Interrupted:cultivation work",7
+20,36,1,"Interrupted:eat accessible food",25
+20,36,1,"Interrupted:queue for route",14
+20,36,1,"Interrupted:sleep",12777
+20,36,1,"Pickup",35
+20,36,1,"Queued",39
+20,36,1,"Rejected",15
+20,36,1,"SleepStarted",12802
+20,36,2,"Arrived",8
+20,36,2,"Interrupted:queue for route",4
+20,36,2,"Interrupted:sleep",712
+20,36,2,"Queued",8
+20,36,2,"SleepStarted",716
+20,48,0,"Arrived",4
+20,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+20,48,0,"Consumed",285
+20,48,0,"Gathered",1446
+20,48,0,"Interrupted:eat accessible food",101
+20,48,0,"Interrupted:new gathering action",25
+20,48,0,"Interrupted:sleep",18674
+20,48,0,"Queued",18
+20,48,0,"Rejected",3
+20,48,0,"SleepStarted",18759
+20,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+20,48,1,"Consumed",139
+20,48,1,"Gathered",600
+20,48,1,"Harvested",7
+20,48,1,"Interrupted:cultivation work",7
+20,48,1,"Interrupted:eat accessible food",25
+20,48,1,"Interrupted:queue for route",18
+20,48,1,"Interrupted:sleep",12832
+20,48,1,"Pickup",35
+20,48,1,"Queued",50
+20,48,1,"Rejected",19
+20,48,1,"SleepStarted",12857
+20,48,2,"Arrived",12
+20,48,2,"Interrupted:queue for route",12
+20,48,2,"Interrupted:sleep",724
+20,48,2,"Queued",20
+20,48,2,"SleepStarted",728
+20,48,2,"Spoiled",27
+20,72,0,"Arrived",8
+20,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+20,72,0,"Consumed",363
+20,72,0,"Died",4
+20,72,0,"Gathered",1446
+20,72,0,"Harvested",26
+20,72,0,"Interrupted:cultivation work",25
+20,72,0,"Interrupted:eat accessible food",101
+20,72,0,"Interrupted:new gathering action",25
+20,72,0,"Interrupted:sleep",28591
+20,72,0,"Pickup",104
+20,72,0,"Queued",43
+20,72,0,"Rejected",11
+20,72,0,"SleepStarted",30412
+20,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+20,72,1,"Consumed",153
+20,72,1,"Gathered",600
+20,72,1,"Harvested",14
+20,72,1,"Interrupted:cultivation work",14
+20,72,1,"Interrupted:eat accessible food",32
+20,72,1,"Interrupted:queue for route",408
+20,72,1,"Interrupted:sleep",16675
+20,72,1,"Pickup",70
+20,72,1,"Queued",447
+20,72,1,"Rejected",23
+20,72,1,"SleepStarted",16707
+20,72,2,"Arrived",16
+20,72,2,"Died",4
+20,72,2,"Interrupted:queue for route",596
+20,72,2,"Interrupted:sleep",1540
+20,72,2,"Queued",604
+20,72,2,"SleepStarted",1548
+20,72,2,"Spoiled",27
+20,72,3,"Died",6
+20,120,0,"Arrived",15
+20,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+20,120,0,"Consumed",483
+20,120,0,"Died",11
+20,120,0,"Gathered",1446
+20,120,0,"Harvested",66
+20,120,0,"Interrupted:cultivation work",65
+20,120,0,"Interrupted:eat accessible food",122
+20,120,0,"Interrupted:new gathering action",25
+20,120,0,"Interrupted:sleep",47983
+20,120,0,"Pickup",264
+20,120,0,"Queued",81
+20,120,0,"Rejected",24
+20,120,0,"SleepStarted",52254
+20,120,1,"Arrived",8
+20,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+20,120,1,"Consumed",159
+20,120,1,"Died",4
+20,120,1,"Gathered",600
+20,120,1,"Harvested",17
+20,120,1,"Interrupted:cultivation work",17
+20,120,1,"Interrupted:eat accessible food",32
+20,120,1,"Interrupted:queue for route",408
+20,120,1,"Interrupted:sleep",18169
+20,120,1,"Pickup",88
+20,120,1,"Queued",450
+20,120,1,"Rejected",24
+20,120,1,"SleepStarted",19889
+20,120,2,"Arrived",31
+20,120,2,"Died",4
+20,120,2,"Interrupted:queue for route",611
+20,120,2,"Interrupted:sleep",4217
+20,120,2,"Queued",619
+20,120,2,"SleepStarted",4240
+20,120,2,"Spoiled",27
+20,120,3,"Died",6
+20,168,0,"Arrived",15
+20,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+20,168,0,"Consumed",555
+20,168,0,"Died",14
+20,168,0,"Gathered",1446
+20,168,0,"Harvested",90
+20,168,0,"Interrupted:cultivation work",89
+20,168,0,"Interrupted:eat accessible food",148
+20,168,0,"Interrupted:new gathering action",25
+20,168,0,"Interrupted:sleep",59278
+20,168,0,"Pickup",360
+20,168,0,"Queued",103
+20,168,0,"Rejected",30
+20,168,0,"SleepStarted",64297
+20,168,1,"Arrived",16
+20,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+20,168,1,"Consumed",159
+20,168,1,"Died",12
+20,168,1,"Gathered",600
+20,168,1,"Harvested",17
+20,168,1,"Interrupted:cultivation work",17
+20,168,1,"Interrupted:eat accessible food",32
+20,168,1,"Interrupted:queue for route",408
+20,168,1,"Interrupted:sleep",18649
+20,168,1,"Pickup",88
+20,168,1,"Queued",450
+20,168,1,"Rejected",24
+20,168,1,"SleepStarted",23125
+20,168,2,"Arrived",39
+20,168,2,"Died",4
+20,168,2,"Interrupted:queue for route",619
+20,168,2,"Interrupted:sleep",5349
+20,168,2,"Queued",627
+20,168,2,"SleepStarted",5380
+20,168,2,"Spoiled",27
+20,168,3,"Died",6
+21,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+21,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+21,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+21,12,0,"Consumed",75
+21,12,0,"Gathered",475
+21,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+21,12,1,"Consumed",75
+21,12,1,"Gathered",475
+21,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+21,36,0,"Consumed",175
+21,36,0,"Gathered",1075
+21,36,0,"Interrupted:eat accessible food",75
+21,36,0,"Interrupted:sleep",12000
+21,36,0,"Rejected",10
+21,36,0,"SleepStarted",12075
+21,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+21,36,1,"Consumed",131
+21,36,1,"Gathered",600
+21,36,1,"Harvested",6
+21,36,1,"Interrupted:cultivation work",6
+21,36,1,"Interrupted:eat accessible food",25
+21,36,1,"Interrupted:queue for route",15
+21,36,1,"Interrupted:sleep",12777
+21,36,1,"Pickup",30
+21,36,1,"Queued",40
+21,36,1,"Rejected",15
+21,36,1,"SleepStarted",12802
+21,36,2,"Arrived",8
+21,36,2,"Interrupted:queue for route",4
+21,36,2,"Interrupted:sleep",712
+21,36,2,"Queued",8
+21,36,2,"SleepStarted",716
+21,48,0,"Arrived",4
+21,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+21,48,0,"Consumed",281
+21,48,0,"Gathered",1431
+21,48,0,"Interrupted:eat accessible food",100
+21,48,0,"Interrupted:new gathering action",28
+21,48,0,"Interrupted:sleep",18668
+21,48,0,"Queued",24
+21,48,0,"Rejected",10
+21,48,0,"SleepStarted",18751
+21,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+21,48,1,"Consumed",137
+21,48,1,"Gathered",600
+21,48,1,"Harvested",6
+21,48,1,"Interrupted:cultivation work",6
+21,48,1,"Interrupted:eat accessible food",25
+21,48,1,"Interrupted:queue for route",21
+21,48,1,"Interrupted:sleep",12828
+21,48,1,"Pickup",30
+21,48,1,"Queued",52
+21,48,1,"Rejected",18
+21,48,1,"SleepStarted",12853
+21,48,2,"Arrived",12
+21,48,2,"Interrupted:queue for route",12
+21,48,2,"Interrupted:sleep",724
+21,48,2,"Queued",20
+21,48,2,"SleepStarted",728
+21,48,2,"Spoiled",26
+21,72,0,"Arrived",8
+21,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+21,72,0,"Consumed",356
+21,72,0,"Died",4
+21,72,0,"Gathered",1431
+21,72,0,"Harvested",25
+21,72,0,"Interrupted:cultivation work",25
+21,72,0,"Interrupted:eat accessible food",100
+21,72,0,"Interrupted:new gathering action",28
+21,72,0,"Interrupted:sleep",28112
+21,72,0,"Pickup",100
+21,72,0,"Queued",49
+21,72,0,"Rejected",24
+21,72,0,"SleepStarted",30375
+21,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+21,72,1,"Consumed",149
+21,72,1,"Gathered",600
+21,72,1,"Harvested",12
+21,72,1,"Interrupted:cultivation work",12
+21,72,1,"Interrupted:eat accessible food",31
+21,72,1,"Interrupted:queue for route",606
+21,72,1,"Interrupted:sleep",16256
+21,72,1,"Pickup",60
+21,72,1,"Queued",643
+21,72,1,"Rejected",22
+21,72,1,"SleepStarted",16287
+21,72,2,"Arrived",16
+21,72,2,"Died",4
+21,72,2,"Interrupted:queue for route",596
+21,72,2,"Interrupted:sleep",1540
+21,72,2,"Queued",604
+21,72,2,"SleepStarted",1548
+21,72,2,"Spoiled",26
+21,72,3,"Died",7
+21,120,0,"Arrived",14
+21,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+21,120,0,"Consumed",470
+21,120,0,"Died",12
+21,120,0,"Gathered",1431
+21,120,0,"Harvested",63
+21,120,0,"Interrupted:cultivation work",63
+21,120,0,"Interrupted:eat accessible food",121
+21,120,0,"Interrupted:new gathering action",28
+21,120,0,"Interrupted:sleep",46541
+21,120,0,"Pickup",252
+21,120,0,"Queued",87
+21,120,0,"Rejected",33
+21,120,0,"SleepStarted",51201
+21,120,1,"Arrived",8
+21,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+21,120,1,"Consumed",153
+21,120,1,"Died",4
+21,120,1,"Gathered",600
+21,120,1,"Harvested",14
+21,120,1,"Interrupted:cultivation work",14
+21,120,1,"Interrupted:eat accessible food",31
+21,120,1,"Interrupted:queue for route",606
+21,120,1,"Interrupted:sleep",17412
+21,120,1,"Pickup",72
+21,120,1,"Queued",645
+21,120,1,"Rejected",22
+21,120,1,"SleepStarted",19131
+21,120,2,"Arrived",30
+21,120,2,"Died",4
+21,120,2,"Interrupted:queue for route",610
+21,120,2,"Interrupted:sleep",3918
+21,120,2,"Queued",618
+21,120,2,"SleepStarted",3940
+21,120,2,"Spoiled",26
+21,120,3,"Died",7
+21,168,0,"Arrived",14
+21,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+21,168,0,"Consumed",536
+21,168,0,"Died",14
+21,168,0,"Gathered",1431
+21,168,0,"Harvested",85
+21,168,0,"Interrupted:cultivation work",85
+21,168,0,"Interrupted:eat accessible food",147
+21,168,0,"Interrupted:new gathering action",28
+21,168,0,"Interrupted:sleep",56861
+21,168,0,"Pickup",340
+21,168,0,"Queued",109
+21,168,0,"Rejected",37
+21,168,0,"SleepStarted",62027
+21,168,1,"Arrived",16
+21,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+21,168,1,"Consumed",153
+21,168,1,"Died",12
+21,168,1,"Gathered",600
+21,168,1,"Harvested",14
+21,168,1,"Interrupted:cultivation work",14
+21,168,1,"Interrupted:eat accessible food",31
+21,168,1,"Interrupted:queue for route",606
+21,168,1,"Interrupted:sleep",17892
+21,168,1,"Pickup",72
+21,168,1,"Queued",645
+21,168,1,"Rejected",22
+21,168,1,"SleepStarted",22367
+21,168,2,"Arrived",38
+21,168,2,"Died",4
+21,168,2,"Interrupted:queue for route",618
+21,168,2,"Interrupted:sleep",5050
+21,168,2,"Queued",626
+21,168,2,"SleepStarted",5080
+21,168,2,"Spoiled",26
+21,168,3,"Died",7
+22,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+22,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+22,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+22,12,0,"Consumed",75
+22,12,0,"Gathered",475
+22,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+22,12,1,"Consumed",75
+22,12,1,"Gathered",475
+22,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+22,36,0,"Consumed",175
+22,36,0,"Gathered",1075
+22,36,0,"Interrupted:eat accessible food",75
+22,36,0,"Interrupted:sleep",12000
+22,36,0,"Rejected",6
+22,36,0,"SleepStarted",12075
+22,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+22,36,1,"Consumed",131
+22,36,1,"Gathered",600
+22,36,1,"Harvested",6
+22,36,1,"Interrupted:cultivation work",6
+22,36,1,"Interrupted:eat accessible food",25
+22,36,1,"Interrupted:queue for route",15
+22,36,1,"Interrupted:sleep",12777
+22,36,1,"Pickup",30
+22,36,1,"Queued",40
+22,36,1,"Rejected",31
+22,36,1,"SleepStarted",12802
+22,36,2,"Arrived",8
+22,36,2,"Interrupted:queue for route",4
+22,36,2,"Interrupted:sleep",712
+22,36,2,"Queued",8
+22,36,2,"SleepStarted",716
+22,48,0,"Arrived",4
+22,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+22,48,0,"Consumed",281
+22,48,0,"Gathered",1431
+22,48,0,"Interrupted:eat accessible food",100
+22,48,0,"Interrupted:new gathering action",28
+22,48,0,"Interrupted:sleep",18668
+22,48,0,"Queued",24
+22,48,0,"Rejected",6
+22,48,0,"SleepStarted",18751
+22,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+22,48,1,"Consumed",137
+22,48,1,"Gathered",600
+22,48,1,"Harvested",6
+22,48,1,"Interrupted:cultivation work",6
+22,48,1,"Interrupted:eat accessible food",25
+22,48,1,"Interrupted:queue for route",21
+22,48,1,"Interrupted:sleep",12828
+22,48,1,"Pickup",30
+22,48,1,"Queued",52
+22,48,1,"Rejected",34
+22,48,1,"SleepStarted",12853
+22,48,2,"Arrived",12
+22,48,2,"Interrupted:queue for route",12
+22,48,2,"Interrupted:sleep",724
+22,48,2,"Queued",20
+22,48,2,"SleepStarted",728
+22,48,2,"Spoiled",26
+22,72,0,"Arrived",8
+22,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+22,72,0,"Consumed",356
+22,72,0,"Died",4
+22,72,0,"Gathered",1431
+22,72,0,"Harvested",25
+22,72,0,"Interrupted:cultivation work",25
+22,72,0,"Interrupted:eat accessible food",100
+22,72,0,"Interrupted:new gathering action",28
+22,72,0,"Interrupted:sleep",28112
+22,72,0,"Pickup",100
+22,72,0,"Queued",49
+22,72,0,"Rejected",13
+22,72,0,"SleepStarted",30375
+22,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+22,72,1,"Consumed",149
+22,72,1,"Gathered",600
+22,72,1,"Harvested",12
+22,72,1,"Interrupted:cultivation work",12
+22,72,1,"Interrupted:eat accessible food",31
+22,72,1,"Interrupted:queue for route",606
+22,72,1,"Interrupted:sleep",16256
+22,72,1,"Pickup",60
+22,72,1,"Queued",643
+22,72,1,"Rejected",35
+22,72,1,"SleepStarted",16287
+22,72,2,"Arrived",16
+22,72,2,"Died",4
+22,72,2,"Interrupted:queue for route",596
+22,72,2,"Interrupted:sleep",1540
+22,72,2,"Queued",604
+22,72,2,"SleepStarted",1548
+22,72,2,"Spoiled",26
+22,72,3,"Died",7
+22,120,0,"Arrived",14
+22,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+22,120,0,"Consumed",470
+22,120,0,"Died",12
+22,120,0,"Gathered",1431
+22,120,0,"Harvested",63
+22,120,0,"Interrupted:cultivation work",63
+22,120,0,"Interrupted:eat accessible food",121
+22,120,0,"Interrupted:new gathering action",28
+22,120,0,"Interrupted:sleep",46541
+22,120,0,"Pickup",252
+22,120,0,"Queued",87
+22,120,0,"Rejected",18
+22,120,0,"SleepStarted",51201
+22,120,1,"Arrived",8
+22,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+22,120,1,"Consumed",153
+22,120,1,"Died",4
+22,120,1,"Gathered",600
+22,120,1,"Harvested",14
+22,120,1,"Interrupted:cultivation work",14
+22,120,1,"Interrupted:eat accessible food",31
+22,120,1,"Interrupted:queue for route",606
+22,120,1,"Interrupted:sleep",17412
+22,120,1,"Pickup",72
+22,120,1,"Queued",645
+22,120,1,"Rejected",36
+22,120,1,"SleepStarted",19131
+22,120,2,"Arrived",30
+22,120,2,"Died",4
+22,120,2,"Interrupted:queue for route",610
+22,120,2,"Interrupted:sleep",3918
+22,120,2,"Queued",618
+22,120,2,"SleepStarted",3940
+22,120,2,"Spoiled",26
+22,120,3,"Died",7
+22,168,0,"Arrived",14
+22,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+22,168,0,"Consumed",536
+22,168,0,"Died",14
+22,168,0,"Gathered",1431
+22,168,0,"Harvested",85
+22,168,0,"Interrupted:cultivation work",85
+22,168,0,"Interrupted:eat accessible food",147
+22,168,0,"Interrupted:new gathering action",28
+22,168,0,"Interrupted:sleep",56861
+22,168,0,"Pickup",340
+22,168,0,"Queued",109
+22,168,0,"Rejected",24
+22,168,0,"SleepStarted",62027
+22,168,1,"Arrived",16
+22,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+22,168,1,"Consumed",153
+22,168,1,"Died",12
+22,168,1,"Gathered",600
+22,168,1,"Harvested",14
+22,168,1,"Interrupted:cultivation work",14
+22,168,1,"Interrupted:eat accessible food",31
+22,168,1,"Interrupted:queue for route",606
+22,168,1,"Interrupted:sleep",17892
+22,168,1,"Pickup",72
+22,168,1,"Queued",645
+22,168,1,"Rejected",36
+22,168,1,"SleepStarted",22367
+22,168,2,"Arrived",38
+22,168,2,"Died",4
+22,168,2,"Interrupted:queue for route",618
+22,168,2,"Interrupted:sleep",5050
+22,168,2,"Queued",626
+22,168,2,"SleepStarted",5080
+22,168,2,"Spoiled",26
+22,168,3,"Died",7
+23,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+23,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+23,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+23,12,0,"Consumed",75
+23,12,0,"Gathered",475
+23,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+23,12,1,"Consumed",75
+23,12,1,"Gathered",475
+23,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+23,36,0,"Consumed",175
+23,36,0,"Gathered",1075
+23,36,0,"Interrupted:eat accessible food",75
+23,36,0,"Interrupted:sleep",12000
+23,36,0,"Rejected",4
+23,36,0,"SleepStarted",12075
+23,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+23,36,1,"Consumed",131
+23,36,1,"Gathered",600
+23,36,1,"Harvested",6
+23,36,1,"Interrupted:cultivation work",6
+23,36,1,"Interrupted:eat accessible food",25
+23,36,1,"Interrupted:queue for route",15
+23,36,1,"Interrupted:sleep",12777
+23,36,1,"Pickup",30
+23,36,1,"Queued",40
+23,36,1,"Rejected",31
+23,36,1,"SleepStarted",12802
+23,36,2,"Arrived",8
+23,36,2,"Interrupted:queue for route",4
+23,36,2,"Interrupted:sleep",712
+23,36,2,"Queued",8
+23,36,2,"SleepStarted",716
+23,48,0,"Arrived",4
+23,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+23,48,0,"Consumed",281
+23,48,0,"Gathered",1431
+23,48,0,"Interrupted:eat accessible food",100
+23,48,0,"Interrupted:new gathering action",28
+23,48,0,"Interrupted:sleep",18668
+23,48,0,"Queued",24
+23,48,0,"Rejected",4
+23,48,0,"SleepStarted",18751
+23,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+23,48,1,"Consumed",137
+23,48,1,"Gathered",600
+23,48,1,"Harvested",6
+23,48,1,"Interrupted:cultivation work",6
+23,48,1,"Interrupted:eat accessible food",25
+23,48,1,"Interrupted:queue for route",21
+23,48,1,"Interrupted:sleep",12828
+23,48,1,"Pickup",30
+23,48,1,"Queued",52
+23,48,1,"Rejected",35
+23,48,1,"SleepStarted",12853
+23,48,2,"Arrived",12
+23,48,2,"Interrupted:queue for route",12
+23,48,2,"Interrupted:sleep",724
+23,48,2,"Queued",20
+23,48,2,"SleepStarted",728
+23,48,2,"Spoiled",26
+23,72,0,"Arrived",8
+23,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+23,72,0,"Consumed",356
+23,72,0,"Died",4
+23,72,0,"Gathered",1431
+23,72,0,"Harvested",25
+23,72,0,"Interrupted:cultivation work",25
+23,72,0,"Interrupted:eat accessible food",100
+23,72,0,"Interrupted:new gathering action",28
+23,72,0,"Interrupted:sleep",28112
+23,72,0,"Pickup",100
+23,72,0,"Queued",49
+23,72,0,"Rejected",11
+23,72,0,"SleepStarted",30375
+23,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+23,72,1,"Consumed",149
+23,72,1,"Gathered",600
+23,72,1,"Harvested",12
+23,72,1,"Interrupted:cultivation work",12
+23,72,1,"Interrupted:eat accessible food",31
+23,72,1,"Interrupted:queue for route",606
+23,72,1,"Interrupted:sleep",16256
+23,72,1,"Pickup",60
+23,72,1,"Queued",643
+23,72,1,"Rejected",38
+23,72,1,"SleepStarted",16287
+23,72,2,"Arrived",16
+23,72,2,"Died",4
+23,72,2,"Interrupted:queue for route",596
+23,72,2,"Interrupted:sleep",1540
+23,72,2,"Queued",604
+23,72,2,"SleepStarted",1548
+23,72,2,"Spoiled",26
+23,72,3,"Died",7
+23,120,0,"Arrived",14
+23,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+23,120,0,"Consumed",470
+23,120,0,"Died",12
+23,120,0,"Gathered",1431
+23,120,0,"Harvested",63
+23,120,0,"Interrupted:cultivation work",63
+23,120,0,"Interrupted:eat accessible food",121
+23,120,0,"Interrupted:new gathering action",28
+23,120,0,"Interrupted:sleep",46541
+23,120,0,"Pickup",252
+23,120,0,"Queued",87
+23,120,0,"Rejected",20
+23,120,0,"SleepStarted",51201
+23,120,1,"Arrived",8
+23,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+23,120,1,"Consumed",153
+23,120,1,"Died",4
+23,120,1,"Gathered",600
+23,120,1,"Harvested",14
+23,120,1,"Interrupted:cultivation work",14
+23,120,1,"Interrupted:eat accessible food",31
+23,120,1,"Interrupted:queue for route",606
+23,120,1,"Interrupted:sleep",17412
+23,120,1,"Pickup",72
+23,120,1,"Queued",645
+23,120,1,"Rejected",39
+23,120,1,"SleepStarted",19131
+23,120,2,"Arrived",30
+23,120,2,"Died",4
+23,120,2,"Interrupted:queue for route",610
+23,120,2,"Interrupted:sleep",3918
+23,120,2,"Queued",618
+23,120,2,"SleepStarted",3940
+23,120,2,"Spoiled",26
+23,120,3,"Died",7
+23,168,0,"Arrived",14
+23,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+23,168,0,"Consumed",536
+23,168,0,"Died",14
+23,168,0,"Gathered",1431
+23,168,0,"Harvested",85
+23,168,0,"Interrupted:cultivation work",85
+23,168,0,"Interrupted:eat accessible food",147
+23,168,0,"Interrupted:new gathering action",28
+23,168,0,"Interrupted:sleep",56861
+23,168,0,"Pickup",340
+23,168,0,"Queued",109
+23,168,0,"Rejected",23
+23,168,0,"SleepStarted",62027
+23,168,1,"Arrived",16
+23,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+23,168,1,"Consumed",153
+23,168,1,"Died",12
+23,168,1,"Gathered",600
+23,168,1,"Harvested",14
+23,168,1,"Interrupted:cultivation work",14
+23,168,1,"Interrupted:eat accessible food",31
+23,168,1,"Interrupted:queue for route",606
+23,168,1,"Interrupted:sleep",17892
+23,168,1,"Pickup",72
+23,168,1,"Queued",645
+23,168,1,"Rejected",39
+23,168,1,"SleepStarted",22367
+23,168,2,"Arrived",38
+23,168,2,"Died",4
+23,168,2,"Interrupted:queue for route",618
+23,168,2,"Interrupted:sleep",5050
+23,168,2,"Queued",626
+23,168,2,"SleepStarted",5080
+23,168,2,"Spoiled",26
+23,168,3,"Died",7
+24,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+24,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+24,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+24,12,0,"Consumed",75
+24,12,0,"Gathered",475
+24,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+24,12,1,"Consumed",75
+24,12,1,"Gathered",475
+24,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+24,36,0,"Consumed",175
+24,36,0,"Gathered",1075
+24,36,0,"Interrupted:eat accessible food",75
+24,36,0,"Interrupted:sleep",12000
+24,36,0,"Rejected",8
+24,36,0,"SleepStarted",12075
+24,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+24,36,1,"Consumed",131
+24,36,1,"Gathered",600
+24,36,1,"Harvested",6
+24,36,1,"Interrupted:cultivation work",6
+24,36,1,"Interrupted:eat accessible food",25
+24,36,1,"Interrupted:queue for route",15
+24,36,1,"Interrupted:sleep",12777
+24,36,1,"Pickup",30
+24,36,1,"Queued",40
+24,36,1,"Rejected",31
+24,36,1,"SleepStarted",12802
+24,36,2,"Arrived",8
+24,36,2,"Interrupted:queue for route",4
+24,36,2,"Interrupted:sleep",712
+24,36,2,"Queued",8
+24,36,2,"SleepStarted",716
+24,48,0,"Arrived",4
+24,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+24,48,0,"Consumed",281
+24,48,0,"Gathered",1431
+24,48,0,"Interrupted:eat accessible food",100
+24,48,0,"Interrupted:new gathering action",28
+24,48,0,"Interrupted:sleep",18668
+24,48,0,"Queued",24
+24,48,0,"Rejected",8
+24,48,0,"SleepStarted",18751
+24,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+24,48,1,"Consumed",137
+24,48,1,"Gathered",600
+24,48,1,"Harvested",6
+24,48,1,"Interrupted:cultivation work",6
+24,48,1,"Interrupted:eat accessible food",25
+24,48,1,"Interrupted:queue for route",21
+24,48,1,"Interrupted:sleep",12828
+24,48,1,"Pickup",30
+24,48,1,"Queued",52
+24,48,1,"Rejected",33
+24,48,1,"SleepStarted",12853
+24,48,2,"Arrived",12
+24,48,2,"Interrupted:queue for route",12
+24,48,2,"Interrupted:sleep",724
+24,48,2,"Queued",20
+24,48,2,"SleepStarted",728
+24,48,2,"Spoiled",26
+24,72,0,"Arrived",8
+24,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+24,72,0,"Consumed",356
+24,72,0,"Died",4
+24,72,0,"Gathered",1431
+24,72,0,"Harvested",25
+24,72,0,"Interrupted:cultivation work",25
+24,72,0,"Interrupted:eat accessible food",100
+24,72,0,"Interrupted:new gathering action",28
+24,72,0,"Interrupted:sleep",28112
+24,72,0,"Pickup",100
+24,72,0,"Queued",49
+24,72,0,"Rejected",19
+24,72,0,"SleepStarted",30375
+24,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+24,72,1,"Consumed",149
+24,72,1,"Gathered",600
+24,72,1,"Harvested",12
+24,72,1,"Interrupted:cultivation work",12
+24,72,1,"Interrupted:eat accessible food",31
+24,72,1,"Interrupted:queue for route",606
+24,72,1,"Interrupted:sleep",16256
+24,72,1,"Pickup",60
+24,72,1,"Queued",643
+24,72,1,"Rejected",34
+24,72,1,"SleepStarted",16287
+24,72,2,"Arrived",16
+24,72,2,"Died",4
+24,72,2,"Interrupted:queue for route",596
+24,72,2,"Interrupted:sleep",1540
+24,72,2,"Queued",604
+24,72,2,"SleepStarted",1548
+24,72,2,"Spoiled",26
+24,72,3,"Died",7
+24,120,0,"Arrived",14
+24,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+24,120,0,"Consumed",470
+24,120,0,"Died",12
+24,120,0,"Gathered",1431
+24,120,0,"Harvested",63
+24,120,0,"Interrupted:cultivation work",63
+24,120,0,"Interrupted:eat accessible food",121
+24,120,0,"Interrupted:new gathering action",28
+24,120,0,"Interrupted:sleep",46541
+24,120,0,"Pickup",252
+24,120,0,"Queued",87
+24,120,0,"Rejected",28
+24,120,0,"SleepStarted",51201
+24,120,1,"Arrived",8
+24,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+24,120,1,"Consumed",153
+24,120,1,"Died",4
+24,120,1,"Gathered",600
+24,120,1,"Harvested",14
+24,120,1,"Interrupted:cultivation work",14
+24,120,1,"Interrupted:eat accessible food",31
+24,120,1,"Interrupted:queue for route",606
+24,120,1,"Interrupted:sleep",17412
+24,120,1,"Pickup",72
+24,120,1,"Queued",645
+24,120,1,"Rejected",34
+24,120,1,"SleepStarted",19131
+24,120,2,"Arrived",30
+24,120,2,"Died",4
+24,120,2,"Interrupted:queue for route",610
+24,120,2,"Interrupted:sleep",3918
+24,120,2,"Queued",618
+24,120,2,"SleepStarted",3940
+24,120,2,"Spoiled",26
+24,120,3,"Died",7
+24,168,0,"Arrived",14
+24,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+24,168,0,"Consumed",536
+24,168,0,"Died",14
+24,168,0,"Gathered",1431
+24,168,0,"Harvested",85
+24,168,0,"Interrupted:cultivation work",85
+24,168,0,"Interrupted:eat accessible food",147
+24,168,0,"Interrupted:new gathering action",28
+24,168,0,"Interrupted:sleep",56861
+24,168,0,"Pickup",340
+24,168,0,"Queued",109
+24,168,0,"Rejected",31
+24,168,0,"SleepStarted",62027
+24,168,1,"Arrived",16
+24,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+24,168,1,"Consumed",153
+24,168,1,"Died",12
+24,168,1,"Gathered",600
+24,168,1,"Harvested",14
+24,168,1,"Interrupted:cultivation work",14
+24,168,1,"Interrupted:eat accessible food",31
+24,168,1,"Interrupted:queue for route",606
+24,168,1,"Interrupted:sleep",17892
+24,168,1,"Pickup",72
+24,168,1,"Queued",645
+24,168,1,"Rejected",34
+24,168,1,"SleepStarted",22367
+24,168,2,"Arrived",38
+24,168,2,"Died",4
+24,168,2,"Interrupted:queue for route",618
+24,168,2,"Interrupted:sleep",5050
+24,168,2,"Queued",626
+24,168,2,"SleepStarted",5080
+24,168,2,"Spoiled",26
+24,168,3,"Died",7
+25,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+25,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+25,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+25,12,0,"Consumed",75
+25,12,0,"Gathered",475
+25,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+25,12,1,"Consumed",75
+25,12,1,"Gathered",475
+25,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+25,36,0,"Consumed",175
+25,36,0,"Gathered",1075
+25,36,0,"Interrupted:eat accessible food",75
+25,36,0,"Interrupted:sleep",12000
+25,36,0,"Rejected",9
+25,36,0,"SleepStarted",12075
+25,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+25,36,1,"Consumed",131
+25,36,1,"Gathered",600
+25,36,1,"Harvested",6
+25,36,1,"Interrupted:cultivation work",6
+25,36,1,"Interrupted:eat accessible food",25
+25,36,1,"Interrupted:queue for route",15
+25,36,1,"Interrupted:sleep",12777
+25,36,1,"Pickup",30
+25,36,1,"Queued",40
+25,36,1,"Rejected",15
+25,36,1,"SleepStarted",12802
+25,36,2,"Arrived",8
+25,36,2,"Interrupted:queue for route",4
+25,36,2,"Interrupted:sleep",712
+25,36,2,"Queued",8
+25,36,2,"SleepStarted",716
+25,48,0,"Arrived",4
+25,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+25,48,0,"Consumed",281
+25,48,0,"Gathered",1431
+25,48,0,"Interrupted:eat accessible food",100
+25,48,0,"Interrupted:new gathering action",28
+25,48,0,"Interrupted:sleep",18668
+25,48,0,"Queued",24
+25,48,0,"Rejected",9
+25,48,0,"SleepStarted",18751
+25,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+25,48,1,"Consumed",137
+25,48,1,"Gathered",600
+25,48,1,"Harvested",6
+25,48,1,"Interrupted:cultivation work",6
+25,48,1,"Interrupted:eat accessible food",25
+25,48,1,"Interrupted:queue for route",21
+25,48,1,"Interrupted:sleep",12828
+25,48,1,"Pickup",30
+25,48,1,"Queued",52
+25,48,1,"Rejected",18
+25,48,1,"SleepStarted",12853
+25,48,2,"Arrived",12
+25,48,2,"Interrupted:queue for route",12
+25,48,2,"Interrupted:sleep",724
+25,48,2,"Queued",20
+25,48,2,"SleepStarted",728
+25,48,2,"Spoiled",26
+25,72,0,"Arrived",8
+25,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+25,72,0,"Consumed",356
+25,72,0,"Died",4
+25,72,0,"Gathered",1431
+25,72,0,"Harvested",25
+25,72,0,"Interrupted:cultivation work",25
+25,72,0,"Interrupted:eat accessible food",100
+25,72,0,"Interrupted:new gathering action",28
+25,72,0,"Interrupted:sleep",28112
+25,72,0,"Pickup",100
+25,72,0,"Queued",49
+25,72,0,"Rejected",14
+25,72,0,"SleepStarted",30375
+25,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+25,72,1,"Consumed",149
+25,72,1,"Gathered",600
+25,72,1,"Harvested",12
+25,72,1,"Interrupted:cultivation work",12
+25,72,1,"Interrupted:eat accessible food",31
+25,72,1,"Interrupted:queue for route",606
+25,72,1,"Interrupted:sleep",16256
+25,72,1,"Pickup",60
+25,72,1,"Queued",643
+25,72,1,"Rejected",20
+25,72,1,"SleepStarted",16287
+25,72,2,"Arrived",16
+25,72,2,"Died",4
+25,72,2,"Interrupted:queue for route",596
+25,72,2,"Interrupted:sleep",1540
+25,72,2,"Queued",604
+25,72,2,"SleepStarted",1548
+25,72,2,"Spoiled",26
+25,72,3,"Died",7
+25,120,0,"Arrived",14
+25,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+25,120,0,"Consumed",470
+25,120,0,"Died",12
+25,120,0,"Gathered",1431
+25,120,0,"Harvested",63
+25,120,0,"Interrupted:cultivation work",63
+25,120,0,"Interrupted:eat accessible food",121
+25,120,0,"Interrupted:new gathering action",28
+25,120,0,"Interrupted:sleep",46541
+25,120,0,"Pickup",252
+25,120,0,"Queued",87
+25,120,0,"Rejected",28
+25,120,0,"SleepStarted",51201
+25,120,1,"Arrived",8
+25,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+25,120,1,"Consumed",153
+25,120,1,"Died",4
+25,120,1,"Gathered",600
+25,120,1,"Harvested",14
+25,120,1,"Interrupted:cultivation work",14
+25,120,1,"Interrupted:eat accessible food",31
+25,120,1,"Interrupted:queue for route",606
+25,120,1,"Interrupted:sleep",17412
+25,120,1,"Pickup",72
+25,120,1,"Queued",645
+25,120,1,"Rejected",21
+25,120,1,"SleepStarted",19131
+25,120,2,"Arrived",30
+25,120,2,"Died",4
+25,120,2,"Interrupted:queue for route",610
+25,120,2,"Interrupted:sleep",3918
+25,120,2,"Queued",618
+25,120,2,"SleepStarted",3940
+25,120,2,"Spoiled",26
+25,120,3,"Died",7
+25,168,0,"Arrived",14
+25,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+25,168,0,"Consumed",536
+25,168,0,"Died",14
+25,168,0,"Gathered",1431
+25,168,0,"Harvested",85
+25,168,0,"Interrupted:cultivation work",85
+25,168,0,"Interrupted:eat accessible food",147
+25,168,0,"Interrupted:new gathering action",28
+25,168,0,"Interrupted:sleep",56861
+25,168,0,"Pickup",340
+25,168,0,"Queued",109
+25,168,0,"Rejected",30
+25,168,0,"SleepStarted",62027
+25,168,1,"Arrived",16
+25,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+25,168,1,"Consumed",153
+25,168,1,"Died",12
+25,168,1,"Gathered",600
+25,168,1,"Harvested",14
+25,168,1,"Interrupted:cultivation work",14
+25,168,1,"Interrupted:eat accessible food",31
+25,168,1,"Interrupted:queue for route",606
+25,168,1,"Interrupted:sleep",17892
+25,168,1,"Pickup",72
+25,168,1,"Queued",645
+25,168,1,"Rejected",21
+25,168,1,"SleepStarted",22367
+25,168,2,"Arrived",38
+25,168,2,"Died",4
+25,168,2,"Interrupted:queue for route",618
+25,168,2,"Interrupted:sleep",5050
+25,168,2,"Queued",626
+25,168,2,"SleepStarted",5080
+25,168,2,"Spoiled",26
+25,168,3,"Died",7
+26,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+26,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+26,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+26,12,0,"Consumed",75
+26,12,0,"Gathered",475
+26,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+26,12,1,"Consumed",75
+26,12,1,"Gathered",475
+26,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+26,36,0,"Consumed",175
+26,36,0,"Gathered",1075
+26,36,0,"Interrupted:eat accessible food",75
+26,36,0,"Interrupted:sleep",12000
+26,36,0,"Rejected",5
+26,36,0,"SleepStarted",12075
+26,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+26,36,1,"Consumed",131
+26,36,1,"Gathered",600
+26,36,1,"Harvested",6
+26,36,1,"Interrupted:cultivation work",6
+26,36,1,"Interrupted:eat accessible food",25
+26,36,1,"Interrupted:queue for route",15
+26,36,1,"Interrupted:sleep",12777
+26,36,1,"Pickup",30
+26,36,1,"Queued",40
+26,36,1,"Rejected",31
+26,36,1,"SleepStarted",12802
+26,36,2,"Arrived",8
+26,36,2,"Interrupted:queue for route",4
+26,36,2,"Interrupted:sleep",712
+26,36,2,"Queued",8
+26,36,2,"SleepStarted",716
+26,48,0,"Arrived",4
+26,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+26,48,0,"Consumed",281
+26,48,0,"Gathered",1431
+26,48,0,"Interrupted:eat accessible food",100
+26,48,0,"Interrupted:new gathering action",28
+26,48,0,"Interrupted:sleep",18668
+26,48,0,"Queued",24
+26,48,0,"Rejected",5
+26,48,0,"SleepStarted",18751
+26,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+26,48,1,"Consumed",137
+26,48,1,"Gathered",600
+26,48,1,"Harvested",6
+26,48,1,"Interrupted:cultivation work",6
+26,48,1,"Interrupted:eat accessible food",25
+26,48,1,"Interrupted:queue for route",21
+26,48,1,"Interrupted:sleep",12828
+26,48,1,"Pickup",30
+26,48,1,"Queued",52
+26,48,1,"Rejected",32
+26,48,1,"SleepStarted",12853
+26,48,2,"Arrived",12
+26,48,2,"Interrupted:queue for route",12
+26,48,2,"Interrupted:sleep",724
+26,48,2,"Queued",20
+26,48,2,"SleepStarted",728
+26,48,2,"Spoiled",26
+26,72,0,"Arrived",8
+26,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+26,72,0,"Consumed",356
+26,72,0,"Died",4
+26,72,0,"Gathered",1431
+26,72,0,"Harvested",25
+26,72,0,"Interrupted:cultivation work",25
+26,72,0,"Interrupted:eat accessible food",100
+26,72,0,"Interrupted:new gathering action",28
+26,72,0,"Interrupted:sleep",28112
+26,72,0,"Pickup",100
+26,72,0,"Queued",49
+26,72,0,"Rejected",8
+26,72,0,"SleepStarted",30375
+26,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+26,72,1,"Consumed",149
+26,72,1,"Gathered",600
+26,72,1,"Harvested",12
+26,72,1,"Interrupted:cultivation work",12
+26,72,1,"Interrupted:eat accessible food",31
+26,72,1,"Interrupted:queue for route",606
+26,72,1,"Interrupted:sleep",16256
+26,72,1,"Pickup",60
+26,72,1,"Queued",643
+26,72,1,"Rejected",37
+26,72,1,"SleepStarted",16287
+26,72,2,"Arrived",16
+26,72,2,"Died",4
+26,72,2,"Interrupted:queue for route",596
+26,72,2,"Interrupted:sleep",1540
+26,72,2,"Queued",604
+26,72,2,"SleepStarted",1548
+26,72,2,"Spoiled",26
+26,72,3,"Died",7
+26,120,0,"Arrived",14
+26,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+26,120,0,"Consumed",470
+26,120,0,"Died",12
+26,120,0,"Gathered",1431
+26,120,0,"Harvested",63
+26,120,0,"Interrupted:cultivation work",63
+26,120,0,"Interrupted:eat accessible food",121
+26,120,0,"Interrupted:new gathering action",28
+26,120,0,"Interrupted:sleep",46541
+26,120,0,"Pickup",252
+26,120,0,"Queued",87
+26,120,0,"Rejected",20
+26,120,0,"SleepStarted",51201
+26,120,1,"Arrived",8
+26,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+26,120,1,"Consumed",153
+26,120,1,"Died",4
+26,120,1,"Gathered",600
+26,120,1,"Harvested",14
+26,120,1,"Interrupted:cultivation work",14
+26,120,1,"Interrupted:eat accessible food",31
+26,120,1,"Interrupted:queue for route",606
+26,120,1,"Interrupted:sleep",17412
+26,120,1,"Pickup",72
+26,120,1,"Queued",645
+26,120,1,"Rejected",37
+26,120,1,"SleepStarted",19131
+26,120,2,"Arrived",30
+26,120,2,"Died",4
+26,120,2,"Interrupted:queue for route",610
+26,120,2,"Interrupted:sleep",3918
+26,120,2,"Queued",618
+26,120,2,"SleepStarted",3940
+26,120,2,"Spoiled",26
+26,120,3,"Died",7
+26,168,0,"Arrived",14
+26,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+26,168,0,"Consumed",536
+26,168,0,"Died",14
+26,168,0,"Gathered",1431
+26,168,0,"Harvested",85
+26,168,0,"Interrupted:cultivation work",85
+26,168,0,"Interrupted:eat accessible food",147
+26,168,0,"Interrupted:new gathering action",28
+26,168,0,"Interrupted:sleep",56861
+26,168,0,"Pickup",340
+26,168,0,"Queued",109
+26,168,0,"Rejected",26
+26,168,0,"SleepStarted",62027
+26,168,1,"Arrived",16
+26,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+26,168,1,"Consumed",153
+26,168,1,"Died",12
+26,168,1,"Gathered",600
+26,168,1,"Harvested",14
+26,168,1,"Interrupted:cultivation work",14
+26,168,1,"Interrupted:eat accessible food",31
+26,168,1,"Interrupted:queue for route",606
+26,168,1,"Interrupted:sleep",17892
+26,168,1,"Pickup",72
+26,168,1,"Queued",645
+26,168,1,"Rejected",37
+26,168,1,"SleepStarted",22367
+26,168,2,"Arrived",38
+26,168,2,"Died",4
+26,168,2,"Interrupted:queue for route",618
+26,168,2,"Interrupted:sleep",5050
+26,168,2,"Queued",626
+26,168,2,"SleepStarted",5080
+26,168,2,"Spoiled",26
+26,168,3,"Died",7
+27,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+27,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+27,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+27,12,0,"Consumed",75
+27,12,0,"Gathered",475
+27,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+27,12,1,"Consumed",75
+27,12,1,"Gathered",475
+27,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+27,36,0,"Consumed",175
+27,36,0,"Gathered",1075
+27,36,0,"Interrupted:eat accessible food",75
+27,36,0,"Interrupted:sleep",12000
+27,36,0,"Rejected",7
+27,36,0,"SleepStarted",12075
+27,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+27,36,1,"Consumed",131
+27,36,1,"Gathered",600
+27,36,1,"Harvested",6
+27,36,1,"Interrupted:cultivation work",6
+27,36,1,"Interrupted:eat accessible food",25
+27,36,1,"Interrupted:queue for route",15
+27,36,1,"Interrupted:sleep",12777
+27,36,1,"Pickup",30
+27,36,1,"Queued",40
+27,36,1,"Rejected",31
+27,36,1,"SleepStarted",12802
+27,36,2,"Arrived",8
+27,36,2,"Interrupted:queue for route",4
+27,36,2,"Interrupted:sleep",712
+27,36,2,"Queued",8
+27,36,2,"SleepStarted",716
+27,48,0,"Arrived",4
+27,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+27,48,0,"Consumed",281
+27,48,0,"Gathered",1431
+27,48,0,"Interrupted:eat accessible food",100
+27,48,0,"Interrupted:new gathering action",28
+27,48,0,"Interrupted:sleep",18668
+27,48,0,"Queued",24
+27,48,0,"Rejected",7
+27,48,0,"SleepStarted",18751
+27,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+27,48,1,"Consumed",137
+27,48,1,"Gathered",600
+27,48,1,"Harvested",6
+27,48,1,"Interrupted:cultivation work",6
+27,48,1,"Interrupted:eat accessible food",25
+27,48,1,"Interrupted:queue for route",21
+27,48,1,"Interrupted:sleep",12828
+27,48,1,"Pickup",30
+27,48,1,"Queued",52
+27,48,1,"Rejected",34
+27,48,1,"SleepStarted",12853
+27,48,2,"Arrived",12
+27,48,2,"Interrupted:queue for route",12
+27,48,2,"Interrupted:sleep",724
+27,48,2,"Queued",20
+27,48,2,"SleepStarted",728
+27,48,2,"Spoiled",26
+27,72,0,"Arrived",8
+27,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+27,72,0,"Consumed",356
+27,72,0,"Died",4
+27,72,0,"Gathered",1431
+27,72,0,"Harvested",25
+27,72,0,"Interrupted:cultivation work",25
+27,72,0,"Interrupted:eat accessible food",100
+27,72,0,"Interrupted:new gathering action",28
+27,72,0,"Interrupted:sleep",28112
+27,72,0,"Pickup",100
+27,72,0,"Queued",49
+27,72,0,"Rejected",14
+27,72,0,"SleepStarted",30375
+27,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+27,72,1,"Consumed",149
+27,72,1,"Gathered",600
+27,72,1,"Harvested",12
+27,72,1,"Interrupted:cultivation work",12
+27,72,1,"Interrupted:eat accessible food",31
+27,72,1,"Interrupted:queue for route",606
+27,72,1,"Interrupted:sleep",16256
+27,72,1,"Pickup",60
+27,72,1,"Queued",643
+27,72,1,"Rejected",34
+27,72,1,"SleepStarted",16287
+27,72,2,"Arrived",16
+27,72,2,"Died",4
+27,72,2,"Interrupted:queue for route",596
+27,72,2,"Interrupted:sleep",1540
+27,72,2,"Queued",604
+27,72,2,"SleepStarted",1548
+27,72,2,"Spoiled",26
+27,72,3,"Died",7
+27,120,0,"Arrived",14
+27,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+27,120,0,"Consumed",470
+27,120,0,"Died",12
+27,120,0,"Gathered",1431
+27,120,0,"Harvested",63
+27,120,0,"Interrupted:cultivation work",63
+27,120,0,"Interrupted:eat accessible food",121
+27,120,0,"Interrupted:new gathering action",28
+27,120,0,"Interrupted:sleep",46541
+27,120,0,"Pickup",252
+27,120,0,"Queued",87
+27,120,0,"Rejected",21
+27,120,0,"SleepStarted",51201
+27,120,1,"Arrived",8
+27,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+27,120,1,"Consumed",153
+27,120,1,"Died",4
+27,120,1,"Gathered",600
+27,120,1,"Harvested",14
+27,120,1,"Interrupted:cultivation work",14
+27,120,1,"Interrupted:eat accessible food",31
+27,120,1,"Interrupted:queue for route",606
+27,120,1,"Interrupted:sleep",17412
+27,120,1,"Pickup",72
+27,120,1,"Queued",645
+27,120,1,"Rejected",35
+27,120,1,"SleepStarted",19131
+27,120,2,"Arrived",30
+27,120,2,"Died",4
+27,120,2,"Interrupted:queue for route",610
+27,120,2,"Interrupted:sleep",3918
+27,120,2,"Queued",618
+27,120,2,"SleepStarted",3940
+27,120,2,"Spoiled",26
+27,120,3,"Died",7
+27,168,0,"Arrived",14
+27,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+27,168,0,"Consumed",536
+27,168,0,"Died",14
+27,168,0,"Gathered",1431
+27,168,0,"Harvested",85
+27,168,0,"Interrupted:cultivation work",85
+27,168,0,"Interrupted:eat accessible food",147
+27,168,0,"Interrupted:new gathering action",28
+27,168,0,"Interrupted:sleep",56861
+27,168,0,"Pickup",340
+27,168,0,"Queued",109
+27,168,0,"Rejected",25
+27,168,0,"SleepStarted",62027
+27,168,1,"Arrived",16
+27,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+27,168,1,"Consumed",153
+27,168,1,"Died",12
+27,168,1,"Gathered",600
+27,168,1,"Harvested",14
+27,168,1,"Interrupted:cultivation work",14
+27,168,1,"Interrupted:eat accessible food",31
+27,168,1,"Interrupted:queue for route",606
+27,168,1,"Interrupted:sleep",17892
+27,168,1,"Pickup",72
+27,168,1,"Queued",645
+27,168,1,"Rejected",35
+27,168,1,"SleepStarted",22367
+27,168,2,"Arrived",38
+27,168,2,"Died",4
+27,168,2,"Interrupted:queue for route",618
+27,168,2,"Interrupted:sleep",5050
+27,168,2,"Queued",626
+27,168,2,"SleepStarted",5080
+27,168,2,"Spoiled",26
+27,168,3,"Died",7
+28,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+28,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+28,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+28,12,0,"Consumed",75
+28,12,0,"Gathered",475
+28,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+28,12,1,"Consumed",75
+28,12,1,"Gathered",475
+28,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+28,36,0,"Consumed",175
+28,36,0,"Gathered",1075
+28,36,0,"Interrupted:eat accessible food",75
+28,36,0,"Interrupted:sleep",12000
+28,36,0,"Rejected",8
+28,36,0,"SleepStarted",12075
+28,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+28,36,1,"Consumed",132
+28,36,1,"Gathered",600
+28,36,1,"Harvested",7
+28,36,1,"Interrupted:cultivation work",7
+28,36,1,"Interrupted:eat accessible food",25
+28,36,1,"Interrupted:queue for route",14
+28,36,1,"Interrupted:sleep",12777
+28,36,1,"Pickup",35
+28,36,1,"Queued",39
+28,36,1,"Rejected",15
+28,36,1,"SleepStarted",12802
+28,36,2,"Arrived",8
+28,36,2,"Interrupted:queue for route",4
+28,36,2,"Interrupted:sleep",712
+28,36,2,"Queued",8
+28,36,2,"SleepStarted",716
+28,48,0,"Arrived",4
+28,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+28,48,0,"Consumed",285
+28,48,0,"Gathered",1446
+28,48,0,"Interrupted:eat accessible food",101
+28,48,0,"Interrupted:new gathering action",25
+28,48,0,"Interrupted:sleep",18674
+28,48,0,"Queued",18
+28,48,0,"Rejected",8
+28,48,0,"SleepStarted",18759
+28,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+28,48,1,"Consumed",139
+28,48,1,"Gathered",600
+28,48,1,"Harvested",7
+28,48,1,"Interrupted:cultivation work",7
+28,48,1,"Interrupted:eat accessible food",25
+28,48,1,"Interrupted:queue for route",18
+28,48,1,"Interrupted:sleep",12832
+28,48,1,"Pickup",35
+28,48,1,"Queued",50
+28,48,1,"Rejected",17
+28,48,1,"SleepStarted",12857
+28,48,2,"Arrived",12
+28,48,2,"Interrupted:queue for route",12
+28,48,2,"Interrupted:sleep",724
+28,48,2,"Queued",20
+28,48,2,"SleepStarted",728
+28,48,2,"Spoiled",27
+28,72,0,"Arrived",8
+28,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+28,72,0,"Consumed",363
+28,72,0,"Died",4
+28,72,0,"Gathered",1446
+28,72,0,"Harvested",26
+28,72,0,"Interrupted:cultivation work",25
+28,72,0,"Interrupted:eat accessible food",101
+28,72,0,"Interrupted:new gathering action",25
+28,72,0,"Interrupted:sleep",28591
+28,72,0,"Pickup",104
+28,72,0,"Queued",43
+28,72,0,"Rejected",10
+28,72,0,"SleepStarted",30412
+28,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+28,72,1,"Consumed",153
+28,72,1,"Gathered",600
+28,72,1,"Harvested",14
+28,72,1,"Interrupted:cultivation work",14
+28,72,1,"Interrupted:eat accessible food",32
+28,72,1,"Interrupted:queue for route",408
+28,72,1,"Interrupted:sleep",16675
+28,72,1,"Pickup",70
+28,72,1,"Queued",447
+28,72,1,"Rejected",19
+28,72,1,"SleepStarted",16707
+28,72,2,"Arrived",16
+28,72,2,"Died",4
+28,72,2,"Interrupted:queue for route",596
+28,72,2,"Interrupted:sleep",1540
+28,72,2,"Queued",604
+28,72,2,"SleepStarted",1548
+28,72,2,"Spoiled",27
+28,72,3,"Died",6
+28,120,0,"Arrived",15
+28,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+28,120,0,"Consumed",483
+28,120,0,"Died",11
+28,120,0,"Gathered",1446
+28,120,0,"Harvested",66
+28,120,0,"Interrupted:cultivation work",65
+28,120,0,"Interrupted:eat accessible food",122
+28,120,0,"Interrupted:new gathering action",25
+28,120,0,"Interrupted:sleep",47983
+28,120,0,"Pickup",264
+28,120,0,"Queued",81
+28,120,0,"Rejected",18
+28,120,0,"SleepStarted",52254
+28,120,1,"Arrived",8
+28,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+28,120,1,"Consumed",159
+28,120,1,"Died",4
+28,120,1,"Gathered",600
+28,120,1,"Harvested",17
+28,120,1,"Interrupted:cultivation work",17
+28,120,1,"Interrupted:eat accessible food",32
+28,120,1,"Interrupted:queue for route",408
+28,120,1,"Interrupted:sleep",18169
+28,120,1,"Pickup",88
+28,120,1,"Queued",450
+28,120,1,"Rejected",20
+28,120,1,"SleepStarted",19889
+28,120,2,"Arrived",31
+28,120,2,"Died",4
+28,120,2,"Interrupted:queue for route",611
+28,120,2,"Interrupted:sleep",4217
+28,120,2,"Queued",619
+28,120,2,"SleepStarted",4240
+28,120,2,"Spoiled",27
+28,120,3,"Died",6
+28,168,0,"Arrived",15
+28,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+28,168,0,"Consumed",555
+28,168,0,"Died",14
+28,168,0,"Gathered",1446
+28,168,0,"Harvested",90
+28,168,0,"Interrupted:cultivation work",89
+28,168,0,"Interrupted:eat accessible food",148
+28,168,0,"Interrupted:new gathering action",25
+28,168,0,"Interrupted:sleep",59278
+28,168,0,"Pickup",360
+28,168,0,"Queued",103
+28,168,0,"Rejected",19
+28,168,0,"SleepStarted",64297
+28,168,1,"Arrived",16
+28,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+28,168,1,"Consumed",159
+28,168,1,"Died",12
+28,168,1,"Gathered",600
+28,168,1,"Harvested",17
+28,168,1,"Interrupted:cultivation work",17
+28,168,1,"Interrupted:eat accessible food",32
+28,168,1,"Interrupted:queue for route",408
+28,168,1,"Interrupted:sleep",18649
+28,168,1,"Pickup",88
+28,168,1,"Queued",450
+28,168,1,"Rejected",20
+28,168,1,"SleepStarted",23125
+28,168,2,"Arrived",39
+28,168,2,"Died",4
+28,168,2,"Interrupted:queue for route",619
+28,168,2,"Interrupted:sleep",5349
+28,168,2,"Queued",627
+28,168,2,"SleepStarted",5380
+28,168,2,"Spoiled",27
+28,168,3,"Died",6
+29,0,0,"CapitalGate:NO_KNOWN_DEMAND",25
+29,0,1,"CapitalGate:NO_KNOWN_DEMAND",25
+29,12,0,"CapitalGate:NO_KNOWN_DEMAND",25
+29,12,0,"Consumed",75
+29,12,0,"Gathered",475
+29,12,1,"CapitalGate:NO_KNOWN_DEMAND",25
+29,12,1,"Consumed",75
+29,12,1,"Gathered",475
+29,36,0,"CapitalGate:NO_KNOWN_DEMAND",25
+29,36,0,"Consumed",175
+29,36,0,"Gathered",1075
+29,36,0,"Interrupted:eat accessible food",75
+29,36,0,"Interrupted:sleep",12000
+29,36,0,"Rejected",7
+29,36,0,"SleepStarted",12075
+29,36,1,"CapitalGate:NO_KNOWN_DEMAND",25
+29,36,1,"Consumed",131
+29,36,1,"Gathered",600
+29,36,1,"Harvested",6
+29,36,1,"Interrupted:cultivation work",6
+29,36,1,"Interrupted:eat accessible food",25
+29,36,1,"Interrupted:queue for route",15
+29,36,1,"Interrupted:sleep",12777
+29,36,1,"Pickup",30
+29,36,1,"Queued",40
+29,36,1,"Rejected",31
+29,36,1,"SleepStarted",12802
+29,36,2,"Arrived",8
+29,36,2,"Interrupted:queue for route",4
+29,36,2,"Interrupted:sleep",712
+29,36,2,"Queued",8
+29,36,2,"SleepStarted",716
+29,48,0,"Arrived",4
+29,48,0,"CapitalGate:NO_KNOWN_DEMAND",25
+29,48,0,"Consumed",281
+29,48,0,"Gathered",1431
+29,48,0,"Interrupted:eat accessible food",100
+29,48,0,"Interrupted:new gathering action",28
+29,48,0,"Interrupted:sleep",18668
+29,48,0,"Queued",24
+29,48,0,"Rejected",7
+29,48,0,"SleepStarted",18751
+29,48,1,"CapitalGate:NO_KNOWN_DEMAND",25
+29,48,1,"Consumed",137
+29,48,1,"Gathered",600
+29,48,1,"Harvested",6
+29,48,1,"Interrupted:cultivation work",6
+29,48,1,"Interrupted:eat accessible food",25
+29,48,1,"Interrupted:queue for route",21
+29,48,1,"Interrupted:sleep",12828
+29,48,1,"Pickup",30
+29,48,1,"Queued",52
+29,48,1,"Rejected",35
+29,48,1,"SleepStarted",12853
+29,48,2,"Arrived",12
+29,48,2,"Interrupted:queue for route",12
+29,48,2,"Interrupted:sleep",724
+29,48,2,"Queued",20
+29,48,2,"SleepStarted",728
+29,48,2,"Spoiled",26
+29,72,0,"Arrived",8
+29,72,0,"CapitalGate:NO_KNOWN_DEMAND",25
+29,72,0,"Consumed",356
+29,72,0,"Died",4
+29,72,0,"Gathered",1431
+29,72,0,"Harvested",25
+29,72,0,"Interrupted:cultivation work",25
+29,72,0,"Interrupted:eat accessible food",100
+29,72,0,"Interrupted:new gathering action",28
+29,72,0,"Interrupted:sleep",28112
+29,72,0,"Pickup",100
+29,72,0,"Queued",49
+29,72,0,"Rejected",13
+29,72,0,"SleepStarted",30375
+29,72,1,"CapitalGate:NO_KNOWN_DEMAND",25
+29,72,1,"Consumed",149
+29,72,1,"Gathered",600
+29,72,1,"Harvested",12
+29,72,1,"Interrupted:cultivation work",12
+29,72,1,"Interrupted:eat accessible food",31
+29,72,1,"Interrupted:queue for route",606
+29,72,1,"Interrupted:sleep",16256
+29,72,1,"Pickup",60
+29,72,1,"Queued",643
+29,72,1,"Rejected",39
+29,72,1,"SleepStarted",16287
+29,72,2,"Arrived",16
+29,72,2,"Died",4
+29,72,2,"Interrupted:queue for route",596
+29,72,2,"Interrupted:sleep",1540
+29,72,2,"Queued",604
+29,72,2,"SleepStarted",1548
+29,72,2,"Spoiled",26
+29,72,3,"Died",7
+29,120,0,"Arrived",14
+29,120,0,"CapitalGate:NO_KNOWN_DEMAND",25
+29,120,0,"Consumed",470
+29,120,0,"Died",12
+29,120,0,"Gathered",1431
+29,120,0,"Harvested",63
+29,120,0,"Interrupted:cultivation work",63
+29,120,0,"Interrupted:eat accessible food",121
+29,120,0,"Interrupted:new gathering action",28
+29,120,0,"Interrupted:sleep",46541
+29,120,0,"Pickup",252
+29,120,0,"Queued",87
+29,120,0,"Rejected",27
+29,120,0,"SleepStarted",51201
+29,120,1,"Arrived",8
+29,120,1,"CapitalGate:NO_KNOWN_DEMAND",25
+29,120,1,"Consumed",153
+29,120,1,"Died",4
+29,120,1,"Gathered",600
+29,120,1,"Harvested",14
+29,120,1,"Interrupted:cultivation work",14
+29,120,1,"Interrupted:eat accessible food",31
+29,120,1,"Interrupted:queue for route",606
+29,120,1,"Interrupted:sleep",17412
+29,120,1,"Pickup",72
+29,120,1,"Queued",645
+29,120,1,"Rejected",39
+29,120,1,"SleepStarted",19131
+29,120,2,"Arrived",30
+29,120,2,"Died",4
+29,120,2,"Interrupted:queue for route",610
+29,120,2,"Interrupted:sleep",3918
+29,120,2,"Queued",618
+29,120,2,"SleepStarted",3940
+29,120,2,"Spoiled",26
+29,120,3,"Died",7
+29,168,0,"Arrived",14
+29,168,0,"CapitalGate:NO_KNOWN_DEMAND",25
+29,168,0,"Consumed",536
+29,168,0,"Died",14
+29,168,0,"Gathered",1431
+29,168,0,"Harvested",85
+29,168,0,"Interrupted:cultivation work",85
+29,168,0,"Interrupted:eat accessible food",147
+29,168,0,"Interrupted:new gathering action",28
+29,168,0,"Interrupted:sleep",56861
+29,168,0,"Pickup",340
+29,168,0,"Queued",109
+29,168,0,"Rejected",30
+29,168,0,"SleepStarted",62027
+29,168,1,"Arrived",16
+29,168,1,"CapitalGate:NO_KNOWN_DEMAND",25
+29,168,1,"Consumed",153
+29,168,1,"Died",12
+29,168,1,"Gathered",600
+29,168,1,"Harvested",14
+29,168,1,"Interrupted:cultivation work",14
+29,168,1,"Interrupted:eat accessible food",31
+29,168,1,"Interrupted:queue for route",606
+29,168,1,"Interrupted:sleep",17892
+29,168,1,"Pickup",72
+29,168,1,"Queued",645
+29,168,1,"Rejected",39
+29,168,1,"SleepStarted",22367
+29,168,2,"Arrived",38
+29,168,2,"Died",4
+29,168,2,"Interrupted:queue for route",618
+29,168,2,"Interrupted:sleep",5050
+29,168,2,"Queued",626
+29,168,2,"SleepStarted",5080
+29,168,2,"Spoiled",26
+29,168,3,"Died",7

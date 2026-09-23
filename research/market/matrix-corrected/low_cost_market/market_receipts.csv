@@ -1,0 +1,2 @@
+seed,offer,batch,kind,owner,node,at_ms,initial,remaining,retrieved,used_locally,redeposited,other_removed,commingled,first_retrieval_ms,owner_alive,material,holder
+18,0,95,GOODS_SPOILED,35,0,172800000,6,6,0,0,0,0,0,,true,Waste,Loose(0)

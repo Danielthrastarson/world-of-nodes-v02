@@ -23,7 +23,7 @@ and irreversible abstraction choices require a project-owner decision.
 | F7 Emergent infrastructure | PASSED | Completed civilian travel creates paths; continued use maintains them and disuse reverses wear. Effective travel time changes route/traffic outcomes under unchanged capacity and FIFO. Engineered roads and staffed maintenance remain deferred. |
 | F8 Two settlements | PASSED | Existing-institution scope: 210 paired runs explain migration, small communal food flows, transport sensitivity, incomplete capital and crop ownership lock-up. No reciprocal barter/wood exports established; new exchange/property rules require an owner decision. |
 | F9A Local barter | PASSED | Voluntary atomic local goods exchange is implemented and validated. 360 paired runs produce zero live swaps: offer formation and temporal coordination remain blockers. Static policy witness settles legally; do not call it market emergence. F8 histories preserved. |
-| F9B Physical local market | ACTIVE | Owner-authorized physical escrow, persistent local offers and local payment retrieval; paired comparison with unchanged F9A offer policy. No money or new economic motivation. |
+| F9B Physical local market | PASSED | 360 final paired runs: 30 delayed swaps in controlled co-location; zero swaps and one offer across 120 larger market worlds. Deposit/revocation churn changes allocation without trade. Physical escrow, ownership, locality and controls validated; money remains unauthorized. |
 | Monetary institution decision | NOT STARTED | Requires demonstrated coordination friction and a separate owner decision. A market is not money; missing offers are not double coincidence of wants. |
 | F10 Territory / authority | NOT STARTED | Practical communication, collection, protection, enforcement or administration depends on presence and geography. No arbitrary borders. Owner decides powers. |
 | F11 Security / military economy | NOT STARTED | Mobilization redirects existing people, food, tools, transport and time. Measure civilian consequences; military strength depends on physical economy. |
@@ -108,3 +108,14 @@ static case validates that classifier and another demonstrates useful voluntary
 exchange through the real kernel. No resale motive, meeting commitment or trade
 search is added afterward. F9B assessment finds no evidence sufficient to choose
 money; monetary experiments remain unstarted and require an owner decision.
+
+
+F9B passed at bounded scope: [registered institution](MARKET_EXPERIMENT.md),
+[final evidence](../research/market/REPORT.md),
+[validation](../research/market/validation-final.json). The final matrix follows two
+preserved implementation repairs (remote admission knowledge and receipt-induced
+batch fragmentation). Its 360 runs must not be pooled with 720 superseded development
+runs. Offer-generation code is unchanged; increased repeated postings in controlled
+fixtures arise from custody/valuation feedback. Asynchronous local exchange works
+in a controlled opportunity but does not establish a wider trading economy or money
+need. Stop expansion after this evidence; no further economic institution is adopted.

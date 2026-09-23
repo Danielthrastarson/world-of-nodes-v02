@@ -1,0 +1,12 @@
+symmetric_on complete
+complementary_on complete
+complementary_market complete
+symmetric_market complete
+low_cost_on complete
+low_cost_market complete
+colocated_on complete
+colocated_market complete
+separated_on complete
+separated_market complete
+high_cost_on complete
+high_cost_market complete

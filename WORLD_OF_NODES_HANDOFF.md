@@ -231,3 +231,48 @@ Keep capital (capability), allocation (exclusive uses), exchange (voluntary righ
 transfer) and money (a possible later coordination institution) separate. F9B
 monetary implementation remains unstarted; any currency requires an explicit owner
 decision. Do not introduce a currency to bypass missing offers or missed meetings.
+
+
+## F9B — physical local market (current)
+
+The owner authorized persistent deposited local barter, not money. F9B now names
+this market experiment; the older F9B monetary label above is superseded. Monetary
+institutions still require a separate owner decision.
+
+[Specification](docs/MARKET_EXPERIMENT.md), [final report](research/market/REPORT.md),
+[validation](research/market/validation-final.json). Source 3168814; final matrix
+research/market/matrix-final. F9B PASSED for mechanical correctness and explanatory
+research. Existing default configurations and F9A direct barter remain available;
+market_nodes is empty by default. No offer-generation, willingness, migration,
+communal delivery priority, capital or farming rule was altered.
+
+Market offers deposit actual personally owned goods; ownership and age persist.
+Only local acceptance, local cancellation, spoilage or the fixed 12h expiry release
+escrow. Acceptance transfers both owners atomically at that same market; payment
+never follows the absent proposer. Deposited prior consent persists through remote
+owner death until closure, with payment retaining that owner's identity. No inheritance.
+One-outstanding-offer admission uses a private recorded commitment, not remote truth.
+Normal goods merging is preserved; receipt accounting is observational.
+
+360 final runs, six fixtures x two arms x 30 paired seeds. Co-location produces one
+10-wood/2-food swap per run, after the seller departed. Seller later returns and eats
+the payment locally. Acquired wood remains unused and eventually dead-owner property.
+All 120 larger-world market runs together produce one offer and no swap, so broad
+autonomous trade remains absent. Persistent offers do not create economic motivation.
+No qualifying live double-coincidence failure or money need is established.
+
+Preserve the new negative result: deposits can induce posting/cancellation churn.
+Co-location has 32 posts per run, separation 356. Formation code was not tuned; the
+existing capital evaluator loses its reason to want wood when escrow removes haulable
+food and regains it on cancellation/release. Separation improves later farming and
+survival with zero swaps; do not attribute that welfare effect to trade.
+
+173 tests pass, 180 direct F9A histories reproduce, 2,195 prior research artifacts are
+unchanged, and all final runs have zero material errors and FIFO overtakes. Two
+implementation failures were caught: remote admission leaked settlement state, and
+receipt instrumentation fragmented physical batches. Their failed tests, 720
+superseded runs and preliminary traces remain archived. Use matrix-final for claims.
+
+No money, new communication, merchant behavior, waiting rule, offer-formation fix
+or further institution has been implemented. F9B ends with evidence; expansion waits
+for the project owner's next direction.

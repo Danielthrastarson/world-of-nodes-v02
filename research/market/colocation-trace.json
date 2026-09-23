@@ -1,0 +1,23 @@
+{
+  "seed": 0,
+  "fixture": "colocated",
+  "arm": "market",
+  "events": [
+    "Event { id: 0, at: 0, agent: Some(0), cause: None, kind: \"CapitalForecast\", detail: \"INSUFFICIENT_LOCAL_WOOD demand=24 without_ms=92400000 with_ms=30800000 work_ms=0 wood_missing=10\" }",
+    "Event { id: 1, at: 0, agent: Some(1), cause: None, kind: \"CapitalForecast\", detail: \"NO_KNOWN_DEMAND demand=0 without_ms=0 with_ms=0 work_ms=0 wood_missing=0\" }",
+    "Event { id: 2, at: 0, agent: Some(0), cause: Some(0), kind: \"Decision\", detail: \"intent=OfferBarter { batch: 0, quantity: 6, want: Wood, want_quantity: 10 } nutrition_ms=43200000 starvation_ms=0 reason=blocked own use; surplus=6; no resale assumption; needs=Needs { food: 0, wood: 10, protect_food: 6, protect_wood: 10, owned_food: 24, owned_wood: 0, capital_gate: \\\"INVEST\\\" }\" }",
+    "Event { id: 3, at: 0, agent: Some(0), cause: Some(2), kind: \"MarketDeposited\", detail: \"offer=0 batch=4 q=6 owner=Agent(0) node=0 expires=43200000\" }",
+    "Event { id: 7, at: 60000, agent: Some(0), cause: Some(3), kind: \"CapitalForecast\", detail: \"INSUFFICIENT_LOCAL_WOOD demand=18 without_ms=61646668 with_ms=30823334 work_ms=0 wood_missing=10\" }",
+    "Event { id: 9, at: 60000, agent: Some(0), cause: Some(8), kind: \"Consumed\", detail: \"batch=0 q=12 owner=Agent(0) nutrition_ms=86340000\" }",
+    "Event { id: 11, at: 120000, agent: Some(0), cause: Some(9), kind: \"CapitalForecast\", detail: \"INSUFFICIENT_LOCAL_WOOD demand=6 without_ms=28813334 with_ms=28813334 work_ms=0 wood_missing=10\" }",
+    "Event { id: 12, at: 120000, agent: Some(0), cause: Some(11), kind: \"Decision\", detail: \"intent=RevokeBarter { offer: 0 } nutrition_ms=86280000 starvation_ms=0 reason=own use changed; needs=Needs { food: 0, wood: 0, protect_food: 6, protect_wood: 0, owned_food: 6, owned_wood: 0, capital_gate: \\\"NO_TIME_PAYBACK\\\" }\" }",
+    "Event { id: 13, at: 120000, agent: Some(0), cause: Some(12), kind: \"BarterRevoked\", detail: \"offer=0\" }",
+    "Event { id: 15, at: 180000, agent: Some(0), cause: Some(13), kind: \"CapitalForecast\", detail: \"INSUFFICIENT_LOCAL_WOOD demand=6 without_ms=28820000 with_ms=28820000 work_ms=0 wood_missing=10\" }",
+    "Event { id: 17, at: 180000, agent: Some(0), cause: Some(16), kind: \"Queued\", detail: \"edge=0 target=2 remembered_food=false\" }",
+    "Event { id: 77, at: 3600000, agent: Some(1), cause: Some(76), kind: \"Decision\", detail: \"intent=OfferBarter { batch: 2, quantity: 10, want: Food, want_quantity: 1 } nutrition_ms=39600000 starvation_ms=0 reason=blocked own use; surplus=10; no resale assumption; needs=Needs { food: 1, wood: 0, protect_food: 7, protect_wood: 0, owned_food: 0, owned_wood: 10, capital_gate: \\\"NO_KNOWN_DEMAND\\\" }\" }",
+    "Event { id: 78, at: 3600000, agent: Some(1), cause: Some(77), kind: \"MarketDeposited\", detail: \"offer=1 batch=5 q=10 owner=Agent(1) node=0 expires=46800000\" }",
+    "Event { id: 80, at: 3660000, agent: Some(1), cause: Some(79), kind: \"Queued\", detail: \"edge=0 target=1 remembered_food=false\" }",
+    "Event { id: 772, at: 46800000, agent: None, cause: None, kind: \"BarterClosed\", detail: \"offer=1 reason=EXPIRED; local offer not remotely broadcast\" }"
+  ],
+  "interpretation": "Deposit reduces uncommitted locally available food. After eating, the unchanged conditional cart evaluator reports NO_TIME_PAYBACK; wood demand becomes zero and the offer is locally revoked. Later wood offer persists after seller departure, expires, and remains owner property at the market."
+}

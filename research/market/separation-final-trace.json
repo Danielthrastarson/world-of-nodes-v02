@@ -1,0 +1,60 @@
+{
+  "seed": 0,
+  "source_revision": "3168814",
+  "offers": {
+    "count": 356,
+    "first": {
+      "seed": "0",
+      "id": "0",
+      "proposer": "0",
+      "node": "0",
+      "created_ms": "0",
+      "expires_ms": "43200000",
+      "batch": "4",
+      "give": "Food",
+      "give_q": "6",
+      "want": "Wood",
+      "want_q": "10",
+      "status": "REVOKED"
+    },
+    "last": {
+      "seed": "0",
+      "id": "355",
+      "proposer": "0",
+      "node": "0",
+      "created_ms": "42660000",
+      "expires_ms": "85860000",
+      "batch": "360",
+      "give": "Food",
+      "give_q": "6",
+      "want": "Wood",
+      "want_q": "10",
+      "status": "REVOKED"
+    }
+  },
+  "events": [
+    "Event { id: 3230, at: 51060000, agent: Some(0), cause: Some(3229), kind: \"CropStarted\", detail: \"plot=0 crop=0 owner=Agent(0)\" }",
+    "Event { id: 3391, at: 55860000, agent: Some(0), cause: Some(3389), kind: \"CropEstablished\", detail: \"plot=0 crop=0 ready_at=99060000\" }",
+    "Event { id: 6677, at: 102660000, agent: Some(0), cause: Some(6675), kind: \"Harvested\", detail: \"plot=0 crop=0 batch=362 q=24 owner=Agent(0) created_at=102660000\" }",
+    "Event { id: 6807, at: 109920000, agent: Some(0), cause: Some(6687), kind: \"Arrived\", detail: \"node=1 edge=0\" }",
+    "Event { id: 6952, at: 117120000, agent: Some(0), cause: Some(6812), kind: \"Arrived\", detail: \"node=2 edge=1\" }",
+    "Event { id: 12595, at: 203175000, agent: Some(1), cause: Some(12306), kind: \"Arrived\", detail: \"node=1 edge=1\" }",
+    "Event { id: 12725, at: 212175000, agent: Some(1), cause: Some(12598), kind: \"Arrived\", detail: \"node=0 edge=0\" }",
+    "Event { id: 12744, at: 213075000, agent: Some(0), cause: Some(12724), kind: \"Arrived\", detail: \"node=1 edge=1\" }",
+    "Event { id: 12902, at: 222075000, agent: Some(0), cause: Some(12748), kind: \"Arrived\", detail: \"node=0 edge=0\" }",
+    "Event { id: 12909, at: 222120000, agent: Some(0), cause: Some(12908), kind: \"CropStarted\", detail: \"plot=1 crop=1 owner=Agent(0)\" }",
+    "Event { id: 13031, at: 225720000, agent: Some(0), cause: Some(13029), kind: \"CropEstablished\", detail: \"plot=1 crop=1 ready_at=268920000\" }",
+    "Event { id: 15817, at: 290100000, agent: Some(0), cause: Some(15815), kind: \"Harvested\", detail: \"plot=1 crop=1 batch=364 q=24 owner=Agent(0) created_at=290100000\" }",
+    "Event { id: 16967, at: 306000000, agent: Some(1), cause: Some(16966), kind: \"Died\", detail: \"cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)\" }",
+    "Event { id: 17799, at: 322560000, agent: Some(0), cause: Some(17798), kind: \"CropStarted\", detail: \"plot=0 crop=2 owner=Agent(0)\" }",
+    "Event { id: 17860, at: 326160000, agent: Some(0), cause: Some(17859), kind: \"CropEstablished\", detail: \"plot=0 crop=2 ready_at=369360000\" }",
+    "Event { id: 18694, at: 375360000, agent: Some(0), cause: Some(18693), kind: \"Harvested\", detail: \"plot=0 crop=2 batch=366 q=24 owner=Agent(0) created_at=375360000\" }",
+    "Event { id: 18831, at: 383040000, agent: Some(0), cause: Some(18830), kind: \"CropStarted\", detail: \"plot=1 crop=3 owner=Agent(0)\" }",
+    "Event { id: 20372, at: 417660000, agent: Some(0), cause: Some(20371), kind: \"CropEstablished\", detail: \"plot=1 crop=3 ready_at=460860000\" }",
+    "Event { id: 21271, at: 470574000, agent: Some(0), cause: Some(21270), kind: \"Harvested\", detail: \"plot=1 crop=3 batch=368 q=24 owner=Agent(0) created_at=470574000\" }",
+    "Event { id: 22951, at: 506160000, agent: Some(0), cause: Some(22950), kind: \"CropStarted\", detail: \"plot=0 crop=4 owner=Agent(0)\" }",
+    "Event { id: 23012, at: 509760000, agent: Some(0), cause: Some(23011), kind: \"CropEstablished\", detail: \"plot=0 crop=4 ready_at=552960000\" }",
+    "Event { id: 23870, at: 560151600, agent: Some(0), cause: Some(23869), kind: \"Harvested\", detail: \"plot=0 crop=4 batch=369 q=24 owner=Agent(0) created_at=560151600\" }",
+    "Event { id: 23998, at: 567360000, agent: Some(0), cause: Some(23997), kind: \"CropStarted\", detail: \"plot=1 crop=5 owner=Agent(0)\" }"
+  ]
+}

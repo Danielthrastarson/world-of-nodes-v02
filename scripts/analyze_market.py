@@ -80,6 +80,8 @@ for fixture in fixtures:
       'redeposited':sum(int(r['redeposited']) for r in receipts),
       'other_removed':sum(int(r['other_removed']) for r in receipts),
       'commingled_remaining':sum(int(r['commingled']) for r in receipts),
+      'payment_used_locally':sum(int(r['used_locally']) for r in receipts if r['kind']=='payment'),
+      'payments_with_local_use':sum(int(r['used_locally'])>0 for r in receipts if r['kind']=='payment'),
       'payment_retrieved':sum(int(r['retrieved']) for r in receipts if r['kind']=='payment'),
       'payments_with_retrieval':sum(int(r['retrieved'])>0 for r in receipts if r['kind']=='payment'),
       'dead_owner_receipts':sum(int(r['remaining']) for r in receipts if r['owner_alive']=='false'),

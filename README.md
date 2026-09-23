@@ -92,3 +92,25 @@ No money, credit, inheritance, trade-search routing or communal arbitration repa
 The [future army-control target](docs/ARMY_PLAYER_CONTROL.md) documents formation
 intent, geometry, stable QWER categories and shared civilian logistics. No military
 system, final UI or Jev integration is implemented.
+
+
+### F9B: physical local markets, no money
+
+[Final report](research/market/REPORT.md) · [specification](docs/MARKET_EXPERIMENT.md)
+· [validation](research/market/validation-final.json).
+
+Persistent offers physically escrow goods at existing settlement nodes. Settlement
+is local and atomic; payment stays at the market, and expiry/cancellation never
+teleport property. F9A offer motivation is unchanged. In 360 final paired runs,
+controlled co-location produces 30 delayed swaps; the 120 larger-world market runs
+produce one offer and zero swaps. Custody/valuation churn also changes behavior
+without exchange. No money is justified or implemented.
+
+```sh
+cargo run --release --bin settlement_probe -- colocated /tmp/won-local-market 1 0 market
+python3 scripts/run_market.py /tmp/won-f9b-reproduction
+python3 scripts/analyze_market.py /tmp/won-f9b-reproduction /tmp/won-f9b-analysis.json
+```
+
+The final evidence is `research/market/matrix-final`; earlier matrices in that
+folder are preserved development failures, not independent confirmation runs.
