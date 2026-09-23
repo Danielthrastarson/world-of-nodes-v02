@@ -50,3 +50,12 @@ per-agent endpoints and per-seed metrics. Compare original artifacts/hashes befo
 adoption. Gate requires physical construction, multiple autonomous users, actual
 movement effects across geography, explicit externalities and intact invariants.
 Failures halt expansion and trigger diagnosis, not invisible balancing.
+
+## Coverage addition (separate paired run, original six preserved)
+
+`local_food`: identical to closed except all3000 food is at X, none beyond the
+crossing. This directly tests absent crossing demand rather than assuming the
+short improvement would be unnecessary. It adds no cost tuning or policy change;
+the original six worlds and their results remain unchanged. Run 30 paired seeds.
+A statically forced unused construction additionally isolates its real cost;
+that control is not autonomous behavior.

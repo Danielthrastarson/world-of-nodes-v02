@@ -26,6 +26,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         "alternate",
         "scarce",
         "discovery",
+        "local_food",
     ]
     .contains(&name.as_str())
     {
@@ -101,7 +102,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             seed,
             trace: seed == 0,
             prior_memory: name != "discovery",
-            food: vec![(1, 300, 0, 48 * HOUR), (2, 2700, 0, 48 * HOUR)],
+            food: if name == "local_food" {
+                vec![(1, 3000, 0, 48 * HOUR)]
+            } else {
+                vec![(1, 300, 0, 48 * HOUR), (2, 2700, 0, 48 * HOUR)]
+            },
             initial_request: 600,
             infrastructure: Some(infrastructure::Config {
                 enabled,

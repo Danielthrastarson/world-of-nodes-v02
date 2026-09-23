@@ -294,3 +294,98 @@ fn unobserved_remote_material_and_food_cannot_change_decision() {
     assert_eq!(decide(&a), decide(&b));
     assert!(decide(&a).is_none());
 }
+#[test]
+fn building_and_movement_share_one_partition_independent_clock() {
+    let mut a = world(1, HOUR / 2, 1);
+    gather(&mut a, 0, 1);
+    donate(&mut a, 0, 1);
+    a.apply_intents(vec![
+        (0, Intent::BuildCrossing { project: 0 }),
+        (
+            1,
+            Intent::Travel {
+                edge: 0,
+                target: 1,
+                food: false,
+            },
+        ),
+    ])
+    .unwrap();
+    let mut b = a.clone();
+    let end = a.now + 4 * HOUR;
+    a.advance_to(end).unwrap();
+    while b.now < end {
+        b.advance_to((b.now + 137 * SECOND).min(end)).unwrap();
+    }
+    assert_eq!(a.state_hash(), b.state_hash());
+    assert_eq!(a.event_hash(), b.event_hash());
+}
+#[test]
+fn renamed_nodes_preserve_the_same_observed_construction_choice() {
+    let mut a = world(0, HOUR, 1);
+    a.goods.add(
+        Material::Food,
+        100,
+        Owner::None,
+        Holder::Deposit(1),
+        0,
+        48 * HOUR,
+    );
+    for n in 0..2 {
+        let v = a.node_view(n);
+        a.agents[0].memory.nodes.insert(n, v);
+    }
+    a.observe_infrastructure(0);
+    let original = consider(
+        &a.observe(0).unwrap(),
+        &a.agents[0].memory,
+        &a.infrastructure.memories[0],
+        true,
+    )
+    .unwrap();
+    let mut b = world(0, HOUR, 1);
+    b.config.edges[0].a = 1;
+    b.config.edges[0].b = 0;
+    b.agents[0].location = Location::Node(1);
+    b.infrastructure.projects[0].site.node = 1;
+    b.goods.batches[0].holder = Holder::Deposit(1);
+    b.goods.add(
+        Material::Food,
+        100,
+        Owner::None,
+        Holder::Deposit(0),
+        0,
+        48 * HOUR,
+    );
+    for n in 0..2 {
+        let v = b.node_view(n);
+        b.agents[0].memory.nodes.insert(n, v);
+    }
+    b.observe_infrastructure(0);
+    let renamed = consider(
+        &b.observe(0).unwrap(),
+        &b.agents[0].memory,
+        &b.infrastructure.memories[0],
+        true,
+    )
+    .unwrap();
+    assert_eq!(original, renamed);
+}
+#[test]
+fn unused_public_construction_pays_material_and_time_without_traffic_benefit() {
+    let mut built = world(0, 8 * HOUR, 20);
+    let mut idle = built.clone();
+    gather(&mut built, 0, 10);
+    donate(&mut built, 0, 10);
+    gather(&mut built, 1, 10);
+    donate(&mut built, 1, 10);
+    finish(&mut built, 2);
+    idle.advance_to(built.now).unwrap();
+    assert!(built.crossing_projects()[0].labor_ms.values().sum::<u128>() >= 8 * HOUR as u128);
+    assert_eq!(built.infrastructure_counters()["wood"], 20);
+    assert_eq!(idle.infrastructure_counters()["wood"], 0);
+    assert_eq!(built.infrastructure_counters()["improved_trips"], 0);
+    assert_eq!(built.metrics.consumed, idle.metrics.consumed);
+    built.audit().unwrap();
+    idle.audit().unwrap();
+}

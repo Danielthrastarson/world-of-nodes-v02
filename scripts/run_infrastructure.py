@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 import subprocess,sys,json,hashlib,csv,gzip,shutil,statistics
 root=Path(sys.argv[1]);root.mkdir(parents=True,exist_ok=False)
 revision=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
-cases=['closed','short','bottleneck','alternate','scarce','discovery']
+cases=['local_food'] if len(sys.argv)>2 and sys.argv[2]=='local_food' else ['closed','short','bottleneck','alternate','scarce','discovery']
 def run(pair):
  name,arm=pair;key=name+'_'+arm
  with (root/(key+'.log')).open('w') as log:
@@ -32,4 +32,4 @@ prior=json.loads(Path('research/infrastructure/prior-artifacts.json').read_text(
 for p,h in prior.items():assert hashlib.sha256(Path(p).read_bytes()).hexdigest()==h,p
 (root/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 (root/'paired.json').write_text(json.dumps(paired,indent=2)+'\n')
-(root/'provenance.json').write_text(json.dumps({'revision':revision,'runs':360,'seeds':list(range(30)),'prior_unchanged':len(prior)},indent=2)+'\n')
+(root/'provenance.json').write_text(json.dumps({'revision':revision,'runs':len(cases)*60,'seeds':list(range(30)),'prior_unchanged':len(prior)},indent=2)+'\n')
