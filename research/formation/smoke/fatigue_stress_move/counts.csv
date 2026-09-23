@@ -1,0 +1,9 @@
+seed,key,count
+0,ARRIVED,7
+0,PAUSED_EAT,4
+0,PAUSED_FATIGUE,1
+0,UnitArrived,4
+0,UnitDeparted,4
+0,WITH_UNIT,4
+0,commands,1
+0,receipts,4

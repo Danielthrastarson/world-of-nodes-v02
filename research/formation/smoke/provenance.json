@@ -1,0 +1,30 @@
+{
+  "source_revision": "aae06e0d1e6021f4d49a8867c317439aebec5b7e",
+  "binary_sha256": "402b7cc1d9f141da5087330a55fff2833486a6d901ef79257f017b7abd6ca34e",
+  "seeds": [
+    0
+  ],
+  "runs": 32,
+  "duration_h_after_command": 24,
+  "cases": [
+    "short",
+    "sequence",
+    "unknown_route",
+    "congestion",
+    "long",
+    "food_stress",
+    "fatigue_stress",
+    "bottleneck",
+    "path_on",
+    "path_off",
+    "partial",
+    "late",
+    "care",
+    "shared_route",
+    "crossing",
+    "cart"
+  ],
+  "intervention": "one Move order delivered only to present assembled recipients versus none; same pre-command hashes",
+  "initial_conditions": "see parameters per case; stressed command states explicit; construction prepared through existing physical actions; no individual military moves",
+  "protective_benefit": "unmodeled; F11A full gate remains open"
+}

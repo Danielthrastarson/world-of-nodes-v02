@@ -1,0 +1,733 @@
+Config {
+    formation: true,
+    military: Some(
+        Config {
+            requests: [
+                Request {
+                    id: 0,
+                    posting: 0,
+                    muster: 0,
+                    attendance: 4,
+                    opens: 0,
+                    expires: 216000000,
+                    duration: 43200000,
+                    objective: ProtectCrossing,
+                },
+            ],
+            enabled: true,
+        },
+    ),
+    lifecycle: Some(
+        Config {
+            people: [
+                Seed {
+                    birth_time: -86400000,
+                    sex: Female,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Male,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Female,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Male,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Female,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Male,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Female,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Male,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Female,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Male,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Female,
+                    drive: false,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Male,
+                    drive: false,
+                },
+            ],
+            rules: Rules {
+                adult_age: 86400000,
+                fertile_until: 345600000,
+                gestation: 28800000,
+                undertaking: 3600000,
+                interval: 115200000,
+                conception_per_million: 250000,
+            },
+        },
+    ),
+    social: None,
+    household: Some(
+        Config {
+            households: [],
+            kin: [],
+            care: [],
+            enabled: true,
+        },
+    ),
+    authority: None,
+    barter: false,
+    market_nodes: [],
+    paths: None,
+    infrastructure: None,
+    capital: None,
+    farming: None,
+    persistence: None,
+    diagnostic_policy: Current,
+    initial_request: 0,
+    acceptance_audit: false,
+    seed: 0,
+    nodes: 3,
+    edges: [
+        Edge {
+            a: 0,
+            b: 1,
+            nominal_ms: 7200000,
+            capacity: 1,
+        },
+        Edge {
+            a: 1,
+            b: 2,
+            nominal_ms: 7200000,
+            capacity: 4,
+        },
+    ],
+    starts: [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+    ],
+    food: [
+        (
+            0,
+            300,
+            0,
+            172800000,
+        ),
+    ],
+    boards: [],
+    communal: false,
+    prior_memory: false,
+    policy_ms: 60000,
+    carrying_capacity: 10,
+    initial_nutrition: 72000000,
+    initial_fatigue: 14400000,
+    reverse_evaluation: false,
+    trace: true,
+    autonomous: true,
+}
+goods=[
+    Batch {
+        id: 0,
+        origin: 0,
+        material: Food,
+        quantity: 300,
+        owner: None,
+        holder: Deposit(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 1,
+        origin: 1,
+        material: Food,
+        quantity: 6,
+        owner: Agent(
+            0,
+        ),
+        holder: Agent(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 2,
+        origin: 2,
+        material: Food,
+        quantity: 6,
+        owner: Agent(
+            1,
+        ),
+        holder: Agent(
+            1,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 3,
+        origin: 3,
+        material: Food,
+        quantity: 6,
+        owner: Agent(
+            2,
+        ),
+        holder: Agent(
+            2,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 4,
+        origin: 4,
+        material: Food,
+        quantity: 6,
+        owner: Agent(
+            3,
+        ),
+        holder: Agent(
+            3,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+]
+path={}
+initial memories=[
+    PolicyMemory {
+        nodes: {
+            0: NodeView {
+                node: 0,
+                observed_at: 3600000,
+                food: [
+                    FoodView {
+                        batch: 0,
+                        quantity: 300,
+                        available: 300,
+                        owner: None,
+                        holder: Deposit(
+                            0,
+                        ),
+                        expires_at: 172800000,
+                    },
+                ],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    0,
+                    1,
+                    2,
+                    3,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            0: NodeView {
+                node: 0,
+                observed_at: 3600000,
+                food: [
+                    FoodView {
+                        batch: 0,
+                        quantity: 300,
+                        available: 300,
+                        owner: None,
+                        holder: Deposit(
+                            0,
+                        ),
+                        expires_at: 172800000,
+                    },
+                ],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    0,
+                    1,
+                    2,
+                    3,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            0: NodeView {
+                node: 0,
+                observed_at: 3600000,
+                food: [
+                    FoodView {
+                        batch: 0,
+                        quantity: 300,
+                        available: 300,
+                        owner: None,
+                        holder: Deposit(
+                            0,
+                        ),
+                        expires_at: 172800000,
+                    },
+                ],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    0,
+                    1,
+                    2,
+                    3,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            0: NodeView {
+                node: 0,
+                observed_at: 3600000,
+                food: [
+                    FoodView {
+                        batch: 0,
+                        quantity: 300,
+                        available: 300,
+                        owner: None,
+                        holder: Deposit(
+                            0,
+                        ),
+                        expires_at: 172800000,
+                    },
+                ],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    0,
+                    1,
+                    2,
+                    3,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            1: NodeView {
+                node: 1,
+                observed_at: 0,
+                food: [],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                    EdgeView {
+                        id: 1,
+                        edge: Edge {
+                            a: 1,
+                            b: 2,
+                            nominal_ms: 7200000,
+                            capacity: 4,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            1: NodeView {
+                node: 1,
+                observed_at: 0,
+                food: [],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                    EdgeView {
+                        id: 1,
+                        edge: Edge {
+                            a: 1,
+                            b: 2,
+                            nominal_ms: 7200000,
+                            capacity: 4,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            1: NodeView {
+                node: 1,
+                observed_at: 3600000,
+                food: [],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 3,
+                        occupied: 0,
+                    },
+                    EdgeView {
+                        id: 1,
+                        edge: Edge {
+                            a: 1,
+                            b: 2,
+                            nominal_ms: 7200000,
+                            capacity: 4,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    6,
+                    8,
+                    10,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            1: NodeView {
+                node: 1,
+                observed_at: 0,
+                food: [],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                    EdgeView {
+                        id: 1,
+                        edge: Edge {
+                            a: 1,
+                            b: 2,
+                            nominal_ms: 7200000,
+                            capacity: 4,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            1: NodeView {
+                node: 1,
+                observed_at: 3600000,
+                food: [],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 3,
+                        occupied: 0,
+                    },
+                    EdgeView {
+                        id: 1,
+                        edge: Edge {
+                            a: 1,
+                            b: 2,
+                            nominal_ms: 7200000,
+                            capacity: 4,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    6,
+                    8,
+                    10,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            1: NodeView {
+                node: 1,
+                observed_at: 0,
+                food: [],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                    EdgeView {
+                        id: 1,
+                        edge: Edge {
+                            a: 1,
+                            b: 2,
+                            nominal_ms: 7200000,
+                            capacity: 4,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            1: NodeView {
+                node: 1,
+                observed_at: 3600000,
+                food: [],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 3,
+                        occupied: 0,
+                    },
+                    EdgeView {
+                        id: 1,
+                        edge: Edge {
+                            a: 1,
+                            b: 2,
+                            nominal_ms: 7200000,
+                            capacity: 4,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    6,
+                    8,
+                    10,
+                ],
+            },
+        },
+    },
+    PolicyMemory {
+        nodes: {
+            1: NodeView {
+                node: 1,
+                observed_at: 0,
+                food: [],
+                edges: [
+                    EdgeView {
+                        id: 0,
+                        edge: Edge {
+                            a: 0,
+                            b: 1,
+                            nominal_ms: 7200000,
+                            capacity: 1,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                    EdgeView {
+                        id: 1,
+                        edge: Edge {
+                            a: 1,
+                            b: 2,
+                            nominal_ms: 7200000,
+                            capacity: 4,
+                        },
+                        queued: 0,
+                        occupied: 0,
+                    },
+                ],
+                board: None,
+                people: [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                ],
+            },
+        },
+    },
+]
+case=congestion; moving=false; command_time=3600000; result=Ok(0); horizon=24h after command; pre_command_hash=7dc0128d7b14474b

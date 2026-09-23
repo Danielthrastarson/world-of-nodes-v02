@@ -1,0 +1,33 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.82s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 10 tests
+test provisioning::formation::tests::dying_remains_on_roster_and_uses_ordinary_property_death ... ok
+test provisioning::formation::tests::expired_service_does_not_teleport_or_keep_a_queue_reservation ... ok
+test provisioning::formation::tests::command_choices_use_personal_history_only ... ok
+test provisioning::formation::tests::hunger_pause_cancels_queue_without_erasing_person_or_membership ... ok
+test provisioning::formation::tests::new_order_does_not_update_an_absent_straggler ... ok
+test provisioning::formation::tests::one_order_moves_actual_people_and_preserves_identity ... ok
+test provisioning::formation::tests::unknown_route_is_not_created_by_the_objective ... ok
+test provisioning::formation::tests::partial_and_late_members_do_not_receive_orders_remotely ... ok
+test provisioning::formation::tests::critical_recovery_keeps_membership_then_resumes ... ok
+test provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics ... FAILED
+
+failures:
+
+---- provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics stdout ----
+
+thread 'provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics' (280) panicked at src/provisioning/formation/tests.rs:174:5:
+assertion `left == right` failed
+  left: 0
+ right: 1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics
+
+test result: FAILED. 9 passed; 1 failed; 0 ignored; 0 measured; 241 filtered out; finished in 0.09s
+
+error: test failed, to rerun pass `--lib`

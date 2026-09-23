@@ -1,0 +1,13 @@
+seed,person,alive,received,active,assembled_h,departed_h,arrived_h,later_endpoint_h,released_h,release_reason,phase,starvation_h,food,nutrition_h,fatigue_h,location
+0,0,true,false,false,0.016666667,,,,11.016666667,TERM_COMPLETED,RELEASED,0.000000000,18,13.000000000,20.100000000,"Node(0)"
+0,1,true,false,false,0.016666667,,,,11.016666667,TERM_COMPLETED,RELEASED,0.000000000,18,13.000000000,20.100000000,"Node(0)"
+0,2,true,false,false,0.016666667,,,,11.016666667,TERM_COMPLETED,RELEASED,0.000000000,18,13.000000000,20.100000000,"Node(0)"
+0,3,true,false,false,0.016666667,,,,11.016666667,TERM_COMPLETED,RELEASED,0.000000000,18,13.000000000,20.100000000,"Node(0)"
+0,4,true,false,false,,,,,,,,0.000000000,34,14.000000000,19.950000000,"Node(0)"
+0,5,true,false,false,,,,,,,,4.201234722,31,15.201234722,16.350000000,"Node(0)"
+0,6,true,false,false,,,,,,,,15.962222222,21,16.962222222,21.480000000,"Node(0)"
+0,7,true,false,false,,,,,,,,8.974815000,25,13.974815000,20.050000000,"Node(0)"
+0,8,true,false,false,,,,,,,,0.081111111,37,17.081111111,11.250000000,"Node(0)"
+0,9,true,false,false,,,,,,,,20.000000000,0,0.000000000,24.000000000,"Edge { edge: 0, from: 1, to: 0, progress: 3630000000000 }"
+0,10,true,false,false,,,,,,,,20.000000000,0,0.000000000,22.000000000,"Node(1)"
+0,11,true,false,false,,,,,,,,20.000000000,0,0.000000000,22.000000000,"Node(1)"

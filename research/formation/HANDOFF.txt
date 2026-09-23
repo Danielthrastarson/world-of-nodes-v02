@@ -1,0 +1,44 @@
+WORLD OF NODES — F11B REPORT
+
+F11B PASSED at physical organization/movement scope.
+F11A's protective/economic benefit gate remains OPEN.
+
+Implemented:
+- Organizational Units reference existing Persons.
+- Enlisted, assembled, active, separated, released and dead remain distinct.
+- One locally received Move order produces individual physical actions.
+- Existing geography, FIFO, food, fatigue, ownership and care remain authoritative.
+- Late/absent members do not receive orders remotely.
+- Interruptions preserve membership; expiry does not teleport mid-edge travelers.
+- No combat, protection bonus, army inventory or special movement system.
+
+Evidence: 16 cases × 2 arms × 30 paired seeds = 960 final runs.
+
+Key results:
+- Short route:4/4 arrive after2.017h.
+- Two-edge route:4/4 arrive after4.017h.
+- Unknown route:4 receive orders;0 depart.
+- Capacity-one bottleneck:4/4 arrive, spread6.113h.
+- Fatigue:one member sleeps7h, resumes and arrives; spread7.017h.
+- Hunger:one member pauses;3/4 depart and arrive.
+- Partial/late muster:only2 physically assembled members receive orders.
+- Long march:0 arrive during service;4 reach the endpoint after release.
+- Existing path reduces travel by12minutes with unchanged capacity/FIFO.
+- Caregiver gives6 personal food quanta and departs one minute later.
+
+Congestion result:
+- 3/4 recipients depart and arrive.
+- The fourth eats while queued, retains its order, rejoins FIFO, and expires before admission.
+- Relative to holding at muster:mean civilian queue exposure +24.811 person-hours; starvation +32.691 person-hours.
+- Food consumed falls217.533 → 116 quanta.
+- No protective benefit is inferred.
+
+Validation:
+267 tests pass; formatting and Clippy pass.
+137 historical replays match authoritative outcomes/hashes/traces.
+9,298 previous research files remain unchanged.
+
+Limits:
+These are controlled movement fixtures, including explicit starting reserves/service terms and stress initial states. No continuous battlefield geometry or autonomous commander is implemented. Most small fixtures are deterministic across seeds.
+
+F11C has begun with a concrete threat/control specification. Combat remains unimplemented in this increment. Protection must later prevent actual physical harm before F11A's full gate can close.

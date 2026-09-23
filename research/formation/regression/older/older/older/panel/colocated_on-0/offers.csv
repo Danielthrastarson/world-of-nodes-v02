@@ -1,0 +1,3 @@
+seed,id,proposer,node,created_ms,expires_ms,batch,give,give_q,want,want_q,status
+0,0,0,0,0,3600000,0,Food,6,Wood,10,PROPOSER_LEFT
+0,1,1,0,3600000,7200000,2,Wood,10,Food,1,PROPOSER_LEFT

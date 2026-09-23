@@ -1,0 +1,90 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 9.00s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 13 tests
+test provisioning::acceptance::tests::source_prior_is_timestamped_local_memory_not_fresh_world_information ... ok
+test provisioning::barter::market::tests::formation_is_identical_before_custody_diverges_and_deposit_does_not_self_cancel ... ok
+test provisioning::policy::intention::tests::material_information_excludes_clock_and_small_stock_changes_but_includes_queue_service ... ok
+test provisioning::formation::tests::critical_recovery_keeps_membership_then_resumes ... FAILED
+test provisioning::formation::tests::one_order_moves_actual_people_and_preserves_identity ... FAILED
+test provisioning::formation::tests::dying_remains_on_roster_and_uses_ordinary_property_death ... FAILED
+test provisioning::formation::tests::expired_service_does_not_teleport_or_keep_a_queue_reservation ... FAILED
+test provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics ... FAILED
+test provisioning::formation::tests::new_order_does_not_update_an_absent_straggler ... FAILED
+test provisioning::formation::tests::command_choices_use_personal_history_only ... FAILED
+test provisioning::formation::tests::hunger_pause_cancels_queue_without_erasing_person_or_membership ... FAILED
+test provisioning::formation::tests::unknown_route_is_not_created_by_the_objective ... FAILED
+test provisioning::formation::tests::partial_and_late_members_do_not_receive_orders_remotely ... FAILED
+
+failures:
+
+---- provisioning::formation::tests::critical_recovery_keeps_membership_then_resumes stdout ----
+
+thread 'provisioning::formation::tests::critical_recovery_keeps_membership_then_resumes' (280) panicked at src/provisioning/formation/tests.rs:56:32:
+called `Result::unwrap()` on an `Err` value: "no assembled local recipients"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- provisioning::formation::tests::one_order_moves_actual_people_and_preserves_identity stdout ----
+
+thread 'provisioning::formation::tests::one_order_moves_actual_people_and_preserves_identity' (286) panicked at src/provisioning/formation/tests.rs:15:5:
+assertion `left == right` failed
+  left: 0
+ right: 4
+
+---- provisioning::formation::tests::dying_remains_on_roster_and_uses_ordinary_property_death stdout ----
+
+thread 'provisioning::formation::tests::dying_remains_on_roster_and_uses_ordinary_property_death' (281) panicked at src/provisioning/formation/tests.rs:144:32:
+called `Result::unwrap()` on an `Err` value: "no assembled local recipients"
+
+---- provisioning::formation::tests::expired_service_does_not_teleport_or_keep_a_queue_reservation stdout ----
+
+thread 'provisioning::formation::tests::expired_service_does_not_teleport_or_keep_a_queue_reservation' (283) panicked at src/provisioning/formation/tests.rs:101:32:
+called `Result::unwrap()` on an `Err` value: "no assembled local recipients"
+
+---- provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics stdout ----
+
+thread 'provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics' (282) panicked at src/provisioning/formation/tests.rs:165:36:
+called `Result::unwrap()` on an `Err` value: "no assembled local recipients"
+
+---- provisioning::formation::tests::new_order_does_not_update_an_absent_straggler stdout ----
+
+thread 'provisioning::formation::tests::new_order_does_not_update_an_absent_straggler' (285) panicked at src/provisioning/formation/tests.rs:133:32:
+called `Result::unwrap()` on an `Err` value: "no assembled local recipients"
+
+---- provisioning::formation::tests::command_choices_use_personal_history_only stdout ----
+
+thread 'provisioning::formation::tests::command_choices_use_personal_history_only' (279) panicked at src/provisioning/formation/tests.rs:190:32:
+called `Result::unwrap()` on an `Err` value: "no assembled local recipients"
+
+---- provisioning::formation::tests::hunger_pause_cancels_queue_without_erasing_person_or_membership stdout ----
+
+thread 'provisioning::formation::tests::hunger_pause_cancels_queue_without_erasing_person_or_membership' (284) panicked at src/provisioning/formation/tests.rs:69:32:
+called `Result::unwrap()` on an `Err` value: "no assembled local recipients"
+
+---- provisioning::formation::tests::unknown_route_is_not_created_by_the_objective stdout ----
+
+thread 'provisioning::formation::tests::unknown_route_is_not_created_by_the_objective' (288) panicked at src/provisioning/formation/tests.rs:124:32:
+called `Result::unwrap()` on an `Err` value: "no assembled local recipients"
+
+---- provisioning::formation::tests::partial_and_late_members_do_not_receive_orders_remotely stdout ----
+
+thread 'provisioning::formation::tests::partial_and_late_members_do_not_receive_orders_remotely' (287) panicked at src/provisioning/formation/tests.rs:46:5:
+assertion failed: s.ever_assembled > received
+
+
+failures:
+    provisioning::formation::tests::command_choices_use_personal_history_only
+    provisioning::formation::tests::critical_recovery_keeps_membership_then_resumes
+    provisioning::formation::tests::dying_remains_on_roster_and_uses_ordinary_property_death
+    provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics
+    provisioning::formation::tests::expired_service_does_not_teleport_or_keep_a_queue_reservation
+    provisioning::formation::tests::hunger_pause_cancels_queue_without_erasing_person_or_membership
+    provisioning::formation::tests::new_order_does_not_update_an_absent_straggler
+    provisioning::formation::tests::one_order_moves_actual_people_and_preserves_identity
+    provisioning::formation::tests::partial_and_late_members_do_not_receive_orders_remotely
+    provisioning::formation::tests::unknown_route_is_not_created_by_the_objective
+
+test result: FAILED. 3 passed; 10 failed; 0 ignored; 0 measured; 238 filtered out; finished in 0.08s
+
+error: test failed, to rerun pass `--lib`

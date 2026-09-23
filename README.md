@@ -2,7 +2,7 @@
 
 **The simulation is the source of the graphics.** A causal kingdom simulation with primitive rendering of real agents, stocks, movement, work, and observed state.
 
-Current work follows the [gated foundation roadmap](docs/ROADMAP.md): F0–F8 and the bounded F9A barter gate have passed. F9A implements voluntary local spot exchange; its 360-run study produces zero live swaps. Prices and money remain unimplemented. The six tested mechanical forecast corrections are adopted; conditional meal planning remains research-only. Earlier reports below describe their original historical policies. No later systems are implemented before their gates pass.
+Current work follows the [gated foundation roadmap](docs/ROADMAP.md). F0–F10 and B0–B3 are complete at their registered scopes; F11A mobilization and F11B physical unit movement have passed mechanism gates. F11A’s protective-benefit gate remains open. F11C begins with a concrete threat/control specification; combat is not implemented. Money remains unjustified and unimplemented. Earlier reports below retain their historical policies and negative findings.
 
 - [Current design contract](WORLD_OF_NODES_HANDOFF.md)
 - [Locked provisioning specification](docs/PROVISIONING_SPEC.md)
@@ -188,3 +188,19 @@ python3 scripts/verify_lifecycle.py /tmp/won-b3-regressions
 ```
 
 B3 passed at mechanism scope. F11's service institution requires an owner decision before coercive powers or service obligations are introduced.
+
+### F11B embodied unit movement
+
+One locally delivered unit objective drives individual Persons through the common movement/FIFO system. Missing orders, hunger, fatigue, queue interruptions and service expiry remain causal. Unit membership grants no supply, cart access or transport priority. Continuous battlefield formations remain deferred.
+
+[Movement evidence](research/formation/REPORT.md):960 final paired runs,267 tests,137 historical replays and9,298 unchanged prior research artifacts. The congested march increases civilian waiting and starvation. No protective benefit is claimed. [Architecture](docs/UNIT_ARCHITECTURE.md), [registered fixtures](docs/FORMATION_EXPERIMENT.md), [F11C threat opening](docs/THREAT_EXPERIMENT.md).
+
+Reproduce into a **new** output directory:
+
+```sh
+cargo test
+cargo run --release --bin formation_probe -- short move /tmp/f11b-short-move 30
+cargo run --release --bin formation_probe -- short hold /tmp/f11b-short-hold 30
+```
+
+`python3 scripts/run_formation.py NEW_DIRECTORY` runs the full paired panel after building release binaries. Output creation refuses to overwrite preserved evidence.

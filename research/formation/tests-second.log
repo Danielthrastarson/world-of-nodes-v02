@@ -1,0 +1,34 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.02s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 13 tests
+test provisioning::acceptance::tests::source_prior_is_timestamped_local_memory_not_fresh_world_information ... ok
+test provisioning::barter::market::tests::formation_is_identical_before_custody_diverges_and_deposit_does_not_self_cancel ... ok
+test provisioning::policy::intention::tests::material_information_excludes_clock_and_small_stock_changes_but_includes_queue_service ... ok
+test provisioning::formation::tests::hunger_pause_cancels_queue_without_erasing_person_or_membership ... ok
+test provisioning::formation::tests::expired_service_does_not_teleport_or_keep_a_queue_reservation ... ok
+test provisioning::formation::tests::dying_remains_on_roster_and_uses_ordinary_property_death ... ok
+test provisioning::formation::tests::command_choices_use_personal_history_only ... ok
+test provisioning::formation::tests::one_order_moves_actual_people_and_preserves_identity ... ok
+test provisioning::formation::tests::new_order_does_not_update_an_absent_straggler ... ok
+test provisioning::formation::tests::unknown_route_is_not_created_by_the_objective ... ok
+test provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics ... FAILED
+test provisioning::formation::tests::partial_and_late_members_do_not_receive_orders_remotely ... ok
+test provisioning::formation::tests::critical_recovery_keeps_membership_then_resumes ... ok
+
+failures:
+
+---- provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics stdout ----
+
+thread 'provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics' (282) panicked at src/provisioning/formation/tests.rs:3:44:
+called `Result::unwrap()` on an `Err` value: "F6 public project requires existing community"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    provisioning::formation::tests::existing_paths_crossings_and_carts_use_common_physics
+
+test result: FAILED. 12 passed; 1 failed; 0 ignored; 0 measured; 238 filtered out; finished in 0.11s
+
+error: test failed, to rerun pass `--lib`

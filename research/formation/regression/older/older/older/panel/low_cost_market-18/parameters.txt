@@ -1,0 +1,1 @@
+F9B fixture=low_cost seed=18; market_nodes=[0,2]; fixed_lease=12h; docs/MARKET_EXPERIMENT.md; unchanged F9A offer formation

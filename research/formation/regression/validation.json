@@ -1,0 +1,32 @@
+{
+  "source_revision": "78ac3c1e39b24432b0714b9fee1a9b2e39824882",
+  "historical_executions": 137,
+  "f11a_checks": [
+    "bottleneck_off",
+    "bottleneck_on",
+    "caregiver_off",
+    "caregiver_on",
+    "civilian_traffic_off",
+    "civilian_traffic_on",
+    "distant_off",
+    "distant_on",
+    "farmer_off",
+    "farmer_on",
+    "food_constrained_off",
+    "food_constrained_on",
+    "history_help_off",
+    "history_help_on",
+    "history_refusal_off",
+    "history_refusal_on",
+    "large_off",
+    "large_on",
+    "small_off",
+    "small_on",
+    "unknown_off",
+    "unknown_on",
+    "working_farmer_off",
+    "working_farmer_on"
+  ],
+  "prior_files_unchanged": 9298,
+  "exceptions": "Wall runtime nondeterministic; optional formation:false changes Config debug schema only (older B2 derived physical_signature excluded by existing verifier). Authoritative physical outcomes, state/event hashes, raw traces exact."
+}
