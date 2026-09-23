@@ -57,6 +57,6 @@ F1 passed: [180-run evidence](../research/geography/REPORT.md). A primary-board 
 
 F2 passed: [delivery/control evidence](../research/foundation-provisioning/REPORT.md). Compact-world deliveries occur but do not outperform self-only migration. F3 passed: owner selected cultivator-owned crops and harvests without land title. [Decision](RENEWABLE_PRODUCTION_DECISION.md); [registered experiment](FARMING_EXPERIMENT.md).
 
-F3 passed: [300-run farming evidence](../research/farming/REPORT.md). Cultivator ownership is provisional; migration, dead-owner losses and low-yield collapse are preserved. F4 now tests pressure-dependent voluntary labor without new institutions.
+F3 passed: [300-run farming evidence](../research/farming/REPORT.md). Cultivator ownership is provisional; migration, dead-owner losses and low-yield collapse are preserved. F4 subsequently passed the registered pressure-dependent labor study without new institutions.
 
 F4 passed for currently useful activities: [scarcity/geography evidence](../research/labor/REPORT.md). No decorative wood/stone demand was introduced. F5 has a reviewable [cart construction/rights proposal](CAPITAL_RIGHTS_DECISION.md); owner must select private or communal capital access before implementation.
