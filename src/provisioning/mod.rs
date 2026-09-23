@@ -10,6 +10,7 @@ pub mod geography;
 mod goods;
 pub mod infrastructure;
 pub mod meals;
+pub mod paths;
 pub mod persistence;
 mod policy;
 pub mod reasoning;
@@ -51,6 +52,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub paths: Option<paths::Config>,
     pub infrastructure: Option<infrastructure::Config>,
     pub capital: Option<capital::Config>,
     pub farming: Option<farming::Config>,
@@ -77,6 +79,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            paths: None,
             infrastructure: None,
             capital: None,
             farming: None,
@@ -285,6 +288,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) paths: paths::State,
     pub(crate) infrastructure: infrastructure::State,
     pub(crate) capital: capital::State,
     pub(crate) farm: farming::State,
@@ -407,6 +411,11 @@ impl World {
         if config.infrastructure.is_some() && !config.communal {
             return Err("F6 public project requires existing community".into());
         }
+        let paths = paths::State::new(
+            config.paths.as_ref(),
+            &config.edges,
+            config.infrastructure.as_ref(),
+        )?;
         let infrastructure = infrastructure::State::new(
             config.infrastructure.as_ref(),
             &config.edges,
@@ -441,6 +450,7 @@ impl World {
         }
         let farm = farming::State::new(config.farming.as_ref(), config.nodes, config.starts.len())?;
         let mut w = Self {
+            paths,
             infrastructure,
             capital,
             farm,
@@ -599,6 +609,7 @@ impl World {
         self.audit_farming()?;
         self.audit_capital()?;
         self.audit_infrastructure()?;
+        self.audit_paths()?;
         if !self.goods.audit_capital(
             self.farm.produced as u128,
             self.capital.embedded_wood() + self.infrastructure.embedded_wood(),

@@ -436,6 +436,7 @@ impl World {
                 };
                 self.capital_departure(id, from, to);
                 self.infrastructure_departure(id, edge, from, to);
+                self.path_departure(id, edge, from, to);
                 self.agents[id].action = Action::Travel;
                 self.sync_carts();
                 self.log(
@@ -472,6 +473,7 @@ impl World {
             }
         }
         next = self.farm.next_boundary(self.now, next);
+        next = self.paths.next_boundary(self.now, next);
         for a in &self.agents {
             if a.action == Action::Dead {
                 continue;
@@ -672,6 +674,7 @@ impl World {
             }
         }
         self.integrate_capital(dt);
+        self.integrate_paths(dt);
         self.now = to;
         self.sync_carts();
         for (id, kind, detail) in physiology_events {
@@ -679,6 +682,8 @@ impl World {
         }
     }
     fn boundary(&mut self) {
+        // Recovery precedes simultaneous arrivals; a completed passage then renews use.
+        self.recover_paths();
         // Arrival first determines exact location at a coincident death; no decision yet.
         for id in 0..self.agents.len() {
             if self.agents[id].action == Action::Travel
@@ -691,6 +696,7 @@ impl World {
                 self.sync_carts();
                 self.capital_arrival(id);
                 self.infrastructure_arrival(id);
+                self.path_arrival(id);
                 self.agents[id].action = Action::Idle;
                 self.wake.insert(id);
                 self.log(Some(id), "Arrived", format!("node={to} edge={edge}"));
@@ -779,6 +785,7 @@ impl World {
                 }
                 self.capital_death(id);
                 self.infrastructure.active_trips.remove(&id);
+                self.paths.active.remove(&id);
                 self.gather_communal.remove(&id);
                 self.cancel_job(id, "starvation death");
                 self.agents[id].action = Action::Dead;

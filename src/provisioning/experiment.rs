@@ -159,6 +159,9 @@ impl World {
         if self.config.farming.is_some() {
             text.push_str(&format!("|farming={:?}", self.farm));
         }
+        if self.config.paths.is_some() {
+            text.push_str(&format!("|paths={:?}", self.paths));
+        }
         if self.config.infrastructure.is_some() {
             text.push_str(&format!("|infrastructure={:?}", self.infrastructure));
         }

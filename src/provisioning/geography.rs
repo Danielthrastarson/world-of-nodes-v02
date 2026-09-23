@@ -48,6 +48,21 @@ pub fn reversed_labels(mut c: Config) -> Config {
         e.b = n - 1 - e.b;
     }
     c.edges.reverse();
+    let edge_count = c.edges.len();
+    if let Some(paths) = &mut c.paths {
+        for edge in &mut paths.ground_edges {
+            *edge = edge_count - 1 - *edge;
+        }
+    }
+    if let Some(infrastructure) = &mut c.infrastructure {
+        for site in &mut infrastructure.sites {
+            site.edge = edge_count - 1 - site.edge;
+            site.node = n - 1 - site.node;
+        }
+        for (node, _) in &mut infrastructure.wood {
+            *node = n - 1 - *node;
+        }
+    }
     if let Some(capital) = &mut c.capital {
         for (node, _) in &mut capital.wood {
             *node = n - 1 - *node;

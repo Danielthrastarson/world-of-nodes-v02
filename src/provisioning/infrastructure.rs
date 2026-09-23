@@ -131,9 +131,13 @@ impl World {
             e.nominal_ms = p.site.opened_nominal_ms;
             e.capacity = p.site.opened_capacity;
         }
+        e.nominal_ms = self.path_duration(edge, e.nominal_ms);
         e
     }
     pub(super) fn traversal_nominal(&self, id: usize, edge: usize) -> Time {
+        if let Some(t) = self.paths.active.get(&id) {
+            return self.paths.trips[*t].nominal_ms;
+        }
         self.infrastructure
             .active_trips
             .get(&id)
