@@ -1,0 +1,41 @@
+WORLD OF NODES — F12 COMPLETE / F13A READINESS COMPLETE
+
+Baseline audited: 2b00dd9.
+F12 implementation: 4c84081. F12 evidence: d3460df.
+F13A + scheduling correction: 47533e2.
+
+F12 PASSED at controlled information-transport scope.
+840 runs: dated local reports move through actual Persons and local handoff.
+Fresh and already-stale reports change30/30 matched intentions,17/30 immediate destinations.
+Expired-food reports remain expired but reduce redundant exploration.
+No automatic messenger recruitment, omniscient knowledge or command authority.
+
+F13A PASSED at research integration scope. Full F13 remains OPEN.
+180 runs compare one existing local steward crossing commission with pending authorization.
+Alternate-route means, pending -> commissioned:
+  crossings completed:0 -> 1
+  food produced:432 -> 312
+  food consumed:742 -> 626
+  deaths:6 -> 7
+  starvation-person-hours:173.977 -> 262.717
+  food stolen:30 -> 30
+The completed crossing is used by6 people for19 improved trips.
+Scarce-material and long-detour projects remain unfinished.
+No parameters were tuned to remove these failures.
+
+The integration tests found an existing caller-checkpoint-dependent order wake.
+Narrow fix: objective received immediately; selection at a normal policy opportunity.
+307 tests pass.217 historical replays and all840 F12 runs remain exact
+(apart from documented runtime/debug-signature exceptions).
+15,827 previous research files are unchanged.
+
+NEXT OWNER DECISION:
+Define the first ruler-to-Person interaction before selecting new political powers.
+Recommendation: one advisory civil project request, physically delivered,
+which the steward/courier may accept, defer or refuse.
+This is a proposal, not an adopted institution.
+Existing appointment/commission powers remain distinct from remote obedience.
+
+No money, conscription, requisition, taxation, conquest, UI or new family institution.
+See research/information/REPORT.md, research/kingdom-readiness/REPORT.md,
+and docs/F13_OWNER_DECISION.md.

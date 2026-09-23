@@ -34,7 +34,7 @@ validates instrumentation, not the research conclusions.
 There are five nodes. Settlements are 1 and 2; node 0 is an empty branch off 1
 (0.25h); node 4 is the seeded raiders' origin, connected to 2 (2h). All open
 edges have capacity 4. The proposed crossing is a closed 1–2 edge, opening only
-after 20 wood and 8h of actual construction work, then taking 0.25h with capacity
+after 20 wood and 8 nominal hours of construction work, then taking 0.25h with capacity
 4. Existing paths start bare on open ground edges and evolve by ordinary use.
 These parameters reuse F6's alternate route and 20-wood/8h recipe, F11C's raid
 mechanics and F12's long-route contrast. They are physical fixture conditions,
@@ -119,3 +119,5 @@ outcomes are preserved.
 Source: `src/provisioning/kingdom_research.rs` and
 `src/bin/kingdom_readiness_probe.rs`. The implementation and output revision are
 recorded by the final report after validation. Existing research is untouched.
+
+Measurement clarification after validation: the recipe's `work_ms=8*HOUR` is nominal work. Actual labor is integrated from embodied workers and can be longer through physiological impairment. This wording correction changes no registered parameter, implementation or result.

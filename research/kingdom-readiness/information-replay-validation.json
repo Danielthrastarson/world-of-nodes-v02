@@ -1,0 +1,1365 @@
+{
+  "checks": [
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "fa60947dae84c10150de01bb821e5b9ded25e85dc918a3423abc867a48ed16e4",
+      "old_rows": 30,
+      "old_sha256": "2d1f73a4bbe9b53438596bb331bb694f087651640a1aec297259f6d4efd44143",
+      "scope": "absent_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 408018,
+      "new_content_sha256": "7e66956f8107682bc6b4313fda2f13683a3ffb6890fd30c3d0004b7352741704",
+      "old_bytes": 408018,
+      "old_content_sha256": "7e66956f8107682bc6b4313fda2f13683a3ffb6890fd30c3d0004b7352741704",
+      "scope": "absent_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "absent_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "b8a0595e694734e9160575686f6d040b2ae5c32db47cceff023b5ae86fb0cc7a",
+      "old_bytes": 6308,
+      "old_content_sha256": "b8a0595e694734e9160575686f6d040b2ae5c32db47cceff023b5ae86fb0cc7a",
+      "scope": "absent_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "absent_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3419,
+      "new_content_sha256": "519627fdf68912355a69c387382e57a64e3311f5370303d679011e0c18004bff",
+      "old_bytes": 3419,
+      "old_content_sha256": "519627fdf68912355a69c387382e57a64e3311f5370303d679011e0c18004bff",
+      "scope": "absent_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "439350c05452a1ca5ed62f858457bb644bff454d31550512b75f4f6610d7f6e2",
+      "old_rows": 30,
+      "old_sha256": "fe14c8db2c55b7960a35890a704a088bcbb520893bb4b4a915d6b9e6c19cdf9d",
+      "scope": "absent_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 367334,
+      "new_content_sha256": "bc6642c358b23f211766baac5e0f35803ea7c150eba7d2cac4a7b18233b4117c",
+      "old_bytes": 367334,
+      "old_content_sha256": "bc6642c358b23f211766baac5e0f35803ea7c150eba7d2cac4a7b18233b4117c",
+      "scope": "absent_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "absent_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "b8a0595e694734e9160575686f6d040b2ae5c32db47cceff023b5ae86fb0cc7a",
+      "old_bytes": 6308,
+      "old_content_sha256": "b8a0595e694734e9160575686f6d040b2ae5c32db47cceff023b5ae86fb0cc7a",
+      "scope": "absent_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "absent_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3489,
+      "new_content_sha256": "d3761125bee29354596cd7f4e87122a065e04ec7afe57cb6d9fee0a6e6d2b576",
+      "old_bytes": 3489,
+      "old_content_sha256": "d3761125bee29354596cd7f4e87122a065e04ec7afe57cb6d9fee0a6e6d2b576",
+      "scope": "absent_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "7670eaf37fb18832194daba7b3788e8df63af1194488ecbef9b98d9c0b929ad9",
+      "old_rows": 30,
+      "old_sha256": "87e7f244eb47f18944ea28c42de145684d9fd0af410f30dd137511c1b15aa3f7",
+      "scope": "congestion_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 1663780,
+      "new_content_sha256": "c5d11369007ad9170e91d5cc9b6ebc155b48c88c0d5b3f46290c4574a34a4ad0",
+      "old_bytes": 1663780,
+      "old_content_sha256": "c5d11369007ad9170e91d5cc9b6ebc155b48c88c0d5b3f46290c4574a34a4ad0",
+      "scope": "congestion_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 32379,
+      "new_content_sha256": "c6d949b7b4599e506ed7e78ca2c0095b093c8ef1c5322aadae9b2e3d3695f83c",
+      "old_bytes": 32379,
+      "old_content_sha256": "c6d949b7b4599e506ed7e78ca2c0095b093c8ef1c5322aadae9b2e3d3695f83c",
+      "scope": "congestion_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "old_bytes": 6308,
+      "old_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "scope": "congestion_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "congestion_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6124,
+      "new_content_sha256": "f5c3e51a65db07cc9c01543c1c54ba54babc7063db2f1e1154bb63b3bd5a6e73",
+      "old_bytes": 6124,
+      "old_content_sha256": "f5c3e51a65db07cc9c01543c1c54ba54babc7063db2f1e1154bb63b3bd5a6e73",
+      "scope": "congestion_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "c01bd5698682e27b4e95f893781d393b44098cfbdf0bacecd24a4e7d1cded3d2",
+      "old_rows": 30,
+      "old_sha256": "ece110703a53b1ff8bb83de096f93e2980cc59c6f9d56b21487f070c96ee7721",
+      "scope": "congestion_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 1507020,
+      "new_content_sha256": "9c604bca99ca82b490f57b551aab58bc553a4861b4bf0778c496e1e3c88f5a01",
+      "old_bytes": 1507020,
+      "old_content_sha256": "9c604bca99ca82b490f57b551aab58bc553a4861b4bf0778c496e1e3c88f5a01",
+      "scope": "congestion_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 32379,
+      "new_content_sha256": "c6d949b7b4599e506ed7e78ca2c0095b093c8ef1c5322aadae9b2e3d3695f83c",
+      "old_bytes": 32379,
+      "old_content_sha256": "c6d949b7b4599e506ed7e78ca2c0095b093c8ef1c5322aadae9b2e3d3695f83c",
+      "scope": "congestion_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "old_bytes": 6308,
+      "old_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "scope": "congestion_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "congestion_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6195,
+      "new_content_sha256": "6efa234dcab54b28918527ecaa59e300ec756bf80aff325c7652f9bac23b6e8f",
+      "old_bytes": 6195,
+      "old_content_sha256": "6efa234dcab54b28918527ecaa59e300ec756bf80aff325c7652f9bac23b6e8f",
+      "scope": "congestion_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "619fcc6fc3b2ae6e4f3edb270d2afff877ccfdf59b17c6ee4ad85df6c6e385d3",
+      "old_rows": 30,
+      "old_sha256": "8f348908306b53123fe6c0a63aaf45348ba54f3f00af28670b4dcb3b29883ea0",
+      "scope": "death_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 121688,
+      "new_content_sha256": "37f93ad057ccfb000c1c45da2887abccbee170abf5bceebd5c13cc402e8c0125",
+      "old_bytes": 121688,
+      "old_content_sha256": "37f93ad057ccfb000c1c45da2887abccbee170abf5bceebd5c13cc402e8c0125",
+      "scope": "death_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 12539,
+      "new_content_sha256": "aefbfc60a7b8c86621d601019cba450bd7f7b56d6bfb66be16263ac524ad65c6",
+      "old_bytes": 12539,
+      "old_content_sha256": "aefbfc60a7b8c86621d601019cba450bd7f7b56d6bfb66be16263ac524ad65c6",
+      "scope": "death_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "death_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "death_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3058,
+      "new_content_sha256": "5f3a3867f4c55dda50b47e1c36956cf27bdb78248a752d77625bcc07928f8657",
+      "old_bytes": 3058,
+      "old_content_sha256": "5f3a3867f4c55dda50b47e1c36956cf27bdb78248a752d77625bcc07928f8657",
+      "scope": "death_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "39e874392e413d26522f31f8df6832daa33b8db2d994ff8feb5137d632bcddf4",
+      "old_rows": 30,
+      "old_sha256": "6d34139085bf93f29cc5484371a8702c32e98b24c4c84b36f9c5528a5f96834e",
+      "scope": "death_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 129276,
+      "new_content_sha256": "4b8fff02434ea87ccbd755a891ce8269a1da4d6a9f27b4cfc7d74c7fced44458",
+      "old_bytes": 129276,
+      "old_content_sha256": "4b8fff02434ea87ccbd755a891ce8269a1da4d6a9f27b4cfc7d74c7fced44458",
+      "scope": "death_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 12539,
+      "new_content_sha256": "aefbfc60a7b8c86621d601019cba450bd7f7b56d6bfb66be16263ac524ad65c6",
+      "old_bytes": 12539,
+      "old_content_sha256": "aefbfc60a7b8c86621d601019cba450bd7f7b56d6bfb66be16263ac524ad65c6",
+      "scope": "death_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "death_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "death_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3128,
+      "new_content_sha256": "d998fd5d4d4b54ae1095c284c02aedcb036a6545ff0b4578f1cf7ad73f223c13",
+      "old_bytes": 3128,
+      "old_content_sha256": "d998fd5d4d4b54ae1095c284c02aedcb036a6545ff0b4578f1cf7ad73f223c13",
+      "scope": "death_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "8cc1989bf840e8a6fbb336e4b0bfa5581d7a777b3221a75b24066c02e3b78127",
+      "old_rows": 30,
+      "old_sha256": "ad5cd9cfda1342606e7e7a77443021d0b24d9c220a5fa0ca8df8d5579eb89e72",
+      "scope": "depleted_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 486352,
+      "new_content_sha256": "a770fcc294ae834d4e3ac57f875621856925a72ddad3e433dc2f014feb15842b",
+      "old_bytes": 486352,
+      "old_content_sha256": "a770fcc294ae834d4e3ac57f875621856925a72ddad3e433dc2f014feb15842b",
+      "scope": "depleted_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 17779,
+      "new_content_sha256": "2bc3ad762a32eaf549c888a6cf042af7e8787bd1499205e1cf60afc425c8e1cd",
+      "old_bytes": 17779,
+      "old_content_sha256": "2bc3ad762a32eaf549c888a6cf042af7e8787bd1499205e1cf60afc425c8e1cd",
+      "scope": "depleted_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "depleted_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "depleted_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3801,
+      "new_content_sha256": "53d9610ebe024a1d07b28746736d8e3ad5345a033570bd7daca43dd6b324d406",
+      "old_bytes": 3801,
+      "old_content_sha256": "53d9610ebe024a1d07b28746736d8e3ad5345a033570bd7daca43dd6b324d406",
+      "scope": "depleted_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "df5b27c3a75ff3cba0d02aa37431eaefde0d4c5baf6b03da18cf9eb35133910e",
+      "old_rows": 30,
+      "old_sha256": "99d0e2f04132a675c30dce3e62787f91c6da2c677d3a74459939f8995218fb98",
+      "scope": "depleted_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 433444,
+      "new_content_sha256": "20adf9910a345395be8ef2274a126037a463d1a7d6531d07073d1ede99a0f4f2",
+      "old_bytes": 433444,
+      "old_content_sha256": "20adf9910a345395be8ef2274a126037a463d1a7d6531d07073d1ede99a0f4f2",
+      "scope": "depleted_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 29449,
+      "new_content_sha256": "ce459bee2388c2e8a190119e543999bfb38fbdeb4db3ba1a1a0c6b39d87c324b",
+      "old_bytes": 29449,
+      "old_content_sha256": "ce459bee2388c2e8a190119e543999bfb38fbdeb4db3ba1a1a0c6b39d87c324b",
+      "scope": "depleted_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 7508,
+      "new_content_sha256": "b479c0884ea2d427acdfdef5585543de55c6018635432a7a527709e707470390",
+      "old_bytes": 7508,
+      "old_content_sha256": "b479c0884ea2d427acdfdef5585543de55c6018635432a7a527709e707470390",
+      "scope": "depleted_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15601,
+      "new_content_sha256": "be16c54f49e2ba5c7e4b8df59a0764a0f516d58a6955e6c44428eb4b725e8bd3",
+      "old_bytes": 15601,
+      "old_content_sha256": "be16c54f49e2ba5c7e4b8df59a0764a0f516d58a6955e6c44428eb4b725e8bd3",
+      "scope": "depleted_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3871,
+      "new_content_sha256": "5919cad2f8ded74119eff892699092bf1078d9aa24a0683cf306aab145d5d16c",
+      "old_bytes": 3871,
+      "old_content_sha256": "5919cad2f8ded74119eff892699092bf1078d9aa24a0683cf306aab145d5d16c",
+      "scope": "depleted_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "0e5281fdc1780f3c89768eba3a5aa0571a5368c295b6c4b1d8c53ebed638573f",
+      "old_rows": 30,
+      "old_sha256": "1925639f14a846954c0305ef44fb8b4e4b3a7afd64f2bb78c1eb86f6c2f664bc",
+      "scope": "fatigue_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 426304,
+      "new_content_sha256": "076d8915c1fff260884eba822e2527e32af2b07ba3faae5833121ccf6439fe80",
+      "old_bytes": 426304,
+      "old_content_sha256": "076d8915c1fff260884eba822e2527e32af2b07ba3faae5833121ccf6439fe80",
+      "scope": "fatigue_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "fatigue_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "fatigue_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "fatigue_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3525,
+      "new_content_sha256": "9cb9cfdd82aa4387ce90ae4aeab687ad1b1ceaf4a971264c0b2bcf2e91ccee00",
+      "old_bytes": 3525,
+      "old_content_sha256": "9cb9cfdd82aa4387ce90ae4aeab687ad1b1ceaf4a971264c0b2bcf2e91ccee00",
+      "scope": "fatigue_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "866c068b1e3747f8449a14988c3c8ee35ccb9c4cbd37b270e3b19a9ebb6292b7",
+      "old_rows": 30,
+      "old_sha256": "72dc5a02cfc4984515a73d9464190a2e1bb00cfffea091af1715a97181e01f10",
+      "scope": "fatigue_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 391917,
+      "new_content_sha256": "ee592c34ff756a35579585cbd231b05f51bdb636cece68a68cd33ad0b85cdef5",
+      "old_bytes": 391917,
+      "old_content_sha256": "ee592c34ff756a35579585cbd231b05f51bdb636cece68a68cd33ad0b85cdef5",
+      "scope": "fatigue_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 20716,
+      "new_content_sha256": "5c7857c4a48e7db8c92ccc2794402dfd9f64222fc6aa1b171ae1a8ba1308142d",
+      "old_bytes": 20716,
+      "old_content_sha256": "5c7857c4a48e7db8c92ccc2794402dfd9f64222fc6aa1b171ae1a8ba1308142d",
+      "scope": "fatigue_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "fatigue_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 8278,
+      "new_content_sha256": "06296bdd8ab0e94aa7b525753617d28f9731e8fc89ec1a1f172770e95c20057f",
+      "old_bytes": 8278,
+      "old_content_sha256": "06296bdd8ab0e94aa7b525753617d28f9731e8fc89ec1a1f172770e95c20057f",
+      "scope": "fatigue_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3595,
+      "new_content_sha256": "16afc0d8a37fece60b3f63b504b5bf5358f7e1a347b9a0cd3bf223d5d8cede98",
+      "old_bytes": 3595,
+      "old_content_sha256": "16afc0d8a37fece60b3f63b504b5bf5358f7e1a347b9a0cd3bf223d5d8cede98",
+      "scope": "fatigue_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "c66d4edf63202ce739c425c08c50d8c2a6e4a4adb4cc6e3cb607fac687bfe764",
+      "old_rows": 30,
+      "old_sha256": "cd7c834bc25e041f6a53483a526f15ec871fa8c4d6f4db9288ff423f3c543005",
+      "scope": "hunger_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 408273,
+      "new_content_sha256": "60033a9fda0adec5c15ca81cb357ca7b8c572bfc02b1a1916fdc8ed715754506",
+      "old_bytes": 408273,
+      "old_content_sha256": "60033a9fda0adec5c15ca81cb357ca7b8c572bfc02b1a1916fdc8ed715754506",
+      "scope": "hunger_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "hunger_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "hunger_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "hunger_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3524,
+      "new_content_sha256": "99054fbac861dd07db4e81d389ccc97196760140fcacaa5823436594a64f1623",
+      "old_bytes": 3524,
+      "old_content_sha256": "99054fbac861dd07db4e81d389ccc97196760140fcacaa5823436594a64f1623",
+      "scope": "hunger_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "da4927fff901c79315dea1d1322403bfa0499a025e8e10b4a459b2d5de604b88",
+      "old_rows": 30,
+      "old_sha256": "aca7a04bbd04542bc63c6e68685d9968f96b86e5872c90f309ce9bf806ee8168",
+      "scope": "hunger_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 338559,
+      "new_content_sha256": "70556655d8c855f819c6dd988ac927d3203f2ef1688b1d01b70fa4bfc7ecb491",
+      "old_bytes": 338559,
+      "old_content_sha256": "70556655d8c855f819c6dd988ac927d3203f2ef1688b1d01b70fa4bfc7ecb491",
+      "scope": "hunger_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 27299,
+      "new_content_sha256": "5dc4d8d03766b53b53e0f4a0a6011096003977888120ab6467985d96dda5363a",
+      "old_bytes": 27299,
+      "old_content_sha256": "5dc4d8d03766b53b53e0f4a0a6011096003977888120ab6467985d96dda5363a",
+      "scope": "hunger_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 7538,
+      "new_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "old_bytes": 7538,
+      "old_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "scope": "hunger_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 18721,
+      "new_content_sha256": "8815c7353a048eeac312592d3be4fb632e7a33fe40d527001d852a624dcf31dc",
+      "old_bytes": 18721,
+      "old_content_sha256": "8815c7353a048eeac312592d3be4fb632e7a33fe40d527001d852a624dcf31dc",
+      "scope": "hunger_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3594,
+      "new_content_sha256": "eb09c7df9088334fd93e35fced0df99896b143682b8786f6f087a0a19a25b685",
+      "old_bytes": 3594,
+      "old_content_sha256": "eb09c7df9088334fd93e35fced0df99896b143682b8786f6f087a0a19a25b685",
+      "scope": "hunger_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "93291eba19ea1f377b058bc48b0ac764e1060a7a8c0f47f692384bee8a52007e",
+      "old_rows": 30,
+      "old_sha256": "696c85847d2343919af5032f970bbea2b94c3161d08b0371c1e3ad79c7ac60ad",
+      "scope": "long_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 259293,
+      "new_content_sha256": "ee4cbe48895220ad5c0087e47866dfc7550e3ee1251bd889357cee4a8a110a97",
+      "old_bytes": 259293,
+      "old_content_sha256": "ee4cbe48895220ad5c0087e47866dfc7550e3ee1251bd889357cee4a8a110a97",
+      "scope": "long_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15689,
+      "new_content_sha256": "175a353c093a0b7e33909a04f3f3096d5f95fd78a28b513b53d3fbc7ebc50859",
+      "old_bytes": 15689,
+      "old_content_sha256": "175a353c093a0b7e33909a04f3f3096d5f95fd78a28b513b53d3fbc7ebc50859",
+      "scope": "long_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "old_bytes": 6308,
+      "old_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "scope": "long_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "long_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3529,
+      "new_content_sha256": "6cee8a5afc0c74dd9abc9ea8b95d5a21bc4bfbc74c296402a61e0a3d2121ca3f",
+      "old_bytes": 3529,
+      "old_content_sha256": "6cee8a5afc0c74dd9abc9ea8b95d5a21bc4bfbc74c296402a61e0a3d2121ca3f",
+      "scope": "long_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "0c2238f005980fb4c0ccea232118e060d3415ff8b9495d72fe5129a6505ad523",
+      "old_rows": 30,
+      "old_sha256": "255fe90956bb428eea199390942231b2653dcf3bbe2d17d648e87a4ca706bf5e",
+      "scope": "long_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 79667,
+      "new_content_sha256": "be866ce0dc0cd65b88d35089d39b14221a331c8b8ff955166e118ed738706c14",
+      "old_bytes": 79667,
+      "old_content_sha256": "be866ce0dc0cd65b88d35089d39b14221a331c8b8ff955166e118ed738706c14",
+      "scope": "long_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15689,
+      "new_content_sha256": "175a353c093a0b7e33909a04f3f3096d5f95fd78a28b513b53d3fbc7ebc50859",
+      "old_bytes": 15689,
+      "old_content_sha256": "175a353c093a0b7e33909a04f3f3096d5f95fd78a28b513b53d3fbc7ebc50859",
+      "scope": "long_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "old_bytes": 6308,
+      "old_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "scope": "long_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "long_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3599,
+      "new_content_sha256": "7dd376233842df60d43933f82342c16b60a3ae4d250bf9ac2e84fc860f3c368e",
+      "old_bytes": 3599,
+      "old_content_sha256": "7dd376233842df60d43933f82342c16b60a3ae4d250bf9ac2e84fc860f3c368e",
+      "scope": "long_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "6a8817274abb17313c9e0b24bdadf2bb499a9cd9388b5aeb89a1b8cbeaf0f6c6",
+      "old_rows": 30,
+      "old_sha256": "fa99716ef06362dd25ef282b3524f3018132654bb06999527c222f547dde2c86",
+      "scope": "matched_depleted_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 574873,
+      "new_content_sha256": "adcb6e26aee5eec528c816717659aec2e2cdbf4aefcba03c51181e4daf6ea043",
+      "old_bytes": 574873,
+      "old_content_sha256": "adcb6e26aee5eec528c816717659aec2e2cdbf4aefcba03c51181e4daf6ea043",
+      "scope": "matched_depleted_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 17779,
+      "new_content_sha256": "f4e7c6ae79a5726a91b25cbe9475d11a4c9cd4a002638255ba2874e817c3a9df",
+      "old_bytes": 17779,
+      "old_content_sha256": "f4e7c6ae79a5726a91b25cbe9475d11a4c9cd4a002638255ba2874e817c3a9df",
+      "scope": "matched_depleted_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 12218,
+      "new_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "old_bytes": 12218,
+      "old_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "scope": "matched_depleted_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "matched_depleted_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3417,
+      "new_content_sha256": "f8c61f1b6be6f3d1085c3d175f36953db110a061657f618c3975041cf56d2f96",
+      "old_bytes": 3417,
+      "old_content_sha256": "f8c61f1b6be6f3d1085c3d175f36953db110a061657f618c3975041cf56d2f96",
+      "scope": "matched_depleted_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "8c48e2069f10ac7b9b456d21350db08ac670dbb61a444b4998f362bd19c61d19",
+      "old_rows": 30,
+      "old_sha256": "f85acdbec2f823ad65341bf35f67cbf9c938d8fba78eabf45a5954e74e0e7707",
+      "scope": "matched_depleted_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 575402,
+      "new_content_sha256": "857f23ef654e7bc25cd292419cac18d74aa594d844c3c9da19afa296aefc5bd2",
+      "old_bytes": 575402,
+      "old_content_sha256": "857f23ef654e7bc25cd292419cac18d74aa594d844c3c9da19afa296aefc5bd2",
+      "scope": "matched_depleted_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 29449,
+      "new_content_sha256": "3ff8d7a0b09832d2c369036d901795f2887f7634eb640d3778f7ef36d5c5c7d9",
+      "old_bytes": 29449,
+      "old_content_sha256": "3ff8d7a0b09832d2c369036d901795f2887f7634eb640d3778f7ef36d5c5c7d9",
+      "scope": "matched_depleted_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 13418,
+      "new_content_sha256": "3e5ad007434676555302f6f82e538208a33aef2a272a7343dffee0b55850ca7c",
+      "old_bytes": 13418,
+      "old_content_sha256": "3e5ad007434676555302f6f82e538208a33aef2a272a7343dffee0b55850ca7c",
+      "scope": "matched_depleted_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15601,
+      "new_content_sha256": "2dd7cc9545424bf4a58e134093b7a6249d93c7208faa36b193e2cc41e1c04e7f",
+      "old_bytes": 15601,
+      "old_content_sha256": "2dd7cc9545424bf4a58e134093b7a6249d93c7208faa36b193e2cc41e1c04e7f",
+      "scope": "matched_depleted_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3715,
+      "new_content_sha256": "3a1b3129ef333dac91bf6e23a640cffa590fdaeea2e42d6eec9f042829344ed2",
+      "old_bytes": 3715,
+      "old_content_sha256": "3a1b3129ef333dac91bf6e23a640cffa590fdaeea2e42d6eec9f042829344ed2",
+      "scope": "matched_depleted_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "7b3a9650499b4b8ad7a24476c0f15bc0805d47e10ce1c30f81f81a3a1f5291ff",
+      "old_rows": 30,
+      "old_sha256": "ff1897f37453942813bb746f8621b70c43b61bd3719deee3fb41aa82e62694a7",
+      "scope": "matched_fresh_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 574833,
+      "new_content_sha256": "2fc629a4e13bf991455fd0a96138567640c17e1efa24f46ebebe996f68640359",
+      "old_bytes": 574833,
+      "old_content_sha256": "2fc629a4e13bf991455fd0a96138567640c17e1efa24f46ebebe996f68640359",
+      "scope": "matched_fresh_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 17779,
+      "new_content_sha256": "f4e7c6ae79a5726a91b25cbe9475d11a4c9cd4a002638255ba2874e817c3a9df",
+      "old_bytes": 17779,
+      "old_content_sha256": "f4e7c6ae79a5726a91b25cbe9475d11a4c9cd4a002638255ba2874e817c3a9df",
+      "scope": "matched_fresh_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 12218,
+      "new_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "old_bytes": 12218,
+      "old_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "scope": "matched_fresh_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "matched_fresh_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3280,
+      "new_content_sha256": "3f369a7ca54c868a0e8fc036e36a0ac89a96793019e8210225135d14ec91df06",
+      "old_bytes": 3280,
+      "old_content_sha256": "3f369a7ca54c868a0e8fc036e36a0ac89a96793019e8210225135d14ec91df06",
+      "scope": "matched_fresh_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "29437926222d74b03c8ca2d08b4b058a7b8cb985575144aa363cb75c38525b49",
+      "old_rows": 30,
+      "old_sha256": "767262f246c049d225541ab1318fe84b301750171401230f4662ed4ce0e4dd96",
+      "scope": "matched_fresh_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 575362,
+      "new_content_sha256": "819ee66dc5a68ca8a0063199c75885093a14efdf4b9e4d42d5da117e6d7d668b",
+      "old_bytes": 575362,
+      "old_content_sha256": "819ee66dc5a68ca8a0063199c75885093a14efdf4b9e4d42d5da117e6d7d668b",
+      "scope": "matched_fresh_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 29449,
+      "new_content_sha256": "3ff8d7a0b09832d2c369036d901795f2887f7634eb640d3778f7ef36d5c5c7d9",
+      "old_bytes": 29449,
+      "old_content_sha256": "3ff8d7a0b09832d2c369036d901795f2887f7634eb640d3778f7ef36d5c5c7d9",
+      "scope": "matched_fresh_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 13418,
+      "new_content_sha256": "3e5ad007434676555302f6f82e538208a33aef2a272a7343dffee0b55850ca7c",
+      "old_bytes": 13418,
+      "old_content_sha256": "3e5ad007434676555302f6f82e538208a33aef2a272a7343dffee0b55850ca7c",
+      "scope": "matched_fresh_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 18661,
+      "new_content_sha256": "03e912fd33c41d0238d2271e5a17fa9386d00a9923ef33b2c97f177f62cb9d3f",
+      "old_bytes": 18661,
+      "old_content_sha256": "03e912fd33c41d0238d2271e5a17fa9386d00a9923ef33b2c97f177f62cb9d3f",
+      "scope": "matched_fresh_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3578,
+      "new_content_sha256": "7520e9d229d819267e542b3ea14ed1b50fd6b92fa5a74d53ce5b3e70011242a2",
+      "old_bytes": 3578,
+      "old_content_sha256": "7520e9d229d819267e542b3ea14ed1b50fd6b92fa5a74d53ce5b3e70011242a2",
+      "scope": "matched_fresh_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "dd22d1d2afd1e265565d14f284947762efd9611a0da1a5aebb9af30b2cfdb3aa",
+      "old_rows": 30,
+      "old_sha256": "2870a074f565ac936fa3ba7ad1180cd05800f8f7247a19f8117bb825281303c5",
+      "scope": "matched_spoiled_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 592066,
+      "new_content_sha256": "62b4407420813e32aa9cbcc0e2c1659caf58d98b822297c52ea120912469a2af",
+      "old_bytes": 592066,
+      "old_content_sha256": "62b4407420813e32aa9cbcc0e2c1659caf58d98b822297c52ea120912469a2af",
+      "scope": "matched_spoiled_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 17719,
+      "new_content_sha256": "614757db398c034bc430ebf86a965cc5d71f01f37862d2df3136a251ec73c032",
+      "old_bytes": 17719,
+      "old_content_sha256": "614757db398c034bc430ebf86a965cc5d71f01f37862d2df3136a251ec73c032",
+      "scope": "matched_spoiled_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 12218,
+      "new_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "old_bytes": 12218,
+      "old_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "scope": "matched_spoiled_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "matched_spoiled_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3277,
+      "new_content_sha256": "8eb77855ac791a78619136312aee788d1f975d65221c3811fd4be0383b624b52",
+      "old_bytes": 3277,
+      "old_content_sha256": "8eb77855ac791a78619136312aee788d1f975d65221c3811fd4be0383b624b52",
+      "scope": "matched_spoiled_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "e42c2f7e3fadb79b923dfa4fe17d6c4de4f0a80b737d55fddd886ada3afef827",
+      "old_rows": 30,
+      "old_sha256": "7649d20120625083e56c6179447593cff0d226138003ac5eae58d8bf213f2bf1",
+      "scope": "matched_spoiled_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 609961,
+      "new_content_sha256": "30e0009934646f453082983d103d422056657db3a9c879afe570f87255f203c0",
+      "old_bytes": 609961,
+      "old_content_sha256": "30e0009934646f453082983d103d422056657db3a9c879afe570f87255f203c0",
+      "scope": "matched_spoiled_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 29449,
+      "new_content_sha256": "a3b0f0a59edf57ea821f4da7944738fefa2389df2f7c242068c3e5dd8755f8c4",
+      "old_bytes": 29449,
+      "old_content_sha256": "a3b0f0a59edf57ea821f4da7944738fefa2389df2f7c242068c3e5dd8755f8c4",
+      "scope": "matched_spoiled_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 12218,
+      "new_content_sha256": "d3a80d9b32e12d0def6fccf77e3a3f95f1f4ea208b88f3f9ad31914ac8f86051",
+      "old_bytes": 12218,
+      "old_content_sha256": "d3a80d9b32e12d0def6fccf77e3a3f95f1f4ea208b88f3f9ad31914ac8f86051",
+      "scope": "matched_spoiled_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15541,
+      "new_content_sha256": "367f0ce91ca35655d7fa6498c8f44571ebf0bcf1a9c916fa8f98c4e7d5b542b1",
+      "old_bytes": 15541,
+      "old_content_sha256": "367f0ce91ca35655d7fa6498c8f44571ebf0bcf1a9c916fa8f98c4e7d5b542b1",
+      "scope": "matched_spoiled_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3573,
+      "new_content_sha256": "1e53479b15f3c66444be9df4b7f75f6612cb1c87a69545d84be85ba66da74a6f",
+      "old_bytes": 3573,
+      "old_content_sha256": "1e53479b15f3c66444be9df4b7f75f6612cb1c87a69545d84be85ba66da74a6f",
+      "scope": "matched_spoiled_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "2ce727e61c4f3e94587e56e9df3c59ab651d14fbbf80bbdf39519d822596722d",
+      "old_rows": 30,
+      "old_sha256": "de23f13aedd4a1a811072b6591b2aac3f7b61db562de2bdb9db60e346cbc3cae",
+      "scope": "path_off_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 408180,
+      "new_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "old_bytes": 408180,
+      "old_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "scope": "path_off_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "path_off_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "path_off_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "path_off_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3714,
+      "new_content_sha256": "22dea7f7850ee6031f59ec3a498dbb0f23014a7448f2432a1a4cf0361f31eb8e",
+      "old_bytes": 3714,
+      "old_content_sha256": "22dea7f7850ee6031f59ec3a498dbb0f23014a7448f2432a1a4cf0361f31eb8e",
+      "scope": "path_off_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "9d721bb85c49caca17bc7d277618437e62e0898a1c31f0f716cba19ae50d6b23",
+      "old_rows": 30,
+      "old_sha256": "fd6d4a90e83e9145bf95ee1cd29cd1780a0fd6cb3cc83f6058a31da682747dbc",
+      "scope": "path_off_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 373817,
+      "new_content_sha256": "dbc5e76bee809032a399f5b1e0d76b3e7421b07671302784fe68653b4cdc9820",
+      "old_bytes": 373817,
+      "old_content_sha256": "dbc5e76bee809032a399f5b1e0d76b3e7421b07671302784fe68653b4cdc9820",
+      "scope": "path_off_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 27299,
+      "new_content_sha256": "f427240487d93c1a73d05fb581dd6c89214a9a5a28ceec0a5abfac6662c8a917",
+      "old_bytes": 27299,
+      "old_content_sha256": "f427240487d93c1a73d05fb581dd6c89214a9a5a28ceec0a5abfac6662c8a917",
+      "scope": "path_off_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 7538,
+      "new_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "old_bytes": 7538,
+      "old_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "scope": "path_off_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 18721,
+      "new_content_sha256": "ad115f2a30f4a00baf8273eec3cd69c1c8404f6896622dd26c553b29b4001d5b",
+      "old_bytes": 18721,
+      "old_content_sha256": "ad115f2a30f4a00baf8273eec3cd69c1c8404f6896622dd26c553b29b4001d5b",
+      "scope": "path_off_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3784,
+      "new_content_sha256": "38f62c778fedeca080a6db88622c9b1b2253cccb3bc0060aa7c7b0c22f7b46ad",
+      "old_bytes": 3784,
+      "old_content_sha256": "38f62c778fedeca080a6db88622c9b1b2253cccb3bc0060aa7c7b0c22f7b46ad",
+      "scope": "path_off_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "113e748a453daf80d7033ee39ae9101b39c06ff7f8919d33a304af8442bcb59c",
+      "old_rows": 30,
+      "old_sha256": "782159b62469976b80a407852e00d009aa23df736b83fb8651950e50401da900",
+      "scope": "path_on_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 417205,
+      "new_content_sha256": "4a04b9e4b3cde03a9e88626998e017d2832d1c540cd2498f3e905cfd6e625b9b",
+      "old_bytes": 417205,
+      "old_content_sha256": "4a04b9e4b3cde03a9e88626998e017d2832d1c540cd2498f3e905cfd6e625b9b",
+      "scope": "path_on_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15659,
+      "new_content_sha256": "6b9ea069bb9cd496b921ffcb7816679cc3138da67c59a3c91ccb9df02e0eb563",
+      "old_bytes": 15659,
+      "old_content_sha256": "6b9ea069bb9cd496b921ffcb7816679cc3138da67c59a3c91ccb9df02e0eb563",
+      "scope": "path_on_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "81129563095b3c078cdde534c4b19e2299e28d1e5ed9bb741a8efaefd311d4db",
+      "old_bytes": 6308,
+      "old_content_sha256": "81129563095b3c078cdde534c4b19e2299e28d1e5ed9bb741a8efaefd311d4db",
+      "scope": "path_on_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "path_on_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3712,
+      "new_content_sha256": "225991b700987d3c1e7158b0f1041fe89ba46025dac6d910506455a5e563f19b",
+      "old_bytes": 3712,
+      "old_content_sha256": "225991b700987d3c1e7158b0f1041fe89ba46025dac6d910506455a5e563f19b",
+      "scope": "path_on_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "d706fa812d8707651773ab5d735faf36380324ca69309ced034130332fca36c9",
+      "old_rows": 30,
+      "old_sha256": "e821e27a2a92e07c18032a89d47922d4639ccc3700e8e86adf7d704ecda83fc0",
+      "scope": "path_on_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 381920,
+      "new_content_sha256": "ace2b60b511e550d842fb31d440ca60df66eab939521208927c28bd5c015a5ad",
+      "old_bytes": 381920,
+      "old_content_sha256": "ace2b60b511e550d842fb31d440ca60df66eab939521208927c28bd5c015a5ad",
+      "scope": "path_on_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 27299,
+      "new_content_sha256": "293d8bac8f2ab502cab87e9d8e6eb5e7589f0faec52b117173950ecdcf849ded",
+      "old_bytes": 27299,
+      "old_content_sha256": "293d8bac8f2ab502cab87e9d8e6eb5e7589f0faec52b117173950ecdcf849ded",
+      "scope": "path_on_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 7538,
+      "new_content_sha256": "b00f20f75bc92fa6d950401b97b52e371b127c0336fe1b621b8c52a6b008f1c3",
+      "old_bytes": 7538,
+      "old_content_sha256": "b00f20f75bc92fa6d950401b97b52e371b127c0336fe1b621b8c52a6b008f1c3",
+      "scope": "path_on_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 18721,
+      "new_content_sha256": "7657a505a6f67a21769caa660faa152c6c36b39c34f6f0a3f16007fabbf7f6a5",
+      "old_bytes": 18721,
+      "old_content_sha256": "7657a505a6f67a21769caa660faa152c6c36b39c34f6f0a3f16007fabbf7f6a5",
+      "scope": "path_on_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3782,
+      "new_content_sha256": "a2cd942b4990dbacc14f29fa0444f67d7a2459b704ed2bc3c2cbce3f21372c30",
+      "old_bytes": 3782,
+      "old_content_sha256": "a2cd942b4990dbacc14f29fa0444f67d7a2459b704ed2bc3c2cbce3f21372c30",
+      "scope": "path_on_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "e6042a0de1f9d250fca49fe382947f82918ffc6451a9fa168b2757fc64d3a020",
+      "old_rows": 30,
+      "old_sha256": "1dc630027149d5daac67b9c7bf60b10b8148895f128da56e27ea7caf5b235b9d",
+      "scope": "short_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 408180,
+      "new_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "old_bytes": 408180,
+      "old_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "scope": "short_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "short_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "short_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "short_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3523,
+      "new_content_sha256": "523155bc06da51d1b9a737e333e743670a57db87ff23d1fb568ee19e390d9241",
+      "old_bytes": 3523,
+      "old_content_sha256": "523155bc06da51d1b9a737e333e743670a57db87ff23d1fb568ee19e390d9241",
+      "scope": "short_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "1bfbed437cbff367b23665065ec00a70f812795769361a66a93f981f1376bdc1",
+      "old_rows": 30,
+      "old_sha256": "2b3891853aeec415d562ee73d4290af97e83562777a56914b299fc31adf842d9",
+      "scope": "short_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 373817,
+      "new_content_sha256": "dbc5e76bee809032a399f5b1e0d76b3e7421b07671302784fe68653b4cdc9820",
+      "old_bytes": 373817,
+      "old_content_sha256": "dbc5e76bee809032a399f5b1e0d76b3e7421b07671302784fe68653b4cdc9820",
+      "scope": "short_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 27299,
+      "new_content_sha256": "f427240487d93c1a73d05fb581dd6c89214a9a5a28ceec0a5abfac6662c8a917",
+      "old_bytes": 27299,
+      "old_content_sha256": "f427240487d93c1a73d05fb581dd6c89214a9a5a28ceec0a5abfac6662c8a917",
+      "scope": "short_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 7538,
+      "new_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "old_bytes": 7538,
+      "old_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "scope": "short_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 18721,
+      "new_content_sha256": "ad115f2a30f4a00baf8273eec3cd69c1c8404f6896622dd26c553b29b4001d5b",
+      "old_bytes": 18721,
+      "old_content_sha256": "ad115f2a30f4a00baf8273eec3cd69c1c8404f6896622dd26c553b29b4001d5b",
+      "scope": "short_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3593,
+      "new_content_sha256": "edfbcbdd3ca6fcc3c889e6dd98eccda389947401a4afd0e11be932c9848f10bf",
+      "old_bytes": 3593,
+      "old_content_sha256": "edfbcbdd3ca6fcc3c889e6dd98eccda389947401a4afd0e11be932c9848f10bf",
+      "scope": "short_on/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "ab51fe3e30ef476c32a99c652366ac58d56fdf2044ca8c370925b3c3ebb6aff4",
+      "old_rows": 30,
+      "old_sha256": "871a0b62756a19e568c9d4b82e2e338dbe8f4eed551bcb48f762d7575005710f",
+      "scope": "unknown_route_off/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 408180,
+      "new_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "old_bytes": 408180,
+      "old_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "scope": "unknown_route_off/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "unknown_route_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "unknown_route_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "unknown_route_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3229,
+      "new_content_sha256": "e042dafb4fcc65a0131c7d8eabf9cda31d091032c172c2d58a4ab623c801ca03",
+      "old_bytes": 3229,
+      "old_content_sha256": "e042dafb4fcc65a0131c7d8eabf9cda31d091032c172c2d58a4ab623c801ca03",
+      "scope": "unknown_route_off/parameters.txt"
+    },
+    {
+      "comparison": "exact ordered CSV fields excluding runtime_ms values",
+      "new_rows": 30,
+      "new_sha256": "bbeb0240ccd7c6f204e7b4673c4c8da7eef1fb7930871948f71c7f3c47b0f57c",
+      "old_rows": 30,
+      "old_sha256": "83979c6292a38f907b1ea396ea539ae4667d47c1d31261f6c0287a45ae4a4fe6",
+      "scope": "unknown_route_on/runs.csv"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 393832,
+      "new_content_sha256": "cf2df29e36a6de10d031de514e8dbf6bf2a01807f06d4c99a24603cbd230b992",
+      "old_bytes": 393832,
+      "old_content_sha256": "cf2df29e36a6de10d031de514e8dbf6bf2a01807f06d4c99a24603cbd230b992",
+      "scope": "unknown_route_on/events.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 27329,
+      "new_content_sha256": "6b668819a0d837580d49561641ea94731533d685735fa8ec48ff78a7e49572ae",
+      "old_bytes": 27329,
+      "old_content_sha256": "6b668819a0d837580d49561641ea94731533d685735fa8ec48ff78a7e49572ae",
+      "scope": "unknown_route_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "unknown_route_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 18931,
+      "new_content_sha256": "01549fed8cd17b998cc5b1534b2712250380dea01bdb2bf70bae1f2b5018bce0",
+      "old_bytes": 18931,
+      "old_content_sha256": "01549fed8cd17b998cc5b1534b2712250380dea01bdb2bf70bae1f2b5018bce0",
+      "scope": "unknown_route_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "exact uncompressed bytes",
+      "new_bytes": 3299,
+      "new_content_sha256": "c7fdf955eca105abefd38e482bc51c9051928b71e6d78b9cbd17c3d1c66db7a9",
+      "old_bytes": 3299,
+      "old_content_sha256": "c7fdf955eca105abefd38e482bc51c9051928b71e6d78b9cbd17c3d1c66db7a9",
+      "scope": "unknown_route_on/parameters.txt"
+    }
+  ],
+  "differences": [],
+  "exception": "runtime_ms values only; CSV schema and all other fields remain exact",
+  "interpretation": "Every prescribed output matched apart from recorded runtime_ms values.",
+  "new_binary_sha256": "602cf411b498a51085566e851b65bada9000644c244121dfc1e673b0257c9c3d",
+  "new_panel": "research/kingdom-readiness/information-replay",
+  "new_provenance_sha256": "bad83a87dc80911183c140b77e0c20b8a10481336332c5667ffb281c1b9ec776",
+  "new_source_revision": "47533e2406bb6a008995888eafac06677ca48f45",
+  "old_binary_sha256": "11e0fc9179e758811dd566a38dfc82dfb36fcecdda3ee38248f03cc5b62df7d8",
+  "old_panel": "research/information/matrix",
+  "old_provenance_sha256": "cb782ebdcb8e37caf8174cb1b8780f35c9d3a7a4ed330028fd218d1a806f0d13",
+  "old_source_revision": "4c84081dd62b837c2798d72398b32ad3491da465",
+  "rows": {
+    "new": 840,
+    "old": 840
+  },
+  "status": "PASS",
+  "verifier_sha256": "c79a1bea782424570cf35b07efee4725ad515efd79dbceb2ddff70f0bbb00de3"
+}

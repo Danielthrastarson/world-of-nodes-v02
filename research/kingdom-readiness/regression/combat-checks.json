@@ -1,0 +1,2642 @@
+[
+  {
+    "arm": "undefended",
+    "case": "local",
+    "event_hash": "bd2ef30cf60e0112",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "fbaff2d64ef95c2c372a37c2043177b7531ffa154908ad2fc2515ad2f299b699",
+        "reference": "research/combat/matrix/local_undefended/activity.csv",
+        "reference_sha256": "4e42d765352b5c7a252ab818df6b0a30b0506731bca15802189f361fd6466d12",
+        "rows": 32,
+        "uncompressed_bytes": 740
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "fea8e02b3497a5fe039c230c6f84e682961fa01ec0734b6b725dd4b55e9b6ebb",
+        "reference": "research/combat/matrix/local_undefended/events.tsv.gz",
+        "reference_sha256": "22959ef51703cdf8cd460f55cab22648f5a7fc1103520cedf2c9d1747a2b123e",
+        "uncompressed_bytes": 1668930
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "8a8f0b5c6fc2a2f850ac0f3bc5a726dfb0181e1a6157c5db53d3cd8abbaa59b4",
+        "reference": "research/combat/matrix/local_undefended/goods.tsv.gz",
+        "reference_sha256": "7b1ffb13c49fe28bd0fa31230de5af234d87cd450de8d545d548c0b0c15aa742",
+        "uncompressed_bytes": 1742
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "241b0e10f8ffe38176a1cb930236f1f0a14d7b7328e4f3a1b3996d2b5a93ebbc",
+        "reference": "research/combat/matrix/local_undefended/people.csv",
+        "reference_sha256": "e1db3f75367bf584421ba1729457697183419e24efdbd6daff3d2e4dcf9c287d",
+        "rows": 9,
+        "uncompressed_bytes": 732
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "212f687e7df35e878660a21922a3fe0dc3d16c112dff84f44bd64a193a58d4f2",
+        "reference": "research/combat/matrix/local_undefended/runs.csv",
+        "reference_sha256": "78d649370f755c1b0777bbf8e9ce09d9da56501274856d966860effd85da6ada",
+        "rows": 1,
+        "uncompressed_bytes": 1787
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "29cc995b2166e65dd8cc6a5d07e54525f705ac677954690994931dd4c451fa18",
+        "reference": "research/combat/matrix/local_undefended/timeline.csv",
+        "reference_sha256": "1df8e7b9137506af19ca7d14d1eb194bf9b709a6628c912cfd14d2aa321c5ed5",
+        "rows": 92,
+        "uncompressed_bytes": 3449
+      }
+    },
+    "seed": 0,
+    "state_hash": "7025eced31dd2227"
+  },
+  {
+    "arm": "defended",
+    "case": "local",
+    "event_hash": "6af7bd36681e0893",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "aabb2bbb13c4ed1d6322a729cb3bb7ebfc5a40be4e338ba134c26692a0cf205d",
+        "reference": "research/combat/matrix/local_defended/activity.csv",
+        "reference_sha256": "831181146f9d4e153e823efee1f0c3b788cd63476a7fb703b306885a6cdf244e",
+        "rows": 37,
+        "uncompressed_bytes": 885
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "e600b5f71fdacb8540e20faf5737db4c1f01a2c67c6a196dbd2104ddf648214e",
+        "reference": "research/combat/matrix/local_defended/events.tsv.gz",
+        "reference_sha256": "13d462c84d2347395a3e4435312441785d21190d1a87339e7033f464afaf35f0",
+        "uncompressed_bytes": 1609904
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "884048220bb722b07cd9eafdcff564faf9f329ea55af1549df542872c68739f6",
+        "reference": "research/combat/matrix/local_defended/goods.tsv.gz",
+        "reference_sha256": "e7465a4bd5b900c8f6441cef851eac3a8ee17188f42be612a0650986cc892d22",
+        "uncompressed_bytes": 1470
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4de7dc0982a93f0dabc0b767ee5e67182eac1facdf53704176cb3597ded7ab28",
+        "reference": "research/combat/matrix/local_defended/people.csv",
+        "reference_sha256": "516976b137283f595d21d196a4e2b1cd4a885f93ea8f70bc0210fcede0266417",
+        "rows": 9,
+        "uncompressed_bytes": 720
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "e7b1bb251669c662e81c1b78729975c4eb68d4ac4e87fcbfd8f4e7b2876e9357",
+        "reference": "research/combat/matrix/local_defended/runs.csv",
+        "reference_sha256": "805546ccc80cecbec522d8bfe46a66d858652310ea213dd4f43aa663d35d9af7",
+        "rows": 1,
+        "uncompressed_bytes": 1772
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c3710561008c7b0d2f0c81e082d1f581fb4265979983be005a76a3fc59beed1c",
+        "reference": "research/combat/matrix/local_defended/timeline.csv",
+        "reference_sha256": "4039e423e3d4e21e8c6d592ad43f1eed23ba7d2d3c00abd46b430964a83fbce2",
+        "rows": 92,
+        "uncompressed_bytes": 3448
+      }
+    },
+    "seed": 0,
+    "state_hash": "0316e81c2cd8efb4"
+  },
+  {
+    "arm": "peace",
+    "case": "local",
+    "event_hash": "9335883c3999e080",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c74a94d930a585f7220df8786187a16eeb969f575e878dcac9a4bbd183f01e7e",
+        "reference": "research/combat/matrix/local_peace/activity.csv",
+        "reference_sha256": "5b7e738faa4e5ad993401830f1d4382da4cc7223d7732bea16aa5b1df491330c",
+        "rows": 26,
+        "uncompressed_bytes": 605
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "91d8ba8e87145d4b8c8179704b32c1c2ef2366b034de103e7d2aa8fa1379dee3",
+        "reference": "research/combat/matrix/local_peace/events.tsv.gz",
+        "reference_sha256": "717d4b99f4cfac17123bfb96ad7e9667940b3519de5128a3217cf70a43410c84",
+        "uncompressed_bytes": 1977327
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/local_peace/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "358181c18754da512557dc198ceec0ea277ce637c9dd35b0755d19af73fc4786",
+        "reference": "research/combat/matrix/local_peace/people.csv",
+        "reference_sha256": "b5345f177c3bc33f6358a5accc948ba26e670a65ca3b77c6d312d1e164041510",
+        "rows": 9,
+        "uncompressed_bytes": 723
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "32246465efbbf7c5f5e3579c9d275544054ca2635d3e084eb9ea2d6d9a7a860f",
+        "reference": "research/combat/matrix/local_peace/runs.csv",
+        "reference_sha256": "9189aa176db6b36acc37707b8596dd9dc57fc65bda39716d11e032495e5a6ecf",
+        "rows": 1,
+        "uncompressed_bytes": 1773
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "1e7098c11dd3f8b7aa832c0eb70d7d35786d5ece3516112bbb1b024455ba7807",
+        "reference": "research/combat/matrix/local_peace/timeline.csv",
+        "reference_sha256": "4dbb6757b8295ff7c338b45efca493e2f3890ee7c64ec5ba2e6d4abd9d38b477",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "c73de08fc74b2c65"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "local",
+    "event_hash": "09057f7d5d0e9761",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "a34c6a420246fece897f11f61ca69fb456694e8c23565e9232fd0e5ed99e49b6",
+        "reference": "research/combat/matrix/local_peace_defended/activity.csv",
+        "reference_sha256": "e49935725a6ae2752b01c901232ff5b1ff38702e310c63fd46a40494580f653b",
+        "rows": 28,
+        "uncompressed_bytes": 681
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "635307c4ffbf8250f3ff63bafa38c5a8f972edaa59f96dbd6d1bf91957ec8b7b",
+        "reference": "research/combat/matrix/local_peace_defended/events.tsv.gz",
+        "reference_sha256": "909f11af6975d824d405eacdeca9a7f579d1b94b4c9e9dccdeebba671352145d",
+        "uncompressed_bytes": 1974013
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/local_peace_defended/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "55695797484023b7cd9d3fe97439a5b0f7e643e362c52fddd63cb85b6bd2e67e",
+        "reference": "research/combat/matrix/local_peace_defended/people.csv",
+        "reference_sha256": "b86e64980c7fa6565d7bde5549633334aa2f30c2a8ea709b67cb81741a9fab34",
+        "rows": 9,
+        "uncompressed_bytes": 719
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "8bab04fe177f12641d6c81e4434716b9ff4cae250b9146cddb6633ef37b2d9c4",
+        "reference": "research/combat/matrix/local_peace_defended/runs.csv",
+        "reference_sha256": "fba5baefb8477d1bbbb9ea2ca480bad4013920c3229e9e5a119bc38c59007dba",
+        "rows": 1,
+        "uncompressed_bytes": 1751
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "acc6de0939e9246c0d57e003f99e187b9201443b22207ed2ca57e7dec378ccdf",
+        "reference": "research/combat/matrix/local_peace_defended/timeline.csv",
+        "reference_sha256": "5ed537af405be3d345839f788e2eef6e82da04654d1524e043681601fa29f495",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "b408e0fad6e6f8d3"
+  },
+  {
+    "arm": "undefended",
+    "case": "under",
+    "event_hash": "bd2ef30cf60e0112",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "fbaff2d64ef95c2c372a37c2043177b7531ffa154908ad2fc2515ad2f299b699",
+        "reference": "research/combat/matrix/under_undefended/activity.csv",
+        "reference_sha256": "4e42d765352b5c7a252ab818df6b0a30b0506731bca15802189f361fd6466d12",
+        "rows": 32,
+        "uncompressed_bytes": 740
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "fea8e02b3497a5fe039c230c6f84e682961fa01ec0734b6b725dd4b55e9b6ebb",
+        "reference": "research/combat/matrix/under_undefended/events.tsv.gz",
+        "reference_sha256": "22959ef51703cdf8cd460f55cab22648f5a7fc1103520cedf2c9d1747a2b123e",
+        "uncompressed_bytes": 1668930
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "8a8f0b5c6fc2a2f850ac0f3bc5a726dfb0181e1a6157c5db53d3cd8abbaa59b4",
+        "reference": "research/combat/matrix/under_undefended/goods.tsv.gz",
+        "reference_sha256": "7b1ffb13c49fe28bd0fa31230de5af234d87cd450de8d545d548c0b0c15aa742",
+        "uncompressed_bytes": 1742
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "241b0e10f8ffe38176a1cb930236f1f0a14d7b7328e4f3a1b3996d2b5a93ebbc",
+        "reference": "research/combat/matrix/under_undefended/people.csv",
+        "reference_sha256": "e1db3f75367bf584421ba1729457697183419e24efdbd6daff3d2e4dcf9c287d",
+        "rows": 9,
+        "uncompressed_bytes": 732
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "f417936b76ceb90979a4267f4c068c9fb5065c13c6e23fe2fee094fd06facb11",
+        "reference": "research/combat/matrix/under_undefended/runs.csv",
+        "reference_sha256": "f1d27c4baa22f4877e1e58d5497ea37324d334dcb2e254a849702b28968f3d9d",
+        "rows": 1,
+        "uncompressed_bytes": 1787
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "29cc995b2166e65dd8cc6a5d07e54525f705ac677954690994931dd4c451fa18",
+        "reference": "research/combat/matrix/under_undefended/timeline.csv",
+        "reference_sha256": "1df8e7b9137506af19ca7d14d1eb194bf9b709a6628c912cfd14d2aa321c5ed5",
+        "rows": 92,
+        "uncompressed_bytes": 3449
+      }
+    },
+    "seed": 0,
+    "state_hash": "f89f9474ffc3eace"
+  },
+  {
+    "arm": "defended",
+    "case": "under",
+    "event_hash": "548392cc764d800e",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "6b6aa72ade6d17837426bad9852f07255d9e38deae42de7e3362cf802126c1f1",
+        "reference": "research/combat/matrix/under_defended/activity.csv",
+        "reference_sha256": "158c44b6aa82eeb3352ca61f263ae85a36e54c9263d816f632348f1b80978b65",
+        "rows": 35,
+        "uncompressed_bytes": 814
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "5ea120d20d0dddd4d87282af5ce8c6701c673a1897d469c64325b43015390417",
+        "reference": "research/combat/matrix/under_defended/events.tsv.gz",
+        "reference_sha256": "b38667f69faf29225eb6846b8a9e0967352a3a2c9850be279aaa98e922722b5b",
+        "uncompressed_bytes": 1442840
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "77065a2aa282ab84468f0e6bba72ea75c1de135236418019fa1d682211088844",
+        "reference": "research/combat/matrix/under_defended/goods.tsv.gz",
+        "reference_sha256": "4ac39fe536dd630f8a03b96fb9a5829d88ec259f6a28e7fbed268ae15f7a3d97",
+        "uncompressed_bytes": 1875
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "fe961c4303eb5d31bde2f9847d3eb71d33b8821202be1131524b669fc954a38d",
+        "reference": "research/combat/matrix/under_defended/people.csv",
+        "reference_sha256": "6983fb5bc5334dedcd7da942b74ef6285799f25e1a5cc45b19dfba14e43176e9",
+        "rows": 9,
+        "uncompressed_bytes": 780
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "355bfffb98ee702f37e1b142f0fc7154bb2f69365517a068ccf432747b7b0ca0",
+        "reference": "research/combat/matrix/under_defended/runs.csv",
+        "reference_sha256": "92889410719e345bf56259a0ad340ffe5b5fa08ab3ad7c44e55bf623a87075f6",
+        "rows": 1,
+        "uncompressed_bytes": 1858
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "6d8809b0cc3505b462ca0545109162de02338f383839bec3654952d35bb85483",
+        "reference": "research/combat/matrix/under_defended/timeline.csv",
+        "reference_sha256": "607862aae3fc6631ec2ea68e185fe8195bb69eb9806344418720239faedaa8a3",
+        "rows": 92,
+        "uncompressed_bytes": 3448
+      }
+    },
+    "seed": 0,
+    "state_hash": "0056f75d94709af5"
+  },
+  {
+    "arm": "peace",
+    "case": "under",
+    "event_hash": "9335883c3999e080",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c74a94d930a585f7220df8786187a16eeb969f575e878dcac9a4bbd183f01e7e",
+        "reference": "research/combat/matrix/under_peace/activity.csv",
+        "reference_sha256": "5b7e738faa4e5ad993401830f1d4382da4cc7223d7732bea16aa5b1df491330c",
+        "rows": 26,
+        "uncompressed_bytes": 605
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "91d8ba8e87145d4b8c8179704b32c1c2ef2366b034de103e7d2aa8fa1379dee3",
+        "reference": "research/combat/matrix/under_peace/events.tsv.gz",
+        "reference_sha256": "717d4b99f4cfac17123bfb96ad7e9667940b3519de5128a3217cf70a43410c84",
+        "uncompressed_bytes": 1977327
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/under_peace/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "358181c18754da512557dc198ceec0ea277ce637c9dd35b0755d19af73fc4786",
+        "reference": "research/combat/matrix/under_peace/people.csv",
+        "reference_sha256": "b5345f177c3bc33f6358a5accc948ba26e670a65ca3b77c6d312d1e164041510",
+        "rows": 9,
+        "uncompressed_bytes": 723
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "761264e3dcc3e662b2e53a76141d2537bebaf748cccf3450236f4eceb544eb79",
+        "reference": "research/combat/matrix/under_peace/runs.csv",
+        "reference_sha256": "e27d17958af22340e2b3a233654a6f7cd736d0f662050822d9bafdc32042923a",
+        "rows": 1,
+        "uncompressed_bytes": 1773
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "1e7098c11dd3f8b7aa832c0eb70d7d35786d5ece3516112bbb1b024455ba7807",
+        "reference": "research/combat/matrix/under_peace/timeline.csv",
+        "reference_sha256": "4dbb6757b8295ff7c338b45efca493e2f3890ee7c64ec5ba2e6d4abd9d38b477",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "0a381445afa8d3ec"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "under",
+    "event_hash": "ff8d1759ccbb160f",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "b4bc96281e4beead557913c777895bba2314361bba488ebc4ade0b0d7ac7d20c",
+        "reference": "research/combat/matrix/under_peace_defended/activity.csv",
+        "reference_sha256": "50d46dc8fdae7026739b03a52393b51a7f014f6b0276b42ebed558ffbc5b879f",
+        "rows": 26,
+        "uncompressed_bytes": 613
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "207ca74408ab0384a722a620062e6135b8f52203092bb1ba44edb2e5bf5b16b4",
+        "reference": "research/combat/matrix/under_peace_defended/events.tsv.gz",
+        "reference_sha256": "c0fbac5b7682552cec21d52486de6839e13b42590f3d634649b708c320d39ae7",
+        "uncompressed_bytes": 1976366
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/under_peace_defended/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "85206f7c8712f4d7466ec3a834f90fca4fc154df02c5273c74c640278934806a",
+        "reference": "research/combat/matrix/under_peace_defended/people.csv",
+        "reference_sha256": "bf91682c27d2aadc97af2c10402fcded0ab53bb9de72e6ce949e68db740da83b",
+        "rows": 9,
+        "uncompressed_bytes": 722
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c56d2521b3b7660c71cd21e28c7a173d21c406786c453638a76eec4873086ddc",
+        "reference": "research/combat/matrix/under_peace_defended/runs.csv",
+        "reference_sha256": "ae65933f1deb009e8d8003261be05402a8969a62ca3bc348f42fb24fb0fd1e4e",
+        "rows": 1,
+        "uncompressed_bytes": 1785
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "52f87e7995d7c5250d8c297fe1f17d1352287925a92375f10f0accd01590c5e2",
+        "reference": "research/combat/matrix/under_peace_defended/timeline.csv",
+        "reference_sha256": "65f11bac02efb57bf24696895703cff9369c844ff33db394fe199dd78d87d546",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "25d899bed95255ce"
+  },
+  {
+    "arm": "undefended",
+    "case": "over",
+    "event_hash": "bd2ef30cf60e0112",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "fbaff2d64ef95c2c372a37c2043177b7531ffa154908ad2fc2515ad2f299b699",
+        "reference": "research/combat/matrix/over_undefended/activity.csv",
+        "reference_sha256": "4e42d765352b5c7a252ab818df6b0a30b0506731bca15802189f361fd6466d12",
+        "rows": 32,
+        "uncompressed_bytes": 740
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "fea8e02b3497a5fe039c230c6f84e682961fa01ec0734b6b725dd4b55e9b6ebb",
+        "reference": "research/combat/matrix/over_undefended/events.tsv.gz",
+        "reference_sha256": "22959ef51703cdf8cd460f55cab22648f5a7fc1103520cedf2c9d1747a2b123e",
+        "uncompressed_bytes": 1668930
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "8a8f0b5c6fc2a2f850ac0f3bc5a726dfb0181e1a6157c5db53d3cd8abbaa59b4",
+        "reference": "research/combat/matrix/over_undefended/goods.tsv.gz",
+        "reference_sha256": "7b1ffb13c49fe28bd0fa31230de5af234d87cd450de8d545d548c0b0c15aa742",
+        "uncompressed_bytes": 1742
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "241b0e10f8ffe38176a1cb930236f1f0a14d7b7328e4f3a1b3996d2b5a93ebbc",
+        "reference": "research/combat/matrix/over_undefended/people.csv",
+        "reference_sha256": "e1db3f75367bf584421ba1729457697183419e24efdbd6daff3d2e4dcf9c287d",
+        "rows": 9,
+        "uncompressed_bytes": 732
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "34dd8b08fc4d12b42e7ad4ff7a6a82acd741bd12f41e7eb8cad09fc520382366",
+        "reference": "research/combat/matrix/over_undefended/runs.csv",
+        "reference_sha256": "2e8a64051a8d441482bb13a23e7b3ecfbd6e02cf0e9a3ae8337790f8b2789e01",
+        "rows": 1,
+        "uncompressed_bytes": 1786
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "29cc995b2166e65dd8cc6a5d07e54525f705ac677954690994931dd4c451fa18",
+        "reference": "research/combat/matrix/over_undefended/timeline.csv",
+        "reference_sha256": "1df8e7b9137506af19ca7d14d1eb194bf9b709a6628c912cfd14d2aa321c5ed5",
+        "rows": 92,
+        "uncompressed_bytes": 3449
+      }
+    },
+    "seed": 0,
+    "state_hash": "b3cf9e6e0db4ad09"
+  },
+  {
+    "arm": "defended",
+    "case": "over",
+    "event_hash": "fda0e0db6e5917ae",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "b4ee387007c3c64222fde1c0fb0dc57822043d2f8a6a01271f1f0bc060cd21b6",
+        "reference": "research/combat/matrix/over_defended/activity.csv",
+        "reference_sha256": "354254b6ad450a3c8a3f2e01b35da6738390c5afefc793323d518972e678b777",
+        "rows": 41,
+        "uncompressed_bytes": 987
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "c592ffd1aef32deafeb07448da629690850e72582d9cf8a17e434695beb71dec",
+        "reference": "research/combat/matrix/over_defended/events.tsv.gz",
+        "reference_sha256": "f0cb203b14b89587f508b01b0f224e6842cb764cbdfa44d0fcb2d81863071d49",
+        "uncompressed_bytes": 1619612
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "884048220bb722b07cd9eafdcff564faf9f329ea55af1549df542872c68739f6",
+        "reference": "research/combat/matrix/over_defended/goods.tsv.gz",
+        "reference_sha256": "e7465a4bd5b900c8f6441cef851eac3a8ee17188f42be612a0650986cc892d22",
+        "uncompressed_bytes": 1470
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "33acfe19076010f1ccdb5df71d7eda4ce87edf782e4db0ec47890f3da2f9163d",
+        "reference": "research/combat/matrix/over_defended/people.csv",
+        "reference_sha256": "e672c56d121a9cac16831ff84d1c80b8eb0bef039634bade18af3101177115b6",
+        "rows": 9,
+        "uncompressed_bytes": 718
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "d2001e52f9c680f90041fc525ca871065181c779c611e09143d8c363041d3cb4",
+        "reference": "research/combat/matrix/over_defended/runs.csv",
+        "reference_sha256": "357c6a18e1214330dadcf23ca2a3b7340c648c227135df29b4595b02f0768535",
+        "rows": 1,
+        "uncompressed_bytes": 1755
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "cdd769b858c51c30b438213493e01f2ecd58bb05e3b012f674d9137424975b52",
+        "reference": "research/combat/matrix/over_defended/timeline.csv",
+        "reference_sha256": "a88986cd2c32ebafd181f92d82aeb5596fbfd538df8d08d130b856dd22101ce3",
+        "rows": 92,
+        "uncompressed_bytes": 3448
+      }
+    },
+    "seed": 0,
+    "state_hash": "c52cc68de911ad3b"
+  },
+  {
+    "arm": "peace",
+    "case": "over",
+    "event_hash": "9335883c3999e080",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c74a94d930a585f7220df8786187a16eeb969f575e878dcac9a4bbd183f01e7e",
+        "reference": "research/combat/matrix/over_peace/activity.csv",
+        "reference_sha256": "5b7e738faa4e5ad993401830f1d4382da4cc7223d7732bea16aa5b1df491330c",
+        "rows": 26,
+        "uncompressed_bytes": 605
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "91d8ba8e87145d4b8c8179704b32c1c2ef2366b034de103e7d2aa8fa1379dee3",
+        "reference": "research/combat/matrix/over_peace/events.tsv.gz",
+        "reference_sha256": "717d4b99f4cfac17123bfb96ad7e9667940b3519de5128a3217cf70a43410c84",
+        "uncompressed_bytes": 1977327
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/over_peace/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "358181c18754da512557dc198ceec0ea277ce637c9dd35b0755d19af73fc4786",
+        "reference": "research/combat/matrix/over_peace/people.csv",
+        "reference_sha256": "b5345f177c3bc33f6358a5accc948ba26e670a65ca3b77c6d312d1e164041510",
+        "rows": 9,
+        "uncompressed_bytes": 723
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "75fb4dc15baf18dea832e09e86086c075e5516d9af2924915c8dd1ad841efb9d",
+        "reference": "research/combat/matrix/over_peace/runs.csv",
+        "reference_sha256": "d84f8414261e2ce78a86c29d6737680f1d147fac0f5d9dca409be6e0bb758abb",
+        "rows": 1,
+        "uncompressed_bytes": 1772
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "1e7098c11dd3f8b7aa832c0eb70d7d35786d5ece3516112bbb1b024455ba7807",
+        "reference": "research/combat/matrix/over_peace/timeline.csv",
+        "reference_sha256": "4dbb6757b8295ff7c338b45efca493e2f3890ee7c64ec5ba2e6d4abd9d38b477",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "a388fb30edc85763"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "over",
+    "event_hash": "4eea5895d7d26558",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "0149d2f8ea8dabe31c6a977e72bbbbe0485d28d0189f2f2bed8ec927a62ed555",
+        "reference": "research/combat/matrix/over_peace_defended/activity.csv",
+        "reference_sha256": "896f468bc5c630bf74646eb08424b700a887309156126a56af43476f2bd02dfe",
+        "rows": 32,
+        "uncompressed_bytes": 783
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "6f97bf1f5c2500b4c5956fff61f799883b1d6bb062ff429f42682e9802e20bea",
+        "reference": "research/combat/matrix/over_peace_defended/events.tsv.gz",
+        "reference_sha256": "56afd24daa3dda294953ada552116284957787f584b9a1d4b24073ae2e7266f2",
+        "uncompressed_bytes": 1983721
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/over_peace_defended/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "9c5435b8cd20b014d021adc9aadbdc2007980b3032ce1399cc911cf55249ba84",
+        "reference": "research/combat/matrix/over_peace_defended/people.csv",
+        "reference_sha256": "75d5704b9ba0adedd6e227e782a989f0bf3844336d3e8d9b828d9884a1cdf06b",
+        "rows": 9,
+        "uncompressed_bytes": 717
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "d248a3ff0a6508f0e4a0e4bf7be942917391ff80c6154ade40aaf9e3f0bc5948",
+        "reference": "research/combat/matrix/over_peace_defended/runs.csv",
+        "reference_sha256": "45ff6b485627fc6a62c97dc2619e537bac997a05009e0a9863c046bb188e2e2c",
+        "rows": 1,
+        "uncompressed_bytes": 1734
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "a1ebeb682227c674e890ebbfd4556f13673b9cdf8e7a0eb4a3e47b4360b40da9",
+        "reference": "research/combat/matrix/over_peace_defended/timeline.csv",
+        "reference_sha256": "13f39fa29162931801b2b5990353a4919c6364889805b269af2c22d52f3f2854",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "07b2e5c75c375fb8"
+  },
+  {
+    "arm": "undefended",
+    "case": "late",
+    "event_hash": "3dff8766327eb434",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "90fa91bc49afb929b6318d1d85790088c6099847329587d3695ddbb8b8189067",
+        "reference": "research/combat/matrix/late_undefended/activity.csv",
+        "reference_sha256": "a85dcda119c7d1ba376260fad0efc9324758f15b68ca54c9e2162908e9d9f5e0",
+        "rows": 26,
+        "uncompressed_bytes": 610
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "1df918be5f88c0007271fbdbb087e3332b8d3cebb15fb0445bb20bb7192487ad",
+        "reference": "research/combat/matrix/late_undefended/events.tsv.gz",
+        "reference_sha256": "31b2d5232ed27c4e58073fe9f703b849f9eea23b027bf20985f3c5a2596b6991",
+        "uncompressed_bytes": 1409326
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "ebc41c65da01b2857d7cf7579de08557bdc1de9ea2206b847b25eabbae76a8d7",
+        "reference": "research/combat/matrix/late_undefended/goods.tsv.gz",
+        "reference_sha256": "4174a5b0c42679a1920a9fd9eb38bed821f9664734c076af1efc7d7ad2e8dd90",
+        "uncompressed_bytes": 1742
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "402339eebacdbae3f7179ceb225566c8c726c1beae2c1cfa21e7dc7eb03ecb2b",
+        "reference": "research/combat/matrix/late_undefended/people.csv",
+        "reference_sha256": "2ee810cea31612d8bb7045147b0be530810186b3349f0b8d70db34b89c442a3e",
+        "rows": 9,
+        "uncompressed_bytes": 924
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "d8eb3a54b73a49589e05dacd266cf67ec35320b1a5d76d0bf655b72847968cd3",
+        "reference": "research/combat/matrix/late_undefended/runs.csv",
+        "reference_sha256": "cddc04c99e8574e70417052480ee4353c52d71dc2223a0d6add407de671c81fc",
+        "rows": 1,
+        "uncompressed_bytes": 1786
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4a41e3a65d3199b1d7535dc5aa6143253b1267c12ece2c19009d0788599802b1",
+        "reference": "research/combat/matrix/late_undefended/timeline.csv",
+        "reference_sha256": "20326d0eadbbe956483195a76d6f13b4df63442432d3ae94c0743dc43814a4fb",
+        "rows": 92,
+        "uncompressed_bytes": 3449
+      }
+    },
+    "seed": 0,
+    "state_hash": "5cca1127d608134e"
+  },
+  {
+    "arm": "defended",
+    "case": "late",
+    "event_hash": "bbe700f0a1f77db4",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "0191d9766075548be48d87bce16ada64db6d55b32af3ff623898fc96a2321022",
+        "reference": "research/combat/matrix/late_defended/activity.csv",
+        "reference_sha256": "3c99934b8d8341ee792ba4adff7c8010bc6f0ebb92866c21e7b725b560514204",
+        "rows": 32,
+        "uncompressed_bytes": 770
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "b32d6a343b7fe70746a6e88edc7993a78b5584d968618533f20b41ba875cc7fc",
+        "reference": "research/combat/matrix/late_defended/events.tsv.gz",
+        "reference_sha256": "c28bb8e634c8b738ad5e6ec9aa63621e81ad1b60542227cff1a26a3a33d8dab9",
+        "uncompressed_bytes": 1256238
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "830288ec8f4293374a3952b55886a910547b7141bf55b664bc0aeaac5fffd389",
+        "reference": "research/combat/matrix/late_defended/goods.tsv.gz",
+        "reference_sha256": "b7ef5a1b697dadfa9169a4da5efa3e8e7b4c8c8d86472249cc9c879d6f12fdaa",
+        "uncompressed_bytes": 1742
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "18175f191b1df3d663ef4c4ec4f726e5104d27ee8450a9e82edf1432e8b44f6c",
+        "reference": "research/combat/matrix/late_defended/people.csv",
+        "reference_sha256": "c7d2c7f0f3ec626fcccb684c977cb8421c22ec2ad23b7ab2793a975da7b92272",
+        "rows": 9,
+        "uncompressed_bytes": 826
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "8e10d6452e7882007051aa53307d2a08ae2d376fb4866991c721634af14d86d6",
+        "reference": "research/combat/matrix/late_defended/runs.csv",
+        "reference_sha256": "068f3acc52f1f16dcc045e56302d23bf64512dbab6800e5706891c15a4231f33",
+        "rows": 1,
+        "uncompressed_bytes": 1768
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "7a5b429086878c9787cca42ec9db163fe306270d32ca0456a97fb2e73bbf109f",
+        "reference": "research/combat/matrix/late_defended/timeline.csv",
+        "reference_sha256": "c5b5584c04283f69e2b16246fb1ba5406dd8f1d5e84a0f3ca03048213f253ab2",
+        "rows": 92,
+        "uncompressed_bytes": 3449
+      }
+    },
+    "seed": 0,
+    "state_hash": "1aba7d67eed8e3d8"
+  },
+  {
+    "arm": "peace",
+    "case": "late",
+    "event_hash": "ffe677d2538b5883",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "5107c61a47dd96b958bdaa35e17bd552c9206713ec938e3dfda3f5fc85fc5e28",
+        "reference": "research/combat/matrix/late_peace/activity.csv",
+        "reference_sha256": "c1663f21dcd4b116a1fe4f3f83ca1bd307f02ab3a738db4d8d16258751adc898",
+        "rows": 20,
+        "uncompressed_bytes": 475
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bb24e69ef1e4401aaaac3b9278138b243747986c70049f65b17b316e38212090",
+        "reference": "research/combat/matrix/late_peace/events.tsv.gz",
+        "reference_sha256": "34aedac9555918fa6c2998deeac115fc143c4e4b8b0431c33839b221f98c54c8",
+        "uncompressed_bytes": 1717723
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "33511a37f2cfeeaa6b07f93db74141d6bf7a526929e7181a49ed813f3e25d753",
+        "reference": "research/combat/matrix/late_peace/goods.tsv.gz",
+        "reference_sha256": "7e5e65b64c4efb4237d2ca0f9d8549722507d2c07d4e149c49ab9fc3cf9ab6fd",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "7b03fb1466adc838d40e11636f04ee42fe665dc70b3e24e05492a69f669f785c",
+        "reference": "research/combat/matrix/late_peace/people.csv",
+        "reference_sha256": "8cb719ef590f41e8b61a0805eadc704f4f0d0d07053ce5828b89cdbde717547c",
+        "rows": 9,
+        "uncompressed_bytes": 915
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "e6cea020dee92e5a60bfd330574f6bb83fc273387e784133276c4255c9ce9743",
+        "reference": "research/combat/matrix/late_peace/runs.csv",
+        "reference_sha256": "b17d99b00bd911dc266cf098e6213fa11b41fb360283a406b81d72bc3e1eff48",
+        "rows": 1,
+        "uncompressed_bytes": 1772
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "5cde157bca258eab138030634d43f2bcf4ef9b7e99a1377ef387067ae5cae349",
+        "reference": "research/combat/matrix/late_peace/timeline.csv",
+        "reference_sha256": "55beca0f2b3088e1d41d8cd36a4c780eed019541ae28e4c846bfce047854db9b",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "87002599342d779d"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "late",
+    "event_hash": "e1cdae2ee6bb234d",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "da98ee38f84999daf5fde7390d8b5f86439f8c0cf541e2778c6822c7ef999bce",
+        "reference": "research/combat/matrix/late_peace_defended/activity.csv",
+        "reference_sha256": "43ede3cefe48bc862d2de741ebb38440c2f235901865683452bf203530a0290b",
+        "rows": 26,
+        "uncompressed_bytes": 635
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "2cd340f85117e85e8e06bbbd367661db51e63f64011153e259678a436f4f9b0a",
+        "reference": "research/combat/matrix/late_peace_defended/events.tsv.gz",
+        "reference_sha256": "a5b78ab12bad48c22c6ad0e288a790228344f89963f398bac07a7a4fa4d35c95",
+        "uncompressed_bytes": 1564531
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "07da024f639cb030bde5be7b78b5bd8e2ed614ba1656783850880eac98083e1a",
+        "reference": "research/combat/matrix/late_peace_defended/goods.tsv.gz",
+        "reference_sha256": "d555b154ace03ca4bd5566d2f07888a396b9cad2ed6c86aec6df9a6cdd2a166b",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "3faeff57798e37de768eac5e7f3df89c6ac04d77938b6332ac367b6b7f081d57",
+        "reference": "research/combat/matrix/late_peace_defended/people.csv",
+        "reference_sha256": "0a42ddb684e57ed554ec8c7b811e384e3d39c6cc4c1e876176d66a017910fe25",
+        "rows": 9,
+        "uncompressed_bytes": 817
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "e7bb0e70216d94f0add8f171c3618bf86c6329a5b7ba41ed03f7e53a6e98b6ce",
+        "reference": "research/combat/matrix/late_peace_defended/runs.csv",
+        "reference_sha256": "6f4b689ca9316ec63a52ba8cadaf6b810393ac1a633b484475adea11fea50884",
+        "rows": 1,
+        "uncompressed_bytes": 1766
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "f1f2577704a18581cf1e7ab9dcebbf35aa3c20fa900d82abc179788d418e452a",
+        "reference": "research/combat/matrix/late_peace_defended/timeline.csv",
+        "reference_sha256": "830f263925040f111e7a0abc6d10adcdcd7df7d02f69a9cab7a07f1a3a35b8fc",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "15175624faff6847"
+  },
+  {
+    "arm": "undefended",
+    "case": "bottleneck",
+    "event_hash": "5b6e7e8537513d30",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "7d4b93057b732b7cb796e8fcdb30468d8e700322bea8bd39e955f5bbc1c3be5d",
+        "reference": "research/combat/matrix/bottleneck_undefended/activity.csv",
+        "reference_sha256": "27d473a9503d5427884e43e457c85f41ffa0c2115c2ced077fc5c37f3bf5f70d",
+        "rows": 35,
+        "uncompressed_bytes": 802
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "167f0198d284014aa1f6a601f7074022d66624ff13e49b8ab987726d2278ecfb",
+        "reference": "research/combat/matrix/bottleneck_undefended/events.tsv.gz",
+        "reference_sha256": "66aecd68faf0a734e1d0693fd6d48c51a63d225622b2a5cd15d8c6fa3af60bd5",
+        "uncompressed_bytes": 1819362
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "f08d6a6c0f804e58116f2d25c595dd467644fc1b1ef2b88f0b575575867f9acd",
+        "reference": "research/combat/matrix/bottleneck_undefended/goods.tsv.gz",
+        "reference_sha256": "7727c44a02273356d2d00592c8f94580a6430f3792b6621db5f10c65484f0741",
+        "uncompressed_bytes": 1742
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "3ce11ad45cf112f6688a2c3d34e0a3163dde38c8d95f1cf0e165cfaa69e267a9",
+        "reference": "research/combat/matrix/bottleneck_undefended/people.csv",
+        "reference_sha256": "23e63f4f1ccee36ef90819be7516104898c10ef9f572dbcafa4ce13c977156a1",
+        "rows": 9,
+        "uncompressed_bytes": 782
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "92b7b13c3138ce9a930a159778c5b2377cdb55b37895f269b8f69effdc2311e3",
+        "reference": "research/combat/matrix/bottleneck_undefended/runs.csv",
+        "reference_sha256": "86d0f37e2daa41b9cc069c25351530be6296b6283de8719ad93ed267ce5c4a11",
+        "rows": 1,
+        "uncompressed_bytes": 1853
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "0b8a59a15887e5a7c75273198c6bf7db76c7961f9b58c4ce100aa6d2bd58d01f",
+        "reference": "research/combat/matrix/bottleneck_undefended/timeline.csv",
+        "reference_sha256": "1134c9057291a4c20c4d7bebea9d319f7052a7dc4dd6c99f47a312f94309dd3b",
+        "rows": 92,
+        "uncompressed_bytes": 3434
+      }
+    },
+    "seed": 0,
+    "state_hash": "c38fcc7954b0757b"
+  },
+  {
+    "arm": "defended",
+    "case": "bottleneck",
+    "event_hash": "0b7135368f37a4bd",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "2ba255e771e20b486e0ebae696a1a354ff44cd9e109e96366a510335e069e61d",
+        "reference": "research/combat/matrix/bottleneck_defended/activity.csv",
+        "reference_sha256": "42ee80099b7fe4d3902658f29f41f2bdf39cfa9c4cf28af7944d29855b8ceeb2",
+        "rows": 38,
+        "uncompressed_bytes": 905
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "2f76fe5d0f2ab3bf184e5bcf319733fc7e4a208054a976c2aa7e03bd9e757f33",
+        "reference": "research/combat/matrix/bottleneck_defended/events.tsv.gz",
+        "reference_sha256": "751ead700c60a3a9a499b5951cc71b644a785f2009acf4b5b7c20047aa4e8ee7",
+        "uncompressed_bytes": 1508366
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "06573cf802731ccde0ae23ea8b53688d1b386a89360456a2bc979b230aa9aad8",
+        "reference": "research/combat/matrix/bottleneck_defended/goods.tsv.gz",
+        "reference_sha256": "d503b59a8b3dd5b1d042e37a28c2c8d73b7eaa6a3f76e6e97186f8849e9d8af7",
+        "uncompressed_bytes": 1603
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "bdd0962bf27e0577a513f71e52e7b2e9882dd193cdb61faafbf0d07cec17f6f2",
+        "reference": "research/combat/matrix/bottleneck_defended/people.csv",
+        "reference_sha256": "07430ccce340936deaaf87e8bf800e527bf4dde3be615852959754182dd09c46",
+        "rows": 9,
+        "uncompressed_bytes": 722
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "944115e655b05feb551974a2d273e8e7b452ba0a300c4ff5faa8b69375d454b1",
+        "reference": "research/combat/matrix/bottleneck_defended/runs.csv",
+        "reference_sha256": "3bbe714ccf76de82f660290f80689ca8a4d530007d0f9f55644d31e13e0b2bd6",
+        "rows": 1,
+        "uncompressed_bytes": 1820
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "2926459acd42e9808dd881678e7921a75713928e63d80d440bbd10c0e69c4d6e",
+        "reference": "research/combat/matrix/bottleneck_defended/timeline.csv",
+        "reference_sha256": "08ec499f1341c938798d426a27d333062ff4f16d3d20416773b54d5ddd1eedf3",
+        "rows": 92,
+        "uncompressed_bytes": 3433
+      }
+    },
+    "seed": 0,
+    "state_hash": "ce148f69cf3483ea"
+  },
+  {
+    "arm": "peace",
+    "case": "bottleneck",
+    "event_hash": "9335883c3999e080",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c74a94d930a585f7220df8786187a16eeb969f575e878dcac9a4bbd183f01e7e",
+        "reference": "research/combat/matrix/bottleneck_peace/activity.csv",
+        "reference_sha256": "5b7e738faa4e5ad993401830f1d4382da4cc7223d7732bea16aa5b1df491330c",
+        "rows": 26,
+        "uncompressed_bytes": 605
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "91d8ba8e87145d4b8c8179704b32c1c2ef2366b034de103e7d2aa8fa1379dee3",
+        "reference": "research/combat/matrix/bottleneck_peace/events.tsv.gz",
+        "reference_sha256": "717d4b99f4cfac17123bfb96ad7e9667940b3519de5128a3217cf70a43410c84",
+        "uncompressed_bytes": 1977327
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/bottleneck_peace/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "358181c18754da512557dc198ceec0ea277ce637c9dd35b0755d19af73fc4786",
+        "reference": "research/combat/matrix/bottleneck_peace/people.csv",
+        "reference_sha256": "b5345f177c3bc33f6358a5accc948ba26e670a65ca3b77c6d312d1e164041510",
+        "rows": 9,
+        "uncompressed_bytes": 723
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "0c4b07fe7b7f4b331d98eec51b88aeaf796f688e0bda1302494a0c21a0f768d5",
+        "reference": "research/combat/matrix/bottleneck_peace/runs.csv",
+        "reference_sha256": "da70443ca4b64eaddc6f061ff75f804fddf14aaa4e7352a97b04aacb6c605725",
+        "rows": 1,
+        "uncompressed_bytes": 1778
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "1e7098c11dd3f8b7aa832c0eb70d7d35786d5ece3516112bbb1b024455ba7807",
+        "reference": "research/combat/matrix/bottleneck_peace/timeline.csv",
+        "reference_sha256": "4dbb6757b8295ff7c338b45efca493e2f3890ee7c64ec5ba2e6d4abd9d38b477",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "fed4916317dbfb9b"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "bottleneck",
+    "event_hash": "09057f7d5d0e9761",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "a34c6a420246fece897f11f61ca69fb456694e8c23565e9232fd0e5ed99e49b6",
+        "reference": "research/combat/matrix/bottleneck_peace_defended/activity.csv",
+        "reference_sha256": "e49935725a6ae2752b01c901232ff5b1ff38702e310c63fd46a40494580f653b",
+        "rows": 28,
+        "uncompressed_bytes": 681
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "635307c4ffbf8250f3ff63bafa38c5a8f972edaa59f96dbd6d1bf91957ec8b7b",
+        "reference": "research/combat/matrix/bottleneck_peace_defended/events.tsv.gz",
+        "reference_sha256": "909f11af6975d824d405eacdeca9a7f579d1b94b4c9e9dccdeebba671352145d",
+        "uncompressed_bytes": 1974013
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/bottleneck_peace_defended/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "55695797484023b7cd9d3fe97439a5b0f7e643e362c52fddd63cb85b6bd2e67e",
+        "reference": "research/combat/matrix/bottleneck_peace_defended/people.csv",
+        "reference_sha256": "b86e64980c7fa6565d7bde5549633334aa2f30c2a8ea709b67cb81741a9fab34",
+        "rows": 9,
+        "uncompressed_bytes": 719
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "1c6d10c37a511cf7a32ebc1e5c895e3bf28d727fda08c7accd11a5f3901eb834",
+        "reference": "research/combat/matrix/bottleneck_peace_defended/runs.csv",
+        "reference_sha256": "9c0fb7d5c68c96830ee44406ab0f5e1685f94c3b5f36d020f5b68145505b36d6",
+        "rows": 1,
+        "uncompressed_bytes": 1756
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "acc6de0939e9246c0d57e003f99e187b9201443b22207ed2ca57e7dec378ccdf",
+        "reference": "research/combat/matrix/bottleneck_peace_defended/timeline.csv",
+        "reference_sha256": "5ed537af405be3d345839f788e2eef6e82da04654d1524e043681601fa29f495",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "39c49419bccffcb5"
+  },
+  {
+    "arm": "undefended",
+    "case": "hungry",
+    "event_hash": "6faa1defa950300d",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c5490df765f82eeae36acab4c00bcb43520ac6aef8b8177838a331541cbd92a1",
+        "reference": "research/combat/matrix/hungry_undefended/activity.csv",
+        "reference_sha256": "2e7348a94a452fb0b02529af45e6828e83fb6f5bace3fb1345649a8b53467f9d",
+        "rows": 32,
+        "uncompressed_bytes": 740
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "c86343f63da7cf40e44eb6f8d96a909d295dc1577338bb24f5b8a3c32f2a2381",
+        "reference": "research/combat/matrix/hungry_undefended/events.tsv.gz",
+        "reference_sha256": "88c3bf808ce196fb050a7166aeabb7465dcd6f2fa62aa345db1ced4ce0a0b4fc",
+        "uncompressed_bytes": 1685094
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "d833440ae032fc36df0b4c198327d43842d89ddca2df71d68fc63e670c5b7c64",
+        "reference": "research/combat/matrix/hungry_undefended/goods.tsv.gz",
+        "reference_sha256": "6be2201037ed17487bf1b34cafda7ea6af0ed547a9bfc3bb7af6e398decd80b7",
+        "uncompressed_bytes": 945
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4e0fa7f530dcfaf69ffc7e811284e69a90b40dfece07beb05fb7739d25d8fc55",
+        "reference": "research/combat/matrix/hungry_undefended/people.csv",
+        "reference_sha256": "5fcd554445221d7902f54b5400d322bc06d33ac9f6e860ff8dfc115f0b6eb795",
+        "rows": 9,
+        "uncompressed_bytes": 732
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4689fc9ba87a33eb94c21c4f06ff47b0dcdd23191b462df62ae489ffd5cfd3ac",
+        "reference": "research/combat/matrix/hungry_undefended/runs.csv",
+        "reference_sha256": "d19a5544a4fca69bc2b9a6769f239835d9c16389b2c211cbcfd53a3029e13f33",
+        "rows": 1,
+        "uncompressed_bytes": 1743
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "ac2f103471ce4c9046ccdf628f2ae2aba4e40bb5b71106cefbb72fb64b7b1b72",
+        "reference": "research/combat/matrix/hungry_undefended/timeline.csv",
+        "reference_sha256": "7e53980cdf88c6458710689ca7d725904f6eebaffb2ab319399b3e6692d9ce40",
+        "rows": 92,
+        "uncompressed_bytes": 3383
+      }
+    },
+    "seed": 0,
+    "state_hash": "56d2da0b9c9daca1"
+  },
+  {
+    "arm": "defended",
+    "case": "hungry",
+    "event_hash": "a0b6a40e88dd05d6",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c5490df765f82eeae36acab4c00bcb43520ac6aef8b8177838a331541cbd92a1",
+        "reference": "research/combat/matrix/hungry_defended/activity.csv",
+        "reference_sha256": "2e7348a94a452fb0b02529af45e6828e83fb6f5bace3fb1345649a8b53467f9d",
+        "rows": 32,
+        "uncompressed_bytes": 740
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "a1b5e2967bd8ca5f3d02ae1c087ca174f179963a1be00e2b4bf62d8ad5789ee0",
+        "reference": "research/combat/matrix/hungry_defended/events.tsv.gz",
+        "reference_sha256": "7f7d687f3774c5b79916f3ad5853877aa6d417f8d2537e45c2d6522f2ebabd26",
+        "uncompressed_bytes": 1686762
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "d833440ae032fc36df0b4c198327d43842d89ddca2df71d68fc63e670c5b7c64",
+        "reference": "research/combat/matrix/hungry_defended/goods.tsv.gz",
+        "reference_sha256": "6be2201037ed17487bf1b34cafda7ea6af0ed547a9bfc3bb7af6e398decd80b7",
+        "uncompressed_bytes": 945
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4e0fa7f530dcfaf69ffc7e811284e69a90b40dfece07beb05fb7739d25d8fc55",
+        "reference": "research/combat/matrix/hungry_defended/people.csv",
+        "reference_sha256": "5fcd554445221d7902f54b5400d322bc06d33ac9f6e860ff8dfc115f0b6eb795",
+        "rows": 9,
+        "uncompressed_bytes": 732
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "b8f6317f5e1ff102e8f48e6880989795ec33a2ff80262725f20ffc2421acbdc9",
+        "reference": "research/combat/matrix/hungry_defended/runs.csv",
+        "reference_sha256": "fcbfca4c5d8111b3decf39891b2cc3e730e299468dcb9d5387efc0858f9a32fc",
+        "rows": 1,
+        "uncompressed_bytes": 1741
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "ac2f103471ce4c9046ccdf628f2ae2aba4e40bb5b71106cefbb72fb64b7b1b72",
+        "reference": "research/combat/matrix/hungry_defended/timeline.csv",
+        "reference_sha256": "7e53980cdf88c6458710689ca7d725904f6eebaffb2ab319399b3e6692d9ce40",
+        "rows": 92,
+        "uncompressed_bytes": 3383
+      }
+    },
+    "seed": 0,
+    "state_hash": "29087e3aaeca1cbd"
+  },
+  {
+    "arm": "peace",
+    "case": "hungry",
+    "event_hash": "e79b8c968a151857",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "40afebe09a2ee38022705782807edce58ca859c8f54facf22a2ade413daa272b",
+        "reference": "research/combat/matrix/hungry_peace/activity.csv",
+        "reference_sha256": "627dc38ba8bab8aa4461a5e58240c1cc0467961710f88920d9b3c006b4f85458",
+        "rows": 26,
+        "uncompressed_bytes": 605
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "dd366ef050304273ba41470de7aeb331a5e53491d85ae6abbfacad7c3ec532fd",
+        "reference": "research/combat/matrix/hungry_peace/events.tsv.gz",
+        "reference_sha256": "a8653982f84c85e08ad8327ef5f98c16854442b17880fa13890a1aba55fc6fa0",
+        "uncompressed_bytes": 1993985
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "69ba6f84fb7c9469b675534bbcd4d8100fc978a97005b978b9b4a3dd34a6f42b",
+        "reference": "research/combat/matrix/hungry_peace/goods.tsv.gz",
+        "reference_sha256": "68c348a37388110d3dd301f72d1cc3b23fada2cb38a1e2404f71cebabbf503ef",
+        "uncompressed_bytes": 544
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "729a476baf1143bdd8b1257f227fa5dd70ee620ec1df30f0dc473b4f52123b49",
+        "reference": "research/combat/matrix/hungry_peace/people.csv",
+        "reference_sha256": "19082d2fb936068cb5ec52466addae9ebcd78509093d46f17aa648e9b6b8b84d",
+        "rows": 9,
+        "uncompressed_bytes": 723
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "082082566768d547affa31a928efca477bf1672f8658e586659bb2d8bf5fa792",
+        "reference": "research/combat/matrix/hungry_peace/runs.csv",
+        "reference_sha256": "42bd5ca90fc63655e0b41c2a6d215c7be48702b3ace6e65c056ab167448bf801",
+        "rows": 1,
+        "uncompressed_bytes": 1731
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4f90e39c2f8817464238638d9cd48186c7e83d9c41c3d4c1af99a49f262ac4e4",
+        "reference": "research/combat/matrix/hungry_peace/timeline.csv",
+        "reference_sha256": "ce46eea1ed339569648d251798f17ba380c795fdf10ae5cb6ec3e1761c7b9049",
+        "rows": 92,
+        "uncompressed_bytes": 3321
+      }
+    },
+    "seed": 0,
+    "state_hash": "5f02a5535b173838"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "hungry",
+    "event_hash": "c9639e549ccd0b14",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "40afebe09a2ee38022705782807edce58ca859c8f54facf22a2ade413daa272b",
+        "reference": "research/combat/matrix/hungry_peace_defended/activity.csv",
+        "reference_sha256": "627dc38ba8bab8aa4461a5e58240c1cc0467961710f88920d9b3c006b4f85458",
+        "rows": 26,
+        "uncompressed_bytes": 605
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "572b03392e0784dcdd9a26b2deeca0a25ae672c44031e0d2bee0ebf448073141",
+        "reference": "research/combat/matrix/hungry_peace_defended/events.tsv.gz",
+        "reference_sha256": "d056ba52eada97cb50269d03642bf0fb90e0b2374a11c176ffc8c9ebe3232917",
+        "uncompressed_bytes": 1995653
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "69ba6f84fb7c9469b675534bbcd4d8100fc978a97005b978b9b4a3dd34a6f42b",
+        "reference": "research/combat/matrix/hungry_peace_defended/goods.tsv.gz",
+        "reference_sha256": "68c348a37388110d3dd301f72d1cc3b23fada2cb38a1e2404f71cebabbf503ef",
+        "uncompressed_bytes": 544
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "729a476baf1143bdd8b1257f227fa5dd70ee620ec1df30f0dc473b4f52123b49",
+        "reference": "research/combat/matrix/hungry_peace_defended/people.csv",
+        "reference_sha256": "19082d2fb936068cb5ec52466addae9ebcd78509093d46f17aa648e9b6b8b84d",
+        "rows": 9,
+        "uncompressed_bytes": 723
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "7c2bdb18922b8d825964151e3239d6b80580f9b38d0207e320683ba5e4f8cf34",
+        "reference": "research/combat/matrix/hungry_peace_defended/runs.csv",
+        "reference_sha256": "1dd72ae9ec66b883736f5e59cca54061ff058dad45d3b0bb993f3965bb592ddd",
+        "rows": 1,
+        "uncompressed_bytes": 1740
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4f90e39c2f8817464238638d9cd48186c7e83d9c41c3d4c1af99a49f262ac4e4",
+        "reference": "research/combat/matrix/hungry_peace_defended/timeline.csv",
+        "reference_sha256": "ce46eea1ed339569648d251798f17ba380c795fdf10ae5cb6ec3e1761c7b9049",
+        "rows": 92,
+        "uncompressed_bytes": 3321
+      }
+    },
+    "seed": 0,
+    "state_hash": "12b29190bab524bc"
+  },
+  {
+    "arm": "undefended",
+    "case": "congestion",
+    "event_hash": "c481dbd69a732732",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "cae54a1190af790f60fe1fd23c529dbc2d0ab3992bb33cfc89aa9210d8a6bb39",
+        "reference": "research/combat/matrix/congestion_undefended/activity.csv",
+        "reference_sha256": "577250d356e4e7f7aac3f6d26ef84ac4da9d5a58c4686788d3d4798765743e5c",
+        "rows": 57,
+        "uncompressed_bytes": 1320
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "5629aed0d6f7f83594324b6042ad59bf9f7068862e040e597402b18db4ee9c6b",
+        "reference": "research/combat/matrix/congestion_undefended/events.tsv.gz",
+        "reference_sha256": "344540bbb5a8b2e4c43674d32e8c6e158d8805b54236abf3f01be8c041ef6bee",
+        "uncompressed_bytes": 3599806
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "e0b36ef791ebddbc9a680b40bac9ff3d02fe5d1e6bbbea70b6609dda7ed52ae6",
+        "reference": "research/combat/matrix/congestion_undefended/goods.tsv.gz",
+        "reference_sha256": "b0938039b4d87eca4e2dd2d3c89b777909ccf99e855d77275da801d9c1d08d01",
+        "uncompressed_bytes": 2807
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "960e64577555ef83846731ed756b89344d2230e3e72cbfe9c6966a3b9b26084f",
+        "reference": "research/combat/matrix/congestion_undefended/people.csv",
+        "reference_sha256": "ff810dd3195822b53353f17b003075fe34b0951c35bd4a00c118716a2f51e742",
+        "rows": 17,
+        "uncompressed_bytes": 1639
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "5a4cd955626331e75674857e99e9971cb712e5d5189ba1792953cbe26f7bf5bc",
+        "reference": "research/combat/matrix/congestion_undefended/runs.csv",
+        "reference_sha256": "fa0738072b13b4f43319839154cb2a6c180df208f443cd9e8098c75d6772646e",
+        "rows": 1,
+        "uncompressed_bytes": 1849
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "623c6489d39232a68b110879e7c0c1477da14eab4c50b88f8f544830e107055a",
+        "reference": "research/combat/matrix/congestion_undefended/timeline.csv",
+        "reference_sha256": "3f1c2e44ee9defef5f94998d3fa554cbbbe4f0e7c9c05063fc417b95d91ba382",
+        "rows": 92,
+        "uncompressed_bytes": 3335
+      }
+    },
+    "seed": 0,
+    "state_hash": "4e866982b4cee5ab"
+  },
+  {
+    "arm": "defended",
+    "case": "congestion",
+    "event_hash": "c8fdd153593c119b",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "6f3c2aa97e1bbf16e85b455b8c6ae56baafcc80ef0ee82c56b19fc5882edec53",
+        "reference": "research/combat/matrix/congestion_defended/activity.csv",
+        "reference_sha256": "3980528ae4528410749f02cbe5fc1316078c2a7f6a906746f83aac1712966492",
+        "rows": 69,
+        "uncompressed_bytes": 1617
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "d2eb273c933f1abc42fe961d627ec6ce1d5f055abd3a5366cbca6a6f29227328",
+        "reference": "research/combat/matrix/congestion_defended/events.tsv.gz",
+        "reference_sha256": "509a59eae52e20299793db1278a07f2873617a1dc4ae135c8e949a518f154a5a",
+        "uncompressed_bytes": 3267837
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "b9ccdaa5123f94940b42099c0b0e211281468341462e4be2b814d63f71bef1c0",
+        "reference": "research/combat/matrix/congestion_defended/goods.tsv.gz",
+        "reference_sha256": "dbe3ee05842387b7ec53f3170b0d4c6e19522b137aa3b395c115e7b9d3d77adc",
+        "uncompressed_bytes": 2273
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "0cb7a67d5a6739c49e5217092d1c0b3b3de822f0d39be54ca0b972833f6d8df1",
+        "reference": "research/combat/matrix/congestion_defended/people.csv",
+        "reference_sha256": "090cdf0ad1aee2236e0a20f26f7748aca97c0201e358c77d1f7e090f85e088f3",
+        "rows": 17,
+        "uncompressed_bytes": 1679
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "906f89ac430a1beb4c9573e6498e02bc4334a486af91fdeab2c603458a80eb27",
+        "reference": "research/combat/matrix/congestion_defended/runs.csv",
+        "reference_sha256": "1365ec1ad5ad32c219f491dd547555b1bf05bb5d3131191139250738371094df",
+        "rows": 1,
+        "uncompressed_bytes": 1903
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "120166568c6b458345a0b9f78e092f6290ee3b1bca91c55dfc0503dcc36915f3",
+        "reference": "research/combat/matrix/congestion_defended/timeline.csv",
+        "reference_sha256": "4b2bd4eb1b7f156f885c5aba983379eaa3801bad598eb4715d5d85ac711f06c9",
+        "rows": 92,
+        "uncompressed_bytes": 3334
+      }
+    },
+    "seed": 0,
+    "state_hash": "e41cb532fdcff79f"
+  },
+  {
+    "arm": "peace",
+    "case": "congestion",
+    "event_hash": "9581c7dbb20fd539",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "dd3a71bc602293fb1ba9923e2616d7d250631a9998c02567335f6e3144398ea1",
+        "reference": "research/combat/matrix/congestion_peace/activity.csv",
+        "reference_sha256": "2c23781648762776b89f791a211c0c5f02de61cdb30f36b60c8bb431def5e3c2",
+        "rows": 40,
+        "uncompressed_bytes": 927
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "d2ffc7a3b2c96b4a3d37ade6c88f2f7d261afa3523c7468db7f91f469196502c",
+        "reference": "research/combat/matrix/congestion_peace/events.tsv.gz",
+        "reference_sha256": "5466a307ca8ffd8ac636f81186d1306be6217e63c7f4cfda35f03c6f1aded7b9",
+        "uncompressed_bytes": 4372852
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "1f2aff4136045b96e39ae317f83b9cd97c6169b06dbee9cad8836921e9af817b",
+        "reference": "research/combat/matrix/congestion_peace/goods.tsv.gz",
+        "reference_sha256": "189a73a388d29e859d9f993f279c9399e3d52cb9e703b10abea070bec26e4a5e",
+        "uncompressed_bytes": 2267
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "8d1f0c33363449a25e819f78d559596dc4e773db405f6d9407e3f399d96d4755",
+        "reference": "research/combat/matrix/congestion_peace/people.csv",
+        "reference_sha256": "32bfa556892643cef7f31b421c3893ab4701127da5a118fac701180845cdaffc",
+        "rows": 17,
+        "uncompressed_bytes": 1510
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "bdf5f2e4812270fbbb3eaa115993210522d7f5943d76d3cd0d04087e3016291f",
+        "reference": "research/combat/matrix/congestion_peace/runs.csv",
+        "reference_sha256": "6764bad557dba7bc102f1104db2c15c21b1745f9dd4f6972318d0185b6c76cfe",
+        "rows": 1,
+        "uncompressed_bytes": 1735
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "d13c410b2b153856361b0de9328004b33f204bceca2e85c7d26800775aaf2c46",
+        "reference": "research/combat/matrix/congestion_peace/timeline.csv",
+        "reference_sha256": "37d6f93af34909cf88956017c19524b5840a1ece6e6c0a893b5ade6ffc52f00d",
+        "rows": 92,
+        "uncompressed_bytes": 3268
+      }
+    },
+    "seed": 0,
+    "state_hash": "1c2f91cb880c31b7"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "congestion",
+    "event_hash": "821cf48e8bcc15e4",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "54bd68638c43eef9b1df540e936ad18cd2f992967ce3b0e8bb21c9a41adbe0bc",
+        "reference": "research/combat/matrix/congestion_peace_defended/activity.csv",
+        "reference_sha256": "bee8349ebd0a531ef1efe7f4f7fec2cb4c5ae95a00af106f8117290065370d77",
+        "rows": 47,
+        "uncompressed_bytes": 1110
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "ffe1642d6ebf24919f045c7676b8c514644affb5201d70fe3fcc4f87ddf5795d",
+        "reference": "research/combat/matrix/congestion_peace_defended/events.tsv.gz",
+        "reference_sha256": "65a485bed5d40e7fcced8a4203bb77db016c8b0968ef8dd9105d517a75a6e637",
+        "uncompressed_bytes": 4287882
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "e1793c7e164877dfc2d9933a23d99021decd57ffc200f82c08af351a410ae68c",
+        "reference": "research/combat/matrix/congestion_peace_defended/goods.tsv.gz",
+        "reference_sha256": "6714ed26160c02d9be8af75062d218670cb6b476500806d815a2469282b2c3bf",
+        "uncompressed_bytes": 1735
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "b58dce51c978103648d07cd5a4a7a711e05ac5753114a043c75365738c3ee1c1",
+        "reference": "research/combat/matrix/congestion_peace_defended/people.csv",
+        "reference_sha256": "59ff2f31fd7541cc1b270d62edbd02fb525df8da1ea24fb17b303acfff86cd47",
+        "rows": 17,
+        "uncompressed_bytes": 1498
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "72ca862425d3cff61285eb25cde43ef2cfb34af9b89ede1ff1872b47283c19b3",
+        "reference": "research/combat/matrix/congestion_peace_defended/runs.csv",
+        "reference_sha256": "ee471f9cc3e95794635332d206803ff985e5aa741adfc718b3e4206144d84da4",
+        "rows": 1,
+        "uncompressed_bytes": 1793
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "5ac357cac36f9fb2af3bf2cfdda41752d597865d44f3f51fa87c5d303f2d4f5f",
+        "reference": "research/combat/matrix/congestion_peace_defended/timeline.csv",
+        "reference_sha256": "e09c82d86076aa0f2f990df0e4b72f804dbe538a441a1755dbb59ec353ad1315",
+        "rows": 92,
+        "uncompressed_bytes": 3268
+      }
+    },
+    "seed": 0,
+    "state_hash": "8fbafb1a781ed86b"
+  },
+  {
+    "arm": "undefended",
+    "case": "path_on",
+    "event_hash": "7fda7034e10a9875",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "e7bdb74b927e5861024a66671d69db46824138a0258ba4e2bd3d42088e076c3c",
+        "reference": "research/combat/matrix/path_on_undefended/activity.csv",
+        "reference_sha256": "559bc63510642f13e978412d4b20c96db12aebd8936de9e2ac84c1df287fc912",
+        "rows": 32,
+        "uncompressed_bytes": 737
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "c53e1f42f2f02914f2f281acb04ad8119df97ff3219c9e3189b3b09e679a286e",
+        "reference": "research/combat/matrix/path_on_undefended/events.tsv.gz",
+        "reference_sha256": "0787c41ae2143beea5bacea3805efdb52006a90b07cda43c31a590b86cc85d4a",
+        "uncompressed_bytes": 1763330
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "8a8f0b5c6fc2a2f850ac0f3bc5a726dfb0181e1a6157c5db53d3cd8abbaa59b4",
+        "reference": "research/combat/matrix/path_on_undefended/goods.tsv.gz",
+        "reference_sha256": "7b1ffb13c49fe28bd0fa31230de5af234d87cd450de8d545d548c0b0c15aa742",
+        "uncompressed_bytes": 1742
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "632713a7c773b90b2d3d30ad62eb02da1668a7bd98072bacc8adf233d298dae5",
+        "reference": "research/combat/matrix/path_on_undefended/people.csv",
+        "reference_sha256": "f8c8af40c02de6136dcd5c3c02e67f9bd8d44b150fda1f95c5594d2ef97b2956",
+        "rows": 9,
+        "uncompressed_bytes": 732
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "9c2ce2698c2c29cdf0d35df4db66216e05f38a961806d33ae2214efad3f7999a",
+        "reference": "research/combat/matrix/path_on_undefended/runs.csv",
+        "reference_sha256": "58c7c48455b903b47f59528891b237688d7ccb2805375c6aba050ee9a32f7b74",
+        "rows": 1,
+        "uncompressed_bytes": 1792
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "73e38c9ca629eb363666280714c503b7c6363c856642eef92ac40fde55a7338a",
+        "reference": "research/combat/matrix/path_on_undefended/timeline.csv",
+        "reference_sha256": "17deae62558722da927dca8eb49379fb9b8a65f4f6f33cdd3cd78cca9aeda8e2",
+        "rows": 92,
+        "uncompressed_bytes": 3450
+      }
+    },
+    "seed": 0,
+    "state_hash": "56ecc796101e95f5"
+  },
+  {
+    "arm": "defended",
+    "case": "path_on",
+    "event_hash": "e672f98729ac6326",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "42b3e634a4b8a0638bb9643fd3b1f9ad6848edc47115243fa337cea0c73820d5",
+        "reference": "research/combat/matrix/path_on_defended/activity.csv",
+        "reference_sha256": "23744808fd638b4f8c460bb87db00a7ffe805360b548a20b890aec2afc9296ca",
+        "rows": 37,
+        "uncompressed_bytes": 885
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "06a7e1019c863d00920f6559a051d32a8a67615b8b4cd473408344a383bb2af1",
+        "reference": "research/combat/matrix/path_on_defended/events.tsv.gz",
+        "reference_sha256": "51dbab9b4252838e75f826c493361bec11d64217369fbdd0810ef6ed4389df16",
+        "uncompressed_bytes": 1626347
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "884048220bb722b07cd9eafdcff564faf9f329ea55af1549df542872c68739f6",
+        "reference": "research/combat/matrix/path_on_defended/goods.tsv.gz",
+        "reference_sha256": "e7465a4bd5b900c8f6441cef851eac3a8ee17188f42be612a0650986cc892d22",
+        "uncompressed_bytes": 1470
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "7fd4725be846f71e79360d078c596250725247dc40383dbeb72114f0714c2b67",
+        "reference": "research/combat/matrix/path_on_defended/people.csv",
+        "reference_sha256": "cd7f5c37cd94d800cdce03b38cf3397c4c191e6fc11746fc66150aadec7a77b7",
+        "rows": 9,
+        "uncompressed_bytes": 720
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "13ce8428af5651a6942d754bc33329685fbc6bd19b0fb4a07737392f5fbb8da3",
+        "reference": "research/combat/matrix/path_on_defended/runs.csv",
+        "reference_sha256": "518f60ebae3cb3608046741a49735e8fa97673c514a3f64b48d95b462174d8d7",
+        "rows": 1,
+        "uncompressed_bytes": 1766
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c3710561008c7b0d2f0c81e082d1f581fb4265979983be005a76a3fc59beed1c",
+        "reference": "research/combat/matrix/path_on_defended/timeline.csv",
+        "reference_sha256": "4039e423e3d4e21e8c6d592ad43f1eed23ba7d2d3c00abd46b430964a83fbce2",
+        "rows": 92,
+        "uncompressed_bytes": 3448
+      }
+    },
+    "seed": 0,
+    "state_hash": "ef42a88326dbfc1a"
+  },
+  {
+    "arm": "peace",
+    "case": "path_on",
+    "event_hash": "c9062a0bbd9b487e",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "b0b95e38960228a130018549dbc9745db4cbafdb9f04540f374ec4b921515f73",
+        "reference": "research/combat/matrix/path_on_peace/activity.csv",
+        "reference_sha256": "b0c0f1cdfc7d8ca2aea5219c273132fd3e44c59cf368f139f567d932a1d9c9d1",
+        "rows": 26,
+        "uncompressed_bytes": 605
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "5f316286f1bfc3963785005f9f86f89c4c2a763f5e101b25ede9b44fc6c73d18",
+        "reference": "research/combat/matrix/path_on_peace/events.tsv.gz",
+        "reference_sha256": "1a3ae6caf1fc305fac05e8cd3088c982e296e2db6bfa82fdc5acdafff079877c",
+        "uncompressed_bytes": 1991213
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/path_on_peace/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "3152b24eb6c91a572a749085cd98e38a528d00f3dd3aeb8c45763afc7903acfc",
+        "reference": "research/combat/matrix/path_on_peace/people.csv",
+        "reference_sha256": "a1f366adc64c77290c60d991293044bd7d5d742338e0a206c51a9c2cbd063d87",
+        "rows": 9,
+        "uncompressed_bytes": 723
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "ad5a3f3e713ca6d6aeca0fde49adca66cdf3d3c49ce2b0bc2e64b60e3b9789cb",
+        "reference": "research/combat/matrix/path_on_peace/runs.csv",
+        "reference_sha256": "f77f2ee74b2fe5795f5f6089b15bdeae5485760f6e69e6d31c46005de595295b",
+        "rows": 1,
+        "uncompressed_bytes": 1777
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "1e7098c11dd3f8b7aa832c0eb70d7d35786d5ece3516112bbb1b024455ba7807",
+        "reference": "research/combat/matrix/path_on_peace/timeline.csv",
+        "reference_sha256": "4dbb6757b8295ff7c338b45efca493e2f3890ee7c64ec5ba2e6d4abd9d38b477",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "67778aa4e72dc0ca"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "path_on",
+    "event_hash": "63e5822fda7b9f47",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "948ff75ed4d232e6a451823c26757e7573a124a0e57076ebe930a88358411b5b",
+        "reference": "research/combat/matrix/path_on_peace_defended/activity.csv",
+        "reference_sha256": "318fc32a321d40c4a1b2709e84535f03363a2d6dc02019ade490a61461bab8bb",
+        "rows": 28,
+        "uncompressed_bytes": 681
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "ddd4377c5d2df943b7ce0dc1f2255cf24c9792a70a9bf670df64280cdff7d1d2",
+        "reference": "research/combat/matrix/path_on_peace_defended/events.tsv.gz",
+        "reference_sha256": "bd8717415a3772dc28308e33064be795507c23bbee0bd28aa9a3de6ab7d3f6cc",
+        "uncompressed_bytes": 1987269
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/path_on_peace_defended/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "55695797484023b7cd9d3fe97439a5b0f7e643e362c52fddd63cb85b6bd2e67e",
+        "reference": "research/combat/matrix/path_on_peace_defended/people.csv",
+        "reference_sha256": "b86e64980c7fa6565d7bde5549633334aa2f30c2a8ea709b67cb81741a9fab34",
+        "rows": 9,
+        "uncompressed_bytes": 719
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "bbf50145c3d2adac8607c7534e916a681c4b4881aa5092ad7c21148348aaa480",
+        "reference": "research/combat/matrix/path_on_peace_defended/runs.csv",
+        "reference_sha256": "2fdc9c9935aa04f532f56e47f4afb9400cd8c8eef07bf5fafd6bd5c42372d806",
+        "rows": 1,
+        "uncompressed_bytes": 1743
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "acc6de0939e9246c0d57e003f99e187b9201443b22207ed2ca57e7dec378ccdf",
+        "reference": "research/combat/matrix/path_on_peace_defended/timeline.csv",
+        "reference_sha256": "5ed537af405be3d345839f788e2eef6e82da04654d1524e043681601fa29f495",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "f8c0b2fe63c5e2f8"
+  },
+  {
+    "arm": "undefended",
+    "case": "path_off",
+    "event_hash": "bd2ef30cf60e0112",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "fbaff2d64ef95c2c372a37c2043177b7531ffa154908ad2fc2515ad2f299b699",
+        "reference": "research/combat/matrix/path_off_undefended/activity.csv",
+        "reference_sha256": "4e42d765352b5c7a252ab818df6b0a30b0506731bca15802189f361fd6466d12",
+        "rows": 32,
+        "uncompressed_bytes": 740
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "fea8e02b3497a5fe039c230c6f84e682961fa01ec0734b6b725dd4b55e9b6ebb",
+        "reference": "research/combat/matrix/path_off_undefended/events.tsv.gz",
+        "reference_sha256": "22959ef51703cdf8cd460f55cab22648f5a7fc1103520cedf2c9d1747a2b123e",
+        "uncompressed_bytes": 1668930
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "8a8f0b5c6fc2a2f850ac0f3bc5a726dfb0181e1a6157c5db53d3cd8abbaa59b4",
+        "reference": "research/combat/matrix/path_off_undefended/goods.tsv.gz",
+        "reference_sha256": "7b1ffb13c49fe28bd0fa31230de5af234d87cd450de8d545d548c0b0c15aa742",
+        "uncompressed_bytes": 1742
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "241b0e10f8ffe38176a1cb930236f1f0a14d7b7328e4f3a1b3996d2b5a93ebbc",
+        "reference": "research/combat/matrix/path_off_undefended/people.csv",
+        "reference_sha256": "e1db3f75367bf584421ba1729457697183419e24efdbd6daff3d2e4dcf9c287d",
+        "rows": 9,
+        "uncompressed_bytes": 732
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c52c6dde07a121ae8c43c3086da095b17d2ce447c3d51500fb973b5e10f0467e",
+        "reference": "research/combat/matrix/path_off_undefended/runs.csv",
+        "reference_sha256": "5778fcdcd737bae5de8a6916abde929551c7f5a2daae90618b6f7536bf304df2",
+        "rows": 1,
+        "uncompressed_bytes": 1790
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "29cc995b2166e65dd8cc6a5d07e54525f705ac677954690994931dd4c451fa18",
+        "reference": "research/combat/matrix/path_off_undefended/timeline.csv",
+        "reference_sha256": "1df8e7b9137506af19ca7d14d1eb194bf9b709a6628c912cfd14d2aa321c5ed5",
+        "rows": 92,
+        "uncompressed_bytes": 3449
+      }
+    },
+    "seed": 0,
+    "state_hash": "b7e02fa8291f415f"
+  },
+  {
+    "arm": "defended",
+    "case": "path_off",
+    "event_hash": "6af7bd36681e0893",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "aabb2bbb13c4ed1d6322a729cb3bb7ebfc5a40be4e338ba134c26692a0cf205d",
+        "reference": "research/combat/matrix/path_off_defended/activity.csv",
+        "reference_sha256": "831181146f9d4e153e823efee1f0c3b788cd63476a7fb703b306885a6cdf244e",
+        "rows": 37,
+        "uncompressed_bytes": 885
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "e600b5f71fdacb8540e20faf5737db4c1f01a2c67c6a196dbd2104ddf648214e",
+        "reference": "research/combat/matrix/path_off_defended/events.tsv.gz",
+        "reference_sha256": "13d462c84d2347395a3e4435312441785d21190d1a87339e7033f464afaf35f0",
+        "uncompressed_bytes": 1609904
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "884048220bb722b07cd9eafdcff564faf9f329ea55af1549df542872c68739f6",
+        "reference": "research/combat/matrix/path_off_defended/goods.tsv.gz",
+        "reference_sha256": "e7465a4bd5b900c8f6441cef851eac3a8ee17188f42be612a0650986cc892d22",
+        "uncompressed_bytes": 1470
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4de7dc0982a93f0dabc0b767ee5e67182eac1facdf53704176cb3597ded7ab28",
+        "reference": "research/combat/matrix/path_off_defended/people.csv",
+        "reference_sha256": "516976b137283f595d21d196a4e2b1cd4a885f93ea8f70bc0210fcede0266417",
+        "rows": 9,
+        "uncompressed_bytes": 720
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "6e4bf60990a85b4191a778bd85e6fda193c9e7a8a9a080c9d03bb669d605aff6",
+        "reference": "research/combat/matrix/path_off_defended/runs.csv",
+        "reference_sha256": "c25aea7ef1537dd9decc3928410d31c630a49056152723a5c92234164d86209b",
+        "rows": 1,
+        "uncompressed_bytes": 1775
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c3710561008c7b0d2f0c81e082d1f581fb4265979983be005a76a3fc59beed1c",
+        "reference": "research/combat/matrix/path_off_defended/timeline.csv",
+        "reference_sha256": "4039e423e3d4e21e8c6d592ad43f1eed23ba7d2d3c00abd46b430964a83fbce2",
+        "rows": 92,
+        "uncompressed_bytes": 3448
+      }
+    },
+    "seed": 0,
+    "state_hash": "95940a01d7c0d66d"
+  },
+  {
+    "arm": "peace",
+    "case": "path_off",
+    "event_hash": "9335883c3999e080",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c74a94d930a585f7220df8786187a16eeb969f575e878dcac9a4bbd183f01e7e",
+        "reference": "research/combat/matrix/path_off_peace/activity.csv",
+        "reference_sha256": "5b7e738faa4e5ad993401830f1d4382da4cc7223d7732bea16aa5b1df491330c",
+        "rows": 26,
+        "uncompressed_bytes": 605
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "91d8ba8e87145d4b8c8179704b32c1c2ef2366b034de103e7d2aa8fa1379dee3",
+        "reference": "research/combat/matrix/path_off_peace/events.tsv.gz",
+        "reference_sha256": "717d4b99f4cfac17123bfb96ad7e9667940b3519de5128a3217cf70a43410c84",
+        "uncompressed_bytes": 1977327
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/path_off_peace/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "358181c18754da512557dc198ceec0ea277ce637c9dd35b0755d19af73fc4786",
+        "reference": "research/combat/matrix/path_off_peace/people.csv",
+        "reference_sha256": "b5345f177c3bc33f6358a5accc948ba26e670a65ca3b77c6d312d1e164041510",
+        "rows": 9,
+        "uncompressed_bytes": 723
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "1d0781ac57d1e1d9832a5a08bc9898bf3c0bedc8f558a33287b81543dbdd1c6d",
+        "reference": "research/combat/matrix/path_off_peace/runs.csv",
+        "reference_sha256": "cc601571e8582b66a0425aed4da5c1d5a0cbe267dacee725ea1c3363598ce180",
+        "rows": 1,
+        "uncompressed_bytes": 1776
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "1e7098c11dd3f8b7aa832c0eb70d7d35786d5ece3516112bbb1b024455ba7807",
+        "reference": "research/combat/matrix/path_off_peace/timeline.csv",
+        "reference_sha256": "4dbb6757b8295ff7c338b45efca493e2f3890ee7c64ec5ba2e6d4abd9d38b477",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "ff163b0428f44d18"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "path_off",
+    "event_hash": "09057f7d5d0e9761",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "a34c6a420246fece897f11f61ca69fb456694e8c23565e9232fd0e5ed99e49b6",
+        "reference": "research/combat/matrix/path_off_peace_defended/activity.csv",
+        "reference_sha256": "e49935725a6ae2752b01c901232ff5b1ff38702e310c63fd46a40494580f653b",
+        "rows": 28,
+        "uncompressed_bytes": 681
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "635307c4ffbf8250f3ff63bafa38c5a8f972edaa59f96dbd6d1bf91957ec8b7b",
+        "reference": "research/combat/matrix/path_off_peace_defended/events.tsv.gz",
+        "reference_sha256": "909f11af6975d824d405eacdeca9a7f579d1b94b4c9e9dccdeebba671352145d",
+        "uncompressed_bytes": 1974013
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/path_off_peace_defended/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "55695797484023b7cd9d3fe97439a5b0f7e643e362c52fddd63cb85b6bd2e67e",
+        "reference": "research/combat/matrix/path_off_peace_defended/people.csv",
+        "reference_sha256": "b86e64980c7fa6565d7bde5549633334aa2f30c2a8ea709b67cb81741a9fab34",
+        "rows": 9,
+        "uncompressed_bytes": 719
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "fb2d191298209ffc329ee32e17a50964669c89f5bb7c6640fedcdc68abf544f0",
+        "reference": "research/combat/matrix/path_off_peace_defended/runs.csv",
+        "reference_sha256": "1b4df7984628e478d52c7e1e5405b1b4178fbf0bfca6ac8172ad0aa12d45697d",
+        "rows": 1,
+        "uncompressed_bytes": 1754
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "acc6de0939e9246c0d57e003f99e187b9201443b22207ed2ca57e7dec378ccdf",
+        "reference": "research/combat/matrix/path_off_peace_defended/timeline.csv",
+        "reference_sha256": "5ed537af405be3d345839f788e2eef6e82da04654d1524e043681601fa29f495",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "d2180201b317c630"
+  },
+  {
+    "arm": "undefended",
+    "case": "crossing",
+    "event_hash": "492556896a630cb4",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "a1b70f67ee1b5f5ec32b1aa222b069b8601ba00b64a3c352df0bf21f76e61c82",
+        "reference": "research/combat/matrix/crossing_undefended/activity.csv",
+        "reference_sha256": "14842b3ad310530aae58ddc991132dd48dc76a5d09c3507b5358327f3a19da43",
+        "rows": 36,
+        "uncompressed_bytes": 831
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "8a36ddaf139bc4e5286f05873783f72a3cf84c1627117049a0f4dd0540670c19",
+        "reference": "research/combat/matrix/crossing_undefended/events.tsv.gz",
+        "reference_sha256": "80cb0b67cbdac60923f0e13c0d257611f39d2a695ea72b719c2c411ee3a68459",
+        "uncompressed_bytes": 1825357
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "0dde8cdc02b567548066d15a2771937ba65c783939c01bf293ff1a4db19e7eab",
+        "reference": "research/combat/matrix/crossing_undefended/goods.tsv.gz",
+        "reference_sha256": "2605c08eed8624b61074f69079272b2a261038ba7aa73a5e0ab38a132e3c1d01",
+        "uncompressed_bytes": 1886
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c9f5d5b8648eaac13fe56d786e2eac6c93c8c79d4b88447c91fd49ac84cc3762",
+        "reference": "research/combat/matrix/crossing_undefended/people.csv",
+        "reference_sha256": "d3782e36296d5d5a9bc3acb59ed6df32b7b74c8c7be8624adc62f5e57e3dc541",
+        "rows": 9,
+        "uncompressed_bytes": 782
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "b82b053fec553432c729807969abfcce18d92a80b016623a5a40869de549399d",
+        "reference": "research/combat/matrix/crossing_undefended/runs.csv",
+        "reference_sha256": "ba9e74e9f600744c634847028abcbed1eda05d506418bf356d348b12e7e9abdd",
+        "rows": 1,
+        "uncompressed_bytes": 1852
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "720a79f931f2be2c882f6276a947144cf0062b1d7cae94370613e5dfdbbec3e2",
+        "reference": "research/combat/matrix/crossing_undefended/timeline.csv",
+        "reference_sha256": "e34496747656a158ac6edd17d0a0db7fd82632f8dc7178c8440d44494cb95f94",
+        "rows": 92,
+        "uncompressed_bytes": 3434
+      }
+    },
+    "seed": 0,
+    "state_hash": "5f92bd0f78380137"
+  },
+  {
+    "arm": "defended",
+    "case": "crossing",
+    "event_hash": "313e15b98f5dd0ef",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "de0079b61763625c41397f0510e13edecdc7c6c6b2366650b25b5ae2ce93350f",
+        "reference": "research/combat/matrix/crossing_defended/activity.csv",
+        "reference_sha256": "0bda5d6bfc303ea8e7299e5fa3024e3955a22ac2636b9a03425b7127fb855dc3",
+        "rows": 39,
+        "uncompressed_bytes": 938
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "a501d65f135a6ede33ee4e32f91c798dee751cd066317668a2e8f515a0a7fb73",
+        "reference": "research/combat/matrix/crossing_defended/events.tsv.gz",
+        "reference_sha256": "9383a8c5ad6fe51aebfabaca2d27a5faaabd5f3c60de34744afdc14ac1c6ec5e",
+        "uncompressed_bytes": 1514556
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "f4d81a77940ad7ca4a45ad5c13811fe46c33beb5c2f5bd3db440b13aed39c3a2",
+        "reference": "research/combat/matrix/crossing_defended/goods.tsv.gz",
+        "reference_sha256": "538d8d8f45c140563dec73da098c59302e4c45849918ef40abde1ca008430bf6",
+        "uncompressed_bytes": 1747
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "39beb17b914cc587040128b83f9d64367329b2075d6b18e5fd4c5cfc37920547",
+        "reference": "research/combat/matrix/crossing_defended/people.csv",
+        "reference_sha256": "172d64482d3c83895d974f05310a2e6f76407ff4f88bc6a0cc3062cb1226ee7b",
+        "rows": 9,
+        "uncompressed_bytes": 722
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4b531c9b35f0c9a2ee2f07a2f2836a6ade22f3b18b2450af85af5ee75d347576",
+        "reference": "research/combat/matrix/crossing_defended/runs.csv",
+        "reference_sha256": "7cdb25f18adea86efc4ff7f664bb5c9e893e219f9d0ea61d9eb1e78c742b5197",
+        "rows": 1,
+        "uncompressed_bytes": 1866
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "f3a418f8a5ad7c5154af2160be6047654629a95f21a388b7342b3010668513a2",
+        "reference": "research/combat/matrix/crossing_defended/timeline.csv",
+        "reference_sha256": "96d86cd5e01345d2fb22ce416d448a241b6dd7d8fe2ed3e207ed03cafb42adb0",
+        "rows": 92,
+        "uncompressed_bytes": 3433
+      }
+    },
+    "seed": 0,
+    "state_hash": "c6d1f452a89b4790"
+  },
+  {
+    "arm": "peace",
+    "case": "crossing",
+    "event_hash": "4718fab140006817",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "9058eed1d02e2dfbc9deccb6472262c4db80d46c3a2f420b5884ddc28edb9ef4",
+        "reference": "research/combat/matrix/crossing_peace/activity.csv",
+        "reference_sha256": "24856972394d765fbb3bbb7842bc51b27fc67b7ea44a7aeb3d674276956b18ee",
+        "rows": 27,
+        "uncompressed_bytes": 634
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "2190d92a1738148ac27d9950d13f433dd0845e83bbbe421aee6c104d05ebc597",
+        "reference": "research/combat/matrix/crossing_peace/events.tsv.gz",
+        "reference_sha256": "e22e230ddc98728f7564849d554cd270c440bde690995a57b233fbd3cb4f6ea4",
+        "uncompressed_bytes": 2100747
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "0b70174d6bcd8b096a78f1613fba843af8b72824e3dfd290cf1f2e15000823e8",
+        "reference": "research/combat/matrix/crossing_peace/goods.tsv.gz",
+        "reference_sha256": "6b6d500642d6f25968f3e1fd394e17047eb3792ffd50a0f115005130a5624ea4",
+        "uncompressed_bytes": 1481
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "0cfbad39abb1dd8c0d49bcc65dd6172dcbc1d31537170fca334bc7f081f86ee9",
+        "reference": "research/combat/matrix/crossing_peace/people.csv",
+        "reference_sha256": "22f7faedb931562769f9a2eaa7e2240ca73474b49eec71242af97095358adfb4",
+        "rows": 9,
+        "uncompressed_bytes": 723
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "a23a8b1c2031826136b24de265cfe1a9881fee14f30566feee13a010140a2eaa",
+        "reference": "research/combat/matrix/crossing_peace/runs.csv",
+        "reference_sha256": "5f749253e043cc2b00206eed1c42771fa41f86dc174c863000f0612dcaa7a5d4",
+        "rows": 1,
+        "uncompressed_bytes": 1776
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "bfab189cc40ad988e4728dab4965eef1ecd1f3473c786e75504a43b0ad50c55e",
+        "reference": "research/combat/matrix/crossing_peace/timeline.csv",
+        "reference_sha256": "32bbe833095833f6938d3664f457029a9f4456dc0939326dfc13131176833eed",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "d8a5153fd33d0065"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "crossing",
+    "event_hash": "7699bf0b9255d4c7",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4a37cbae8b4ae61c326057414aca0054acde18858cf482d41aeba1a08a8a6334",
+        "reference": "research/combat/matrix/crossing_peace_defended/activity.csv",
+        "reference_sha256": "984181cee60458e5384b461151fce7c7232f70a89877364470e34d48db0b5eb3",
+        "rows": 29,
+        "uncompressed_bytes": 710
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "6deec8441a8889186497f140ab60f1fe596ab24bd1e66a406bbe80edb5baaad1",
+        "reference": "research/combat/matrix/crossing_peace_defended/events.tsv.gz",
+        "reference_sha256": "cda9997c79c43fb3061cc82f9da90f488d5858192887d036850d62d1748ce779",
+        "uncompressed_bytes": 2087327
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "8b4364bd7339a823c16bb66b9c6f0f31bb6240f6622db7b29459b6e784e36008",
+        "reference": "research/combat/matrix/crossing_peace_defended/goods.tsv.gz",
+        "reference_sha256": "73cfcc94e564a28d6d14354d9c2eeb70c9b78fc88b81e658fa2e9bd981152c35",
+        "uncompressed_bytes": 1481
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "536773f7f1ccc04fe6be3e993ca596e3dfc8eefb003288d566e13b4894b38e3c",
+        "reference": "research/combat/matrix/crossing_peace_defended/people.csv",
+        "reference_sha256": "557fbe86847c6d6817f697d39e8b5866986d1f5c7eaa0a5fdbdcdf6e1ff5c4dd",
+        "rows": 9,
+        "uncompressed_bytes": 719
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "88671d34f53747bda7dc7741beb9549e9e3155bbd48ee087c756af2fd7c18374",
+        "reference": "research/combat/matrix/crossing_peace_defended/runs.csv",
+        "reference_sha256": "e5d0c076ffc113deef915a83a1199298cc0c083b69e2e1cc27373e1b25647d64",
+        "rows": 1,
+        "uncompressed_bytes": 1770
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "1ab1013f52410c8df067e43e45facf8f951abd6b2312e00e6d8d9d5863eb7459",
+        "reference": "research/combat/matrix/crossing_peace_defended/timeline.csv",
+        "reference_sha256": "26f09dcef405832baa2ddaa63102eccb797620b7094a9981aebc27fc3abe8077",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "ed2f46bb5ff4d0d0"
+  },
+  {
+    "arm": "undefended",
+    "case": "household",
+    "event_hash": "64a4d73823d8f02f",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "2f453745c4cbd112ade6ef79d13cd95a160e38c1bee6fe88b2e106b0bc02d60e",
+        "reference": "research/combat/matrix/household_undefended/activity.csv",
+        "reference_sha256": "c7106a1e24e122adae55746cb1cf0f0b1a20f3c4f9743e8ef004c2614fefbe30",
+        "rows": 33,
+        "uncompressed_bytes": 762
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "ba77485b1f49c58c663bbf8d0ea5b34351f2a31ece5d29a19617ed77eed7b33c",
+        "reference": "research/combat/matrix/household_undefended/events.tsv.gz",
+        "reference_sha256": "7bc7d5128eaf0952f0c22e66f6f83b6c4c83959862c519f9cb6e97ee489dab27",
+        "uncompressed_bytes": 1917692
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "6b716af3e0dce4bbdb127913f6d11fdd43f2b1f845ec617d65d568f6b6dfe194",
+        "reference": "research/combat/matrix/household_undefended/goods.tsv.gz",
+        "reference_sha256": "890687dbb1d9fc6080e8044e5c28d72a007592c34a2dd1af812d47d275316066",
+        "uncompressed_bytes": 1875
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "ead40177365e992678183f14996c6d12ce9f3b1ea3fd38a46ab31405c4ddf3af",
+        "reference": "research/combat/matrix/household_undefended/people.csv",
+        "reference_sha256": "35204a70050cf35626a06cda7277afca4c2819f92b84a93ad369a3504d826f9d",
+        "rows": 10,
+        "uncompressed_bytes": 839
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "945097c79c292f66ccaeebb99f5a872ae5937fd782f88b19cfc52d8c6284c98b",
+        "reference": "research/combat/matrix/household_undefended/runs.csv",
+        "reference_sha256": "5e3064ade7f783a93a4fa850a8abda6bc303120203da69c020ab84a876063320",
+        "rows": 1,
+        "uncompressed_bytes": 1812
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "93af50a84053dcd15b938bb72158b8e5284a8ad1b3d42bd3faf3f76fb9f24244",
+        "reference": "research/combat/matrix/household_undefended/timeline.csv",
+        "reference_sha256": "98b2226277b6c2e9a1d80fb3779d77db9c189f228d66aea8c240c87eb6f6b689",
+        "rows": 92,
+        "uncompressed_bytes": 3450
+      }
+    },
+    "seed": 0,
+    "state_hash": "48a74952393a11c1"
+  },
+  {
+    "arm": "defended",
+    "case": "household",
+    "event_hash": "dc36398de54dbb7c",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "83d429ec3ad68a7af950ccbbfeb0a64b14a14201193d1a3ba3479dfad3f8cebf",
+        "reference": "research/combat/matrix/household_defended/activity.csv",
+        "reference_sha256": "4edb06c12e7ae63bfec57852dbeafab394e7c87d62db38fa68b3b98b8f64c8d8",
+        "rows": 39,
+        "uncompressed_bytes": 929
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "3d83e88c83d9ac19ea279f3fd398859eff582db4ea0312f21b0af7d93f464295",
+        "reference": "research/combat/matrix/household_defended/events.tsv.gz",
+        "reference_sha256": "1d54ebbf706b9b573d74b39df2dc03918db23d05ce94cea9ad020805b88cc0b4",
+        "uncompressed_bytes": 1859016
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "884048220bb722b07cd9eafdcff564faf9f329ea55af1549df542872c68739f6",
+        "reference": "research/combat/matrix/household_defended/goods.tsv.gz",
+        "reference_sha256": "e7465a4bd5b900c8f6441cef851eac3a8ee17188f42be612a0650986cc892d22",
+        "uncompressed_bytes": 1470
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "f98139fa55bbc0f80c01d763722608fb55bb2dd4c34435cd25f5ee294a10ca1a",
+        "reference": "research/combat/matrix/household_defended/people.csv",
+        "reference_sha256": "8e07cfe237470f0a478db4be64ef7f076fe7d6fadf43b37f2e364cc425ff588c",
+        "rows": 10,
+        "uncompressed_bytes": 827
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "735385128a17a924aaa9176691effab75be036df7a226d0e13da7c5f34a98051",
+        "reference": "research/combat/matrix/household_defended/runs.csv",
+        "reference_sha256": "66ea52b195a03e94c9331e5669a9335465a354e36bdf409c0c2eaa2f3d03756f",
+        "rows": 1,
+        "uncompressed_bytes": 1781
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "53e944bf8dba8e6ddfe81641e8dafeb219d11133a8aa9d5352d29bd94626d0d8",
+        "reference": "research/combat/matrix/household_defended/timeline.csv",
+        "reference_sha256": "02b5e449959cbe3270b8e3f8aeb38d5bf825abadb06efb0b97bacf7338b1b885",
+        "rows": 92,
+        "uncompressed_bytes": 3473
+      }
+    },
+    "seed": 0,
+    "state_hash": "844cfd733bc09252"
+  },
+  {
+    "arm": "peace",
+    "case": "household",
+    "event_hash": "cbab5d1b0954e8df",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "c9f6dd3584ff262a4a66057758318fc6a1fb4832793a4eb236b5743eb029db3b",
+        "reference": "research/combat/matrix/household_peace/activity.csv",
+        "reference_sha256": "6b7a4cec6e077ad46e345d6b790e7db7011b5d1de047b97558a1f7afcecfcb54",
+        "rows": 27,
+        "uncompressed_bytes": 627
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "af0844d54d90f7dc8b2901e20de301c99a6f94f6555c4a814017c343699816f2",
+        "reference": "research/combat/matrix/household_peace/events.tsv.gz",
+        "reference_sha256": "2067c67fb50b302c4002e8238132184c6f3b576fa2b261cfb79b94f8d87feb09",
+        "uncompressed_bytes": 2226089
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "72b4e82484a5bfb001ff2c0e54c8b4c5b4cec0f776f5575eace5440e25dfd112",
+        "reference": "research/combat/matrix/household_peace/goods.tsv.gz",
+        "reference_sha256": "169d3a996e03c499bf6a2a6e4431af43cd14cd9fd7974ca429caed07299fb818",
+        "uncompressed_bytes": 1470
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "868620fb3e64f8e7386eb3b75e0d54ed88074cf94cb3905c208f7ce6c0ade3ab",
+        "reference": "research/combat/matrix/household_peace/people.csv",
+        "reference_sha256": "1d46c2809e96898907eb59cfc66e0987d60d12013996a0434eab5e36fa7047da",
+        "rows": 10,
+        "uncompressed_bytes": 830
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "0a0ca60785eae4faff15d358a2dc227037f9eacfa1680382121ab1eefbb1ab37",
+        "reference": "research/combat/matrix/household_peace/runs.csv",
+        "reference_sha256": "c30719f7a468be69a1895dddddea88f5ad59ab281f4c65139ea89ff447c37fe6",
+        "rows": 1,
+        "uncompressed_bytes": 1798
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "98ea5f400667fa5b8b3c9c2b573f0e8a8d916101dd99afdf9a95ab9123258f5e",
+        "reference": "research/combat/matrix/household_peace/timeline.csv",
+        "reference_sha256": "ee113ccbbe9369bb5752e208ec98fb856ac4e9961a14be08e016b6f854187082",
+        "rows": 92,
+        "uncompressed_bytes": 3371
+      }
+    },
+    "seed": 0,
+    "state_hash": "28f96a301ccbf16c"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "household",
+    "event_hash": "3911da97ba4fa9aa",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "5ae89b5a812b635c92506e07056ace31fcf32a43980d65d21627f0a1bfe4851e",
+        "reference": "research/combat/matrix/household_peace_defended/activity.csv",
+        "reference_sha256": "ac51c0fa8dbae76e1fbb62e51297ed55a27c161b4182f8b34e53df37e4a621ee",
+        "rows": 30,
+        "uncompressed_bytes": 725
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "0f3bbe85df6aa8151e97a7397577ec5988132ce7160791c1276f839cb009903c",
+        "reference": "research/combat/matrix/household_peace_defended/events.tsv.gz",
+        "reference_sha256": "18e1251bab48c6f946e199cb40819b9c8b6589ab6d3946404d1b7ec7400f8fe2",
+        "uncompressed_bytes": 2223125
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "bd184ce8ad6aaf607bfb89725a0790cdc431e838768f6056527b41ce2cf59b65",
+        "reference": "research/combat/matrix/household_peace_defended/goods.tsv.gz",
+        "reference_sha256": "862a5f7544b8b4d5741449fc27ed5db5308289bad43863bebcb8c7da601f45da",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "f4bb37c3348fccdbd21f4ddaac9bd5ee924c9e37e224c1bb35b8366289feec71",
+        "reference": "research/combat/matrix/household_peace_defended/people.csv",
+        "reference_sha256": "5c9f2f422768e0f28a50405d93007967d5eb00a7b6d75d87bf10e5a3162f904a",
+        "rows": 10,
+        "uncompressed_bytes": 826
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "06e17160e0eb28c860325395837b73d626e57ffe6309d467c904e4c3c353d609",
+        "reference": "research/combat/matrix/household_peace_defended/runs.csv",
+        "reference_sha256": "d5d9af3720bf6ab035297805f0936f740568e8419d088a78d7a2946bce315ed4",
+        "rows": 1,
+        "uncompressed_bytes": 1760
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "f33c9a9e4efc612233fca9e1789e48af05c39a672b645825dcbce8160ba94698",
+        "reference": "research/combat/matrix/household_peace_defended/timeline.csv",
+        "reference_sha256": "3ff6740963f14eaf159aebdaa838ab6247098b6836014b21ef84bfaf62cffab1",
+        "rows": 92,
+        "uncompressed_bytes": 3395
+      }
+    },
+    "seed": 0,
+    "state_hash": "ac602f9dbaffbd6b"
+  },
+  {
+    "arm": "undefended",
+    "case": "farming",
+    "event_hash": "9327a324200f6ec8",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "5d266e691e96ca4aa50f142518eb5ddfadbf854433a36fe8fb8f26c33491800b",
+        "reference": "research/combat/matrix/farming_undefended/activity.csv",
+        "reference_sha256": "c31d9519b5dbfb3adb039e489b02d898e6ebb7d43cf01b79b5eab1cbd4a4a698",
+        "rows": 38,
+        "uncompressed_bytes": 884
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "8a19e0da7f4dd067bb41b8ae50d5cb98e871febe4a8dfb47c9d8c14c8209d1e6",
+        "reference": "research/combat/matrix/farming_undefended/events.tsv.gz",
+        "reference_sha256": "f246fea6fd34eab6cddc3742fc392327e425a969f724cdccc627101e77f3343b",
+        "uncompressed_bytes": 1617212
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "4514a7f5eb5af5b20e7571b471f0922ec52c3120c5b73dd87b90538ffbb4e476",
+        "reference": "research/combat/matrix/farming_undefended/goods.tsv.gz",
+        "reference_sha256": "68fbdda7f35aa41864dc871922882d656f404fcfe414f49eaef8867d57020051",
+        "uncompressed_bytes": 1742
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "9f974d9a246e417616adfc21c1cb548f7d75091792602171091fa5b47cb27967",
+        "reference": "research/combat/matrix/farming_undefended/people.csv",
+        "reference_sha256": "ffcb483853ca52fcbb5fea2b147d8e3909d2e55caadac9a3a3c30d626fbaeb54",
+        "rows": 9,
+        "uncompressed_bytes": 932
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "0ac70ff553a5d9e0cf067853e32c0d51661e8e0200e36039da5d92212b6264ff",
+        "reference": "research/combat/matrix/farming_undefended/runs.csv",
+        "reference_sha256": "e721085b1e89ff0cfae6a4b4cd6ec89f0d44d6e33297e5e10ec85aa398309dd1",
+        "rows": 1,
+        "uncompressed_bytes": 1791
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "8ddcc7956a11bb05f51bbeec0d72d0f84b05d965aeca93792a1cedd65fd0051b",
+        "reference": "research/combat/matrix/farming_undefended/timeline.csv",
+        "reference_sha256": "40052da6360d3f9ed7af8f8bb42a9ba14cc9f866905cbbf1b2489f9ed2082ae3",
+        "rows": 92,
+        "uncompressed_bytes": 3449
+      }
+    },
+    "seed": 0,
+    "state_hash": "01ebfb7154e824dc"
+  },
+  {
+    "arm": "defended",
+    "case": "farming",
+    "event_hash": "4dc5eeab20fbe12d",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "ee5473c3cebe2bcd69ded8fa9f72d20a11065e67c9c4e96a8b48dd11f61b76a0",
+        "reference": "research/combat/matrix/farming_defended/activity.csv",
+        "reference_sha256": "66af542632e7a97345c4b0d972ecc6cb5911b4b3d7fa61cab1aad86f06bd5762",
+        "rows": 39,
+        "uncompressed_bytes": 933
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "0c2fced305118cb0b0060ed6af71d48c58c71d834563b57545f164d680fa9845",
+        "reference": "research/combat/matrix/farming_defended/events.tsv.gz",
+        "reference_sha256": "7808d43f5f9fbeb329c0f10004b1bd54a5473d7a68456f1d252fc46e4be35c50",
+        "uncompressed_bytes": 1577544
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "f62dc8598e2236d9c3dacc5212c2fe2b83403d3bc3b55f39e58e947571ae0805",
+        "reference": "research/combat/matrix/farming_defended/goods.tsv.gz",
+        "reference_sha256": "78657bad4cbb130031ab2cbd2865044dd8a8dc983d888afdf63d190e1b99284d",
+        "uncompressed_bytes": 1470
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "359be706bb796849cdd5990a4b819d8b73b4a2e9a437223ab85f1fc37d09c0ea",
+        "reference": "research/combat/matrix/farming_defended/people.csv",
+        "reference_sha256": "84d1e16ae809a471a04f11ba5a380123da38cb3a2c24748c76af99964714aaa8",
+        "rows": 9,
+        "uncompressed_bytes": 820
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "e74605bca9a963858be814303b6724b86585dae362ed081cff9cf7f310f48225",
+        "reference": "research/combat/matrix/farming_defended/runs.csv",
+        "reference_sha256": "b1c299916e52b037a6e41050f20c4426c43053e3f94cfe33788c7af6a5a86272",
+        "rows": 1,
+        "uncompressed_bytes": 1777
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "90cfac5717f075cc61292be5f77971c0f1123f77a48d4f6dc4ebabf421811c04",
+        "reference": "research/combat/matrix/farming_defended/timeline.csv",
+        "reference_sha256": "8d740005d0f0701bb109dc05e5fc666079e4525e817446b2307d3245776c8df2",
+        "rows": 92,
+        "uncompressed_bytes": 3448
+      }
+    },
+    "seed": 0,
+    "state_hash": "47783c5b2bf6c05d"
+  },
+  {
+    "arm": "peace",
+    "case": "farming",
+    "event_hash": "581a4267ef3aad25",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4f73b4e2e7d72cbe327061369a7bbc2f5f1d47e604a844adff5dbd803587d012",
+        "reference": "research/combat/matrix/farming_peace/activity.csv",
+        "reference_sha256": "062552a93c4940a90ede1e6b07b55834ada1857383e2e6df04c2fbf8f4828f9b",
+        "rows": 32,
+        "uncompressed_bytes": 749
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "57e0b659abac5e24466fbba140e689b706d51696f2a75e220e1f8aab07a35dbf",
+        "reference": "research/combat/matrix/farming_peace/events.tsv.gz",
+        "reference_sha256": "ef1a56a77750261b0d3abf5e11fc4a23538c34fe1f718edc50b45094064c617b",
+        "uncompressed_bytes": 1925609
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "6e25d46e457e458b04b9af4cb77eeacab47a2f4544008e247316b6d94c7ac4de",
+        "reference": "research/combat/matrix/farming_peace/goods.tsv.gz",
+        "reference_sha256": "ceef3cd975965d37a0880094d7c3ec6f6504296a25b0695443be155ead2b7d06",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "bc4dc706ed8a94acf6dd532d285d75b14dbf4a9205ea6658f40996f4657f2ad7",
+        "reference": "research/combat/matrix/farming_peace/people.csv",
+        "reference_sha256": "3aabb1ece1c116c7bc74218f4925b4b1a3b5272340592c4a737d6dd9f660d39d",
+        "rows": 9,
+        "uncompressed_bytes": 923
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "799c1ee66517013b7ac620f908e0356ededfde16728e1c80ee191296de8b36bd",
+        "reference": "research/combat/matrix/farming_peace/runs.csv",
+        "reference_sha256": "e413821dd8ecbf0482173e05443909791d4e5096615c16b052aaa35a59df17a1",
+        "rows": 1,
+        "uncompressed_bytes": 1777
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "4abc9dff11c98e3e3a480e01b6092f4f1fe60552aee3daf45a09f2fdf632c66d",
+        "reference": "research/combat/matrix/farming_peace/timeline.csv",
+        "reference_sha256": "67f464c2e9ce213b99a06a2f195f423a042e42c3b7318af3e0194cfe5208f9ce",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "daf59a78b035f03c"
+  },
+  {
+    "arm": "peace_defended",
+    "case": "farming",
+    "event_hash": "28aa9679b9109b74",
+    "files": {
+      "activity.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "238a97a11dd2c9b7ef69f899816994b2d1ac5804673d1038ec44897143271b5d",
+        "reference": "research/combat/matrix/farming_peace_defended/activity.csv",
+        "reference_sha256": "1f4aa25d5d252eed5db0bc741401548168a0e1e536ac9536dca31b12ecdd5bbe",
+        "rows": 30,
+        "uncompressed_bytes": 729
+      },
+      "events.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "1b83e221e8ed06a88c5c6e17bd0ca78f46592f890ecb0b4f43c75f4848b08162",
+        "reference": "research/combat/matrix/farming_peace_defended/events.tsv.gz",
+        "reference_sha256": "e381a31603450fbbc733fc04bab8dd8a10200d373364ba782641a75678acd846",
+        "uncompressed_bytes": 1941653
+      },
+      "goods.tsv": {
+        "comparison": "uncompressed seed-zero trace bytes exactly equal",
+        "content_sha256": "d435f7a6485650479f3abbcebae7393f82ea88e9201589017a3bc26ec95dcc26",
+        "reference": "research/combat/matrix/farming_peace_defended/goods.tsv.gz",
+        "reference_sha256": "4382ac246d458ec96296d437d6b656845b84071bc2db4f36bf339c90c392f4ae",
+        "uncompressed_bytes": 1337
+      },
+      "people.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "3189bc54d20f1030259014f13f582b5ee1e919db473489db3949c3405a4c4a0c",
+        "reference": "research/combat/matrix/farming_peace_defended/people.csv",
+        "reference_sha256": "cda5e1a3008c6b286f63928013cc92859c5dd04fcc9144b266b8175e26848ad1",
+        "rows": 9,
+        "uncompressed_bytes": 819
+      },
+      "runs.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "38580f5d9d91a5348914e28d3fe08c09a497a6f9eb8996483627021f879658f7",
+        "reference": "research/combat/matrix/farming_peace_defended/runs.csv",
+        "reference_sha256": "b3334542a6959d77e0ce01c863b51b18c64c5b9b1a88de8fe52a7871f4028123",
+        "rows": 1,
+        "uncompressed_bytes": 1756
+      },
+      "timeline.csv": {
+        "comparison": "all CSV fields and ordered seed-zero rows exactly equal",
+        "content_sha256": "8bb8a2be9d2756a663fde8f94cf61de8d3bf0002d329f542544e2d96695ed56f",
+        "reference": "research/combat/matrix/farming_peace_defended/timeline.csv",
+        "reference_sha256": "258ac0d9c44a820c0d8c5a654b69020db9981cde55d95dd682d93e98ae4edfb4",
+        "rows": 92,
+        "uncompressed_bytes": 3370
+      }
+    },
+    "seed": 0,
+    "state_hash": "213112a0edadeed0"
+  }
+]

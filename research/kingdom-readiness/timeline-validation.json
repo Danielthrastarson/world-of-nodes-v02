@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "source_revision": "47533e2406bb6a008995888eafac06677ca48f45",
+  "runs": 180,
+  "per_run_checkpoints": 289,
+  "checkpoints": 52020,
+  "check": "all timeline audit_ok=1 and overtakes=0; complete 30x289 rows per arm",
+  "files_sha256": {
+    "research/kingdom-readiness/matrix/alternate_commissioned/timeline.csv": "42ef52d44cdcdbbd1155fd2c2457c1be7adca5a929c2224cf446afc89a9e4118",
+    "research/kingdom-readiness/matrix/alternate_pending/timeline.csv": "2279c5a23904c24a9bcee7397a3d5d7843509c666bf2883d5d154cfff0b8eb9a",
+    "research/kingdom-readiness/matrix/long_commissioned/timeline.csv": "0ae527ebc6a8eea04cbb54e3a2f6eec7a9bba41fcb3ed63c0b48d80c644ef452",
+    "research/kingdom-readiness/matrix/long_pending/timeline.csv": "ca386549c742c067d546d75afd06fa5848f25154f77e233aadba5d3b46c13760",
+    "research/kingdom-readiness/matrix/scarce_commissioned/timeline.csv": "7d437cb4f1ae69027224f295be1eb8140513e07df353e3a4a94c4d30a23b0c54",
+    "research/kingdom-readiness/matrix/scarce_pending/timeline.csv": "011d2add7e9b413e7b247bf54618269c46c77a1fd04c31097def9cd1daa8176d"
+  }
+}

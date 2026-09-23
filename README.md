@@ -220,3 +220,18 @@ python3 scripts/verify_information.py NEW_REGRESSION
 ```
 
 F13 proceeds through a research-only integration control using existing local stewardship powers. Full ruler-command semantics remain unresolved; research unit orders are not royal authority.
+
+
+### F13A integrated readiness and the next owner boundary
+
+[180-run evidence](research/kingdom-readiness/REPORT.md) · [copyable handoff](research/kingdom-readiness/HANDOFF.txt) · [owner options](docs/F13_OWNER_DECISION.md).
+
+One existing local steward commission changes actual infrastructure and downstream production, movement, household outcomes and administrative presence. The completed crossing can worsen nourishment; unfinished projects also impose costs. A new timing witness repaired checkpoint-dependent unit-order wakes while retaining217 historical and840 F12 exact replays.307 tests pass.
+
+Full F13 remains open until the ruler's lawful interaction with embodied officials is selected. No remote obedience, conscription, requisition, money or UI is inferred from this integration control.
+
+```sh
+cargo build --release --bins
+python3 scripts/run_kingdom_readiness.py NEW_PANEL 30
+python3 scripts/analyze_kingdom_readiness.py NEW_PANEL NEW_ANALYSIS
+```

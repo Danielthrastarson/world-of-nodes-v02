@@ -2,7 +2,13 @@
 
 Updated 2026-09-22 following the owner's design change.
 
-## Latest evidence — F12
+## Latest evidence — F13A readiness
+
+[Integrated evidence](research/kingdom-readiness/REPORT.md) and [copyable handoff](research/kingdom-readiness/HANDOFF.txt).180 paired runs show one lawful local commission changing construction, traffic, production, household outcomes and administrative presence. The completed alternate crossing reduces production432→312 and raises starvation173.977→262.717h.307 tests pass;217 historical replays and all840 F12 runs remain exact after a narrow scheduling repair. All15,827 prior files remain unchanged.
+
+Full F13 awaits the [owner's ruler-interaction decision](docs/F13_OWNER_DECISION.md). No royal remote-order right, compulsory courier service or authority over voluntary units is inferred. F12 and F13A mechanisms pass; a ruler-controlled kingdom slice has not yet passed.
+
+## Prior evidence — F12
 
 [Local report evidence](research/information/REPORT.md):840 final controlled runs,304 tests,217 exact historical replays; all15,388 previous artifacts unchanged. Source `4c84081`. Information is physically carried and remains dated; receiving a report neither creates authority nor guarantees useful new knowledge. F12 passes at mechanism scope. F13A research-only integration can use existing local steward commissioning; full ruler-command powers remain an owner decision. Earlier sections below preserve their historical scopes.
 

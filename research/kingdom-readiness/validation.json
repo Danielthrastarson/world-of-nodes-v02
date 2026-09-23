@@ -1,0 +1,20 @@
+{
+  "status": "PASS_AT_READINESS_SCOPE",
+  "implementation_revision": "47533e2406bb6a008995888eafac06677ca48f45",
+  "tests": 307,
+  "new_integration_tests": 2,
+  "new_information_fixture_partition_test": 1,
+  "final_primary_runs": 180,
+  "previous_research_files_unchanged": 15827,
+  "historical_executions": 217,
+  "f12_replay_runs": 840,
+  "f12_replay_status": "PASS",
+  "full_F13_gate": "OPEN: owner decision about ruler interaction/authority remains",
+  "parameters_changed_after_smoke": false,
+  "notes": [
+    "Original timing failure and isolation preserved.",
+    "Nominal versus actual construction labor wording clarified only; no parameter changed.",
+    "F12 replay checks allfields except runtime and allrawtrace bytes.",
+    "No scalar welfare claim."
+  ]
+}

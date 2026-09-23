@@ -1,0 +1,22 @@
+{
+  "binary_sha256": {
+    "affect_probe": "e30a56053260612e2442d5d15973d971844dfe909441ba822f27f98624bdfc8f",
+    "combat_probe": "e3b16f865a1b2dcc478556d44d365dd01cd6c0b0b1cbaa918e581515b4caf2b8",
+    "formation_probe": "ecaaba0d333e86f6b44d9e64d7365ae8cd0114d5d4890771d9c870bc1da1cb90",
+    "household_probe": "5f3f14ebcc2515338c1d89cb38025e4999aa8417d64437a9e60b0aa0d1660144",
+    "infrastructure_probe": "3098af0ef30a903e06706a61d5ee12ad420c6471ef4c9e2e8745a9687d79f067",
+    "lifecycle_probe": "14dde8c4733509303b11264a91e022212db20d94851dd820a5d75e39fb0bf8f2",
+    "mobilization_probe": "6bfdcb24a75c8ef2fb0b0706deb78c6eddef59bfd51bb9c282ffd12b4f88e021",
+    "paths_probe": "db0cb9602531b30c5c85df717368eaa6244a54a7cbab8d0aea9def2033aad465",
+    "provisioning_probe": "21620cfae480a2e1dcfcb551d0a2d06e85e610608b5d0a29faa75b0b4c64486b",
+    "settlement_probe": "42053358a1ed1209629aa97f8eb6564b3db286bb8c2ed6233662af2befa82f07"
+  },
+  "exceptions": "Historical wall runtime and old B2 debug-derived physical_signature retain the existing verifier exceptions. Optional disabled information may change Config debug parameters, which are fingerprinted but not compared. Physical outcomes, authoritative state/event hashes, ordered CSV fields and raw seed-zero traces are unchanged.",
+  "f11c_seed_zero_executions": 48,
+  "historical_executions": 217,
+  "older_executions": 169,
+  "prior_files_unchanged": 15388,
+  "retention": "Exact reproduced raw output discarded after comparison; originals remain in historical research. replay-digests.json fingerprints generated output; combat-checks.json links each F11C reference. No historical file rewritten.",
+  "source_revision": "47533e2406bb6a008995888eafac06677ca48f45",
+  "status": "PASS"
+}

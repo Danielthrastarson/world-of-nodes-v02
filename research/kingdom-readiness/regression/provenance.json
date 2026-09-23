@@ -1,0 +1,40 @@
+{
+  "binary_sha256": {
+    "affect_probe": "e30a56053260612e2442d5d15973d971844dfe909441ba822f27f98624bdfc8f",
+    "combat_probe": "e3b16f865a1b2dcc478556d44d365dd01cd6c0b0b1cbaa918e581515b4caf2b8",
+    "formation_probe": "ecaaba0d333e86f6b44d9e64d7365ae8cd0114d5d4890771d9c870bc1da1cb90",
+    "household_probe": "5f3f14ebcc2515338c1d89cb38025e4999aa8417d64437a9e60b0aa0d1660144",
+    "infrastructure_probe": "3098af0ef30a903e06706a61d5ee12ad420c6471ef4c9e2e8745a9687d79f067",
+    "lifecycle_probe": "14dde8c4733509303b11264a91e022212db20d94851dd820a5d75e39fb0bf8f2",
+    "mobilization_probe": "6bfdcb24a75c8ef2fb0b0706deb78c6eddef59bfd51bb9c282ffd12b4f88e021",
+    "paths_probe": "db0cb9602531b30c5c85df717368eaa6244a54a7cbab8d0aea9def2033aad465",
+    "provisioning_probe": "21620cfae480a2e1dcfcb551d0a2d06e85e610608b5d0a29faa75b0b4c64486b",
+    "settlement_probe": "42053358a1ed1209629aa97f8eb6564b3db286bb8c2ed6233662af2befa82f07"
+  },
+  "interpretation": "regression execution, not new independent social evidence",
+  "prior_files_unchanged": 15388,
+  "prior_manifest": "research/information/prior-artifacts.json",
+  "prior_manifest_sha256": "41c69ca68c62129b8b9d17b7963056faa4a1bb2ad1f6d08fa3a080e5bb42b183",
+  "source_revision": "47533e2406bb6a008995888eafac06677ca48f45",
+  "verifier_sha256": {
+    "scripts/verify_affect.py": "76a852002b0b2ca4887fee20bbf9b659a591d248d22124606826f68932b4defe",
+    "scripts/verify_authority.py": "a7587bffb9e083b878c0439724f5a1e88da02c81d321c95107e4dff6f64043b2",
+    "scripts/verify_barter.py": "f60d0080fafadcdb1a36d08e327320f7f95efe20194165f06f0e42ca6828c72e",
+    "scripts/verify_combat.py": "659b51cb0593ca0eb2fe524a81ea0e6b3d529cb1a63ccbdf0dc1ee0387afc441",
+    "scripts/verify_formation.py": "05e85297edfd5ad6b6b295e5fdcc16b594213ce3c8b0d6a11f5c5a0544b601ab",
+    "scripts/verify_household.py": "183d02a9f7519c5d00ba7292c8523d6a97ee686b6a98abbdd476a489cfccd8b9",
+    "scripts/verify_information.py": "c09c2a74f195c1f5f404b5837f9632c933b9edde30d803ebb0970e3a09a07e21",
+    "scripts/verify_lifecycle.py": "ae12b00d899029fa90b8a6e38dd294932116b5faf8cfd40bffe4aee717044cf4",
+    "scripts/verify_market.py": "121229e349a757cbd9ae3d8a4cca5c2e598848e9356de577a7f7a2bf6c02ee28",
+    "scripts/verify_mobilization.py": "de73826e5a3173a2a165e3c428ce548f2d9d444be2991a75045314ac180bc6c5",
+    "scripts/verify_settlements.py": "b93fe9a09d3592677266c47673959d640a603c1a20222eb19baa380dfed8f633"
+  },
+  "working_tree_status_at_start": [
+    "?? research/kingdom-readiness/full-tests-final.log",
+    "?? research/kingdom-readiness/information-replay.log",
+    "?? research/kingdom-readiness/information-replay/",
+    "?? research/kingdom-readiness/matrix-run.log",
+    "?? research/kingdom-readiness/matrix/",
+    "?? research/kingdom-readiness/regression-run.log"
+  ]
+}
