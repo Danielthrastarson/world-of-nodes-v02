@@ -1,0 +1,92 @@
+{
+  "sufficient": {
+    "completed": {
+      "mean": 1.0,
+      "changed_seeds": 30
+    },
+    "alive": {
+      "mean": 40.0,
+      "changed_seeds": 30
+    },
+    "consumed": {
+      "mean": 1691.0,
+      "changed_seeds": 30
+    },
+    "starvation_h": {
+      "mean": -473.983333333,
+      "changed_seeds": 30
+    },
+    "queue_h": {
+      "mean": 792.649249166,
+      "changed_seeds": 30
+    },
+    "delivered": {
+      "mean": 58.0,
+      "changed_seeds": 30
+    },
+    "active_administration_h": {
+      "mean": 8.331328888999998,
+      "changed_seeds": 30
+    }
+  },
+  "scarce": {
+    "completed": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "alive": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "queue_h": {
+      "mean": 2.166666666000001,
+      "changed_seeds": 30
+    },
+    "delivered": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "active_administration_h": {
+      "mean": 1.25,
+      "changed_seeds": 30
+    }
+  },
+  "discovery": {
+    "completed": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "alive": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    },
+    "active_administration_h": {
+      "mean": 0.0,
+      "changed_seeds": 0
+    }
+  }
+}

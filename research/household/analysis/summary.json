@@ -1,0 +1,2051 @@
+{
+  "caregiver_death_off": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 25.0,
+      "min": 25.0,
+      "max": 25.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {}
+  },
+  "caregiver_death_on": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 25.0,
+      "min": 25.0,
+      "max": 25.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "gate:NO_OBSERVED_SEVERE_NEED": 60
+    }
+  },
+  "colocated_off": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "observed_opportunities": 1440
+    }
+  },
+  "colocated_on": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.016666667,
+      "min": 48.016666667,
+      "max": 48.016666667
+    },
+    "care_goals": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "care_transfers": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "food_transferred": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "completed": 1,
+      "food_transferred": 6,
+      "gate:NO_OBSERVED_SEVERE_NEED": 719,
+      "gate:NO_PERSONAL_CARGO": 720,
+      "gate:SELF_SURVIVAL_BUFFER": 1080,
+      "goals": 1,
+      "observed_opportunities": 1801,
+      "transfer_attempts": 1,
+      "transfers": 1
+    }
+  },
+  "construction_off": {
+    "alive": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 2404.0,
+      "min": 2404.0,
+      "max": 2404.0
+    },
+    "spoiled": {
+      "mean": 602.0,
+      "min": 602.0,
+      "max": 602.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 33.995336111,
+      "min": 33.995336111,
+      "max": 33.995336111
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 24.582425556,
+      "min": 24.582425556,
+      "max": 24.582425556
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 557.0,
+      "min": 557.0,
+      "max": 557.0
+    },
+    "crossings_completed": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "observed_opportunities": 8
+    }
+  },
+  "construction_on": {
+    "alive": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 2408.0,
+      "min": 2408.0,
+      "max": 2408.0
+    },
+    "spoiled": {
+      "mean": 598.0,
+      "min": 598.0,
+      "max": 598.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 30.382966667,
+      "min": 30.382966667,
+      "max": 30.382966667
+    },
+    "care_goals": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "care_transfers": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "food_transferred": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 30.258191389,
+      "min": 30.258191389,
+      "max": 30.258191389
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 572.0,
+      "min": 572.0,
+      "max": 572.0
+    },
+    "crossings_completed": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "completed": 1,
+      "food_transferred": 6,
+      "gate:EXISTING_JOB": 1542,
+      "gate:NO_OBSERVED_SEVERE_NEED": 1058,
+      "goals": 1,
+      "observed_opportunities": 1,
+      "transfer_attempts": 1,
+      "transfers": 1
+    }
+  },
+  "far_known_off": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {}
+  },
+  "far_known_on": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 10.222222222,
+      "min": 10.222222222,
+      "max": 10.222222222
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "cancel:LOCAL_ABSENCE_OR_DEATH": 1,
+      "cancelled": 1,
+      "gate:NO_OBSERVED_SEVERE_NEED": 2267,
+      "goals": 1,
+      "travel_attempts": 1
+    }
+  },
+  "farming_distant_off": {
+    "alive": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "consumed": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "starvation_h": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 13.491666667,
+      "min": 13.491666667,
+      "max": 13.491666667
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "observed_opportunities": 633
+    }
+  },
+  "farming_distant_on": {
+    "alive": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "consumed": {
+      "mean": 47.0,
+      "min": 47.0,
+      "max": 47.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "starvation_h": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "care_goals": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "cancel:LOCAL_ABSENCE_OR_DEATH": 1,
+      "cancelled": 1,
+      "gate:NO_OBSERVED_SEVERE_NEED": 2822,
+      "goals": 1,
+      "travel_attempts": 1
+    }
+  },
+  "farming_off": {
+    "alive": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "consumed": {
+      "mean": 47.0,
+      "min": 47.0,
+      "max": 47.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "starvation_h": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "observed_opportunities": 1441
+    }
+  },
+  "farming_on": {
+    "alive": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "consumed": {
+      "mean": 54.0,
+      "min": 54.0,
+      "max": 54.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "starvation_h": {
+      "mean": 36.416666667,
+      "min": 36.416666667,
+      "max": 36.416666667
+    },
+    "care_goals": {
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0
+    },
+    "care_transfers": {
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0
+    },
+    "food_transferred": {
+      "mean": 10.0,
+      "min": 10.0,
+      "max": 10.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "completed": 5,
+      "food_transferred": 10,
+      "gate:NO_OBSERVED_SEVERE_NEED": 317,
+      "gate:NO_PERSONAL_CARGO": 1818,
+      "gate:SELF_SURVIVAL_BUFFER": 742,
+      "goals": 5,
+      "observed_opportunities": 2565,
+      "transfer_attempts": 5,
+      "transfers": 5
+    }
+  },
+  "multiple_off": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "observed_opportunities": 2880
+    }
+  },
+  "multiple_on": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 72.016666667,
+      "min": 72.016666667,
+      "max": 72.016666667
+    },
+    "care_goals": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "care_transfers": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "food_transferred": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "completed": 1,
+      "food_transferred": 6,
+      "gate:NO_OBSERVED_SEVERE_NEED": 719,
+      "gate:NO_PERSONAL_CARGO": 720,
+      "gate:SELF_SURVIVAL_BUFFER": 1080,
+      "goals": 1,
+      "observed_opportunities": 3241,
+      "transfer_attempts": 1,
+      "transfers": 1
+    }
+  },
+  "near_known_off": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 19.966666667,
+      "min": 19.966666667,
+      "max": 19.966666667
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "observed_opportunities": 243
+    }
+  },
+  "near_known_on": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "cancel:LOCAL_ABSENCE_OR_DEATH": 1,
+      "cancelled": 1,
+      "gate:NO_OBSERVED_SEVERE_NEED": 2820,
+      "goals": 1,
+      "travel_attempts": 1
+    }
+  },
+  "nonkin_off": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {}
+  },
+  "nonkin_on": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {}
+  },
+  "self_conflict_off": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "observed_opportunities": 1440
+    }
+  },
+  "self_conflict_on": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "gate:NO_OBSERVED_SEVERE_NEED": 600,
+      "gate:NO_PERSONAL_CARGO": 240,
+      "gate:SELF_SURVIVAL_BUFFER": 1200,
+      "observed_opportunities": 1440
+    }
+  },
+  "unknown_off": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "care_goals": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_transfers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_transferred": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 19.966666667,
+      "min": 19.966666667,
+      "max": 19.966666667
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "observed_opportunities": 243
+    }
+  },
+  "unknown_on": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "consumed": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 50.016666667,
+      "min": 50.016666667,
+      "max": 50.016666667
+    },
+    "care_goals": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "care_transfers": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "food_transferred": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "care_travel_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "care_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "separation_pair_h": {
+      "mean": 32.0,
+      "min": 32.0,
+      "max": 32.0
+    },
+    "caregiver_losses": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "residence_changes": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "crossings_completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "distinct_outcomes": 1,
+    "counts": {
+      "completed": 1,
+      "food_transferred": 6,
+      "gate:NO_OBSERVED_SEVERE_NEED": 120,
+      "gate:NO_PERSONAL_CARGO": 474,
+      "gate:SELF_SURVIVAL_BUFFER": 188,
+      "gate:STALE_NEED": 1678,
+      "goals": 1,
+      "observed_opportunities": 2,
+      "transfer_attempts": 1,
+      "transfers": 1
+    }
+  }
+}

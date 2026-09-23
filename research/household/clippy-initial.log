@@ -1,0 +1,30 @@
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error: field assignment outside of initializer for an instance created with Default::default()
+   --> src/provisioning/household/tests.rs:255:5
+    |
+255 | /     c.household = Some(Config {
+256 | |         households: vec![Household {
+257 | |             id: 0,
+258 | |             members: vec![0, 0],
+...   |
+261 | |         ..Config::default()
+262 | |     });
+    | |_______^
+    |
+note: consider initializing the variable with `provisioning::Config { household: Some(Config {
+              households: vec![Household {
+                  id: 0,
+                  members: vec![0, 0],
+                  home: None,
+              }],
+              ..Config::default()
+          }), ..Default::default() }` and removing relevant reassignments
+   --> src/provisioning/household/tests.rs:254:5
+    |
+254 |     let mut c = super::super::Config::default();
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.98.0/index.html#field_reassign_with_default
+    = note: `-D clippy::field-reassign-with-default` implied by `-D warnings`
+    = help: to override `-D warnings` add `#[allow(clippy::field_reassign_with_default)]`
+
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error

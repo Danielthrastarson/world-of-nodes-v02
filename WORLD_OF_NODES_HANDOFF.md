@@ -382,3 +382,7 @@ inheritance. F11 remains BLOCKED until B0–B3 pass. No military expansion began
 ## Current increment: B1 household and directed care
 
 B0 accepted. B1 is authorized with personal ownership, explicit caregiver obligations, local observation, and voluntary bounded care. No pooling, inheritance, compulsory sharing, emotions, reproduction or military. Registered rules: docs/HOUSEHOLD_EXPERIMENT.md. Historical results remain authoritative evidence, not outcomes to optimize.
+
+### B1 result
+
+B1 PASSED at seeded structural-care scope; research/household/REPORT.md records evidence. Personal property remains separate from household/kinship and directed Caregiver relations. 660 paired-condition runs, 210 tests, 227 exact historical replays and 4,410 unchanged old research files. Care can transfer food, shorten caregiver survival, fail after relatives pass on a road, and redistribute construction work. No pooling, inheritance, compulsory sharing, affect or reproduction. Source79515ee; original negative findings remain intact. B2/B3 and F11 are not implemented.

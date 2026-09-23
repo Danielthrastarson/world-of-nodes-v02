@@ -1,0 +1,25 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.27s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 17 tests
+test provisioning::household::tests::family_members_cannot_take_one_anothers_personal_goods ... ok
+test provisioning::household::tests::care_cancels_waiting_without_priority_admission_or_moving_recipient ... ok
+test provisioning::household::tests::explicit_gift_preserves_age_matter_and_requires_recipient_consumption ... ok
+test provisioning::household::tests::care_can_pause_for_sleep_and_resume_without_forcing_commitment ... ok
+test provisioning::household::tests::known_need_creates_physical_travel_and_absence_only_updates_locally ... ok
+test provisioning::household::tests::hidden_remote_need_and_death_do_not_change_personal_choice ... ok
+test provisioning::household::tests::personal_gift_cannot_take_commons_or_remote_food ... ok
+test provisioning::household::tests::relations_are_directed_and_care_is_not_implied ... ok
+test provisioning::household::tests::no_mid_edge_gift_and_no_spoilage_refresh ... ok
+test provisioning::household::tests::stale_need_and_infeasible_distance_can_block_help ... ok
+test provisioning::household::tests::existing_self_survival_wins_scarcity_conflict ... ok
+test provisioning::household::tests::multiple_dependents_do_not_duplicate_food_or_optimize_away_scarcity ... ok
+test provisioning::household::tests::no_obligation_and_disabled_care_do_not_create_gifts ... ok
+test provisioning::household::tests::death_retains_family_and_personal_property_without_remote_notification ... ok
+test provisioning::household::tests::observer_journal_and_advance_partition_do_not_change_care_execution ... ok
+test provisioning::household::tests::duplicate_membership_is_rejected_and_disabled_hash_is_unchanged ... ok
+test provisioning::household::tests::identical_personal_histories_and_seed_replay_identically ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 179 filtered out; finished in 0.35s
+

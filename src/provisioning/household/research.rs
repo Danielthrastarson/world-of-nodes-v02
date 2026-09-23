@@ -140,7 +140,8 @@ pub fn fixture(case: &str, enabled: bool, seed: u64) -> Result<World, String> {
         );
     }
     if distant && case != "unknown" {
-        // Explicit timestamped prior meeting, legitimate only as experimental history.
+        // Counterfactual initial belief, not a replayed physical prehistory.
+        // Runtime policy never calls this research-only initializer.
         w.household.memories[0].sightings.insert(
             1,
             Sighting {

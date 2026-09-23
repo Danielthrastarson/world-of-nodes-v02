@@ -157,3 +157,7 @@ cargo build --release --bins
 python3 scripts/run_person.py /tmp/won-b0-replay
 python3 scripts/analyze_person.py /tmp/won-b0-replay /tmp/won-b0-coverage.json
 ```
+
+### B1 household / kinship
+
+[Structural care evidence](research/household/REPORT.md) and [registered assumptions](docs/HOUSEHOLD_EXPERIMENT.md): personal property, separate directed caregiver obligations, local need observations and physical voluntary transfers through the common Person interface. Includes 660 paired-condition runs, negative outcomes, opportunity costs and exact historical regression checks. No inheritance, pooled property, emotions or reproduction.

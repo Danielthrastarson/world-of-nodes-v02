@@ -1,0 +1,344 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.62s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 197 tests
+test provisioning::authority::tests::invalid_configuration_is_rejected ... ok
+test provisioning::authority::tests::commission_requires_local_holder_and_never_creates_material_or_work ... ok
+test provisioning::authority::tests::appointment_is_local_and_does_not_assign_action_or_knowledge ... ok
+test provisioning::acceptance::tests::source_prior_is_timestamped_local_memory_not_fresh_world_information ... ok
+test provisioning::authority::tests::local_observation_does_not_reveal_remote_office_status ... ok
+test provisioning::authority::tests::departure_and_return_derive_territory_without_duplicate_hours ... ok
+test provisioning::authority::tests::death_retains_records_and_removes_actual_authority_at_exact_boundary ... ok
+test provisioning::authority::tests::observation_journal_cannot_change_decisions_or_hashes ... ok
+test provisioning::authority::tests::one_holder_cannot_administer_two_locations_at_once ... ok
+test provisioning::barter::market::tests::atomic_failures_and_racing_buyers ... ok
+test provisioning::barter::market::tests::cancellation_requires_local_owner_and_retrieval_requires_actual_return ... ok
+test provisioning::barter::market::tests::deceased_proposers_prior_deposit_may_settle_but_payment_is_locked_property ... ok
+test provisioning::barter::market::tests::departed_busy_seller_can_settle_without_remote_notification ... ok
+test provisioning::authority::tests::public_objective_requires_commission_but_not_forced_participation ... ok
+test provisioning::authority::tests::sovereign_death_does_not_revoke_a_living_steward ... ok
+test provisioning::barter::market::tests::escrow_release_uses_existing_goods_coalescing_semantics ... ok
+test provisioning::barter::market::tests::escrow_spoils_at_original_deadline_without_disappearing ... ok
+test provisioning::barter::market::tests::deposit_is_exclusive_and_keeps_age ... ok
+test provisioning::barter::market::tests::payment_can_only_be_retrieved_locally_and_is_not_a_capacity_upgrade ... ok
+test provisioning::barter::market::tests::remote_settlement_cannot_change_admission_to_another_market ... ok
+test provisioning::barter::market::tests::expiry_leaves_property_local_and_dead_owner_does_not_transfer_rights ... ok
+test provisioning::barter::market::tests::unseen_offer_changes_do_not_change_remote_views ... ok
+test provisioning::barter::market::tests::formation_is_identical_before_custody_diverges_and_deposit_does_not_self_cancel ... ok
+test provisioning::barter::market::tests::settlement_merges_receipts_using_normal_goods_rules ... ok
+test provisioning::barter::tests::communal_job_arbitration_is_unchanged ... ok
+test provisioning::barter::market::tests::unchanged_buyer_policy_can_accept_after_seller_physically_departs ... ok
+test provisioning::barter::market::tests::repeated_cancellation_and_redeposit_do_not_duplicate_receipt_matter ... ok
+test provisioning::barter::tests::exact_deadline_cannot_be_exchanged_and_age_never_refreshes ... ok
+test provisioning::barter::tests::double_coincidence_requires_willing_seller_and_wrong_actual_payment_good ... ok
+test provisioning::barter::tests::atomic_swap_preserves_age_origin_and_physical_node ... ok
+test provisioning::barter::tests::exchanging_full_backpacks_does_not_overfill_or_teleport ... ok
+test provisioning::barter::tests::failures_are_atomic_and_do_not_reserve_goods ... ok
+test provisioning::barter::tests::no_money_or_resale_motive_is_hidden_in_willingness ... ok
+test provisioning::barter::tests::refusal_is_not_a_global_offer_cancellation ... ok
+test provisioning::barter::tests::owner_and_counterparty_must_both_be_local_and_idle ... ok
+test provisioning::barter::tests::expiry_revocation_departure_death_and_spoilage_preserve_property ... ok
+test provisioning::barter::tests::foreign_and_communal_goods_cannot_be_offered ... ok
+test provisioning::barter::tests::offers_and_own_inventory_are_local_only ... ok
+test provisioning::barter::tests::same_offer_cannot_settle_twice ... ok
+test provisioning::capital::tests::completed_cart_has_owner_and_separate_user_and_conserved_wood ... ok
+test provisioning::capital::tests::actual_container_load_parking_travel_fifo_and_age ... ok
+test provisioning::capital::tests::death_mid_edge_keeps_cart_and_cargo_without_inheritance ... ok
+test provisioning::capital::tests::interruption_retains_work_inputs_and_death_does_not_create_cart ... ok
+test provisioning::capital::tests::investment_compares_demand_not_cart_availability ... ok
+test provisioning::capital::tests::loaded_cart_never_overtakes_an_earlier_unloaded_traveler ... ok
+test provisioning::capital::tests::remote_wood_is_not_a_policy_input ... ok
+test provisioning::barter::tests::two_willing_local_policies_can_settle_and_use_received_goods ... ok
+test provisioning::capital::tests::no_wood_or_no_work_cannot_spawn_capital ... ok
+test provisioning::capital::tests::partial_delivery_across_containers_keeps_same_job_until_payload_unloaded ... ok
+test provisioning::decomposition::tests::coherent_sleep_defers_noncritical_meal_but_interrupts_for_critical_meal ... ok
+test provisioning::capital::tests::frozen_atomic_wood_and_construction_forecast_matches_kernel ... ok
+test provisioning::decomposition::tests::lease_replacement_is_measured_without_remotely_cancelling_worker ... ok
+test provisioning::decomposition::tests::posted_request_is_local_and_survives_initial_refresh_without_food_knowledge ... ok
+test provisioning::decomposition::tests::queue_commitment_keeps_fifo_place_but_does_not_change_admission ... ok
+test provisioning::decomposition::tests::queue_commitment_yields_to_critical_local_food ... ok
+test provisioning::barter::tests::enabled_world_replays_deterministically ... ok
+test provisioning::farming::tests::active_worker_death_does_not_finish_harvest_or_create_goods ... ok
+test provisioning::farming::tests::advance_partition_and_submission_order_do_not_change_crop_physics ... ok
+test provisioning::farming::tests::death_retains_mature_crop_and_other_agent_cannot_take_it ... ok
+test provisioning::coherence::tests::corrected_forecast_matches_static_kernel_matrix ... ok
+test provisioning::farming::tests::frozen_forecast_matches_executable_labor_growth_physiology ... ok
+test provisioning::farming::tests::harvest_age_is_preserved_through_split_carry_and_owner_death ... ok
+test provisioning::farming::tests::interruption_retains_work_and_claim_but_releases_agent_action ... ok
+test provisioning::farming::tests::local_observation_does_not_update_remote_crop_memory ... ok
+test provisioning::farming::tests::locally_observed_scarcity_changes_voluntary_labor_without_occupations ... ok
+test provisioning::farming::tests::no_work_no_output_and_no_land_no_cultivation ... ok
+test provisioning::farming::tests::ownership_begins_at_investment_excludes_others_and_ends_with_crop_not_land ... ok
+test provisioning::coherence::tests::conditional_meals_match_static_kernel_matrix ... ok
+test provisioning::farming::tests::same_personal_history_same_decision_even_if_hidden_land_changes ... ok
+test provisioning::geography::tests::hidden_food_relocation_cannot_guide_initial_exploration ... ok
+test provisioning::barter::market::tests::receipt_journal_retention_does_not_change_physics_or_policy ... ok
+test provisioning::decomposition::bounds_tests::earliest_first_quantum_attains_the_relaxed_lower_bound ... ok
+test provisioning::household::tests::care_can_pause_for_sleep_and_resume_without_forcing_commitment ... ok
+test provisioning::household::tests::care_cancels_waiting_without_priority_admission_or_moving_recipient ... ok
+test provisioning::decomposition::tests::counterfactual_delivers_through_real_physics_and_preserves_locked_parameters ... ok
+test provisioning::household::tests::death_retains_family_and_personal_property_without_remote_notification ... ok
+test provisioning::household::tests::existing_self_survival_wins_scarcity_conflict ... ok
+test provisioning::household::tests::explicit_gift_preserves_age_matter_and_requires_recipient_consumption ... ok
+test provisioning::household::tests::family_members_cannot_take_one_anothers_personal_goods ... ok
+test provisioning::household::tests::hidden_remote_need_and_death_do_not_change_personal_choice ... ok
+test provisioning::farming::tests::remote_scarcity_does_not_leak_into_prearrival_work_decisions ... ok
+test provisioning::household::tests::known_need_creates_physical_travel_and_absence_only_updates_locally ... ok
+test provisioning::household::tests::multiple_dependents_do_not_duplicate_food_or_optimize_away_scarcity ... ok
+test provisioning::household::tests::no_mid_edge_gift_and_no_spoilage_refresh ... ok
+test provisioning::household::tests::no_obligation_and_disabled_care_do_not_create_gifts ... ok
+test provisioning::household::tests::duplicate_membership_is_rejected_and_disabled_hash_is_unchanged ... ok
+test provisioning::household::tests::personal_gift_cannot_take_commons_or_remote_food ... ok
+test provisioning::household::tests::relations_are_directed_and_care_is_not_implied ... ok
+test provisioning::household::tests::simultaneous_deaths_do_not_count_as_a_surviving_dependent_losing_support ... ok
+test provisioning::household::tests::stale_need_and_infeasible_distance_can_block_help ... ok
+test provisioning::infrastructure::tests::actual_wood_must_travel_before_donation ... ok
+test provisioning::infrastructure::tests::building_and_movement_share_one_partition_independent_clock ... ok
+test provisioning::infrastructure::tests::completion_does_not_rewrite_inflight_traversal_or_fifo ... ok
+test provisioning::infrastructure::tests::construction_work_forecast_matches_physiology ... ok
+test provisioning::infrastructure::tests::distant_memory_does_not_receive_completion ... ok
+test provisioning::infrastructure::tests::donation_is_local_owned_and_cannot_overfill ... ok
+test provisioning::infrastructure::tests::interrupted_construction_retains_public_inputs_after_donor_death ... ok
+test provisioning::infrastructure::tests::physically_pooled_inputs_labor_and_public_users_are_distinct ... ok
+test provisioning::infrastructure::tests::renamed_nodes_preserve_the_same_observed_construction_choice ... ok
+test provisioning::infrastructure::tests::unobserved_remote_material_and_food_cannot_change_decision ... ok
+test provisioning::infrastructure::tests::unused_public_construction_pays_material_and_time_without_traffic_benefit ... ok
+test provisioning::meals::tests::consuming_all_cargo_is_quantity_failure_not_spoilage ... ok
+test provisioning::paths::tests::actual_completed_passages_change_surface_not_idle_or_queued_people ... ok
+test provisioning::paths::tests::dead_mid_edge_does_not_complete_a_passage_or_lose_cargo ... ok
+test provisioning::paths::tests::fifo_opposite_direction_survives_path_improvement ... ok
+test provisioning::paths::tests::frozen_control_records_use_without_surface_effect_and_remote_memory_stays_stale ... ok
+test provisioning::paths::tests::known_surface_forecast_matches_kernel_across_physiology_thresholds ... ok
+test provisioning::paths::tests::movement_and_recovery_are_partition_independent ... ok
+test provisioning::paths::tests::path_law_cannot_open_blocked_crossings_or_overlap_constructed_infrastructure ... ok
+test provisioning::paths::tests::recovery_uses_the_authoritative_clock_and_movement_maintains_surface ... ok
+test provisioning::paths::tests::simultaneous_arrivals_retain_admission_contract_and_saturate_at_twenty_percent ... ok
+test provisioning::paths::tests::topology_relabeling_preserves_ground_and_crossing_identity ... ok
+test provisioning::persistence::tests::own_arrival_completes_intention_without_creating_claim_and_death_cancels ... ok
+test provisioning::household::tests::observer_journal_and_advance_partition_do_not_change_care_execution ... ok
+test provisioning::person::tests::composed_capabilities_use_personal_history_not_remote_truth ... ok
+test provisioning::person::tests::domain_state_is_belief_not_a_remote_inventory_projection ... ok
+test provisioning::person::tests::legal_exchange_stage_is_pure_and_keeps_physical_payment_out_of_choice ... ok
+test provisioning::person::tests::no_atomic_command_can_turn_role_into_free_goods_or_mid_edge_action ... ok
+test provisioning::person::tests::one_step_plan_does_not_erase_or_invent_a_longer_undertaking ... ok
+test provisioning::person::tests::person_is_the_same_embodied_record_not_a_second_agent ... ok
+test provisioning::person::tests::repeated_person_inspection_is_observational ... ok
+test provisioning::person::tests::role_assignment_does_not_add_a_brain_or_work_preference ... ok
+test provisioning::person::tests::survival_reflex_dominates_all_available_economic_capabilities ... ok
+test provisioning::policy::coherent::tests::corrected_policy_is_pure_and_preserves_risk_margin_and_no_meal_assumption ... ok
+test provisioning::policy::coherent::tests::observed_self_is_removed_once_without_discounting_other_travelers ... ok
+test provisioning::policy::coherent::tests::queue_wait_changes_physiology_before_movement ... ok
+test provisioning::policy::coherent::tests::spoilage_interrupts_forecast_gather_at_original_deadline ... ok
+test provisioning::policy::forecast::tests::meal_forecast_replays_with_exact_physical_time_ownership_and_nutrition ... ok
+test provisioning::policy::forecast::tests::meals_reduce_cargo_obey_ceiling_and_require_only_remembered_evidence ... ok
+test provisioning::policy::forecast::tests::predicted_source_expiry_and_remembered_reservations_are_not_ignored ... ok
+test provisioning::policy::forecast::tests::self_exclusion_does_not_discount_queues_without_membership_evidence ... ok
+test provisioning::policy::forecast::tests::self_exclusion_is_once_per_observed_membership_on_every_hypothetical_leg ... ok
+test provisioning::policy::forecast::tests::zero_margin_changes_only_the_no_meal_threshold_and_never_allows_fatal_plan ... ok
+test provisioning::policy::intention::tests::an_immediate_legal_meal_does_not_erase_a_survivable_intention ... ok
+test provisioning::policy::intention::tests::commitment_cancels_predicted_death_and_locally_learned_blockage ... ok
+test provisioning::policy::intention::tests::commitment_distinguishes_ordinary_self_provisioning_from_survival ... ok
+test provisioning::policy::intention::tests::eating_and_sleep_pause_then_resume_without_claiming_or_reserving ... ok
+test provisioning::policy::intention::tests::expired_committed_goal_does_not_leave_a_cancelled_agent_in_its_old_queue ... ok
+test provisioning::policy::intention::tests::intention_cannot_access_changed_remote_truth ... ok
+test provisioning::policy::intention::tests::material_information_excludes_clock_and_small_stock_changes_but_includes_queue_service ... ok
+test provisioning::policy::intention::tests::self_priority_ablation_has_no_goal_memory_across_meal_interrupt ... ok
+test provisioning::reasoning::tests::same_personal_history_and_rng_produce_same_decision ... ok
+test provisioning::reasoning::tests::undertaking_is_distinct_from_atomic_action_and_claim_lease ... ok
+test provisioning::settlement_research::tests::arrival_exactly_at_expiry_is_not_edible_flow ... ok
+test provisioning::settlement_research::tests::arrived_flow_excludes_food_eaten_at_corridor_and_retains_ownership ... ok
+test provisioning::household::tests::identical_personal_histories_and_seed_replay_identically ... ok
+test provisioning::settlement_research::tests::observer_accounts_exact_exclusive_labor_and_death_stops_living_time ... ok
+test provisioning::settlement_research::tests::other_owners_food_is_inaccessible_but_own_food_can_enter_legal_communal_job ... ok
+test provisioning::congestion::tests::conditional_transport_has_atomic_arrival_and_direction_symmetric_service ... ok
+test provisioning::settlement_research::tests::spoiled_transit_cargo_is_waste_flow_not_delivered_food ... ok
+test provisioning::shadow::mismatch_tests::aggregate_gather_rounding_differs_from_ten_atomic_actions ... ok
+test provisioning::shadow::mismatch_tests::expiry_interrupts_reserved_gather_without_refresh_or_material_loss ... ok
+test provisioning::shadow::mismatch_tests::known_stock_reservation_is_not_available_to_a_second_gatherer ... ok
+test provisioning::shadow::mismatch_tests::legacy_loose_cargo_forecast_invents_gathering_work ... ok
+test provisioning::shadow::mismatch_tests::legacy_quantity_forecast_ignores_observed_reserved_stock ... ok
+test provisioning::shadow::mismatch_tests::legacy_work_counts_free_slots_instead_of_claim_quantity ... ok
+test provisioning::shadow::mismatch_tests::waiting_order_can_create_a_false_alive_prediction ... ok
+test provisioning::shadow::static_cases::tests::independent_primitives_match_kernel ... ok
+test provisioning::decomposition::bounds_tests::starvation_grace_support_bound_is_not_nutritional_success ... ok
+test provisioning::shadow::tests::independent_belief_tape_matches_kernel_without_other_actors ... ok
+test provisioning::shadow::tests::known_wait_must_precede_physiological_movement ... ok
+test provisioning::tests::accepted_job_searches_other_sources_when_local_stock_is_at_destination ... ok
+test provisioning::tests::communal_carrier_eating_reduces_delivery ... ok
+test provisioning::tests::communal_consumption_is_immediate_capped_and_preserves_owner ... ok
+test provisioning::tests::communal_gathering_ownership_delivery_and_partial_consumption ... ok
+test provisioning::tests::communal_hauling_requires_job_and_does_not_create_personal_property ... ok
+test provisioning::tests::dead_personal_property_is_inaccessible_even_to_starving_neighbours ... ok
+test provisioning::tests::death_does_not_remotely_clear_board_claim ... ok
+test provisioning::tests::expired_claim_does_not_cancel_original_worker_or_duplicate_goods ... ok
+test provisioning::tests::exploration_has_no_hidden_food_target_under_relabeling ... ok
+test provisioning::tests::fifo_is_independent_of_submission_order_and_supports_zero_capacity ... ok
+test provisioning::settlement_research::tests::research_place_labels_do_not_change_decisions ... ok
+test provisioning::tests::local_eating_cancels_queue_without_advancing_it ... ok
+test provisioning::tests::local_observation_does_not_reveal_destinations_or_remote_changes ... ok
+test provisioning::tests::mid_edge_death_preserves_position_property_and_material ... ok
+test provisioning::tests::nearer_feasible_food_beats_fatal_or_predictably_spoiled_food ... ok
+test provisioning::tests::no_food_death_is_exactly_36h_and_not_before ... ok
+test provisioning::tests::physical_return_trip_can_spoil_communal_cargo_mid_edge ... ok
+test provisioning::tests::physiology_changes_speed_during_a_trip_not_only_at_departure ... ok
+test provisioning::tests::policy_does_not_force_a_return_from_food ... ok
+test provisioning::tests::remote_queue_and_inflight_positions_are_not_local_observations ... ok
+test provisioning::tests::reservation_contention_interruption_and_spoilage_are_conservative ... ok
+test provisioning::farming::tests::food_farming_world_is_not_specific_to_node_labels ... ok
+test provisioning::tests::sleep_recovery_continues_across_atomic_sleep_ticks ... ok
+test provisioning::tests::split_gather_transfer_never_refresh_age ... ok
+test provisioning::barter::market::tests::market_replay_is_deterministic ... ok
+test provisioning::settlement_research::tests::journal_never_changes_physics_events_policy_or_rng ... ok
+test provisioning::tests::reversed_policy_evaluation_is_identical ... ok
+test provisioning::tests::live_advance_partition_does_not_change_state_or_events ... ok
+test provisioning::congestion::tests::disabled_research_instrument_has_no_effect ... ok
+test provisioning::shadow::tests::audit_preserves_rng_state_events_and_decisions ... ok
+test provisioning::tests::stale_depletion_fixture_changes_truth_without_refreshing_absent_memories ... ok
+test provisioning::decomposition::tests::reference_state_and_events_are_preserved_exactly ... ok
+test provisioning::acceptance::tests::hourly_journaling_preserves_control_hashes_and_accounts_for_zero_nutrition ... ok
+test provisioning::geography::tests::memory_and_food_goals_only_follow_physical_observations ... ok
+test provisioning::geography::tests::relabeling_preserves_the_physical_request_and_unique_route ... ok
+test provisioning::persistence::tests::reactive_and_remembered_reproduce_frozen_meal_aware_physics ... ok
+
+test result: ok. 197 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 29.51s
+
+     Running unittests src/bin/acceptance_probe.rs (target/debug/deps/acceptance_probe-2ca54d01afaf5c57)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/authority_probe.rs (target/debug/deps/authority_probe-2429476e8d2a31a0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/capital_probe.rs (target/debug/deps/capital_probe-40a29992827b2253)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/capital_witness.rs (target/debug/deps/capital_witness-6b29f3ecc0ec6207)
+
+running 1 test
+test fractional_headroom_does_not_block_other_research_actions ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/coherence_probe.rs (target/debug/deps/coherence_probe-1d53807bc18ea1ad)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/congestion_probe.rs (target/debug/deps/congestion_probe-5bf7ef8400f2de52)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/delivery_probe.rs (target/debug/deps/delivery_probe-99ed104647872446)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/farming_probe.rs (target/debug/deps/farming_probe-d42b431091921265)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/farming_witness.rs (target/debug/deps/farming_witness-3e7586a587b6dc7d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/geography_probe.rs (target/debug/deps/geography_probe-c074b5e48120b8ba)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/household_probe.rs (target/debug/deps/household_probe-e9881d2aa886cafa)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/infrastructure_probe.rs (target/debug/deps/infrastructure_probe-7f9f6617545d9254)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/meal_probe.rs (target/debug/deps/meal_probe-a63b1d546b7f1a8d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/paths_probe.rs (target/debug/deps/paths_probe-2863c37f2b80031d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/persistence_probe.rs (target/debug/deps/persistence_probe-706e2353a8e0aec9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/provisioning_foundation_probe.rs (target/debug/deps/provisioning_foundation_probe-1432fad4a6bc3de3)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/provisioning_probe.rs (target/debug/deps/provisioning_probe-0634b1464b1be6ca)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/settlement_probe.rs (target/debug/deps/settlement_probe-98ff91c4dee104c1)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/shadow_probe.rs (target/debug/deps/shadow_probe-21dea276f006b051)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/transport_probe.rs (target/debug/deps/transport_probe-b08817f9e4add97b)
+
+running 2 tests
+test tests::disabling_transport_prevents_remote_delivery ... ok
+test tests::fixed_command_cadence_is_independent_of_advance_chunk ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/foundation.rs (target/debug/deps/foundation-192bf33c0c318d9f)
+
+running 10 tests
+test last_deposit_unit_is_reserved_once_and_cancel_releases_it ... ok
+test arrival_is_required_and_travel_excludes_work_and_stock_access ... ok
+test distance_changes_arrival_without_whole_tick_rounding ... ok
+test individual_edge_capacity_allows_progress_and_is_shared_between_directions ... ok
+test mixed_resources_share_one_load_limit ... ok
+test overflow_and_invalid_commands_are_atomic ... ok
+test seeded_initialization_and_identity_are_reproducible ... ok
+test transfers_preserve_material_and_enforce_shared_carrying_capacity ... ok
+test completion_times_and_events_do_not_depend_on_advance_partition ... ok
+test randomized_command_sequences_preserve_invariants ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+

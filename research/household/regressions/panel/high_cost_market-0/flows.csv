@@ -1,0 +1,17 @@
+seed,at_ms,agent,from,to,origin,material,quantity,owner,communal_job,cart,expires_ms
+0,326016000,0,0,1,0,Waste,6,agent:0,false,false,172800000
+0,326016000,2,0,1,0,Waste,6,agent:2,false,false,172800000
+0,326016000,4,0,1,0,Waste,6,agent:4,false,false,172800000
+0,326016000,6,0,1,0,Waste,6,agent:6,false,false,172800000
+0,415440000,8,0,1,0,Waste,6,agent:8,false,false,172800000
+0,415440000,10,0,1,0,Waste,6,agent:10,false,false,172800000
+0,415440000,12,0,1,0,Waste,6,agent:12,false,false,172800000
+0,415440000,14,0,1,0,Waste,6,agent:14,false,false,172800000
+0,497376000,16,0,1,0,Waste,6,agent:16,false,false,172800000
+0,497376000,18,0,1,0,Waste,6,agent:18,false,false,172800000
+0,497376000,20,0,1,0,Waste,6,agent:20,false,false,172800000
+0,497376000,22,0,1,0,Waste,6,agent:22,false,false,172800000
+0,588240000,24,0,1,0,Waste,6,agent:24,false,false,172800000
+0,588240000,26,0,1,0,Waste,6,agent:26,false,false,172800000
+0,588240000,28,0,1,0,Waste,6,agent:28,false,false,172800000
+0,588240000,30,0,1,0,Waste,6,agent:30,false,false,172800000

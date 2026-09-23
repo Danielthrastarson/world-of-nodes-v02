@@ -1,0 +1,13 @@
+distant_command complete
+local_command complete
+bottleneck_command complete
+death_before_command complete
+death_after_command complete
+departure_command complete
+multiple_command complete
+scarce_pending complete
+sufficient_pending complete
+discovery_pending complete
+scarce_commissioned complete
+discovery_commissioned complete
+sufficient_commissioned complete

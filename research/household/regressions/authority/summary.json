@@ -1,0 +1,1783 @@
+{
+  "local_command": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 35.5,
+      "min": 35.5,
+      "max": 35.5
+    },
+    "unadministered_settlement_h": {
+      "mean": 36.5,
+      "min": 36.5,
+      "max": 36.5
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sovereign_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_travel_h": {
+      "mean": 0.5,
+      "min": 0.5,
+      "max": 0.5
+    },
+    "steward_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 3000.0,
+      "min": 3000.0,
+      "max": 3000.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "distant_command": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 27.444444444,
+      "min": 27.444444444,
+      "max": 27.444444444
+    },
+    "unadministered_settlement_h": {
+      "mean": 44.555555556,
+      "min": 44.555555556,
+      "max": 44.555555556
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sovereign_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_travel_h": {
+      "mean": 8.555555556,
+      "min": 8.555555556,
+      "max": 8.555555556
+    },
+    "steward_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 3000.0,
+      "min": 3000.0,
+      "max": 3000.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "bottleneck_command": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "unadministered_settlement_h": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sovereign_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_travel_h": {
+      "mean": 3.92,
+      "min": 3.92,
+      "max": 3.92
+    },
+    "steward_queue_h": {
+      "mean": 32.08,
+      "min": 32.08,
+      "max": 32.08
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 3000.0,
+      "min": 3000.0,
+      "max": 3000.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 104.128888889,
+      "min": 104.128888889,
+      "max": 104.128888889
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "death_before_command": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "unadministered_settlement_h": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sovereign_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_travel_h": {
+      "mean": 36.0,
+      "min": 36.0,
+      "max": 36.0
+    },
+    "steward_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 3000.0,
+      "min": 3000.0,
+      "max": 3000.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "death_after_command": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 35.5,
+      "min": 35.5,
+      "max": 35.5
+    },
+    "unadministered_settlement_h": {
+      "mean": 36.5,
+      "min": 36.5,
+      "max": 36.5
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sovereign_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_travel_h": {
+      "mean": 0.5,
+      "min": 0.5,
+      "max": 0.5
+    },
+    "steward_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 3000.0,
+      "min": 3000.0,
+      "max": 3000.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "departure_command": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unadministered_settlement_h": {
+      "mean": 71.0,
+      "min": 71.0,
+      "max": 71.0
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sovereign_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_travel_h": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 3000.0,
+      "min": 3000.0,
+      "max": 3000.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "multiple_command": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 70.5,
+      "min": 70.5,
+      "max": 70.5
+    },
+    "unadministered_settlement_h": {
+      "mean": 73.5,
+      "min": 73.5,
+      "max": 73.5
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "steward_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sovereign_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_travel_h": {
+      "mean": 1.5,
+      "min": 1.5,
+      "max": 1.5
+    },
+    "steward_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 3000.0,
+      "min": 3000.0,
+      "max": 3000.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "sufficient_pending": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 34.5,
+      "min": 34.5,
+      "max": 34.5
+    },
+    "unadministered_settlement_h": {
+      "mean": 37.5,
+      "min": 37.5,
+      "max": 37.5
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sovereign_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_travel_h": {
+      "mean": 0.5,
+      "min": 0.5,
+      "max": 0.5
+    },
+    "steward_queue_h": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 22.405555556,
+      "min": 22.405555556,
+      "max": 22.405555556
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "sufficient_commissioned": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_administration_h": {
+      "mean": 42.831328889,
+      "min": 42.831328889,
+      "max": 42.831328889
+    },
+    "unadministered_settlement_h": {
+      "mean": 29.168671111,
+      "min": 29.168671111,
+      "max": 29.168671111
+    },
+    "commissions": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "started": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "completed": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "wood": {
+      "mean": 20.0,
+      "min": 20.0,
+      "max": 20.0
+    },
+    "labor_h": {
+      "mean": 8.005555556,
+      "min": 8.005555556,
+      "max": 8.005555556
+    },
+    "donors": {
+      "mean": 20.0,
+      "min": 20.0,
+      "max": 20.0
+    },
+    "workers": {
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    "improved_users": {
+      "mean": 38.0,
+      "min": 38.0,
+      "max": 38.0
+    },
+    "improved_trips": {
+      "mean": 400.0,
+      "min": 400.0,
+      "max": 400.0
+    },
+    "steward_deaths": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_food": {
+      "mean": 52.0,
+      "min": 52.0,
+      "max": 52.0
+    },
+    "sovereign_food": {
+      "mean": 47.0,
+      "min": 47.0,
+      "max": 47.0
+    },
+    "steward_travel_h": {
+      "mean": 10.125367222,
+      "min": 10.125367222,
+      "max": 10.125367222
+    },
+    "steward_queue_h": {
+      "mean": 15.358239722,
+      "min": 15.358239722,
+      "max": 15.358239722
+    },
+    "alive": {
+      "mean": 40.0,
+      "min": 40.0,
+      "max": 40.0
+    },
+    "consumed": {
+      "mean": 1991.0,
+      "min": 1991.0,
+      "max": 1991.0
+    },
+    "spoiled": {
+      "mean": 1009.0,
+      "min": 1009.0,
+      "max": 1009.0
+    },
+    "delivered": {
+      "mean": 58.0,
+      "min": 58.0,
+      "max": 58.0
+    },
+    "starvation_h": {
+      "mean": 726.016666667,
+      "min": 726.016666667,
+      "max": 726.016666667
+    },
+    "queue_h": {
+      "mean": 815.054804722,
+      "min": 815.054804722,
+      "max": 815.054804722
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "scarce_pending": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 34.5,
+      "min": 34.5,
+      "max": 34.5
+    },
+    "unadministered_settlement_h": {
+      "mean": 37.5,
+      "min": 37.5,
+      "max": 37.5
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sovereign_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_travel_h": {
+      "mean": 0.5,
+      "min": 0.5,
+      "max": 0.5
+    },
+    "steward_queue_h": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 22.405555556,
+      "min": 22.405555556,
+      "max": 22.405555556
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "scarce_commissioned": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 35.75,
+      "min": 35.75,
+      "max": 35.75
+    },
+    "unadministered_settlement_h": {
+      "mean": 36.25,
+      "min": 36.25,
+      "max": 36.25
+    },
+    "commissions": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "started": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "sovereign_food": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_travel_h": {
+      "mean": 0.5,
+      "min": 0.5,
+      "max": 0.5
+    },
+    "steward_queue_h": {
+      "mean": 0.733333333,
+      "min": 0.733333333,
+      "max": 0.733333333
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 24.572222222,
+      "min": 24.572222222,
+      "max": 24.572222222
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "discovery_pending": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 1.033333333,
+      "min": 1.033333333,
+      "max": 1.033333333
+    },
+    "unadministered_settlement_h": {
+      "mean": 70.966666667,
+      "min": 70.966666667,
+      "max": 70.966666667
+    },
+    "commissions": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "sovereign_food": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "steward_travel_h": {
+      "mean": 0.25,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "steward_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "discovery_commissioned": {
+    "hour": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "appointments": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "active_settlements": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "active_administration_h": {
+      "mean": 1.033333333,
+      "min": 1.033333333,
+      "max": 1.033333333
+    },
+    "unadministered_settlement_h": {
+      "mean": 70.966666667,
+      "min": 70.966666667,
+      "max": 70.966666667
+    },
+    "commissions": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "started": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "labor_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "donors": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "workers": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_users": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "improved_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "steward_deaths": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steward_food": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "sovereign_food": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "steward_travel_h": {
+      "mean": 0.25,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "steward_queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "accounting_error": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "overtakes": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  }
+}

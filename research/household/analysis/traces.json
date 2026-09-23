@@ -1,0 +1,649 @@
+[
+  {
+    "case": "caregiver_death_on",
+    "care": [],
+    "first_consumptions": [],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "3600000",
+        "agent": "Some(0)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      },
+      {
+        "seed": "0",
+        "time_ms": "129600000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      }
+    ]
+  },
+  {
+    "case": "colocated_on",
+    "care": [
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareTransferred",
+        "detail": "dependent=1 quantity=6 from_batch=0 to_batch=1 node=0 owner=Agent(1) custody=Loose; recipient must eat normally"
+      },
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCompleted",
+        "detail": "dependent=1; ownership transferred, nourishment not guaranteed"
+      }
+    ],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "60000",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=1 q=6 owner=Agent(1) nutrition_ms=21600000"
+      }
+    ],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "108060000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      },
+      {
+        "seed": "0",
+        "time_ms": "151200000",
+        "agent": "Some(0)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      }
+    ]
+  },
+  {
+    "case": "construction_on",
+    "care": [
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareTransferred",
+        "detail": "dependent=1 quantity=6 from_batch=3 to_batch=4 node=0 owner=Agent(1) custody=Loose; recipient must eat normally"
+      },
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCompleted",
+        "detail": "dependent=1; ownership transferred, nourishment not guaranteed"
+      }
+    ],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "1804000",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=54 q=1 owner=Agent(1) nutrition_ms=3600000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "1862500",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=54 q=1 owner=Agent(1) nutrition_ms=7141500"
+      },
+      {
+        "seed": "0",
+        "time_ms": "1922500",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=54 q=1 owner=Agent(1) nutrition_ms=10681500"
+      },
+      {
+        "seed": "0",
+        "time_ms": "1982500",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=54 q=1 owner=Agent(1) nutrition_ms=14221500"
+      },
+      {
+        "seed": "0",
+        "time_ms": "2042500",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=54 q=1 owner=Agent(1) nutrition_ms=17761500"
+      },
+      {
+        "seed": "0",
+        "time_ms": "2102500",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=54 q=1 owner=Agent(1) nutrition_ms=21301500"
+      },
+      {
+        "seed": "0",
+        "time_ms": "2162500",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=54 q=1 owner=Agent(1) nutrition_ms=24841500"
+      },
+      {
+        "seed": "0",
+        "time_ms": "5406500",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=54 q=1 owner=Agent(1) nutrition_ms=25197500"
+      }
+    ],
+    "death": []
+  },
+  {
+    "case": "far_known_on",
+    "care": [
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "36800000",
+        "agent": "Some(0)",
+        "kind": "CareCancelled",
+        "detail": "dependent=1 reason=LOCAL_ABSENCE_OR_DEATH"
+      }
+    ],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "36800000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=0 q=6 owner=Agent(0) nutrition_ms=49600000"
+      }
+    ],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "86400000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Edge { edge: 0, from: 1, to: 0, progress: 33480000000000 }"
+      },
+      {
+        "seed": "0",
+        "time_ms": "172800000",
+        "agent": "Some(0)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(1)"
+      }
+    ]
+  },
+  {
+    "case": "farming_distant_on",
+    "care": [
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "3600000",
+        "agent": "Some(0)",
+        "kind": "CareCancelled",
+        "detail": "dependent=1 reason=LOCAL_ABSENCE_OR_DEATH"
+      }
+    ],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "21660000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=0 q=6 owner=Agent(0) nutrition_ms=64740000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "63090000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=1 q=17 owner=Agent(0) nutrition_ms=84510000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "104460000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=1 q=1 owner=Agent(0) nutrition_ms=46740000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "108060000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=2 q=6 owner=Agent(0) nutrition_ms=64740000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "148800000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=3 q=17 owner=Agent(0) nutrition_ms=85200000"
+      }
+    ],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "86400000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      }
+    ]
+  },
+  {
+    "case": "farming_on",
+    "care": [
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareTransferred",
+        "detail": "dependent=1 quantity=6 from_batch=0 to_batch=1 node=0 owner=Agent(1) custody=Loose; recipient must eat normally"
+      },
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCompleted",
+        "detail": "dependent=1; ownership transferred, nourishment not guaranteed"
+      },
+      {
+        "seed": "0",
+        "time_ms": "52980000",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "52980000",
+        "agent": "Some(0)",
+        "kind": "CareTransferred",
+        "detail": "dependent=1 quantity=1 from_batch=3 to_batch=4 node=0 owner=Agent(1) custody=Loose; recipient must eat normally"
+      },
+      {
+        "seed": "0",
+        "time_ms": "52980000",
+        "agent": "Some(0)",
+        "kind": "CareCompleted",
+        "detail": "dependent=1; ownership transferred, nourishment not guaranteed"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53100000",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53100000",
+        "agent": "Some(0)",
+        "kind": "CareTransferred",
+        "detail": "dependent=1 quantity=1 from_batch=3 to_batch=4 node=0 owner=Agent(1) custody=Loose; recipient must eat normally"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53100000",
+        "agent": "Some(0)",
+        "kind": "CareCompleted",
+        "detail": "dependent=1; ownership transferred, nourishment not guaranteed"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53220000",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53220000",
+        "agent": "Some(0)",
+        "kind": "CareTransferred",
+        "detail": "dependent=1 quantity=1 from_batch=3 to_batch=4 node=0 owner=Agent(1) custody=Loose; recipient must eat normally"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53220000",
+        "agent": "Some(0)",
+        "kind": "CareCompleted",
+        "detail": "dependent=1; ownership transferred, nourishment not guaranteed"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53340000",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53340000",
+        "agent": "Some(0)",
+        "kind": "CareTransferred",
+        "detail": "dependent=1 quantity=1 from_batch=3 to_batch=4 node=0 owner=Agent(1) custody=Loose; recipient must eat normally"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53340000",
+        "agent": "Some(0)",
+        "kind": "CareCompleted",
+        "detail": "dependent=1; ownership transferred, nourishment not guaranteed"
+      }
+    ],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "60000",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=1 q=6 owner=Agent(1) nutrition_ms=21600000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "52860000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=2 q=20 owner=Agent(0) nutrition_ms=83940000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53040000",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=4 q=1 owner=Agent(1) nutrition_ms=3600000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53160000",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=4 q=1 owner=Agent(1) nutrition_ms=7080000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53280000",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=4 q=1 owner=Agent(1) nutrition_ms=10560000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "53400000",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=4 q=1 owner=Agent(1) nutrition_ms=14040000"
+      },
+      {
+        "seed": "0",
+        "time_ms": "150060000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=5 q=24 owner=Agent(0) nutrition_ms=86400000"
+      }
+    ],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "153840000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      }
+    ]
+  },
+  {
+    "case": "multiple_on",
+    "care": [
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareTransferred",
+        "detail": "dependent=1 quantity=6 from_batch=0 to_batch=1 node=0 owner=Agent(1) custody=Loose; recipient must eat normally"
+      },
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCompleted",
+        "detail": "dependent=1; ownership transferred, nourishment not guaranteed"
+      }
+    ],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "60000",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=1 q=6 owner=Agent(1) nutrition_ms=21600000"
+      }
+    ],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "86400000",
+        "agent": "Some(2)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      },
+      {
+        "seed": "0",
+        "time_ms": "108060000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      },
+      {
+        "seed": "0",
+        "time_ms": "151200000",
+        "agent": "Some(0)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      }
+    ]
+  },
+  {
+    "case": "near_known_on",
+    "care": [
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "3600000",
+        "agent": "Some(0)",
+        "kind": "CareCancelled",
+        "detail": "dependent=1 reason=LOCAL_ABSENCE_OR_DEATH"
+      }
+    ],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "21660000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=0 q=6 owner=Agent(0) nutrition_ms=64740000"
+      }
+    ],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "86400000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      },
+      {
+        "seed": "0",
+        "time_ms": "172800000",
+        "agent": "Some(0)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(1)"
+      }
+    ]
+  },
+  {
+    "case": "nonkin_on",
+    "care": [],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "21660000",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=0 q=6 owner=Agent(0) nutrition_ms=64740000"
+      }
+    ],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "86400000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      },
+      {
+        "seed": "0",
+        "time_ms": "172800000",
+        "agent": "Some(0)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      }
+    ]
+  },
+  {
+    "case": "self_conflict_on",
+    "care": [],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "0",
+        "agent": "Some(0)",
+        "kind": "Consumed",
+        "detail": "batch=0 q=6 owner=Agent(0) nutrition_ms=36000000"
+      }
+    ],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "86400000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      },
+      {
+        "seed": "0",
+        "time_ms": "122400000",
+        "agent": "Some(0)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      }
+    ]
+  },
+  {
+    "case": "unknown_on",
+    "care": [
+      {
+        "seed": "0",
+        "time_ms": "7200000",
+        "agent": "Some(0)",
+        "kind": "CareCreated",
+        "detail": "selected=Some(1) reason=OBSERVED_NEED"
+      },
+      {
+        "seed": "0",
+        "time_ms": "7200000",
+        "agent": "Some(0)",
+        "kind": "CareTransferred",
+        "detail": "dependent=1 quantity=6 from_batch=0 to_batch=1 node=0 owner=Agent(1) custody=Loose; recipient must eat normally"
+      },
+      {
+        "seed": "0",
+        "time_ms": "7200000",
+        "agent": "Some(0)",
+        "kind": "CareCompleted",
+        "detail": "dependent=1; ownership transferred, nourishment not guaranteed"
+      }
+    ],
+    "first_consumptions": [
+      {
+        "seed": "0",
+        "time_ms": "7260000",
+        "agent": "Some(1)",
+        "kind": "Consumed",
+        "detail": "batch=1 q=6 owner=Agent(1) nutrition_ms=21600000"
+      }
+    ],
+    "death": [
+      {
+        "seed": "0",
+        "time_ms": "115260000",
+        "agent": "Some(1)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(0)"
+      },
+      {
+        "seed": "0",
+        "time_ms": "151200000",
+        "agent": "Some(0)",
+        "kind": "Died",
+        "detail": "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(1)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+bottleneck enabled=true seed=0 {"attempts": 540, "completed": 1, "improved_food_flow": 192, "improved_trips": 89, "improved_users": 41, "labor_ms": 29313334, "started": 1, "wood": 20, "wood_transport": 117, "work_starts": 2} consumed=1873 starvation_h=819.000

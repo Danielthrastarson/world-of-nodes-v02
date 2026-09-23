@@ -1,0 +1,816 @@
+{
+  "caregiver_death": {
+    "food_transferred": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": 0.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": 0.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": 0,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": 0,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": 0,
+      "48h:caregiver:idle": 0.0,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": 0,
+      "48h:all:construction": 0,
+      "48h:all:travel": 0,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 0.0,
+      "48h:all:idle": 0.0,
+      "48h:all:gather": 0
+    }
+  },
+  "colocated": {
+    "food_transferred": {
+      "mean_delta": 6.0,
+      "min_delta": 6.0,
+      "max_delta": 6.0,
+      "changed_seeds": 30
+    },
+    "consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 0.016666667000002633,
+      "min_delta": 0.016666667000002633,
+      "max_delta": 0.016666667000002633,
+      "changed_seeds": 30
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": 0.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": 0.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": 0,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": 0,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": -2.0,
+      "48h:caregiver:idle": -4.0,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": 0,
+      "48h:all:construction": 0,
+      "48h:all:travel": 0,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 0.01666666699999908,
+      "48h:all:idle": 0.0,
+      "48h:all:gather": 0
+    }
+  },
+  "construction": {
+    "food_transferred": {
+      "mean_delta": 6.0,
+      "min_delta": 6.0,
+      "max_delta": 6.0,
+      "changed_seeds": 30
+    },
+    "consumed": {
+      "mean_delta": 4.0,
+      "min_delta": 4.0,
+      "max_delta": 4.0,
+      "changed_seeds": 30
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": -3.6123694439999987,
+      "min_delta": -3.6123694439999987,
+      "max_delta": -3.6123694439999987,
+      "changed_seeds": 30
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0,
+      "6h:caregiver:construction": -3.516666666,
+      "6h:caregiver:travel": 0.0,
+      "6h:caregiver:queue": 1.733333333,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": 1.7833333329999999,
+      "6h:caregiver:gather": 0.0,
+      "6h:all:farming": 0,
+      "6h:all:construction": -0.016666665999999886,
+      "6h:all:travel": 0.0,
+      "6h:all:queue": -0.016666666999995527,
+      "6h:all:sleep": 0,
+      "6h:all:idle": 0.03333333300000163,
+      "6h:all:gather": 0.0,
+      "48h:caregiver:farming": 0,
+      "48h:caregiver:construction": -3.5,
+      "48h:caregiver:travel": -4.1277777780000005,
+      "48h:caregiver:queue": 3.323751111,
+      "48h:caregiver:sleep": 3.5,
+      "48h:caregiver:idle": 0.8212483330000002,
+      "48h:caregiver:gather": -0.017221667,
+      "48h:all:farming": 0,
+      "48h:all:construction": 0.0,
+      "48h:all:travel": 3.189526661000002,
+      "48h:all:queue": -29.831931108999925,
+      "48h:all:sleep": 4.961828887000024,
+      "48h:all:idle": 21.753629999000054,
+      "48h:all:gather": -0.07305443399999989
+    }
+  },
+  "far_known": {
+    "food_transferred": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 10.222222222,
+      "min_delta": 10.222222222,
+      "max_delta": 10.222222222,
+      "changed_seeds": 30
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 6.0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": -6.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 6.0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": -6.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": 0,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": -2.8277777780000015,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": 0.0,
+      "48h:caregiver:idle": 2.8277777780000015,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": 0,
+      "48h:all:construction": 0,
+      "48h:all:travel": -2.827777777999998,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 0.0,
+      "48h:all:idle": 2.8277777780000015,
+      "48h:all:gather": 0
+    }
+  },
+  "farming": {
+    "food_transferred": {
+      "mean_delta": 10.0,
+      "min_delta": 10.0,
+      "max_delta": 10.0,
+      "changed_seeds": 30
+    },
+    "consumed": {
+      "mean_delta": 7.0,
+      "min_delta": 7.0,
+      "max_delta": 7.0,
+      "changed_seeds": 30
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 12.416666667000001,
+      "min_delta": 12.416666667000001,
+      "max_delta": 12.416666667000001,
+      "changed_seeds": 30
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0.0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": 0.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0.0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": 0.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": 3.45,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": 0,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": 0.0,
+      "48h:caregiver:idle": -3.4499999999999993,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": 3.45,
+      "48h:all:construction": 0,
+      "48h:all:travel": 0,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 6.25,
+      "48h:all:idle": 9.033333332999995,
+      "48h:all:gather": 0
+    }
+  },
+  "farming_distant": {
+    "food_transferred": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "consumed": {
+      "mean_delta": -3.0,
+      "min_delta": -3.0,
+      "max_delta": -3.0,
+      "changed_seeds": 30
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 1.0,
+      "min_delta": 1.0,
+      "max_delta": 1.0,
+      "changed_seeds": 30
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0.0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 1.0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": -1.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0.0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 1.0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": -1.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": -0.8729166670000001,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": -1.8416666670000001,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": 1.9333333330000002,
+      "48h:caregiver:idle": 0.78125,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": -0.8729166670000001,
+      "48h:all:construction": 0,
+      "48h:all:travel": -1.8416666670000001,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 1.9333333330000002,
+      "48h:all:idle": 0.78125,
+      "48h:all:gather": 0
+    }
+  },
+  "multiple": {
+    "food_transferred": {
+      "mean_delta": 6.0,
+      "min_delta": 6.0,
+      "max_delta": 6.0,
+      "changed_seeds": 30
+    },
+    "consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 0.016666666999995527,
+      "min_delta": 0.016666666999995527,
+      "max_delta": 0.016666666999995527,
+      "changed_seeds": 30
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": 0.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": 0.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": 0,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": 0,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": -2.0,
+      "48h:caregiver:idle": -4.0,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": 0,
+      "48h:all:construction": 0,
+      "48h:all:travel": 0,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 0.01666666699999908,
+      "48h:all:idle": 0.0,
+      "48h:all:gather": 0
+    }
+  },
+  "near_known": {
+    "food_transferred": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 1.0,
+      "min_delta": 1.0,
+      "max_delta": 1.0,
+      "changed_seeds": 30
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 1.0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": -1.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 1.0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": -1.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": 0,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": 0.0,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": 0.0,
+      "48h:caregiver:idle": 0.0,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": 0,
+      "48h:all:construction": 0,
+      "48h:all:travel": 0.0,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 0.0,
+      "48h:all:idle": 0.0,
+      "48h:all:gather": 0
+    }
+  },
+  "nonkin": {
+    "food_transferred": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": 0.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": 0.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": 0,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": 0,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": 0.0,
+      "48h:caregiver:idle": 0.0,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": 0,
+      "48h:all:construction": 0,
+      "48h:all:travel": 0,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 0.0,
+      "48h:all:idle": 0.0,
+      "48h:all:gather": 0
+    }
+  },
+  "self_conflict": {
+    "food_transferred": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": 0.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": 0.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": 0,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": 0,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": 0.0,
+      "48h:caregiver:idle": 0.0,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": 0,
+      "48h:all:construction": 0,
+      "48h:all:travel": 0,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 0.0,
+      "48h:all:idle": 0.0,
+      "48h:all:gather": 0
+    }
+  },
+  "unknown": {
+    "food_transferred": {
+      "mean_delta": 6.0,
+      "min_delta": 6.0,
+      "max_delta": 6.0,
+      "changed_seeds": 30
+    },
+    "consumed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "produced": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "starvation_h": {
+      "mean_delta": 2.0166666670000026,
+      "min_delta": 2.0166666670000026,
+      "max_delta": 2.0166666670000026,
+      "changed_seeds": 30
+    },
+    "alive": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "care_travel_h": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "crossings_completed": {
+      "mean_delta": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "changed_seeds": 0
+    },
+    "activity_deltas_h": {
+      "6h:caregiver:farming": 0,
+      "6h:caregiver:construction": 0,
+      "6h:caregiver:travel": 1.0,
+      "6h:caregiver:queue": 0,
+      "6h:caregiver:sleep": 0,
+      "6h:caregiver:idle": -1.0,
+      "6h:caregiver:gather": 0,
+      "6h:all:farming": 0,
+      "6h:all:construction": 0,
+      "6h:all:travel": 1.0,
+      "6h:all:queue": 0,
+      "6h:all:sleep": 0,
+      "6h:all:idle": -1.0,
+      "6h:all:gather": 0,
+      "48h:caregiver:farming": 0,
+      "48h:caregiver:construction": 0,
+      "48h:caregiver:travel": 0.0,
+      "48h:caregiver:queue": 0,
+      "48h:caregiver:sleep": -2.0,
+      "48h:caregiver:idle": -4.0,
+      "48h:caregiver:gather": 0,
+      "48h:all:farming": 0,
+      "48h:all:construction": 0,
+      "48h:all:travel": 0.0,
+      "48h:all:queue": 0,
+      "48h:all:sleep": 0.6833333330000002,
+      "48h:all:idle": 1.3333333329999988,
+      "48h:all:gather": 0
+    }
+  }
+}
