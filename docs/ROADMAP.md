@@ -29,7 +29,7 @@ and irreversible abstraction choices require a project-owner decision.
 | B0 General person | PASSED | One person interface, capability arbitration and pure local exchange selection. 192 tests and 587 exact regression executions preserve actions, hashes, rights and physical outcomes. Social behavior remains B1–B3. |
 | B1 Household / kinship | PASSED | Directed voluntary care through Person; personal property intact. 660 paired-condition runs, 210 tests, 227 exact historical replays. Care can sacrifice nourishment, miss migrating dependents and redistribute work. No inheritance/affect/reproduction. |
 | B2 Relationships / affect | PASSED | Sparse directed appraisal changes matched later autonomous choices. 1,020 runs; live B1 physical behavior unchanged. See research/affect/REPORT.md. |
-| B3 Life cycle / reproduction | NOT STARTED | Minimal causal age, fertility, pregnancy, birth, dependency and maturation; no sex-based psychological or occupational rules. Requires explicit biological/institutional experiment assumptions. |
+| B3 Life cycle / reproduction | ACTIVE | Minimal causal age, fertility, pregnancy, birth, dependency and maturation; no sex-based psychological or occupational rules. Requires explicit biological/institutional experiment assumptions. |
 | F11 Security / military economy | BLOCKED | B0–B3 must pass before military resumes. Mobilization redirects existing people, food, tools, transport and time. Measure civilian consequences; military strength depends on physical economy. |
 | F12 Information network | NOT STARTED | Explicit physical messengers/travelers or constrained signals. Distinguish true from observed state; report delay changes decisions. No global knowledge. |
 | F13 Kingdom vertical slice | NOT STARTED | Multiple settlements, economy, infrastructure, authority, information and security; one ruler decision yields unscripted, traceable second-order effects. Owner decides player powers. |
@@ -143,3 +143,5 @@ B1 passed at registered seeded-household scope: [evidence](../research/household
 B1 accepted. B2 authorized at bounded appraisal scope: [registered rules](RELATIONSHIP_EXPERIMENT.md). No B3, punishment, revenge rights, marriage, inheritance, sex-linked psychology or military.
 
 B2 passed at bounded history-to-choice scope: [report](../research/affect/REPORT.md), [analysis](../research/affect/analysis/analysis.json), [traces](../research/affect/analysis/TRACE_EXCERPTS.md). Primary source `21035f3`, cost-audit source `42c9f75`. Observed refusal changes a later matched choice; remote events do not. Four live B1 worlds show no extra physical/economic effect. No coefficient tuning. 62 exact historical replays and 5,469 unchanged prior artifacts. B3 remains NOT STARTED; F11 BLOCKED.
+
+B2 accepted; B3 authorized under [registered accelerated lifecycle rules](LIFECYCLE_EXPERIMENT.md). No new property/marriage/genetics institutions; F11 remains blocked pending B3 evidence.
