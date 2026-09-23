@@ -1,0 +1,28 @@
+{
+  "source_revision": "10b6915d81e494ba447b8c7691aadf99f14f63c5",
+  "experiments": 360,
+  "checks": {
+    "complementary": {
+      "checkpoints_identical": 210,
+      "full_seed0_trace_identical": true
+    },
+    "symmetric": {
+      "checkpoints_identical": 210,
+      "full_seed0_trace_identical": true
+    },
+    "low_cost": {
+      "checkpoints_identical": 210,
+      "full_seed0_trace_identical": true
+    },
+    "high_cost": {
+      "checkpoints_identical": 210,
+      "full_seed0_trace_identical": true
+    }
+  },
+  "witnesses_reproduced": 2,
+  "prior_files_unchanged": 1889,
+  "tests_passed": 156,
+  "material_errors": 0,
+  "fifo_overtakes": 0,
+  "money_implemented": false
+}

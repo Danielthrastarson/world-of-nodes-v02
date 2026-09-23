@@ -2,7 +2,7 @@
 
 **The simulation is the source of the graphics.** A causal kingdom simulation with primitive rendering of real agents, stocks, movement, work, and observed state.
 
-Current work follows the [gated foundation roadmap](docs/ROADMAP.md): F0–F8 have passed at their documented scopes. F8 explains two-settlement interaction under existing institutions; barter, prices and money remain unimplemented. The six tested mechanical forecast corrections are adopted; conditional meal planning remains research-only. Earlier reports below describe their original historical policies. No later systems are implemented before their gates pass.
+Current work follows the [gated foundation roadmap](docs/ROADMAP.md): F0–F8 and the bounded F9A barter gate have passed. F9A implements voluntary local spot exchange; its 360-run study produces zero live swaps. Prices and money remain unimplemented. The six tested mechanical forecast corrections are adopted; conditional meal planning remains research-only. Earlier reports below describe their original historical policies. No later systems are implemented before their gates pass.
 
 - [Current design contract](WORLD_OF_NODES_HANDOFF.md)
 - [Locked provisioning specification](docs/PROVISIONING_SPEC.md)
@@ -80,6 +80,14 @@ deposits; migration dominates, wood exports remain zero, cart projects stay
 incomplete, and dead-owner crops remain inaccessible. No policy, property or F7
 rule changes. Reproduce with `cargo build --release --bin settlement_probe` then
 `python3 scripts/run_settlements.py NEW_OUTPUT_DIRECTORY`.
+
+[F9A local barter](research/barter/REPORT.md) adds explicit alienable personal goods,
+typed local offers and atomic ownership swaps. Policy uses only local holdings,
+visible offers and personal beliefs. Successful static conformance does not erase
+the live negative result: offer formation and meeting timing remain obstacles.
+All disabled F8 controls reproduce exactly. Run
+`python3 scripts/run_barter.py NEW_OUTPUT_DIRECTORY` after building `settlement_probe`.
+No money, credit, inheritance, trade-search routing or communal arbitration repair.
 
 The [future army-control target](docs/ARMY_PLAYER_CONTROL.md) documents formation
 intent, geometry, stable QWER categories and shared civilian logistics. No military

@@ -1,0 +1,23 @@
+{
+  "fixture": "colocated",
+  "seed": 0,
+  "events": [
+    "Event { id: 2, at: 0, agent: Some(0), cause: Some(0), kind: \"Decision\", detail: \"intent=OfferBarter { batch: 0, quantity: 6, want: Wood, want_quantity: 10 } nutrition_ms=43200000 starvation_ms=0 reason=blocked own use; surplus=6; no resale assumption; needs=Needs { food: 0, wood: 10, protect_food: 6, protect_wood: 10, owned_food: 24, owned_wood: 0, capital_gate: \\\"INVEST\\\" }\" }",
+    "Event { id: 3, at: 0, agent: Some(0), cause: Some(2), kind: \"BarterOffered\", detail: \"offer=0 batch=0 give=Food:6 want=Wood:10 node=0 expires=3600000; standing voluntary consent; no reservation\" }",
+    "Event { id: 4, at: 0, agent: Some(1), cause: Some(1), kind: \"Decision\", detail: \"intent=Cultivate { plot: 1 } nutrition_ms=43200000 starvation_ms=0 reason=personal future food investment; conditional harvest_ms=56400000 known_food=0; no crop title to land\" }",
+    "Event { id: 5, at: 0, agent: Some(1), cause: Some(4), kind: \"CropStarted\", detail: \"plot=1 crop=0 owner=Agent(1)\" }",
+    "Event { id: 6, at: 0, agent: Some(1), cause: Some(5), kind: \"FarmWorkStarted\", detail: \"plot=1 crop=Some(Crop { id: 0, owner: Agent(1), started_at: 0, stage: Sowing, remaining: 3600000000000 })\" }",
+    "Event { id: 8, at: 60000, agent: Some(0), cause: Some(7), kind: \"Decision\", detail: \"intent=Eat { batch: 0, quantity: 12 } nutrition_ms=43140000 starvation_ms=0 reason=locally accessible food; exact ownership/ration ceiling\" }",
+    "Event { id: 10, at: 60000, agent: Some(1), cause: Some(6), kind: \"Decision\", detail: \"intent=Cultivate { plot: 1 } nutrition_ms=43140000 starvation_ms=0 reason=work on locally observed personal crop; interruption remains legal\" }",
+    "Event { id: 12, at: 120000, agent: Some(0), cause: Some(11), kind: \"Decision\", detail: \"intent=Travel { edge: 0, target: 2, food: false } nutrition_ms=86280000 starvation_ms=0 reason=visit remembered board to claim locally; predicted_ms=14400000 arrival_nutrition_ms=71880000 arrival_starvation_ms=0\" }",
+    "Event { id: 14, at: 120000, agent: Some(1), cause: Some(10), kind: \"Decision\", detail: \"intent=Cultivate { plot: 1 } nutrition_ms=43080000 starvation_ms=0 reason=work on locally observed personal crop; interruption remains legal\" }",
+    "Event { id: 15, at: 120000, agent: Some(0), cause: Some(13), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "Event { id: 16, at: 180000, agent: Some(0), cause: Some(15), kind: \"BarterClosed\", detail: \"offer=0 reason=PROPOSER_LEFT; local offer not remotely broadcast\" }",
+    "Event { id: 17, at: 180000, agent: Some(1), cause: Some(14), kind: \"Decision\", detail: \"intent=Cultivate { plot: 1 } nutrition_ms=43020000 starvation_ms=0 reason=work on locally observed personal crop; interruption remains legal\" }",
+    "Event { id: 75, at: 3600000, agent: Some(1), cause: Some(74), kind: \"Decision\", detail: \"intent=OfferBarter { batch: 2, quantity: 10, want: Food, want_quantity: 1 } nutrition_ms=39600000 starvation_ms=0 reason=blocked own use; surplus=10; no resale assumption; needs=Needs { food: 1, wood: 0, protect_food: 7, protect_wood: 0, owned_food: 0, owned_wood: 10, capital_gate: \\\"NO_KNOWN_DEMAND\\\" }\" }",
+    "Event { id: 76, at: 3600000, agent: Some(1), cause: Some(75), kind: \"BarterOffered\", detail: \"offer=1 batch=2 give=Wood:10 want=Food:1 node=0 expires=7200000; standing voluntary consent; no reservation\" }",
+    "Event { id: 77, at: 3660000, agent: Some(1), cause: Some(76), kind: \"Decision\", detail: \"intent=Travel { edge: 0, target: 1, food: false } nutrition_ms=39540000 starvation_ms=0 reason=explore unknown location; no resource target; predicted_ms=7200000 arrival_nutrition_ms=32340000 arrival_starvation_ms=0\" }",
+    "Event { id: 79, at: 3660000, agent: Some(1), cause: Some(78), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }",
+    "Event { id: 80, at: 3720000, agent: Some(1), cause: Some(79), kind: \"BarterClosed\", detail: \"offer=1 reason=PROPOSER_LEFT; local offer not remotely broadcast\" }"
+  ]
+}

@@ -1,0 +1,12 @@
+symmetric_off complete
+complementary_off complete
+complementary_on complete
+symmetric_on complete
+low_cost_off complete
+high_cost_off complete
+colocated_off complete
+colocated_on complete
+separated_off complete
+separated_on complete
+low_cost_on complete
+high_cost_on complete

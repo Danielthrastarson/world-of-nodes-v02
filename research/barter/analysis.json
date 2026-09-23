@@ -1,0 +1,6434 @@
+{
+  "arms": {
+    "complementary_off": {
+      "population": 50,
+      "outcomes": {
+        "alive": {
+          "mean": 15.066666666666666,
+          "min": 15.0,
+          "max": 17.0
+        },
+        "deaths": {
+          "mean": 34.93333333333333,
+          "min": 33.0,
+          "max": 35.0
+        },
+        "produced": {
+          "mean": 2813.6,
+          "min": 2760.0,
+          "max": 3216.0
+        },
+        "consumed": {
+          "mean": 4879.8,
+          "min": 4817.0,
+          "max": 5345.0
+        },
+        "spoiled": {
+          "mean": 924.6,
+          "min": 857.0,
+          "max": 935.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 6.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "starvation_h": {
+          "mean": 914.3314717040333,
+          "min": 860.693829444,
+          "max": 920.019256667
+        },
+        "queue_h": {
+          "mean": 339.1046979633,
+          "min": 288.179201111,
+          "max": 347.075935556
+        },
+        "food_flows_ab": {
+          "mean": 16.933333333333334,
+          "min": 16.0,
+          "max": 20.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 68.0,
+          "min": 67.0,
+          "max": 73.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 1694.7333333333333,
+            "min": 1687.0,
+            "max": 1745.0
+          },
+          "produced": {
+            "mean": 150.4,
+            "min": 144.0,
+            "max": 192.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 100.9688903707,
+            "min": 66.693829444,
+            "max": 106.241976667
+          },
+          "consumed": {
+            "mean": 2225.8,
+            "min": 2209.0,
+            "max": 2335.0
+          },
+          "produced": {
+            "mean": 156.8,
+            "min": 144.0,
+            "max": 240.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 39.8,
+            "min": 39.0,
+            "max": 45.0
+          },
+          "starvation_h": {
+            "mean": 332.1688903707,
+            "min": 240.693829444,
+            "max": 346.241976667
+          },
+          "consumed": {
+            "mean": 3016.4666666666667,
+            "min": 2985.0,
+            "max": 3215.0
+          },
+          "produced": {
+            "mean": 955.2,
+            "min": 936.0,
+            "max": 1080.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 29.533333333333335,
+            "min": 29.0,
+            "max": 33.0
+          },
+          "starvation_h": {
+            "mean": 582.4378197960667,
+            "min": 503.907408889,
+            "max": 595.120988333
+          },
+          "consumed": {
+            "mean": 4251.7,
+            "min": 4193.0,
+            "max": 4622.0
+          },
+          "produced": {
+            "mean": 2186.4,
+            "min": 2136.0,
+            "max": 2496.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 15.066666666666666,
+            "min": 15.0,
+            "max": 17.0
+          },
+          "starvation_h": {
+            "mean": 914.3314717040333,
+            "min": 860.693829444,
+            "max": 920.019256667
+          },
+          "consumed": {
+            "mean": 4879.8,
+            "min": 4817.0,
+            "max": 5345.0
+          },
+          "produced": {
+            "mean": 2813.6,
+            "min": 2760.0,
+            "max": 3216.0
+          }
+        }
+      },
+      "barter_counters": {},
+      "offer_final_statuses": {},
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "gather_food": {
+          "mean": 1.5194727971,
+          "min": 1.510203612,
+          "max": 1.5797225009999998
+        },
+        "harvest": {
+          "mean": 155.82495381453333,
+          "min": 153.86666666600001,
+          "max": 175.455556111
+        },
+        "idle": {
+          "mean": 3313.1943037025667,
+          "min": 3277.4040974980003,
+          "max": 3554.555894167
+        },
+        "queue": {
+          "mean": 339.1046979623333,
+          "min": 288.179201111,
+          "max": 347.075935555
+        },
+        "sleep": {
+          "mean": 1784.1723681673,
+          "min": 1765.8412272229998,
+          "max": 1916.5246883339998
+        },
+        "sow": {
+          "mean": 199.64275995373333,
+          "min": 197.449427222,
+          "max": 219.061111111
+        },
+        "loaded_travel": {
+          "mean": 267.32281061173336,
+          "min": 261.053148334,
+          "max": 300.20006
+        },
+        "empty_travel": {
+          "mean": 201.5096620001,
+          "min": 178.456113611,
+          "max": 205.623060278
+        }
+      },
+      "accounts": {
+        "Food_quantity_edges": {
+          "mean": 60.5,
+          "min": 57.0,
+          "max": 63.0
+        },
+        "Waste_quantity_edges": {
+          "mean": 541.6,
+          "min": 528.0,
+          "max": 612.0
+        },
+        "consumed_communal_food": {
+          "mean": 24.0,
+          "min": 24.0,
+          "max": 24.0
+        },
+        "consumed_crop_food": {
+          "mean": 2804.4,
+          "min": 2752.0,
+          "max": 3202.0
+        },
+        "consumed_food": {
+          "mean": 4879.8,
+          "min": 4817.0,
+          "max": 5345.0
+        },
+        "consumed_food_from_0": {
+          "mean": 4129.4,
+          "min": 4073.0,
+          "max": 4553.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 1290.0,
+          "min": 1264.0,
+          "max": 1294.0
+        },
+        "gathered_food": {
+          "mean": 2275.0,
+          "min": 2263.0,
+          "max": 2353.0
+        },
+        "living_ms": {
+          "mean": 6262.29102900926,
+          "min": 6210.0,
+          "max": 6634.012346944444
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 2650.3712676296295,
+          "min": 2627.8717369444444,
+          "max": 2654.23416
+        },
+        "produced_food": {
+          "mean": 2813.6,
+          "min": 2760.0,
+          "max": 3216.0
+        },
+        "request_quantum_ms": {
+          "mean": 12252.489145870371,
+          "min": 12193.358388055556,
+          "max": 13089.69673861111
+        },
+        "spoiled_food": {
+          "mean": 924.6,
+          "min": 857.0,
+          "max": 935.0
+        },
+        "starvation_ms": {
+          "mean": 914.3314717037036,
+          "min": 860.6938294444445,
+          "max": 920.0192566666666
+        },
+        "unused_plot_ms": {
+          "mean": 3556.4988334907407,
+          "min": 3349.9998697222222,
+          "max": 3576.84962
+        },
+        "consumed_food_from_1": {
+          "mean": 750.4,
+          "min": 744.0,
+          "max": 792.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 144.0,
+          "min": 142.0,
+          "max": 154.0
+        },
+        "CapitalGate:INSUFFICIENT_LOCAL_WOOD": {
+          "mean": 6093.2,
+          "min": 5882.0,
+          "max": 6863.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 69.43333333333334,
+          "min": 68.0,
+          "max": 75.0
+        },
+        "CargoLoaded": {
+          "mean": 24.0,
+          "min": 24.0,
+          "max": 24.0
+        },
+        "Consumed": {
+          "mean": 859.4333333333333,
+          "min": 849.0,
+          "max": 934.0
+        },
+        "Died": {
+          "mean": 34.93333333333333,
+          "min": 33.0,
+          "max": 35.0
+        },
+        "Gathered": {
+          "mean": 2275.0,
+          "min": 2263.0,
+          "max": 2353.0
+        },
+        "Harvested": {
+          "mean": 117.23333333333333,
+          "min": 115.0,
+          "max": 134.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 469.3333333333333,
+          "min": 121.0,
+          "max": 575.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 176.93333333333334,
+          "min": 176.0,
+          "max": 186.0
+        },
+        "Interrupted:new gathering action": {
+          "mean": 30.933333333333334,
+          "min": 24.0,
+          "max": 32.0
+        },
+        "Interrupted:pickup": {
+          "mean": 5.7,
+          "min": 3.0,
+          "max": 6.0
+        },
+        "Interrupted:sleep": {
+          "mean": 92863.1,
+          "min": 91960.0,
+          "max": 100213.0
+        },
+        "JobCancelled:accepted job cannot acquire expected cargo; remote board unchanged": {
+          "mean": 6.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "Pickup": {
+          "mean": 438.8666666666667,
+          "min": 428.0,
+          "max": 514.0
+        },
+        "Queued": {
+          "mean": 326.06666666666666,
+          "min": 262.0,
+          "max": 338.0
+        },
+        "Rejected": {
+          "mean": 59.93333333333333,
+          "min": 43.0,
+          "max": 81.0
+        },
+        "SleepStarted": {
+          "mean": 107230.23333333334,
+          "min": 106181.0,
+          "max": 115008.0
+        },
+        "CapitalGate:NO_TIME_PAYBACK": {
+          "mean": 12.0,
+          "min": 12.0,
+          "max": 12.0
+        },
+        "CapitalGate:SIX_HOUR_MARGIN": {
+          "mean": 20.833333333333332,
+          "min": 8.0,
+          "max": 63.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 104.96666666666667,
+          "min": 44.0,
+          "max": 117.0
+        },
+        "JobAccepted": {
+          "mean": 6.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "Spoiled": {
+          "mean": 34.266666666666666,
+          "min": 34.0,
+          "max": 36.0
+        },
+        "Interrupted:cancel job": {
+          "mean": 0.7333333333333333,
+          "min": 0.0,
+          "max": 4.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:unowned": {
+          "mean": 725.0,
+          "min": 647.0,
+          "max": 737.0
+        },
+        "Wood:unowned": {
+          "mean": 500.0,
+          "min": 500.0,
+          "max": 500.0
+        },
+        "Waste:agent": {
+          "mean": 199.6,
+          "min": 198.0,
+          "max": 210.0
+        },
+        "Food:agent": {
+          "mean": 9.2,
+          "min": 8.0,
+          "max": 14.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "complementary_on": {
+      "population": 50,
+      "outcomes": {
+        "alive": {
+          "mean": 15.066666666666666,
+          "min": 15.0,
+          "max": 17.0
+        },
+        "deaths": {
+          "mean": 34.93333333333333,
+          "min": 33.0,
+          "max": 35.0
+        },
+        "produced": {
+          "mean": 2813.6,
+          "min": 2760.0,
+          "max": 3216.0
+        },
+        "consumed": {
+          "mean": 4879.8,
+          "min": 4817.0,
+          "max": 5345.0
+        },
+        "spoiled": {
+          "mean": 924.6,
+          "min": 857.0,
+          "max": 935.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 6.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "starvation_h": {
+          "mean": 914.3314717040333,
+          "min": 860.693829444,
+          "max": 920.019256667
+        },
+        "queue_h": {
+          "mean": 339.1046979633,
+          "min": 288.179201111,
+          "max": 347.075935556
+        },
+        "food_flows_ab": {
+          "mean": 16.933333333333334,
+          "min": 16.0,
+          "max": 20.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 68.0,
+          "min": 67.0,
+          "max": 73.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 1694.7333333333333,
+            "min": 1687.0,
+            "max": 1745.0
+          },
+          "produced": {
+            "mean": 150.4,
+            "min": 144.0,
+            "max": 192.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 100.9688903707,
+            "min": 66.693829444,
+            "max": 106.241976667
+          },
+          "consumed": {
+            "mean": 2225.8,
+            "min": 2209.0,
+            "max": 2335.0
+          },
+          "produced": {
+            "mean": 156.8,
+            "min": 144.0,
+            "max": 240.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 39.8,
+            "min": 39.0,
+            "max": 45.0
+          },
+          "starvation_h": {
+            "mean": 332.1688903707,
+            "min": 240.693829444,
+            "max": 346.241976667
+          },
+          "consumed": {
+            "mean": 3016.4666666666667,
+            "min": 2985.0,
+            "max": 3215.0
+          },
+          "produced": {
+            "mean": 955.2,
+            "min": 936.0,
+            "max": 1080.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 29.533333333333335,
+            "min": 29.0,
+            "max": 33.0
+          },
+          "starvation_h": {
+            "mean": 582.4378197960667,
+            "min": 503.907408889,
+            "max": 595.120988333
+          },
+          "consumed": {
+            "mean": 4251.7,
+            "min": 4193.0,
+            "max": 4622.0
+          },
+          "produced": {
+            "mean": 2186.4,
+            "min": 2136.0,
+            "max": 2496.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 15.066666666666666,
+            "min": 15.0,
+            "max": 17.0
+          },
+          "starvation_h": {
+            "mean": 914.3314717040333,
+            "min": 860.693829444,
+            "max": 920.019256667
+          },
+          "consumed": {
+            "mean": 4879.8,
+            "min": 4817.0,
+            "max": 5345.0
+          },
+          "produced": {
+            "mean": 2813.6,
+            "min": 2760.0,
+            "max": 3216.0
+          }
+        }
+      },
+      "barter_counters": {
+        "eligible_evaluations": {
+          "mean": 192457.53333333333,
+          "min": 190696.0,
+          "max": 205694.0
+        },
+        "unmet_food_evaluations": {
+          "mean": 32507.733333333334,
+          "min": 31792.0,
+          "max": 33394.0
+        }
+      },
+      "offer_final_statuses": {},
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "gather_food": {
+          "mean": 1.5194727971,
+          "min": 1.510203612,
+          "max": 1.5797225009999998
+        },
+        "harvest": {
+          "mean": 155.82495381453333,
+          "min": 153.86666666600001,
+          "max": 175.455556111
+        },
+        "idle": {
+          "mean": 3313.1943037025667,
+          "min": 3277.4040974980003,
+          "max": 3554.555894167
+        },
+        "queue": {
+          "mean": 339.1046979623333,
+          "min": 288.179201111,
+          "max": 347.075935555
+        },
+        "sleep": {
+          "mean": 1784.1723681673,
+          "min": 1765.8412272229998,
+          "max": 1916.5246883339998
+        },
+        "sow": {
+          "mean": 199.64275995373333,
+          "min": 197.449427222,
+          "max": 219.061111111
+        },
+        "loaded_travel": {
+          "mean": 267.32281061173336,
+          "min": 261.053148334,
+          "max": 300.20006
+        },
+        "empty_travel": {
+          "mean": 201.5096620001,
+          "min": 178.456113611,
+          "max": 205.623060278
+        }
+      },
+      "accounts": {
+        "Food_quantity_edges": {
+          "mean": 60.5,
+          "min": 57.0,
+          "max": 63.0
+        },
+        "Waste_quantity_edges": {
+          "mean": 541.6,
+          "min": 528.0,
+          "max": 612.0
+        },
+        "consumed_communal_food": {
+          "mean": 24.0,
+          "min": 24.0,
+          "max": 24.0
+        },
+        "consumed_crop_food": {
+          "mean": 2804.4,
+          "min": 2752.0,
+          "max": 3202.0
+        },
+        "consumed_food": {
+          "mean": 4879.8,
+          "min": 4817.0,
+          "max": 5345.0
+        },
+        "consumed_food_from_0": {
+          "mean": 4129.4,
+          "min": 4073.0,
+          "max": 4553.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 1290.0,
+          "min": 1264.0,
+          "max": 1294.0
+        },
+        "gathered_food": {
+          "mean": 2275.0,
+          "min": 2263.0,
+          "max": 2353.0
+        },
+        "living_ms": {
+          "mean": 6262.29102900926,
+          "min": 6210.0,
+          "max": 6634.012346944444
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 2650.3712676296295,
+          "min": 2627.8717369444444,
+          "max": 2654.23416
+        },
+        "produced_food": {
+          "mean": 2813.6,
+          "min": 2760.0,
+          "max": 3216.0
+        },
+        "request_quantum_ms": {
+          "mean": 12252.489145870371,
+          "min": 12193.358388055556,
+          "max": 13089.69673861111
+        },
+        "spoiled_food": {
+          "mean": 924.6,
+          "min": 857.0,
+          "max": 935.0
+        },
+        "starvation_ms": {
+          "mean": 914.3314717037036,
+          "min": 860.6938294444445,
+          "max": 920.0192566666666
+        },
+        "unused_plot_ms": {
+          "mean": 3556.4988334907407,
+          "min": 3349.9998697222222,
+          "max": 3576.84962
+        },
+        "consumed_food_from_1": {
+          "mean": 750.4,
+          "min": 744.0,
+          "max": 792.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 144.0,
+          "min": 142.0,
+          "max": 154.0
+        },
+        "CapitalGate:INSUFFICIENT_LOCAL_WOOD": {
+          "mean": 6093.2,
+          "min": 5882.0,
+          "max": 6863.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 69.43333333333334,
+          "min": 68.0,
+          "max": 75.0
+        },
+        "CargoLoaded": {
+          "mean": 24.0,
+          "min": 24.0,
+          "max": 24.0
+        },
+        "Consumed": {
+          "mean": 859.4333333333333,
+          "min": 849.0,
+          "max": 934.0
+        },
+        "Died": {
+          "mean": 34.93333333333333,
+          "min": 33.0,
+          "max": 35.0
+        },
+        "Gathered": {
+          "mean": 2275.0,
+          "min": 2263.0,
+          "max": 2353.0
+        },
+        "Harvested": {
+          "mean": 117.23333333333333,
+          "min": 115.0,
+          "max": 134.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 469.3333333333333,
+          "min": 121.0,
+          "max": 575.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 176.93333333333334,
+          "min": 176.0,
+          "max": 186.0
+        },
+        "Interrupted:new gathering action": {
+          "mean": 30.933333333333334,
+          "min": 24.0,
+          "max": 32.0
+        },
+        "Interrupted:pickup": {
+          "mean": 5.7,
+          "min": 3.0,
+          "max": 6.0
+        },
+        "Interrupted:sleep": {
+          "mean": 92863.1,
+          "min": 91960.0,
+          "max": 100213.0
+        },
+        "JobCancelled:accepted job cannot acquire expected cargo; remote board unchanged": {
+          "mean": 6.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "Pickup": {
+          "mean": 438.8666666666667,
+          "min": 428.0,
+          "max": 514.0
+        },
+        "Queued": {
+          "mean": 326.06666666666666,
+          "min": 262.0,
+          "max": 338.0
+        },
+        "Rejected": {
+          "mean": 59.93333333333333,
+          "min": 43.0,
+          "max": 81.0
+        },
+        "SleepStarted": {
+          "mean": 107230.23333333334,
+          "min": 106181.0,
+          "max": 115008.0
+        },
+        "CapitalGate:NO_TIME_PAYBACK": {
+          "mean": 12.0,
+          "min": 12.0,
+          "max": 12.0
+        },
+        "CapitalGate:SIX_HOUR_MARGIN": {
+          "mean": 20.833333333333332,
+          "min": 8.0,
+          "max": 63.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 104.96666666666667,
+          "min": 44.0,
+          "max": 117.0
+        },
+        "JobAccepted": {
+          "mean": 6.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "Spoiled": {
+          "mean": 34.266666666666666,
+          "min": 34.0,
+          "max": 36.0
+        },
+        "Interrupted:cancel job": {
+          "mean": 0.7333333333333333,
+          "min": 0.0,
+          "max": 4.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:unowned": {
+          "mean": 725.0,
+          "min": 647.0,
+          "max": 737.0
+        },
+        "Wood:unowned": {
+          "mean": 500.0,
+          "min": 500.0,
+          "max": 500.0
+        },
+        "Waste:agent": {
+          "mean": 199.6,
+          "min": 198.0,
+          "max": 210.0
+        },
+        "Food:agent": {
+          "mean": 9.2,
+          "min": 8.0,
+          "max": 14.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "symmetric_off": {
+      "population": 50,
+      "outcomes": {
+        "alive": {
+          "mean": 18.0,
+          "min": 18.0,
+          "max": 18.0
+        },
+        "deaths": {
+          "mean": 32.0,
+          "min": 32.0,
+          "max": 32.0
+        },
+        "produced": {
+          "mean": 3696.0,
+          "min": 3696.0,
+          "max": 3696.0
+        },
+        "consumed": {
+          "mean": 6146.0,
+          "min": 6146.0,
+          "max": 6146.0
+        },
+        "spoiled": {
+          "mean": 550.0,
+          "min": 550.0,
+          "max": 550.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 856.0,
+          "min": 856.0,
+          "max": 856.0
+        },
+        "queue_h": {
+          "mean": 279.0,
+          "min": 279.0,
+          "max": 279.0
+        },
+        "food_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 40.0,
+          "min": 40.0,
+          "max": 40.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 1850.0,
+            "min": 1850.0,
+            "max": 1850.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 2450.0,
+            "min": 2450.0,
+            "max": 2450.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 3650.0,
+            "min": 3650.0,
+            "max": 3650.0
+          },
+          "produced": {
+            "mean": 1200.0,
+            "min": 1200.0,
+            "max": 1200.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 42.0,
+            "min": 42.0,
+            "max": 42.0
+          },
+          "starvation_h": {
+            "mean": 280.0,
+            "min": 280.0,
+            "max": 280.0
+          },
+          "consumed": {
+            "mean": 5474.0,
+            "min": 5474.0,
+            "max": 5474.0
+          },
+          "produced": {
+            "mean": 3024.0,
+            "min": 3024.0,
+            "max": 3024.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "starvation_h": {
+            "mean": 856.0,
+            "min": 856.0,
+            "max": 856.0
+          },
+          "consumed": {
+            "mean": 6146.0,
+            "min": 6146.0,
+            "max": 6146.0
+          },
+          "produced": {
+            "mean": 3696.0,
+            "min": 3696.0,
+            "max": 3696.0
+          }
+        }
+      },
+      "barter_counters": {},
+      "offer_final_statuses": {},
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "gather_food": {
+          "mean": 1.898361112,
+          "min": 1.898361112,
+          "max": 1.898361112
+        },
+        "harvest": {
+          "mean": 204.34694444446666,
+          "min": 204.22500000000002,
+          "max": 204.458333334
+        },
+        "idle": {
+          "mean": 4238.978861111067,
+          "min": 4238.93775,
+          "max": 4239.021083334001
+        },
+        "queue": {
+          "mean": 279.0,
+          "min": 279.0,
+          "max": 279.0
+        },
+        "sleep": {
+          "mean": 2174.5,
+          "min": 2174.5,
+          "max": 2174.5
+        },
+        "sow": {
+          "mean": 268.83138888916665,
+          "min": 268.761111111,
+          "max": 268.911111112
+        },
+        "loaded_travel": {
+          "mean": 304.444444444,
+          "min": 304.444444444,
+          "max": 304.444444444
+        }
+      },
+      "accounts": {
+        "Waste_quantity_edges": {
+          "mean": 480.0,
+          "min": 480.0,
+          "max": 480.0
+        },
+        "consumed_crop_food": {
+          "mean": 3696.0,
+          "min": 3696.0,
+          "max": 3696.0
+        },
+        "consumed_food": {
+          "mean": 6146.0,
+          "min": 6146.0,
+          "max": 6146.0
+        },
+        "consumed_food_from_0": {
+          "mean": 3073.0,
+          "min": 3073.0,
+          "max": 3073.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 928.0,
+          "min": 928.0,
+          "max": 928.0
+        },
+        "gathered_food": {
+          "mean": 2750.0,
+          "min": 2750.0,
+          "max": 2750.0
+        },
+        "living_ms": {
+          "mean": 7472.0,
+          "min": 7472.0,
+          "max": 7472.0
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 2835.541944444444,
+          "min": 2835.375,
+          "max": 2835.758333333333
+        },
+        "produced_food": {
+          "mean": 3696.0,
+          "min": 3696.0,
+          "max": 3696.0
+        },
+        "request_quantum_ms": {
+          "mean": 13566.165,
+          "min": 13565.633333333333,
+          "max": 13566.883333333333
+        },
+        "spoiled_food": {
+          "mean": 550.0,
+          "min": 550.0,
+          "max": 550.0
+        },
+        "starvation_ms": {
+          "mean": 856.0,
+          "min": 856.0,
+          "max": 856.0
+        },
+        "unused_plot_ms": {
+          "mean": 2687.630277777778,
+          "min": 2687.3916666666664,
+          "max": 2687.8083333333334
+        },
+        "consumed_food_from_1": {
+          "mean": 3073.0,
+          "min": 3073.0,
+          "max": 3073.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 80.0,
+          "min": 80.0,
+          "max": 80.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 50.0,
+          "min": 50.0,
+          "max": 50.0
+        },
+        "Consumed": {
+          "mean": 912.0,
+          "min": 912.0,
+          "max": 912.0
+        },
+        "Died": {
+          "mean": 32.0,
+          "min": 32.0,
+          "max": 32.0
+        },
+        "Gathered": {
+          "mean": 2750.0,
+          "min": 2750.0,
+          "max": 2750.0
+        },
+        "Harvested": {
+          "mean": 154.0,
+          "min": 154.0,
+          "max": 154.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 154.0,
+          "min": 154.0,
+          "max": 154.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 278.0,
+          "min": 278.0,
+          "max": 278.0
+        },
+        "Interrupted:sleep": {
+          "mean": 117034.0,
+          "min": 117034.0,
+          "max": 117034.0
+        },
+        "Pickup": {
+          "mean": 616.0,
+          "min": 616.0,
+          "max": 616.0
+        },
+        "Queued": {
+          "mean": 202.0,
+          "min": 202.0,
+          "max": 202.0
+        },
+        "Rejected": {
+          "mean": 115.0,
+          "min": 96.0,
+          "max": 130.0
+        },
+        "SleepStarted": {
+          "mean": 130478.0,
+          "min": 130478.0,
+          "max": 130478.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 40.0,
+          "min": 40.0,
+          "max": 40.0
+        },
+        "Spoiled": {
+          "mean": 52.0,
+          "min": 52.0,
+          "max": 52.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:unowned": {
+          "mean": 250.0,
+          "min": 250.0,
+          "max": 250.0
+        },
+        "Wood:unowned": {
+          "mean": 500.0,
+          "min": 500.0,
+          "max": 500.0
+        },
+        "Waste:agent": {
+          "mean": 300.0,
+          "min": 300.0,
+          "max": 300.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "symmetric_on": {
+      "population": 50,
+      "outcomes": {
+        "alive": {
+          "mean": 18.0,
+          "min": 18.0,
+          "max": 18.0
+        },
+        "deaths": {
+          "mean": 32.0,
+          "min": 32.0,
+          "max": 32.0
+        },
+        "produced": {
+          "mean": 3696.0,
+          "min": 3696.0,
+          "max": 3696.0
+        },
+        "consumed": {
+          "mean": 6146.0,
+          "min": 6146.0,
+          "max": 6146.0
+        },
+        "spoiled": {
+          "mean": 550.0,
+          "min": 550.0,
+          "max": 550.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 856.0,
+          "min": 856.0,
+          "max": 856.0
+        },
+        "queue_h": {
+          "mean": 279.0,
+          "min": 279.0,
+          "max": 279.0
+        },
+        "food_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 40.0,
+          "min": 40.0,
+          "max": 40.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 1850.0,
+            "min": 1850.0,
+            "max": 1850.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 2450.0,
+            "min": 2450.0,
+            "max": 2450.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 3650.0,
+            "min": 3650.0,
+            "max": 3650.0
+          },
+          "produced": {
+            "mean": 1200.0,
+            "min": 1200.0,
+            "max": 1200.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 42.0,
+            "min": 42.0,
+            "max": 42.0
+          },
+          "starvation_h": {
+            "mean": 280.0,
+            "min": 280.0,
+            "max": 280.0
+          },
+          "consumed": {
+            "mean": 5474.0,
+            "min": 5474.0,
+            "max": 5474.0
+          },
+          "produced": {
+            "mean": 3024.0,
+            "min": 3024.0,
+            "max": 3024.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "starvation_h": {
+            "mean": 856.0,
+            "min": 856.0,
+            "max": 856.0
+          },
+          "consumed": {
+            "mean": 6146.0,
+            "min": 6146.0,
+            "max": 6146.0
+          },
+          "produced": {
+            "mean": 3696.0,
+            "min": 3696.0,
+            "max": 3696.0
+          }
+        }
+      },
+      "barter_counters": {
+        "eligible_evaluations": {
+          "mean": 246467.73333333334,
+          "min": 246463.0,
+          "max": 246472.0
+        },
+        "unmet_food_evaluations": {
+          "mean": 32608.0,
+          "min": 32608.0,
+          "max": 32608.0
+        }
+      },
+      "offer_final_statuses": {},
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "gather_food": {
+          "mean": 1.898361112,
+          "min": 1.898361112,
+          "max": 1.898361112
+        },
+        "harvest": {
+          "mean": 204.34694444446666,
+          "min": 204.22500000000002,
+          "max": 204.458333334
+        },
+        "idle": {
+          "mean": 4238.978861111067,
+          "min": 4238.93775,
+          "max": 4239.021083334001
+        },
+        "queue": {
+          "mean": 279.0,
+          "min": 279.0,
+          "max": 279.0
+        },
+        "sleep": {
+          "mean": 2174.5,
+          "min": 2174.5,
+          "max": 2174.5
+        },
+        "sow": {
+          "mean": 268.83138888916665,
+          "min": 268.761111111,
+          "max": 268.911111112
+        },
+        "loaded_travel": {
+          "mean": 304.444444444,
+          "min": 304.444444444,
+          "max": 304.444444444
+        }
+      },
+      "accounts": {
+        "Waste_quantity_edges": {
+          "mean": 480.0,
+          "min": 480.0,
+          "max": 480.0
+        },
+        "consumed_crop_food": {
+          "mean": 3696.0,
+          "min": 3696.0,
+          "max": 3696.0
+        },
+        "consumed_food": {
+          "mean": 6146.0,
+          "min": 6146.0,
+          "max": 6146.0
+        },
+        "consumed_food_from_0": {
+          "mean": 3073.0,
+          "min": 3073.0,
+          "max": 3073.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 928.0,
+          "min": 928.0,
+          "max": 928.0
+        },
+        "gathered_food": {
+          "mean": 2750.0,
+          "min": 2750.0,
+          "max": 2750.0
+        },
+        "living_ms": {
+          "mean": 7472.0,
+          "min": 7472.0,
+          "max": 7472.0
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 2835.541944444444,
+          "min": 2835.375,
+          "max": 2835.758333333333
+        },
+        "produced_food": {
+          "mean": 3696.0,
+          "min": 3696.0,
+          "max": 3696.0
+        },
+        "request_quantum_ms": {
+          "mean": 13566.165,
+          "min": 13565.633333333333,
+          "max": 13566.883333333333
+        },
+        "spoiled_food": {
+          "mean": 550.0,
+          "min": 550.0,
+          "max": 550.0
+        },
+        "starvation_ms": {
+          "mean": 856.0,
+          "min": 856.0,
+          "max": 856.0
+        },
+        "unused_plot_ms": {
+          "mean": 2687.630277777778,
+          "min": 2687.3916666666664,
+          "max": 2687.8083333333334
+        },
+        "consumed_food_from_1": {
+          "mean": 3073.0,
+          "min": 3073.0,
+          "max": 3073.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 80.0,
+          "min": 80.0,
+          "max": 80.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 50.0,
+          "min": 50.0,
+          "max": 50.0
+        },
+        "Consumed": {
+          "mean": 912.0,
+          "min": 912.0,
+          "max": 912.0
+        },
+        "Died": {
+          "mean": 32.0,
+          "min": 32.0,
+          "max": 32.0
+        },
+        "Gathered": {
+          "mean": 2750.0,
+          "min": 2750.0,
+          "max": 2750.0
+        },
+        "Harvested": {
+          "mean": 154.0,
+          "min": 154.0,
+          "max": 154.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 154.0,
+          "min": 154.0,
+          "max": 154.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 278.0,
+          "min": 278.0,
+          "max": 278.0
+        },
+        "Interrupted:sleep": {
+          "mean": 117034.0,
+          "min": 117034.0,
+          "max": 117034.0
+        },
+        "Pickup": {
+          "mean": 616.0,
+          "min": 616.0,
+          "max": 616.0
+        },
+        "Queued": {
+          "mean": 202.0,
+          "min": 202.0,
+          "max": 202.0
+        },
+        "Rejected": {
+          "mean": 115.0,
+          "min": 96.0,
+          "max": 130.0
+        },
+        "SleepStarted": {
+          "mean": 130478.0,
+          "min": 130478.0,
+          "max": 130478.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 40.0,
+          "min": 40.0,
+          "max": 40.0
+        },
+        "Spoiled": {
+          "mean": 52.0,
+          "min": 52.0,
+          "max": 52.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:unowned": {
+          "mean": 250.0,
+          "min": 250.0,
+          "max": 250.0
+        },
+        "Wood:unowned": {
+          "mean": 500.0,
+          "min": 500.0,
+          "max": 500.0
+        },
+        "Waste:agent": {
+          "mean": 300.0,
+          "min": 300.0,
+          "max": 300.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "low_cost_off": {
+      "population": 50,
+      "outcomes": {
+        "alive": {
+          "mean": 18.533333333333335,
+          "min": 15.0,
+          "max": 19.0
+        },
+        "deaths": {
+          "mean": 31.466666666666665,
+          "min": 31.0,
+          "max": 35.0
+        },
+        "produced": {
+          "mean": 3302.4,
+          "min": 2736.0,
+          "max": 3408.0
+        },
+        "consumed": {
+          "mean": 5600.4,
+          "min": 5040.0,
+          "max": 5670.0
+        },
+        "spoiled": {
+          "mean": 671.5333333333333,
+          "min": 614.0,
+          "max": 722.0
+        },
+        "delivered": {
+          "mean": 2.7,
+          "min": 0.0,
+          "max": 19.0
+        },
+        "jobs": {
+          "mean": 0.9,
+          "min": 0.0,
+          "max": 7.0
+        },
+        "starvation_h": {
+          "mean": 760.9996443702667,
+          "min": 744.0,
+          "max": 918.85
+        },
+        "queue_h": {
+          "mean": 177.2833603519,
+          "min": 111.990277778,
+          "max": 232.157436667
+        },
+        "food_flows_ab": {
+          "mean": 35.1,
+          "min": 18.0,
+          "max": 78.0
+        },
+        "food_flows_ba": {
+          "mean": 8.0,
+          "min": 0.0,
+          "max": 42.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 90.33333333333333,
+          "min": 81.0,
+          "max": 105.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 1819.4,
+            "min": 1790.0,
+            "max": 1855.0
+          },
+          "produced": {
+            "mean": 54.4,
+            "min": 0.0,
+            "max": 96.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 2442.8333333333335,
+            "min": 2408.0,
+            "max": 2469.0
+          },
+          "produced": {
+            "mean": 264.8,
+            "min": 168.0,
+            "max": 408.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 101.16666666666667,
+            "min": 85.0,
+            "max": 155.0
+          },
+          "consumed": {
+            "mean": 3501.9666666666667,
+            "min": 3372.0,
+            "max": 3553.0
+          },
+          "produced": {
+            "mean": 1195.2,
+            "min": 1080.0,
+            "max": 1296.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 27.6,
+            "min": 24.0,
+            "max": 28.0
+          },
+          "starvation_h": {
+            "mean": 582.8553333333333,
+            "min": 572.0,
+            "max": 705.0
+          },
+          "consumed": {
+            "mean": 4712.533333333334,
+            "min": 4346.0,
+            "max": 4755.0
+          },
+          "produced": {
+            "mean": 2416.8,
+            "min": 2040.0,
+            "max": 2496.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 18.533333333333335,
+            "min": 15.0,
+            "max": 19.0
+          },
+          "starvation_h": {
+            "mean": 760.9996443702667,
+            "min": 744.0,
+            "max": 918.85
+          },
+          "consumed": {
+            "mean": 5600.4,
+            "min": 5040.0,
+            "max": 5670.0
+          },
+          "produced": {
+            "mean": 3302.4,
+            "min": 2736.0,
+            "max": 3408.0
+          }
+        }
+      },
+      "barter_counters": {},
+      "offer_final_statuses": {},
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "gather_food": {
+          "mean": 1.7268424175,
+          "min": 1.6821208339999998,
+          "max": 1.762934168
+        },
+        "harvest": {
+          "mean": 188.87449075926668,
+          "min": 174.457683333,
+          "max": 206.927777223
+        },
+        "idle": {
+          "mean": 3963.8754011105334,
+          "min": 3752.995327777,
+          "max": 4047.888416944
+        },
+        "queue": {
+          "mean": 177.28336035163335,
+          "min": 111.99027777700002,
+          "max": 232.157436666
+        },
+        "sleep": {
+          "mean": 1971.4508545278666,
+          "min": 1854.314295833,
+          "max": 2008.5499997220002
+        },
+        "sow": {
+          "mean": 225.6495150834,
+          "min": 205.224363612,
+          "max": 231.51055555499997
+        },
+        "loaded_travel": {
+          "mean": 57.968960407333334,
+          "min": 46.075,
+          "max": 81.561582222
+        },
+        "cart_construction": {
+          "mean": 0.31314814806666663,
+          "min": 0.0,
+          "max": 0.422222222
+        },
+        "gather_wood": {
+          "mean": 0.032962962633333336,
+          "min": 0.0,
+          "max": 0.044444444
+        },
+        "empty_travel": {
+          "mean": 112.49113089816667,
+          "min": 98.9030175,
+          "max": 123.362683333
+        }
+      },
+      "accounts": {
+        "Food_quantity_edges": {
+          "mean": 96.8,
+          "min": 36.0,
+          "max": 258.0
+        },
+        "Waste_quantity_edges": {
+          "mean": 357.2,
+          "min": 300.0,
+          "max": 474.0
+        },
+        "consumed_crop_food": {
+          "mean": 3271.9333333333334,
+          "min": 2734.0,
+          "max": 3381.0
+        },
+        "consumed_food": {
+          "mean": 5600.4,
+          "min": 5040.0,
+          "max": 5670.0
+        },
+        "consumed_food_from_0": {
+          "mean": 4450.8,
+          "min": 4320.0,
+          "max": 4494.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 1696.9333333333334,
+          "min": 1652.0,
+          "max": 2014.0
+        },
+        "gathered_food": {
+          "mean": 2566.5333333333333,
+          "min": 2518.0,
+          "max": 2604.0
+        },
+        "living_ms": {
+          "mean": 6699.666666666667,
+          "min": 6385.999999999999,
+          "max": 6748.0
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 3342.178026861111,
+          "min": 3202.8055555555557,
+          "max": 3705.9820530555558
+        },
+        "produced_food": {
+          "mean": 3302.4,
+          "min": 2736.0,
+          "max": 3408.0
+        },
+        "request_quantum_ms": {
+          "mean": 13024.931593601852,
+          "min": 12044.581241388889,
+          "max": 15142.675551944445
+        },
+        "spoiled_food": {
+          "mean": 671.5333333333333,
+          "min": 614.0,
+          "max": 722.0
+        },
+        "starvation_ms": {
+          "mean": 760.9996443703703,
+          "min": 744.0,
+          "max": 918.85
+        },
+        "unused_plot_ms": {
+          "mean": 2510.6012334074076,
+          "min": 2362.9930383333335,
+          "max": 2585.8812500000004
+        },
+        "consumed_food_from_1": {
+          "mean": 1149.6,
+          "min": 720.0,
+          "max": 1248.0
+        },
+        "wood_invested": {
+          "mean": 29.666666666666668,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "communal_delivered": {
+          "mean": 2.7,
+          "min": 0.0,
+          "max": 19.0
+        },
+        "consumed_communal_food": {
+          "mean": 1.2333333333333334,
+          "min": 0.0,
+          "max": 12.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 240.06666666666666,
+          "min": 210.0,
+          "max": 263.0
+        },
+        "CapitalGate:INSUFFICIENT_LOCAL_WOOD": {
+          "mean": 2791.0,
+          "min": 765.0,
+          "max": 4431.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 74.9,
+          "min": 65.0,
+          "max": 87.0
+        },
+        "Consumed": {
+          "mean": 1027.8,
+          "min": 973.0,
+          "max": 1066.0
+        },
+        "Died": {
+          "mean": 31.466666666666665,
+          "min": 31.0,
+          "max": 35.0
+        },
+        "Gathered": {
+          "mean": 2566.5333333333333,
+          "min": 2518.0,
+          "max": 2604.0
+        },
+        "Harvested": {
+          "mean": 137.6,
+          "min": 114.0,
+          "max": 142.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 169.96666666666667,
+          "min": 121.0,
+          "max": 664.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 185.6,
+          "min": 175.0,
+          "max": 201.0
+        },
+        "Interrupted:new gathering action": {
+          "mean": 78.36666666666666,
+          "min": 22.0,
+          "max": 160.0
+        },
+        "Interrupted:sleep": {
+          "mean": 106714.43333333333,
+          "min": 97953.0,
+          "max": 109335.0
+        },
+        "Pickup": {
+          "mean": 581.2333333333333,
+          "min": 405.0,
+          "max": 650.0
+        },
+        "Queued": {
+          "mean": 335.8333333333333,
+          "min": 251.0,
+          "max": 440.0
+        },
+        "Rejected": {
+          "mean": 67.93333333333334,
+          "min": 40.0,
+          "max": 93.0
+        },
+        "SleepStarted": {
+          "mean": 118300.13333333333,
+          "min": 111282.0,
+          "max": 120526.0
+        },
+        "CapitalGate:INVEST": {
+          "mean": 82.5,
+          "min": 21.0,
+          "max": 104.0
+        },
+        "CapitalGate:SIX_HOUR_MARGIN": {
+          "mean": 338.6,
+          "min": 136.0,
+          "max": 661.0
+        },
+        "CartStarted": {
+          "mean": 2.966666666666667,
+          "min": 0.0,
+          "max": 4.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 25.1,
+          "min": 21.0,
+          "max": 32.0
+        },
+        "Spoiled": {
+          "mean": 40.63333333333333,
+          "min": 34.0,
+          "max": 45.0
+        },
+        "CapitalGate:NO_TIME_PAYBACK": {
+          "mean": 33.46666666666667,
+          "min": 0.0,
+          "max": 395.0
+        },
+        "CargoLoaded": {
+          "mean": 1.0,
+          "min": 0.0,
+          "max": 12.0
+        },
+        "Delivered": {
+          "mean": 0.7666666666666667,
+          "min": 0.0,
+          "max": 5.0
+        },
+        "JobAccepted": {
+          "mean": 0.9,
+          "min": 0.0,
+          "max": 7.0
+        },
+        "JobCancelled:accepted job cannot acquire expected cargo; remote board unchanged": {
+          "mean": 0.13333333333333333,
+          "min": 0.0,
+          "max": 2.0
+        },
+        "Interrupted:accept local request": {
+          "mean": 0.03333333333333333,
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 2.966666666666667,
+          "min": 0,
+          "max": 4
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 29.666666666666668,
+          "min": 0,
+          "max": 40
+        }
+      },
+      "physical_inventory": {
+        "Waste:unowned": {
+          "mean": 433.46666666666664,
+          "min": 396.0,
+          "max": 482.0
+        },
+        "Wood:unowned": {
+          "mean": 470.3333333333333,
+          "min": 460.0,
+          "max": 500.0
+        },
+        "Waste:agent": {
+          "mean": 236.6,
+          "min": 198.0,
+          "max": 264.0
+        },
+        "Food:agent": {
+          "mean": 30.466666666666665,
+          "min": 2.0,
+          "max": 59.0
+        },
+        "Waste:commons": {
+          "mean": 1.4666666666666666,
+          "min": 0.0,
+          "max": 8.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "low_cost_on": {
+      "population": 50,
+      "outcomes": {
+        "alive": {
+          "mean": 18.533333333333335,
+          "min": 15.0,
+          "max": 19.0
+        },
+        "deaths": {
+          "mean": 31.466666666666665,
+          "min": 31.0,
+          "max": 35.0
+        },
+        "produced": {
+          "mean": 3302.4,
+          "min": 2736.0,
+          "max": 3408.0
+        },
+        "consumed": {
+          "mean": 5600.4,
+          "min": 5040.0,
+          "max": 5670.0
+        },
+        "spoiled": {
+          "mean": 671.5333333333333,
+          "min": 614.0,
+          "max": 722.0
+        },
+        "delivered": {
+          "mean": 2.7,
+          "min": 0.0,
+          "max": 19.0
+        },
+        "jobs": {
+          "mean": 0.9,
+          "min": 0.0,
+          "max": 7.0
+        },
+        "starvation_h": {
+          "mean": 760.9996443702667,
+          "min": 744.0,
+          "max": 918.85
+        },
+        "queue_h": {
+          "mean": 177.2830825741,
+          "min": 111.990277778,
+          "max": 232.157436667
+        },
+        "food_flows_ab": {
+          "mean": 35.1,
+          "min": 18.0,
+          "max": 78.0
+        },
+        "food_flows_ba": {
+          "mean": 8.0,
+          "min": 0.0,
+          "max": 42.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 90.33333333333333,
+          "min": 81.0,
+          "max": 105.0
+        },
+        "barter_attempts": {
+          "mean": 0.03333333333333333,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 1819.4,
+            "min": 1790.0,
+            "max": 1855.0
+          },
+          "produced": {
+            "mean": 54.4,
+            "min": 0.0,
+            "max": 96.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 2442.8333333333335,
+            "min": 2408.0,
+            "max": 2469.0
+          },
+          "produced": {
+            "mean": 264.8,
+            "min": 168.0,
+            "max": 408.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 101.16666666666667,
+            "min": 85.0,
+            "max": 155.0
+          },
+          "consumed": {
+            "mean": 3501.9666666666667,
+            "min": 3372.0,
+            "max": 3553.0
+          },
+          "produced": {
+            "mean": 1195.2,
+            "min": 1080.0,
+            "max": 1296.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 27.6,
+            "min": 24.0,
+            "max": 28.0
+          },
+          "starvation_h": {
+            "mean": 582.8553333333333,
+            "min": 572.0,
+            "max": 705.0
+          },
+          "consumed": {
+            "mean": 4712.533333333334,
+            "min": 4346.0,
+            "max": 4755.0
+          },
+          "produced": {
+            "mean": 2416.8,
+            "min": 2040.0,
+            "max": 2496.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 18.533333333333335,
+            "min": 15.0,
+            "max": 19.0
+          },
+          "starvation_h": {
+            "mean": 760.9996443702667,
+            "min": 744.0,
+            "max": 918.85
+          },
+          "consumed": {
+            "mean": 5600.4,
+            "min": 5040.0,
+            "max": 5670.0
+          },
+          "produced": {
+            "mean": 3302.4,
+            "min": 2736.0,
+            "max": 3408.0
+          }
+        }
+      },
+      "barter_counters": {
+        "eligible_evaluations": {
+          "mean": 231594.13333333333,
+          "min": 216386.0,
+          "max": 237042.0
+        },
+        "missing_wood_plan_evaluations": {
+          "mean": 105.56666666666666,
+          "min": 72.0,
+          "max": 142.0
+        },
+        "unmet_food_evaluations": {
+          "mean": 43129.5,
+          "min": 38231.0,
+          "max": 51802.0
+        },
+        "closed_PROPOSER_LEFT": {
+          "mean": 0.03333333333333333,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "offers_created": {
+          "mean": 0.03333333333333333,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "offers_observed": {
+          "mean": 1.3666666666666667,
+          "min": 0.0,
+          "max": 41.0
+        },
+        "rejected_COUNTERPARTY_DOES_NOT_WANT_GOOD": {
+          "mean": 0.23333333333333334,
+          "min": 0.0,
+          "max": 7.0
+        },
+        "rejected_INSUFFICIENT_OWNED_QUANTITY": {
+          "mean": 0.03333333333333333,
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "offer_final_statuses": {
+        "PROPOSER_LEFT": 1
+      },
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "gather_food": {
+          "mean": 1.7268424175,
+          "min": 1.6821208339999998,
+          "max": 1.762934168
+        },
+        "harvest": {
+          "mean": 188.87449075926668,
+          "min": 174.457683333,
+          "max": 206.927777223
+        },
+        "idle": {
+          "mean": 3963.8756788883334,
+          "min": 3753.003661111,
+          "max": 4047.888416944
+        },
+        "queue": {
+          "mean": 177.28308257386666,
+          "min": 111.99027777700002,
+          "max": 232.157436666
+        },
+        "sleep": {
+          "mean": 1971.4508545278666,
+          "min": 1854.314295833,
+          "max": 2008.5499997220002
+        },
+        "sow": {
+          "mean": 225.6495150834,
+          "min": 205.224363612,
+          "max": 231.51055555499997
+        },
+        "loaded_travel": {
+          "mean": 57.968960407333334,
+          "min": 46.075,
+          "max": 81.561582222
+        },
+        "cart_construction": {
+          "mean": 0.31314814806666663,
+          "min": 0.0,
+          "max": 0.422222222
+        },
+        "gather_wood": {
+          "mean": 0.032962962633333336,
+          "min": 0.0,
+          "max": 0.044444444
+        },
+        "empty_travel": {
+          "mean": 112.49113089816667,
+          "min": 98.9030175,
+          "max": 123.362683333
+        }
+      },
+      "accounts": {
+        "Food_quantity_edges": {
+          "mean": 96.8,
+          "min": 36.0,
+          "max": 258.0
+        },
+        "Waste_quantity_edges": {
+          "mean": 357.2,
+          "min": 300.0,
+          "max": 474.0
+        },
+        "consumed_crop_food": {
+          "mean": 3271.9333333333334,
+          "min": 2734.0,
+          "max": 3381.0
+        },
+        "consumed_food": {
+          "mean": 5600.4,
+          "min": 5040.0,
+          "max": 5670.0
+        },
+        "consumed_food_from_0": {
+          "mean": 4450.8,
+          "min": 4320.0,
+          "max": 4494.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 1696.9333333333334,
+          "min": 1652.0,
+          "max": 2014.0
+        },
+        "gathered_food": {
+          "mean": 2566.5333333333333,
+          "min": 2518.0,
+          "max": 2604.0
+        },
+        "living_ms": {
+          "mean": 6699.666666666667,
+          "min": 6385.999999999999,
+          "max": 6748.0
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 3342.178026861111,
+          "min": 3202.8055555555557,
+          "max": 3705.9820530555558
+        },
+        "produced_food": {
+          "mean": 3302.4,
+          "min": 2736.0,
+          "max": 3408.0
+        },
+        "request_quantum_ms": {
+          "mean": 13024.931593601852,
+          "min": 12044.581241388889,
+          "max": 15142.675551944445
+        },
+        "spoiled_food": {
+          "mean": 671.5333333333333,
+          "min": 614.0,
+          "max": 722.0
+        },
+        "starvation_ms": {
+          "mean": 760.9996443703703,
+          "min": 744.0,
+          "max": 918.85
+        },
+        "unused_plot_ms": {
+          "mean": 2510.6012334074076,
+          "min": 2362.9930383333335,
+          "max": 2585.8812500000004
+        },
+        "consumed_food_from_1": {
+          "mean": 1149.6,
+          "min": 720.0,
+          "max": 1248.0
+        },
+        "wood_invested": {
+          "mean": 29.666666666666668,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "communal_delivered": {
+          "mean": 2.7,
+          "min": 0.0,
+          "max": 19.0
+        },
+        "consumed_communal_food": {
+          "mean": 1.2333333333333334,
+          "min": 0.0,
+          "max": 12.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 240.06666666666666,
+          "min": 210.0,
+          "max": 263.0
+        },
+        "CapitalGate:INSUFFICIENT_LOCAL_WOOD": {
+          "mean": 2791.0,
+          "min": 765.0,
+          "max": 4431.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 74.9,
+          "min": 65.0,
+          "max": 87.0
+        },
+        "Consumed": {
+          "mean": 1027.8,
+          "min": 973.0,
+          "max": 1066.0
+        },
+        "Died": {
+          "mean": 31.466666666666665,
+          "min": 31.0,
+          "max": 35.0
+        },
+        "Gathered": {
+          "mean": 2566.5333333333333,
+          "min": 2518.0,
+          "max": 2604.0
+        },
+        "Harvested": {
+          "mean": 137.6,
+          "min": 114.0,
+          "max": 142.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 169.96666666666667,
+          "min": 121.0,
+          "max": 664.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 185.6,
+          "min": 175.0,
+          "max": 201.0
+        },
+        "Interrupted:new gathering action": {
+          "mean": 78.36666666666666,
+          "min": 22.0,
+          "max": 160.0
+        },
+        "Interrupted:sleep": {
+          "mean": 106714.43333333333,
+          "min": 97953.0,
+          "max": 109335.0
+        },
+        "Pickup": {
+          "mean": 581.2333333333333,
+          "min": 405.0,
+          "max": 650.0
+        },
+        "Queued": {
+          "mean": 335.8333333333333,
+          "min": 251.0,
+          "max": 440.0
+        },
+        "Rejected": {
+          "mean": 67.93333333333334,
+          "min": 40.0,
+          "max": 93.0
+        },
+        "SleepStarted": {
+          "mean": 118300.13333333333,
+          "min": 111282.0,
+          "max": 120526.0
+        },
+        "CapitalGate:INVEST": {
+          "mean": 82.5,
+          "min": 21.0,
+          "max": 104.0
+        },
+        "CapitalGate:SIX_HOUR_MARGIN": {
+          "mean": 338.6,
+          "min": 136.0,
+          "max": 661.0
+        },
+        "CartStarted": {
+          "mean": 2.966666666666667,
+          "min": 0.0,
+          "max": 4.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 25.1,
+          "min": 21.0,
+          "max": 32.0
+        },
+        "Spoiled": {
+          "mean": 40.63333333333333,
+          "min": 34.0,
+          "max": 45.0
+        },
+        "CapitalGate:NO_TIME_PAYBACK": {
+          "mean": 33.46666666666667,
+          "min": 0.0,
+          "max": 395.0
+        },
+        "CargoLoaded": {
+          "mean": 1.0,
+          "min": 0.0,
+          "max": 12.0
+        },
+        "Delivered": {
+          "mean": 0.7666666666666667,
+          "min": 0.0,
+          "max": 5.0
+        },
+        "JobAccepted": {
+          "mean": 0.9,
+          "min": 0.0,
+          "max": 7.0
+        },
+        "JobCancelled:accepted job cannot acquire expected cargo; remote board unchanged": {
+          "mean": 0.13333333333333333,
+          "min": 0.0,
+          "max": 2.0
+        },
+        "Interrupted:accept local request": {
+          "mean": 0.03333333333333333,
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 2.966666666666667,
+          "min": 0,
+          "max": 4
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 29.666666666666668,
+          "min": 0,
+          "max": 40
+        }
+      },
+      "physical_inventory": {
+        "Waste:unowned": {
+          "mean": 433.46666666666664,
+          "min": 396.0,
+          "max": 482.0
+        },
+        "Wood:unowned": {
+          "mean": 470.3333333333333,
+          "min": 460.0,
+          "max": 500.0
+        },
+        "Waste:agent": {
+          "mean": 236.6,
+          "min": 198.0,
+          "max": 264.0
+        },
+        "Food:agent": {
+          "mean": 30.466666666666665,
+          "min": 2.0,
+          "max": 59.0
+        },
+        "Waste:commons": {
+          "mean": 1.4666666666666666,
+          "min": 0.0,
+          "max": 8.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "high_cost_off": {
+      "population": 50,
+      "outcomes": {
+        "alive": {
+          "mean": 13.266666666666667,
+          "min": 13.0,
+          "max": 15.0
+        },
+        "deaths": {
+          "mean": 36.733333333333334,
+          "min": 35.0,
+          "max": 37.0
+        },
+        "produced": {
+          "mean": 2427.2,
+          "min": 2376.0,
+          "max": 2760.0
+        },
+        "consumed": {
+          "mean": 4310.6,
+          "min": 4257.0,
+          "max": 4659.0
+        },
+        "spoiled": {
+          "mean": 1116.6,
+          "min": 1101.0,
+          "max": 1119.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 944.968888889,
+          "min": 903.368888889,
+          "max": 951.368888889
+        },
+        "queue_h": {
+          "mean": 442.60348148106664,
+          "min": 403.480222222,
+          "max": 448.622444444
+        },
+        "food_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 30.266666666666666,
+          "min": 30.0,
+          "max": 32.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 1644.0666666666666,
+            "min": 1639.0,
+            "max": 1677.0
+          },
+          "produced": {
+            "mean": 150.4,
+            "min": 144.0,
+            "max": 192.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 196.16888888900002,
+            "min": 175.368888889,
+            "max": 199.368888889
+          },
+          "consumed": {
+            "mean": 2033.8,
+            "min": 2025.0,
+            "max": 2091.0
+          },
+          "produced": {
+            "mean": 150.4,
+            "min": 144.0,
+            "max": 192.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 35.266666666666666,
+            "min": 35.0,
+            "max": 37.0
+          },
+          "starvation_h": {
+            "mean": 437.02459259253334,
+            "min": 365.684444444,
+            "max": 448.0
+          },
+          "consumed": {
+            "mean": 2790.6,
+            "min": 2769.0,
+            "max": 2931.0
+          },
+          "produced": {
+            "mean": 907.2,
+            "min": 888.0,
+            "max": 1032.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 23.533333333333335,
+            "min": 23.0,
+            "max": 27.0
+          },
+          "starvation_h": {
+            "mean": 725.768888889,
+            "min": 663.368888889,
+            "max": 735.368888889
+          },
+          "consumed": {
+            "mean": 3769.8,
+            "min": 3729.0,
+            "max": 4035.0
+          },
+          "produced": {
+            "mean": 1886.4,
+            "min": 1848.0,
+            "max": 2136.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 13.266666666666667,
+            "min": 13.0,
+            "max": 15.0
+          },
+          "starvation_h": {
+            "mean": 944.968888889,
+            "min": 903.368888889,
+            "max": 951.368888889
+          },
+          "consumed": {
+            "mean": 4310.6,
+            "min": 4257.0,
+            "max": 4659.0
+          },
+          "produced": {
+            "mean": 2427.2,
+            "min": 2376.0,
+            "max": 2760.0
+          }
+        }
+      },
+      "barter_counters": {},
+      "offer_final_statuses": {},
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "gather_food": {
+          "mean": 1.3910069451666665,
+          "min": 1.3867847229999999,
+          "max": 1.4184513899999998
+        },
+        "harvest": {
+          "mean": 131.92468518516665,
+          "min": 129.20833333299998,
+          "max": 148.720555555
+        },
+        "idle": {
+          "mean": 2777.8434308333667,
+          "min": 2751.953193056,
+          "max": 2946.032059722
+        },
+        "queue": {
+          "mean": 442.60348148086666,
+          "min": 403.480222222,
+          "max": 448.622444444
+        },
+        "sleep": {
+          "mean": 1505.5911851845667,
+          "min": 1490.806444444,
+          "max": 1601.6919999989998
+        },
+        "sow": {
+          "mean": 177.32977777756668,
+          "min": 174.338888889,
+          "max": 196.645555555
+        },
+        "loaded_travel": {
+          "mean": 324.48,
+          "min": 324.48,
+          "max": 324.48
+        },
+        "empty_travel": {
+          "mean": 373.1807288887,
+          "min": 370.406133333,
+          "max": 391.2156
+        }
+      },
+      "accounts": {
+        "consumed_crop_food": {
+          "mean": 2427.2,
+          "min": 2376.0,
+          "max": 2760.0
+        },
+        "consumed_food": {
+          "mean": 4310.6,
+          "min": 4257.0,
+          "max": 4659.0
+        },
+        "consumed_food_from_0": {
+          "mean": 3355.4,
+          "min": 3321.0,
+          "max": 3579.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 1074.4557037037036,
+          "min": 982.3155555555555,
+          "max": 1088.631111111111
+        },
+        "gathered_food": {
+          "mean": 2035.0,
+          "min": 2031.0,
+          "max": 2061.0
+        },
+        "living_ms": {
+          "mean": 5734.344296296296,
+          "min": 5691.368888888889,
+          "max": 6013.684444444444
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 2351.234814814815,
+          "min": 2255.855555555556,
+          "max": 2366.0027777777777
+        },
+        "produced_food": {
+          "mean": 2427.2,
+          "min": 2376.0,
+          "max": 2760.0
+        },
+        "request_quantum_ms": {
+          "mean": 10475.526860740742,
+          "min": 10023.350244444446,
+          "max": 10545.77528888889
+        },
+        "spoiled_food": {
+          "mean": 1116.6,
+          "min": 1101.0,
+          "max": 1119.0
+        },
+        "starvation_ms": {
+          "mean": 944.968888888889,
+          "min": 903.3688888888889,
+          "max": 951.3688888888889
+        },
+        "unused_plot_ms": {
+          "mean": 4144.8197222222225,
+          "min": 4029.1583333333333,
+          "max": 4162.808333333333
+        },
+        "Waste_quantity_edges": {
+          "mean": 192.0,
+          "min": 192.0,
+          "max": 192.0
+        },
+        "consumed_food_from_1": {
+          "mean": 955.2,
+          "min": 936.0,
+          "max": 1080.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 68.53333333333333,
+          "min": 68.0,
+          "max": 72.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 50.0,
+          "min": 50.0,
+          "max": 50.0
+        },
+        "Consumed": {
+          "mean": 695.6666666666666,
+          "min": 689.0,
+          "max": 739.0
+        },
+        "Died": {
+          "mean": 36.733333333333334,
+          "min": 35.0,
+          "max": 37.0
+        },
+        "Gathered": {
+          "mean": 2035.0,
+          "min": 2031.0,
+          "max": 2061.0
+        },
+        "Harvested": {
+          "mean": 101.13333333333334,
+          "min": 99.0,
+          "max": 115.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 100.86666666666666,
+          "min": 99.0,
+          "max": 113.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 178.53333333333333,
+          "min": 178.0,
+          "max": 182.0
+        },
+        "Interrupted:new gathering action": {
+          "mean": 27.2,
+          "min": 22.0,
+          "max": 28.0
+        },
+        "Interrupted:sleep": {
+          "mean": 80729.13333333333,
+          "min": 79803.0,
+          "max": 86749.0
+        },
+        "Pickup": {
+          "mean": 421.6,
+          "min": 412.0,
+          "max": 484.0
+        },
+        "Queued": {
+          "mean": 1326.6666666666667,
+          "min": 980.0,
+          "max": 1380.0
+        },
+        "Rejected": {
+          "mean": 61.266666666666666,
+          "min": 39.0,
+          "max": 82.0
+        },
+        "SleepStarted": {
+          "mean": 90361.46666666666,
+          "min": 89474.0,
+          "max": 96130.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 1171.4666666666667,
+          "min": 830.0,
+          "max": 1224.0
+        },
+        "Spoiled": {
+          "mean": 26.266666666666666,
+          "min": 26.0,
+          "max": 28.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:unowned": {
+          "mean": 965.0,
+          "min": 939.0,
+          "max": 969.0
+        },
+        "Wood:unowned": {
+          "mean": 500.0,
+          "min": 500.0,
+          "max": 500.0
+        },
+        "Waste:agent": {
+          "mean": 151.6,
+          "min": 150.0,
+          "max": 162.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "high_cost_on": {
+      "population": 50,
+      "outcomes": {
+        "alive": {
+          "mean": 13.266666666666667,
+          "min": 13.0,
+          "max": 15.0
+        },
+        "deaths": {
+          "mean": 36.733333333333334,
+          "min": 35.0,
+          "max": 37.0
+        },
+        "produced": {
+          "mean": 2427.2,
+          "min": 2376.0,
+          "max": 2760.0
+        },
+        "consumed": {
+          "mean": 4310.6,
+          "min": 4257.0,
+          "max": 4659.0
+        },
+        "spoiled": {
+          "mean": 1116.6,
+          "min": 1101.0,
+          "max": 1119.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 944.968888889,
+          "min": 903.368888889,
+          "max": 951.368888889
+        },
+        "queue_h": {
+          "mean": 442.60348148106664,
+          "min": 403.480222222,
+          "max": 448.622444444
+        },
+        "food_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 30.266666666666666,
+          "min": 30.0,
+          "max": 32.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 1644.0666666666666,
+            "min": 1639.0,
+            "max": 1677.0
+          },
+          "produced": {
+            "mean": 150.4,
+            "min": 144.0,
+            "max": 192.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 50.0,
+            "min": 50.0,
+            "max": 50.0
+          },
+          "starvation_h": {
+            "mean": 196.16888888900002,
+            "min": 175.368888889,
+            "max": 199.368888889
+          },
+          "consumed": {
+            "mean": 2033.8,
+            "min": 2025.0,
+            "max": 2091.0
+          },
+          "produced": {
+            "mean": 150.4,
+            "min": 144.0,
+            "max": 192.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 35.266666666666666,
+            "min": 35.0,
+            "max": 37.0
+          },
+          "starvation_h": {
+            "mean": 437.02459259253334,
+            "min": 365.684444444,
+            "max": 448.0
+          },
+          "consumed": {
+            "mean": 2790.6,
+            "min": 2769.0,
+            "max": 2931.0
+          },
+          "produced": {
+            "mean": 907.2,
+            "min": 888.0,
+            "max": 1032.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 23.533333333333335,
+            "min": 23.0,
+            "max": 27.0
+          },
+          "starvation_h": {
+            "mean": 725.768888889,
+            "min": 663.368888889,
+            "max": 735.368888889
+          },
+          "consumed": {
+            "mean": 3769.8,
+            "min": 3729.0,
+            "max": 4035.0
+          },
+          "produced": {
+            "mean": 1886.4,
+            "min": 1848.0,
+            "max": 2136.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 13.266666666666667,
+            "min": 13.0,
+            "max": 15.0
+          },
+          "starvation_h": {
+            "mean": 944.968888889,
+            "min": 903.368888889,
+            "max": 951.368888889
+          },
+          "consumed": {
+            "mean": 4310.6,
+            "min": 4257.0,
+            "max": 4659.0
+          },
+          "produced": {
+            "mean": 2427.2,
+            "min": 2376.0,
+            "max": 2760.0
+          }
+        }
+      },
+      "barter_counters": {
+        "eligible_evaluations": {
+          "mean": 166868.83333333334,
+          "min": 165311.0,
+          "max": 176983.0
+        },
+        "unmet_food_evaluations": {
+          "mean": 17646.266666666666,
+          "min": 17492.0,
+          "max": 17670.0
+        }
+      },
+      "offer_final_statuses": {},
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "gather_food": {
+          "mean": 1.3910069451666665,
+          "min": 1.3867847229999999,
+          "max": 1.4184513899999998
+        },
+        "harvest": {
+          "mean": 131.92468518516665,
+          "min": 129.20833333299998,
+          "max": 148.720555555
+        },
+        "idle": {
+          "mean": 2777.8434308333667,
+          "min": 2751.953193056,
+          "max": 2946.032059722
+        },
+        "queue": {
+          "mean": 442.60348148086666,
+          "min": 403.480222222,
+          "max": 448.622444444
+        },
+        "sleep": {
+          "mean": 1505.5911851845667,
+          "min": 1490.806444444,
+          "max": 1601.6919999989998
+        },
+        "sow": {
+          "mean": 177.32977777756668,
+          "min": 174.338888889,
+          "max": 196.645555555
+        },
+        "loaded_travel": {
+          "mean": 324.48,
+          "min": 324.48,
+          "max": 324.48
+        },
+        "empty_travel": {
+          "mean": 373.1807288887,
+          "min": 370.406133333,
+          "max": 391.2156
+        }
+      },
+      "accounts": {
+        "consumed_crop_food": {
+          "mean": 2427.2,
+          "min": 2376.0,
+          "max": 2760.0
+        },
+        "consumed_food": {
+          "mean": 4310.6,
+          "min": 4257.0,
+          "max": 4659.0
+        },
+        "consumed_food_from_0": {
+          "mean": 3355.4,
+          "min": 3321.0,
+          "max": 3579.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 1074.4557037037036,
+          "min": 982.3155555555555,
+          "max": 1088.631111111111
+        },
+        "gathered_food": {
+          "mean": 2035.0,
+          "min": 2031.0,
+          "max": 2061.0
+        },
+        "living_ms": {
+          "mean": 5734.344296296296,
+          "min": 5691.368888888889,
+          "max": 6013.684444444444
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 2351.234814814815,
+          "min": 2255.855555555556,
+          "max": 2366.0027777777777
+        },
+        "produced_food": {
+          "mean": 2427.2,
+          "min": 2376.0,
+          "max": 2760.0
+        },
+        "request_quantum_ms": {
+          "mean": 10475.526860740742,
+          "min": 10023.350244444446,
+          "max": 10545.77528888889
+        },
+        "spoiled_food": {
+          "mean": 1116.6,
+          "min": 1101.0,
+          "max": 1119.0
+        },
+        "starvation_ms": {
+          "mean": 944.968888888889,
+          "min": 903.3688888888889,
+          "max": 951.3688888888889
+        },
+        "unused_plot_ms": {
+          "mean": 4144.8197222222225,
+          "min": 4029.1583333333333,
+          "max": 4162.808333333333
+        },
+        "Waste_quantity_edges": {
+          "mean": 192.0,
+          "min": 192.0,
+          "max": 192.0
+        },
+        "consumed_food_from_1": {
+          "mean": 955.2,
+          "min": 936.0,
+          "max": 1080.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 68.53333333333333,
+          "min": 68.0,
+          "max": 72.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 50.0,
+          "min": 50.0,
+          "max": 50.0
+        },
+        "Consumed": {
+          "mean": 695.6666666666666,
+          "min": 689.0,
+          "max": 739.0
+        },
+        "Died": {
+          "mean": 36.733333333333334,
+          "min": 35.0,
+          "max": 37.0
+        },
+        "Gathered": {
+          "mean": 2035.0,
+          "min": 2031.0,
+          "max": 2061.0
+        },
+        "Harvested": {
+          "mean": 101.13333333333334,
+          "min": 99.0,
+          "max": 115.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 100.86666666666666,
+          "min": 99.0,
+          "max": 113.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 178.53333333333333,
+          "min": 178.0,
+          "max": 182.0
+        },
+        "Interrupted:new gathering action": {
+          "mean": 27.2,
+          "min": 22.0,
+          "max": 28.0
+        },
+        "Interrupted:sleep": {
+          "mean": 80729.13333333333,
+          "min": 79803.0,
+          "max": 86749.0
+        },
+        "Pickup": {
+          "mean": 421.6,
+          "min": 412.0,
+          "max": 484.0
+        },
+        "Queued": {
+          "mean": 1326.6666666666667,
+          "min": 980.0,
+          "max": 1380.0
+        },
+        "Rejected": {
+          "mean": 61.266666666666666,
+          "min": 39.0,
+          "max": 82.0
+        },
+        "SleepStarted": {
+          "mean": 90361.46666666666,
+          "min": 89474.0,
+          "max": 96130.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 1171.4666666666667,
+          "min": 830.0,
+          "max": 1224.0
+        },
+        "Spoiled": {
+          "mean": 26.266666666666666,
+          "min": 26.0,
+          "max": 28.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:unowned": {
+          "mean": 965.0,
+          "min": 939.0,
+          "max": 969.0
+        },
+        "Wood:unowned": {
+          "mean": 500.0,
+          "min": 500.0,
+          "max": 500.0
+        },
+        "Waste:agent": {
+          "mean": 151.6,
+          "min": 150.0,
+          "max": 162.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "colocated_off": {
+      "population": 2,
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": 95.0,
+          "min": 95.0,
+          "max": 95.0
+        },
+        "spoiled": {
+          "mean": 2905.0,
+          "min": 2905.0,
+          "max": 2905.0
+        },
+        "delivered": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "jobs": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "starvation_h": {
+          "mean": 48.058222222,
+          "min": 48.058222222,
+          "max": 48.058222222
+        },
+        "queue_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": 11.0,
+          "min": 11.0,
+          "max": 11.0
+        },
+        "food_flows_ba": {
+          "mean": 12.0,
+          "min": 12.0,
+          "max": 12.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 6.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 71.0,
+            "min": 71.0,
+            "max": 71.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 0.058222222,
+            "min": 0.058222222,
+            "max": 0.058222222
+          },
+          "consumed": {
+            "mean": 95.0,
+            "min": 95.0,
+            "max": 95.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "consumed": {
+            "mean": 95.0,
+            "min": 95.0,
+            "max": 95.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "starvation_h": {
+            "mean": 48.058222222,
+            "min": 48.058222222,
+            "max": 48.058222222
+          },
+          "consumed": {
+            "mean": 95.0,
+            "min": 95.0,
+            "max": 95.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "starvation_h": {
+            "mean": 48.058222222,
+            "min": 48.058222222,
+            "max": 48.058222222
+          },
+          "consumed": {
+            "mean": 95.0,
+            "min": 95.0,
+            "max": 95.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "barter_counters": {},
+      "offer_final_statuses": {},
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "harvest": {
+          "mean": 0.716666667,
+          "min": 0.716666667,
+          "max": 0.716666667
+        },
+        "idle": {
+          "mean": 77.416343055,
+          "min": 77.416343055,
+          "max": 77.416343055
+        },
+        "sleep": {
+          "mean": 42.81444444500001,
+          "min": 42.81444444500001,
+          "max": 42.81444444500001
+        },
+        "sow": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "gather_food": {
+          "mean": 0.066916111,
+          "min": 0.066916111,
+          "max": 0.066916111
+        },
+        "empty_travel": {
+          "mean": 25.660888889,
+          "min": 25.660888889,
+          "max": 25.660888889
+        },
+        "loaded_travel": {
+          "mean": 19.382963056,
+          "min": 19.382963056,
+          "max": 19.382963056
+        }
+      },
+      "accounts": {
+        "Food_quantity_edges": {
+          "mean": 46.0,
+          "min": 46.0,
+          "max": 46.0
+        },
+        "consumed_food": {
+          "mean": 95.0,
+          "min": 95.0,
+          "max": 95.0
+        },
+        "consumed_food_from_0": {
+          "mean": 17.0,
+          "min": 17.0,
+          "max": 17.0
+        },
+        "consumed_food_from_1": {
+          "mean": 78.0,
+          "min": 78.0,
+          "max": 78.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 89.94177777777777,
+          "min": 89.94177777777777,
+          "max": 89.94177777777777
+        },
+        "living_ms": {
+          "mean": 167.05822222222224,
+          "min": 167.05822222222224,
+          "max": 167.05822222222224
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 154.28333333333333,
+          "min": 154.28333333333333,
+          "max": 154.28333333333333
+        },
+        "request_quantum_ms": {
+          "mean": 2145.5413305555558,
+          "min": 2145.5413305555558,
+          "max": 2145.5413305555558
+        },
+        "spoiled_food": {
+          "mean": 2905.0,
+          "min": 2905.0,
+          "max": 2905.0
+        },
+        "starvation_ms": {
+          "mean": 48.05822222222222,
+          "min": 48.05822222222222,
+          "max": 48.05822222222222
+        },
+        "unused_plot_ms": {
+          "mean": 168.0,
+          "min": 168.0,
+          "max": 168.0
+        },
+        "communal_delivered": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "consumed_communal_food": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "gathered_food": {
+          "mean": 84.0,
+          "min": 84.0,
+          "max": 84.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 17.0,
+          "min": 17.0,
+          "max": 17.0
+        },
+        "CapitalGate:INSUFFICIENT_LOCAL_WOOD": {
+          "mean": 11.0,
+          "min": 11.0,
+          "max": 11.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "CapitalGate:SIX_HOUR_MARGIN": {
+          "mean": 120.0,
+          "min": 120.0,
+          "max": 120.0
+        },
+        "CargoLoaded": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "Consumed": {
+          "mean": 40.0,
+          "min": 40.0,
+          "max": 40.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Interrupted:sleep": {
+          "mean": 1757.0,
+          "min": 1757.0,
+          "max": 1757.0
+        },
+        "Pickup": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Queued": {
+          "mean": 17.0,
+          "min": 17.0,
+          "max": 17.0
+        },
+        "SleepStarted": {
+          "mean": 2569.0,
+          "min": 2569.0,
+          "max": 2569.0
+        },
+        "CapitalGate:NO_TIME_PAYBACK": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "Delivered": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Died": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "Gathered": {
+          "mean": 84.0,
+          "min": 84.0,
+          "max": 84.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "JobAccepted": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Spoiled": {
+          "mean": 3.0,
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:agent": {
+          "mean": 13.0,
+          "min": 13.0,
+          "max": 13.0
+        },
+        "Waste:unowned": {
+          "mean": 2892.0,
+          "min": 2892.0,
+          "max": 2892.0
+        },
+        "Wood:agent": {
+          "mean": 10.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "Wood:unowned": {
+          "mean": 490.0,
+          "min": 490.0,
+          "max": 490.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "colocated_on": {
+      "population": 2,
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": 95.0,
+          "min": 95.0,
+          "max": 95.0
+        },
+        "spoiled": {
+          "mean": 2905.0,
+          "min": 2905.0,
+          "max": 2905.0
+        },
+        "delivered": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "jobs": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "starvation_h": {
+          "mean": 48.058222222,
+          "min": 48.058222222,
+          "max": 48.058222222
+        },
+        "queue_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": 10.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "food_flows_ba": {
+          "mean": 12.0,
+          "min": 12.0,
+          "max": 12.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 6.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "barter_attempts": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 71.0,
+            "min": 71.0,
+            "max": 71.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 0.058222222,
+            "min": 0.058222222,
+            "max": 0.058222222
+          },
+          "consumed": {
+            "mean": 95.0,
+            "min": 95.0,
+            "max": 95.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "consumed": {
+            "mean": 95.0,
+            "min": 95.0,
+            "max": 95.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "starvation_h": {
+            "mean": 48.058222222,
+            "min": 48.058222222,
+            "max": 48.058222222
+          },
+          "consumed": {
+            "mean": 95.0,
+            "min": 95.0,
+            "max": 95.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "starvation_h": {
+            "mean": 48.058222222,
+            "min": 48.058222222,
+            "max": 48.058222222
+          },
+          "consumed": {
+            "mean": 95.0,
+            "min": 95.0,
+            "max": 95.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "barter_counters": {
+        "closed_PROPOSER_LEFT": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "eligible_evaluations": {
+          "mean": 4402.0,
+          "min": 4402.0,
+          "max": 4402.0
+        },
+        "missing_wood_plan_evaluations": {
+          "mean": 3.0,
+          "min": 3.0,
+          "max": 3.0
+        },
+        "offer_without_counterparty": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "offers_created": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "offers_observed": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "unmet_food_evaluations": {
+          "mean": 2351.0,
+          "min": 2351.0,
+          "max": 2351.0
+        }
+      },
+      "offer_final_statuses": {
+        "PROPOSER_LEFT": 60
+      },
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "harvest": {
+          "mean": 0.716666667,
+          "min": 0.716666667,
+          "max": 0.716666667
+        },
+        "idle": {
+          "mean": 77.410602222,
+          "min": 77.410602222,
+          "max": 77.410602222
+        },
+        "sleep": {
+          "mean": 42.81444444500001,
+          "min": 42.81444444500001,
+          "max": 42.81444444500001
+        },
+        "sow": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "gather_food": {
+          "mean": 0.067471667,
+          "min": 0.067471667,
+          "max": 0.067471667
+        },
+        "empty_travel": {
+          "mean": 29.660888889,
+          "min": 29.660888889,
+          "max": 29.660888889
+        },
+        "loaded_travel": {
+          "mean": 15.388148333,
+          "min": 15.388148333,
+          "max": 15.388148333
+        }
+      },
+      "accounts": {
+        "Food_quantity_edges": {
+          "mean": 44.0,
+          "min": 44.0,
+          "max": 44.0
+        },
+        "consumed_food": {
+          "mean": 95.0,
+          "min": 95.0,
+          "max": 95.0
+        },
+        "consumed_food_from_0": {
+          "mean": 16.0,
+          "min": 16.0,
+          "max": 16.0
+        },
+        "consumed_food_from_1": {
+          "mean": 79.0,
+          "min": 79.0,
+          "max": 79.0
+        },
+        "dead_owner_plot_ms": {
+          "mean": 89.94177777777777,
+          "min": 89.94177777777777,
+          "max": 89.94177777777777
+        },
+        "living_ms": {
+          "mean": 167.0582222222222,
+          "min": 167.0582222222222,
+          "max": 167.0582222222222
+        },
+        "mature_unworked_plot_ms": {
+          "mean": 154.28333333333333,
+          "min": 154.28333333333333,
+          "max": 154.28333333333333
+        },
+        "request_quantum_ms": {
+          "mean": 2145.541886111111,
+          "min": 2145.541886111111,
+          "max": 2145.541886111111
+        },
+        "spoiled_food": {
+          "mean": 2905.0,
+          "min": 2905.0,
+          "max": 2905.0
+        },
+        "starvation_ms": {
+          "mean": 48.05822222222222,
+          "min": 48.05822222222222,
+          "max": 48.05822222222222
+        },
+        "unused_plot_ms": {
+          "mean": 168.0,
+          "min": 168.0,
+          "max": 168.0
+        },
+        "communal_delivered": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "consumed_communal_food": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "gathered_food": {
+          "mean": 85.0,
+          "min": 85.0,
+          "max": 85.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 17.0,
+          "min": 17.0,
+          "max": 17.0
+        },
+        "CapitalGate:INSUFFICIENT_LOCAL_WOOD": {
+          "mean": 11.0,
+          "min": 11.0,
+          "max": 11.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "CapitalGate:SIX_HOUR_MARGIN": {
+          "mean": 120.0,
+          "min": 120.0,
+          "max": 120.0
+        },
+        "CargoLoaded": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "Consumed": {
+          "mean": 39.0,
+          "min": 39.0,
+          "max": 39.0
+        },
+        "Interrupted:cultivation work": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Interrupted:sleep": {
+          "mean": 1757.0,
+          "min": 1757.0,
+          "max": 1757.0
+        },
+        "Queued": {
+          "mean": 17.0,
+          "min": 17.0,
+          "max": 17.0
+        },
+        "SleepStarted": {
+          "mean": 2569.0,
+          "min": 2569.0,
+          "max": 2569.0
+        },
+        "CapitalGate:NO_TIME_PAYBACK": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "Delivered": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Died": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "Gathered": {
+          "mean": 85.0,
+          "min": 85.0,
+          "max": 85.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "JobAccepted": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Spoiled": {
+          "mean": 3.0,
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:agent": {
+          "mean": 14.0,
+          "min": 14.0,
+          "max": 14.0
+        },
+        "Waste:unowned": {
+          "mean": 2891.0,
+          "min": 2891.0,
+          "max": 2891.0
+        },
+        "Wood:agent": {
+          "mean": 10.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "Wood:unowned": {
+          "mean": 490.0,
+          "min": 490.0,
+          "max": 490.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "separated_off": {
+      "population": 2,
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": 98.0,
+          "min": 98.0,
+          "max": 98.0
+        },
+        "spoiled": {
+          "mean": 2902.0,
+          "min": 2902.0,
+          "max": 2902.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 48.0,
+          "min": 48.0,
+          "max": 48.0
+        },
+        "queue_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 74.0,
+            "min": 74.0,
+            "max": 74.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 98.0,
+            "min": 98.0,
+            "max": 98.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 22.0,
+            "min": 22.0,
+            "max": 22.0
+          },
+          "consumed": {
+            "mean": 98.0,
+            "min": 98.0,
+            "max": 98.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "starvation_h": {
+            "mean": 48.0,
+            "min": 48.0,
+            "max": 48.0
+          },
+          "consumed": {
+            "mean": 98.0,
+            "min": 98.0,
+            "max": 98.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "starvation_h": {
+            "mean": 48.0,
+            "min": 48.0,
+            "max": 48.0
+          },
+          "consumed": {
+            "mean": 98.0,
+            "min": 98.0,
+            "max": 98.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "barter_counters": {},
+      "offer_final_statuses": {},
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "idle": {
+          "mean": 116.476935834,
+          "min": 116.476935834,
+          "max": 116.476935834
+        },
+        "gather_food": {
+          "mean": 0.0688975,
+          "min": 0.0688975,
+          "max": 0.0688975
+        },
+        "sleep": {
+          "mean": 44.666666666,
+          "min": 44.666666666,
+          "max": 44.666666666
+        },
+        "loaded_travel": {
+          "mean": 8.7875,
+          "min": 8.7875,
+          "max": 8.7875
+        }
+      },
+      "accounts": {
+        "Waste_quantity_edges": {
+          "mean": 12.0,
+          "min": 12.0,
+          "max": 12.0
+        },
+        "consumed_food": {
+          "mean": 98.0,
+          "min": 98.0,
+          "max": 98.0
+        },
+        "consumed_food_from_0": {
+          "mean": 13.0,
+          "min": 13.0,
+          "max": 13.0
+        },
+        "living_ms": {
+          "mean": 170.0,
+          "min": 170.0,
+          "max": 170.0
+        },
+        "request_quantum_ms": {
+          "mean": 2665.291666666667,
+          "min": 2665.291666666667,
+          "max": 2665.291666666667
+        },
+        "spoiled_food": {
+          "mean": 2902.0,
+          "min": 2902.0,
+          "max": 2902.0
+        },
+        "starvation_ms": {
+          "mean": 48.0,
+          "min": 48.0,
+          "max": 48.0
+        },
+        "unused_plot_ms": {
+          "mean": 336.0,
+          "min": 336.0,
+          "max": 336.0
+        },
+        "Food_quantity_edges": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "consumed_food_from_1": {
+          "mean": 85.0,
+          "min": 85.0,
+          "max": 85.0
+        },
+        "gathered_food": {
+          "mean": 97.0,
+          "min": 97.0,
+          "max": 97.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "CapitalGate:INSUFFICIENT_LOCAL_WOOD": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "Consumed": {
+          "mean": 17.0,
+          "min": 17.0,
+          "max": 17.0
+        },
+        "Died": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "Pickup": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Queued": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "SleepStarted": {
+          "mean": 2680.0,
+          "min": 2680.0,
+          "max": 2680.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "Gathered": {
+          "mean": 97.0,
+          "min": 97.0,
+          "max": 97.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 6.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Interrupted:sleep": {
+          "mean": 2158.0,
+          "min": 2158.0,
+          "max": 2158.0
+        },
+        "Spoiled": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:agent": {
+          "mean": 23.0,
+          "min": 23.0,
+          "max": 23.0
+        },
+        "Waste:unowned": {
+          "mean": 2879.0,
+          "min": 2879.0,
+          "max": 2879.0
+        },
+        "Wood:agent": {
+          "mean": 10.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "Wood:unowned": {
+          "mean": 490.0,
+          "min": 490.0,
+          "max": 490.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    },
+    "separated_on": {
+      "population": 2,
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": 97.0,
+          "min": 97.0,
+          "max": 97.0
+        },
+        "spoiled": {
+          "mean": 2903.0,
+          "min": 2903.0,
+          "max": 2903.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 48.0,
+          "min": 48.0,
+          "max": 48.0
+        },
+        "queue_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "barter_attempts": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "checkpoints": {
+        "36": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 73.0,
+            "min": 73.0,
+            "max": 73.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "48": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "consumed": {
+            "mean": 97.0,
+            "min": 97.0,
+            "max": 97.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "72": {
+          "alive": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "starvation_h": {
+            "mean": 23.0,
+            "min": 23.0,
+            "max": 23.0
+          },
+          "consumed": {
+            "mean": 97.0,
+            "min": 97.0,
+            "max": 97.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "120": {
+          "alive": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "starvation_h": {
+            "mean": 48.0,
+            "min": 48.0,
+            "max": 48.0
+          },
+          "consumed": {
+            "mean": 97.0,
+            "min": 97.0,
+            "max": 97.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "168": {
+          "alive": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "starvation_h": {
+            "mean": 48.0,
+            "min": 48.0,
+            "max": 48.0
+          },
+          "consumed": {
+            "mean": 97.0,
+            "min": 97.0,
+            "max": 97.0
+          },
+          "produced": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "barter_counters": {
+        "closed_PROPOSER_LEFT": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "eligible_evaluations": {
+          "mean": 6189.0,
+          "min": 6189.0,
+          "max": 6189.0
+        },
+        "missing_wood_plan_evaluations": {
+          "mean": 3.0,
+          "min": 3.0,
+          "max": 3.0
+        },
+        "offer_without_counterparty": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "offers_created": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "unmet_food_evaluations": {
+          "mean": 2014.0,
+          "min": 2014.0,
+          "max": 2014.0
+        }
+      },
+      "offer_final_statuses": {
+        "PROPOSER_LEFT": 30
+      },
+      "unique_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "repeat_traders": {
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "seeds_with_exchange": 0,
+      "ratios_counts": {},
+      "resource_pair_counts": {},
+      "exchanged_quantities": {},
+      "labor_h": {
+        "idle": {
+          "mean": 115.80897611099999,
+          "min": 115.80897611099999,
+          "max": 115.80897611099999
+        },
+        "gather_food": {
+          "mean": 0.070190555,
+          "min": 0.070190555,
+          "max": 0.070190555
+        },
+        "sleep": {
+          "mean": 44.333333333,
+          "min": 44.333333333,
+          "max": 44.333333333
+        },
+        "empty_travel": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "loaded_travel": {
+          "mean": 4.7875,
+          "min": 4.7875,
+          "max": 4.7875
+        }
+      },
+      "accounts": {
+        "Waste_quantity_edges": {
+          "mean": 12.0,
+          "min": 12.0,
+          "max": 12.0
+        },
+        "consumed_food": {
+          "mean": 97.0,
+          "min": 97.0,
+          "max": 97.0
+        },
+        "consumed_food_from_0": {
+          "mean": 12.0,
+          "min": 12.0,
+          "max": 12.0
+        },
+        "living_ms": {
+          "mean": 169.0,
+          "min": 169.0,
+          "max": 169.0
+        },
+        "request_quantum_ms": {
+          "mean": 2677.291666666667,
+          "min": 2677.291666666667,
+          "max": 2677.291666666667
+        },
+        "spoiled_food": {
+          "mean": 2903.0,
+          "min": 2903.0,
+          "max": 2903.0
+        },
+        "starvation_ms": {
+          "mean": 48.0,
+          "min": 48.0,
+          "max": 48.0
+        },
+        "unused_plot_ms": {
+          "mean": 336.0,
+          "min": 336.0,
+          "max": 336.0
+        },
+        "consumed_food_from_1": {
+          "mean": 85.0,
+          "min": 85.0,
+          "max": 85.0
+        },
+        "gathered_food": {
+          "mean": 97.0,
+          "min": 97.0,
+          "max": 97.0
+        }
+      },
+      "event_counts": {
+        "Arrived": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "CapitalGate:INSUFFICIENT_LOCAL_WOOD": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "Consumed": {
+          "mean": 16.0,
+          "min": 16.0,
+          "max": 16.0
+        },
+        "Died": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "Queued": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "SleepStarted": {
+          "mean": 2660.0,
+          "min": 2660.0,
+          "max": 2660.0
+        },
+        "CapitalGate:NO_KNOWN_DEMAND": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "Gathered": {
+          "mean": 97.0,
+          "min": 97.0,
+          "max": 97.0
+        },
+        "Interrupted:eat accessible food": {
+          "mean": 7.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "Interrupted:queue for route": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "Interrupted:sleep": {
+          "mean": 1804.0,
+          "min": 1804.0,
+          "max": 1804.0
+        },
+        "Spoiled": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "capital": {
+        "projects": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "completed": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "invested_wood": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "physical_inventory": {
+        "Waste:agent": {
+          "mean": 24.0,
+          "min": 24.0,
+          "max": 24.0
+        },
+        "Waste:unowned": {
+          "mean": 2879.0,
+          "min": 2879.0,
+          "max": 2879.0
+        },
+        "Wood:agent": {
+          "mean": 10.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "Wood:unowned": {
+          "mean": 490.0,
+          "min": 490.0,
+          "max": 490.0
+        }
+      },
+      "exchange_search_travel_h": 0,
+      "exchange_search_reason": "No trade-search route action exists; changes in realized travel are paired outcomes, not directly assigned trade labor."
+    }
+  },
+  "paired_on_minus_off": {
+    "complementary": {
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "spoiled": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "labor_h": {
+        "empty_travel": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sow": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "idle": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "harvest": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "gather_food": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sleep": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "loaded_travel": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "symmetric": {
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "spoiled": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "labor_h": {
+        "harvest": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sow": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "gather_food": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sleep": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "loaded_travel": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "idle": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "low_cost": {
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "spoiled": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue_h": {
+          "mean": -0.0002777777999995124,
+          "min": -0.00833333399998537,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_attempts": {
+          "mean": 0.03333333333333333,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "labor_h": {
+        "empty_travel": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "cart_construction": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sow": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "idle": {
+          "mean": 0.0002777777999957228,
+          "min": 0.0,
+          "max": 0.008333333999871684
+        },
+        "gather_wood": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "harvest": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "gather_food": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sleep": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "loaded_travel": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue": {
+          "mean": -0.0002777777666665315,
+          "min": -0.008333332999995946,
+          "max": 0.0
+        }
+      }
+    },
+    "high_cost": {
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "spoiled": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_attempts": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "labor_h": {
+        "empty_travel": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sow": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "idle": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "harvest": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "gather_food": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sleep": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "loaded_travel": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "colocated": {
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "spoiled": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": -1.0,
+          "min": -1.0,
+          "max": -1.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_attempts": {
+          "mean": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "labor_h": {
+        "empty_travel": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "harvest": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sow": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "gather_food": {
+          "mean": 0.0005555559999999987,
+          "min": 0.0005555559999999987,
+          "max": 0.0005555559999999987
+        },
+        "sleep": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "loaded_travel": {
+          "mean": -3.994814723000001,
+          "min": -3.994814723000001,
+          "max": -3.994814723000001
+        },
+        "idle": {
+          "mean": -0.005740833000004386,
+          "min": -0.005740833000004386,
+          "max": -0.005740833000004386
+        }
+      }
+    },
+    "separated": {
+      "outcomes": {
+        "alive": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "deaths": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "produced": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "consumed": {
+          "mean": -1.0,
+          "min": -1.0,
+          "max": -1.0
+        },
+        "spoiled": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "delivered": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "jobs": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "starvation_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "queue_h": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "food_flows_ab": {
+          "mean": -1.0,
+          "min": -1.0,
+          "max": -1.0
+        },
+        "food_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ab": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "wood_flows_ba": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "visits": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "barter_attempts": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "barter_completed": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "labor_h": {
+        "empty_travel": {
+          "mean": 4.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "gather_food": {
+          "mean": 0.0012930550000000013,
+          "min": 0.0012930550000000013,
+          "max": 0.0012930550000000013
+        },
+        "sleep": {
+          "mean": -0.3333333329999988,
+          "min": -0.3333333329999988,
+          "max": -0.3333333329999988
+        },
+        "loaded_travel": {
+          "mean": -4.0,
+          "min": -4.0,
+          "max": -4.0
+        },
+        "idle": {
+          "mean": -0.6679597230000098,
+          "min": -0.6679597230000098,
+          "max": -0.6679597230000098
+        }
+      }
+    }
+  }
+}

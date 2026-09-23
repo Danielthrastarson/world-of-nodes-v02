@@ -198,3 +198,36 @@ because no bilateral protocol exists, not because bargaining was tested and fail
 Money/prices are not automatically justified. F9 remains unstarted; any barter,
 pooling, lending or abandoned-property recovery rule requires an owner decision.
 Military, final UI, engineered roads and staffed maintenance remain deferred.
+
+## Current F9A property/exchange decision and result
+
+The owner authorized voluntary alienation of personal goods and immediate atomic
+local barter. This resolves the earlier barter-rights fork only: no money, credit,
+forced sale, inheritance, employment, lending or other asset-title mechanism.
+[Registered semantics](docs/BARTER_EXPERIMENT.md), [evidence](research/barter/REPORT.md).
+
+F9A passes for mechanism correctness and explanatory research. The kernel validates
+both owners, their co-location, idle availability and physical inputs before either
+side changes. Outputs remain at the meeting node as recipient-owned loose goods;
+age, quantities, travel/capacity and subsequent action requirements remain intact.
+Offers are local and finite-lived; no global market or private counterparty-state
+queries enter policy. Historical configurations retain barter disabled.
+
+360 paired runs produce zero live barter settlements. The50-person enabled F8
+worlds create just one offer. Seven recipients decline its food as unwanted; one
+hungry recipient lacks owned payment goods. Controlled co-location creates offers
+but work/departure prevents settlement. A static two-willing-policy witness does
+settle and use the receipts; it is not a live market result. No qualifying live
+double-coincidence failure is demonstrated. No money has been shown necessary.
+
+The provisional willingness rule uses food needs/protected buffers and cart inputs
+under personal beliefs. It is a new bounded behavioral assumption, not optimal
+economic reasoning. No speculative resale, exchange-directed acquisition, trade
+search or waiting commitment is added after the negative result. Preserve F8's
+communal arrival-without-deposit arbitration exactly. All1,889 prior research files
+and120 disabled F8 run histories remain unchanged;156 tests pass.
+
+Keep capital (capability), allocation (exclusive uses), exchange (voluntary rights
+transfer) and money (a possible later coordination institution) separate. F9B
+monetary implementation remains unstarted; any currency requires an explicit owner
+decision. Do not introduce a currency to bypass missing offers or missed meetings.

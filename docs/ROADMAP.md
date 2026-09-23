@@ -22,7 +22,7 @@ and irreversible abstraction choices require a project-owner decision.
 | F6 Construction / settlement | PASSED | Minimal causally necessary storage/sleep/infrastructure uses delivered materials, labor and time. Different geography creates different persistent spatial form. |
 | F7 Emergent infrastructure | PASSED | Completed civilian travel creates paths; continued use maintains them and disuse reverses wear. Effective travel time changes route/traffic outcomes under unchanged capacity and FIFO. Engineered roads and staffed maintenance remain deferred. |
 | F8 Two settlements | PASSED | Existing-institution scope: 210 paired runs explain migration, small communal food flows, transport sensitivity, incomplete capital and crop ownership lock-up. No reciprocal barter/wood exports established; new exchange/property rules require an owner decision. |
-| F9A Local barter | ACTIVE | Owner authorized alienable personal goods and voluntary immediate atomic exchange. Local offers and bounded own-use decisions; paired disabled controls preserve F8. No money, forced transfer or remote market. |
+| F9A Local barter | PASSED | Voluntary atomic local goods exchange is implemented and validated. 360 paired runs produce zero live swaps: offer formation and temporal coordination remain blockers. Static policy witness settles legally; do not call it market emergence. F8 histories preserved. |
 | F9B Money decision | NOT STARTED | Diagnose actual exchange/valuation/friction problems from F9A before proposing money. Monetary institutions require a separate owner decision; absence of offers is not double coincidence of wants. |
 | F10 Territory / authority | NOT STARTED | Practical communication, collection, protection, enforcement or administration depends on presence and geography. No arbitrary borders. Owner decides powers. |
 | F11 Security / military economy | NOT STARTED | Mobilization redirects existing people, food, tools, transport and time. Measure civilian consequences; military strength depends on physical economy. |
@@ -99,3 +99,11 @@ institutions are not extended. The F8 communal arrival-without-deposit trace is
 preserved; trade rights do not repair delivery arbitration. Existing historical
 configurations keep barter disabled for reproducibility; F9A enabled arms select
 the new institution explicitly. No monetary implementation is authorized.
+
+F9A evidence: [360-run report](../research/barter/REPORT.md). Across enabled F8 worlds
+only one offer forms; the meeting fixtures create offers but owners leave before
+settlement. No qualifying double-coincidence case occurs in live runs. A separate
+static case validates that classifier and another demonstrates useful voluntary
+exchange through the real kernel. No resale motive, meeting commitment or trade
+search is added afterward. F9B assessment finds no evidence sufficient to choose
+money; monetary experiments remain unstarted and require an owner decision.

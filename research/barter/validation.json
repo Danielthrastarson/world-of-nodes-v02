@@ -1,0 +1,23 @@
+{
+  "tests_passed": 156,
+  "historical_comparison": {
+    "complementary": {
+      "run_checkpoint_rows": 210,
+      "first_seed_full_events_identical": true
+    },
+    "symmetric": {
+      "run_checkpoint_rows": 210,
+      "first_seed_full_events_identical": true
+    },
+    "low_cost": {
+      "run_checkpoint_rows": 210,
+      "first_seed_full_events_identical": true
+    },
+    "high_cost": {
+      "run_checkpoint_rows": 210,
+      "first_seed_full_events_identical": true
+    }
+  },
+  "prior_files_unchanged": 1889,
+  "colocated_witness_reproduces": true
+}
