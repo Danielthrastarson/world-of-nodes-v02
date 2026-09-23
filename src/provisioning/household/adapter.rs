@@ -286,7 +286,10 @@ impl World {
             return;
         };
         for r in &c.care {
-            if r.person == id && self.agents[r.dependent].action != Action::Dead {
+            if r.person == id
+                && self.agents[r.dependent].action != Action::Dead
+                && self.agents[r.dependent].starvation < 24 * HOUR
+            {
                 self.household.journal.losses.insert((id, r.dependent));
             }
         }

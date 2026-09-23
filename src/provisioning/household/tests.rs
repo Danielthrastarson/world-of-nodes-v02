@@ -320,3 +320,12 @@ fn multiple_dependents_do_not_duplicate_food_or_optimize_away_scarcity() {
     assert_eq!(w.agents[2].consumed, 0);
     w.audit().unwrap();
 }
+#[test]
+fn simultaneous_deaths_do_not_count_as_a_surviving_dependent_losing_support() {
+    let mut w = research::fixture("caregiver_death", true, 0).unwrap();
+    w.agents[1].nutrition = 0;
+    w.agents[1].starvation = 23 * HOUR;
+    w.advance_to(HOUR).unwrap();
+    assert_eq!(w.metrics.deaths, 2);
+    assert!(w.care_journal().losses.is_empty());
+}
