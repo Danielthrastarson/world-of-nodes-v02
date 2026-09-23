@@ -25,7 +25,7 @@ and irreversible abstraction choices require a project-owner decision.
 | F9A Local barter | PASSED | Voluntary atomic local goods exchange is implemented and validated. 360 paired runs produce zero live swaps: offer formation and temporal coordination remain blockers. Static policy witness settles legally; do not call it market emergence. F8 histories preserved. |
 | F9B Physical local market | PASSED | 360 final paired runs: 30 delayed swaps in controlled co-location; zero swaps and one offer across 120 larger market worlds. Deposit/revocation churn changes allocation without trade. Physical escrow, ownership, locality and controls validated; money remains unauthorized. |
 | Monetary institution decision | NOT STARTED | Requires demonstrated coordination friction and a separate owner decision. A market is not money; missing offers are not double coincidence of wants. |
-| F10 Territory / authority | NOT STARTED | Practical communication, collection, protection, enforcement or administration depends on presence and geography. No arbitrary borders. Owner decides powers. |
+| F10 Territory / authority | ACTIVE | Owner authorized embodied sovereign, physically appointed steward, presence-derived administration and local public crossing commissions. No coercive powers or remote control. |
 | F11 Security / military economy | NOT STARTED | Mobilization redirects existing people, food, tools, transport and time. Measure civilian consequences; military strength depends on physical economy. |
 | F12 Information network | NOT STARTED | Explicit physical messengers/travelers or constrained signals. Distinguish true from observed state; report delay changes decisions. No global knowledge. |
 | F13 Kingdom vertical slice | NOT STARTED | Multiple settlements, economy, infrastructure, authority, information and security; one ruler decision yields unscripted, traceable second-order effects. Owner decides player powers. |
@@ -119,3 +119,7 @@ runs. Offer-generation code is unchanged; increased repeated postings in control
 fixtures arise from custody/valuation feedback. Asynchronous local exchange works
 in a controlled opportunity but does not establish a wider trading economy or money
 need. Stop expansion after this evidence; no further economic institution is adopted.
+
+## F9 closure and F10 authorization
+
+F9 is PASSED: **MONEY NOT CURRENTLY JUSTIFIED**. Offer formation is **OPEN ECONOMIC RESEARCH DEBT**. Preserve barter/markets without stronger motivation, trade search or monetary mechanisms. F10 proceeds under the explicit owner-selected political institution; see [registered authority study](AUTHORITY_EXPERIMENT.md).
