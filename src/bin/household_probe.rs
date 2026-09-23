@@ -42,7 +42,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         "seed,hour,agent,alive,nutrition_ms,starvation_ms,starvation_total_h,consumed,retained_food,death_ms,location"
     )?;
     writeln!(metrics, "seed,key,count")?;
-    writeln!(activities, "seed,agent,activity,hours")?;
+    writeln!(activities, "seed,hour,agent,activity,hours")?;
     writeln!(events, "seed,time_ms,agent,kind,detail")?;
     for seed in 0..seeds {
         let mut w = household::research::fixture(case, enabled, seed)?;
@@ -87,6 +87,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 w.state_hash(),
                 w.event_hash()
             )?;
+            for ((id, a), v) in &j.activity_ms {
+                writeln!(activities, "{seed},{h},{id},{a},{:.9}", *v as f64 / HOUR as f64)?;
+            }
             for a in w.agents() {
                 let retained: u64 = w
                     .batches()
@@ -111,9 +114,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
         for (k, v) in &w.care_journal().counts {
             writeln!(metrics, "{seed},{k},{v}")?;
-        }
-        for ((id, a), v) in &w.care_journal().activity_ms {
-            writeln!(activities, "{seed},{id},{a},{:.9}", *v as f64 / HOUR as f64)?;
         }
         if seed == 0 {
             for e in w.events() {
