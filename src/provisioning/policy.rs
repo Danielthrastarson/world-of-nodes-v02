@@ -16,6 +16,19 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    OfferBarter {
+        batch: usize,
+        quantity: u64,
+        want: super::Material,
+        want_quantity: u64,
+    },
+    AcceptBarter {
+        offer: usize,
+        payment: usize,
+    },
+    RevokeBarter {
+        offer: usize,
+    },
     ContributeCrossing {
         project: usize,
         batch: usize,

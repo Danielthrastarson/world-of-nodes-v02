@@ -38,7 +38,27 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let seeds: u64 = args.get(2).map(|s| s.parse()).transpose()?.unwrap_or(30);
     let first: u64 = args.get(3).map(|s| s.parse()).transpose()?.unwrap_or(0);
     let end = first.checked_add(seeds).ok_or("seed overflow")?;
+    let barter_mode = args
+        .get(4)
+        .map(|s| match s.as_str() {
+            "on" => Ok(true),
+            "off" => Ok(false),
+            _ => Err("barter mode must be on/off"),
+        })
+        .transpose()?;
     fs::create_dir_all(root)?;
+    let mut barter_counts = file(root, "barter_counts.csv")?;
+    let mut offers = file(root, "offers.csv")?;
+    let mut exchanges = file(root, "exchanges.csv")?;
+    writeln!(barter_counts, "seed,hour,key,value")?;
+    writeln!(
+        offers,
+        "seed,id,proposer,node,created_ms,expires_ms,batch,give,give_q,want,want_q,status"
+    )?;
+    writeln!(
+        exchanges,
+        "seed,at_ms,offer,proposer,taker,node,give,give_q,give_origin,payment,payment_q,payment_origin,give_created,payment_created,give_expiry,payment_expiry,taker_batch,proposer_batch"
+    )?;
     let mut runs = file(root, "runs.csv")?;
     let mut places = file(root, "places.csv")?;
     let mut accounts = file(root, "accounts.csv")?;
@@ -96,12 +116,20 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         "seed,hour,edge,compaction,passages,recoveries,nominal_ms,capacity,queue_h,occupancy_person_h"
     )?;
     for seed in first..end {
-        let c = settlement_research::configuration(arm, seed, seed == first)?;
-        writeln!(
-            parameters,
-            "{c:?}; research_place_mapping=[A,corridor,B]; same Commons(0); barter_protocol=absent"
-        )?;
-        let mut w = World::new(c)?;
+        let mut w = if let Some(enabled) = barter_mode {
+            writeln!(
+                parameters,
+                "F9A registered fixture={arm} seed={seed} enabled={enabled}; docs/BARTER_EXPERIMENT.md; no money; own conditional use"
+            )?;
+            barter::research::world(arm, enabled, seed, seed == first)?
+        } else {
+            let c = settlement_research::configuration(arm, seed, seed == first)?;
+            writeln!(
+                parameters,
+                "{c:?}; research_place_mapping=[A,corridor,B]; same Commons(0); barter_protocol=absent"
+            )?;
+            World::new(c)?
+        };
         w.enable_settlement_research(vec![0, CORRIDOR, 1])?;
         for hour in 0..=168 {
             w.advance_to(hour * HOUR)?;
@@ -109,6 +137,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             w.audit_settlement_research()?;
             if ![0, 12, 36, 48, 72, 120, 168].contains(&hour) {
                 continue;
+            }
+            for (key, value) in w.barter_counters() {
+                writeln!(barter_counts, "{seed},{hour},{key},{value}")?;
             }
             let j = w.settlement_journal();
             let m = w.metrics();
@@ -122,7 +153,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             let produced = w.farming_counters()["produced"];
             writeln!(
                 runs,
-                "{seed},{hour},{},{},{produced},{},{},{},{},{:.9},{:.9},{},{},{},{},{},0,0,false,0,{},{:016x},{:016x}",
+                "{seed},{hour},{},{},{produced},{},{},{},{},{:.9},{:.9},{},{},{},{},{},{},{},{},0,{},{:016x},{:016x}",
                 w.agents()
                     .iter()
                     .filter(|a| a.action != Action::Dead)
@@ -139,6 +170,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 flow(0, 1, Material::Wood),
                 flow(1, 0, Material::Wood),
                 j.visits.len(),
+                w.barter_offers().len(),
+                w.barter_exchanges().len(),
+                w.barter_enabled(),
                 m.overtakes,
                 w.state_hash(),
                 w.event_hash()
@@ -341,6 +375,46 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
         for (at, id, from, to) in &j.visits {
             writeln!(visits, "{seed},{at},{id},{},{from},{to}", j.cohorts[*id])?;
+        }
+        for o in w.barter_offers() {
+            writeln!(
+                offers,
+                "{seed},{},{},{},{},{},{},{:?},{},{:?},{},{}",
+                o.id,
+                o.proposer,
+                o.location,
+                o.created_at,
+                o.expires_at,
+                o.batch,
+                o.give,
+                o.quantity,
+                o.want,
+                o.want_quantity,
+                o.status
+            )?;
+        }
+        for x in w.barter_exchanges() {
+            writeln!(
+                exchanges,
+                "{seed},{},{},{},{},{},{:?},{},{},{:?},{},{},{},{},{},{},{},{}",
+                x.at,
+                x.offer,
+                x.proposer,
+                x.taker,
+                x.node,
+                x.give.material,
+                x.give_quantity,
+                x.give.origin,
+                x.payment.material,
+                x.payment_quantity,
+                x.payment.origin,
+                x.give.created_at,
+                x.payment.created_at,
+                x.give.expires_at(),
+                x.payment.expires_at(),
+                x.received_by_taker,
+                x.received_by_proposer
+            )?;
         }
         if seed == first {
             for e in w.events() {

@@ -111,6 +111,21 @@ impl World {
             return Err("edge traversal is atomic".into());
         };
         match intent {
+            Intent::OfferBarter {
+                batch,
+                quantity,
+                want,
+                want_quantity,
+            } => {
+                self.post_barter(id, batch, quantity, want, want_quantity)?;
+            }
+            Intent::AcceptBarter { offer, payment } => {
+                if let Err(reason) = self.accept_barter(id, offer, payment) {
+                    self.record_barter_failure(&reason);
+                    return Err(reason);
+                }
+            }
+            Intent::RevokeBarter { offer } => self.revoke_barter(id, offer)?,
             Intent::ContributeCrossing {
                 project,
                 batch,
@@ -449,6 +464,11 @@ impl World {
     }
     pub(super) fn next_time(&self, target: Time) -> Time {
         let mut next = target;
+        for offer in &self.barter.offers {
+            if offer.status == "OPEN" && offer.expires_at > self.now {
+                next = next.min(offer.expires_at);
+            }
+        }
         if let Some((&t, _)) = self
             .transport_research
             .replay
@@ -869,6 +889,7 @@ impl World {
                 );
             }
         }
+        self.expire_barter();
         if self.config.autonomous {
             if self.now >= self.next_policy {
                 self.wake.extend(0..self.agents.len());
@@ -1082,6 +1103,7 @@ impl World {
             } else {
                 policy::decide_variant(&o, &a.memory, &mut a.rng, self.config.diagnostic_policy)
             };
+            let decision = self.barter_decision(id, &o, decision);
             self.record_capital_evaluation(id, &o);
             let a = &self.agents[id];
             self.diagnostics.observe(&o, &a.memory, &decision);

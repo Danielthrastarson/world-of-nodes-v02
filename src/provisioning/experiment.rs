@@ -168,6 +168,9 @@ impl World {
         if self.config.capital.is_some() {
             text.push_str(&format!("|capital={:?}", self.capital));
         }
+        if self.config.barter {
+            text.push_str(&format!("|barter={:?}", self.barter.offers));
+        }
         let mut h = 0xcbf29ce484222325u64;
         for byte in text.bytes() {
             h ^= byte as u64;

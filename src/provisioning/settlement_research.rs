@@ -241,6 +241,36 @@ impl Journal {
         match e.kind.as_str() {
             "Arrived" => {
                 let id = e.agent.unwrap();
+                // A graph has no physical length unit: report actual quantity-edge
+                // passages, not invented kilometres. Same-node barter adds none.
+                for b in w
+                    .goods
+                    .batches
+                    .iter()
+                    .filter(|b| b.quantity > 0 && w.carried_by(id, b.holder))
+                {
+                    let material = if b.material == Material::Food && b.expires_at() <= w.now {
+                        Material::Waste
+                    } else {
+                        b.material
+                    };
+                    self.add(
+                        place,
+                        &format!("{material:?}_quantity_edges"),
+                        b.quantity as u128,
+                    );
+                    if w.barter.exchanges.iter().any(|x| {
+                        x.at < w.now && (x.give.origin == b.origin || x.payment.origin == b.origin)
+                    }) {
+                        // Fungible descendants can merge with unexchanged siblings.
+                        // This is explicitly an ancestry upper bound, not exact trade distance.
+                        self.add(
+                            place,
+                            &format!("barter_ancestry_{material:?}_quantity_edges_upper"),
+                            b.quantity as u128,
+                        );
+                    }
+                }
                 if place > 1 {
                     return;
                 }
