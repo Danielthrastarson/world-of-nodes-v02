@@ -165,7 +165,8 @@ pub fn advance(w: &mut World, case: &str, to: Time) -> Result<(), String> {
     if w.now < 6 * HOUR && to >= 6 * HOUR {
         w.advance_to(6 * HOUR)?;
         w.transport_research.actors = None;
-        w.wake.extend(0..w.agents.len());
+        // Release permits deliberation at the next normal policy opportunity;
+        // it must not make arbitrary caller checkpoint times into decision times.
     }
     w.advance_to(to)
 }

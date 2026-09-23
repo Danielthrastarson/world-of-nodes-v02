@@ -147,7 +147,9 @@ impl World {
             v.post_service_arrival = None;
             v.phase = "ORDER_RECEIVED".into();
             self.formation.journal.add("receipts");
-            self.wake.insert(id);
+            // Receipt updates the objective now; action selection occurs at the
+            // next ordinary policy opportunity. A pending wake here would run
+            // at an arbitrary caller checkpoint instead of a clock-defined time.
             self.log(Some(id),"UnitOrderReceived",format!("unit={unit}; serial={serial}; target={target}; no route/stock information supplied"));
         }
         self.audit()?;

@@ -1,0 +1,170 @@
+{
+  "research/kingdom-readiness/smoke/alternate-pending/events.tsv.gz": {
+    "uncompressed_sha256": "d34bb41d9ce07fab70016549fc6cd5cd8fc6589d2ba6ed3a033face99d7d8dd9",
+    "uncompressed_bytes": 13085194
+  },
+  "research/kingdom-readiness/smoke/alternate-pending/goods.tsv.gz": {
+    "uncompressed_sha256": "16b42ca5401c6d715538ce826e22c0f5670f97667825189c59bc447e92df9268",
+    "uncompressed_bytes": 11099
+  },
+  "research/kingdom-readiness/smoke/alternate-pending/initial_beliefs.tsv.gz": {
+    "uncompressed_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+    "uncompressed_bytes": 27797
+  },
+  "research/kingdom-readiness/smoke/alternate-pending/institutions.tsv.gz": {
+    "uncompressed_sha256": "d8950b8b6091bb8eb690f2ea11fb509b2df00193adc7b1b45dd69dcafcdfaa60",
+    "uncompressed_bytes": 1895
+  },
+  "research/kingdom-readiness/smoke/alternate-pending/reports.tsv.gz": {
+    "uncompressed_sha256": "9d4101bd8afcfebf880c485277b3922898b41c7814af8f2ada21da7c36705272",
+    "uncompressed_bytes": 1265
+  },
+  "research/kingdom-readiness/smoke/alternate-pending/trips.tsv.gz": {
+    "uncompressed_sha256": "cb6b3213ab49248e12056df93401aca698d6c8cf9a8aecbe038c746e4d06202c",
+    "uncompressed_bytes": 12280
+  },
+  "research/kingdom-readiness/development-smoke/alternate-commissioned/events.tsv.gz": {
+    "uncompressed_sha256": "93c3e4274c5c66c063d335e043e63994002b027caf0eeb013531f1dbd35f32df",
+    "uncompressed_bytes": 13325981
+  },
+  "research/kingdom-readiness/development-smoke/alternate-commissioned/goods.tsv.gz": {
+    "uncompressed_sha256": "b90f6ad0c49451ce9b7a1d26f675b4be257a37cb1b4aa91583079047b4345cf6",
+    "uncompressed_bytes": 9929
+  },
+  "research/kingdom-readiness/development-smoke/alternate-commissioned/initial_beliefs.tsv.gz": {
+    "uncompressed_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+    "uncompressed_bytes": 27797
+  },
+  "research/kingdom-readiness/development-smoke/alternate-commissioned/institutions.tsv.gz": {
+    "uncompressed_sha256": "1d60b64e2906f1cd01dceca5976c8b372a7968ac55d856a86576217f635e7393",
+    "uncompressed_bytes": 2028
+  },
+  "research/kingdom-readiness/development-smoke/alternate-commissioned/reports.tsv.gz": {
+    "uncompressed_sha256": "9d4101bd8afcfebf880c485277b3922898b41c7814af8f2ada21da7c36705272",
+    "uncompressed_bytes": 1265
+  },
+  "research/kingdom-readiness/development-smoke/alternate-commissioned/trips.tsv.gz": {
+    "uncompressed_sha256": "0351ffe445f4d354a358551ddd1b4e8c71168615f8127c4a6b49a7ad332bc46a",
+    "uncompressed_bytes": 18003
+  },
+  "research/kingdom-readiness/development-smoke/alternate-pending/events.tsv.gz": {
+    "uncompressed_sha256": "d34bb41d9ce07fab70016549fc6cd5cd8fc6589d2ba6ed3a033face99d7d8dd9",
+    "uncompressed_bytes": 13085194
+  },
+  "research/kingdom-readiness/development-smoke/alternate-pending/goods.tsv.gz": {
+    "uncompressed_sha256": "16b42ca5401c6d715538ce826e22c0f5670f97667825189c59bc447e92df9268",
+    "uncompressed_bytes": 11099
+  },
+  "research/kingdom-readiness/development-smoke/alternate-pending/initial_beliefs.tsv.gz": {
+    "uncompressed_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+    "uncompressed_bytes": 27797
+  },
+  "research/kingdom-readiness/development-smoke/alternate-pending/institutions.tsv.gz": {
+    "uncompressed_sha256": "d8950b8b6091bb8eb690f2ea11fb509b2df00193adc7b1b45dd69dcafcdfaa60",
+    "uncompressed_bytes": 1895
+  },
+  "research/kingdom-readiness/development-smoke/alternate-pending/reports.tsv.gz": {
+    "uncompressed_sha256": "9d4101bd8afcfebf880c485277b3922898b41c7814af8f2ada21da7c36705272",
+    "uncompressed_bytes": 1265
+  },
+  "research/kingdom-readiness/development-smoke/alternate-pending/trips.tsv.gz": {
+    "uncompressed_sha256": "cb6b3213ab49248e12056df93401aca698d6c8cf9a8aecbe038c746e4d06202c",
+    "uncompressed_bytes": 12280
+  },
+  "research/kingdom-readiness/development-smoke/scarce-pending/events.tsv.gz": {
+    "uncompressed_sha256": "d34bb41d9ce07fab70016549fc6cd5cd8fc6589d2ba6ed3a033face99d7d8dd9",
+    "uncompressed_bytes": 13085194
+  },
+  "research/kingdom-readiness/development-smoke/scarce-pending/goods.tsv.gz": {
+    "uncompressed_sha256": "c147013f642181b1d7fb8fdfcfdb04d3e38eae4dfd3c1aaaee7d09f24a516f1b",
+    "uncompressed_bytes": 11095
+  },
+  "research/kingdom-readiness/development-smoke/scarce-pending/initial_beliefs.tsv.gz": {
+    "uncompressed_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+    "uncompressed_bytes": 27797
+  },
+  "research/kingdom-readiness/development-smoke/scarce-pending/institutions.tsv.gz": {
+    "uncompressed_sha256": "d8950b8b6091bb8eb690f2ea11fb509b2df00193adc7b1b45dd69dcafcdfaa60",
+    "uncompressed_bytes": 1895
+  },
+  "research/kingdom-readiness/development-smoke/scarce-pending/reports.tsv.gz": {
+    "uncompressed_sha256": "9d4101bd8afcfebf880c485277b3922898b41c7814af8f2ada21da7c36705272",
+    "uncompressed_bytes": 1265
+  },
+  "research/kingdom-readiness/development-smoke/scarce-pending/trips.tsv.gz": {
+    "uncompressed_sha256": "cb6b3213ab49248e12056df93401aca698d6c8cf9a8aecbe038c746e4d06202c",
+    "uncompressed_bytes": 12280
+  },
+  "research/kingdom-readiness/development-smoke/long-pending/events.tsv.gz": {
+    "uncompressed_sha256": "52c840700f920b0b6c859769dd37c705edbebb33bd408d35a54c80583a71de72",
+    "uncompressed_bytes": 12049130
+  },
+  "research/kingdom-readiness/development-smoke/long-pending/goods.tsv.gz": {
+    "uncompressed_sha256": "f07b41c87c9c5a1404d133550bc06687b970024f18179d81511f395d99603de8",
+    "uncompressed_bytes": 10382
+  },
+  "research/kingdom-readiness/development-smoke/long-pending/initial_beliefs.tsv.gz": {
+    "uncompressed_sha256": "5b09bffea476295650570263bd125b4d0e4a7ec60e8b906a2c266207fc075d30",
+    "uncompressed_bytes": 27869
+  },
+  "research/kingdom-readiness/development-smoke/long-pending/institutions.tsv.gz": {
+    "uncompressed_sha256": "48192707144eaf88e7924aab77bbc33954790e1a8e4a62d8ceb36e68054d26a9",
+    "uncompressed_bytes": 2016
+  },
+  "research/kingdom-readiness/development-smoke/long-pending/reports.tsv.gz": {
+    "uncompressed_sha256": "4f4e5f77e6f82f57c80ff835616fafcf9eaac2138a042716f6b3c52137cceb27",
+    "uncompressed_bytes": 1267
+  },
+  "research/kingdom-readiness/development-smoke/long-pending/trips.tsv.gz": {
+    "uncompressed_sha256": "3fd6517f77c563547f007fbe8e46b17a6412d3a86fd332263b90ac28acb63856",
+    "uncompressed_bytes": 7531
+  },
+  "research/kingdom-readiness/development-smoke/scarce-commissioned/events.tsv.gz": {
+    "uncompressed_sha256": "54d663871a4a99c06ce203676ad9d2052edcd7b12b36f71fc1f6861dcebf964e",
+    "uncompressed_bytes": 12148720
+  },
+  "research/kingdom-readiness/development-smoke/scarce-commissioned/goods.tsv.gz": {
+    "uncompressed_sha256": "94a11c92d2ccccec70fb4a6b12590e2f189cd5003cbda2e82205887446405948",
+    "uncompressed_bytes": 10052
+  },
+  "research/kingdom-readiness/development-smoke/scarce-commissioned/initial_beliefs.tsv.gz": {
+    "uncompressed_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+    "uncompressed_bytes": 27797
+  },
+  "research/kingdom-readiness/development-smoke/scarce-commissioned/institutions.tsv.gz": {
+    "uncompressed_sha256": "5ea314f6f36caba26111d8b2216000e3b95ad559ccb4a112978803df4cd79e57",
+    "uncompressed_bytes": 2015
+  },
+  "research/kingdom-readiness/development-smoke/scarce-commissioned/reports.tsv.gz": {
+    "uncompressed_sha256": "9d4101bd8afcfebf880c485277b3922898b41c7814af8f2ada21da7c36705272",
+    "uncompressed_bytes": 1265
+  },
+  "research/kingdom-readiness/development-smoke/scarce-commissioned/trips.tsv.gz": {
+    "uncompressed_sha256": "275be7788726e7b0f623c7dc2a16745bb374cdc99b39dbff06936941c2d85886",
+    "uncompressed_bytes": 20508
+  },
+  "research/kingdom-readiness/development-smoke/long-commissioned/events.tsv.gz": {
+    "uncompressed_sha256": "38e16e714838226f6174220c19db200c9670ade8afe1ffd532982a10d9c218da",
+    "uncompressed_bytes": 11907977
+  },
+  "research/kingdom-readiness/development-smoke/long-commissioned/goods.tsv.gz": {
+    "uncompressed_sha256": "23956f4fa97584a8e2ca77dd56b7204f2d47adecc055aa88416234d9448344b4",
+    "uncompressed_bytes": 10678
+  },
+  "research/kingdom-readiness/development-smoke/long-commissioned/initial_beliefs.tsv.gz": {
+    "uncompressed_sha256": "5b09bffea476295650570263bd125b4d0e4a7ec60e8b906a2c266207fc075d30",
+    "uncompressed_bytes": 27869
+  },
+  "research/kingdom-readiness/development-smoke/long-commissioned/institutions.tsv.gz": {
+    "uncompressed_sha256": "5f7907038f0a92092ffe78e417d9f44528e02285b39f45137b0fa9dd45bd3ab9",
+    "uncompressed_bytes": 2148
+  },
+  "research/kingdom-readiness/development-smoke/long-commissioned/reports.tsv.gz": {
+    "uncompressed_sha256": "4f4e5f77e6f82f57c80ff835616fafcf9eaac2138a042716f6b3c52137cceb27",
+    "uncompressed_bytes": 1267
+  },
+  "research/kingdom-readiness/development-smoke/long-commissioned/trips.tsv.gz": {
+    "uncompressed_sha256": "3fd6517f77c563547f007fbe8e46b17a6412d3a86fd332263b90ac28acb63856",
+    "uncompressed_bytes": 7531
+  }
+}

@@ -497,6 +497,35 @@ fn receipt_and_delivery_start_obey_policy_time_under_irregular_caller_partitions
 }
 
 #[test]
+fn research_release_and_depletion_follow_the_clock_under_irregular_checkpoints() {
+    for case in ["short", "depleted"] {
+        let mut direct = research::fixture(case, true, 7).unwrap();
+        let mut irregular = research::fixture(case, true, 7).unwrap();
+        research::advance(&mut direct, case, 12 * HOUR).unwrap();
+        for checkpoint in [
+            17 * MINUTE + 1,
+            HOUR - 1,
+            HOUR + 1,
+            6 * HOUR - 1,
+            6 * HOUR + 1,
+            12 * HOUR,
+        ] {
+            research::advance(&mut irregular, case, checkpoint).unwrap();
+        }
+        assert_eq!(direct.state_hash(), irregular.state_hash(), "case={case}");
+        assert_eq!(direct.event_hash(), irregular.event_hash(), "case={case}");
+        assert_eq!(
+            direct.information.memories, irregular.information.memories,
+            "case={case}"
+        );
+        assert_eq!(direct.transport_research.actors, None);
+        assert_eq!(irregular.transport_research.actors, None);
+        direct.audit().unwrap();
+        irregular.audit().unwrap();
+    }
+}
+
+#[test]
 fn already_selected_local_report_handoff_is_not_replaced_by_barter() {
     let mut w = barter::research::world("colocated", true, 0, true).unwrap();
     w.config.information = true;

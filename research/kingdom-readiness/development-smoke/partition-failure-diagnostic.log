@@ -1,0 +1,25 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.51s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 1 test
+first event divergence index=1115
+direct=Event { id: 1115, at: 3960000, agent: Some(0), cause: Some(1110), kind: "UnitActionState", detail: "WITH_UNIT; unit order 0: execute remembered movement undertaking" }
+irregular=Event { id: 1115, at: 3900001, agent: Some(0), cause: Some(1110), kind: "UnitActionState", detail: "WITH_UNIT; unit order 0: execute remembered movement undertaking" }
+person=1 direct=Edge { edge: 2, from: 1, to: 3, progress: 3480000000000 }/Travel/61200000/39600000 irregular=Edge { edge: 2, from: 1, to: 3, progress: 3540000000000 }/Travel/61200000/39600000
+
+thread 'provisioning::kingdom_research::tests::controlled_command_and_release_boundaries_are_partition_invariant' (275) panicked at src/provisioning/kingdom_research.rs:340:9:
+assertion `left == right` failed
+  left: 13376797514213135212
+ right: 5160874149705876691
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test provisioning::kingdom_research::tests::controlled_command_and_release_boundaries_are_partition_invariant ... FAILED
+
+failures:
+
+failures:
+    provisioning::kingdom_research::tests::controlled_command_and_release_boundaries_are_partition_invariant
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 292 filtered out; finished in 1.71s
+
+error: test failed, to rerun pass `--lib`

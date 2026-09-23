@@ -15,6 +15,7 @@ mod goods;
 pub mod household;
 pub mod information;
 pub mod infrastructure;
+pub mod kingdom_research;
 pub mod lifecycle;
 pub mod meals;
 pub mod military;
