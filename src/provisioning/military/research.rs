@@ -6,6 +6,7 @@ pub const CASES: &[&str] = &[
     "food_constrained",
     "caregiver",
     "farmer",
+    "working_farmer",
     "distant",
     "bottleneck",
     "unknown",
@@ -19,8 +20,17 @@ pub fn request(case: &str) -> Request {
         posting: if case == "unknown" { 2 } else { 0 },
         muster: 1,
         attendance: if case == "small" { 1 } else { 8 },
-        opens: 0,
-        expires: 12 * HOUR,
+        opens: if case == "working_farmer" {
+            HOUR / 2
+        } else {
+            0
+        },
+        expires: 12 * HOUR
+            + if case == "working_farmer" {
+                HOUR / 2
+            } else {
+                0
+            },
         duration: 2 * HOUR,
         objective: Objective::ProtectCrossing,
     }
@@ -115,7 +125,7 @@ pub fn fixture(case: &str, enabled: bool, seed: u64) -> Result<World, String> {
         }),
         ..super::super::Config::default()
     };
-    if case == "farmer" {
+    if matches!(case, "farmer" | "working_farmer") {
         c.farming = Some(farming::Config {
             units: vec![0; 4],
             rules: Default::default(),
@@ -166,7 +176,7 @@ pub fn fixture(case: &str, enabled: bool, seed: u64) -> Result<World, String> {
             0,
             48 * HOUR,
         );
-        if case != "farmer" {
+        if !matches!(case, "farmer" | "working_farmer") {
             w.goods.add(
                 Material::Food,
                 12,

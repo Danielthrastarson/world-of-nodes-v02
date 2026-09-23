@@ -159,7 +159,13 @@ impl World {
             return;
         };
         if let Some(u) = v.undertaking.take() {
-            self.cancel_action(id, "voluntary service ended");
+            // Ending an office/role must not interrupt unrelated embodied recovery.
+            if matches!(self.agents[id].action, Action::MilitaryDuty { .. })
+                || (u.arrived_at.is_none()
+                    && matches!(self.agents[id].action, Action::Queued { .. }))
+            {
+                self.cancel_action(id, "voluntary service ended");
+            }
             self.agents[id].goal = None;
             self.military.journal.add(reason, id);
             self.log(

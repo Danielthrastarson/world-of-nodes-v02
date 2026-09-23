@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 import csv,gzip,hashlib,json,subprocess,sys
 root=Path(sys.argv[1]);root.mkdir(parents=True,exist_ok=False)
 revision=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
-cases=['small','large','food_constrained','caregiver','farmer','distant','bottleneck','unknown','history_help','history_refusal','civilian_traffic']
+cases=['small','large','food_constrained','caregiver','farmer','working_farmer','distant','bottleneck','unknown','history_help','history_refusal','civilian_traffic']
 binary=hashlib.sha256(Path('target/release/mobilization_probe').read_bytes()).hexdigest()
 def run(item):
  case,arm=item;name=case+'_'+arm;d=root/name

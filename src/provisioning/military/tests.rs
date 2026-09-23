@@ -204,3 +204,79 @@ fn births_extend_person_substrate_without_automatic_military_knowledge() {
     assert_eq!(w.military.memories[2], Memory::default());
     w.audit().unwrap();
 }
+
+#[test]
+fn term_expiry_does_not_cancel_sleep() {
+    let mut w = manual();
+    w.config.military.as_mut().unwrap().requests[0].muster = 0;
+    w.observe_military(0);
+    w.apply_intents(vec![(0, Intent::Volunteer { request: 0 })])
+        .unwrap();
+    w.apply_intents(vec![(0, Intent::JoinMuster)]).unwrap();
+    w.agents[0].fatigue = 22 * HOUR;
+    w.apply_intents(vec![(0, Intent::Sleep)]).unwrap();
+    // Existing sleep has atomic hourly ends. Research holds one ongoing recovery action across term expiry.
+    w.agents[0].action = Action::Sleep { until: 4 * HOUR };
+    w.advance_to(2 * HOUR).unwrap();
+    assert_eq!(w.military_role(0), None);
+    assert!(matches!(w.agents[0].action, Action::Sleep { .. }));
+    assert_eq!(w.agents[0].fatigue, 18 * HOUR);
+    w.audit().unwrap();
+}
+#[test]
+fn owner_cart_travels_with_volunteer_but_service_cannot_requisition() {
+    let mut c = research::fixture("large", true, 0).unwrap().config;
+    c.autonomous = false;
+    c.capital = Some(capital::Config {
+        rules: Default::default(),
+        wood: vec![],
+    });
+    c.initial_nutrition = 24 * HOUR;
+    let mut w = World::new(c).unwrap();
+    w.goods.add(
+        Material::Wood,
+        10,
+        Owner::Agent(0),
+        Holder::Agent(0),
+        0,
+        Time::MAX / 4,
+    );
+    w.apply_intents(vec![(0, Intent::BuildCart)]).unwrap();
+    while matches!(w.agents[0].action, Action::BuildCart { .. }) {
+        w.advance_to(w.next_time(w.now + HOUR)).unwrap();
+    }
+    assert_eq!(w.carts().len(), 1);
+    w.apply_intents(vec![(0, Intent::HitchCart { cart: 0 })])
+        .unwrap();
+    for id in [0, 1] {
+        w.observe_military(id);
+        let v = w.observe(id).unwrap().local.unwrap();
+        w.agents[id].memory.nodes.insert(v.node, v);
+    }
+    w.apply_intents(vec![
+        (0, Intent::Volunteer { request: 0 }),
+        (1, Intent::Volunteer { request: 0 }),
+    ])
+    .unwrap();
+    w.apply_intents(vec![(1, Intent::HitchCart { cart: 0 })])
+        .unwrap();
+    assert_eq!(w.carts()[0].user, Some(0));
+    assert_eq!(w.carts()[0].owner, Owner::Agent(0));
+    w.apply_intents(vec![(
+        0,
+        Intent::Travel {
+            edge: 0,
+            target: 1,
+            food: false,
+        },
+    )])
+    .unwrap();
+    while w.agents[0].action == Action::Travel {
+        w.advance_to(w.next_time(w.now + HOUR)).unwrap();
+    }
+    w.apply_intents(vec![(0, Intent::JoinMuster)]).unwrap();
+    assert_eq!(w.military_role(0), Some(0));
+    assert_eq!(w.carts()[0].location, Location::Node(1));
+    assert!(w.military.journal.cart_travel_ms > 0);
+    w.audit().unwrap();
+}

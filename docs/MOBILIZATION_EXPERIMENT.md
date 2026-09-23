@@ -19,3 +19,7 @@ Record request observations/evaluations, explicit gates, unique volunteers/refus
 Tests cover locality, refusal, physical mustering, child restriction, role identity, physiology, no property grants, FIFO, withdrawal/completion/death, care interruption and births. Replay historical scenarios with military absent; preserve prior artifacts by SHA256. Parameter/debug schema text may change, authoritative event/state hashes must not.
 
 Mechanism validity does not establish protective benefit. GateA9 (mobilization beneficial or harmful) requires evidence: labor/household costs can be demonstrated here, but no threat-response benefit can be inferred from an attendance count. If a protective benefit cannot be tested without expanding scope, report that gate limitation and stop F11B/C expansion. Do not invent combat or an arbitrary benefit to pass it.
+
+## Registered coverage amendment after initial panel
+
+The initial `farmer` case posts at0 and demonstrates foregone farming, but it does not test interruption of a farmer already working. Add `working_farmer` with identical world/physical parameters and notice opening at0.5h. This permits existing sowing to begin first; it is a coverage test, not a replacement or tuned rescue. Preserve the original660-run panel. The final panel contains12 cases ×2 arms ×30 seeds =720runs. A boundary fix also preserves ongoing sleep when the service term ends; it does not change sleep recovery rates.
