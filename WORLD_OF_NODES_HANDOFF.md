@@ -159,3 +159,7 @@ Torch lighting must originate in real light sources. Weather, shadows, particles
 ## Evidence discipline
 
 Separate parameters, state, policies, and seeded randomness. Use small tested commits, conservation and exclusivity checks, paired-seed experiments, causal traces, and explicit assumptions. Record failures, dead mechanics, sensitivity, and numerical artifacts. Never silently adjust rules or success thresholds to obtain an attractive outcome.
+
+## Current F7 authorization and future army controls
+
+Proceed with [civilian path feedback](docs/PATHS_EXPERIMENT.md), preserving all F6 evidence. [Army player control](docs/ARMY_PLAYER_CONTROL.md) is a future architecture target: formation objectives and geometry, actual mobilized people/resources, stable categories and shared logistics. Do not implement military systems, their UI or a separate military movement layer during F7.

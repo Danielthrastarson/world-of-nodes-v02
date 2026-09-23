@@ -131,3 +131,7 @@ Use AI for **contextual relevance, not semantic instability**. Q should retain
 its observation meaning even when the contextual choices beneath it change.
 The simulation remains authoritative, muscle memory remains useful, and the
 player's language remains small while causal consequences can be large.
+
+## Future military specialization
+
+[Army player control](ARMY_PLAYER_CONTROL.md) specifies formation-level objectives, desired fronts, responsive known-state feedback and selection + RMB orders. Civilian institutions remain indirect; armies provide immediate spatial choices through intent, geometry and commitment. Both use typed commands and the same physical economy. This is a future design target, with no military implementation during F7.

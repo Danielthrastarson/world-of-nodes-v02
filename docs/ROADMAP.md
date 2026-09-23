@@ -20,7 +20,7 @@ and irreversible abstraction choices require a project-owner decision.
 | F4 Dynamic labor | PASSED | Known shortages and opportunities alter voluntary production, gathering, carrying, rest, exploration. No worker ratios or omniscient job manager; measure churn. |
 | F5 Capital before money | PASSED | One physical capital good, provisionally cart: material/labor cost, location, ownership, custody and carrying effect. Demonstrate short-term cost and context-dependent future benefit/harm. |
 | F6 Construction / settlement | PASSED | Minimal causally necessary storage/sleep/infrastructure uses delivered materials, labor and time. Different geography creates different persistent spatial form. |
-| F7 Emergent infrastructure | NOT STARTED | Actual traffic and maintenance alter traversal/capacity, causing measurable route feedback. No arbitrary economic bonus. |
+| F7 Emergent infrastructure | ACTIVE | Actual traffic and maintenance alter traversal/capacity, causing measurable route feedback. No arbitrary economic bonus. |
 | F8 Two settlements | NOT STARTED | Contrasting physical surplus/shortage, local ownership, explicit transfer/exchange institution. Conserved flows or causal explanation of absence; local value differences measurable. |
 | F9 Prices / money decision | NOT STARTED | Diagnose actual exchange/valuation/friction problem before comparing a common account/medium. Money never creates goods. Evidence for adoption OR deferral passes. Owner decides institution. |
 | F10 Territory / authority | NOT STARTED | Practical communication, collection, protection, enforcement or administration depends on presence and geography. No arbitrary borders. Owner decides powers. |
@@ -68,3 +68,5 @@ F6 passed: owner selected Commons(0) crossings with public community access. [Ri
 F6 evidence: [420-run shared-crossing study](../research/infrastructure/REPORT.md). Construction and movement pass; unknown-resource inaction, incomplete inputs and fatal congestion remain. Player verbs are documentation only. F7 remains the next dependency gate; no traffic-generated paths or ruler interface are included in F6.
 
 Long-term UX constraint: [stable compositional controls and typed commands](PLAYER_ACTION_LANGUAGE.md). Preserve Q/W/E/R semantic stability, contextual 1–4 choices, player confirmation, information boundaries and kernel authority. Optional Jev ranking does not own command semantics. Exact bindings await play-testing; Jev and final UI implementation remain deferred, with no change to current milestone scope.
+
+F7 active: [registered civilian path feedback](PATHS_EXPERIMENT.md). F6 findings remain locked. The [future army-control architecture](ARMY_PLAYER_CONTROL.md) is documentation only; armies must later use the same geography, capacities and travel laws. No military systems are authorized during F7.
