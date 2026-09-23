@@ -15,6 +15,7 @@ pub mod persistence;
 mod policy;
 pub mod reasoning;
 mod runtime;
+pub mod settlement_research;
 pub mod shadow;
 use goods::Goods;
 pub use goods::{Batch, Holder, Material, Owner};
@@ -288,6 +289,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) settlement_research: Option<settlement_research::Journal>,
     pub(crate) paths: paths::State,
     pub(crate) infrastructure: infrastructure::State,
     pub(crate) capital: capital::State,
@@ -450,6 +452,7 @@ impl World {
         }
         let farm = farming::State::new(config.farming.as_ref(), config.nodes, config.starts.len())?;
         let mut w = Self {
+            settlement_research: None,
             paths,
             infrastructure,
             capital,
@@ -589,6 +592,12 @@ impl World {
         self.shadow.event(&e, &self.agents, &self.goods);
         self.coherence.event(&e, &self.agents);
         self.meals.event(&e, &self.agents, &self.goods.batches);
+        if settlement_research::observed_event(kind)
+            && let Some(mut journal) = self.settlement_research.take()
+        {
+            journal.event(&e, self);
+            self.settlement_research = Some(journal);
+        }
         self.diagnostics.event(&e);
         if self.config.persistence.is_some() {
             self.persistence.event(&e, &self.agents);

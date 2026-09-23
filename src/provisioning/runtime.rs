@@ -534,6 +534,10 @@ impl World {
     }
     fn integrate(&mut self, to: Time) {
         let dt = to - self.now;
+        if let Some(mut journal) = self.settlement_research.take() {
+            journal.integrate(self, dt);
+            self.settlement_research = Some(journal);
+        }
         let mut physiology_events = vec![];
         for b in &self.boards {
             if b.quantity > 0 {
