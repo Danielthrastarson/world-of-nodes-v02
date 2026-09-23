@@ -1,0 +1,29 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+warning: function `protects_choice` is never used
+   --> src/provisioning/commands.rs:268:15
+    |
+268 | pub(crate) fn protects_choice(
+    |               ^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `world-of-nodes` (lib test) generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.48s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 1 test
+
+thread 'provisioning::commands::tests::critical_hunger_without_a_known_food_source_leaves_the_role_queue_but_keeps_duty' (273) panicked at src/provisioning/commands/tests.rs:820:5:
+assertion failed: !matches!(survival.intent, Intent::FulfilOrder { .. } | Intent::Travel
+        { target: 1, .. })
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test provisioning::commands::tests::critical_hunger_without_a_known_food_source_leaves_the_role_queue_but_keeps_duty ... FAILED
+
+failures:
+
+failures:
+    provisioning::commands::tests::critical_hunger_without_a_known_food_source_leaves_the_role_queue_but_keeps_duty
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 317 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--lib`

@@ -93,7 +93,8 @@ impl World {
             "Volunteered",
             format!("request={request}; previous={previous}; no role or reservation yet"),
         );
-        self.wake.insert(id);
+        // A voluntary choice is reconsidered at the normal policy opportunity.
+        // A pending wake here made arbitrary caller checkpoints accelerate assembly.
         Ok(())
     }
     pub(crate) fn join_muster(&mut self, id: usize) -> Result<(), String> {

@@ -1,0 +1,16 @@
+
+running 1 test
+
+thread 'provisioning::command_research::tests::matched_packets_supply_same_facts_before_role_choice' (7) panicked at src/provisioning/command_research.rs:635:13:
+distant
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+provisioning::command_research::tests::matched_packets_supply_same_facts_before_role_choice --- FAILED
+
+failures:
+
+failures:
+    provisioning::command_research::tests::matched_packets_supply_same_facts_before_role_choice
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 320 filtered out; finished in 0.35s
+
+error: test failed, to rerun pass `--lib`

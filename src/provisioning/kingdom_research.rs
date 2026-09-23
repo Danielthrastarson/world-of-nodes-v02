@@ -20,6 +20,15 @@ pub struct Run {
 }
 
 pub fn fixture(case: &str, commissioned: bool, seed: u64) -> Result<Run, String> {
+    fixture_impl(case, commissioned, seed, false)
+}
+
+/// F13B reuses the registered physical world with explicit local office consent.
+pub(crate) fn command_fixture(seed: u64) -> Result<Run, String> {
+    fixture_impl("alternate", false, seed, true)
+}
+
+fn fixture_impl(case: &str, commissioned: bool, seed: u64, commands: bool) -> Result<Run, String> {
     if !CASES.contains(&case) {
         return Err("unregistered kingdom readiness case".into());
     }
@@ -32,6 +41,7 @@ pub fn fixture(case: &str, commissioned: bool, seed: u64) -> Result<Run, String>
         seed,
         trace: true,
         information: true,
+        commands,
         formation: true,
         nodes: 5,
         starts,
@@ -219,6 +229,9 @@ pub fn fixture(case: &str, commissioned: bool, seed: u64) -> Result<Run, String>
             settlement: 1,
         },
     )])?;
+    if commands {
+        w.apply_intents(vec![(STEWARD, Intent::AcceptOffice { office: 0 })])?;
+    }
     if commissioned {
         w.apply_intents(vec![(
             STEWARD,

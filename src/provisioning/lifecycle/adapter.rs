@@ -397,6 +397,11 @@ impl World {
             matured: false,
         });
         self.lifecycle.views.push(View::default());
+        if self.config.commands {
+            self.commands
+                .memories
+                .push(super::super::commands::Memory::default());
+        }
         if self.config.information {
             self.information
                 .memories

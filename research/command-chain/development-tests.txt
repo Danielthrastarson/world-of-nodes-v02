@@ -1,0 +1,51 @@
+
+running 315 tests
+.............................................................. 62/315
+provisioning::commands::tests::an_office_certificate_does_not_create_remote_project_knowledge --- FAILED
+provisioning::commands::tests::appointment_is_an_offer_until_the_candidate_accepts_in_person --- FAILED
+... 67/315
+provisioning::commands::tests::critical_food_need_wins_but_ordinary_self_provision_does_not_erase_duty --- FAILED
+........ 76/315
+provisioning::commands::tests::physical_carriage_preserves_payload_and_does_not_transport_goods_or_people --- FAILED
+....................................................................................... 164/315
+....................................................................................... 251/315
+................................................................
+failures:
+
+---- provisioning::commands::tests::an_office_certificate_does_not_create_remote_project_knowledge stdout ----
+
+thread 'provisioning::commands::tests::an_office_certificate_does_not_create_remote_project_knowledge' (2796) panicked at src/provisioning/commands/tests.rs:634:5:
+assertion `left == right` failed
+  left: [Agent { id: 0, location: Node(0), action: Idle, nutrition: 82800000, fatigue: 3600000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 11400714819323198485, goal: Some((0, false)), last_event: Some(6), death_time: None, consumed: 0, travel_since_food: 3600000000000 }, Agent { id: 1, location: Node(1), action: Idle, nutrition: 82800000, fatigue: 3600000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 4354685564936845354, goal: None, last_event: Some(2), death_time: None, consumed: 0, travel_since_food: 0 }, Agent { id: 2, location: Node(1), action: Idle, nutrition: 82800000, fatigue: 3600000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 15755400384260043839, goal: None, last_event: None, death_time: None, consumed: 0, travel_since_food: 0 }, Agent { id: 3, location: Node(1), action: Idle, nutrition: 82800000, fatigue: 3600000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 8709371129873690708, goal: None, last_event: None, death_time: None, consumed: 0, travel_since_food: 0 }]
+ right: [Agent { id: 0, location: Node(0), action: Idle, nutrition: 82800000, fatigue: 3600000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 11400714819323198485, goal: Some((0, false)), last_event: Some(5), death_time: None, consumed: 0, travel_since_food: 3600000000000 }, Agent { id: 1, location: Node(1), action: Idle, nutrition: 82800000, fatigue: 3600000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 4354685564936845354, goal: None, last_event: Some(2), death_time: None, consumed: 0, travel_since_food: 0 }, Agent { id: 2, location: Node(1), action: Idle, nutrition: 82800000, fatigue: 3600000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 15755400384260043839, goal: None, last_event: None, death_time: None, consumed: 0, travel_since_food: 0 }, Agent { id: 3, location: Node(1), action: Idle, nutrition: 82800000, fatigue: 3600000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 8709371129873690708, goal: None, last_event: None, death_time: None, consumed: 0, travel_since_food: 0 }]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- provisioning::commands::tests::appointment_is_an_offer_until_the_candidate_accepts_in_person stdout ----
+
+thread 'provisioning::commands::tests::appointment_is_an_offer_until_the_candidate_accepts_in_person' (2797) panicked at src/provisioning/commands/tests.rs:115:5:
+assertion `left == right` failed
+  left: Agent { id: 1, location: Node(1), action: Idle, nutrition: 86400000, fatigue: 0, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 4354685564936845354, goal: None, last_event: Some(0), death_time: None, consumed: 0, travel_since_food: 0 }
+ right: Agent { id: 1, location: Node(1), action: Idle, nutrition: 86400000, fatigue: 0, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 4354685564936845354, goal: None, last_event: None, death_time: None, consumed: 0, travel_since_food: 0 }
+
+---- provisioning::commands::tests::critical_food_need_wins_but_ordinary_self_provision_does_not_erase_duty stdout ----
+
+thread 'provisioning::commands::tests::critical_food_need_wins_but_ordinary_self_provision_does_not_erase_duty' (2801) panicked at src/provisioning/commands/tests.rs:545:5:
+assertion failed: matches!(survival.intent, Intent::Gather { communal: false, .. })
+
+---- provisioning::commands::tests::physical_carriage_preserves_payload_and_does_not_transport_goods_or_people stdout ----
+
+thread 'provisioning::commands::tests::physical_carriage_preserves_payload_and_does_not_transport_goods_or_people' (2809) panicked at src/provisioning/commands/tests.rs:194:5:
+assertion `left == right` failed
+  left: Agent { id: 1, location: Node(0), action: Idle, nutrition: 79200000, fatigue: 7200000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 4354685564936845354, goal: Some((0, false)), last_event: Some(12), death_time: None, consumed: 0, travel_since_food: 3600000000000 }
+ right: Agent { id: 1, location: Node(0), action: Idle, nutrition: 79200000, fatigue: 7200000, starvation: 0, job: None, memory: PolicyMemory { nodes: {} }, rng: 4354685564936845354, goal: Some((0, false)), last_event: Some(7), death_time: None, consumed: 0, travel_since_food: 3600000000000 }
+
+
+failures:
+    provisioning::commands::tests::an_office_certificate_does_not_create_remote_project_knowledge
+    provisioning::commands::tests::appointment_is_an_offer_until_the_candidate_accepts_in_person
+    provisioning::commands::tests::critical_food_need_wins_but_ordinary_self_provision_does_not_erase_duty
+    provisioning::commands::tests::physical_carriage_preserves_payload_and_does_not_transport_goods_or_people
+
+test result: FAILED. 311 passed; 4 failed; 0 ignored; 0 measured; 0 filtered out; finished in 34.71s
+
+error: test failed, to rerun pass `--lib`

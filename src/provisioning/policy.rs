@@ -16,6 +16,17 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    AcceptOffice {
+        office: usize,
+    },
+    ShareCommand {
+        message: u64,
+        recipient: usize,
+    },
+    CancelCommandDelivery,
+    FulfilOrder {
+        command: u64,
+    },
     ShareReport {
         report: u64,
         recipient: usize,
@@ -469,6 +480,7 @@ pub(crate) fn decide_with_capabilities(
 ) -> Decision {
     let super::person::Capabilities {
         information,
+        commands,
         life,
         military,
         formation,
@@ -525,6 +537,11 @@ pub(crate) fn decide_with_capabilities(
     if matches!(o.action, Action::Gather { .. }) {
         return choice(Intent::Wait, "finish one-quantum atomic gathering");
     }
+    if let Some(memory) = commands
+        && let Some(d) = super::commands::consider(o, m, memory)
+    {
+        return d;
+    }
     if let Some(memory) = care
         && let Some(d) = super::household::consider(o, m, memory)
     {
@@ -558,6 +575,16 @@ pub(crate) fn decide_with_capabilities(
     }
     if let Some(view) = military
         && let Some(d) = super::military::consider(o, m, view)
+    {
+        return d;
+    }
+    if let Some(memory) = commands
+        && let Some(d) = super::commands::consider_delivery(o, m, memory)
+    {
+        return d;
+    }
+    if let Some(memory) = commands
+        && let Some(d) = super::commands::consider_acceptance(o, m, memory)
     {
         return d;
     }

@@ -4,6 +4,7 @@ use crate::provisioning::{World, authority};
 impl World {
     pub(crate) fn person_capabilities(&self, id: usize) -> Capabilities<'_> {
         Capabilities {
+            commands: self.config.commands.then(|| &self.commands.memories[id]),
             information: self
                 .config
                 .information

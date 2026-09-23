@@ -8,7 +8,7 @@ impl World {
     pub fn information_journal(&self) -> &Journal {
         &self.information.journal
     }
-    fn information_actor_node(&self, id: usize) -> Result<usize, String> {
+    pub(crate) fn information_actor_node(&self, id: usize) -> Result<usize, String> {
         if !self.config.information {
             return Err("information institution disabled".into());
         }

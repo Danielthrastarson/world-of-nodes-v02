@@ -15,6 +15,7 @@ pub struct Polity {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum OfficeStatus {
+    Offered,
     Appointed,
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
@@ -203,15 +204,30 @@ impl World {
             polity: p.id,
             holder: candidate,
             settlement,
-            status: OfficeStatus::Appointed,
+            status: if self.config.commands {
+                OfficeStatus::Offered
+            } else {
+                OfficeStatus::Appointed
+            },
             appointed_at: self.now,
             appointed_by: issuer,
             appointment_node: node,
         };
         // Appointment conveys an institutional identity, not resources, a route, or a goal.
         self.authority.offices.push(office.clone());
+        if self.config.commands {
+            self.commands_offered(office.clone());
+        }
         self.cancel_action(issuer, "local appointment");
-        self.log(Some(issuer), "StewardAppointed", format!("{office:?}"));
+        self.log(
+            Some(issuer),
+            if self.config.commands {
+                "StewardOffered"
+            } else {
+                "StewardAppointed"
+            },
+            format!("{office:?}"),
+        );
         Ok(())
     }
     pub(super) fn commission_crossing(

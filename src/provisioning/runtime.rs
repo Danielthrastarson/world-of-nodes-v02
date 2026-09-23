@@ -141,6 +141,14 @@ impl World {
         };
         self.military_action(id, &intent);
         match intent {
+            Intent::AcceptOffice { office } => self.accept_office(id, office)?,
+            Intent::ShareCommand { message, recipient } => {
+                self.receive_command(id, recipient, message)?
+            }
+            Intent::CancelCommandDelivery => {
+                self.cancel_command_delivery(id, "RECIPIENT_ABSENT_OR_EXPLICIT_CANCEL")
+            }
+            Intent::FulfilOrder { command } => self.fulfil_order(id, command)?,
             Intent::ShareReport { report, recipient } => {
                 self.receive_report(id, recipient, report)?
             }
@@ -565,7 +573,7 @@ impl World {
         }
     }
     pub(super) fn next_time(&self, target: Time) -> Time {
-        let mut next = target;
+        let mut next = self.command_next_boundary(self.now, target);
         for v in &self.military.memories {
             if let Some(u) = &v.undertaking {
                 let t = u.until.unwrap_or(u.request.expires);
@@ -947,6 +955,7 @@ impl World {
                     self.goods.move_part(batch, q, owner, holder);
                 }
                 self.cancel_report_delivery(id, "DEATH");
+                self.command_person_died(id);
                 self.capital_death(id);
                 self.infrastructure.active_trips.remove(&id);
                 self.paths.active.remove(&id);
@@ -982,6 +991,7 @@ impl World {
             }
         }
         self.finish_military();
+        self.finish_commands();
         self.resolve_raids();
         self.finish_lifecycle();
         self.finish_farming();
@@ -1161,6 +1171,7 @@ impl World {
         let mut decisions = vec![];
         let mut stale_events = vec![];
         for id in ids {
+            self.command_before_decision(id);
             self.observe_military(id);
             self.observe_combat(id);
             self.observe_lifecycle(id);
@@ -1223,6 +1234,7 @@ impl World {
                 self.acceptance.record(&o, &d, audit);
             }
             let capabilities = person::Capabilities {
+                commands: self.config.commands.then(|| &self.commands.memories[id]),
                 information: self
                     .config
                     .information
@@ -1297,7 +1309,14 @@ impl World {
             let selected_report_delivery = self.config.information
                 && self.information.memories[id].delivery.is_some()
                 && selected.decision.reason.starts_with("report ");
-            let decision = if selected_report_delivery
+            let decision = if (self.config.commands
+                && commands::protects_choice(
+                    &o,
+                    &self.agents[id].memory,
+                    &self.commands.memories[id],
+                    &selected.decision,
+                ))
+                || selected_report_delivery
                 || self.is_child(id)
                 || self.biology(id).is_some_and(|b| b.undertaking.is_some())
                 || matches!(selected.decision.intent, Intent::Reproduce { .. })
@@ -1306,6 +1325,7 @@ impl World {
             } else {
                 self.barter_decision(id, &o, selected.decision)
             };
+            self.record_command_choice(id, &decision);
             self.record_unit_choice(id, &decision);
             self.record_military_choice(id, &o, &decision);
             self.record_lifecycle_choice(id, &o, &decision);

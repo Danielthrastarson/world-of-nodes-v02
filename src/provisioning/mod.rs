@@ -5,6 +5,8 @@ pub mod barter;
 pub mod capital;
 pub mod coherence;
 pub mod combat;
+pub mod command_research;
+pub mod commands;
 pub mod congestion;
 pub mod decomposition;
 pub mod experiment;
@@ -66,6 +68,8 @@ pub enum DiagnosticPolicy {
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
     pub information: bool,
+    /// F13B voluntary accepted offices and physically conveyed scoped orders.
+    pub commands: bool,
     pub combat: Option<combat::Config>,
     pub formation: bool,
     pub military: Option<military::Config>,
@@ -104,6 +108,7 @@ impl Default for Config {
     fn default() -> Self {
         Self {
             information: false,
+            commands: false,
             combat: None,
             formation: false,
             military: None,
@@ -340,6 +345,7 @@ pub struct Event {
 #[derive(Clone, Debug)]
 pub struct World {
     pub(crate) information: information::State,
+    pub(crate) commands: commands::State,
     pub(crate) combat: combat::State,
     pub(crate) formation: formation::State,
     pub(crate) military: military::State,
@@ -526,8 +532,13 @@ impl World {
         let formation = formation::State::new(&config)?;
         let combat = combat::State::new(&config)?;
         let information = information::State::new(&config);
+        if config.commands && (!config.information || config.authority.is_none()) {
+            return Err("scoped commands require information and authority institutions".into());
+        }
+        let commands = commands::State::new(&config);
         let mut w = Self {
             information,
+            commands,
             combat,
             formation,
             military,
@@ -710,6 +721,7 @@ impl World {
         self.audit_formation()?;
         self.audit_combat()?;
         self.audit_information()?;
+        self.audit_commands()?;
         self.audit_military()?;
         self.audit_lifecycle()?;
         self.audit_social()?;

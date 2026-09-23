@@ -1,5 +1,9 @@
 # F13: owner decision on the first ruler interaction
 
+**Historical proposal, superseded by the owner's F13B scoped office-obligation decision.**
+See [the adopted narrow contract](COMMAND_AUTHORITY.md). The options below remain
+for provenance; none was silently adopted.
+
 Status: proposal only. No option below is adopted by this document. F12 establishes transported evidence; it does not establish an entitlement to another person's labor or obedience.
 
 F13A can continue with research-controlled **local steward commissioning** under the existing institution. It can test whether a lawful commission propagates through construction, movement, production, households and security. That requires no new remote command right. Label the issuing action and any prepared appointments as controlled inputs. A successful readiness experiment does not establish autonomous political initiative or a player-to-steward command channel.

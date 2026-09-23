@@ -1,0 +1,27 @@
+{
+  "completed": [
+    "local_control_000",
+    "local_order_000",
+    "distant_control_000",
+    "distant_order_000",
+    "late_control_000",
+    "late_order_000",
+    "stale_control_000",
+    "stale_order_000",
+    "revocation_control_000",
+    "revocation_order_000",
+    "death_control_000",
+    "death_order_000",
+    "scope_control_000",
+    "scope_order_000",
+    "resource_control_000",
+    "resource_order_000",
+    "refusal_control_000",
+    "refusal_order_000",
+    "integrated_control_000",
+    "integrated_order_000"
+  ],
+  "meaning": "All registered runs finished and passed kernel/FIFO validation, not an automatic milestone gate decision.",
+  "runs": 20,
+  "status": "PASS"
+}

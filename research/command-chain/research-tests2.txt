@@ -1,0 +1,28 @@
+
+running 2 tests
+provisioning::command_research::tests::matched_packets_supply_same_facts_before_role_choice --- FAILED
+provisioning::command_research::tests::research_actions_do_not_depend_on_caller_checkpoints --- FAILED
+
+failures:
+
+---- provisioning::command_research::tests::matched_packets_supply_same_facts_before_role_choice stdout ----
+
+thread 'provisioning::command_research::tests::matched_packets_supply_same_facts_before_role_choice' (2725) panicked at src/provisioning/command_research.rs:635:13:
+distant
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- provisioning::command_research::tests::research_actions_do_not_depend_on_caller_checkpoints stdout ----
+
+thread 'provisioning::command_research::tests::research_actions_do_not_depend_on_caller_checkpoints' (2726) panicked at src/provisioning/command_research.rs:656:13:
+assertion `left == right` failed: integrated
+  left: 14466241628547027030
+ right: 12600614142196943483
+
+
+failures:
+    provisioning::command_research::tests::matched_packets_supply_same_facts_before_role_choice
+    provisioning::command_research::tests::research_actions_do_not_depend_on_caller_checkpoints
+
+test result: FAILED. 0 passed; 2 failed; 0 ignored; 0 measured; 318 filtered out; finished in 33.53s
+
+error: test failed, to rerun pass `--lib`
