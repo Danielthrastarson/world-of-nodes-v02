@@ -1,0 +1,2 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `release` profile [optimized] target(s) in 7.64s

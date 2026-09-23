@@ -1,0 +1,49 @@
+{
+  "source_revision": "77a7ddd",
+  "analysis_revision": "77a7dddb4a8f931fb195daded9902d6c877b9be1",
+  "maps": [
+    "line",
+    "branch",
+    "alternative_routes",
+    "dead_end",
+    "bottleneck",
+    "unequal_sources"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "prior_files_unchanged": 801,
+  "excluded_self_generated_progress_log": [
+    "research/geography/matrix.log",
+    "research/geography/regressions/adoption-equivalence.csv (current-run regression finished after snapshot; complete result equals prior 19-scenario proof)"
+  ]
+}

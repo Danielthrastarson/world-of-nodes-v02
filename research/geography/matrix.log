@@ -1,0 +1,11 @@
+line complete
+branch complete
+dead_end complete
+bottleneck complete
+alternative_routes complete
+unequal_sources complete
+Traceback (most recent call last):
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/run_geography.py", line 21, in <module>
+    for p,h in prior.items():assert hashlib.sha256(Path(p).read_bytes()).hexdigest()==h,p
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: research/geography/matrix.log

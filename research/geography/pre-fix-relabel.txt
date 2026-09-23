@@ -1,0 +1,25 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error[E0369]: binary operation `==` cannot be applied to type `provisioning::Observation`
+   --> src/provisioning/geography.rs:116:17
+    |
+116 |                 assert_eq!(oa, ob);
+    |                 ^^^^^^^^^^^^^^^^^^
+    |                 |
+    |                 provisioning::Observation
+    |                 provisioning::Observation
+    |
+note: an implementation of `PartialEq` might be missing for `provisioning::Observation`
+   --> src/provisioning/mod.rs:212:1
+    |
+212 | pub struct Observation {
+    | ^^^^^^^^^^^^^^^^^^^^^^ must implement `PartialEq`
+help: consider annotating `provisioning::Observation` with `#[derive(PartialEq)]`
+   --> src/provisioning/mod.rs:212:1
+    |
+212 + #[derive(PartialEq)]
+213 | pub struct Observation {
+    |
+
+For more information about this error, try `rustc --explain E0369`.
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...

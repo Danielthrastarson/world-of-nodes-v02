@@ -1,0 +1,21 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.92s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 1 test
+
+thread 'provisioning::geography::tests::relabeling_preserves_the_physical_request_and_unique_route' (1162) panicked at src/provisioning/geography.rs:73:13:
+assertion `left == right` failed: request must follow its configured board, hour=0
+  left: 600
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test provisioning::geography::tests::relabeling_preserves_the_physical_request_and_unique_route ... FAILED
+
+failures:
+
+failures:
+    provisioning::geography::tests::relabeling_preserves_the_physical_request_and_unique_route
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 76 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--lib`

@@ -1,0 +1,350 @@
+{
+  "line": {
+    "survivors_36h": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "survivors_48h": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "survivors_72h": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "food_consumed": {
+      "min": 1264.0,
+      "mean": 1264.0,
+      "max": 1264.0
+    },
+    "food_spoiled": {
+      "min": 1736.0,
+      "mean": 1736.0,
+      "max": 1736.0
+    },
+    "jobs_accepted": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "starvation_person_hours": {
+      "min": 944.0,
+      "mean": 944.0,
+      "max": 944.0
+    },
+    "queue_person_hours": {
+      "min": 809.582222,
+      "mean": 809.582222,
+      "max": 809.582222
+    },
+    "failed_stale_trips": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "source_discoverers": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "distinct_event_histories": 1
+  },
+  "branch": {
+    "survivors_36h": {
+      "min": 44.0,
+      "mean": 44.0,
+      "max": 44.0
+    },
+    "survivors_48h": {
+      "min": 44.0,
+      "mean": 44.0,
+      "max": 44.0
+    },
+    "survivors_72h": {
+      "min": 40.0,
+      "mean": 40.0,
+      "max": 40.0
+    },
+    "food_consumed": {
+      "min": 1800.0,
+      "mean": 1800.0,
+      "max": 1800.0
+    },
+    "food_spoiled": {
+      "min": 1200.0,
+      "mean": 1200.0,
+      "max": 1200.0
+    },
+    "jobs_accepted": {
+      "min": 8.0,
+      "mean": 8.0,
+      "max": 8.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "starvation_person_hours": {
+      "min": 940.0,
+      "mean": 940.0,
+      "max": 940.0
+    },
+    "queue_person_hours": {
+      "min": 1170.179606,
+      "mean": 1176.6253269666668,
+      "max": 1180.936222
+    },
+    "failed_stale_trips": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "source_discoverers": {
+      "min": 44.0,
+      "mean": 44.0,
+      "max": 44.0
+    },
+    "distinct_event_histories": 30
+  },
+  "alternative_routes": {
+    "survivors_36h": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "survivors_48h": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "survivors_72h": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "food_consumed": {
+      "min": 2366.0,
+      "mean": 2366.0,
+      "max": 2366.0
+    },
+    "food_spoiled": {
+      "min": 634.0,
+      "mean": 634.0,
+      "max": 634.0
+    },
+    "jobs_accepted": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "starvation_person_hours": {
+      "min": 634.0,
+      "mean": 634.0,
+      "max": 634.0
+    },
+    "queue_person_hours": {
+      "min": 479.773104,
+      "mean": 505.6262400333334,
+      "max": 515.048071
+    },
+    "failed_stale_trips": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "source_discoverers": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "distinct_event_histories": 30
+  },
+  "dead_end": {
+    "survivors_36h": {
+      "min": 16.0,
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "survivors_48h": {
+      "min": 16.0,
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "survivors_72h": {
+      "min": 16.0,
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "food_consumed": {
+      "min": 697.0,
+      "mean": 707.6333333333333,
+      "max": 708.0
+    },
+    "food_spoiled": {
+      "min": 2292.0,
+      "mean": 2292.366666666667,
+      "max": 2303.0
+    },
+    "jobs_accepted": {
+      "min": 12.0,
+      "mean": 17.9,
+      "max": 37.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "starvation_person_hours": {
+      "min": 1068.0,
+      "mean": 1068.3666666666666,
+      "max": 1079.0
+    },
+    "queue_person_hours": {
+      "min": 1142.162516,
+      "mean": 1156.0667154333332,
+      "max": 1157.770777
+    },
+    "failed_stale_trips": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "source_discoverers": {
+      "min": 16.0,
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "distinct_event_histories": 30
+  },
+  "bottleneck": {
+    "survivors_36h": {
+      "min": 6.0,
+      "mean": 6.0,
+      "max": 6.0
+    },
+    "survivors_48h": {
+      "min": 6.0,
+      "mean": 6.0,
+      "max": 6.0
+    },
+    "survivors_72h": {
+      "min": 6.0,
+      "mean": 6.0,
+      "max": 6.0
+    },
+    "food_consumed": {
+      "min": 263.0,
+      "mean": 263.0,
+      "max": 263.0
+    },
+    "food_spoiled": {
+      "min": 2737.0,
+      "mean": 2737.0,
+      "max": 2737.0
+    },
+    "jobs_accepted": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "starvation_person_hours": {
+      "min": 1153.0,
+      "mean": 1153.0,
+      "max": 1153.0
+    },
+    "queue_person_hours": {
+      "min": 1231.955556,
+      "mean": 1231.955556,
+      "max": 1231.955556
+    },
+    "failed_stale_trips": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "source_discoverers": {
+      "min": 6.0,
+      "mean": 6.0,
+      "max": 6.0
+    },
+    "distinct_event_histories": 1
+  },
+  "unequal_sources": {
+    "survivors_36h": {
+      "min": 43.0,
+      "mean": 43.5,
+      "max": 44.0
+    },
+    "survivors_48h": {
+      "min": 43.0,
+      "mean": 43.5,
+      "max": 44.0
+    },
+    "survivors_72h": {
+      "min": 32.0,
+      "mean": 32.0,
+      "max": 32.0
+    },
+    "food_consumed": {
+      "min": 1564.0,
+      "mean": 1564.0,
+      "max": 1564.0
+    },
+    "food_spoiled": {
+      "min": 1436.0,
+      "mean": 1436.0,
+      "max": 1436.0
+    },
+    "jobs_accepted": {
+      "min": 8.0,
+      "mean": 8.0,
+      "max": 8.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "starvation_person_hours": {
+      "min": 1048.456667,
+      "mean": 1059.9244450666667,
+      "max": 1071.492222
+    },
+    "queue_person_hours": {
+      "min": 1118.080896,
+      "mean": 1130.1565461,
+      "max": 1147.346388
+    },
+    "failed_stale_trips": {
+      "min": 4.0,
+      "mean": 4.0,
+      "max": 4.0
+    },
+    "source_discoverers": {
+      "min": 44.0,
+      "mean": 44.0,
+      "max": 44.0
+    },
+    "distinct_event_histories": 30
+  }
+}

@@ -48,3 +48,8 @@ research variant. Covered composite forecasts now conform to the kernel; the
 and still delivers zero communal food. The default policy remains unchanged.
 Reproduce with `cargo build --release --bin coherence_probe` and
 `python3 scripts/run_coherence.py NEW_OUTPUT_DIRECTORY 30`.
+
+The [F0 adoption/conditional-meal report](research/meals/REPORT.md) adopts mechanical
+corrections while retaining no-meal planning by default. The gated roadmap continues
+through geography and provisioning diagnostics; each stage records its gate in
+[ROADMAP.md](docs/ROADMAP.md). Historical probe commands stay explicitly reproducible.
