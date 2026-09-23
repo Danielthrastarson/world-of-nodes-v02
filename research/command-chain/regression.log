@@ -1,0 +1,12 @@
+Running /usr/bin/python3 scripts/verify_information.py research/command-chain/regression/historical
+Running /usr/bin/python3 scripts/run_information.py research/command-chain/regression/information 30
+Traceback (most recent call last):
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/verify_command_regressions.py", line 253, in <module>
+    main()
+    ~~~~^^
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/verify_command_regressions.py", line 230, in main
+    require(comparison["status"] == "PASS", f"{name} semantic regression; see {validation_name}")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/verify_command_regressions.py", line 24, in require
+    raise RuntimeError(detail)
+RuntimeError: F12 semantic regression; see information-validation.json

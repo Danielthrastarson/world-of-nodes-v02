@@ -1,0 +1,124 @@
+{
+  "status": "PASSED_REGISTERED_HEADLESS_SCOPE",
+  "milestones": {
+    "F13B": "PASSED",
+    "F13": "PASSED_HEADLESS_COMMAND_CHAIN",
+    "F14": "NOT_STARTED"
+  },
+  "baseline_revision": "f1abb74",
+  "implementation_revision": "b1e264268324e5b9a9f655209de9d14213471d7e",
+  "primary_runtime_revision": "ff7052773c97be2d202dbb0b1e7a9bb3a03d2f6e",
+  "primary_runs": 600,
+  "paired_conditions": 300,
+  "cases": 10,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "test_count": 339,
+  "command_tests": 29,
+  "command_research_tests": 3,
+  "strict_clippy": "PASS",
+  "physical_audit_checkpoints": 17880,
+  "primary_audit_failures": 0,
+  "primary_fifo_overtakes": 0,
+  "prior_research_files_unchanged": 16215,
+  "frozen_runtime_manifest_unchanged": true,
+  "historical_replays": {
+    "status": "PASS_WITH_DISCLOSED_TECHNICAL_CORRECTION",
+    "runtime_source_revision": "ff7052773c97be2d202dbb0b1e7a9bb3a03d2f6e",
+    "historical_executions": 1237,
+    "exact_under_registered_comparison_rules": 1207,
+    "reviewed_changed_histories": 30,
+    "panels": {
+      "historical": {
+        "runs": 217,
+        "status": "PASS_UNDER_REGISTERED_COMPARATOR",
+        "evidence": "historical/validation.json"
+      },
+      "F12": {
+        "runs": 840,
+        "status": "PASS",
+        "evidence": "information-validation-reviewed.json"
+      },
+      "F13A": {
+        "runs": 180,
+        "strict_status": "FAIL",
+        "exact_runs": 150,
+        "reviewed_technical_correction_runs": 30,
+        "strict_evidence": "kingdom-readiness-validation.json",
+        "review": "../clock-regression-review.json"
+      }
+    },
+    "prior_files_unchanged": 16215,
+    "strict_failure_preserved": true,
+    "runtime_changed_after_primary_freeze": false,
+    "interpretation": "Thirty long_commissioned F13A histories shift assembly/service expiry7200ms after a demonstrated scheduling correction. Final physical outcomes match. Other registered replay data match; no generic hash exemption."
+  },
+  "gate_evidence": {
+    "physical_information_to_office": "local and integrated primary traces",
+    "role_arbitration": "Person decisions, survival pauses, clock/deadline/locality tests",
+    "institution_to_physical_world": "30 integrated order runs build crossing vs0 controls; goods/labor/trips retained",
+    "second_order_consequences": "Deaths8to6;foodconsumed656to680;starvation197.983333to244.246667personh. Mixed, no general benefit."
+  },
+  "controlled_not_autonomous": [
+    "royal issue choice",
+    "local office acceptance in fixtures",
+    "already-willing courier purpose",
+    "explicit refusal choice",
+    "supplemental arranged receipt witnesses"
+  ],
+  "limitations": [
+    "No live delayed-revocation receipt in primary panel",
+    "Distant/late/stale courier arrival is not receipt",
+    "No general refusal psychology or autonomous political strategy",
+    "Command completion is local commission, not project completion",
+    "One clock correction changes30 historical timing/hash results; strict failure retained",
+    "No automatic public-project repeal; no coercive powers or final UI"
+  ],
+  "evidence_sha256": {
+    "full-tests.txt": "eb7f2c64d2c0f4dce4784853bddfc70d63e1ca2337193d5df8c5b1bad9341c97",
+    "final-clippy.txt": "40df14a56ccc06fb68df9d463ae48845a28d2645c023c298a3bdad061f5ab8e1",
+    "final-release-build.txt": "92434e198f27984c035c376ec77a7cf9e6ebdde782f8ccb1336ae3329b66ddb7",
+    "final-integrity.json": "056fef19e85308c8a42ee2bb8192211dc01a5588d335279599b14be072d24250",
+    "matrix/provenance.json": "4ca1659da1f80e12c8d122ef733d8d9a4e5159dcd8e2215281a51fdad96c6b00",
+    "matrix/completion.json": "a2afcc5f1165829d3e6221bd8e883e0ba5175c81105662889d0a20f15f04d9f9",
+    "analysis/summary.json": "9d9f5a90d67415b3486bbcd11743647b140690a0884657b5ded69625662e4551",
+    "clock-regression-review.json": "5139253113069f38708e8c8f5e1f2e6a98c2080c1655e8bbb4b3ad3e7be0c456",
+    "regression/validation-reviewed.json": "40bca1e016e32c89945a6f4751f8c607113a6a3861835084802c36ce57d56f10",
+    "prior-artifacts.json": "2935a0cf3a529a4d81ce577f46036a08cea64b89d5ff74cf499a524633736aed"
+  },
+  "artifact_formatting": {
+    "source_docs_scripts_diff_check": "PASS",
+    "raw_csv_parameter_whitespace_diagnostics": 1502,
+    "interpretation": "Generated CSV CRLF and parameter blank final lines retained verbatim for immutable evidence; no raw output normalization."
+  }
+}

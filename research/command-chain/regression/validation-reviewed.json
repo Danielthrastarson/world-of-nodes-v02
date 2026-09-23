@@ -1,0 +1,31 @@
+{
+  "status": "PASS_WITH_DISCLOSED_TECHNICAL_CORRECTION",
+  "runtime_source_revision": "ff7052773c97be2d202dbb0b1e7a9bb3a03d2f6e",
+  "historical_executions": 1237,
+  "exact_under_registered_comparison_rules": 1207,
+  "reviewed_changed_histories": 30,
+  "panels": {
+    "historical": {
+      "runs": 217,
+      "status": "PASS_UNDER_REGISTERED_COMPARATOR",
+      "evidence": "historical/validation.json"
+    },
+    "F12": {
+      "runs": 840,
+      "status": "PASS",
+      "evidence": "information-validation-reviewed.json"
+    },
+    "F13A": {
+      "runs": 180,
+      "strict_status": "FAIL",
+      "exact_runs": 150,
+      "reviewed_technical_correction_runs": 30,
+      "strict_evidence": "kingdom-readiness-validation.json",
+      "review": "../clock-regression-review.json"
+    }
+  },
+  "prior_files_unchanged": 16215,
+  "strict_failure_preserved": true,
+  "runtime_changed_after_primary_freeze": false,
+  "interpretation": "Thirty long_commissioned F13A histories shift assembly/service expiry7200ms after a demonstrated scheduling correction. Final physical outcomes match. Other registered replay data match; no generic hash exemption."
+}

@@ -1,0 +1,99 @@
+WORLD OF NODES — F13B SCOPED COMMAND CHAIN REPORT
+
+F13B and F13 PASSED at the registered headless command-chain scope.
+Runtime source: ff7052773c97be2d202dbb0b1e7a9bb3a03d2f6e (core b1e2642).
+
+IMPLEMENTED
+
+A Person explicitly accepts a steward office and its bounded duties. The
+sovereign can issue a typed order to commission an existing local public crossing.
+Orders and revocations physically travel through F12. Valid receipt creates a
+role obligation in the common Person architecture; critical survival can pause it.
+Scope rejection, expiry, failure and deliberate refusal remain distinct.
+
+No universal royal command authority, taxes, conscription, requisition, compulsory
+labor, punishment, money, project repeal or final UI was introduced.
+
+EVIDENCE
+
+600 runs: 10 cases x 2 arms x 30 paired seeds.
+All 600 final audits and 17,880 hourly checkpoints pass; zero FIFO overtakes.
+
+Among 300 ordered runs:
+- 300 orders issued; 450 relay/order transmissions; 180 addressed receipts.
+- 150 valid obligations; 30 invalid out-of-scope orders.
+- 90 completed commission duties; 30 explicit controlled refusals; 30 expirations.
+- 30 crossings physically constructed, all in the integrated case.
+- 30 revocations sent; none received in the primary panel.
+
+Completed duty means local authorization, not completed construction. The local
+and resource-limited fixtures both commission but commit no wood. The scarce
+fixture cannot meet the recipe, but scarcity alone does not explain the abundant
+fixture's lack of participation.
+
+INTEGRATED COMPARISON, PER RUN
+
+No order -> scoped order:
+Crossings:                 0 -> 1
+Wood invested:             0 -> 20
+Construction labor:        0 -> 9.322222 person-hours
+Improved-edge trips:       0 -> 42
+Food produced:           360 -> 360
+Food consumed:           656 -> 680
+Deaths:                    8 -> 6
+Starvation exposure:     197.983333 -> 244.246667 person-hours
+Queue exposure:            1.100000 -> 1.775000 person-hours
+Care food transferred:     0 -> 11
+Dependent-cohort hunger:   53.983333 -> 66.283333 starvation-person-hours
+Food stolen:              30 -> 30
+
+Order issued at 1h; received at 1.265667h; commissioned at 6.016667h after the
+registered steward release; crossing completed at 15.705556h. The ordinary
+voluntary construction and movement systems produce the consequences.
+
+Fewer deaths coexist with more starvation. This does not establish better welfare.
+These results repeat across the thirty registered seeds; they are not thirty
+different ecological environments or proof of an optimal ruler strategy.
+
+NEGATIVE RESULTS
+
+Long-distance couriers reach the location at 19.075h but eat and sleep before
+handoff. The revocation courier arrives at 21.325h but likewise fails to transmit.
+Physical arrival is not communication. No sleep, food or transport rule was tuned.
+Live late/stale/revocation-receipt effects therefore remain unexposed in those runs.
+
+Separate physical-contact controls validate expired receipt, stale-but-valid
+execution and delayed revocation. Withdrawal stops an open pending duty only
+after receipt; it cannot undo an already completed commission. These are controlled
+mechanism witnesses, not autonomous messenger successes.
+
+Royal issuance, office acceptance, initial courier purpose and the refusal case
+are controlled inputs. No autonomous government or general refusal psychology is
+claimed. Orders create obligations; they do not force the next action or outcome.
+
+REGRESSION STATUS
+
+339 tests pass; strict Clippy and formatting pass.
+All 16,215 previous research artifacts remain byte-for-byte unchanged.
+
+1,237 historical executions were checked. 1,207 match under registered comparison
+rules. Thirty F13A long-commissioned histories show an explained existing-clock
+repair: a leftover volunteer wake formerly let another person's sleep boundary
+trigger early assembly. Assembly and service expiry now occur 7.2 seconds later.
+Final physical outcomes match, while intermediate duty/idle accounting and hashes
+change. The strict failure is retained beside an exact bounded independent review.
+Do not claim every old hash is unchanged.
+
+CURRENT BOUNDARY
+
+The complete chain now exists:
+sovereign -> physical message -> accepted office -> role obligation -> Person
+decision -> local commission -> real construction -> second-order consequences.
+
+F14, collective political coordination, further coercive powers and final UI
+remain unimplemented. Money remains unjustified. Existing negative findings stand.
+
+Full report: research/command-chain/REPORT.md
+Validation: research/command-chain/validation.json
+Causal traces: research/command-chain/TRACE_EXCERPTS.md
+Clock review: research/command-chain/CLOCK_REGRESSION_REVIEW.md

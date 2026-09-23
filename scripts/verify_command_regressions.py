@@ -16,7 +16,12 @@ import subprocess
 import sys
 
 
-PARAMETER_ADDITION = b"commands: false, "
+PARAMETER_ADDITIONS = (b"commands: false, ", b"    commands: false,\n", b"    commands: false,\\n")
+
+def normalize_parameters(data):
+    for addition in PARAMETER_ADDITIONS:
+        data = data.replace(addition, b"")
+    return data
 
 
 def require(condition, detail):
@@ -71,7 +76,7 @@ def compare_panel(old_root, new_root, name, expected, runtime_field):
     result = {"panel": name, "old_root": str(old_root), "new_root": str(new_root),
               "differences": [], "checks": [], "runs": 0,
               "csv_exception": f"Only {runtime_field} values; column identity/order remains exact",
-              "parameter_exception": "Remove literal 'commands: false, ' from parameters.txt only; all remaining bytes exact"}
+              "parameter_exception": "Remove only disabled commands:false Config field in compact, pretty or escaped-pretty layout; all remaining bytes exact"}
     differences = result["differences"]
 
     def fail(scope, reason, **detail):
@@ -147,10 +152,10 @@ def compare_panel(old_root, new_root, name, expected, runtime_field):
                 continue
             if filename == "parameters.txt":
                 check["comparison"] = "Exact bytes after removing only explicit disabled commands Config field"
-                check["old_disabled_command_fields"] = before.count(PARAMETER_ADDITION)
-                check["new_disabled_command_fields"] = after.count(PARAMETER_ADDITION)
-                before = before.replace(PARAMETER_ADDITION, b"")
-                after = after.replace(PARAMETER_ADDITION, b"")
+                check["old_disabled_command_fields"] = sum(before.count(p) for p in PARAMETER_ADDITIONS)
+                check["new_disabled_command_fields"] = sum(after.count(p) for p in PARAMETER_ADDITIONS)
+                before = normalize_parameters(before)
+                after = normalize_parameters(after)
                 check["old_normalized_sha256"] = sha(before)
                 check["new_normalized_sha256"] = sha(after)
             else:
@@ -193,7 +198,7 @@ def main():
         "specification_sha256": {str(path): sha(path.read_bytes()) for path in specs},
         "expected_executions": {"historical": 217, "F12": 840, "F13A": 180, "total": 1237},
         "csv_exceptions": {"F12": ["runtime_ms"], "F13A": ["elapsed_ms"]},
-        "parameter_normalization": "parameters.txt only: remove literal 'commands: false, '",
+        "parameter_normalization": "parameters.txt only: remove disabled commands:false field in compact/pretty/escaped-pretty Config formatting",
         "historical_verifier": "scripts/verify_information.py retains its documented preexisting historical comparison rules",
         "retention": "All new F12/F13A raw outputs retained; nested historical verifier retains fingerprints or a failure archive. No old evidence rewritten.",
     }

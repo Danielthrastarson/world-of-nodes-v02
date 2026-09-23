@@ -1,0 +1,20 @@
+{
+  "completed_panels": {
+    "F12": {
+      "differences": 28,
+      "runs": 840,
+      "status": "FAIL",
+      "validation": "information-validation.json"
+    },
+    "historical": {
+      "runs": 217,
+      "status": "PASS",
+      "validation": "historical/validation.json"
+    }
+  },
+  "error": "RuntimeError('F12 semantic regression; see information-validation.json')",
+  "phase": "F12",
+  "retention": "All new completed/partial output preserved. Inspect phase logs and comparison differences; old research untouched.",
+  "source_revision": "ff7052773c97be2d202dbb0b1e7a9bb3a03d2f6e",
+  "status": "FAIL"
+}

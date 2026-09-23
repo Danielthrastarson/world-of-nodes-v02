@@ -1,0 +1,1530 @@
+{
+  "checks": [
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "b8a0595e694734e9160575686f6d040b2ae5c32db47cceff023b5ae86fb0cc7a",
+      "old_bytes": 6308,
+      "old_content_sha256": "b8a0595e694734e9160575686f6d040b2ae5c32db47cceff023b5ae86fb0cc7a",
+      "scope": "absent_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 408018,
+      "new_content_sha256": "7e66956f8107682bc6b4313fda2f13683a3ffb6890fd30c3d0004b7352741704",
+      "old_bytes": 408018,
+      "old_content_sha256": "7e66956f8107682bc6b4313fda2f13683a3ffb6890fd30c3d0004b7352741704",
+      "scope": "absent_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3441,
+      "new_content_sha256": "de225d1a6fd01929135b2ded36a756b8d51c8885ff425431c8bfad287d58dc0d",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "519627fdf68912355a69c387382e57a64e3311f5370303d679011e0c18004bff",
+      "old_bytes": 3419,
+      "old_content_sha256": "519627fdf68912355a69c387382e57a64e3311f5370303d679011e0c18004bff",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "519627fdf68912355a69c387382e57a64e3311f5370303d679011e0c18004bff",
+      "scope": "absent_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "absent_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6329,
+      "new_content_sha256": "110526b6e29c55d2c8c7df7af393240a1c3b4162fb5502b5534180e23f87b37d",
+      "new_rows": 30,
+      "old_bytes": 6329,
+      "old_content_sha256": "2d1f73a4bbe9b53438596bb331bb694f087651640a1aec297259f6d4efd44143",
+      "old_rows": 30,
+      "scope": "absent_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "absent_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "b8a0595e694734e9160575686f6d040b2ae5c32db47cceff023b5ae86fb0cc7a",
+      "old_bytes": 6308,
+      "old_content_sha256": "b8a0595e694734e9160575686f6d040b2ae5c32db47cceff023b5ae86fb0cc7a",
+      "scope": "absent_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 367334,
+      "new_content_sha256": "bc6642c358b23f211766baac5e0f35803ea7c150eba7d2cac4a7b18233b4117c",
+      "old_bytes": 367334,
+      "old_content_sha256": "bc6642c358b23f211766baac5e0f35803ea7c150eba7d2cac4a7b18233b4117c",
+      "scope": "absent_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3511,
+      "new_content_sha256": "2315cf7c38feabb822afed55be0b2ef7a93fba69a99290e2b2fb7bf41fb2326e",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "d3761125bee29354596cd7f4e87122a065e04ec7afe57cb6d9fee0a6e6d2b576",
+      "old_bytes": 3489,
+      "old_content_sha256": "d3761125bee29354596cd7f4e87122a065e04ec7afe57cb6d9fee0a6e6d2b576",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "d3761125bee29354596cd7f4e87122a065e04ec7afe57cb6d9fee0a6e6d2b576",
+      "scope": "absent_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "absent_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 7739,
+      "new_content_sha256": "74282c63a8b33f6237d577881eb366dd7a29b8dfd69665961c96d80f38f4c58f",
+      "new_rows": 30,
+      "old_bytes": 7739,
+      "old_content_sha256": "fe14c8db2c55b7960a35890a704a088bcbb520893bb4b4a915d6b9e6c19cdf9d",
+      "old_rows": 30,
+      "scope": "absent_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "absent_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "old_bytes": 6308,
+      "old_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "scope": "congestion_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 1663780,
+      "new_content_sha256": "c5d11369007ad9170e91d5cc9b6ebc155b48c88c0d5b3f46290c4574a34a4ad0",
+      "old_bytes": 1663780,
+      "old_content_sha256": "c5d11369007ad9170e91d5cc9b6ebc155b48c88c0d5b3f46290c4574a34a4ad0",
+      "scope": "congestion_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 6146,
+      "new_content_sha256": "ab27dafe5ad5d5d98fd6d8b09aece56328826644b7ed05aac1f16117c20f9eb1",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "f5c3e51a65db07cc9c01543c1c54ba54babc7063db2f1e1154bb63b3bd5a6e73",
+      "old_bytes": 6124,
+      "old_content_sha256": "f5c3e51a65db07cc9c01543c1c54ba54babc7063db2f1e1154bb63b3bd5a6e73",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "f5c3e51a65db07cc9c01543c1c54ba54babc7063db2f1e1154bb63b3bd5a6e73",
+      "scope": "congestion_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 32379,
+      "new_content_sha256": "c6d949b7b4599e506ed7e78ca2c0095b093c8ef1c5322aadae9b2e3d3695f83c",
+      "old_bytes": 32379,
+      "old_content_sha256": "c6d949b7b4599e506ed7e78ca2c0095b093c8ef1c5322aadae9b2e3d3695f83c",
+      "scope": "congestion_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 7385,
+      "new_content_sha256": "d03598ccaab8eafa539c5e8651735daee7b5cdd558ebb538f894035aafe4f3ef",
+      "new_rows": 30,
+      "old_bytes": 7402,
+      "old_content_sha256": "87e7f244eb47f18944ea28c42de145684d9fd0af410f30dd137511c1b15aa3f7",
+      "old_rows": 30,
+      "scope": "congestion_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "congestion_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "old_bytes": 6308,
+      "old_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "scope": "congestion_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 1507020,
+      "new_content_sha256": "9c604bca99ca82b490f57b551aab58bc553a4861b4bf0778c496e1e3c88f5a01",
+      "old_bytes": 1507020,
+      "old_content_sha256": "9c604bca99ca82b490f57b551aab58bc553a4861b4bf0778c496e1e3c88f5a01",
+      "scope": "congestion_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 6217,
+      "new_content_sha256": "09150088414a856c938bcce116fcddd95111f380345f2b5bbbe5084be2f1037a",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "6efa234dcab54b28918527ecaa59e300ec756bf80aff325c7652f9bac23b6e8f",
+      "old_bytes": 6195,
+      "old_content_sha256": "6efa234dcab54b28918527ecaa59e300ec756bf80aff325c7652f9bac23b6e8f",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "6efa234dcab54b28918527ecaa59e300ec756bf80aff325c7652f9bac23b6e8f",
+      "scope": "congestion_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 32379,
+      "new_content_sha256": "c6d949b7b4599e506ed7e78ca2c0095b093c8ef1c5322aadae9b2e3d3695f83c",
+      "old_bytes": 32379,
+      "old_content_sha256": "c6d949b7b4599e506ed7e78ca2c0095b093c8ef1c5322aadae9b2e3d3695f83c",
+      "scope": "congestion_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 7319,
+      "new_content_sha256": "2264ce681624c5fd0e5383e72a6726e47a37a1bb1f3dc19d15e1105575491dc8",
+      "new_rows": 30,
+      "old_bytes": 7323,
+      "old_content_sha256": "ece110703a53b1ff8bb83de096f93e2980cc59c6f9d56b21487f070c96ee7721",
+      "old_rows": 30,
+      "scope": "congestion_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "congestion_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "death_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 121688,
+      "new_content_sha256": "37f93ad057ccfb000c1c45da2887abccbee170abf5bceebd5c13cc402e8c0125",
+      "old_bytes": 121688,
+      "old_content_sha256": "37f93ad057ccfb000c1c45da2887abccbee170abf5bceebd5c13cc402e8c0125",
+      "scope": "death_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3080,
+      "new_content_sha256": "1340837d0235e482b3af21a5de2d8d726bc90246c085c066343c60b88938dae2",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "5f3a3867f4c55dda50b47e1c36956cf27bdb78248a752d77625bcc07928f8657",
+      "old_bytes": 3058,
+      "old_content_sha256": "5f3a3867f4c55dda50b47e1c36956cf27bdb78248a752d77625bcc07928f8657",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "5f3a3867f4c55dda50b47e1c36956cf27bdb78248a752d77625bcc07928f8657",
+      "scope": "death_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12539,
+      "new_content_sha256": "aefbfc60a7b8c86621d601019cba450bd7f7b56d6bfb66be16263ac524ad65c6",
+      "old_bytes": 12539,
+      "old_content_sha256": "aefbfc60a7b8c86621d601019cba450bd7f7b56d6bfb66be16263ac524ad65c6",
+      "scope": "death_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 5622,
+      "new_content_sha256": "b299a581db7d6621ebadc0840102a8f2988ccdef9fdc4d5cc7ae738e5592c2cb",
+      "new_rows": 30,
+      "old_bytes": 5630,
+      "old_content_sha256": "8f348908306b53123fe6c0a63aaf45348ba54f3f00af28670b4dcb3b29883ea0",
+      "old_rows": 30,
+      "scope": "death_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "death_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "death_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 129276,
+      "new_content_sha256": "4b8fff02434ea87ccbd755a891ce8269a1da4d6a9f27b4cfc7d74c7fced44458",
+      "old_bytes": 129276,
+      "old_content_sha256": "4b8fff02434ea87ccbd755a891ce8269a1da4d6a9f27b4cfc7d74c7fced44458",
+      "scope": "death_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3150,
+      "new_content_sha256": "f10741f0e934aac0aca8ce5980e6ab4a8e570e788b843c466535867e77534db9",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "d998fd5d4d4b54ae1095c284c02aedcb036a6545ff0b4578f1cf7ad73f223c13",
+      "old_bytes": 3128,
+      "old_content_sha256": "d998fd5d4d4b54ae1095c284c02aedcb036a6545ff0b4578f1cf7ad73f223c13",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "d998fd5d4d4b54ae1095c284c02aedcb036a6545ff0b4578f1cf7ad73f223c13",
+      "scope": "death_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12539,
+      "new_content_sha256": "aefbfc60a7b8c86621d601019cba450bd7f7b56d6bfb66be16263ac524ad65c6",
+      "old_bytes": 12539,
+      "old_content_sha256": "aefbfc60a7b8c86621d601019cba450bd7f7b56d6bfb66be16263ac524ad65c6",
+      "scope": "death_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 5592,
+      "new_content_sha256": "0a567fcca1557dc2b41239da79dabbaa05e5de8619027b01267177d7d51ae824",
+      "new_rows": 30,
+      "old_bytes": 5608,
+      "old_content_sha256": "6d34139085bf93f29cc5484371a8702c32e98b24c4c84b36f9c5528a5f96834e",
+      "old_rows": 30,
+      "scope": "death_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "death_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "depleted_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 486352,
+      "new_content_sha256": "a770fcc294ae834d4e3ac57f875621856925a72ddad3e433dc2f014feb15842b",
+      "old_bytes": 486352,
+      "old_content_sha256": "a770fcc294ae834d4e3ac57f875621856925a72ddad3e433dc2f014feb15842b",
+      "scope": "depleted_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3823,
+      "new_content_sha256": "f029b8ffc8961633f7af8b4fc1214c5268ace420c43b0391c1fd016110689bef",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "53d9610ebe024a1d07b28746736d8e3ad5345a033570bd7daca43dd6b324d406",
+      "old_bytes": 3801,
+      "old_content_sha256": "53d9610ebe024a1d07b28746736d8e3ad5345a033570bd7daca43dd6b324d406",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "53d9610ebe024a1d07b28746736d8e3ad5345a033570bd7daca43dd6b324d406",
+      "scope": "depleted_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 17779,
+      "new_content_sha256": "2bc3ad762a32eaf549c888a6cf042af7e8787bd1499205e1cf60afc425c8e1cd",
+      "old_bytes": 17779,
+      "old_content_sha256": "2bc3ad762a32eaf549c888a6cf042af7e8787bd1499205e1cf60afc425c8e1cd",
+      "scope": "depleted_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6762,
+      "new_content_sha256": "934c07fe7c70785a017b1ff78050178e22586556574193aa16e6798b6823cd48",
+      "new_rows": 30,
+      "old_bytes": 6762,
+      "old_content_sha256": "ad5cd9cfda1342606e7e7a77443021d0b24d9c220a5fa0ca8df8d5579eb89e72",
+      "old_rows": 30,
+      "scope": "depleted_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "depleted_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 7508,
+      "new_content_sha256": "b479c0884ea2d427acdfdef5585543de55c6018635432a7a527709e707470390",
+      "old_bytes": 7508,
+      "old_content_sha256": "b479c0884ea2d427acdfdef5585543de55c6018635432a7a527709e707470390",
+      "scope": "depleted_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 433444,
+      "new_content_sha256": "20adf9910a345395be8ef2274a126037a463d1a7d6531d07073d1ede99a0f4f2",
+      "old_bytes": 433444,
+      "old_content_sha256": "20adf9910a345395be8ef2274a126037a463d1a7d6531d07073d1ede99a0f4f2",
+      "scope": "depleted_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3893,
+      "new_content_sha256": "0f8a6d0b887ef3401099aa5605e601a70016470ac7c337286c1358aec5c6fbcf",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "5919cad2f8ded74119eff892699092bf1078d9aa24a0683cf306aab145d5d16c",
+      "old_bytes": 3871,
+      "old_content_sha256": "5919cad2f8ded74119eff892699092bf1078d9aa24a0683cf306aab145d5d16c",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "5919cad2f8ded74119eff892699092bf1078d9aa24a0683cf306aab145d5d16c",
+      "scope": "depleted_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 29449,
+      "new_content_sha256": "ce459bee2388c2e8a190119e543999bfb38fbdeb4db3ba1a1a0c6b39d87c324b",
+      "old_bytes": 29449,
+      "old_content_sha256": "ce459bee2388c2e8a190119e543999bfb38fbdeb4db3ba1a1a0c6b39d87c324b",
+      "scope": "depleted_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6899,
+      "new_content_sha256": "9b54242aeb1132e12c7616144dd8805a593700e7664e320fc06323683f4142bb",
+      "new_rows": 30,
+      "old_bytes": 6899,
+      "old_content_sha256": "99d0e2f04132a675c30dce3e62787f91c6da2c677d3a74459939f8995218fb98",
+      "old_rows": 30,
+      "scope": "depleted_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15601,
+      "new_content_sha256": "be16c54f49e2ba5c7e4b8df59a0764a0f516d58a6955e6c44428eb4b725e8bd3",
+      "old_bytes": 15601,
+      "old_content_sha256": "be16c54f49e2ba5c7e4b8df59a0764a0f516d58a6955e6c44428eb4b725e8bd3",
+      "scope": "depleted_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "fatigue_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 426304,
+      "new_content_sha256": "076d8915c1fff260884eba822e2527e32af2b07ba3faae5833121ccf6439fe80",
+      "old_bytes": 426304,
+      "old_content_sha256": "076d8915c1fff260884eba822e2527e32af2b07ba3faae5833121ccf6439fe80",
+      "scope": "fatigue_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3547,
+      "new_content_sha256": "8116db287fb11ae571f8effee29ea3822c0229ef68eb740e809225b2a7fd1f75",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "9cb9cfdd82aa4387ce90ae4aeab687ad1b1ceaf4a971264c0b2bcf2e91ccee00",
+      "old_bytes": 3525,
+      "old_content_sha256": "9cb9cfdd82aa4387ce90ae4aeab687ad1b1ceaf4a971264c0b2bcf2e91ccee00",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "9cb9cfdd82aa4387ce90ae4aeab687ad1b1ceaf4a971264c0b2bcf2e91ccee00",
+      "scope": "fatigue_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "fatigue_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6238,
+      "new_content_sha256": "361dc5134d5abb896cdafbce1e2fb4646d49895073ba2c752b8329bd7fd39c33",
+      "new_rows": 30,
+      "old_bytes": 6238,
+      "old_content_sha256": "1925639f14a846954c0305ef44fb8b4e4b3a7afd64f2bb78c1eb86f6c2f664bc",
+      "old_rows": 30,
+      "scope": "fatigue_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "fatigue_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "fatigue_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 391917,
+      "new_content_sha256": "ee592c34ff756a35579585cbd231b05f51bdb636cece68a68cd33ad0b85cdef5",
+      "old_bytes": 391917,
+      "old_content_sha256": "ee592c34ff756a35579585cbd231b05f51bdb636cece68a68cd33ad0b85cdef5",
+      "scope": "fatigue_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3617,
+      "new_content_sha256": "5ec098100635b58d53100434eb5ac91bef0423f61e14d1bac39dace4d0b75dd4",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "16afc0d8a37fece60b3f63b504b5bf5358f7e1a347b9a0cd3bf223d5d8cede98",
+      "old_bytes": 3595,
+      "old_content_sha256": "16afc0d8a37fece60b3f63b504b5bf5358f7e1a347b9a0cd3bf223d5d8cede98",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "16afc0d8a37fece60b3f63b504b5bf5358f7e1a347b9a0cd3bf223d5d8cede98",
+      "scope": "fatigue_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 20716,
+      "new_content_sha256": "5c7857c4a48e7db8c92ccc2794402dfd9f64222fc6aa1b171ae1a8ba1308142d",
+      "old_bytes": 20716,
+      "old_content_sha256": "5c7857c4a48e7db8c92ccc2794402dfd9f64222fc6aa1b171ae1a8ba1308142d",
+      "scope": "fatigue_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6234,
+      "new_content_sha256": "fa087345ec77e03b11b2441f2c1989a57d5116b841a41a0a80ea2d08c4908266",
+      "new_rows": 30,
+      "old_bytes": 6234,
+      "old_content_sha256": "72dc5a02cfc4984515a73d9464190a2e1bb00cfffea091af1715a97181e01f10",
+      "old_rows": 30,
+      "scope": "fatigue_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 8278,
+      "new_content_sha256": "06296bdd8ab0e94aa7b525753617d28f9731e8fc89ec1a1f172770e95c20057f",
+      "old_bytes": 8278,
+      "old_content_sha256": "06296bdd8ab0e94aa7b525753617d28f9731e8fc89ec1a1f172770e95c20057f",
+      "scope": "fatigue_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "hunger_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 408273,
+      "new_content_sha256": "60033a9fda0adec5c15ca81cb357ca7b8c572bfc02b1a1916fdc8ed715754506",
+      "old_bytes": 408273,
+      "old_content_sha256": "60033a9fda0adec5c15ca81cb357ca7b8c572bfc02b1a1916fdc8ed715754506",
+      "scope": "hunger_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3546,
+      "new_content_sha256": "3c6984bc4dfedfd0849fbdf5c0d6c7aa2464f5e88ac5c16a4f55e99326ec7814",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "99054fbac861dd07db4e81d389ccc97196760140fcacaa5823436594a64f1623",
+      "old_bytes": 3524,
+      "old_content_sha256": "99054fbac861dd07db4e81d389ccc97196760140fcacaa5823436594a64f1623",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "99054fbac861dd07db4e81d389ccc97196760140fcacaa5823436594a64f1623",
+      "scope": "hunger_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "hunger_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6307,
+      "new_content_sha256": "bbd597d0ded9c642323e9f853d66b9689ed50ff6361643c226e7459adecf830e",
+      "new_rows": 30,
+      "old_bytes": 6312,
+      "old_content_sha256": "cd7c834bc25e041f6a53483a526f15ec871fa8c4d6f4db9288ff423f3c543005",
+      "old_rows": 30,
+      "scope": "hunger_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "hunger_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 7538,
+      "new_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "old_bytes": 7538,
+      "old_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "scope": "hunger_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 338559,
+      "new_content_sha256": "70556655d8c855f819c6dd988ac927d3203f2ef1688b1d01b70fa4bfc7ecb491",
+      "old_bytes": 338559,
+      "old_content_sha256": "70556655d8c855f819c6dd988ac927d3203f2ef1688b1d01b70fa4bfc7ecb491",
+      "scope": "hunger_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3616,
+      "new_content_sha256": "2ea6b14f9f7aa5afb168c7ac0ed1f5052f56a4357dd93dd0668ee38817dc3277",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "eb09c7df9088334fd93e35fced0df99896b143682b8786f6f087a0a19a25b685",
+      "old_bytes": 3594,
+      "old_content_sha256": "eb09c7df9088334fd93e35fced0df99896b143682b8786f6f087a0a19a25b685",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "eb09c7df9088334fd93e35fced0df99896b143682b8786f6f087a0a19a25b685",
+      "scope": "hunger_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27299,
+      "new_content_sha256": "5dc4d8d03766b53b53e0f4a0a6011096003977888120ab6467985d96dda5363a",
+      "old_bytes": 27299,
+      "old_content_sha256": "5dc4d8d03766b53b53e0f4a0a6011096003977888120ab6467985d96dda5363a",
+      "scope": "hunger_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 8819,
+      "new_content_sha256": "9daec1de92bf5b37723c6430eb5aac3f75de7698500cf0d867a235c8ffd0eb15",
+      "new_rows": 30,
+      "old_bytes": 8819,
+      "old_content_sha256": "aca7a04bbd04542bc63c6e68685d9968f96b86e5872c90f309ce9bf806ee8168",
+      "old_rows": 30,
+      "scope": "hunger_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 18721,
+      "new_content_sha256": "8815c7353a048eeac312592d3be4fb632e7a33fe40d527001d852a624dcf31dc",
+      "old_bytes": 18721,
+      "old_content_sha256": "8815c7353a048eeac312592d3be4fb632e7a33fe40d527001d852a624dcf31dc",
+      "scope": "hunger_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "old_bytes": 6308,
+      "old_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "scope": "long_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 259293,
+      "new_content_sha256": "ee4cbe48895220ad5c0087e47866dfc7550e3ee1251bd889357cee4a8a110a97",
+      "old_bytes": 259293,
+      "old_content_sha256": "ee4cbe48895220ad5c0087e47866dfc7550e3ee1251bd889357cee4a8a110a97",
+      "scope": "long_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3551,
+      "new_content_sha256": "afe26d2b5fd2c8ae4fc9691213cd294e4dd8b0b94c5ab63ff497d47afce9170c",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "6cee8a5afc0c74dd9abc9ea8b95d5a21bc4bfbc74c296402a61e0a3d2121ca3f",
+      "old_bytes": 3529,
+      "old_content_sha256": "6cee8a5afc0c74dd9abc9ea8b95d5a21bc4bfbc74c296402a61e0a3d2121ca3f",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "6cee8a5afc0c74dd9abc9ea8b95d5a21bc4bfbc74c296402a61e0a3d2121ca3f",
+      "scope": "long_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15689,
+      "new_content_sha256": "175a353c093a0b7e33909a04f3f3096d5f95fd78a28b513b53d3fbc7ebc50859",
+      "old_bytes": 15689,
+      "old_content_sha256": "175a353c093a0b7e33909a04f3f3096d5f95fd78a28b513b53d3fbc7ebc50859",
+      "scope": "long_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 5729,
+      "new_content_sha256": "dfd0f8a30d9fecd19bb74fcf8c2e312edb5d7e864bac2930116cf8894f3bd3b1",
+      "new_rows": 30,
+      "old_bytes": 5759,
+      "old_content_sha256": "696c85847d2343919af5032f970bbea2b94c3161d08b0371c1e3ad79c7ac60ad",
+      "old_rows": 30,
+      "scope": "long_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "long_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "old_bytes": 6308,
+      "old_content_sha256": "e41dde140247e3b321f9161e20cb1b8c28d9e0f907e38f9e43f54056bb3d4525",
+      "scope": "long_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 79667,
+      "new_content_sha256": "be866ce0dc0cd65b88d35089d39b14221a331c8b8ff955166e118ed738706c14",
+      "old_bytes": 79667,
+      "old_content_sha256": "be866ce0dc0cd65b88d35089d39b14221a331c8b8ff955166e118ed738706c14",
+      "scope": "long_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3621,
+      "new_content_sha256": "e56acb8205cdb7a580d75ee15a93d1c2fddeb06f588f050953b2575737afb1cd",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "7dd376233842df60d43933f82342c16b60a3ae4d250bf9ac2e84fc860f3c368e",
+      "old_bytes": 3599,
+      "old_content_sha256": "7dd376233842df60d43933f82342c16b60a3ae4d250bf9ac2e84fc860f3c368e",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "7dd376233842df60d43933f82342c16b60a3ae4d250bf9ac2e84fc860f3c368e",
+      "scope": "long_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15689,
+      "new_content_sha256": "175a353c093a0b7e33909a04f3f3096d5f95fd78a28b513b53d3fbc7ebc50859",
+      "old_bytes": 15689,
+      "old_content_sha256": "175a353c093a0b7e33909a04f3f3096d5f95fd78a28b513b53d3fbc7ebc50859",
+      "scope": "long_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6659,
+      "new_content_sha256": "7521f505ffde553f045b3d8567298f432705df5e420be2b4bd94e4020aa82a2c",
+      "new_rows": 30,
+      "old_bytes": 6666,
+      "old_content_sha256": "255fe90956bb428eea199390942231b2653dcf3bbe2d17d648e87a4ca706bf5e",
+      "old_rows": 30,
+      "scope": "long_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "long_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12218,
+      "new_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "old_bytes": 12218,
+      "old_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "scope": "matched_depleted_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 574873,
+      "new_content_sha256": "adcb6e26aee5eec528c816717659aec2e2cdbf4aefcba03c51181e4daf6ea043",
+      "old_bytes": 574873,
+      "old_content_sha256": "adcb6e26aee5eec528c816717659aec2e2cdbf4aefcba03c51181e4daf6ea043",
+      "scope": "matched_depleted_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3439,
+      "new_content_sha256": "4be506a71be36da244eb66a0f57b16c525e17b1a39e653e00e9f09821b221243",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "f8c61f1b6be6f3d1085c3d175f36953db110a061657f618c3975041cf56d2f96",
+      "old_bytes": 3417,
+      "old_content_sha256": "f8c61f1b6be6f3d1085c3d175f36953db110a061657f618c3975041cf56d2f96",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "f8c61f1b6be6f3d1085c3d175f36953db110a061657f618c3975041cf56d2f96",
+      "scope": "matched_depleted_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 17779,
+      "new_content_sha256": "f4e7c6ae79a5726a91b25cbe9475d11a4c9cd4a002638255ba2874e817c3a9df",
+      "old_bytes": 17779,
+      "old_content_sha256": "f4e7c6ae79a5726a91b25cbe9475d11a4c9cd4a002638255ba2874e817c3a9df",
+      "scope": "matched_depleted_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 5099,
+      "new_content_sha256": "b5d9df72c48874bf40897bd1dc46e4cdf7715055df670d9b9697e571b1456ec0",
+      "new_rows": 30,
+      "old_bytes": 5099,
+      "old_content_sha256": "fa99716ef06362dd25ef282b3524f3018132654bb06999527c222f547dde2c86",
+      "old_rows": 30,
+      "scope": "matched_depleted_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "matched_depleted_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 13418,
+      "new_content_sha256": "3e5ad007434676555302f6f82e538208a33aef2a272a7343dffee0b55850ca7c",
+      "old_bytes": 13418,
+      "old_content_sha256": "3e5ad007434676555302f6f82e538208a33aef2a272a7343dffee0b55850ca7c",
+      "scope": "matched_depleted_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 575402,
+      "new_content_sha256": "857f23ef654e7bc25cd292419cac18d74aa594d844c3c9da19afa296aefc5bd2",
+      "old_bytes": 575402,
+      "old_content_sha256": "857f23ef654e7bc25cd292419cac18d74aa594d844c3c9da19afa296aefc5bd2",
+      "scope": "matched_depleted_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3737,
+      "new_content_sha256": "d1181d185ac692835e6787c54e96307a8b7ec16c02aab393aa161e6f2d714fb4",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "3a1b3129ef333dac91bf6e23a640cffa590fdaeea2e42d6eec9f042829344ed2",
+      "old_bytes": 3715,
+      "old_content_sha256": "3a1b3129ef333dac91bf6e23a640cffa590fdaeea2e42d6eec9f042829344ed2",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "3a1b3129ef333dac91bf6e23a640cffa590fdaeea2e42d6eec9f042829344ed2",
+      "scope": "matched_depleted_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 29449,
+      "new_content_sha256": "3ff8d7a0b09832d2c369036d901795f2887f7634eb640d3778f7ef36d5c5c7d9",
+      "old_bytes": 29449,
+      "old_content_sha256": "3ff8d7a0b09832d2c369036d901795f2887f7634eb640d3778f7ef36d5c5c7d9",
+      "scope": "matched_depleted_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 5129,
+      "new_content_sha256": "0a28866704e56c8745f7b8a0737a67de8f6222765942d0ad14aeff356a843b1d",
+      "new_rows": 30,
+      "old_bytes": 5129,
+      "old_content_sha256": "f85acdbec2f823ad65341bf35f67cbf9c938d8fba78eabf45a5954e74e0e7707",
+      "old_rows": 30,
+      "scope": "matched_depleted_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15601,
+      "new_content_sha256": "2dd7cc9545424bf4a58e134093b7a6249d93c7208faa36b193e2cc41e1c04e7f",
+      "old_bytes": 15601,
+      "old_content_sha256": "2dd7cc9545424bf4a58e134093b7a6249d93c7208faa36b193e2cc41e1c04e7f",
+      "scope": "matched_depleted_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12218,
+      "new_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "old_bytes": 12218,
+      "old_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "scope": "matched_fresh_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 574833,
+      "new_content_sha256": "2fc629a4e13bf991455fd0a96138567640c17e1efa24f46ebebe996f68640359",
+      "old_bytes": 574833,
+      "old_content_sha256": "2fc629a4e13bf991455fd0a96138567640c17e1efa24f46ebebe996f68640359",
+      "scope": "matched_fresh_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3302,
+      "new_content_sha256": "3dcb180e268dc61e63a78a4aaccbb3d1302d80796860627f037e77fa708dbe8e",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "3f369a7ca54c868a0e8fc036e36a0ac89a96793019e8210225135d14ec91df06",
+      "old_bytes": 3280,
+      "old_content_sha256": "3f369a7ca54c868a0e8fc036e36a0ac89a96793019e8210225135d14ec91df06",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "3f369a7ca54c868a0e8fc036e36a0ac89a96793019e8210225135d14ec91df06",
+      "scope": "matched_fresh_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 17779,
+      "new_content_sha256": "f4e7c6ae79a5726a91b25cbe9475d11a4c9cd4a002638255ba2874e817c3a9df",
+      "old_bytes": 17779,
+      "old_content_sha256": "f4e7c6ae79a5726a91b25cbe9475d11a4c9cd4a002638255ba2874e817c3a9df",
+      "scope": "matched_fresh_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 5009,
+      "new_content_sha256": "2fc5ff8579c788f3a993a1e6b0e3be05f7eeb4f006b6f44e187d53c0aa12cd90",
+      "new_rows": 30,
+      "old_bytes": 5009,
+      "old_content_sha256": "ff1897f37453942813bb746f8621b70c43b61bd3719deee3fb41aa82e62694a7",
+      "old_rows": 30,
+      "scope": "matched_fresh_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "matched_fresh_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 13418,
+      "new_content_sha256": "3e5ad007434676555302f6f82e538208a33aef2a272a7343dffee0b55850ca7c",
+      "old_bytes": 13418,
+      "old_content_sha256": "3e5ad007434676555302f6f82e538208a33aef2a272a7343dffee0b55850ca7c",
+      "scope": "matched_fresh_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 575362,
+      "new_content_sha256": "819ee66dc5a68ca8a0063199c75885093a14efdf4b9e4d42d5da117e6d7d668b",
+      "old_bytes": 575362,
+      "old_content_sha256": "819ee66dc5a68ca8a0063199c75885093a14efdf4b9e4d42d5da117e6d7d668b",
+      "scope": "matched_fresh_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3600,
+      "new_content_sha256": "636254bdc9f38c4156f3ff395e0fb9daa308fc2bf589c8fc57dc45a47af01e59",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "7520e9d229d819267e542b3ea14ed1b50fd6b92fa5a74d53ce5b3e70011242a2",
+      "old_bytes": 3578,
+      "old_content_sha256": "7520e9d229d819267e542b3ea14ed1b50fd6b92fa5a74d53ce5b3e70011242a2",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "7520e9d229d819267e542b3ea14ed1b50fd6b92fa5a74d53ce5b3e70011242a2",
+      "scope": "matched_fresh_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 29449,
+      "new_content_sha256": "3ff8d7a0b09832d2c369036d901795f2887f7634eb640d3778f7ef36d5c5c7d9",
+      "old_bytes": 29449,
+      "old_content_sha256": "3ff8d7a0b09832d2c369036d901795f2887f7634eb640d3778f7ef36d5c5c7d9",
+      "scope": "matched_fresh_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 5039,
+      "new_content_sha256": "a8f9df4586ba077f8a7bfb65cf79472db689e6e2a62c611f14ccee0fa2fd44a7",
+      "new_rows": 30,
+      "old_bytes": 5039,
+      "old_content_sha256": "767262f246c049d225541ab1318fe84b301750171401230f4662ed4ce0e4dd96",
+      "old_rows": 30,
+      "scope": "matched_fresh_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 18661,
+      "new_content_sha256": "03e912fd33c41d0238d2271e5a17fa9386d00a9923ef33b2c97f177f62cb9d3f",
+      "old_bytes": 18661,
+      "old_content_sha256": "03e912fd33c41d0238d2271e5a17fa9386d00a9923ef33b2c97f177f62cb9d3f",
+      "scope": "matched_fresh_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12218,
+      "new_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "old_bytes": 12218,
+      "old_content_sha256": "33d45dc0e5be4b1f0cbc631102ed15eadf9c2c03fbfd0bb9a92c6b32f5811aa5",
+      "scope": "matched_spoiled_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 592066,
+      "new_content_sha256": "62b4407420813e32aa9cbcc0e2c1659caf58d98b822297c52ea120912469a2af",
+      "old_bytes": 592066,
+      "old_content_sha256": "62b4407420813e32aa9cbcc0e2c1659caf58d98b822297c52ea120912469a2af",
+      "scope": "matched_spoiled_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3299,
+      "new_content_sha256": "2dce63e9f9b121470279ce112ae40442aa65c439fdd7dd73e70a2f8558ead4c1",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "8eb77855ac791a78619136312aee788d1f975d65221c3811fd4be0383b624b52",
+      "old_bytes": 3277,
+      "old_content_sha256": "8eb77855ac791a78619136312aee788d1f975d65221c3811fd4be0383b624b52",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "8eb77855ac791a78619136312aee788d1f975d65221c3811fd4be0383b624b52",
+      "scope": "matched_spoiled_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 17719,
+      "new_content_sha256": "614757db398c034bc430ebf86a965cc5d71f01f37862d2df3136a251ec73c032",
+      "old_bytes": 17719,
+      "old_content_sha256": "614757db398c034bc430ebf86a965cc5d71f01f37862d2df3136a251ec73c032",
+      "scope": "matched_spoiled_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 5069,
+      "new_content_sha256": "da117a0db386cb447d65ad5b85f6657e15060105f145b4485351a01fd52e3126",
+      "new_rows": 30,
+      "old_bytes": 5069,
+      "old_content_sha256": "2870a074f565ac936fa3ba7ad1180cd05800f8f7247a19f8117bb825281303c5",
+      "old_rows": 30,
+      "scope": "matched_spoiled_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "matched_spoiled_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12218,
+      "new_content_sha256": "d3a80d9b32e12d0def6fccf77e3a3f95f1f4ea208b88f3f9ad31914ac8f86051",
+      "old_bytes": 12218,
+      "old_content_sha256": "d3a80d9b32e12d0def6fccf77e3a3f95f1f4ea208b88f3f9ad31914ac8f86051",
+      "scope": "matched_spoiled_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 609961,
+      "new_content_sha256": "30e0009934646f453082983d103d422056657db3a9c879afe570f87255f203c0",
+      "old_bytes": 609961,
+      "old_content_sha256": "30e0009934646f453082983d103d422056657db3a9c879afe570f87255f203c0",
+      "scope": "matched_spoiled_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3595,
+      "new_content_sha256": "5631e3e778f1b7b26ef84e36d5864477337ad939479afeb4c0a78214e30df818",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "1e53479b15f3c66444be9df4b7f75f6612cb1c87a69545d84be85ba66da74a6f",
+      "old_bytes": 3573,
+      "old_content_sha256": "1e53479b15f3c66444be9df4b7f75f6612cb1c87a69545d84be85ba66da74a6f",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "1e53479b15f3c66444be9df4b7f75f6612cb1c87a69545d84be85ba66da74a6f",
+      "scope": "matched_spoiled_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 29449,
+      "new_content_sha256": "a3b0f0a59edf57ea821f4da7944738fefa2389df2f7c242068c3e5dd8755f8c4",
+      "old_bytes": 29449,
+      "old_content_sha256": "a3b0f0a59edf57ea821f4da7944738fefa2389df2f7c242068c3e5dd8755f8c4",
+      "scope": "matched_spoiled_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 5099,
+      "new_content_sha256": "04be1f3405ade084dfc71a216ec12322636fa62d5431657e136ddbd15462dd8d",
+      "new_rows": 30,
+      "old_bytes": 5099,
+      "old_content_sha256": "7649d20120625083e56c6179447593cff0d226138003ac5eae58d8bf213f2bf1",
+      "old_rows": 30,
+      "scope": "matched_spoiled_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15541,
+      "new_content_sha256": "367f0ce91ca35655d7fa6498c8f44571ebf0bcf1a9c916fa8f98c4e7d5b542b1",
+      "old_bytes": 15541,
+      "old_content_sha256": "367f0ce91ca35655d7fa6498c8f44571ebf0bcf1a9c916fa8f98c4e7d5b542b1",
+      "scope": "matched_spoiled_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "path_off_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 408180,
+      "new_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "old_bytes": 408180,
+      "old_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "scope": "path_off_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3736,
+      "new_content_sha256": "423a7ec16c6800acfe669a6969df9c8b820ffb853e6cfe0f12fecf480844bf43",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "22dea7f7850ee6031f59ec3a498dbb0f23014a7448f2432a1a4cf0361f31eb8e",
+      "old_bytes": 3714,
+      "old_content_sha256": "22dea7f7850ee6031f59ec3a498dbb0f23014a7448f2432a1a4cf0361f31eb8e",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "22dea7f7850ee6031f59ec3a498dbb0f23014a7448f2432a1a4cf0361f31eb8e",
+      "scope": "path_off_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "path_off_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6268,
+      "new_content_sha256": "1a8f91cf65046a9f841ed7c95d9142c1c123b7d6d7ceaa82a1cc78ff79839171",
+      "new_rows": 30,
+      "old_bytes": 6268,
+      "old_content_sha256": "de23f13aedd4a1a811072b6591b2aac3f7b61db562de2bdb9db60e346cbc3cae",
+      "old_rows": 30,
+      "scope": "path_off_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "path_off_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 7538,
+      "new_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "old_bytes": 7538,
+      "old_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "scope": "path_off_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 373817,
+      "new_content_sha256": "dbc5e76bee809032a399f5b1e0d76b3e7421b07671302784fe68653b4cdc9820",
+      "old_bytes": 373817,
+      "old_content_sha256": "dbc5e76bee809032a399f5b1e0d76b3e7421b07671302784fe68653b4cdc9820",
+      "scope": "path_off_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3806,
+      "new_content_sha256": "053fb8b3f5036fa6100da9543de534642abefd431df0bb919f544ee6f0dcad4d",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "38f62c778fedeca080a6db88622c9b1b2253cccb3bc0060aa7c7b0c22f7b46ad",
+      "old_bytes": 3784,
+      "old_content_sha256": "38f62c778fedeca080a6db88622c9b1b2253cccb3bc0060aa7c7b0c22f7b46ad",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "38f62c778fedeca080a6db88622c9b1b2253cccb3bc0060aa7c7b0c22f7b46ad",
+      "scope": "path_off_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27299,
+      "new_content_sha256": "f427240487d93c1a73d05fb581dd6c89214a9a5a28ceec0a5abfac6662c8a917",
+      "old_bytes": 27299,
+      "old_content_sha256": "f427240487d93c1a73d05fb581dd6c89214a9a5a28ceec0a5abfac6662c8a917",
+      "scope": "path_off_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 7619,
+      "new_content_sha256": "762532b80d1e04c8f54a3bbeab91d4ce541aa572da57f9344092b1c28fe57dd6",
+      "new_rows": 30,
+      "old_bytes": 7619,
+      "old_content_sha256": "fd6d4a90e83e9145bf95ee1cd29cd1780a0fd6cb3cc83f6058a31da682747dbc",
+      "old_rows": 30,
+      "scope": "path_off_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 18721,
+      "new_content_sha256": "ad115f2a30f4a00baf8273eec3cd69c1c8404f6896622dd26c553b29b4001d5b",
+      "old_bytes": 18721,
+      "old_content_sha256": "ad115f2a30f4a00baf8273eec3cd69c1c8404f6896622dd26c553b29b4001d5b",
+      "scope": "path_off_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "81129563095b3c078cdde534c4b19e2299e28d1e5ed9bb741a8efaefd311d4db",
+      "old_bytes": 6308,
+      "old_content_sha256": "81129563095b3c078cdde534c4b19e2299e28d1e5ed9bb741a8efaefd311d4db",
+      "scope": "path_on_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 417205,
+      "new_content_sha256": "4a04b9e4b3cde03a9e88626998e017d2832d1c540cd2498f3e905cfd6e625b9b",
+      "old_bytes": 417205,
+      "old_content_sha256": "4a04b9e4b3cde03a9e88626998e017d2832d1c540cd2498f3e905cfd6e625b9b",
+      "scope": "path_on_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3734,
+      "new_content_sha256": "37eaf3b859f3c67601d1a8bc7251907c6c0b4b473ecc4785786ad3b666971df0",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "225991b700987d3c1e7158b0f1041fe89ba46025dac6d910506455a5e563f19b",
+      "old_bytes": 3712,
+      "old_content_sha256": "225991b700987d3c1e7158b0f1041fe89ba46025dac6d910506455a5e563f19b",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "225991b700987d3c1e7158b0f1041fe89ba46025dac6d910506455a5e563f19b",
+      "scope": "path_on_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15659,
+      "new_content_sha256": "6b9ea069bb9cd496b921ffcb7816679cc3138da67c59a3c91ccb9df02e0eb563",
+      "old_bytes": 15659,
+      "old_content_sha256": "6b9ea069bb9cd496b921ffcb7816679cc3138da67c59a3c91ccb9df02e0eb563",
+      "scope": "path_on_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6359,
+      "new_content_sha256": "414ce93566524284f7a0ebcc414289b9cc19440855de11d7214896c0ea3c08f7",
+      "new_rows": 30,
+      "old_bytes": 6359,
+      "old_content_sha256": "782159b62469976b80a407852e00d009aa23df736b83fb8651950e50401da900",
+      "old_rows": 30,
+      "scope": "path_on_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "path_on_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 7538,
+      "new_content_sha256": "b00f20f75bc92fa6d950401b97b52e371b127c0336fe1b621b8c52a6b008f1c3",
+      "old_bytes": 7538,
+      "old_content_sha256": "b00f20f75bc92fa6d950401b97b52e371b127c0336fe1b621b8c52a6b008f1c3",
+      "scope": "path_on_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 381920,
+      "new_content_sha256": "ace2b60b511e550d842fb31d440ca60df66eab939521208927c28bd5c015a5ad",
+      "old_bytes": 381920,
+      "old_content_sha256": "ace2b60b511e550d842fb31d440ca60df66eab939521208927c28bd5c015a5ad",
+      "scope": "path_on_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3804,
+      "new_content_sha256": "887a6b2f4acd8c5feb4e2ab70a1366570e979dec2296f2f319bd2f789eaca585",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "a2cd942b4990dbacc14f29fa0444f67d7a2459b704ed2bc3c2cbce3f21372c30",
+      "old_bytes": 3782,
+      "old_content_sha256": "a2cd942b4990dbacc14f29fa0444f67d7a2459b704ed2bc3c2cbce3f21372c30",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "a2cd942b4990dbacc14f29fa0444f67d7a2459b704ed2bc3c2cbce3f21372c30",
+      "scope": "path_on_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27299,
+      "new_content_sha256": "293d8bac8f2ab502cab87e9d8e6eb5e7589f0faec52b117173950ecdcf849ded",
+      "old_bytes": 27299,
+      "old_content_sha256": "293d8bac8f2ab502cab87e9d8e6eb5e7589f0faec52b117173950ecdcf849ded",
+      "scope": "path_on_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 7589,
+      "new_content_sha256": "2c7d3933b2ee89a4d57f40945857cba718966238028dde0a73b3512c83bbe440",
+      "new_rows": 30,
+      "old_bytes": 7589,
+      "old_content_sha256": "e821e27a2a92e07c18032a89d47922d4639ccc3700e8e86adf7d704ecda83fc0",
+      "old_rows": 30,
+      "scope": "path_on_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 18721,
+      "new_content_sha256": "7657a505a6f67a21769caa660faa152c6c36b39c34f6f0a3f16007fabbf7f6a5",
+      "old_bytes": 18721,
+      "old_content_sha256": "7657a505a6f67a21769caa660faa152c6c36b39c34f6f0a3f16007fabbf7f6a5",
+      "scope": "path_on_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "short_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 408180,
+      "new_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "old_bytes": 408180,
+      "old_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "scope": "short_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3545,
+      "new_content_sha256": "fd14c10aed4deeee0b783c035d4c06d4ee5aaef2e244d2d210aebce475c63240",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "523155bc06da51d1b9a737e333e743670a57db87ff23d1fb568ee19e390d9241",
+      "old_bytes": 3523,
+      "old_content_sha256": "523155bc06da51d1b9a737e333e743670a57db87ff23d1fb568ee19e390d9241",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "523155bc06da51d1b9a737e333e743670a57db87ff23d1fb568ee19e390d9241",
+      "scope": "short_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "short_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6175,
+      "new_content_sha256": "4dcf44eeee2bed20e839ede5896ebc3c04c68b270e04ab2fda462662e5bef501",
+      "new_rows": 30,
+      "old_bytes": 6178,
+      "old_content_sha256": "1dc630027149d5daac67b9c7bf60b10b8148895f128da56e27ea7caf5b235b9d",
+      "old_rows": 30,
+      "scope": "short_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "short_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 7538,
+      "new_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "old_bytes": 7538,
+      "old_content_sha256": "307bc68569c57bdcb3a16f4866205507ed991989dd807274a49f01791a574e6f",
+      "scope": "short_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 373817,
+      "new_content_sha256": "dbc5e76bee809032a399f5b1e0d76b3e7421b07671302784fe68653b4cdc9820",
+      "old_bytes": 373817,
+      "old_content_sha256": "dbc5e76bee809032a399f5b1e0d76b3e7421b07671302784fe68653b4cdc9820",
+      "scope": "short_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3615,
+      "new_content_sha256": "d90290af2a61a96e093747b4671dcf6883c5f3fd93d6f7139c32da0ae41608e0",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "edfbcbdd3ca6fcc3c889e6dd98eccda389947401a4afd0e11be932c9848f10bf",
+      "old_bytes": 3593,
+      "old_content_sha256": "edfbcbdd3ca6fcc3c889e6dd98eccda389947401a4afd0e11be932c9848f10bf",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "edfbcbdd3ca6fcc3c889e6dd98eccda389947401a4afd0e11be932c9848f10bf",
+      "scope": "short_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27299,
+      "new_content_sha256": "f427240487d93c1a73d05fb581dd6c89214a9a5a28ceec0a5abfac6662c8a917",
+      "old_bytes": 27299,
+      "old_content_sha256": "f427240487d93c1a73d05fb581dd6c89214a9a5a28ceec0a5abfac6662c8a917",
+      "scope": "short_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 7529,
+      "new_content_sha256": "80a76010078517e70fb4634f79b5427876734e013d32e993ad003cdaa866c02f",
+      "new_rows": 30,
+      "old_bytes": 7529,
+      "old_content_sha256": "2b3891853aeec415d562ee73d4290af97e83562777a56914b299fc31adf842d9",
+      "old_rows": 30,
+      "scope": "short_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 18721,
+      "new_content_sha256": "ad115f2a30f4a00baf8273eec3cd69c1c8404f6896622dd26c553b29b4001d5b",
+      "old_bytes": 18721,
+      "old_content_sha256": "ad115f2a30f4a00baf8273eec3cd69c1c8404f6896622dd26c553b29b4001d5b",
+      "scope": "short_on/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "unknown_route_off/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 408180,
+      "new_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "old_bytes": 408180,
+      "old_content_sha256": "19616b3dc4e84a3e148e70552b9689b206e29a129a2ebaa767eab58183b62366",
+      "scope": "unknown_route_off/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3251,
+      "new_content_sha256": "b18f95df20d603193670d649b59e405d296671fa1be50b2cebd427e3cfa945e9",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "e042dafb4fcc65a0131c7d8eabf9cda31d091032c172c2d58a4ab623c801ca03",
+      "old_bytes": 3229,
+      "old_content_sha256": "e042dafb4fcc65a0131c7d8eabf9cda31d091032c172c2d58a4ab623c801ca03",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "e042dafb4fcc65a0131c7d8eabf9cda31d091032c172c2d58a4ab623c801ca03",
+      "scope": "unknown_route_off/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 15659,
+      "new_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "old_bytes": 15659,
+      "old_content_sha256": "2b72bab95c8a742d572776417b7aab9809545b6a567a468904ebb57c50367541",
+      "scope": "unknown_route_off/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 6407,
+      "new_content_sha256": "65ea9c676b2a0035a881a1316150be885c22afea9ed896db0406d8826cd82906",
+      "new_rows": 30,
+      "old_bytes": 6418,
+      "old_content_sha256": "871a0b62756a19e568c9d4b82e2e338dbe8f4eed551bcb48f762d7575005710f",
+      "old_rows": 30,
+      "scope": "unknown_route_off/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 131,
+      "new_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "old_bytes": 131,
+      "old_content_sha256": "917b67add628ed3f4639d860eb3bb7969db077dff32dbc9fc02581fb62920bc2",
+      "scope": "unknown_route_off/truth.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 6308,
+      "new_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "old_bytes": 6308,
+      "old_content_sha256": "6c0eaf03a49eb5bd0c4244daf9ca2e4ce4277ac96c6421ac8b7c18b29e274657",
+      "scope": "unknown_route_on/decisions.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 393832,
+      "new_content_sha256": "cf2df29e36a6de10d031de514e8dbf6bf2a01807f06d4c99a24603cbd230b992",
+      "old_bytes": 393832,
+      "old_content_sha256": "cf2df29e36a6de10d031de514e8dbf6bf2a01807f06d4c99a24603cbd230b992",
+      "scope": "unknown_route_on/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3321,
+      "new_content_sha256": "d7510c73771bac06bb06b4511b78184e29c2e7da5ff1d2f23fcb82c938b87f32",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "c7fdf955eca105abefd38e482bc51c9051928b71e6d78b9cbd17c3d1c66db7a9",
+      "old_bytes": 3299,
+      "old_content_sha256": "c7fdf955eca105abefd38e482bc51c9051928b71e6d78b9cbd17c3d1c66db7a9",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "c7fdf955eca105abefd38e482bc51c9051928b71e6d78b9cbd17c3d1c66db7a9",
+      "scope": "unknown_route_on/parameters.txt"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27329,
+      "new_content_sha256": "6b668819a0d837580d49561641ea94731533d685735fa8ec48ff78a7e49572ae",
+      "old_bytes": 27329,
+      "old_content_sha256": "6b668819a0d837580d49561641ea94731533d685735fa8ec48ff78a7e49572ae",
+      "scope": "unknown_route_on/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except runtime_ms values",
+      "new_bytes": 7442,
+      "new_content_sha256": "f2dcf88d4222892a3eeb50cbef9eab2606b2b5a77c160c0c0b6b28994bdc73b2",
+      "new_rows": 30,
+      "old_bytes": 7442,
+      "old_content_sha256": "83979c6292a38f907b1ea396ea539ae4667d47c1d31261f6c0287a45ae4a4fe6",
+      "old_rows": 30,
+      "scope": "unknown_route_on/runs.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 18931,
+      "new_content_sha256": "01549fed8cd17b998cc5b1534b2712250380dea01bdb2bf70bae1f2b5018bce0",
+      "old_bytes": 18931,
+      "old_content_sha256": "01549fed8cd17b998cc5b1534b2712250380dea01bdb2bf70bae1f2b5018bce0",
+      "scope": "unknown_route_on/truth.tsv.gz"
+    }
+  ],
+  "csv_exception": "Only runtime_ms values; column identity/order remains exact",
+  "differences": [],
+  "new_binary_sha256": "0b3c4d15dfe508e4c0ab6c6eca7411fccfce5606b3bfdcb2bcc4d7d2c3c5f0ac",
+  "new_provenance_sha256": "51a83a255aee48ee0e902963cf1362adc8bc60eab7e85789ee6efb99fcc278f6",
+  "new_root": "research/command-chain/regression/information",
+  "new_source_revision": "ff7052773c97be2d202dbb0b1e7a9bb3a03d2f6e",
+  "old_binary_sha256": "11e0fc9179e758811dd566a38dfc82dfb36fcecdda3ee38248f03cc5b62df7d8",
+  "old_provenance_sha256": "cb782ebdcb8e37caf8174cb1b8780f35c9d3a7a4ed330028fd218d1a806f0d13",
+  "old_root": "research/information/matrix",
+  "old_source_revision": "4c84081dd62b837c2798d72398b32ad3491da465",
+  "panel": "F12",
+  "parameter_exception": "Remove only disabled commands:false Config field in compact, pretty or escaped-pretty layout; all remaining bytes exact",
+  "runs": 840,
+  "status": "PASS"
+}

@@ -2,7 +2,37 @@
 
 Updated 2026-09-22 following the owner's design change.
 
-## Latest evidence — F13A readiness
+## Latest evidence — F13B scoped command chain
+
+Owner decision: **office-based scoped obligation**. A voluntarily accepted steward
+office carries a bounded duty to attempt a valid sovereign order to commission an
+existing local public crossing. There is no universal authority over citizens,
+compulsory worker, punishment, taxation or requisition. See the
+[contract](docs/COMMAND_AUTHORITY.md), [600-run evidence](research/command-chain/REPORT.md)
+and [copyable handoff](research/command-chain/HANDOFF.txt).
+
+F13B and full F13 pass at the registered **headless command-chain scope**. One
+controlled ruler decision becomes physically carried information, then a role
+obligation arbitrated by the common Person, then an existing local commission.
+Construction remains voluntary. Integrated treatment builds a crossing using
+20 wood and 9.322222 labor-hours, followed by 42 improved trips. Deaths 8→6 and
+food consumption 656→680 coexist with starvation exposure 197.983333→244.246667h.
+No general welfare benefit, informed autonomous royal strategy or finished UI is
+claimed. Physical arrival can still fail to produce message handoff.
+
+Runtime source `ff70527` (core `b1e2642`); 339 tests; all 600 final audits and
+17,880 hourly checkpoints pass. All 16,215 prior research files remain unchanged.
+Of 1,237 replay executions, 1,207 match under registered rules. Thirty F13A
+long-commissioned histories change because a proven volunteer scheduling defect
+was fixed: assembly/service expiry shift 7.2 seconds, changing intermediate time
+accounting and hashes, while final physical outcomes match. Strict failure and
+bounded independent review remain visible; see [validation](research/command-chain/validation.json).
+
+F14 remains deferred pending its own causal specification. No rebellion, new
+political rights, money, UI or further milestone was added. The historical
+authority blocker immediately below is now resolved by the owner's newer decision.
+
+## Prior evidence — F13A readiness
 
 [Integrated evidence](research/kingdom-readiness/REPORT.md) and [copyable handoff](research/kingdom-readiness/HANDOFF.txt).180 paired runs show one lawful local commission changing construction, traffic, production, household outcomes and administrative presence. The completed alternate crossing reduces production432→312 and raises starvation173.977→262.717h.307 tests pass;217 historical replays and all840 F12 runs remain exact after a narrow scheduling repair. All15,827 prior files remain unchanged.
 

@@ -35,8 +35,8 @@ and irreversible abstraction choices require a project-owner decision.
 | F11C Threat / combat | PASSED | 1,440 paired runs demonstrate physical theft prevention, failed defenses and civilian costs. F11A protective-benefit requirement satisfied; no general welfare claim. |
 | F12 Information network | PASSED | Explicit physical messengers/travelers or constrained signals. Distinguish true from observed state; report delay changes decisions. No global knowledge. |
 | F13A Cross-system readiness | PASSED | 180 paired controls integrate lawful local commissioning, production, households, reports, authority and security. Infrastructure can complete and worsen nourishment. This is research input, not a sovereign command channel. |
-| F13B Scoped command chain | ACTIVE | Accepted steward duties; physically conveyed sovereign crossing orders; explicit refusal, survival interruption and delayed revocation. No arbitrary citizen control. |
-| F13 Kingdom vertical slice | ACTIVE — authority decision resolved | Multiple settlements, economy, infrastructure, authority, information and security; one ruler decision yields unscripted, traceable second-order effects. Owner decides player powers. |
+| F13B Scoped command chain | PASSED | 600 paired-condition runs; accepted steward duties, physical orders, Person arbitration and existing commission. Controlled receipt tests cover stale/expired orders and delayed withdrawal; live handoff failures preserved. |
+| F13 Kingdom vertical slice | PASSED — headless command-chain scope | One controlled sovereign order physically reaches an accepted office and causes voluntary crossing construction, altered traffic and household consequences. No final UI, autonomous government or general welfare claim. |
 | F14 Target moment | NOT STARTED | Policy effects → households → institutional breakdown/coordination → actual gathering/travel toward castle. No spawn-rebellion shortcut. |
 | F15 Rendering | NOT STARTED | World → observation → render snapshot → screen. Real identities/goods/roads/fields/units. Renderer never owns world state or time. |
 | F16 Physical visual depth | NOT STARTED | Lighting, shadows, particles, fire, weather, limited physics where causally justified, with LOD. Low geometric complexity, high systemic complexity. |
@@ -174,3 +174,28 @@ Full F13 is **BLOCKED for an owner-level interaction/authority choice**, not a f
 
 
 Owner decision after F13A: **office-based scoped obligation**, not universal royal command and not merely advisory requests. See [command contract](COMMAND_AUTHORITY.md) and [registered F13B comparison](COMMAND_CHAIN_EXPERIMENT.md). The earlier proposed options remain historical. Dependency now: F12 transport + F10 accepted scoped office → F13B validated obligations → integrated headless ruler consequence → F13 gate. No taxation, conscription, requisition, punishment or project repeal is implied.
+
+F13B and F13 pass at the registered headless scope: [600-run report](../research/command-chain/REPORT.md),
+[causal traces](../research/command-chain/TRACE_EXCERPTS.md),
+[validation](../research/command-chain/validation.json). Source `ff70527`, runtime core
+`b1e2642`; 339 tests and 17,880 primary audit checkpoints pass. A controlled ruler
+order causes one physical crossing and 42 improved trips per integrated run.
+Deaths fall 8→6 and consumption rises 656→680 while starvation rises
+197.983333→244.246667 person-hours. No net-welfare claim follows.
+
+All 16,215 previous research files are unchanged. Of 1,237 historical replay
+executions, 1,207 preserve registered semantic results/hashes exactly; the 30
+F13A `long_commissioned` runs have a narrowly explained military clock-fix effect:
+assembly and service end move 7.2 seconds, intermediate duty/idle accounting and
+hashes change, and final physical outcomes match. The strict comparison failure
+is retained alongside the independent bounded review; do not call all 1,237
+histories exact. No parameters are retuned to conceal communication failures.
+
+The sovereign's decision, initial courier purpose and office acceptance are
+controlled inputs. Received duties use the ordinary Person architecture, while
+construction remains voluntary. Long-distance couriers can arrive but fail to
+hand over. Separate physical-contact tests establish stale/expired receipt and
+revocation semantics; they do not turn those live failures into successes.
+F14 remains NOT STARTED: collective political coordination would need its own
+causal specification. No rebellion, new coercive institution, UI or further
+milestone is implemented in this increment.

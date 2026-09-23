@@ -3,7 +3,9 @@
 Owner decision: **office-based scoped obligation**, replacing the unresolved F13
 proposal. This is an explicit new institution, not a forecast or arithmetic fix.
 A sovereign has no universal command right over Persons. Historical F10/F12/F13A
-results remain unchanged and reproducible with their registered institution flags.
+artifacts remain unchanged; registered flags retain their prior institutions.
+The [disclosed military clock correction](../research/command-chain/CLOCK_REGRESSION_REVIEW.md)
+changes timing/hashes in one F13A scenario without changing final physical outcomes.
 
 `Config.commands` enables this institution and requires F10 authority and F12
 information. With it enabled, AppointSteward creates a local **offer**, not active

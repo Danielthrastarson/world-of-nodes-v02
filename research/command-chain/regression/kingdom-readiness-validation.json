@@ -1,0 +1,1353 @@
+{
+  "checks": [
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 50427,
+      "new_content_sha256": "173b94360fd5c5ceee6dda5d8149291129cb70c5103d16caed40dfe249fd42c3",
+      "new_rows": 2070,
+      "old_bytes": 50427,
+      "old_content_sha256": "173b94360fd5c5ceee6dda5d8149291129cb70c5103d16caed40dfe249fd42c3",
+      "old_rows": 2070,
+      "scope": "alternate_commissioned/activities.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 13325981,
+      "new_content_sha256": "93c3e4274c5c66c063d335e043e63994002b027caf0eeb013531f1dbd35f32df",
+      "old_bytes": 13325981,
+      "old_content_sha256": "93c3e4274c5c66c063d335e043e63994002b027caf0eeb013531f1dbd35f32df",
+      "scope": "alternate_commissioned/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 298612,
+      "new_content_sha256": "2ab8187e69715fe47800a242f6222b9f2742bb5def4caf55fbc6fca8a7493dec",
+      "old_bytes": 298612,
+      "old_content_sha256": "2ab8187e69715fe47800a242f6222b9f2742bb5def4caf55fbc6fca8a7493dec",
+      "scope": "alternate_commissioned/goods.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27797,
+      "new_content_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+      "old_bytes": 27797,
+      "old_content_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+      "scope": "alternate_commissioned/initial_beliefs.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 60264,
+      "new_content_sha256": "4751c7facaa39a058c951b3620eb4f6757bc4af5e4f80c70d0f84b5965780217",
+      "old_bytes": 60264,
+      "old_content_sha256": "4751c7facaa39a058c951b3620eb4f6757bc4af5e4f80c70d0f84b5965780217",
+      "scope": "alternate_commissioned/institutions.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3762,
+      "new_content_sha256": "91babc1c8211220c146bb2c56842a03531ffe0f8d812fe9ffd50e48436f00e2f",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "9025a3ce99b642cde5d49eeaa188b86538c4acba535269ccbd8d7eb8009809df",
+      "old_bytes": 3745,
+      "old_content_sha256": "9025a3ce99b642cde5d49eeaa188b86538c4acba535269ccbd8d7eb8009809df",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "9025a3ce99b642cde5d49eeaa188b86538c4acba535269ccbd8d7eb8009809df",
+      "scope": "alternate_commissioned/parameters.txt"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 25597,
+      "new_content_sha256": "dff663e6b63a6ef2be6794681964289e136a7f45f5958991626505c7545895c3",
+      "new_rows": 540,
+      "old_bytes": 25597,
+      "old_content_sha256": "dff663e6b63a6ef2be6794681964289e136a7f45f5958991626505c7545895c3",
+      "old_rows": 540,
+      "scope": "alternate_commissioned/people.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 37410,
+      "new_content_sha256": "5e8272696655004f0804359f18dcaa045921eb036ddbb95e4d5c42e1259b33f0",
+      "old_bytes": 37410,
+      "old_content_sha256": "5e8272696655004f0804359f18dcaa045921eb036ddbb95e4d5c42e1259b33f0",
+      "scope": "alternate_commissioned/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 27059,
+      "new_content_sha256": "09b9f7fa784f2cebe45d84670754aebbde32068d6d8875c67bef6ed3cf128838",
+      "new_rows": 30,
+      "old_bytes": 27059,
+      "old_content_sha256": "211c013b6cc52a6bc64b05d5598c0f0490b0fd7d20342620d84aca2d888aa625",
+      "old_rows": 30,
+      "scope": "alternate_commissioned/runs.csv"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 5954422,
+      "new_content_sha256": "42ef52d44cdcdbbd1155fd2c2457c1be7adca5a929c2224cf446afc89a9e4118",
+      "new_rows": 8670,
+      "old_bytes": 5954422,
+      "old_content_sha256": "42ef52d44cdcdbbd1155fd2c2457c1be7adca5a929c2224cf446afc89a9e4118",
+      "old_rows": 8670,
+      "scope": "alternate_commissioned/timeline.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 18003,
+      "new_content_sha256": "0351ffe445f4d354a358551ddd1b4e8c71168615f8127c4a6b49a7ad332bc46a",
+      "old_bytes": 18003,
+      "old_content_sha256": "0351ffe445f4d354a358551ddd1b4e8c71168615f8127c4a6b49a7ad332bc46a",
+      "scope": "alternate_commissioned/trips.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 50277,
+      "new_content_sha256": "6f6927ed0527a5038b0e5753788ab455e4b0f6a8a6859a7ca3eb9239ec52d7aa",
+      "new_rows": 2070,
+      "old_bytes": 50277,
+      "old_content_sha256": "6f6927ed0527a5038b0e5753788ab455e4b0f6a8a6859a7ca3eb9239ec52d7aa",
+      "old_rows": 2070,
+      "scope": "alternate_pending/activities.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 13085194,
+      "new_content_sha256": "d34bb41d9ce07fab70016549fc6cd5cd8fc6589d2ba6ed3a033face99d7d8dd9",
+      "old_bytes": 13085194,
+      "old_content_sha256": "d34bb41d9ce07fab70016549fc6cd5cd8fc6589d2ba6ed3a033face99d7d8dd9",
+      "scope": "alternate_pending/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 333872,
+      "new_content_sha256": "cf470ed84fe8fc49242c1f83029cf0ea783d330a29a88ff5965eb3902fd2b465",
+      "old_bytes": 333872,
+      "old_content_sha256": "cf470ed84fe8fc49242c1f83029cf0ea783d330a29a88ff5965eb3902fd2b465",
+      "scope": "alternate_pending/goods.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27797,
+      "new_content_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+      "old_bytes": 27797,
+      "old_content_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+      "scope": "alternate_pending/initial_beliefs.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 56254,
+      "new_content_sha256": "4cfa48452f5b6913280485ee3d5eef73f9d9cda687fca3af1a8327dcc7baa577",
+      "old_bytes": 56254,
+      "old_content_sha256": "4cfa48452f5b6913280485ee3d5eef73f9d9cda687fca3af1a8327dcc7baa577",
+      "scope": "alternate_pending/institutions.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3757,
+      "new_content_sha256": "9541b5362bdd7f065da5b8b0a538fa254c57a0f6972ae85b7386f1c4bed9882c",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "e8ca7145785d165fe9417cab4c2ad21048eeb5f846e5b809ac289006f90c6771",
+      "old_bytes": 3740,
+      "old_content_sha256": "e8ca7145785d165fe9417cab4c2ad21048eeb5f846e5b809ac289006f90c6771",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "e8ca7145785d165fe9417cab4c2ad21048eeb5f846e5b809ac289006f90c6771",
+      "scope": "alternate_pending/parameters.txt"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 25537,
+      "new_content_sha256": "ab4050c5a2ed78074867ef3be0fc4674fbd3fd296b491dae8297760b87c22d08",
+      "new_rows": 540,
+      "old_bytes": 25537,
+      "old_content_sha256": "ab4050c5a2ed78074867ef3be0fc4674fbd3fd296b491dae8297760b87c22d08",
+      "old_rows": 540,
+      "scope": "alternate_pending/people.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 37410,
+      "new_content_sha256": "5e8272696655004f0804359f18dcaa045921eb036ddbb95e4d5c42e1259b33f0",
+      "old_bytes": 37410,
+      "old_content_sha256": "5e8272696655004f0804359f18dcaa045921eb036ddbb95e4d5c42e1259b33f0",
+      "scope": "alternate_pending/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 22064,
+      "new_content_sha256": "3dc73fa6f1b40375960e96d011a68601431b75d510d370c466cf010bb7c9e523",
+      "new_rows": 30,
+      "old_bytes": 22064,
+      "old_content_sha256": "cccdf3cb74202a28090f74f4f72ccf17b619a53fd0be9e45aa99bf703c21d1a3",
+      "old_rows": 30,
+      "scope": "alternate_pending/runs.csv"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 4773370,
+      "new_content_sha256": "2279c5a23904c24a9bcee7397a3d5d7843509c666bf2883d5d154cfff0b8eb9a",
+      "new_rows": 8670,
+      "old_bytes": 4773370,
+      "old_content_sha256": "2279c5a23904c24a9bcee7397a3d5d7843509c666bf2883d5d154cfff0b8eb9a",
+      "old_rows": 8670,
+      "scope": "alternate_pending/timeline.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12280,
+      "new_content_sha256": "cb6b3213ab49248e12056df93401aca698d6c8cf9a8aecbe038c746e4d06202c",
+      "old_bytes": 12280,
+      "old_content_sha256": "cb6b3213ab49248e12056df93401aca698d6c8cf9a8aecbe038c746e4d06202c",
+      "scope": "alternate_pending/trips.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 50757,
+      "new_content_sha256": "de7a1c5bcc1bf0ea2a280428e86bc152170e87f89a0109a33dd72fc4297d8fcd",
+      "new_rows": 2070,
+      "old_bytes": 50757,
+      "old_content_sha256": "de7a1c5bcc1bf0ea2a280428e86bc152170e87f89a0109a33dd72fc4297d8fcd",
+      "old_rows": 2070,
+      "scope": "long_commissioned/activities.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 11907687,
+      "new_content_sha256": "1267f632522ca9b623f350d9496f788cc7804bd87d060502c603b2bc80d17f56",
+      "old_bytes": 11907977,
+      "old_content_sha256": "38e16e714838226f6174220c19db200c9670ade8afe1ffd532982a10d9c218da",
+      "scope": "long_commissioned/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 321182,
+      "new_content_sha256": "b1dbb0d62afdaeaf2a11743dd310e7fbd128212eba43624542007b7435ec6b70",
+      "old_bytes": 321182,
+      "old_content_sha256": "b1dbb0d62afdaeaf2a11743dd310e7fbd128212eba43624542007b7435ec6b70",
+      "scope": "long_commissioned/goods.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27869,
+      "new_content_sha256": "5b09bffea476295650570263bd125b4d0e4a7ec60e8b906a2c266207fc075d30",
+      "old_bytes": 27869,
+      "old_content_sha256": "5b09bffea476295650570263bd125b4d0e4a7ec60e8b906a2c266207fc075d30",
+      "scope": "long_commissioned/initial_beliefs.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 63864,
+      "new_content_sha256": "3fe33b28ad251b45f0894f66496d2127b2401790efea4cbb941a5d883c9a8e87",
+      "old_bytes": 63864,
+      "old_content_sha256": "318c614c6c6fe7acd0528f24002f79e597dc5553beb79525f6c14150cd03c2cf",
+      "scope": "long_commissioned/institutions.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3759,
+      "new_content_sha256": "04b4237b97db91c2f22940ab8d403846619db48ebe31ac435f216416bdfb8f05",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "012ab5f05c7c6ef757162cfdf05c47a4d8eaee687ffba92c6f207f2879375a72",
+      "old_bytes": 3742,
+      "old_content_sha256": "012ab5f05c7c6ef757162cfdf05c47a4d8eaee687ffba92c6f207f2879375a72",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "012ab5f05c7c6ef757162cfdf05c47a4d8eaee687ffba92c6f207f2879375a72",
+      "scope": "long_commissioned/parameters.txt"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 25537,
+      "new_content_sha256": "1e8bd49c451a5ba1c57ab988d63c2e32ac93aa7260d0d7041fd349784cb4a573",
+      "new_rows": 540,
+      "old_bytes": 25537,
+      "old_content_sha256": "1e8bd49c451a5ba1c57ab988d63c2e32ac93aa7260d0d7041fd349784cb4a573",
+      "old_rows": 540,
+      "scope": "long_commissioned/people.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 37470,
+      "new_content_sha256": "e81686aad157c104eaef73cf66f8dd1621955b7adc640ef7f4dd661a99b139a3",
+      "old_bytes": 37470,
+      "old_content_sha256": "e81686aad157c104eaef73cf66f8dd1621955b7adc640ef7f4dd661a99b139a3",
+      "scope": "long_commissioned/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 23613,
+      "new_content_sha256": "6c826eddf025b4f5d26574af869ed0e40a644f403040ca406e851b42f82a073d",
+      "new_rows": 30,
+      "old_bytes": 23613,
+      "old_content_sha256": "3ceb0bc4ec9b67ca9e33a4bfc46def7c0468ff11447348a103617ff5bce3a774",
+      "old_rows": 30,
+      "scope": "long_commissioned/runs.csv"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 5135637,
+      "new_content_sha256": "3e4522790dd8db38ab15b8612ece4d13600a57dcaee6975ac5a375d0b4927f67",
+      "new_rows": 8670,
+      "old_bytes": 5137761,
+      "old_content_sha256": "0ae527ebc6a8eea04cbb54e3a2f6eec7a9bba41fcb3ed63c0b48d80c644ef452",
+      "old_rows": 8670,
+      "scope": "long_commissioned/timeline.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 7531,
+      "new_content_sha256": "3fd6517f77c563547f007fbe8e46b17a6412d3a86fd332263b90ac28acb63856",
+      "old_bytes": 7531,
+      "old_content_sha256": "3fd6517f77c563547f007fbe8e46b17a6412d3a86fd332263b90ac28acb63856",
+      "scope": "long_commissioned/trips.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 50607,
+      "new_content_sha256": "1bbc34cd04d062423f750147993e4a1d9f747aaf1f13c7e10d37388e697adc42",
+      "new_rows": 2070,
+      "old_bytes": 50607,
+      "old_content_sha256": "1bbc34cd04d062423f750147993e4a1d9f747aaf1f13c7e10d37388e697adc42",
+      "old_rows": 2070,
+      "scope": "long_pending/activities.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12049130,
+      "new_content_sha256": "52c840700f920b0b6c859769dd37c705edbebb33bd408d35a54c80583a71de72",
+      "old_bytes": 12049130,
+      "old_content_sha256": "52c840700f920b0b6c859769dd37c705edbebb33bd408d35a54c80583a71de72",
+      "scope": "long_pending/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 312262,
+      "new_content_sha256": "de36f8da4366053d019cf95601d8181505f3e5203673dab1460d225c9220adaf",
+      "old_bytes": 312262,
+      "old_content_sha256": "de36f8da4366053d019cf95601d8181505f3e5203673dab1460d225c9220adaf",
+      "scope": "long_pending/goods.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27869,
+      "new_content_sha256": "5b09bffea476295650570263bd125b4d0e4a7ec60e8b906a2c266207fc075d30",
+      "old_bytes": 27869,
+      "old_content_sha256": "5b09bffea476295650570263bd125b4d0e4a7ec60e8b906a2c266207fc075d30",
+      "scope": "long_pending/initial_beliefs.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 59884,
+      "new_content_sha256": "2077d103ac34c5dac7283c58ca987d8773a5a9849674c7b38dc66959c652da38",
+      "old_bytes": 59884,
+      "old_content_sha256": "2077d103ac34c5dac7283c58ca987d8773a5a9849674c7b38dc66959c652da38",
+      "scope": "long_pending/institutions.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3754,
+      "new_content_sha256": "de11e8f655f037dcdefbbf759f0535ab6ad972283d76da40cdff5513270b4e3a",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "3de67c2bb2d74575607880dd2da5d9dc1814427d0339cd2b31b019e03833eeda",
+      "old_bytes": 3737,
+      "old_content_sha256": "3de67c2bb2d74575607880dd2da5d9dc1814427d0339cd2b31b019e03833eeda",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "3de67c2bb2d74575607880dd2da5d9dc1814427d0339cd2b31b019e03833eeda",
+      "scope": "long_pending/parameters.txt"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 25507,
+      "new_content_sha256": "a2699b7c63880f4b4bcf4c96fec4c26792ecc2d999e742d4d2abf116073a7a70",
+      "new_rows": 540,
+      "old_bytes": 25507,
+      "old_content_sha256": "a2699b7c63880f4b4bcf4c96fec4c26792ecc2d999e742d4d2abf116073a7a70",
+      "old_rows": 540,
+      "scope": "long_pending/people.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 37470,
+      "new_content_sha256": "e81686aad157c104eaef73cf66f8dd1621955b7adc640ef7f4dd661a99b139a3",
+      "old_bytes": 37470,
+      "old_content_sha256": "e81686aad157c104eaef73cf66f8dd1621955b7adc640ef7f4dd661a99b139a3",
+      "scope": "long_pending/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 22223,
+      "new_content_sha256": "7dcf576b661176172ff735547b1566a0c8e95d42caf8b0e3338e80575429e1e3",
+      "new_rows": 30,
+      "old_bytes": 22223,
+      "old_content_sha256": "7378b6251ad1b14944f2f4786af6cc4b391ecbaa32c793ccb6326eadd8e398f2",
+      "old_rows": 30,
+      "scope": "long_pending/runs.csv"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 4916873,
+      "new_content_sha256": "ca386549c742c067d546d75afd06fa5848f25154f77e233aadba5d3b46c13760",
+      "new_rows": 8670,
+      "old_bytes": 4916873,
+      "old_content_sha256": "ca386549c742c067d546d75afd06fa5848f25154f77e233aadba5d3b46c13760",
+      "old_rows": 8670,
+      "scope": "long_pending/timeline.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 7531,
+      "new_content_sha256": "3fd6517f77c563547f007fbe8e46b17a6412d3a86fd332263b90ac28acb63856",
+      "old_bytes": 7531,
+      "old_content_sha256": "3fd6517f77c563547f007fbe8e46b17a6412d3a86fd332263b90ac28acb63856",
+      "scope": "long_pending/trips.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 51697,
+      "new_content_sha256": "679683dfaf5ac96818e0f79edb6ed15f85fb0922ecad8bc41a94c4d0c3d6efc1",
+      "new_rows": 2130,
+      "old_bytes": 51697,
+      "old_content_sha256": "679683dfaf5ac96818e0f79edb6ed15f85fb0922ecad8bc41a94c4d0c3d6efc1",
+      "old_rows": 2130,
+      "scope": "scarce_commissioned/activities.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12148720,
+      "new_content_sha256": "54d663871a4a99c06ce203676ad9d2052edcd7b12b36f71fc1f6861dcebf964e",
+      "old_bytes": 12148720,
+      "old_content_sha256": "54d663871a4a99c06ce203676ad9d2052edcd7b12b36f71fc1f6861dcebf964e",
+      "scope": "scarce_commissioned/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 302322,
+      "new_content_sha256": "3e84b69273a1d0eef8d82f5effadb25515e1b332dc14c5f2f788ab573ea0d653",
+      "old_bytes": 302322,
+      "old_content_sha256": "3e84b69273a1d0eef8d82f5effadb25515e1b332dc14c5f2f788ab573ea0d653",
+      "scope": "scarce_commissioned/goods.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27797,
+      "new_content_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+      "old_bytes": 27797,
+      "old_content_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+      "scope": "scarce_commissioned/initial_beliefs.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 59874,
+      "new_content_sha256": "1a7bc0556c9e95eb0cfec17ec53929e861de87b2a2237bfca79e1b7b2e46f96c",
+      "old_bytes": 59874,
+      "old_content_sha256": "1a7bc0556c9e95eb0cfec17ec53929e861de87b2a2237bfca79e1b7b2e46f96c",
+      "scope": "scarce_commissioned/institutions.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3757,
+      "new_content_sha256": "06222b7ce0ff8e097146340dcccb28499f732b7269541c41a9d545fae00eee23",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "63507b41fa04bb842aeabd2e23ea4c5a8a013395d2c9cefc553b3fb3d9df884a",
+      "old_bytes": 3740,
+      "old_content_sha256": "63507b41fa04bb842aeabd2e23ea4c5a8a013395d2c9cefc553b3fb3d9df884a",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "63507b41fa04bb842aeabd2e23ea4c5a8a013395d2c9cefc553b3fb3d9df884a",
+      "scope": "scarce_commissioned/parameters.txt"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 25297,
+      "new_content_sha256": "143fb2c0c4eba211ae93e6f8777ee400dbd6a6529d97cae0241b5cae5b9a85bb",
+      "new_rows": 540,
+      "old_bytes": 25297,
+      "old_content_sha256": "143fb2c0c4eba211ae93e6f8777ee400dbd6a6529d97cae0241b5cae5b9a85bb",
+      "old_rows": 540,
+      "scope": "scarce_commissioned/people.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 37410,
+      "new_content_sha256": "5e8272696655004f0804359f18dcaa045921eb036ddbb95e4d5c42e1259b33f0",
+      "old_bytes": 37410,
+      "old_content_sha256": "5e8272696655004f0804359f18dcaa045921eb036ddbb95e4d5c42e1259b33f0",
+      "scope": "scarce_commissioned/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 24549,
+      "new_content_sha256": "5aa369a78eeae92fb3452dc2437e7346150715ab6d7c69c801b9d88c23042e96",
+      "new_rows": 30,
+      "old_bytes": 24549,
+      "old_content_sha256": "8060467aed4e152ee731cd0bba812166a213cbae570a7f7ab4a8aff6586ae808",
+      "old_rows": 30,
+      "scope": "scarce_commissioned/runs.csv"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 5423266,
+      "new_content_sha256": "7d437cb4f1ae69027224f295be1eb8140513e07df353e3a4a94c4d30a23b0c54",
+      "new_rows": 8670,
+      "old_bytes": 5423266,
+      "old_content_sha256": "7d437cb4f1ae69027224f295be1eb8140513e07df353e3a4a94c4d30a23b0c54",
+      "old_rows": 8670,
+      "scope": "scarce_commissioned/timeline.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 20508,
+      "new_content_sha256": "275be7788726e7b0f623c7dc2a16745bb374cdc99b39dbff06936941c2d85886",
+      "old_bytes": 20508,
+      "old_content_sha256": "275be7788726e7b0f623c7dc2a16745bb374cdc99b39dbff06936941c2d85886",
+      "scope": "scarce_commissioned/trips.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 50277,
+      "new_content_sha256": "6f6927ed0527a5038b0e5753788ab455e4b0f6a8a6859a7ca3eb9239ec52d7aa",
+      "new_rows": 2070,
+      "old_bytes": 50277,
+      "old_content_sha256": "6f6927ed0527a5038b0e5753788ab455e4b0f6a8a6859a7ca3eb9239ec52d7aa",
+      "old_rows": 2070,
+      "scope": "scarce_pending/activities.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 13085194,
+      "new_content_sha256": "d34bb41d9ce07fab70016549fc6cd5cd8fc6589d2ba6ed3a033face99d7d8dd9",
+      "old_bytes": 13085194,
+      "old_content_sha256": "d34bb41d9ce07fab70016549fc6cd5cd8fc6589d2ba6ed3a033face99d7d8dd9",
+      "scope": "scarce_pending/events.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 333752,
+      "new_content_sha256": "aa6dd205f2504e3fa1a606354a941cdab5fdfcfb93b9a257bd41259d6fcfad73",
+      "old_bytes": 333752,
+      "old_content_sha256": "aa6dd205f2504e3fa1a606354a941cdab5fdfcfb93b9a257bd41259d6fcfad73",
+      "scope": "scarce_pending/goods.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 27797,
+      "new_content_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+      "old_bytes": 27797,
+      "old_content_sha256": "9402c2dc55eca5eb6f515e3f2230f2d20881edcf92327f9663d5ab288d579e34",
+      "scope": "scarce_pending/initial_beliefs.tsv.gz"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 56254,
+      "new_content_sha256": "4cfa48452f5b6913280485ee3d5eef73f9d9cda687fca3af1a8327dcc7baa577",
+      "old_bytes": 56254,
+      "old_content_sha256": "4cfa48452f5b6913280485ee3d5eef73f9d9cda687fca3af1a8327dcc7baa577",
+      "scope": "scarce_pending/institutions.tsv.gz"
+    },
+    {
+      "comparison": "Exact bytes after removing only explicit disabled commands Config field",
+      "new_bytes": 3752,
+      "new_content_sha256": "8b10e2627ce8e91f9f3ab02dbddc449ff837db5ad85c7ec49c77ea7861d27487",
+      "new_disabled_command_fields": 1,
+      "new_normalized_sha256": "5e49c4675537f8a0e3492b6d3602d5d0a48c4f6b32f0dada4b08b101031778e9",
+      "old_bytes": 3735,
+      "old_content_sha256": "5e49c4675537f8a0e3492b6d3602d5d0a48c4f6b32f0dada4b08b101031778e9",
+      "old_disabled_command_fields": 0,
+      "old_normalized_sha256": "5e49c4675537f8a0e3492b6d3602d5d0a48c4f6b32f0dada4b08b101031778e9",
+      "scope": "scarce_pending/parameters.txt"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 25537,
+      "new_content_sha256": "ab4050c5a2ed78074867ef3be0fc4674fbd3fd296b491dae8297760b87c22d08",
+      "new_rows": 540,
+      "old_bytes": 25537,
+      "old_content_sha256": "ab4050c5a2ed78074867ef3be0fc4674fbd3fd296b491dae8297760b87c22d08",
+      "old_rows": 540,
+      "scope": "scarce_pending/people.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 37410,
+      "new_content_sha256": "5e8272696655004f0804359f18dcaa045921eb036ddbb95e4d5c42e1259b33f0",
+      "old_bytes": 37410,
+      "old_content_sha256": "5e8272696655004f0804359f18dcaa045921eb036ddbb95e4d5c42e1259b33f0",
+      "scope": "scarce_pending/reports.tsv.gz"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 21974,
+      "new_content_sha256": "9d820516010a51e9fc9a0b244a92c13accaff2ffd90cfa3c9219761e0be8456d",
+      "new_rows": 30,
+      "old_bytes": 21974,
+      "old_content_sha256": "cfa323c0fc1623cd40b5c811cbd5428b5072914282e70cf33132866fab31b88e",
+      "old_rows": 30,
+      "scope": "scarce_pending/runs.csv"
+    },
+    {
+      "comparison": "Ordered CSV exact except elapsed_ms values",
+      "new_bytes": 4773370,
+      "new_content_sha256": "011d2add7e9b413e7b247bf54618269c46c77a1fd04c31097def9cd1daa8176d",
+      "new_rows": 8670,
+      "old_bytes": 4773370,
+      "old_content_sha256": "011d2add7e9b413e7b247bf54618269c46c77a1fd04c31097def9cd1daa8176d",
+      "old_rows": 8670,
+      "scope": "scarce_pending/timeline.csv"
+    },
+    {
+      "comparison": "Exact uncompressed bytes; no semantic exception",
+      "new_bytes": 12280,
+      "new_content_sha256": "cb6b3213ab49248e12056df93401aca698d6c8cf9a8aecbe038c746e4d06202c",
+      "old_bytes": 12280,
+      "old_content_sha256": "cb6b3213ab49248e12056df93401aca698d6c8cf9a8aecbe038c746e4d06202c",
+      "scope": "scarce_pending/trips.tsv.gz"
+    }
+  ],
+  "csv_exception": "Only elapsed_ms values; column identity/order remains exact",
+  "differences": [
+    {
+      "first_byte_offset": 4648285,
+      "new_context": "380000 reason=no locally justified work; remaining near resources is allowed\n0\t40326\t108232800\tSome(9)\tDecision\tintent=Sleep nutrition_ms=35767200 starvation_ms=0 reason=critical fatigue or ongoing recovery\n0\t40327\t108232800\tSome(9)\tInterrupted\tsleep; was=Sleep { until: 108232800 }\n0\t40328\t108232800\tSome(9)\tSleepStarted\tfatigue_ms=6900000",
+      "new_line": 40328,
+      "old_context": "380000 reason=no locally justified work; remaining near resources is allowed\n0\t40326\t108232800\tSome(1)\tDecision\tintent=JoinMuster nutrition_ms=86167200 starvation_ms=0 reason=physical muster arrival; local admission required\n0\t40327\t108232800\tSome(1)\tUnitAssembled\tunit=0; no remote orders received\n0\t40328\t108232800\tSome(1)\tMusterArrived\tu",
+      "old_line": 40328,
+      "reason": "uncompressed bytes changed",
+      "scope": "long_commissioned/events.tsv.gz"
+    },
+    {
+      "first_byte_offset": 817,
+      "new_context": "260000, \"TERM_COMPLETED\")) }, 1: Member { person: 1, enlisted_at: 108180000, assembled_at: Some(108240000), ended: Some((151440000, \"TERM_COMPLETED\")) }, 3: Member { person: 3, enlisted_at: 0, assembled_at: Some(60000), ended: Some((43260000, \"TERM_COMPLETED\")) }, 4: Member { person: 4, enlisted_at: 0, assembled_at: Some(60000), ended: So",
+      "new_line": 5,
+      "old_context": "260000, \"TERM_COMPLETED\")) }, 1: Member { person: 1, enlisted_at: 108180000, assembled_at: Some(108232800), ended: Some((151432800, \"TERM_COMPLETED\")) }, 3: Member { person: 3, enlisted_at: 0, assembled_at: Some(60000), ended: Some((43260000, \"TERM_COMPLETED\")) }, 4: Member { person: 4, enlisted_at: 0, assembled_at: Some(60000), ended: So",
+      "old_line": 5,
+      "reason": "uncompressed bytes changed",
+      "scope": "long_commissioned/institutions.tsv.gz"
+    },
+    {
+      "all_raw_rows_preserved": true,
+      "changed_values": 60,
+      "first_differences": [
+        {
+          "field": "event_hash",
+          "new": "cc1041f79aa42eac",
+          "old": "04cd242703c1d90b",
+          "row": 0,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "23d727e8696f87fd",
+          "old": "dd644fa492aa0f44",
+          "row": 0,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "347f21146f5d3b64",
+          "old": "7bbd18a3d513175f",
+          "row": 1,
+          "seed": "1"
+        },
+        {
+          "field": "state_hash",
+          "new": "7ae4ee0f5a166fdd",
+          "old": "84e20742b2353517",
+          "row": 1,
+          "seed": "1"
+        },
+        {
+          "field": "event_hash",
+          "new": "9251d17c4103a852",
+          "old": "47cecaabe52046a2",
+          "row": 2,
+          "seed": "2"
+        },
+        {
+          "field": "state_hash",
+          "new": "2cf2551276c1eaca",
+          "old": "2a4a5536021e31e2",
+          "row": 2,
+          "seed": "2"
+        },
+        {
+          "field": "event_hash",
+          "new": "e1d4326544010be8",
+          "old": "500e31e2ce67f171",
+          "row": 3,
+          "seed": "3"
+        },
+        {
+          "field": "state_hash",
+          "new": "544e54607c788686",
+          "old": "5252ba94c6c00cd6",
+          "row": 3,
+          "seed": "3"
+        },
+        {
+          "field": "event_hash",
+          "new": "c970910be0b18148",
+          "old": "0db01ccb58f56a64",
+          "row": 4,
+          "seed": "4"
+        },
+        {
+          "field": "state_hash",
+          "new": "12f0f36e35998c95",
+          "old": "e3e05b29ae2dcf89",
+          "row": 4,
+          "seed": "4"
+        },
+        {
+          "field": "event_hash",
+          "new": "e7c9e09df52192b8",
+          "old": "b09fe3faac0f5aa8",
+          "row": 5,
+          "seed": "5"
+        },
+        {
+          "field": "state_hash",
+          "new": "e066a8417ef5b059",
+          "old": "b959629dcc46ecfb",
+          "row": 5,
+          "seed": "5"
+        },
+        {
+          "field": "event_hash",
+          "new": "c0a14366215e0778",
+          "old": "20eba5eae9d219aa",
+          "row": 6,
+          "seed": "6"
+        },
+        {
+          "field": "state_hash",
+          "new": "4e8dd0c04cc5ed55",
+          "old": "9843405f758c1e12",
+          "row": 6,
+          "seed": "6"
+        },
+        {
+          "field": "event_hash",
+          "new": "9ffa0c8d62a5986f",
+          "old": "02dd996c0db16405",
+          "row": 7,
+          "seed": "7"
+        },
+        {
+          "field": "state_hash",
+          "new": "4e0651b8b7cdcab6",
+          "old": "3813e67c48805ad6",
+          "row": 7,
+          "seed": "7"
+        },
+        {
+          "field": "event_hash",
+          "new": "347db4c12513307d",
+          "old": "4a41395564b6a8c2",
+          "row": 8,
+          "seed": "8"
+        },
+        {
+          "field": "state_hash",
+          "new": "857e0e51babd34d9",
+          "old": "39bc6fd354e91745",
+          "row": 8,
+          "seed": "8"
+        },
+        {
+          "field": "event_hash",
+          "new": "4e7a31d62bbd4796",
+          "old": "227274f1d256d761",
+          "row": 9,
+          "seed": "9"
+        },
+        {
+          "field": "state_hash",
+          "new": "f9b9794ec6b96457",
+          "old": "4015d3c2b1bed4ba",
+          "row": 9,
+          "seed": "9"
+        },
+        {
+          "field": "event_hash",
+          "new": "a1c60792a048c1ab",
+          "old": "bac121b24c76c1ef",
+          "row": 10,
+          "seed": "10"
+        },
+        {
+          "field": "state_hash",
+          "new": "8b2bb7726befb224",
+          "old": "4f347a087fb2e8e0",
+          "row": 10,
+          "seed": "10"
+        },
+        {
+          "field": "event_hash",
+          "new": "49aca3c83e72adfa",
+          "old": "b52e8f76118a24b6",
+          "row": 11,
+          "seed": "11"
+        },
+        {
+          "field": "state_hash",
+          "new": "8b4fa64a222f1fa8",
+          "old": "4592e098501749ac",
+          "row": 11,
+          "seed": "11"
+        },
+        {
+          "field": "event_hash",
+          "new": "ce1c11d2c48df4fa",
+          "old": "53e5f7e37b7a5da2",
+          "row": 12,
+          "seed": "12"
+        },
+        {
+          "field": "state_hash",
+          "new": "1578c3188b132d84",
+          "old": "1adb76c2a635c881",
+          "row": 12,
+          "seed": "12"
+        },
+        {
+          "field": "event_hash",
+          "new": "00fd736fbbfacc47",
+          "old": "32a5be82d72a93cb",
+          "row": 13,
+          "seed": "13"
+        },
+        {
+          "field": "state_hash",
+          "new": "116bca880a65ce42",
+          "old": "1c836675287a8b4e",
+          "row": 13,
+          "seed": "13"
+        },
+        {
+          "field": "event_hash",
+          "new": "5290870658d985bc",
+          "old": "6924761f721c08ab",
+          "row": 14,
+          "seed": "14"
+        },
+        {
+          "field": "state_hash",
+          "new": "57c449c04738368b",
+          "old": "0b5710e429da004c",
+          "row": 14,
+          "seed": "14"
+        },
+        {
+          "field": "event_hash",
+          "new": "c480bb2440cd4e0c",
+          "old": "871720bf2eefbe04",
+          "row": 15,
+          "seed": "15"
+        },
+        {
+          "field": "state_hash",
+          "new": "d7944b5be8747188",
+          "old": "fc237bbe41500a06",
+          "row": 15,
+          "seed": "15"
+        },
+        {
+          "field": "event_hash",
+          "new": "7a4c5fe340d35d75",
+          "old": "0568eefb70466177",
+          "row": 16,
+          "seed": "16"
+        },
+        {
+          "field": "state_hash",
+          "new": "27ec89e869701fd8",
+          "old": "a6f881f9d5dd82e5",
+          "row": 16,
+          "seed": "16"
+        },
+        {
+          "field": "event_hash",
+          "new": "76b94a6653bff7ea",
+          "old": "e5fb9f6c6873f954",
+          "row": 17,
+          "seed": "17"
+        },
+        {
+          "field": "state_hash",
+          "new": "209ab6aec287ad58",
+          "old": "7db0f722cc6adee0",
+          "row": 17,
+          "seed": "17"
+        },
+        {
+          "field": "event_hash",
+          "new": "27b5a6ce665b9fee",
+          "old": "62b7cf469e191b8d",
+          "row": 18,
+          "seed": "18"
+        },
+        {
+          "field": "state_hash",
+          "new": "9990830e10da715f",
+          "old": "ecc03b69fec465a9",
+          "row": 18,
+          "seed": "18"
+        },
+        {
+          "field": "event_hash",
+          "new": "b56a6709cc2a7fe5",
+          "old": "9626b10b992896e8",
+          "row": 19,
+          "seed": "19"
+        },
+        {
+          "field": "state_hash",
+          "new": "4728e7d705611798",
+          "old": "c73a127b8179d756",
+          "row": 19,
+          "seed": "19"
+        },
+        {
+          "field": "event_hash",
+          "new": "e530fa67afa4115c",
+          "old": "921b7faae9123081",
+          "row": 20,
+          "seed": "20"
+        },
+        {
+          "field": "state_hash",
+          "new": "6db2beec0609c04d",
+          "old": "0cae3489392fc7f6",
+          "row": 20,
+          "seed": "20"
+        },
+        {
+          "field": "event_hash",
+          "new": "2411bcc0abacefd3",
+          "old": "62e4f7bbae3292dd",
+          "row": 21,
+          "seed": "21"
+        },
+        {
+          "field": "state_hash",
+          "new": "f830ceb78243a12b",
+          "old": "399d906d3b715fd5",
+          "row": 21,
+          "seed": "21"
+        },
+        {
+          "field": "event_hash",
+          "new": "aed5648e22e2db21",
+          "old": "c155b5566678f98f",
+          "row": 22,
+          "seed": "22"
+        },
+        {
+          "field": "state_hash",
+          "new": "8e141d18685811b2",
+          "old": "d003c516383e1800",
+          "row": 22,
+          "seed": "22"
+        },
+        {
+          "field": "event_hash",
+          "new": "de06eab2b2fe8f97",
+          "old": "6949f371c4cac386",
+          "row": 23,
+          "seed": "23"
+        },
+        {
+          "field": "state_hash",
+          "new": "b9cc9bbba4508202",
+          "old": "32eab63d9f67ad5a",
+          "row": 23,
+          "seed": "23"
+        },
+        {
+          "field": "event_hash",
+          "new": "537f96413f3ffd81",
+          "old": "b2898038690c5d96",
+          "row": 24,
+          "seed": "24"
+        },
+        {
+          "field": "state_hash",
+          "new": "976570e3013d6fc7",
+          "old": "06f3d1f15036b613",
+          "row": 24,
+          "seed": "24"
+        }
+      ],
+      "reason": "semantic CSV values changed",
+      "scope": "long_commissioned/runs.csv"
+    },
+    {
+      "all_raw_rows_preserved": true,
+      "changed_values": 12960,
+      "first_differences": [
+        {
+          "field": "event_hash",
+          "new": "7437661b87ac2bcb",
+          "old": "9fe1c9a142029367",
+          "row": 121,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "160.88425666666666",
+          "old": "160.88225666666668",
+          "row": 121,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "2.35",
+          "old": "2.352",
+          "row": 121,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "e55ad0ffaf89dbb9",
+          "old": "0f7bd7c8620a44d5",
+          "row": 121,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "d1f2aba5775754b4",
+          "old": "9a701bfe787c5474",
+          "row": 122,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "162.30092333333334",
+          "old": "162.29892333333333",
+          "row": 122,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "2.6",
+          "old": "2.602",
+          "row": 122,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "43da69526a6fd4f4",
+          "old": "b50ce097b6b5bae8",
+          "row": 122,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "bf8a633472a9a3ae",
+          "old": "a6e7e3c591ee620e",
+          "row": 123,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "163.71759",
+          "old": "163.71559",
+          "row": 123,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "2.85",
+          "old": "2.852",
+          "row": 123,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "c9d41a15db878e41",
+          "old": "0ae83218e3b65931",
+          "row": 123,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "7a5bdb116863774c",
+          "old": "fd05235e2ece6976",
+          "row": 124,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "165.13425666666666",
+          "old": "165.13225666666668",
+          "row": 124,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "3.1",
+          "old": "3.102",
+          "row": 124,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "f428ec56bf055761",
+          "old": "9075eccd9b6c1710",
+          "row": 124,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "c493a6bd71e9a0e7",
+          "old": "90ace5e7d8926d21",
+          "row": 125,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "166.55092333333334",
+          "old": "166.54892333333333",
+          "row": 125,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "3.35",
+          "old": "3.352",
+          "row": 125,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "1a37963a841f495d",
+          "old": "edf8f366fdcfe086",
+          "row": 125,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "58b539369cb8f104",
+          "old": "6f85df9df9d145ea",
+          "row": 126,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "167.96759",
+          "old": "167.96559",
+          "row": 126,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "3.6",
+          "old": "3.602",
+          "row": 126,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "2873125a832b6b78",
+          "old": "8c2600724da8656d",
+          "row": 126,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "cf47c64077bc4404",
+          "old": "92c7530e8185b00c",
+          "row": 127,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "169.38425666666666",
+          "old": "169.38225666666668",
+          "row": 127,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "3.85",
+          "old": "3.852",
+          "row": 127,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "263d5dfc713ddc6b",
+          "old": "7a13bed4409d03f4",
+          "row": 127,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "aa1c1d46ce91f8d4",
+          "old": "4200a415c8286953",
+          "row": 128,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "170.80092333333334",
+          "old": "170.79892333333333",
+          "row": 128,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "4.1",
+          "old": "4.102",
+          "row": 128,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "ca77e46511c73dab",
+          "old": "bd5e9afd55e193df",
+          "row": 128,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "68fac7f149ccd2a0",
+          "old": "b15e0492e3f1a892",
+          "row": 129,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "172.21759",
+          "old": "172.21559",
+          "row": 129,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "4.35",
+          "old": "4.352",
+          "row": 129,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "137ecbf3c5214650",
+          "old": "4b0a80d2c47dd82b",
+          "row": 129,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "0d30dadb613dfc52",
+          "old": "256d560742fa70b8",
+          "row": 130,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "173.63425666666666",
+          "old": "173.63225666666668",
+          "row": 130,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "4.6",
+          "old": "4.602",
+          "row": 130,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "ecec3709867773fc",
+          "old": "bd689f5cbd58fd0b",
+          "row": 130,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "f712eabcd3a19aeb",
+          "old": "23eac9f64a83b20b",
+          "row": 131,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "175.05092333333334",
+          "old": "175.04892333333333",
+          "row": 131,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "4.85",
+          "old": "4.852",
+          "row": 131,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "f530d8ac88f2fdb7",
+          "old": "ce51962d3577b5f2",
+          "row": 131,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "e716dd325ca483ff",
+          "old": "6e4212046f325a69",
+          "row": 132,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "176.46759",
+          "old": "176.46559",
+          "row": 132,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "5.1",
+          "old": "5.102",
+          "row": 132,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "8276a29ba4e4f85f",
+          "old": "3f5263e271579142",
+          "row": 132,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "813d5dda48f307db",
+          "old": "348ae04d1f410269",
+          "row": 133,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "178.35092333333333",
+          "old": "178.34892333333335",
+          "row": 133,
+          "seed": "0"
+        }
+      ],
+      "reason": "semantic CSV values changed",
+      "scope": "long_commissioned/timeline.csv"
+    }
+  ],
+  "new_binary_sha256": "de3efa15d5dd4ea6da0b4cda9565e4bc5524c1d7bf384d179e36cb26399808aa",
+  "new_provenance_sha256": "705613e5924d502f20521f35a57b31a85330209897cf3b4853531c733009675e",
+  "new_root": "research/command-chain/regression/kingdom-readiness",
+  "new_source_revision": "ff7052773c97be2d202dbb0b1e7a9bb3a03d2f6e",
+  "old_binary_sha256": "84d82fa734139c464e958745c63cf1d4717ead2c8f1a4d557fd3fb02399401ce",
+  "old_provenance_sha256": "5b82115d11efcda2ca986989a99d378d98f659f891a9fd5a7bc2de1d21fc90ab",
+  "old_root": "research/kingdom-readiness/matrix",
+  "old_source_revision": "47533e2406bb6a008995888eafac06677ca48f45",
+  "panel": "F13A",
+  "parameter_exception": "Remove only disabled commands:false Config field in compact, pretty or escaped-pretty layout; all remaining bytes exact",
+  "runs": 180,
+  "status": "FAIL"
+}

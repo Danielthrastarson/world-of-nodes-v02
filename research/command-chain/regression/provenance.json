@@ -1,0 +1,52 @@
+{
+  "binary_sha256": {
+    "affect_probe": "8aea0518cf03fb2b8fe9398af0a812fb1c17c56067c10acb68ed164d15273946",
+    "combat_probe": "dbb6ae117c22ab94020426ca7f3887b7a7b839f209a6a0d1a4884ac300161f30",
+    "formation_probe": "746c7a3f9aa40d1298fc7fd09843668c5cbb0880c5cf2a72ac4a34b622ce0f28",
+    "household_probe": "abd1110a349926a532db98a71eb754521ce516bbdc985e6c76d236e18f4da97c",
+    "information_probe": "0b3c4d15dfe508e4c0ab6c6eca7411fccfce5606b3bfdcb2bcc4d7d2c3c5f0ac",
+    "infrastructure_probe": "59a04828bc55f6320abd8564803ae42f0c1ee4660a16431c54e35723d362983e",
+    "kingdom_readiness_probe": "de3efa15d5dd4ea6da0b4cda9565e4bc5524c1d7bf384d179e36cb26399808aa",
+    "lifecycle_probe": "b314630b2c738e3f0c91e0645b5c3d71c30f2ead3fa7ec4c39d0acb015228438",
+    "mobilization_probe": "8766cf10f7238f00c35844e18d216e8542cc5dc31050064155bea48d4486aada",
+    "paths_probe": "2a66ed98db2387aa2b9491075acba16ce3f603212e2cfc7603f2339ba6107607",
+    "provisioning_probe": "5c14504e4a86aa62c28a3a7f93967fd2e51328ef07f4302f13cf62e66da5c000",
+    "settlement_probe": "6efbdd48c793f82afa454ee5071daab6d747ab29e5ea36e758fb8c1e18635007"
+  },
+  "csv_exceptions": {
+    "F12": [
+      "runtime_ms"
+    ],
+    "F13A": [
+      "elapsed_ms"
+    ]
+  },
+  "expected_executions": {
+    "F12": 840,
+    "F13A": 180,
+    "historical": 217,
+    "total": 1237
+  },
+  "historical_verifier": "scripts/verify_information.py retains its documented preexisting historical comparison rules",
+  "parameter_normalization": "parameters.txt only: remove literal 'commands: false, '",
+  "prior_artifact_count": 16215,
+  "prior_artifact_manifest": "research/command-chain/prior-artifacts.json",
+  "prior_artifact_manifest_sha256": "2935a0cf3a529a4d81ce577f46036a08cea64b89d5ff74cf499a524633736aed",
+  "retention": "All new F12/F13A raw outputs retained; nested historical verifier retains fingerprints or a failure archive. No old evidence rewritten.",
+  "script_sha256": {
+    "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/verify_command_regressions.py": "b5f16f2b7ce7203b27d6fe30a0317c3c00f313bc3a8b55debce3139ddfc9b68e",
+    "scripts/run_information.py": "9aba0484ed308a777cc17e6a94c962ee0c392a9ed14bb47f17ecd6169a11011a",
+    "scripts/run_kingdom_readiness.py": "46df1d8068af3e74defde997ffd8f0e295bcdc7b29512a24d0cab312a96e86f6",
+    "scripts/verify_information.py": "c09c2a74f195c1f5f404b5837f9632c933b9edde30d803ebb0970e3a09a07e21"
+  },
+  "source_revision": "ff7052773c97be2d202dbb0b1e7a9bb3a03d2f6e",
+  "specification_sha256": {
+    "docs/COMMAND_CHAIN_EXPERIMENT.md": "5b9d00af3a54153fe4a9d52bc5e2717a3f21e15ded28796c1912525d3f76be5f",
+    "docs/INFORMATION_EXPERIMENT.md": "89e684af2d2479419ee0d4938b4d8468485660803bc8c34246963e3a9b0d8b91",
+    "docs/KINGDOM_READINESS_EXPERIMENT.md": "7a8880a879421f58b71f82008944a517266149e334f4d936d393b1801e32d742"
+  },
+  "working_tree_status_at_start": [
+    "?? research/command-chain/matrix.log",
+    "?? research/command-chain/regression.log"
+  ]
+}

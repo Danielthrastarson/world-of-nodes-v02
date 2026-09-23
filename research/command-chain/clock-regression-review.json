@@ -1,0 +1,811 @@
+{
+  "affected_person": 1,
+  "affected_runs": 30,
+  "conclusion": "Accept the independently bounded mechanical clock correction with disclosure; retain original raw evidence and strict failure. Do not claim all historical hashes replay exactly.",
+  "exact_unaffected_runs": 150,
+  "final_activity_rows_exact": 2070,
+  "final_nonruntime_nonhash_csv_values_exact": true,
+  "new_assembly_ms": 108240000,
+  "new_panel": "research/command-chain/regression/kingdom-readiness",
+  "new_term_end_ms": 151440000,
+  "old_assembly_ms": 108232800,
+  "old_panel": "research/kingdom-readiness/matrix",
+  "old_term_end_ms": 151432800,
+  "people_rows_exact": 540,
+  "pinned_content": {
+    "events.tsv.gz": {
+      "new": "1267f632522ca9b623f350d9496f788cc7804bd87d060502c603b2bc80d17f56",
+      "old": "38e16e714838226f6174220c19db200c9670ade8afe1ffd532982a10d9c218da"
+    },
+    "institutions.tsv.gz": {
+      "new": "3fe33b28ad251b45f0894f66496d2127b2401790efea4cbb941a5d883c9a8e87",
+      "old": "318c614c6c6fe7acd0528f24002f79e597dc5553beb79525f6c14150cd03c2cf"
+    },
+    "runs.csv": {
+      "new": "a8ac91fe291ec8990b1e44e1c6a6d4e3afcb44b15b9a0ea13e1a4a4366490c35",
+      "old": "57f0fa31bc85f0ea0db26a1d9973ee83cc4c1586549c90d91c593835466d030f"
+    },
+    "timeline.csv": {
+      "new": "0844a8c14a51b051cf8d79ff905ebbb07e9bc5dff006bb2a66a23c76bf9d8391",
+      "old": "974248a56b57a4e91289661d9600305537e6a5559e9332522028aa2b2e13efba"
+    }
+  },
+  "reviewer_script_sha256": "813d8ede085f2da2bc7a3c0d52f46e5b8c77539876b9aa84a442724e58884bf0",
+  "scope": "Exact disclosed volunteer-clock correction; no general regression exception",
+  "shift_ms": 7200,
+  "status": "REVIEWED_TECHNICAL_CORRECTION",
+  "strict_differences": [
+    {
+      "first_byte_offset": 4648285,
+      "new_context": "380000 reason=no locally justified work; remaining near resources is allowed\n0\t40326\t108232800\tSome(9)\tDecision\tintent=Sleep nutrition_ms=35767200 starvation_ms=0 reason=critical fatigue or ongoing recovery\n0\t40327\t108232800\tSome(9)\tInterrupted\tsleep; was=Sleep { until: 108232800 }\n0\t40328\t108232800\tSome(9)\tSleepStarted\tfatigue_ms=6900000",
+      "new_line": 40328,
+      "old_context": "380000 reason=no locally justified work; remaining near resources is allowed\n0\t40326\t108232800\tSome(1)\tDecision\tintent=JoinMuster nutrition_ms=86167200 starvation_ms=0 reason=physical muster arrival; local admission required\n0\t40327\t108232800\tSome(1)\tUnitAssembled\tunit=0; no remote orders received\n0\t40328\t108232800\tSome(1)\tMusterArrived\tu",
+      "old_line": 40328,
+      "reason": "uncompressed bytes changed",
+      "scope": "long_commissioned/events.tsv.gz"
+    },
+    {
+      "first_byte_offset": 817,
+      "new_context": "260000, \"TERM_COMPLETED\")) }, 1: Member { person: 1, enlisted_at: 108180000, assembled_at: Some(108240000), ended: Some((151440000, \"TERM_COMPLETED\")) }, 3: Member { person: 3, enlisted_at: 0, assembled_at: Some(60000), ended: Some((43260000, \"TERM_COMPLETED\")) }, 4: Member { person: 4, enlisted_at: 0, assembled_at: Some(60000), ended: So",
+      "new_line": 5,
+      "old_context": "260000, \"TERM_COMPLETED\")) }, 1: Member { person: 1, enlisted_at: 108180000, assembled_at: Some(108232800), ended: Some((151432800, \"TERM_COMPLETED\")) }, 3: Member { person: 3, enlisted_at: 0, assembled_at: Some(60000), ended: Some((43260000, \"TERM_COMPLETED\")) }, 4: Member { person: 4, enlisted_at: 0, assembled_at: Some(60000), ended: So",
+      "old_line": 5,
+      "reason": "uncompressed bytes changed",
+      "scope": "long_commissioned/institutions.tsv.gz"
+    },
+    {
+      "all_raw_rows_preserved": true,
+      "changed_values": 60,
+      "first_differences": [
+        {
+          "field": "event_hash",
+          "new": "cc1041f79aa42eac",
+          "old": "04cd242703c1d90b",
+          "row": 0,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "23d727e8696f87fd",
+          "old": "dd644fa492aa0f44",
+          "row": 0,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "347f21146f5d3b64",
+          "old": "7bbd18a3d513175f",
+          "row": 1,
+          "seed": "1"
+        },
+        {
+          "field": "state_hash",
+          "new": "7ae4ee0f5a166fdd",
+          "old": "84e20742b2353517",
+          "row": 1,
+          "seed": "1"
+        },
+        {
+          "field": "event_hash",
+          "new": "9251d17c4103a852",
+          "old": "47cecaabe52046a2",
+          "row": 2,
+          "seed": "2"
+        },
+        {
+          "field": "state_hash",
+          "new": "2cf2551276c1eaca",
+          "old": "2a4a5536021e31e2",
+          "row": 2,
+          "seed": "2"
+        },
+        {
+          "field": "event_hash",
+          "new": "e1d4326544010be8",
+          "old": "500e31e2ce67f171",
+          "row": 3,
+          "seed": "3"
+        },
+        {
+          "field": "state_hash",
+          "new": "544e54607c788686",
+          "old": "5252ba94c6c00cd6",
+          "row": 3,
+          "seed": "3"
+        },
+        {
+          "field": "event_hash",
+          "new": "c970910be0b18148",
+          "old": "0db01ccb58f56a64",
+          "row": 4,
+          "seed": "4"
+        },
+        {
+          "field": "state_hash",
+          "new": "12f0f36e35998c95",
+          "old": "e3e05b29ae2dcf89",
+          "row": 4,
+          "seed": "4"
+        },
+        {
+          "field": "event_hash",
+          "new": "e7c9e09df52192b8",
+          "old": "b09fe3faac0f5aa8",
+          "row": 5,
+          "seed": "5"
+        },
+        {
+          "field": "state_hash",
+          "new": "e066a8417ef5b059",
+          "old": "b959629dcc46ecfb",
+          "row": 5,
+          "seed": "5"
+        },
+        {
+          "field": "event_hash",
+          "new": "c0a14366215e0778",
+          "old": "20eba5eae9d219aa",
+          "row": 6,
+          "seed": "6"
+        },
+        {
+          "field": "state_hash",
+          "new": "4e8dd0c04cc5ed55",
+          "old": "9843405f758c1e12",
+          "row": 6,
+          "seed": "6"
+        },
+        {
+          "field": "event_hash",
+          "new": "9ffa0c8d62a5986f",
+          "old": "02dd996c0db16405",
+          "row": 7,
+          "seed": "7"
+        },
+        {
+          "field": "state_hash",
+          "new": "4e0651b8b7cdcab6",
+          "old": "3813e67c48805ad6",
+          "row": 7,
+          "seed": "7"
+        },
+        {
+          "field": "event_hash",
+          "new": "347db4c12513307d",
+          "old": "4a41395564b6a8c2",
+          "row": 8,
+          "seed": "8"
+        },
+        {
+          "field": "state_hash",
+          "new": "857e0e51babd34d9",
+          "old": "39bc6fd354e91745",
+          "row": 8,
+          "seed": "8"
+        },
+        {
+          "field": "event_hash",
+          "new": "4e7a31d62bbd4796",
+          "old": "227274f1d256d761",
+          "row": 9,
+          "seed": "9"
+        },
+        {
+          "field": "state_hash",
+          "new": "f9b9794ec6b96457",
+          "old": "4015d3c2b1bed4ba",
+          "row": 9,
+          "seed": "9"
+        },
+        {
+          "field": "event_hash",
+          "new": "a1c60792a048c1ab",
+          "old": "bac121b24c76c1ef",
+          "row": 10,
+          "seed": "10"
+        },
+        {
+          "field": "state_hash",
+          "new": "8b2bb7726befb224",
+          "old": "4f347a087fb2e8e0",
+          "row": 10,
+          "seed": "10"
+        },
+        {
+          "field": "event_hash",
+          "new": "49aca3c83e72adfa",
+          "old": "b52e8f76118a24b6",
+          "row": 11,
+          "seed": "11"
+        },
+        {
+          "field": "state_hash",
+          "new": "8b4fa64a222f1fa8",
+          "old": "4592e098501749ac",
+          "row": 11,
+          "seed": "11"
+        },
+        {
+          "field": "event_hash",
+          "new": "ce1c11d2c48df4fa",
+          "old": "53e5f7e37b7a5da2",
+          "row": 12,
+          "seed": "12"
+        },
+        {
+          "field": "state_hash",
+          "new": "1578c3188b132d84",
+          "old": "1adb76c2a635c881",
+          "row": 12,
+          "seed": "12"
+        },
+        {
+          "field": "event_hash",
+          "new": "00fd736fbbfacc47",
+          "old": "32a5be82d72a93cb",
+          "row": 13,
+          "seed": "13"
+        },
+        {
+          "field": "state_hash",
+          "new": "116bca880a65ce42",
+          "old": "1c836675287a8b4e",
+          "row": 13,
+          "seed": "13"
+        },
+        {
+          "field": "event_hash",
+          "new": "5290870658d985bc",
+          "old": "6924761f721c08ab",
+          "row": 14,
+          "seed": "14"
+        },
+        {
+          "field": "state_hash",
+          "new": "57c449c04738368b",
+          "old": "0b5710e429da004c",
+          "row": 14,
+          "seed": "14"
+        },
+        {
+          "field": "event_hash",
+          "new": "c480bb2440cd4e0c",
+          "old": "871720bf2eefbe04",
+          "row": 15,
+          "seed": "15"
+        },
+        {
+          "field": "state_hash",
+          "new": "d7944b5be8747188",
+          "old": "fc237bbe41500a06",
+          "row": 15,
+          "seed": "15"
+        },
+        {
+          "field": "event_hash",
+          "new": "7a4c5fe340d35d75",
+          "old": "0568eefb70466177",
+          "row": 16,
+          "seed": "16"
+        },
+        {
+          "field": "state_hash",
+          "new": "27ec89e869701fd8",
+          "old": "a6f881f9d5dd82e5",
+          "row": 16,
+          "seed": "16"
+        },
+        {
+          "field": "event_hash",
+          "new": "76b94a6653bff7ea",
+          "old": "e5fb9f6c6873f954",
+          "row": 17,
+          "seed": "17"
+        },
+        {
+          "field": "state_hash",
+          "new": "209ab6aec287ad58",
+          "old": "7db0f722cc6adee0",
+          "row": 17,
+          "seed": "17"
+        },
+        {
+          "field": "event_hash",
+          "new": "27b5a6ce665b9fee",
+          "old": "62b7cf469e191b8d",
+          "row": 18,
+          "seed": "18"
+        },
+        {
+          "field": "state_hash",
+          "new": "9990830e10da715f",
+          "old": "ecc03b69fec465a9",
+          "row": 18,
+          "seed": "18"
+        },
+        {
+          "field": "event_hash",
+          "new": "b56a6709cc2a7fe5",
+          "old": "9626b10b992896e8",
+          "row": 19,
+          "seed": "19"
+        },
+        {
+          "field": "state_hash",
+          "new": "4728e7d705611798",
+          "old": "c73a127b8179d756",
+          "row": 19,
+          "seed": "19"
+        },
+        {
+          "field": "event_hash",
+          "new": "e530fa67afa4115c",
+          "old": "921b7faae9123081",
+          "row": 20,
+          "seed": "20"
+        },
+        {
+          "field": "state_hash",
+          "new": "6db2beec0609c04d",
+          "old": "0cae3489392fc7f6",
+          "row": 20,
+          "seed": "20"
+        },
+        {
+          "field": "event_hash",
+          "new": "2411bcc0abacefd3",
+          "old": "62e4f7bbae3292dd",
+          "row": 21,
+          "seed": "21"
+        },
+        {
+          "field": "state_hash",
+          "new": "f830ceb78243a12b",
+          "old": "399d906d3b715fd5",
+          "row": 21,
+          "seed": "21"
+        },
+        {
+          "field": "event_hash",
+          "new": "aed5648e22e2db21",
+          "old": "c155b5566678f98f",
+          "row": 22,
+          "seed": "22"
+        },
+        {
+          "field": "state_hash",
+          "new": "8e141d18685811b2",
+          "old": "d003c516383e1800",
+          "row": 22,
+          "seed": "22"
+        },
+        {
+          "field": "event_hash",
+          "new": "de06eab2b2fe8f97",
+          "old": "6949f371c4cac386",
+          "row": 23,
+          "seed": "23"
+        },
+        {
+          "field": "state_hash",
+          "new": "b9cc9bbba4508202",
+          "old": "32eab63d9f67ad5a",
+          "row": 23,
+          "seed": "23"
+        },
+        {
+          "field": "event_hash",
+          "new": "537f96413f3ffd81",
+          "old": "b2898038690c5d96",
+          "row": 24,
+          "seed": "24"
+        },
+        {
+          "field": "state_hash",
+          "new": "976570e3013d6fc7",
+          "old": "06f3d1f15036b613",
+          "row": 24,
+          "seed": "24"
+        }
+      ],
+      "reason": "semantic CSV values changed",
+      "scope": "long_commissioned/runs.csv"
+    },
+    {
+      "all_raw_rows_preserved": true,
+      "changed_values": 12960,
+      "first_differences": [
+        {
+          "field": "event_hash",
+          "new": "7437661b87ac2bcb",
+          "old": "9fe1c9a142029367",
+          "row": 121,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "160.88425666666666",
+          "old": "160.88225666666668",
+          "row": 121,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "2.35",
+          "old": "2.352",
+          "row": 121,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "e55ad0ffaf89dbb9",
+          "old": "0f7bd7c8620a44d5",
+          "row": 121,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "d1f2aba5775754b4",
+          "old": "9a701bfe787c5474",
+          "row": 122,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "162.30092333333334",
+          "old": "162.29892333333333",
+          "row": 122,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "2.6",
+          "old": "2.602",
+          "row": 122,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "43da69526a6fd4f4",
+          "old": "b50ce097b6b5bae8",
+          "row": 122,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "bf8a633472a9a3ae",
+          "old": "a6e7e3c591ee620e",
+          "row": 123,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "163.71759",
+          "old": "163.71559",
+          "row": 123,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "2.85",
+          "old": "2.852",
+          "row": 123,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "c9d41a15db878e41",
+          "old": "0ae83218e3b65931",
+          "row": 123,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "7a5bdb116863774c",
+          "old": "fd05235e2ece6976",
+          "row": 124,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "165.13425666666666",
+          "old": "165.13225666666668",
+          "row": 124,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "3.1",
+          "old": "3.102",
+          "row": 124,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "f428ec56bf055761",
+          "old": "9075eccd9b6c1710",
+          "row": 124,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "c493a6bd71e9a0e7",
+          "old": "90ace5e7d8926d21",
+          "row": 125,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "166.55092333333334",
+          "old": "166.54892333333333",
+          "row": 125,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "3.35",
+          "old": "3.352",
+          "row": 125,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "1a37963a841f495d",
+          "old": "edf8f366fdcfe086",
+          "row": 125,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "58b539369cb8f104",
+          "old": "6f85df9df9d145ea",
+          "row": 126,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "167.96759",
+          "old": "167.96559",
+          "row": 126,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "3.6",
+          "old": "3.602",
+          "row": 126,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "2873125a832b6b78",
+          "old": "8c2600724da8656d",
+          "row": 126,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "cf47c64077bc4404",
+          "old": "92c7530e8185b00c",
+          "row": 127,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "169.38425666666666",
+          "old": "169.38225666666668",
+          "row": 127,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "3.85",
+          "old": "3.852",
+          "row": 127,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "263d5dfc713ddc6b",
+          "old": "7a13bed4409d03f4",
+          "row": 127,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "aa1c1d46ce91f8d4",
+          "old": "4200a415c8286953",
+          "row": 128,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "170.80092333333334",
+          "old": "170.79892333333333",
+          "row": 128,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "4.1",
+          "old": "4.102",
+          "row": 128,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "ca77e46511c73dab",
+          "old": "bd5e9afd55e193df",
+          "row": 128,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "68fac7f149ccd2a0",
+          "old": "b15e0492e3f1a892",
+          "row": 129,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "172.21759",
+          "old": "172.21559",
+          "row": 129,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "4.35",
+          "old": "4.352",
+          "row": 129,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "137ecbf3c5214650",
+          "old": "4b0a80d2c47dd82b",
+          "row": 129,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "0d30dadb613dfc52",
+          "old": "256d560742fa70b8",
+          "row": 130,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "173.63425666666666",
+          "old": "173.63225666666668",
+          "row": 130,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "4.6",
+          "old": "4.602",
+          "row": 130,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "ecec3709867773fc",
+          "old": "bd689f5cbd58fd0b",
+          "row": 130,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "f712eabcd3a19aeb",
+          "old": "23eac9f64a83b20b",
+          "row": 131,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "175.05092333333334",
+          "old": "175.04892333333333",
+          "row": 131,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "4.85",
+          "old": "4.852",
+          "row": 131,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "f530d8ac88f2fdb7",
+          "old": "ce51962d3577b5f2",
+          "row": 131,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "e716dd325ca483ff",
+          "old": "6e4212046f325a69",
+          "row": 132,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "176.46759",
+          "old": "176.46559",
+          "row": 132,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_military_duty_h",
+          "new": "5.1",
+          "old": "5.102",
+          "row": 132,
+          "seed": "0"
+        },
+        {
+          "field": "state_hash",
+          "new": "8276a29ba4e4f85f",
+          "old": "3f5263e271579142",
+          "row": 132,
+          "seed": "0"
+        },
+        {
+          "field": "event_hash",
+          "new": "813d5dda48f307db",
+          "old": "348ae04d1f410269",
+          "row": 133,
+          "seed": "0"
+        },
+        {
+          "field": "other_initial_people_idle_h",
+          "new": "178.35092333333333",
+          "old": "178.34892333333335",
+          "row": 133,
+          "seed": "0"
+        }
+      ],
+      "reason": "semantic CSV values changed",
+      "scope": "long_commissioned/timeline.csv"
+    }
+  ],
+  "strict_replay_status": "FAIL_RETAINED",
+  "trace_transformation": {
+    "causal_reference_remapping": [
+      {
+        "event": 66573,
+        "new_source": 66572,
+        "old_source": 66574
+      },
+      {
+        "event": 79406,
+        "new_source": 79405,
+        "old_source": 79407
+      },
+      {
+        "event": 83847,
+        "new_source": 83846,
+        "old_source": 83848
+      },
+      {
+        "event": 83849,
+        "new_source": 83848,
+        "old_source": 83850
+      },
+      {
+        "event": 83851,
+        "new_source": 83850,
+        "old_source": 83852
+      }
+    ],
+    "new_events": 100564,
+    "old_events": 100566,
+    "removed_redundant_decision_ids": [
+      40339,
+      56727
+    ],
+    "result": "Every event field matches the explicit timestamp/selection/identity transformation"
+  },
+  "transient_activity_checkpoints": 1440
+}

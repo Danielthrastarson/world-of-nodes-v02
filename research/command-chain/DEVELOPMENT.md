@@ -48,3 +48,28 @@ successful receipt. No scenario quantity, time, capacity or physiology was tuned
 to remove that negative. The primary panel preserves the unexercised late/stale/
 revocation-receipt branches; separate explicit-contact mechanism witnesses test
 those semantics without claiming autonomous messenger success.
+
+Final regression validation preserved two different failures rather than merging
+them. The first verifier stopped on F12 `parameters.txt`: its normalization covered
+compact `commands: false, ` but not pretty/escaped-pretty Config output. All 840
+F12 data fields, state/event hashes and raw traces already matched. Only removal
+of that explicit disabled field in the three known layouts was added to the
+parameter comparator; all other bytes remain strict. The initial failed result
+and the corrected comparison over the same generated outputs are both retained.
+
+The subsequent F13A comparison found a **real** consequence of the volunteer clock
+fix, confined to `long_commissioned`. Across its 30 seeds, Person 1 volunteers at
+the same instant but assembles 7.2 seconds later at the proper policy boundary;
+its unchanged 12-hour service term therefore ends 7.2 seconds later too. Earlier,
+Person 9's unrelated sleep boundary consumed the pending volunteer wake. During
+30.25–42h, reported idle versus military-duty totals differ by 0.002 person-hours,
+then reconverge. State/event hashes and associated trace provenance change.
+Final physical outcomes, people, goods, activity totals, reports and recorded trips
+match. The other five F13A scenario/arms match exactly under documented metadata
+and wall-runtime exclusions.
+
+Two independent reviews agree that restoring that early assembly would restore
+the demonstrated scheduling defect. The strict F13A FAIL remains. A separate
+bounded clock-regression review records the precise transformation and hashes;
+it does not grant a general exemption to changed hashes or future regressions.
+No runtime changes or new parameter tuning followed the frozen primary panel.

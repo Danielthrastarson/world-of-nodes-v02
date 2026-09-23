@@ -2,7 +2,15 @@
 
 **The simulation is the source of the graphics.** A causal kingdom simulation with primitive rendering of real agents, stocks, movement, work, and observed state.
 
-Current work follows the [gated foundation roadmap](docs/ROADMAP.md). F0–F10, B0–B3 and F11A–F11C have passed their registered mechanism gates. [F11C evidence](research/combat/REPORT.md) demonstrates physical raid protection while preserving civilian costs and failed defenses; it does not establish net military welfare. Money remains unjustified and compulsory service unauthorized. Earlier reports retain their historical policies and negative findings.
+Current work follows the [gated foundation roadmap](docs/ROADMAP.md). F0–F12, B0–B3 and F13's headless command-chain gate have passed their registered scopes. [F13B evidence](research/command-chain/REPORT.md) shows a sovereign order physically reaching an accepted steward office, becoming a Person obligation and causing a voluntary public crossing with mixed household consequences. This is not final UI or autonomous government. Money remains unjustified and compulsory service unauthorized. Earlier reports retain their historical policies and negative findings.
+
+[Latest copyable handoff](research/command-chain/HANDOFF.txt) ·
+[Scoped authority contract](docs/COMMAND_AUTHORITY.md) ·
+[Validation and disclosed historical clock-fix difference](research/command-chain/validation.json).
+The 600-run panel preserves failed handoffs and refusal. Of 1,237 historical replays,
+1,207 match under registered comparison rules; 30 F13A histories show a documented
+7.2-second assembly/service timing correction with unchanged final physical
+outcomes. All previous research files remain unchanged.
 
 - [Current design contract](WORLD_OF_NODES_HANDOFF.md)
 - [Locked provisioning specification](docs/PROVISIONING_SPEC.md)
