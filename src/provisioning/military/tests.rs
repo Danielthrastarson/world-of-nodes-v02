@@ -280,3 +280,22 @@ fn owner_cart_travels_with_volunteer_but_service_cannot_requisition() {
     assert!(w.military.journal.cart_travel_ms > 0);
     w.audit().unwrap();
 }
+
+#[test]
+fn working_farmer_fixture_really_interrupts_existing_cultivation() {
+    for seed in 0..30 {
+        let mut w = research::fixture("working_farmer", true, seed).unwrap();
+        w.advance_to(4 * HOUR).unwrap();
+        assert_eq!(w.military.journal.count("volunteers"), 4);
+        assert_eq!(
+            w.events
+                .iter()
+                .filter(|e| e.kind == "Volunteered" && e.detail.contains("previous=Farm"))
+                .count(),
+            4
+        );
+        assert_eq!(w.farm.started, 4);
+        assert_eq!(w.farm.interruptions, 4);
+        w.audit().unwrap();
+    }
+}

@@ -21,13 +21,13 @@ pub fn request(case: &str) -> Request {
         muster: 1,
         attendance: if case == "small" { 1 } else { 8 },
         opens: if case == "working_farmer" {
-            HOUR / 2
+            3 * HOUR
         } else {
             0
         },
         expires: 12 * HOUR
             + if case == "working_farmer" {
-                HOUR / 2
+                3 * HOUR
             } else {
                 0
             },
