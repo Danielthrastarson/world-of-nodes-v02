@@ -80,6 +80,7 @@ pub struct Flow {
     pub to: usize,
     pub origin: usize,
     pub material: Material,
+    pub expires_at: Time,
     pub quantity: u64,
     pub owner: Owner,
     pub communal_job: bool,
@@ -259,7 +260,15 @@ impl Journal {
                             from,
                             to: place,
                             origin: b.origin,
-                            material: b.material,
+                            // Arrival is logged before simultaneous spoilage in the
+                            // boundary sequence. Report timestamp-level edibility,
+                            // not that transient pre-spoil event ordering.
+                            material: if b.material == Material::Food && b.expires_at() <= w.now {
+                                Material::Waste
+                            } else {
+                                b.material
+                            },
+                            expires_at: b.expires_at(),
                             quantity: b.quantity,
                             owner: b.owner,
                             communal_job: w.agents[id].job.is_some(),

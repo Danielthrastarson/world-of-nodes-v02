@@ -50,6 +50,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut transfers = file(root, "transfers.csv")?;
     let mut visits = file(root, "visits.csv")?;
     let mut carts = file(root, "carts.csv")?;
+    let mut projects = file(root, "projects.csv")?;
     let mut paths = file(root, "paths.csv")?;
     let mut plots = file(root, "plots.tsv")?;
     let mut events = file(root, "events.tsv")?;
@@ -75,7 +76,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     )?;
     writeln!(
         flows,
-        "seed,at_ms,agent,from,to,origin,material,quantity,owner,communal_job,cart"
+        "seed,at_ms,agent,from,to,origin,material,quantity,owner,communal_job,cart,expires_ms"
     )?;
     writeln!(
         transfers,
@@ -85,6 +86,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     writeln!(
         carts,
         "seed,hour,id,owner,user,place,completed_ms,idle_h,trips,food_quanta_edges,load,location"
+    )?;
+    writeln!(
+        projects,
+        "seed,hour,id,investor,place,wood,remaining_scaled_ms,labor_h,cart,owner_alive"
     )?;
     writeln!(
         paths,
@@ -266,6 +271,20 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     c.location
                 )?;
             }
+            for p in w.cart_projects() {
+                writeln!(
+                    projects,
+                    "{seed},{hour},{},{},{},{},{},{:.9},{},{}",
+                    p.id,
+                    p.investor,
+                    j.node_places[p.node],
+                    p.wood,
+                    p.remaining,
+                    p.labor_ms as f64 / HOUR as f64,
+                    p.cart.map_or(String::new(), |v| v.to_string()),
+                    w.agents()[p.investor].action != Action::Dead
+                )?;
+            }
             for (&edge, s) in w.path_surfaces() {
                 let e = w.effective_edge(edge);
                 let (q, o) = w.path_edge_time(edge);
@@ -291,7 +310,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         for f in &j.flows {
             writeln!(
                 flows,
-                "{seed},{},{},{},{},{},{:?},{},{},{},{}",
+                "{seed},{},{},{},{},{},{:?},{},{},{},{},{}",
                 f.at,
                 f.agent,
                 f.from,
@@ -301,7 +320,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 f.quantity,
                 owner(f.owner),
                 f.communal_job,
-                f.cart
+                f.cart,
+                f.expires_at
             )?;
         }
         for t in &j.transfers {

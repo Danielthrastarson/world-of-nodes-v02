@@ -128,6 +128,24 @@ fn spoiled_transit_cargo_is_waste_flow_not_delivered_food() {
     assert_eq!(w.metrics.delivered, 0);
     w.audit_settlement_research().unwrap();
 }
+
+#[test]
+fn arrival_exactly_at_expiry_is_not_edible_flow() {
+    let mut w = manual(48 * HOUR);
+    w.settlement_research.as_mut().unwrap().node_places[1] = 1;
+    w.goods.add(
+        Material::Food,
+        1,
+        Owner::Agent(0),
+        Holder::Agent(0),
+        0,
+        HOUR,
+    );
+    travel(&mut w, 0, 1);
+    assert_eq!(w.now, HOUR);
+    assert_eq!(w.settlement_journal().flows[0].material, Material::Waste);
+    w.audit_settlement_research().unwrap();
+}
 #[test]
 fn research_place_labels_do_not_change_decisions() {
     let mut c = configuration("complementary", 9, false).unwrap();
