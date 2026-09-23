@@ -4,6 +4,7 @@ pub mod coherence;
 pub mod congestion;
 pub mod decomposition;
 pub mod experiment;
+pub mod farming;
 pub mod geography;
 mod goods;
 pub mod meals;
@@ -48,6 +49,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub farming: Option<farming::Config>,
     pub persistence: Option<persistence::Arm>,
     pub diagnostic_policy: DiagnosticPolicy,
     pub initial_request: u64,
@@ -71,6 +73,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            farming: None,
             persistence: None,
             diagnostic_policy: DiagnosticPolicy::Current,
             initial_request: 0,
@@ -118,6 +121,9 @@ pub enum Location {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Action {
+    Farm {
+        plot: usize,
+    },
     Idle,
     Queued {
         edge: usize,
@@ -267,6 +273,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) farm: farming::State,
     pub(crate) config: Config,
     pub(crate) now: Time,
     pub(crate) agents: Vec<Agent>,
@@ -327,6 +334,13 @@ impl World {
         {
             return Err("invalid provisioning configuration".into());
         }
+        if config.farming.is_some()
+            && (config.persistence.is_some()
+                || config.diagnostic_policy != DiagnosticPolicy::Current
+                || config.acceptance_audit)
+        {
+            return Err("farming cannot silently override a historical/research policy".into());
+        }
         let agents = config
             .starts
             .iter()
@@ -376,7 +390,9 @@ impl World {
         } else {
             vec![]
         };
+        let farm = farming::State::new(config.farming.as_ref(), config.nodes, config.starts.len())?;
         let mut w = Self {
+            farm,
             shadow: shadow::Journal::default(),
             coherence: coherence::Journal::default(),
             meals: meals::Journal::default(),
@@ -518,7 +534,8 @@ impl World {
         }
     }
     pub fn audit(&self) -> Result<(), String> {
-        if !self.goods.audit() {
+        self.audit_farming()?;
+        if !self.goods.audit_production(self.farm.produced as u128) {
             return Err("material accounting error".into());
         }
         for a in &self.agents {

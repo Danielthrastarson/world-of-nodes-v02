@@ -32,11 +32,17 @@ impl World {
         self.admit();
         self.audit()
     }
-    fn cancel_action(&mut self, id: usize, why: &str) {
+    pub(super) fn cancel_action(&mut self, id: usize, why: &str) {
         if matches!(
             self.agents[id].action,
-            Action::Queued { .. } | Action::Gather { .. } | Action::Sleep { .. }
+            Action::Queued { .. }
+                | Action::Gather { .. }
+                | Action::Sleep { .. }
+                | Action::Farm { .. }
         ) {
+            if matches!(self.agents[id].action, Action::Farm { .. }) {
+                self.farm.interruptions += 1;
+            }
             self.log(
                 Some(id),
                 "Interrupted",
@@ -102,6 +108,7 @@ impl World {
             return Err("edge traversal is atomic".into());
         };
         match intent {
+            Intent::Cultivate { plot } => self.begin_farm(id, plot)?,
             Intent::Wait => {}
             Intent::CancelAction => {
                 self.cancel_action(id, "cancel invalid research route");
@@ -424,6 +431,7 @@ impl World {
                 }
             }
         }
+        next = self.farm.next_boundary(self.now, next);
         for a in &self.agents {
             if a.action == Action::Dead {
                 continue;
@@ -450,6 +458,10 @@ impl World {
                         let left = self.config.edges[edge].nominal_ms as u128 * SCALE - progress;
                         next = next.min(self.now + left.div_ceil(rate) as Time);
                     }
+                }
+                Action::Farm { plot } => {
+                    let remaining = self.farm.plots[plot].crop.as_ref().unwrap().remaining;
+                    next = next.min(self.now + remaining.div_ceil(rate) as Time);
                 }
                 Action::Gather { remaining, .. } => {
                     next = next.min(self.now + remaining.div_ceil(rate) as Time)
@@ -480,6 +492,26 @@ impl World {
                 continue;
             }
             let loaded = self.goods.load(id) > 0;
+            if self.config.farming.is_some() {
+                let activity = match self.agents[id].action {
+                    Action::Farm { plot } => {
+                        if self.farm.plots[plot].crop.as_ref().unwrap().stage
+                            == farming::Stage::Sowing
+                        {
+                            "sow"
+                        } else {
+                            "harvest"
+                        }
+                    }
+                    Action::Gather { .. } => "gather",
+                    Action::Travel => "travel",
+                    Action::Queued { .. } => "queue",
+                    Action::Sleep { .. } => "sleep",
+                    Action::Idle => "idle",
+                    Action::Dead => unreachable!(),
+                };
+                *self.farm.activity_ms.entry(activity.into()).or_default() += dt as u128;
+            }
             let a = &mut self.agents[id];
             let rate = performance(a.nutrition, a.fatigue);
             self.metrics.physiology_ms += dt as u128;
@@ -531,6 +563,11 @@ impl World {
                             .min(self.config.edges[*edge].nominal_ms as u128 * SCALE);
                         a.travel_since_food += *progress - before;
                     }
+                }
+                Action::Farm { plot } => {
+                    let crop = self.farm.plots[*plot].crop.as_mut().unwrap();
+                    crop.remaining = crop.remaining.saturating_sub(rate * dt as u128);
+                    self.farm.labor_ms += dt as u128;
                 }
                 Action::Gather { remaining, .. } => {
                     *remaining = remaining.saturating_sub(rate * dt as u128)
@@ -659,6 +696,7 @@ impl World {
                 );
             }
         }
+        self.finish_farming();
         for id in 0..self.agents.len() {
             match self.agents[id].action.clone() {
                 Action::Gather {
@@ -826,6 +864,7 @@ impl World {
         let mut decisions = vec![];
         let mut stale_events = vec![];
         for id in ids {
+            self.observe_farming(id);
             let o = self.observe(id).unwrap();
             if let Some(local) = &o.local {
                 if self.agents[id].travel_since_food > 0
@@ -874,7 +913,15 @@ impl World {
                 );
                 self.acceptance.record(&o, &d, audit);
             }
-            let decision = if let Some(arm) = self.config.persistence {
+            let decision = if let Some(config) = &self.config.farming {
+                policy::decide_farming(
+                    &o,
+                    &a.memory,
+                    &mut a.rng,
+                    &self.farm.memories[id],
+                    &config.rules,
+                )
+            } else if let Some(arm) = self.config.persistence {
                 let state = self.persistence.states.entry(id).or_default();
                 let d = policy::decide_persistent(&o, &a.memory, &mut a.rng, arm, state);
                 self.persistence.collect_decision(id);

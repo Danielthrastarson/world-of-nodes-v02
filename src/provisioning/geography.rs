@@ -48,6 +48,11 @@ pub fn reversed_labels(mut c: Config) -> Config {
         e.b = n - 1 - e.b;
     }
     c.edges.reverse();
+    if let Some(farm) = &mut c.farming {
+        for node in &mut farm.units {
+            *node = n - 1 - *node;
+        }
+    }
     for s in &mut c.starts {
         *s = n - 1 - *s;
     }

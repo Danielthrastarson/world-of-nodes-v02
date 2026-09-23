@@ -152,10 +152,13 @@ pub fn run(name: &str, seed: u64, trace: bool) -> Result<Run, String> {
 }
 impl World {
     pub fn state_hash(&self) -> u64 {
-        let text = format!(
+        let mut text = format!(
             "{:?}|{:?}|{:?}|{:?}|{:?}",
             self.now, self.agents, self.goods, self.boards, self.metrics
         );
+        if self.config.farming.is_some() {
+            text.push_str(&format!("|farming={:?}", self.farm));
+        }
         let mut h = 0xcbf29ce484222325u64;
         for byte in text.bytes() {
             h ^= byte as u64;

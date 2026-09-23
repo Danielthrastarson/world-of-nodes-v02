@@ -447,6 +447,27 @@ fn simulate(
     sim.plan
 }
 
+/// Frozen-belief cultivation contract. Work uses the same impairment boundaries as
+/// the kernel; environmental growth consumes real time but no agent labor.
+pub(crate) fn cultivation_forecast(
+    o: &Observation,
+    sow: Time,
+    grow: Time,
+    harvest: Time,
+) -> Option<Time> {
+    let mut s = State::new(o);
+    s.work(sow, Time::MAX / 4);
+    if !s.alive() {
+        return None;
+    }
+    s.wait(grow);
+    if !s.alive() {
+        return None;
+    }
+    s.work(harvest, Time::MAX / 4);
+    s.alive().then_some(s.elapsed)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

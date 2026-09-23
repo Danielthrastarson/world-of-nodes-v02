@@ -109,6 +109,9 @@ impl Goods {
             .sum()
     }
     pub fn audit(&self) -> bool {
+        self.audit_production(0)
+    }
+    pub fn audit_production(&self, produced: u128) -> bool {
         let mut current = [self.consumed, 0, 0];
         for b in &self.batches {
             current[match b.material {
@@ -117,7 +120,7 @@ impl Goods {
                 Material::Stone => 2,
             }] += b.quantity as u128;
         }
-        current == self.initial
+        current == [self.initial[0] + produced, self.initial[1], self.initial[2]]
     }
 }
 pub(crate) fn headroom(nutrition: Time, owner: Owner) -> u64 {

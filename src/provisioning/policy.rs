@@ -16,6 +16,9 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    Cultivate {
+        plot: usize,
+    },
     LoadCargo {
         batch: usize,
         quantity: u64,
@@ -65,7 +68,7 @@ fn choice(intent: Intent, reason: impl Into<String>) -> Decision {
 fn accessible(f: &FoodView, id: usize) -> bool {
     matches!(f.owner, Owner::None | Owner::Commons(0)) || f.owner == Owner::Agent(id)
 }
-fn random(rng: &mut u64) -> u64 {
+pub(crate) fn random(rng: &mut u64) -> u64 {
     *rng = rng.wrapping_add(0x9e3779b97f4a7c15);
     let mut z = *rng;
     z = (z ^ (z >> 30)).wrapping_mul(0xbf58476d1ce4e5b9);
@@ -370,6 +373,18 @@ fn decide_impl(
     audit: &mut AcceptanceAudit,
     skip_self_provision: bool,
 ) -> Decision {
+    decide_with_farm(o, m, rng, mode, audit, skip_self_provision, None)
+}
+#[allow(clippy::too_many_arguments)]
+fn decide_with_farm(
+    o: &Observation,
+    m: &PolicyMemory,
+    rng: &mut u64,
+    mode: ForecastMode,
+    audit: &mut AcceptanceAudit,
+    skip_self_provision: bool,
+    farm: Option<(&super::farming::Memory, &super::farming::Rules)>,
+) -> Decision {
     if matches!(o.action, Action::Dead | Action::Travel) {
         return choice(Intent::Wait, "atomic traversal or dead");
     }
@@ -392,6 +407,12 @@ fn decide_impl(
     }
     if matches!(o.action, Action::Gather { .. }) {
         return choice(Intent::Wait, "finish one-quantum atomic gathering");
+    }
+    if o.job.is_none()
+        && let Some((memory, config)) = farm
+        && let Some(d) = super::farming::consider(o, m, memory, config, rng)
+    {
+        return d;
     }
     // A discovered local source provides an opportunity, not a compulsory return home.
     if !skip_self_provision
@@ -783,4 +804,22 @@ pub(crate) fn coherent_contract(o: &Observation, m: &PolicyMemory, meals: bool) 
     let known = sources_for(o, m, mode);
     forecast::evaluate(o, m, &known, mode, &mut a);
     a
+}
+
+pub(crate) fn decide_farming(
+    o: &Observation,
+    m: &PolicyMemory,
+    rng: &mut u64,
+    farm: &super::farming::Memory,
+    config: &super::farming::Rules,
+) -> Decision {
+    decide_with_farm(
+        o,
+        m,
+        rng,
+        ForecastMode::Coherent,
+        &mut AcceptanceAudit::disabled(),
+        false,
+        Some((farm, config)),
+    )
 }
