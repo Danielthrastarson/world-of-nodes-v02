@@ -26,7 +26,8 @@ settlement or validated efficient cooperation follows.
 F3 now passes under the owner's cultivator-owned crop/output decision, with no land
 title or inheritance. See [production evidence](research/farming/REPORT.md). Output
 requires local labor, growth time and harvest; finite-food controls remain unchanged.
-F4 is active. No capital, construction, trade, money, authority, combat, graphics or
+F4 also passes its pressure-dependent labor gate; see [evidence](research/labor/REPORT.md).
+F5 is blocked on [cart rights](docs/CAPITAL_RIGHTS_DECISION.md). No capital, construction, trade, money, authority, combat, graphics or
 multiplayer is implemented. Older scope statements below remain historical.
 
 ## Authority and scope

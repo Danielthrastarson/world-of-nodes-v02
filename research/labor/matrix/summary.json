@@ -1,0 +1,638 @@
+{
+  "scarce": {
+    "0-36": {
+      "gather": {
+        "mean_person_hours": 0.183915556,
+        "mean_fraction": 0.00010217530888883213
+      },
+      "harvest": {
+        "mean_person_hours": 29.992,
+        "mean_fraction": 0.016662222222212964
+      },
+      "idle": {
+        "mean_person_hours": 349.37230666696667,
+        "mean_fraction": 0.19409572592598476
+      },
+      "queue": {
+        "mean_person_hours": 809.582222222,
+        "mean_fraction": 0.4497679012341946
+      },
+      "sleep": {
+        "mean_person_hours": 306.2338888892,
+        "mean_fraction": 0.17012993827168327
+      },
+      "sow": {
+        "mean_person_hours": 28.648999999833332,
+        "mean_fraction": 0.015916111111009677
+      },
+      "travel": {
+        "mean_person_hours": 275.986666667,
+        "mean_fraction": 0.15332592592602592
+      }
+    },
+    "36-48": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "idle": {
+        "mean_person_hours": 106.71833329629997,
+        "mean_fraction": 0.5558246525852818
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 74.78833337026663,
+        "mean_fraction": 0.389522569637076
+      },
+      "sow": {
+        "mean_person_hours": 10.4933333333,
+        "mean_fraction": 0.05465277777764217
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "48-72": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 20.716666667,
+        "mean_fraction": 0.05394965277864583
+      },
+      "idle": {
+        "mean_person_hours": 214.86388881460002,
+        "mean_fraction": 0.5595413771213542
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 127.73333333310002,
+        "mean_fraction": 0.3326388888882813
+      },
+      "sow": {
+        "mean_person_hours": 20.6861111853,
+        "mean_fraction": 0.05387008121171873
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "72-120": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 47.68134666660001,
+        "mean_fraction": 0.062085086805466067
+      },
+      "idle": {
+        "mean_person_hours": 416.34420868503327,
+        "mean_fraction": 0.5421148550586136
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 265.4666667132667,
+        "mean_fraction": 0.34565972228288433
+      },
+      "sow": {
+        "mean_person_hours": 38.50777793513333,
+        "mean_fraction": 0.05014033585303602
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "120-168": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 50.18333333303334,
+        "mean_fraction": 0.06534288194411338
+      },
+      "idle": {
+        "mean_person_hours": 429.52333317606667,
+        "mean_fraction": 0.5592751734068465
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 251.27999974949998,
+        "mean_fraction": 0.3271874996741263
+      },
+      "sow": {
+        "mean_person_hours": 37.013333740700006,
+        "mean_fraction": 0.04819444497491374
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "end": {
+      "alive": 16.0,
+      "consumed": 2604.0,
+      "starvation_hours": 879.5977777778667,
+      "jobs": 0.0,
+      "delivered": 0.0
+    }
+  },
+  "reference": {
+    "0-36": {
+      "gather": {
+        "mean_person_hours": 0.870624444,
+        "mean_fraction": 0.0004836802466666667
+      },
+      "harvest": {
+        "mean_person_hours": 0,
+        "mean_fraction": 0.0
+      },
+      "idle": {
+        "mean_person_hours": 371.0883563332667,
+        "mean_fraction": 0.20616019796292592
+      },
+      "queue": {
+        "mean_person_hours": 809.582222222,
+        "mean_fraction": 0.4497679012344445
+      },
+      "sleep": {
+        "mean_person_hours": 302.795555556,
+        "mean_fraction": 0.16821975308666667
+      },
+      "sow": {
+        "mean_person_hours": 39.676574777733336,
+        "mean_fraction": 0.022042541543185187
+      },
+      "travel": {
+        "mean_person_hours": 275.986666667,
+        "mean_fraction": 0.1533259259261111
+      }
+    },
+    "36-48": {
+      "gather": {
+        "mean_person_hours": 0.3103911119999999,
+        "mean_fraction": 0.0009237830714265552
+      },
+      "harvest": {
+        "mean_person_hours": 25.7672222223,
+        "mean_fraction": 0.0766881613757255
+      },
+      "idle": {
+        "mean_person_hours": 195.28238666696663,
+        "mean_fraction": 0.5811975793647037
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 110.23555555499996,
+        "mean_fraction": 0.32808201057964104
+      },
+      "sow": {
+        "mean_person_hours": 4.404444444466666,
+        "mean_fraction": 0.013108465608503135
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "48-72": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 14.116527777566663,
+        "mean_fraction": 0.02100673776427674
+      },
+      "idle": {
+        "mean_person_hours": 380.3527924534333,
+        "mean_fraction": 0.5660011792472754
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 215.33333333300004,
+        "mean_fraction": 0.32043650793663186
+      },
+      "sow": {
+        "mean_person_hours": 30.163271990699997,
+        "mean_fraction": 0.04488582141481897
+      },
+      "travel": {
+        "mean_person_hours": 32.034074444,
+        "mean_fraction": 0.04766975363699698
+      }
+    },
+    "72-120": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 79.44370370406666,
+        "mean_fraction": 0.05910989858928987
+      },
+      "idle": {
+        "mean_person_hours": 647.3141633704333,
+        "mean_fraction": 0.48163256203120214
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 483.1838888891999,
+        "mean_fraction": 0.3595118220899021
+      },
+      "sow": {
+        "mean_person_hours": 62.653797370333336,
+        "mean_fraction": 0.046617408757652655
+      },
+      "travel": {
+        "mean_person_hours": 71.404446667,
+        "mean_fraction": 0.0531283085319532
+      }
+    },
+    "120-168": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 81.95388881443333,
+        "mean_fraction": 0.06097759584408905
+      },
+      "idle": {
+        "mean_person_hours": 767.7361111851334,
+        "mean_fraction": 0.5712322255843324
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 429.3627776296001,
+        "mean_fraction": 0.3194663524030634
+      },
+      "sow": {
+        "mean_person_hours": 64.94722237046666,
+        "mean_fraction": 0.04832382616851516
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "end": {
+      "alive": 28.0,
+      "consumed": 4632.0,
+      "starvation_hours": 694.5044443701333,
+      "jobs": 0.0,
+      "delivered": 0.0
+    }
+  },
+  "abundant": {
+    "0-36": {
+      "gather": {
+        "mean_person_hours": 0.870624444,
+        "mean_fraction": 0.0004836802466666667
+      },
+      "harvest": {
+        "mean_person_hours": 0,
+        "mean_fraction": 0.0
+      },
+      "idle": {
+        "mean_person_hours": 371.0883563332667,
+        "mean_fraction": 0.20616019796292592
+      },
+      "queue": {
+        "mean_person_hours": 809.582222222,
+        "mean_fraction": 0.4497679012344445
+      },
+      "sleep": {
+        "mean_person_hours": 302.795555556,
+        "mean_fraction": 0.16821975308666667
+      },
+      "sow": {
+        "mean_person_hours": 39.676574777733336,
+        "mean_fraction": 0.022042541543185187
+      },
+      "travel": {
+        "mean_person_hours": 275.986666667,
+        "mean_fraction": 0.1533259259261111
+      }
+    },
+    "36-48": {
+      "gather": {
+        "mean_person_hours": 0.3103911119999999,
+        "mean_fraction": 0.0009237830714265552
+      },
+      "harvest": {
+        "mean_person_hours": 25.7672222223,
+        "mean_fraction": 0.0766881613757255
+      },
+      "idle": {
+        "mean_person_hours": 195.28238666696663,
+        "mean_fraction": 0.5811975793647037
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 110.23555555499996,
+        "mean_fraction": 0.32808201057964104
+      },
+      "sow": {
+        "mean_person_hours": 4.404444444466666,
+        "mean_fraction": 0.013108465608503135
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "48-72": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 14.116527777566663,
+        "mean_fraction": 0.02100673776427674
+      },
+      "idle": {
+        "mean_person_hours": 380.3527924534333,
+        "mean_fraction": 0.5660011792472754
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 215.33333333300004,
+        "mean_fraction": 0.32043650793663186
+      },
+      "sow": {
+        "mean_person_hours": 30.163271990699997,
+        "mean_fraction": 0.04488582141481897
+      },
+      "travel": {
+        "mean_person_hours": 32.034074444,
+        "mean_fraction": 0.04766975363699698
+      }
+    },
+    "72-120": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 79.44370370406666,
+        "mean_fraction": 0.05910989858928987
+      },
+      "idle": {
+        "mean_person_hours": 647.3141633704333,
+        "mean_fraction": 0.48163256203120214
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 483.1838888891999,
+        "mean_fraction": 0.3595118220899021
+      },
+      "sow": {
+        "mean_person_hours": 62.653797370333336,
+        "mean_fraction": 0.046617408757652655
+      },
+      "travel": {
+        "mean_person_hours": 71.404446667,
+        "mean_fraction": 0.0531283085319532
+      }
+    },
+    "120-168": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 81.95388881443333,
+        "mean_fraction": 0.06097759584408905
+      },
+      "idle": {
+        "mean_person_hours": 767.7361111851334,
+        "mean_fraction": 0.5712322255843324
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 429.3627776296001,
+        "mean_fraction": 0.3194663524030634
+      },
+      "sow": {
+        "mean_person_hours": 64.94722237046666,
+        "mean_fraction": 0.04832382616851516
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "end": {
+      "alive": 28.0,
+      "consumed": 4632.0,
+      "starvation_hours": 694.5044443701333,
+      "jobs": 0.0,
+      "delivered": 0.0
+    }
+  },
+  "plots_at_c": {
+    "0-36": {
+      "gather": {
+        "mean_person_hours": 0.394354444,
+        "mean_fraction": 0.00021908580222230743
+      },
+      "harvest": {
+        "mean_person_hours": 84.05,
+        "mean_fraction": 0.0466944444444626
+      },
+      "idle": {
+        "mean_person_hours": 97.33974888886667,
+        "mean_fraction": 0.05407763827161362
+      },
+      "queue": {
+        "mean_person_hours": 891.5479944445667,
+        "mean_fraction": 0.4953044413582852
+      },
+      "sleep": {
+        "mean_person_hours": 414.10818,
+        "mean_fraction": 0.23006010000008947
+      },
+      "sow": {
+        "mean_person_hours": 79.84638888886667,
+        "mean_fraction": 0.04435910493827651
+      },
+      "travel": {
+        "mean_person_hours": 232.713333333,
+        "mean_fraction": 0.12928518518505028
+      }
+    },
+    "36-48": {
+      "gather": {
+        "mean_person_hours": 0.339901112,
+        "mean_fraction": 0.0005665018533324521
+      },
+      "harvest": {
+        "mean_person_hours": 16.0,
+        "mean_fraction": 0.026666666666625184
+      },
+      "idle": {
+        "mean_person_hours": 101.09791777773333,
+        "mean_fraction": 0.16849652962929346
+      },
+      "queue": {
+        "mean_person_hours": 297.97039836113333,
+        "mean_fraction": 0.49661733060111635
+      },
+      "sleep": {
+        "mean_person_hours": 90.22341111100002,
+        "mean_fraction": 0.15037235185143277
+      },
+      "sow": {
+        "mean_person_hours": 5.628111111166667,
+        "mean_fraction": 0.00938018518526319
+      },
+      "travel": {
+        "mean_person_hours": 88.74026052789999,
+        "mean_fraction": 0.14790043421293658
+      }
+    },
+    "48-72": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 5.0,
+        "mean_fraction": 0.00493853536434722
+      },
+      "idle": {
+        "mean_person_hours": 509.2950380279,
+        "mean_fraction": 0.5030343100150383
+      },
+      "queue": {
+        "mean_person_hours": 112.71381555546665,
+        "mean_fraction": 0.11132823178278105
+      },
+      "sleep": {
+        "mean_person_hours": 312.20577197216664,
+        "mean_fraction": 0.30836784918321986
+      },
+      "sow": {
+        "mean_person_hours": 6.004722222100001,
+        "mean_fraction": 0.005930906506413385
+      },
+      "travel": {
+        "mean_person_hours": 67.22657888903333,
+        "mean_fraction": 0.06640016714820016
+      }
+    },
+    "72-120": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 9.650000000000006,
+        "mean_fraction": 0.02069374699977736
+      },
+      "idle": {
+        "mean_person_hours": 296.4324266666667,
+        "mean_fraction": 0.6356785114811038
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 150.46423666699997,
+        "mean_fraction": 0.32265998405197094
+      },
+      "sow": {
+        "mean_person_hours": 9.777777778,
+        "mean_fraction": 0.02096775746714789
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "120-168": {
+      "gather": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "harvest": {
+        "mean_person_hours": 9.0,
+        "mean_fraction": 0.0468750000001302
+      },
+      "idle": {
+        "mean_person_hours": 106.55555555540003,
+        "mean_fraction": 0.5549768518525834
+      },
+      "queue": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      },
+      "sleep": {
+        "mean_person_hours": 66.66666666646667,
+        "mean_fraction": 0.34722222222214505
+      },
+      "sow": {
+        "mean_person_hours": 9.777777777599999,
+        "mean_fraction": 0.05092592592514145
+      },
+      "travel": {
+        "mean_person_hours": 0.0,
+        "mean_fraction": 0.0
+      }
+    },
+    "end": {
+      "alive": 4.0,
+      "consumed": 2200.0,
+      "starvation_hours": 1318.7703677778334,
+      "jobs": 0.0,
+      "delivered": 0.0
+    }
+  }
+}
