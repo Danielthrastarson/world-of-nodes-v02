@@ -168,6 +168,9 @@ impl World {
         if self.config.capital.is_some() {
             text.push_str(&format!("|capital={:?}", self.capital));
         }
+        if !self.config.market_nodes.is_empty() {
+            text.push_str(&format!("|markets={:?}", self.config.market_nodes));
+        }
         if self.config.barter {
             text.push_str(&format!("|barter={:?}", self.barter.offers));
         }

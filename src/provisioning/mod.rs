@@ -55,6 +55,8 @@ pub enum DiagnosticPolicy {
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
     pub barter: bool,
+    /// F9B local market institution. Empty retains historical direct barter.
+    pub market_nodes: Vec<usize>,
     pub paths: Option<paths::Config>,
     pub infrastructure: Option<infrastructure::Config>,
     pub capital: Option<capital::Config>,
@@ -83,6 +85,7 @@ impl Default for Config {
     fn default() -> Self {
         Self {
             barter: false,
+            market_nodes: vec![],
             paths: None,
             infrastructure: None,
             capital: None,
@@ -341,7 +344,9 @@ pub fn performance(n: Time, f: Time) -> u128 {
 }
 impl World {
     pub fn new(config: Config) -> Result<Self, String> {
-        if config.nodes == 0
+        if (!config.market_nodes.is_empty() && !config.barter)
+            || config.market_nodes.iter().any(|n| *n >= config.nodes)
+            || config.nodes == 0
             || config.policy_ms <= 0
             || config.carrying_capacity == 0
             || !(0..=24 * HOUR).contains(&config.initial_nutrition)
@@ -594,6 +599,7 @@ impl World {
             kind: kind.into(),
             detail,
         };
+        self.market_event(&e);
         self.shadow.event(&e, &self.agents, &self.goods);
         self.coherence.event(&e, &self.agents);
         self.meals.event(&e, &self.agents, &self.goods.batches);

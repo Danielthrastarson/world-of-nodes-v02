@@ -67,6 +67,10 @@ pub(super) fn coincidence_failure(w: &World, taker: &View, offer: &Offer) -> boo
     let Some(maker) = w.barter_view(offer.proposer) else {
         return false;
     };
+    let maker = w.offer_owner_view(&maker, offer);
+    if w.market_enabled() && maker.node != offer.location {
+        return false;
+    }
     if willingness(
         &maker,
         offer.give,
@@ -85,4 +89,12 @@ pub(super) fn coincidence_failure(w: &World, taker: &View, offer: &Offer) -> boo
         .own
         .iter()
         .all(|b| maker.needs.demand(b.material) == 0)
+}
+
+/// Identical F9A worlds; only settlement-node deposited offer institution differs.
+pub fn market_world(fixture: &str, seed: u64, trace: bool) -> Result<World, String> {
+    let mut w = world(fixture, true, seed, trace)?;
+    w.config.market_nodes = vec![0, 2];
+    w.audit()?;
+    Ok(w)
 }

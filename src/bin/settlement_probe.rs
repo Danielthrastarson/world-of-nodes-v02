@@ -42,8 +42,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .get(4)
         .map(|s| match s.as_str() {
             "on" => Ok(true),
+            "market" => Ok(true),
             "off" => Ok(false),
-            _ => Err("barter mode must be on/off"),
+            _ => Err("barter mode must be on/off/market"),
         })
         .transpose()?;
     fs::create_dir_all(root)?;
@@ -58,6 +59,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     writeln!(
         exchanges,
         "seed,at_ms,offer,proposer,taker,node,give,give_q,give_origin,payment,payment_q,payment_origin,give_created,payment_created,give_expiry,payment_expiry,taker_batch,proposer_batch"
+    )?;
+    let market_mode = args.get(4).is_some_and(|s| s == "market");
+    let mut market_stocks = file(root, "market_stocks.csv")?;
+    let mut market_receipts = file(root, "market_receipts.csv")?;
+    writeln!(market_stocks, "seed,hour,key,quantity")?;
+    writeln!(
+        market_receipts,
+        "seed,offer,batch,kind,owner,node,at_ms,initial,remaining,retrieved,used_locally,redeposited,other_removed,commingled,first_retrieval_ms,owner_alive,material,holder"
     )?;
     let mut runs = file(root, "runs.csv")?;
     let mut places = file(root, "places.csv")?;
@@ -116,7 +125,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         "seed,hour,edge,compaction,passages,recoveries,nominal_ms,capacity,queue_h,occupancy_person_h"
     )?;
     for seed in first..end {
-        let mut w = if let Some(enabled) = barter_mode {
+        let mut w = if market_mode {
+            writeln!(
+                parameters,
+                "F9B fixture={arm} seed={seed}; market_nodes=[0,2]; fixed_lease=12h; docs/MARKET_EXPERIMENT.md; unchanged F9A offer formation"
+            )?;
+            barter::research::market_world(arm, seed, seed == first)?
+        } else if let Some(enabled) = barter_mode {
             writeln!(
                 parameters,
                 "F9A registered fixture={arm} seed={seed} enabled={enabled}; docs/BARTER_EXPERIMENT.md; no money; own conditional use"
@@ -140,6 +155,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             }
             for (key, value) in w.barter_counters() {
                 writeln!(barter_counts, "{seed},{hour},{key},{value}")?;
+            }
+            for (key, quantity) in w.market_stocks() {
+                writeln!(market_stocks, "{seed},{hour},{key},{quantity}")?;
             }
             let j = w.settlement_journal();
             let m = w.metrics();
@@ -414,6 +432,30 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 x.payment.expires_at(),
                 x.received_by_taker,
                 x.received_by_proposer
+            )?;
+        }
+        for r in w.market_receipts() {
+            let b = &w.batches()[r.batch];
+            writeln!(
+                market_receipts,
+                "{seed},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{:?},{:?}",
+                r.offer,
+                r.batch,
+                r.kind,
+                r.owner,
+                r.node,
+                r.at,
+                r.initial,
+                r.remaining,
+                r.retrieved,
+                r.used_locally,
+                r.redeposited,
+                r.other_removed,
+                r.commingled,
+                r.first_retrieval.map(|t| t.to_string()).unwrap_or_default(),
+                w.agents()[r.owner].action != Action::Dead,
+                b.material,
+                b.holder
             )?;
         }
         if seed == first {

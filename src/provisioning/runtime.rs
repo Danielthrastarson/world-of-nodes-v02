@@ -554,6 +554,7 @@ impl World {
     }
     fn integrate(&mut self, to: Time) {
         let dt = to - self.now;
+        self.integrate_market(dt);
         if let Some(mut journal) = self.settlement_research.take() {
             journal.integrate(self, dt);
             self.settlement_research = Some(journal);

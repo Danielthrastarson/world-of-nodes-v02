@@ -15,6 +15,7 @@ pub enum Owner {
 }
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Holder {
+    MarketEscrow(usize),
     Cart(usize),
     Deposit(usize),
     Loose(usize),
@@ -92,6 +93,21 @@ impl Goods {
             b.quantity += q;
             return b.id;
         }
+        let target = self.batches.len();
+        self.batches.push(Batch {
+            id: target,
+            quantity: q,
+            owner,
+            holder,
+            ..source
+        });
+        target
+    }
+    /// Physical split without coalescing: retain a distinct research receipt batch.
+    pub fn move_part_unmerged(&mut self, id: usize, q: u64, owner: Owner, holder: Holder) -> usize {
+        assert!(q > 0 && self.batches[id].quantity >= q);
+        let source = self.batches[id].clone();
+        self.batches[id].quantity -= q;
         let target = self.batches.len();
         self.batches.push(Batch {
             id: target,

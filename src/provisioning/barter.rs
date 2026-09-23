@@ -1,5 +1,6 @@
 //! F9A spot barter. Law validates physical consent; policy sees only a local View.
 use super::*;
+pub mod market;
 pub mod research;
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Offer {
@@ -31,6 +32,7 @@ pub struct Exchange {
 }
 #[derive(Clone, Debug, Default)]
 pub(crate) struct State {
+    pub receipts: Vec<market::Receipt>,
     pub offers: Vec<Offer>,
     pub exchanges: Vec<Exchange>,
     pub counters: BTreeMap<String, u64>,
@@ -163,6 +165,9 @@ impl World {
         want_quantity: u64,
     ) -> Result<(), String> {
         let node = self.barter_node(id, true)?;
+        if self.market_enabled() && !self.config.market_nodes.contains(&node) {
+            return Err("NO_LOCAL_MARKET".into());
+        }
         let b = self.barter_input(id, batch, quantity, node)?;
         if !acceptable_material(want) || b.material == want || want_quantity == 0 {
             return Err("INVALID_BUNDLE".into());
@@ -176,11 +181,22 @@ impl World {
             return Err("OFFER_ALREADY_OPEN".into());
         }
         let index = self.barter.offers.len();
-        let expires_at = (self.now + HOUR).min(if b.material == Material::Food {
-            b.expires_at()
+        let market = self.market_enabled();
+        let expires_at = if market {
+            self.now + 12 * HOUR
         } else {
-            Time::MAX
-        });
+            (self.now + HOUR).min(if b.material == Material::Food {
+                b.expires_at()
+            } else {
+                Time::MAX
+            })
+        };
+        let batch = if market {
+            self.goods
+                .move_part(batch, quantity, b.owner, Holder::MarketEscrow(index))
+        } else {
+            batch
+        };
         self.barter.offers.push(Offer {
             id: index,
             proposer: id,
@@ -195,16 +211,28 @@ impl World {
             status: "OPEN".into(),
         });
         self.barter_count("offers_created");
-        self.log(Some(id),"BarterOffered",format!("offer={index} batch={batch} give={:?}:{quantity} want={want:?}:{want_quantity} node={node} expires={expires_at}; standing voluntary consent; no reservation",b.material));
+        if market {
+            self.barter_count("offers_deposited");
+            self.log(Some(id), "MarketDeposited", format!("offer={index} batch={batch} q={quantity} owner={:?} node={node} expires={expires_at}", b.owner));
+        } else {
+            self.log(Some(id),"BarterOffered",format!("offer={index} batch={batch} give={:?}:{quantity} want={want:?}:{want_quantity} node={node} expires={expires_at}; standing voluntary consent; no reservation",b.material));
+        }
         Ok(())
     }
     pub(super) fn revoke_barter(&mut self, id: usize, offer: usize) -> Result<(), String> {
-        self.barter_node(id, false)?;
+        let node = self.barter_node(id, false)?;
+        let market = self.market_enabled();
         let o = self.barter.offers.get_mut(offer).ok_or("UNKNOWN_OFFER")?;
         if o.proposer != id || o.status != "OPEN" {
             return Err("OWNERSHIP_BLOCK".into());
         }
+        if market && o.location != node {
+            return Err("NO_COLOCATION".into());
+        }
         o.status = "REVOKED".into();
+        if market {
+            self.release_market(offer, "cancelled");
+        }
         self.barter_count("offers_revoked");
         self.log(Some(id), "BarterRevoked", format!("offer={offer}"));
         Ok(())
@@ -229,23 +257,49 @@ impl World {
         if o.proposer == id {
             return Err("SELF_EXCHANGE".into());
         }
-        if self.barter_node(o.proposer, true)? != node || o.location != node {
+        let market = self.market_enabled();
+        if o.location != node || (!market && self.barter_node(o.proposer, true)? != node) {
             return Err("NO_COLOCATION".into());
         }
-        let give = self.barter_input(o.proposer, o.batch, o.quantity, node)?;
+        let give = if market {
+            self.market_input(&o)?
+        } else {
+            self.barter_input(o.proposer, o.batch, o.quantity, node)?
+        };
         let pay = self.barter_input(id, payment, o.want_quantity, node)?;
         if give.material != o.give || pay.material != o.want {
             return Err("WRONG_RESOURCE".into());
         }
-        let received_by_taker =
+        let received_by_taker = if market {
+            self.goods.move_part_unmerged(
+                give.id,
+                o.quantity,
+                Owner::Agent(id),
+                Holder::Loose(node),
+            )
+        } else {
             self.goods
-                .move_part(give.id, o.quantity, Owner::Agent(id), Holder::Loose(node));
-        let received_by_proposer = self.goods.move_part(
-            pay.id,
-            o.want_quantity,
-            Owner::Agent(o.proposer),
-            Holder::Loose(node),
-        );
+                .move_part(give.id, o.quantity, Owner::Agent(id), Holder::Loose(node))
+        };
+        let received_by_proposer = if market {
+            self.goods.move_part_unmerged(
+                pay.id,
+                o.want_quantity,
+                Owner::Agent(o.proposer),
+                Holder::Loose(node),
+            )
+        } else {
+            self.goods.move_part(
+                pay.id,
+                o.want_quantity,
+                Owner::Agent(o.proposer),
+                Holder::Loose(node),
+            )
+        };
+        if market {
+            self.market_receipt(offer, received_by_proposer, "payment");
+            self.market_receipt(offer, received_by_taker, "purchase");
+        }
         self.barter.offers[offer].status = "ACCEPTED".into();
         self.barter.exchanges.push(Exchange {
             at: self.now,
@@ -263,7 +317,9 @@ impl World {
         self.barter_count("offers_accepted");
         self.log(Some(id),"BarterSettled",format!("offer={offer} proposer={} taker={id} node={node} give_batch={} q={} payment_batch={payment} q={} output_taker={received_by_taker} output_proposer={received_by_proposer}; simultaneous owner transfer; both outputs Loose({node})",o.proposer,give.id,o.quantity,o.want_quantity));
         self.wake.insert(id);
-        self.wake.insert(o.proposer);
+        if !market || self.agents[o.proposer].location == Location::Node(node) {
+            self.wake.insert(o.proposer);
+        }
         Ok(())
     }
     pub(super) fn expire_barter(&mut self) {
@@ -277,6 +333,8 @@ impl World {
             }
             let why = if o.expires_at <= self.now {
                 Some("EXPIRED".to_string())
+            } else if self.market_enabled() {
+                self.market_input(o).err()
             } else if self.agents[o.proposer].action == Action::Dead {
                 Some("DEAD_OWNER".into())
             } else if self.agents[o.proposer].location != Location::Node(o.location) {
@@ -292,8 +350,15 @@ impl World {
         for (id, proposer, why) in closed {
             self.barter.offers[id].status = why.clone();
             self.barter_count(&format!("closed_{why}"));
+            if self.market_enabled() {
+                self.release_market(id, &why);
+            }
             self.log(
-                Some(proposer),
+                if self.market_enabled() {
+                    None
+                } else {
+                    Some(proposer)
+                },
                 "BarterClosed",
                 format!("offer={id} reason={why}; local offer not remotely broadcast"),
             );
@@ -371,7 +436,7 @@ impl World {
                 f.status == "OPEN"
                     && f.location == node
                     && f.expires_at > self.now
-                    && people.contains(&f.proposer)
+                    && (self.market_enabled() || people.contains(&f.proposer))
             })
             .cloned()
             .collect();
@@ -410,6 +475,20 @@ impl World {
                 Intent::Eat { .. } | Intent::Sleep | Intent::Deliver { .. }
             )
         {
+            if self.market_enabled() {
+                let why = if o.action != Action::Idle {
+                    "DEFERRED_BUSY"
+                } else if o.job.is_some() {
+                    "DEFERRED_JOB"
+                } else {
+                    "DEFERRED_PRIORITY"
+                };
+                for f in &v.offers {
+                    if f.proposer != id && self.barter.reasons.insert((id, f.id, why.into())) {
+                        self.barter_count(why);
+                    }
+                }
+            }
             return fallback;
         }
         self.barter_count("eligible_evaluations");
@@ -422,7 +501,10 @@ impl World {
         let decision = |intent, reason: String| Decision { intent, reason };
         for f in &v.offers {
             if f.proposer == id {
-                if willingness(&v, f.give, f.quantity, f.want, f.want_quantity).is_err() {
+                let own_offer_view = self.offer_owner_view(&v, f);
+                if willingness(&own_offer_view, f.give, f.quantity, f.want, f.want_quantity)
+                    .is_err()
+                {
                     return decision(
                         Intent::RevokeBarter { offer: f.id },
                         format!("own use changed; needs={:?}", v.needs),
@@ -467,6 +549,7 @@ impl World {
         if v.offers.iter().any(|f| f.proposer == id) {
             return fallback;
         }
+        self.barter_count("formation_evaluations");
         for (give, want, limit) in [
             (Material::Food, Material::Wood, 6),
             (Material::Wood, Material::Food, 10),
@@ -503,6 +586,7 @@ impl World {
         {
             return Err("barter without institution".into());
         }
+        self.audit_market()?;
         let mut open = BTreeSet::new();
         for (id, o) in self.barter.offers.iter().enumerate() {
             if o.id != id

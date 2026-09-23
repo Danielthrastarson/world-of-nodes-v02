@@ -387,6 +387,7 @@ impl Journal {
             Holder::Agent(id) => self.place(&w.agents[id].location),
             Holder::Cart(id) => self.place(&w.capital.carts[id].location),
             Holder::Edge { .. } => TRANSIT,
+            Holder::MarketEscrow(id) => self.node_places[w.barter.offers[id].location],
         }
     }
 }
