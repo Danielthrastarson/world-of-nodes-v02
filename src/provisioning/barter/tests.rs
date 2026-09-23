@@ -286,3 +286,55 @@ fn no_money_or_resale_motive_is_hidden_in_willingness() {
         );
     }
 }
+#[test]
+fn two_willing_local_policies_can_settle_and_use_received_goods() {
+    // Static conformance witness, not a tuned live settlement arm: both owners
+    // are at a legal idle decision point and buyer nutrition is explicitly 8h.
+    let mut w = research::world("colocated", true, 0, false).unwrap();
+    w.config.autonomous = false;
+    w.agents[1].nutrition = 8 * HOUR;
+    for id in 0..2 {
+        w.observe_capital(id);
+        let local = w.node_view(0);
+        w.agents[id].memory.nodes.insert(0, local);
+    }
+    for id in 0..2 {
+        let o = w.observe(id).unwrap();
+        let a = &mut w.agents[id];
+        let base = policy::decide_capital(
+            &o,
+            &a.memory,
+            &mut a.rng,
+            None,
+            &w.capital.memories[id],
+            &w.config.capital.as_ref().unwrap().rules,
+        );
+        let d = w.barter_decision(id, &o, base);
+        if id == 0 {
+            assert!(matches!(d.intent, Intent::OfferBarter { .. }));
+        } else {
+            assert!(matches!(d.intent, Intent::AcceptBarter { .. }));
+        }
+        w.apply_intents(vec![(id, d.intent)]).unwrap();
+    }
+    assert_eq!(w.barter.exchanges.len(), 1);
+    assert_eq!(
+        w.agents[1].nutrition,
+        8 * HOUR,
+        "exchange alone is not nourishment"
+    );
+    let x = w.barter.exchanges[0].clone();
+    w.apply_intents(vec![(
+        1,
+        Intent::Eat {
+            batch: x.received_by_taker,
+            quantity: x.give_quantity,
+        },
+    )])
+    .unwrap();
+    assert_eq!(w.agents[1].nutrition, 14 * HOUR);
+    w.apply_intents(vec![(0, Intent::BuildCart)]).unwrap();
+    assert_eq!(w.capital.projects[0].wood, 10);
+    assert!(w.carts().is_empty(), "barter does not bypass capital labor");
+    w.audit().unwrap();
+}

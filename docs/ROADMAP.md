@@ -22,7 +22,8 @@ and irreversible abstraction choices require a project-owner decision.
 | F6 Construction / settlement | PASSED | Minimal causally necessary storage/sleep/infrastructure uses delivered materials, labor and time. Different geography creates different persistent spatial form. |
 | F7 Emergent infrastructure | PASSED | Completed civilian travel creates paths; continued use maintains them and disuse reverses wear. Effective travel time changes route/traffic outcomes under unchanged capacity and FIFO. Engineered roads and staffed maintenance remain deferred. |
 | F8 Two settlements | PASSED | Existing-institution scope: 210 paired runs explain migration, small communal food flows, transport sensitivity, incomplete capital and crop ownership lock-up. No reciprocal barter/wood exports established; new exchange/property rules require an owner decision. |
-| F9 Prices / money decision | NOT STARTED | Diagnose actual exchange/valuation/friction problem before comparing a common account/medium. Money never creates goods. Evidence for adoption OR deferral passes. Owner decides institution. |
+| F9A Local barter | ACTIVE | Owner authorized alienable personal goods and voluntary immediate atomic exchange. Local offers and bounded own-use decisions; paired disabled controls preserve F8. No money, forced transfer or remote market. |
+| F9B Money decision | NOT STARTED | Diagnose actual exchange/valuation/friction problems from F9A before proposing money. Monetary institutions require a separate owner decision; absence of offers is not double coincidence of wants. |
 | F10 Territory / authority | NOT STARTED | Practical communication, collection, protection, enforcement or administration depends on presence and geography. No arbitrary borders. Owner decides powers. |
 | F11 Security / military economy | NOT STARTED | Mobilization redirects existing people, food, tools, transport and time. Measure civilian consequences; military strength depends on physical economy. |
 | F12 Information network | NOT STARTED | Explicit physical messengers/travelers or constrained signals. Distinguish true from observed state; report delay changes decisions. No global knowledge. |
@@ -90,3 +91,11 @@ but worsen mean nourishment here. Crop claims remain inaccessible after owner de
 These are explained interactions, not efficient trade or sustainability. F9 remains
 unstarted: money has not been shown necessary or sufficient. A new barter, pooling,
 lending or abandoned-property institution needs an explicit owner decision first.
+
+F9A owner decision resolves **barter only**: [registered experiment](BARTER_EXPERIMENT.md).
+Personal goods may be alienated voluntarily. Immediate local atomic barter has no
+debt, currency, inheritance, lending or forced sale. Crop, land and cart-title
+institutions are not extended. The F8 communal arrival-without-deposit trace is
+preserved; trade rights do not repair delivery arbitration. Existing historical
+configurations keep barter disabled for reproducibility; F9A enabled arms select
+the new institution explicitly. No monetary implementation is authorized.
