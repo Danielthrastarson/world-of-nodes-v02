@@ -27,7 +27,7 @@ F3 now passes under the owner's cultivator-owned crop/output decision, with no l
 title or inheritance. See [production evidence](research/farming/REPORT.md). Output
 requires local labor, growth time and harvest; finite-food controls remain unchanged.
 F4 also passes its pressure-dependent labor gate; see [evidence](research/labor/REPORT.md).
-F5 passed under personal cart rights; [evidence](research/capital/REPORT.md) preserves inefficient investment and capital lock-up. F6 is authorized under [communal crossing rights](docs/INFRASTRUCTURE_RIGHTS_DECISION.md). The [player action language](docs/PLAYER_ACTION_LANGUAGE.md) is conceptual only. No trade, money, authority, combat, graphics or multiplayer is implemented. Older scope statements below remain historical.
+F5 passed under personal cart rights; [evidence](research/capital/REPORT.md) preserves inefficient investment and capital lock-up. F6 passed under [communal crossing rights](docs/INFRASTRUCTURE_RIGHTS_DECISION.md); [420-run evidence](research/infrastructure/REPORT.md) preserves unknown-resource inaction, unfinished inputs and congestion deaths. The [player action language](docs/PLAYER_ACTION_LANGUAGE.md) is conceptual only. No trade, money, authority, combat, graphics or multiplayer is implemented. Older scope statements below remain historical.
 
 ## Authority and scope
 

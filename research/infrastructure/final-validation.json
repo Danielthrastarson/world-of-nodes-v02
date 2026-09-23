@@ -1,0 +1,11 @@
+{
+  "revision": "1395dc2fae28958a6e770c5ad4b8070ef37a9b9a",
+  "prior_artifacts_unchanged": 1219,
+  "tests_passed": 124,
+  "clippy": "all targets, warnings denied",
+  "registered_runs": 360,
+  "additional_absent_demand_runs": 60,
+  "all_seed_metric_ranges_degenerate": true,
+  "accounting_errors": 0,
+  "queue_overtakes": 0
+}

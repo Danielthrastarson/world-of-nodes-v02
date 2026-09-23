@@ -1,0 +1,122 @@
+{
+  "closed": {
+    "alive": {
+      "mean": 50.0
+    },
+    "consumed": {
+      "mean": 2117.0
+    },
+    "delivered": {
+      "mean": -11.0
+    },
+    "starvation_h": {
+      "mean": -617.0
+    },
+    "queue_h": {
+      "mean": 997.147516112
+    },
+    "visited_f": {
+      "mean": 48.0
+    }
+  },
+  "short": {
+    "alive": {
+      "mean": 0.0
+    },
+    "consumed": {
+      "mean": 121.0
+    },
+    "delivered": {
+      "mean": -125.0
+    },
+    "starvation_h": {
+      "mean": -121.0
+    },
+    "queue_h": {
+      "mean": 91.73375499999997
+    },
+    "visited_f": {
+      "mean": 0.0
+    }
+  },
+  "bottleneck": {
+    "alive": {
+      "mean": 41.0
+    },
+    "consumed": {
+      "mean": 1573.0
+    },
+    "delivered": {
+      "mean": -94.0
+    },
+    "starvation_h": {
+      "mean": -381.0
+    },
+    "queue_h": {
+      "mean": 993.924373889
+    },
+    "visited_f": {
+      "mean": 41.0
+    }
+  },
+  "alternate": {
+    "alive": {
+      "mean": 26.0
+    },
+    "consumed": {
+      "mean": 1217.0
+    },
+    "delivered": {
+      "mean": 65.0
+    },
+    "starvation_h": {
+      "mean": -513.0
+    },
+    "queue_h": {
+      "mean": 315.53395777800006
+    },
+    "visited_f": {
+      "mean": 26.0
+    }
+  },
+  "scarce": {
+    "alive": {
+      "mean": 0.0
+    },
+    "consumed": {
+      "mean": 0.0
+    },
+    "delivered": {
+      "mean": -94.0
+    },
+    "starvation_h": {
+      "mean": 0.0
+    },
+    "queue_h": {
+      "mean": 10.687222222999992
+    },
+    "visited_f": {
+      "mean": 0.0
+    }
+  },
+  "discovery": {
+    "alive": {
+      "mean": 0.0
+    },
+    "consumed": {
+      "mean": 0.0
+    },
+    "delivered": {
+      "mean": 0.0
+    },
+    "starvation_h": {
+      "mean": 0.0
+    },
+    "queue_h": {
+      "mean": 0.0
+    },
+    "visited_f": {
+      "mean": 0.0
+    }
+  }
+}

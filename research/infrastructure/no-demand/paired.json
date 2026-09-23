@@ -1,0 +1,22 @@
+{
+  "local_food": {
+    "alive": {
+      "mean": 0.0
+    },
+    "consumed": {
+      "mean": 0.0
+    },
+    "delivered": {
+      "mean": 0.0
+    },
+    "starvation_h": {
+      "mean": 0.0
+    },
+    "queue_h": {
+      "mean": 0.0
+    },
+    "visited_f": {
+      "mean": 0.0
+    }
+  }
+}

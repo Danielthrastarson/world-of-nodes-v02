@@ -1,0 +1,19 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.59s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 11 tests
+test provisioning::infrastructure::tests::actual_wood_must_travel_before_donation ... ok
+test provisioning::infrastructure::tests::distant_memory_does_not_receive_completion ... ok
+test provisioning::infrastructure::tests::unobserved_remote_material_and_food_cannot_change_decision ... ok
+test provisioning::infrastructure::tests::completion_does_not_rewrite_inflight_traversal_or_fifo ... ok
+test provisioning::infrastructure::tests::interrupted_construction_retains_public_inputs_after_donor_death ... ok
+test provisioning::infrastructure::tests::renamed_nodes_preserve_the_same_observed_construction_choice ... ok
+test provisioning::infrastructure::tests::donation_is_local_owned_and_cannot_overfill ... ok
+test provisioning::infrastructure::tests::construction_work_forecast_matches_physiology ... ok
+test provisioning::infrastructure::tests::physically_pooled_inputs_labor_and_public_users_are_distinct ... ok
+test provisioning::infrastructure::tests::building_and_movement_share_one_partition_independent_clock ... ok
+test provisioning::infrastructure::tests::unused_public_construction_pays_material_and_time_without_traffic_benefit ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 100 filtered out; finished in 0.00s
+

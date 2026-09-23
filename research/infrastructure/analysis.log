@@ -1,0 +1,12 @@
+alternate_available completed 9.425926111111112 peak {0: 50, 2: 45, 3: 4, 1: 46} waits {'0': {'n': 234, 'mean': 0.5608788960113961, 'max': 3.0}, '2': {'n': 16, 'mean': 2.9550231944444447, 'max': 6.133703888888889}, '3': {'n': 16, 'mean': 0.0, 'max': 0.0}, '1': {'n': 398, 'mean': 0.9715802386934673, 'max': 2.97}} queued deaths {}
+alternate_unavailable completed None peak {0: 50, 2: 44, 3: 8} waits {'0': {'n': 62, 'mean': 1.1697132616487456, 'max': 3.0}, '2': {'n': 36, 'mean': 3.361468271604938, 'max': 12.475926666666666}, '3': {'n': 36, 'mean': 2.932071450617284, 'max': 7.7466675}} queued deaths {3: 4, 2: 2}
+bottleneck_available completed 9.425926111111112 peak {0: 50, 1: 47} waits {'0': {'n': 108, 'mean': 0.6997807638888889, 'max': 3.0}, '1': {'n': 89, 'mean': 5.761115892634207, 'max': 23.75000138888889}} queued deaths {1: 7}
+bottleneck_unavailable completed None peak {0: 50} waits {'0': {'n': 78, 'mean': 1.0576923076923077, 'max': 3.0}} queued deaths {}
+closed_available completed 9.425926111111112 peak {0: 50, 1: 47} waits {'0': {'n': 201, 'mean': 0.7094570840243228, 'max': 3.0}, '1': {'n': 363, 'mean': 1.2873385590756046, 'max': 4.674666666666667}} queued deaths {}
+closed_unavailable completed None peak {0: 50} waits {'0': {'n': 78, 'mean': 1.0576923076923077, 'max': 3.0}} queued deaths {}
+discovery_available completed None peak {0: 50} waits {'0': {'n': 76, 'mean': 1.2114035087719297, 'max': 3.0}} queued deaths {}
+discovery_unavailable completed None peak {0: 50} waits {'0': {'n': 76, 'mean': 1.2114035087719297, 'max': 3.0}} queued deaths {}
+scarce_available completed None peak {0: 46} waits {'0': {'n': 82, 'mean': 1.404281842818428, 'max': 2.983888888888889}} queued deaths {}
+scarce_unavailable completed None peak {0: 50} waits {'0': {'n': 78, 'mean': 1.0576923076923077, 'max': 3.0}} queued deaths {}
+short_available completed 36.80694444444445 peak {0: 50, 1: 50} waits {'0': {'n': 303, 'mean': 0.5198162962962963, 'max': 3.0}, '1': {'n': 547, 'mean': 0.6903499893357709, 'max': 2.207638888888889}} queued deaths {}
+short_unavailable completed None peak {0: 50, 1: 50} waits {'0': {'n': 296, 'mean': 0.4127986908783784, 'max': 3.0}, '1': {'n': 510, 'mean': 0.5935990642701525, 'max': 1.4666666666666666}} queued deaths {}

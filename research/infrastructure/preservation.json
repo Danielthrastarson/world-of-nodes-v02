@@ -1,0 +1,6 @@
+{
+  "historical.csv": 9,
+  "adoption-equivalence.csv": 19,
+  "capital-regression": "seed-zero tables and state/event hashes identical",
+  "farming-regression": "seed-zero tables and state/event hashes identical"
+}

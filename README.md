@@ -2,7 +2,7 @@
 
 **The simulation is the source of the graphics.** A causal kingdom simulation with primitive rendering of real agents, stocks, movement, work, and observed state.
 
-Current work follows the [gated foundation roadmap](docs/ROADMAP.md): F0–F5 have passed; F6 awaits a fixed-infrastructure access decision. The six tested mechanical forecast corrections are adopted; conditional meal planning remains research-only. Earlier reports below describe their original historical policies. No later systems are implemented before their gates pass.
+Current work follows the [gated foundation roadmap](docs/ROADMAP.md): F0–F6 have passed; F7 traffic-driven infrastructure is next. The six tested mechanical forecast corrections are adopted; conditional meal planning remains research-only. Earlier reports below describe their original historical policies. No later systems are implemented before their gates pass.
 
 - [Current design contract](WORLD_OF_NODES_HANDOFF.md)
 - [Locked provisioning specification](docs/PROVISIONING_SPEC.md)
@@ -54,7 +54,7 @@ corrections while retaining no-meal planning by default. The gated roadmap conti
 through geography and provisioning diagnostics; each stage records its gate in
 [ROADMAP.md](docs/ROADMAP.md). Historical probe commands stay explicitly reproducible.
 
-Foundation gates F0–F5 passed. [F1 geography](research/geography/REPORT.md) and
+Foundation gates F0–F6 passed. [F1 geography](research/geography/REPORT.md) and
 [F2 provisioning](research/foundation-provisioning/REPORT.md) preserve failures and
 explain the first autonomous deliveries. [F3 farming](research/farming/REPORT.md)
 uses cultivator-owned crops without land titles. [F4 labor](research/labor/REPORT.md)
@@ -62,5 +62,7 @@ measures voluntary responses to scarcity. [F5 personal capital](research/capital
 implements physical carts and reports 420 paired runs: some delivery gains,
 worse nourishment in other conditions, and dead-owner capital lock-up. Historical
 worlds remain unchanged; farming and capital require explicit configuration.
-[F6 crossing access](docs/INFRASTRUCTURE_RIGHTS_DECISION.md) is a prepared institutional
-choice, not implemented infrastructure.
+[F6 communal crossings](research/infrastructure/REPORT.md) are physically built and
+shared under finite capacity. The 420-run study preserves incomplete projects,
+unknown-resource inaction and fatal queues. The future [player action language](docs/PLAYER_ACTION_LANGUAGE.md)
+is documentation only; no ruler command API or traffic-generated roads were added.

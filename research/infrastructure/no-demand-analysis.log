@@ -1,0 +1,2 @@
+local_food_available completed None peak {0: 50} waits {'0': {'n': 419, 'mean': 1.1800122003447362, 'max': 4.0890377777777775}} queued deaths {}
+local_food_unavailable completed None peak {0: 50} waits {'0': {'n': 419, 'mean': 1.1800122003447362, 'max': 4.0890377777777775}} queued deaths {}

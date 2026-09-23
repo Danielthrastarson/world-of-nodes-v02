@@ -1,0 +1,1226 @@
+{
+  "closed_unavailable": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 94.0,
+      "min": 94.0,
+      "max": 94.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 150.724444444,
+      "min": 150.724444444,
+      "max": 150.724444444
+    },
+    "visited_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "at_c": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_x": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "attempts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_food_flow": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_trips": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_users": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "started": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood_transport": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "work_starts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "closed_available": {
+    "alive": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "consumed": {
+      "mean": 2417.0,
+      "min": 2417.0,
+      "max": 2417.0
+    },
+    "spoiled": {
+      "mean": 583.0,
+      "min": 583.0,
+      "max": 583.0
+    },
+    "delivered": {
+      "mean": 83.0,
+      "min": 83.0,
+      "max": 83.0
+    },
+    "starvation_h": {
+      "mean": 583.0,
+      "min": 583.0,
+      "max": 583.0
+    },
+    "queue_h": {
+      "mean": 1147.871960556,
+      "min": 1147.871960556,
+      "max": 1147.871960556
+    },
+    "visited_f": {
+      "mean": 48.0,
+      "min": 48.0,
+      "max": 48.0
+    },
+    "completed": {
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    "at_c": {
+      "mean": 7.0,
+      "min": 7.0,
+      "max": 7.0
+    },
+    "at_x": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "at_f": {
+      "mean": 41.0,
+      "min": 41.0,
+      "max": 41.0
+    },
+    "attempts": {
+      "mean": 540,
+      "min": 540,
+      "max": 540
+    },
+    "improved_food_flow": {
+      "mean": 1113,
+      "min": 1113,
+      "max": 1113
+    },
+    "improved_trips": {
+      "mean": 363,
+      "min": 363,
+      "max": 363
+    },
+    "improved_users": {
+      "mean": 48,
+      "min": 48,
+      "max": 48
+    },
+    "labor_ms": {
+      "mean": 29313334,
+      "min": 29313334,
+      "max": 29313334
+    },
+    "started": {
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    "wood": {
+      "mean": 20,
+      "min": 20,
+      "max": 20
+    },
+    "wood_transport": {
+      "mean": 414,
+      "min": 414,
+      "max": 414
+    },
+    "work_starts": {
+      "mean": 2,
+      "min": 2,
+      "max": 2
+    }
+  },
+  "short_unavailable": {
+    "alive": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "consumed": {
+      "mean": 2329.0,
+      "min": 2329.0,
+      "max": 2329.0
+    },
+    "spoiled": {
+      "mean": 671.0,
+      "min": 671.0,
+      "max": 671.0
+    },
+    "delivered": {
+      "mean": 271.0,
+      "min": 271.0,
+      "max": 271.0
+    },
+    "starvation_h": {
+      "mean": 671.0,
+      "min": 671.0,
+      "max": 671.0
+    },
+    "queue_h": {
+      "mean": 1128.817571389,
+      "min": 1128.817571389,
+      "max": 1128.817571389
+    },
+    "visited_f": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "completed": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "at_c": {
+      "mean": 18.0,
+      "min": 18.0,
+      "max": 18.0
+    },
+    "at_x": {
+      "mean": 12.0,
+      "min": 12.0,
+      "max": 12.0
+    },
+    "at_f": {
+      "mean": 20.0,
+      "min": 20.0,
+      "max": 20.0
+    },
+    "attempts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_food_flow": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_trips": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_users": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "started": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood_transport": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "work_starts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "short_available": {
+    "alive": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "consumed": {
+      "mean": 2450.0,
+      "min": 2450.0,
+      "max": 2450.0
+    },
+    "spoiled": {
+      "mean": 550.0,
+      "min": 550.0,
+      "max": 550.0
+    },
+    "delivered": {
+      "mean": 146.0,
+      "min": 146.0,
+      "max": 146.0
+    },
+    "starvation_h": {
+      "mean": 550.0,
+      "min": 550.0,
+      "max": 550.0
+    },
+    "queue_h": {
+      "mean": 1220.551326389,
+      "min": 1220.551326389,
+      "max": 1220.551326389
+    },
+    "visited_f": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "completed": {
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    "at_c": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "at_x": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "at_f": {
+      "mean": 43.0,
+      "min": 43.0,
+      "max": 43.0
+    },
+    "attempts": {
+      "mean": 776,
+      "min": 776,
+      "max": 776
+    },
+    "improved_food_flow": {
+      "mean": 712,
+      "min": 712,
+      "max": 712
+    },
+    "improved_trips": {
+      "mean": 146,
+      "min": 146,
+      "max": 146
+    },
+    "improved_users": {
+      "mean": 49,
+      "min": 49,
+      "max": 49
+    },
+    "labor_ms": {
+      "mean": 43215000,
+      "min": 43215000,
+      "max": 43215000
+    },
+    "started": {
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    "wood": {
+      "mean": 20,
+      "min": 20,
+      "max": 20
+    },
+    "wood_transport": {
+      "mean": 150,
+      "min": 150,
+      "max": 150
+    },
+    "work_starts": {
+      "mean": 14,
+      "min": 14,
+      "max": 14
+    }
+  },
+  "bottleneck_unavailable": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 94.0,
+      "min": 94.0,
+      "max": 94.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 150.724444444,
+      "min": 150.724444444,
+      "max": 150.724444444
+    },
+    "visited_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "at_c": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_x": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "attempts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_food_flow": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_trips": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_users": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "started": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood_transport": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "work_starts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "bottleneck_available": {
+    "alive": {
+      "mean": 41.0,
+      "min": 41.0,
+      "max": 41.0
+    },
+    "consumed": {
+      "mean": 1873.0,
+      "min": 1873.0,
+      "max": 1873.0
+    },
+    "spoiled": {
+      "mean": 1127.0,
+      "min": 1127.0,
+      "max": 1127.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 819.0,
+      "min": 819.0,
+      "max": 819.0
+    },
+    "queue_h": {
+      "mean": 1144.648818333,
+      "min": 1144.648818333,
+      "max": 1144.648818333
+    },
+    "visited_f": {
+      "mean": 41.0,
+      "min": 41.0,
+      "max": 41.0
+    },
+    "completed": {
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    "at_c": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_x": {
+      "mean": 16.0,
+      "min": 16.0,
+      "max": 16.0
+    },
+    "at_f": {
+      "mean": 25.0,
+      "min": 25.0,
+      "max": 25.0
+    },
+    "attempts": {
+      "mean": 540,
+      "min": 540,
+      "max": 540
+    },
+    "improved_food_flow": {
+      "mean": 192,
+      "min": 192,
+      "max": 192
+    },
+    "improved_trips": {
+      "mean": 89,
+      "min": 89,
+      "max": 89
+    },
+    "improved_users": {
+      "mean": 41,
+      "min": 41,
+      "max": 41
+    },
+    "labor_ms": {
+      "mean": 29313334,
+      "min": 29313334,
+      "max": 29313334
+    },
+    "started": {
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    "wood": {
+      "mean": 20,
+      "min": 20,
+      "max": 20
+    },
+    "wood_transport": {
+      "mean": 117,
+      "min": 117,
+      "max": 117
+    },
+    "work_starts": {
+      "mean": 2,
+      "min": 2,
+      "max": 2
+    }
+  },
+  "alternate_unavailable": {
+    "alive": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "consumed": {
+      "mean": 1196.0,
+      "min": 1196.0,
+      "max": 1196.0
+    },
+    "spoiled": {
+      "mean": 1804.0,
+      "min": 1804.0,
+      "max": 1804.0
+    },
+    "delivered": {
+      "mean": 16.0,
+      "min": 16.0,
+      "max": 16.0
+    },
+    "starvation_h": {
+      "mean": 1100.0,
+      "min": 1100.0,
+      "max": 1100.0
+    },
+    "queue_h": {
+      "mean": 1021.77819,
+      "min": 1021.77819,
+      "max": 1021.77819
+    },
+    "visited_f": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "completed": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "at_c": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_x": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_f": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0
+    },
+    "attempts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_food_flow": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_trips": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_users": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "started": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood_transport": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "work_starts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "alternate_available": {
+    "alive": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "consumed": {
+      "mean": 2413.0,
+      "min": 2413.0,
+      "max": 2413.0
+    },
+    "spoiled": {
+      "mean": 587.0,
+      "min": 587.0,
+      "max": 587.0
+    },
+    "delivered": {
+      "mean": 81.0,
+      "min": 81.0,
+      "max": 81.0
+    },
+    "starvation_h": {
+      "mean": 587.0,
+      "min": 587.0,
+      "max": 587.0
+    },
+    "queue_h": {
+      "mean": 1337.312147778,
+      "min": 1337.312147778,
+      "max": 1337.312147778
+    },
+    "visited_f": {
+      "mean": 50.0,
+      "min": 50.0,
+      "max": 50.0
+    },
+    "completed": {
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    "at_c": {
+      "mean": 8.0,
+      "min": 8.0,
+      "max": 8.0
+    },
+    "at_x": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0
+    },
+    "at_f": {
+      "mean": 36.0,
+      "min": 36.0,
+      "max": 36.0
+    },
+    "attempts": {
+      "mean": 538,
+      "min": 538,
+      "max": 538
+    },
+    "improved_food_flow": {
+      "mean": 1144,
+      "min": 1144,
+      "max": 1144
+    },
+    "improved_trips": {
+      "mean": 398,
+      "min": 398,
+      "max": 398
+    },
+    "improved_users": {
+      "mean": 50,
+      "min": 50,
+      "max": 50
+    },
+    "labor_ms": {
+      "mean": 29313334,
+      "min": 29313334,
+      "max": 29313334
+    },
+    "started": {
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    "wood": {
+      "mean": 20,
+      "min": 20,
+      "max": 20
+    },
+    "wood_transport": {
+      "mean": 437,
+      "min": 437,
+      "max": 437
+    },
+    "work_starts": {
+      "mean": 2,
+      "min": 2,
+      "max": 2
+    }
+  },
+  "scarce_unavailable": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 94.0,
+      "min": 94.0,
+      "max": 94.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 150.724444444,
+      "min": 150.724444444,
+      "max": 150.724444444
+    },
+    "visited_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "at_c": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_x": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "attempts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_food_flow": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_trips": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_users": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "started": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood_transport": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "work_starts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "scarce_available": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 161.411666667,
+      "min": 161.411666667,
+      "max": 161.411666667
+    },
+    "visited_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "at_c": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_x": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "attempts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_food_flow": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_trips": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_users": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "started": {
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    "wood": {
+      "mean": 5,
+      "min": 5,
+      "max": 5
+    },
+    "wood_transport": {
+      "mean": 5,
+      "min": 5,
+      "max": 5
+    },
+    "work_starts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "discovery_unavailable": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 151.115555556,
+      "min": 151.115555556,
+      "max": 151.115555556
+    },
+    "visited_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "at_c": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_x": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "attempts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_food_flow": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_trips": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_users": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "started": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood_transport": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "work_starts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "discovery_available": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 300.0,
+      "min": 300.0,
+      "max": 300.0
+    },
+    "spoiled": {
+      "mean": 2700.0,
+      "min": 2700.0,
+      "max": 2700.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 1200.0,
+      "min": 1200.0,
+      "max": 1200.0
+    },
+    "queue_h": {
+      "mean": 151.115555556,
+      "min": 151.115555556,
+      "max": 151.115555556
+    },
+    "visited_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "at_c": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_x": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_f": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "attempts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_food_flow": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_trips": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "improved_users": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "started": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "wood_transport": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    },
+    "work_starts": {
+      "mean": 0,
+      "min": 0,
+      "max": 0
+    }
+  }
+}
