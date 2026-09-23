@@ -114,3 +114,24 @@ python3 scripts/analyze_market.py /tmp/won-f9b-reproduction /tmp/won-f9b-analysi
 
 The final evidence is `research/market/matrix-final`; earlier matrices in that
 folder are preserved development failures, not independent confirmation runs.
+
+
+### F10: authority through people and places
+
+[Report](research/authority/REPORT.md) · [registered study](docs/AUTHORITY_EXPERIMENT.md)
+· [validation](research/authority/validation.json).
+
+An optional polity designates an existing mortal sovereign. Local appointments create
+steward offices; living presence determines practical administration and derived
+territory. A steward may commission an existing communal crossing locally, with no
+free materials or forced workers. Seven deployment controls and 180 paired project
+runs expose both functioning construction and failure from congestion, death, missing
+materials and unknown benefits. No autonomous government planner or coercive power.
+F9 is closed: money remains unjustified; offer formation remains open research debt.
+
+```sh
+cargo build --release --bins
+python3 scripts/run_authority.py /tmp/won-f10-reproduction
+python3 scripts/analyze_authority.py /tmp/won-f10-reproduction /tmp/won-f10-analysis.json /tmp/won-f10-traces.md
+python3 scripts/verify_authority.py /tmp/won-f10-regressions
+```

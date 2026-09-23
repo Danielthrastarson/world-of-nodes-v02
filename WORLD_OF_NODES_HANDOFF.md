@@ -276,3 +276,50 @@ superseded runs and preliminary traces remain archived. Use matrix-final for cla
 No money, new communication, merchant behavior, waiting rule, offer-formation fix
 or further institution has been implemented. F9B ends with evidence; expansion waits
 for the project owner's next direction.
+
+
+## F9 closure / F10 current authority foundation (2026-09-23)
+
+Owner accepted F9: PASSED, **MONEY NOT CURRENTLY JUSTIFIED**. Rare offer formation
+is **OPEN ECONOMIC RESEARCH DEBT**. Preserve all barter/market research without
+merchant work, trade search, speculation, stronger offer generation or currency.
+
+F10 now PASSED at the owner-authorized minimal scope. [Specification](docs/AUTHORITY_EXPERIMENT.md),
+[report](research/authority/REPORT.md), [validation](research/authority/validation.json).
+Implementation `0f0f6d5`; study source `a4b42a8`; registration `9c3937f`.
+
+Polity, existing embodied sovereign and steward office have distinct identities.
+AppointSteward requires a living sovereign/candidate at the same node. It records
+an assignment without routes, remote information, resources, travel or forced work.
+Known personal assignments and local institutional observations are separate from
+server/research true-office queries. Effective administration is derived from valid
+office + living holder + physical presence at its settlement. Territory is the set
+of administered settlements. Holder death/departure removes presence-based authority;
+historical office records persist. Sovereign death prevents further appointments
+but does not automatically revoke existing delegations. No succession/replacement.
+
+In opt-in authority worlds, only an active local steward may commission the existing
+public crossing opportunity. Donations/building then use unchanged F6 voluntary
+mechanics. Commission persists after issuer departure/death; crossing stays Commons(0).
+There are no taxes, seizure, compulsory labor, tolls, conscription or border rules.
+Existing scenarios default to authority=None and retain their previous behavior.
+
+Seven deployment mechanism controls: local authority starts0.5h; distant8.556h;
+cap1 with eight earlier applicants causes32.08h wait and death mid-edge at36h,
+without arrival. Departure after one hour residence yields just1 administration-hour.
+Two real stewards establish two offices; no abstract radius or magical replacement.
+Controlled deployment is research input, not a new sovereign/steward autonomous AI.
+
+180 project runs (three conditions, two arms, seeds0–29): sufficient known-benefit
+commissioned crossing completes30/30 at8.055556h using20 wood and8.005556 actual
+labor-hours; pending controls0/30. Scarce wood stalls at5/20; discovery without
+known benefit produces no contributions. All 30 seeds have identical measured
+outcomes within each condition. Success does not show spontaneous government.
+Successful fixture:40 alive72h,1991 food consumed,726.017 starvation-person-hours,
+38 users/400 completed crossing trips. Steward departs14 times, leaving29.169h
+without local authority. Existing policy, migration, congestion and starvation persist.
+
+183 tests, clippy/fmt pass;40 historical scenario runs exactly reproduced;3,131
+prior research files unchanged. New studies have zero material errors and FIFO
+overtakes. Preserve all evidence in research/authority. F11 is not implemented;
+no further institution or behavioral fix is adopted after the F10 report.

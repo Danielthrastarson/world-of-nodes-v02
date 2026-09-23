@@ -1,0 +1,4195 @@
+{
+  "bottleneck_command": {
+    "runs": 1,
+    "appointments": 1,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {},
+    "offices_never_active": 1,
+    "holders_dead_unreplaced": 1,
+    "departure_events": 0,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "Queued": 9,
+      "Admitted": 9,
+      "Arrived": 8,
+      "PerformanceChanged": 200,
+      "StarvationStarted": 50,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "9",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "",
+        "active_h": "0.000000000",
+        "unadministered_h": "72.000000000",
+        "death_ms": "129600000",
+        "departures": "0",
+        "consumed": "0",
+        "travel_h": "3.920000000",
+        "queue_h": "32.080000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "0.000000000"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "0.000000000"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "0.000000000"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "death_after_command": {
+    "runs": 1,
+    "appointments": 1,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {},
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 1,
+    "departure_events": 0,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "Queued": 1,
+      "Admitted": 1,
+      "Arrived": 1,
+      "PerformanceChanged": 200,
+      "StarvationStarted": 50,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "9",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "1800000",
+        "active_h": "35.500000000",
+        "unadministered_h": "36.500000000",
+        "death_ms": "129600000",
+        "departures": "0",
+        "consumed": "0",
+        "travel_h": "0.500000000",
+        "queue_h": "0.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.500000000"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.500000000"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.500000000"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "death_before_command": {
+    "runs": 1,
+    "appointments": 1,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {},
+    "offices_never_active": 1,
+    "holders_dead_unreplaced": 1,
+    "departure_events": 0,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "Queued": 1,
+      "Admitted": 1,
+      "PerformanceChanged": 200,
+      "StarvationStarted": 50,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "9",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "",
+        "active_h": "0.000000000",
+        "unadministered_h": "72.000000000",
+        "death_ms": "129600000",
+        "departures": "0",
+        "consumed": "0",
+        "travel_h": "36.000000000",
+        "queue_h": "0.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "0.000000000"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "0.000000000"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "0.000000000"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "departure_command": {
+    "runs": 1,
+    "appointments": 1,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {},
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 1,
+    "departure_events": 1,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "Queued": 2,
+      "Admitted": 2,
+      "Arrived": 2,
+      "PerformanceChanged": 200,
+      "StarvationStarted": 50,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "9",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "1800000",
+        "active_h": "1.000000000",
+        "unadministered_h": "71.000000000",
+        "death_ms": "129600000",
+        "departures": "1",
+        "consumed": "0",
+        "travel_h": "1.000000000",
+        "queue_h": "0.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.000000000"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.000000000"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.000000000"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "discovery_commissioned": {
+    "runs": 30,
+    "appointments": 30,
+    "commissions": 30,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {
+      "NO_KNOWN_BENEFIT_NO_CONTRIBUTIONS": 30
+    },
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 30,
+    "departure_events": 30,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "CrossingCommissioned": 1,
+      "Decision": 125600,
+      "GatherStarted": 300,
+      "Gathered": 300,
+      "Consumed": 100,
+      "Queued": 50,
+      "Admitted": 50,
+      "Arrived": 50,
+      "PerformanceChanged": 200,
+      "StarvationStarted": 50,
+      "SleepStarted": 24000,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "1",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "0",
+        "active_h": "1.033333333",
+        "unadministered_h": "70.966666667",
+        "death_ms": "151200000",
+        "departures": "1",
+        "consumed": "6",
+        "travel_h": "0.250000000",
+        "queue_h": "0.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "discovery_pending": {
+    "runs": 30,
+    "appointments": 30,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {
+      "NO_AUTHORIZED_OBJECTIVE": 30
+    },
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 30,
+    "departure_events": 30,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "Decision": 125600,
+      "GatherStarted": 300,
+      "Gathered": 300,
+      "Consumed": 100,
+      "Queued": 50,
+      "Admitted": 50,
+      "Arrived": 50,
+      "PerformanceChanged": 200,
+      "StarvationStarted": 50,
+      "SleepStarted": 24000,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "1",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "0",
+        "active_h": "1.033333333",
+        "unadministered_h": "70.966666667",
+        "death_ms": "151200000",
+        "departures": "1",
+        "consumed": "6",
+        "travel_h": "0.250000000",
+        "queue_h": "0.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "1.033333333"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "1.033333333"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "distant_command": {
+    "runs": 1,
+    "appointments": 1,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {},
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 1,
+    "departure_events": 0,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "Queued": 1,
+      "Admitted": 1,
+      "PerformanceChanged": 200,
+      "Arrived": 1,
+      "StarvationStarted": 50,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "9",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "30800000",
+        "active_h": "27.444444444",
+        "unadministered_h": "44.555555556",
+        "death_ms": "129600000",
+        "departures": "0",
+        "consumed": "0",
+        "travel_h": "8.555555556",
+        "queue_h": "0.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "27.444444444"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "27.444444444"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "27.444444444"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "local_command": {
+    "runs": 1,
+    "appointments": 1,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {},
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 1,
+    "departure_events": 0,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "Queued": 1,
+      "Admitted": 1,
+      "Arrived": 1,
+      "PerformanceChanged": 200,
+      "StarvationStarted": 50,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "9",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "1800000",
+        "active_h": "35.500000000",
+        "unadministered_h": "36.500000000",
+        "death_ms": "129600000",
+        "departures": "0",
+        "consumed": "0",
+        "travel_h": "0.500000000",
+        "queue_h": "0.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.500000000"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.500000000"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.500000000"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "multiple_command": {
+    "runs": 1,
+    "appointments": 2,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {},
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 2,
+    "departure_events": 0,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 2,
+      "Queued": 3,
+      "Admitted": 3,
+      "Arrived": 3,
+      "PerformanceChanged": 200,
+      "StarvationStarted": 50,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "9",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "1800000",
+        "active_h": "35.500000000",
+        "unadministered_h": "36.500000000",
+        "death_ms": "129600000",
+        "departures": "0",
+        "consumed": "0",
+        "travel_h": "0.500000000",
+        "queue_h": "0.000000000",
+        "dead_without_replacement": "true"
+      },
+      {
+        "seed": "0",
+        "office": "1",
+        "polity": "17",
+        "holder": "10",
+        "settlement": "2",
+        "appointment_ms": "0",
+        "first_active_ms": "3600000",
+        "active_h": "35.000000000",
+        "unadministered_h": "37.000000000",
+        "death_ms": "129600000",
+        "departures": "0",
+        "consumed": "0",
+        "travel_h": "1.000000000",
+        "queue_h": "0.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "70.500000000"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "70.500000000"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "0",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "70.500000000"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "scarce_commissioned": {
+    "runs": 30,
+    "appointments": 30,
+    "commissions": 30,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {
+      "INSUFFICIENT_PHYSICAL_MATERIAL": 30
+    },
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 30,
+    "departure_events": 30,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "CrossingCommissioned": 1,
+      "Decision": 126025,
+      "GatherStarted": 305,
+      "Rejected": 71,
+      "WoodGathered": 5,
+      "CrossingDonation": 5,
+      "Gathered": 300,
+      "Consumed": 96,
+      "Queued": 284,
+      "Admitted": 20,
+      "Interrupted": 264,
+      "Arrived": 20,
+      "JobAccepted": 4,
+      "StaleFoodTrip": 4,
+      "JobCancelled": 4,
+      "PerformanceChanged": 224,
+      "LeaseExpired": 1,
+      "StarvationStarted": 50,
+      "SleepStarted": 24000,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "1",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "0",
+        "active_h": "35.750000000",
+        "unadministered_h": "36.250000000",
+        "death_ms": "133200000",
+        "departures": "1",
+        "consumed": "1",
+        "travel_h": "0.500000000",
+        "queue_h": "0.733333333",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        },
+        {
+          "alive": "50",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.750000000"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "35.750000000"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "scarce_pending": {
+    "runs": 30,
+    "appointments": 30,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {
+      "NO_AUTHORIZED_OBJECTIVE": 30
+    },
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 30,
+    "departure_events": 30,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "Decision": 125964,
+      "Queued": 330,
+      "Admitted": 24,
+      "Interrupted": 306,
+      "GatherStarted": 300,
+      "Gathered": 300,
+      "Consumed": 92,
+      "Rejected": 22,
+      "Arrived": 24,
+      "StaleFoodTrip": 4,
+      "PerformanceChanged": 224,
+      "StarvationStarted": 50,
+      "SleepStarted": 24000,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "1",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "0",
+        "active_h": "34.500000000",
+        "unadministered_h": "37.500000000",
+        "death_ms": "129600000",
+        "departures": "1",
+        "consumed": "0",
+        "travel_h": "0.500000000",
+        "queue_h": "1.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "sufficient_commissioned": {
+    "runs": 30,
+    "appointments": 30,
+    "commissions": 30,
+    "completed_projects": 30,
+    "completion_times_h": [
+      8.055555555555555
+    ],
+    "incomplete_projects_at_72h": {},
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 0,
+    "departure_events": 420,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "CrossingCommissioned": 1,
+      "Decision": 212439,
+      "GatherStarted": 2236,
+      "WoodGathered": 50,
+      "CrossingDonation": 20,
+      "Rejected": 198,
+      "CrossingWorkStarted": 3,
+      "Gathered": 2186,
+      "Consumed": 1451,
+      "Queued": 1608,
+      "Admitted": 583,
+      "Interrupted": 37227,
+      "Arrived": 583,
+      "JobAccepted": 49,
+      "StaleFoodTrip": 5,
+      "JobCancelled": 41,
+      "PerformanceChanged": 451,
+      "CrossingCompleted": 1,
+      "LeaseExpired": 33,
+      "StarvationStarted": 55,
+      "SleepStarted": 48547,
+      "Delivered": 8,
+      "Died": 10,
+      "Spoiled": 38
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "1",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "0",
+        "active_h": "42.831328889",
+        "unadministered_h": "29.168671111",
+        "death_ms": "",
+        "departures": "14",
+        "consumed": "52",
+        "travel_h": "10.125367222",
+        "queue_h": "15.358239722",
+        "dead_without_replacement": "false"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        },
+        {
+          "alive": "50",
+          "consumed": "1440",
+          "starvation_h": "189.016666667",
+          "active_administration_h": "17.696111111"
+        }
+      ],
+      "48": [
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        },
+        {
+          "alive": "41",
+          "consumed": "1991",
+          "starvation_h": "269.733334167",
+          "active_administration_h": "18.831328889"
+        }
+      ],
+      "72": [
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        },
+        {
+          "alive": "40",
+          "consumed": "1991",
+          "starvation_h": "726.016666667",
+          "active_administration_h": "42.831328889"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  },
+  "sufficient_pending": {
+    "runs": 30,
+    "appointments": 30,
+    "commissions": 0,
+    "completed_projects": 0,
+    "completion_times_h": [],
+    "incomplete_projects_at_72h": {
+      "NO_AUTHORIZED_OBJECTIVE": 30
+    },
+    "offices_never_active": 0,
+    "holders_dead_unreplaced": 30,
+    "departure_events": 30,
+    "replacement_attempts": 0,
+    "replacement_reason": "No autonomous replacement institution implemented; no research replacement command issued.",
+    "seed0_event_kinds": {
+      "StewardAppointed": 1,
+      "Decision": 125964,
+      "Queued": 330,
+      "Admitted": 24,
+      "Interrupted": 306,
+      "GatherStarted": 300,
+      "Gathered": 300,
+      "Consumed": 92,
+      "Rejected": 22,
+      "Arrived": 24,
+      "StaleFoodTrip": 4,
+      "PerformanceChanged": 224,
+      "StarvationStarted": 50,
+      "SleepStarted": 24000,
+      "Died": 50,
+      "Spoiled": 1
+    },
+    "seed0_offices": [
+      {
+        "seed": "0",
+        "office": "0",
+        "polity": "17",
+        "holder": "1",
+        "settlement": "1",
+        "appointment_ms": "0",
+        "first_active_ms": "0",
+        "active_h": "34.500000000",
+        "unadministered_h": "37.500000000",
+        "death_ms": "129600000",
+        "departures": "1",
+        "consumed": "0",
+        "travel_h": "0.500000000",
+        "queue_h": "1.000000000",
+        "dead_without_replacement": "true"
+      }
+    ],
+    "population_checkpoints": {
+      "36": [
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "46",
+          "consumed": "300",
+          "starvation_h": "900.000000000",
+          "active_administration_h": "34.500000000"
+        }
+      ],
+      "48": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        }
+      ],
+      "72": [
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        },
+        {
+          "alive": "0",
+          "consumed": "300",
+          "starvation_h": "1200.000000000",
+          "active_administration_h": "34.500000000"
+        }
+      ]
+    },
+    "outcome_variation": {
+      "alive": 1,
+      "consumed": 1,
+      "starvation_h": 1,
+      "completed": 1,
+      "active_administration_h": 1
+    }
+  }
+}
