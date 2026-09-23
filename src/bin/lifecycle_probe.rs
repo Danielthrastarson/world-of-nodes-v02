@@ -34,7 +34,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     )?;
     writeln!(
         people,
-        "seed,person,sex,birth_time_ms,generation,parents,child,alive,nutrition_ms,consumed,starvation_h,death_ms"
+        "seed,person,sex,birth_time_ms,generation,parents,matured,child,alive,nutrition_ms,consumed,starvation_h,death_ms"
     )?;
     writeln!(counts, "seed,key,count")?;
     writeln!(events, "seed\tid\ttime_ms\tperson\tkind\tdetail")?;
@@ -91,10 +91,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let child_deaths = w
             .agents()
             .iter()
-            .filter(|a| {
-                a.death_time
-                    .is_some_and(|t| t - w.biology(a.id).unwrap().birth_time < 24 * HOUR)
-            })
+            .filter(|a| a.death_time.is_some() && !w.biology(a.id).unwrap().matured)
             .count();
         let reproductive_adults = w
             .agents()
@@ -154,12 +151,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 .unwrap_or_default();
             writeln!(
                 people,
-                "{seed},{},{:?},{},{},{},{},{},{},{},{:.9},{}",
+                "{seed},{},{:?},{},{},{},{},{},{},{},{},{:.9},{}",
                 a.id,
                 b.sex,
                 b.birth_time,
                 b.generation,
                 ps,
+                b.matured,
                 w.is_child(a.id),
                 a.action != Action::Dead,
                 a.nutrition,

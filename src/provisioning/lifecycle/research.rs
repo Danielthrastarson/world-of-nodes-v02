@@ -16,12 +16,18 @@ pub const CASES: &[&str] = &[
     "generational_control",
     "working",
     "working_no_birth",
+    "seeded_one",
+    "seeded_three",
 ];
 pub fn fixture(name: &str, seed: u64) -> Result<World, String> {
     if !CASES.contains(&name) {
         return Err("unknown B3 fixture".into());
     }
-    let n = if name.starts_with("multigeneration") || name == "generational_control" {
+    let n = if name == "seeded_one" {
+        3
+    } else if name == "seeded_three" {
+        5
+    } else if name.starts_with("multigeneration") || name == "generational_control" {
         8
     } else if name == "multiple" {
         4
@@ -61,7 +67,7 @@ pub fn fixture(name: &str, seed: u64) -> Result<World, String> {
         c.social = Some(social::Config::default())
     }
     let h = c.household.as_mut().unwrap();
-    for i in (0..n).step_by(2) {
+    for i in (0..if name.starts_with("seeded_") { 2 } else { n }).step_by(2) {
         h.households.push(household::Household {
             id: i / 2,
             members: vec![i, i + 1],
@@ -73,6 +79,22 @@ pub fn fixture(name: &str, seed: u64) -> Result<World, String> {
             kind: household::Kin::Partner,
         });
     }
+    if name.starts_with("seeded_") {
+        h.households[0].members = (0..n).collect();
+        for child in 2..n {
+            for parent in 0..2 {
+                h.kin.push(household::Relation {
+                    from: parent,
+                    to: child,
+                    kind: household::Kin::Parent,
+                });
+                h.care.push(household::Caregiver {
+                    person: parent,
+                    dependent: child,
+                });
+            }
+        }
+    }
     if name.starts_with("working") {
         c.farming = Some(farming::Config {
             units: vec![0, 0],
@@ -82,7 +104,11 @@ pub fn fixture(name: &str, seed: u64) -> Result<World, String> {
     c.lifecycle = Some(Config {
         people: (0..n)
             .map(|i| Seed {
-                birth_time: -24 * HOUR,
+                birth_time: if name.starts_with("seeded_") && i >= 2 {
+                    0
+                } else {
+                    -24 * HOUR
+                },
                 sex: if i % 2 == 0 { Sex::Female } else { Sex::Male },
                 drive: !(name == "decline" && i == 1),
             })
@@ -97,12 +123,19 @@ pub fn fixture(name: &str, seed: u64) -> Result<World, String> {
         },
     });
     let mut w = World::new(c)?;
+    if name.starts_with("seeded_") {
+        for child in 2..n {
+            w.agents[child].nutrition = 0;
+            w.lifecycle.people[child].parents = Some([0, 1]);
+            w.lifecycle.people[child].generation = 2;
+        }
+    }
     if name == "hungry" {
         for a in &mut w.agents {
             a.nutrition = 0;
         }
     } else {
-        for id in 0..n {
+        for id in 0..if name.starts_with("seeded_") { 2 } else { n } {
             let node = w.config.starts[id];
             w.goods.add(
                 Material::Food,
@@ -114,7 +147,13 @@ pub fn fixture(name: &str, seed: u64) -> Result<World, String> {
             );
             w.goods.add(
                 Material::Food,
-                if name.starts_with("working") { 0 } else { 200 },
+                if name.starts_with("working") {
+                    0
+                } else if name.starts_with("seeded_") {
+                    24
+                } else {
+                    200
+                },
                 Owner::Agent(id),
                 Holder::Loose(node),
                 0,

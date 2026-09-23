@@ -6,7 +6,7 @@ import csv,gzip,hashlib,json,subprocess,sys
 root=Path(sys.argv[1]);root.mkdir(parents=True,exist_ok=False)
 revision=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 binary=hashlib.sha256(Path('target/release/lifecycle_probe').read_bytes()).hexdigest()
-cases=['basic','stochastic','infertile','separated','decline','hungry','dependency','dependency_social','parent_death','multiple','multigeneration','multigeneration_social','generational_control','working','working_no_birth']
+cases=['basic','stochastic','infertile','separated','decline','hungry','dependency','dependency_social','parent_death','multiple','multigeneration','multigeneration_social','generational_control','working','working_no_birth','seeded_one','seeded_three']
 def run(case):
  d=root/case
  with (root/(case+'.log')).open('x') as f:subprocess.run(['/usr/bin/time','-v','-o',str(root/(case+'.resources.txt')),'target/release/lifecycle_probe',case,str(d),'30'],stdout=f,stderr=f,check=True)

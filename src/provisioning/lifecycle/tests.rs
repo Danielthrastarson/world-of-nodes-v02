@@ -358,3 +358,12 @@ fn children_do_not_perform_work_and_newborns_have_no_hidden_reserve() {
     }
     assert!(w.lifecycle_journal().child_ms > 0);
 }
+#[test]
+fn death_at_maturation_boundary_does_not_retroactively_create_an_adult() {
+    let mut w = manual();
+    conceive(&mut w);
+    w.advance_to(33 * HOUR).unwrap();
+    assert_eq!(w.agents[2].action, Action::Dead);
+    assert!(!w.biology(2).unwrap().matured);
+    assert_eq!(w.lifecycle_journal().count("maturations"), 0);
+}
