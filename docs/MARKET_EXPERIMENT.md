@@ -75,3 +75,21 @@ The initially launched matrix is retained at `research/market/matrix`, revision
 76511cc, as pre-repair evidence. Final research reruns the treatment after the fix
 and compares physical event histories and metrics, identifying any changed runs.
 State hashes differ because the repaired private record is now part of state.
+
+## Receipt observability correction
+
+A conformance test then exposed that retaining physically separate receipt lots for
+research bypassed normal goods coalescing. The existing capital evaluator considers
+individual batches, so the observer could affect later choices. Preserve the failed
+case in `receipt-fragmentation-failure.txt` and both earlier matrices; they are
+superseded, not final evidence. No capital or offer policy is changed to fix this.
+
+All market release and settlement now use the existing `Goods::move_part` operation,
+including merging equal owner/origin/age/material/location. Research tracks receipt
+cohorts without altering physical batches. For indistinguishable merged units,
+removals are attributed to untracked prior goods first, then receipt cohorts in
+creation order. Per-receipt retrieval is conservative attribution, not molecular
+identity; gross redeposits are not distinct new resources. A test removes the entire
+receipt journal between decision boundaries and requires identical state/events.
+Final evidence is `matrix-final`; both earlier matrices are retained as development
+failures. The locality repair is retained. No valuation, priority or timing is tuned.

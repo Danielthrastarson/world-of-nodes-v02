@@ -138,6 +138,8 @@ fn atomic_failures_and_racing_buyers() {
 #[test]
 fn cancellation_requires_local_owner_and_retrieval_requires_actual_return() {
     let mut w = world();
+    w.goods.batches[0].quantity = 6;
+    w.goods.initial[0] = 6;
     w.post_barter(0, 0, 6, Material::Wood, 10).unwrap();
     let b = w.barter.offers[0].batch;
     w.agents[0].location = Location::Node(2);
@@ -145,6 +147,8 @@ fn cancellation_requires_local_owner_and_retrieval_requires_actual_return() {
     assert_eq!(w.barter.offers[0].status, "OPEN");
     w.agents[0].location = Location::Node(0);
     w.revoke_barter(0, 0).unwrap();
+    assert_eq!(w.goods.batches[b].quantity, 0);
+    let b = w.barter.receipts[0].batch;
     assert_eq!(w.goods.batches[b].holder, Holder::Loose(0));
     assert_eq!(w.goods.batches[b].owner, Owner::Agent(0));
     w.apply_intents(vec![(
@@ -179,6 +183,8 @@ fn expiry_leaves_property_local_and_dead_owner_does_not_transfer_rights() {
     assert_eq!(w.barter.offers[0].status, "OPEN");
     w.advance_to(12 * HOUR).unwrap();
     assert_eq!(w.barter.offers[0].status, "EXPIRED");
+    assert_eq!(w.goods.batches[b].quantity, 0);
+    let b = w.barter.receipts[0].batch;
     assert_eq!(w.goods.batches[b].holder, Holder::Loose(0));
     assert_eq!(w.goods.batches[b].owner, Owner::Agent(0));
     assert!(w.accept_barter(1, 0, 1).is_err());
@@ -207,13 +213,16 @@ fn escrow_spoils_at_original_deadline_without_disappearing() {
     assert_eq!(w.barter.offers[0].expires_at, 59 * HOUR);
     w.advance_to(48 * HOUR).unwrap();
     assert_eq!(w.barter.offers[0].status, "GOODS_SPOILED");
+    assert_eq!(w.goods.batches[b].quantity, 0);
+    let b = w.barter.receipts[0].batch;
+    assert_eq!(w.barter.receipts[0].remaining, 6);
     assert_eq!(
         (
             w.goods.batches[b].quantity,
             w.goods.batches[b].material,
             w.goods.batches[b].holder
         ),
-        (6, Material::Waste, Holder::Loose(0))
+        (20, Material::Waste, Holder::Loose(0))
     );
     assert!(w.accept_barter(1, 0, 1).is_err());
     w.audit().unwrap();
@@ -386,4 +395,73 @@ fn remote_settlement_cannot_change_admission_to_another_market() {
         b.post_barter(0, batch, 6, Material::Wood, 10),
         "one-outstanding-offer admission must depend on the proposer's local record, not remote settlement truth"
     );
+}
+
+#[test]
+fn escrow_release_uses_existing_goods_coalescing_semantics() {
+    let mut w = world();
+    w.post_barter(0, 0, 6, Material::Wood, 10).unwrap();
+    w.revoke_barter(0, 0).unwrap();
+    assert_eq!(
+        w.goods.batches[0].quantity, 20,
+        "research receipt tracking must not fragment an otherwise identical owned food lot"
+    );
+    assert_eq!(
+        w.goods
+            .batches
+            .iter()
+            .filter(|b| b.quantity > 0 && b.material == Material::Food)
+            .count(),
+        1
+    );
+    w.audit().unwrap();
+}
+
+#[test]
+fn settlement_merges_receipts_using_normal_goods_rules() {
+    let mut w = world();
+    let existing = w.goods.move_part(0, 2, Owner::Agent(1), Holder::Loose(0));
+    w.post_barter(0, 0, 6, Material::Wood, 10).unwrap();
+    w.accept_barter(1, 0, 1).unwrap();
+    assert_eq!(w.barter.exchanges[0].received_by_taker, existing);
+    assert_eq!(w.goods.batches[existing].quantity, 8);
+    assert_eq!(w.barter.receipts[1].initial, 6);
+    w.apply_intents(vec![(
+        1,
+        Intent::Eat {
+            batch: existing,
+            quantity: 4,
+        },
+    )])
+    .unwrap();
+    assert_eq!(
+        w.barter.receipts[1].used_locally, 2,
+        "preexisting untracked food is attributed first"
+    );
+    assert_eq!(w.barter.receipts[1].remaining, 4);
+    w.audit().unwrap();
+}
+#[test]
+fn repeated_cancellation_and_redeposit_do_not_duplicate_receipt_matter() {
+    let mut w = world();
+    for id in 0..10 {
+        w.post_barter(0, 0, 6, Material::Wood, 10).unwrap();
+        w.revoke_barter(0, id).unwrap();
+        w.audit().unwrap();
+        assert_eq!(w.goods.batches[0].quantity, 20);
+    }
+    assert!(w.barter.receipts.iter().map(|r| r.remaining).sum::<u64>() <= 20);
+}
+#[test]
+fn receipt_journal_retention_does_not_change_physics_or_policy() {
+    let mut a = research::market_world("colocated", 0, false).unwrap();
+    let mut b = a.clone();
+    a.advance_to(24 * HOUR).unwrap();
+    for m in 1..=24 * 60 {
+        b.advance_to(m * MINUTE).unwrap();
+        b.barter.receipts.clear();
+        b.barter.receipt_batches.clear();
+    }
+    assert_eq!(a.state_hash(), b.state_hash());
+    assert_eq!(a.event_hash(), b.event_hash());
 }

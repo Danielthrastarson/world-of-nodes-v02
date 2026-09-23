@@ -29,7 +29,7 @@ def run(pair):
             with gzip.GzipFile(fileobj=b,filename='',mode='wb',mtime=0) as z:shutil.copyfileobj(a,z)
         p.unlink()
     print(name+' complete',flush=True)
-with ThreadPoolExecutor(max_workers=3) as pool:list(pool.map(run,[(f,m) for f in fixtures for m in ['on','market']]))
+with ThreadPoolExecutor(max_workers=6) as pool:list(pool.map(run,[(f,m) for f in fixtures for m in ['on','market']]))
 prior=json.loads(Path('research/market/prior-artifacts.json').read_text())
 for p,h in prior.items():assert hashlib.sha256(Path(p).read_bytes()).hexdigest()==h,p
 (root/'provenance.json').write_text(json.dumps({'revision':revision,'runs':360,'seeds':list(range(30)),'fixtures':fixtures,'preserved_files':len(prior),'direct_f9a_runs_identical':180,'money':False,'offer_policy':'unchanged','market_nodes':[0,2],'offer_lifetime_h':12},indent=2)+'\n')

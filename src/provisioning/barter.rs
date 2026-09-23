@@ -33,6 +33,7 @@ pub struct Exchange {
 #[derive(Clone, Debug, Default)]
 pub(crate) struct State {
     pub receipts: Vec<market::Receipt>,
+    pub receipt_batches: BTreeMap<usize, market::TrackedBatch>,
     pub pending: BTreeMap<usize, market::Pending>,
     pub offers: Vec<Offer>,
     pub exchanges: Vec<Exchange>,
@@ -288,35 +289,18 @@ impl World {
         if give.material != o.give || pay.material != o.want {
             return Err("WRONG_RESOURCE".into());
         }
-        let received_by_taker = if market {
-            self.goods.move_part_unmerged(
-                give.id,
-                o.quantity,
-                Owner::Agent(id),
-                Holder::Loose(node),
-            )
-        } else {
+        let received_by_taker =
             self.goods
-                .move_part(give.id, o.quantity, Owner::Agent(id), Holder::Loose(node))
-        };
-        let received_by_proposer = if market {
-            self.goods.move_part_unmerged(
-                pay.id,
-                o.want_quantity,
-                Owner::Agent(o.proposer),
-                Holder::Loose(node),
-            )
-        } else {
-            self.goods.move_part(
-                pay.id,
-                o.want_quantity,
-                Owner::Agent(o.proposer),
-                Holder::Loose(node),
-            )
-        };
+                .move_part(give.id, o.quantity, Owner::Agent(id), Holder::Loose(node));
+        let received_by_proposer = self.goods.move_part(
+            pay.id,
+            o.want_quantity,
+            Owner::Agent(o.proposer),
+            Holder::Loose(node),
+        );
         if market {
-            self.market_receipt(offer, received_by_proposer, "payment");
-            self.market_receipt(offer, received_by_taker, "purchase");
+            self.market_receipt(offer, received_by_proposer, o.want_quantity, "payment");
+            self.market_receipt(offer, received_by_taker, o.quantity, "purchase");
         }
         self.barter.offers[offer].status = "ACCEPTED".into();
         self.barter.exchanges.push(Exchange {

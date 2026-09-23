@@ -1,0 +1,22 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.61s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 14 tests
+test provisioning::barter::market::tests::deceased_proposers_prior_deposit_may_settle_but_payment_is_locked_property ... ok
+test provisioning::barter::market::tests::atomic_failures_and_racing_buyers ... ok
+test provisioning::barter::market::tests::departed_busy_seller_can_settle_without_remote_notification ... ok
+test provisioning::barter::market::tests::escrow_release_uses_existing_goods_coalescing_semantics ... ok
+test provisioning::barter::market::tests::escrow_spoils_at_original_deadline_without_disappearing ... ok
+test provisioning::barter::market::tests::deposit_is_exclusive_and_keeps_age ... ok
+test provisioning::barter::market::tests::cancellation_requires_local_owner_and_retrieval_requires_actual_return ... ok
+test provisioning::barter::market::tests::expiry_leaves_property_local_and_dead_owner_does_not_transfer_rights ... ok
+test provisioning::barter::market::tests::payment_can_only_be_retrieved_locally_and_is_not_a_capacity_upgrade ... ok
+test provisioning::barter::market::tests::remote_settlement_cannot_change_admission_to_another_market ... ok
+test provisioning::barter::market::tests::unseen_offer_changes_do_not_change_remote_views ... ok
+test provisioning::barter::market::tests::formation_is_identical_before_custody_diverges_and_deposit_does_not_self_cancel ... ok
+test provisioning::barter::market::tests::unchanged_buyer_policy_can_accept_after_seller_physically_departs ... ok
+test provisioning::barter::market::tests::market_replay_is_deterministic ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 143 filtered out; finished in 1.78s
+

@@ -7,6 +7,11 @@ pub struct Pending {
     pub expires_at: Time,
 }
 #[derive(Clone, Debug)]
+pub struct TrackedBatch {
+    pub last_quantity: u64,
+    pub untracked: u64,
+}
+#[derive(Clone, Debug)]
 pub struct Receipt {
     pub offer: usize,
     pub batch: usize,
@@ -58,7 +63,7 @@ impl World {
         }
         Ok(b.clone())
     }
-    pub(super) fn market_receipt(&mut self, offer: usize, batch: usize, kind: &str) {
+    pub(super) fn market_receipt(&mut self, offer: usize, batch: usize, quantity: u64, kind: &str) {
         let b = &self.goods.batches[batch];
         let Owner::Agent(owner) = b.owner else {
             unreachable!()
@@ -66,6 +71,18 @@ impl World {
         let Holder::Loose(node) = b.holder else {
             unreachable!()
         };
+        // Register the known incoming part without changing any physical batch.
+        if let Some(t) = self.barter.receipt_batches.get_mut(&batch) {
+            t.last_quantity += quantity;
+        } else {
+            self.barter.receipt_batches.insert(
+                batch,
+                TrackedBatch {
+                    last_quantity: b.quantity,
+                    untracked: b.quantity - quantity,
+                },
+            );
+        }
         self.barter.receipts.push(Receipt {
             offer,
             batch,
@@ -73,8 +90,8 @@ impl World {
             owner,
             node,
             at: self.now,
-            initial: b.quantity,
-            remaining: b.quantity,
+            initial: quantity,
+            remaining: quantity,
             last_quantity: b.quantity,
             commingled: 0,
             retrieved: 0,
@@ -86,10 +103,13 @@ impl World {
     }
     pub(super) fn release_market(&mut self, offer: usize, reason: &str) {
         let o = &self.barter.offers[offer];
-        let b = &mut self.goods.batches[o.batch];
-        // Custody alone changes; even waste retains the original owner and age.
-        b.holder = Holder::Loose(o.location);
-        self.market_receipt(offer, o.batch, reason);
+        let b = &self.goods.batches[o.batch];
+        // Use ordinary transfer/coalescing. Observation must not fragment stock.
+        let q = b.quantity;
+        let batch = self
+            .goods
+            .move_part(o.batch, q, b.owner, Holder::Loose(o.location));
+        self.market_receipt(offer, batch, q, reason);
     }
     pub(super) fn offer_owner_view(&self, v: &View, o: &Offer) -> View {
         let mut out = v.clone();
@@ -123,43 +143,56 @@ impl World {
             .entry("escrow_quantum_ms".into())
             .or_default() += q * dt as u64;
     }
-    /// Research only. Track disposition of uniquely split receipts. If later
-    /// fungible goods merge, attribute removals to untracked additions first;
-    /// reported retrieval is a conservative lower bound, never duplicated matter.
+    /// Research-only attribution of fungible receipts. Untracked goods are removed
+    /// first, then receipt cohorts in posting order. Physical merging stays untouched.
+    /// Receipt-specific pickup is a conservative attribution, not molecular identity.
     pub(crate) fn market_event(&mut self, e: &Event) {
         if !self.market_enabled() {
             return;
         }
-        for r in &mut self.barter.receipts {
-            let q = self.goods.batches[r.batch].quantity;
-            if q > r.last_quantity {
-                r.commingled += q - r.last_quantity;
+        for (batch, t) in &mut self.barter.receipt_batches {
+            let q = self.goods.batches[*batch].quantity;
+            if q > t.last_quantity {
+                t.untracked += q - t.last_quantity;
             }
-            let removed = r.last_quantity.saturating_sub(q);
-            let untracked = removed.min(r.commingled);
-            r.commingled -= untracked;
-            let traced = (removed - untracked).min(r.remaining);
-            r.remaining -= traced;
-            r.last_quantity = q;
-            if traced == 0 {
-                continue;
-            }
-            let local_owner =
-                e.agent == Some(r.owner) && self.agents[r.owner].location == Location::Node(r.node);
-            if local_owner && e.kind == "Pickup" {
-                r.retrieved += traced;
-                r.first_retrieval.get_or_insert(e.at);
-            } else if local_owner
-                && matches!(
-                    e.kind.as_str(),
-                    "Consumed" | "CartStarted" | "CrossingDonation"
-                )
+            let removed = t.last_quantity.saturating_sub(q);
+            let untracked = removed.min(t.untracked);
+            t.untracked -= untracked;
+            let mut left = removed - untracked;
+            t.last_quantity = q;
+            let mut first = true;
+            for r in self
+                .barter
+                .receipts
+                .iter_mut()
+                .filter(|r| r.batch == *batch)
             {
-                r.used_locally += traced;
-            } else if local_owner && e.kind == "MarketDeposited" {
-                r.redeposited += traced;
-            } else {
-                r.other_removed += traced;
+                r.last_quantity = q;
+                r.commingled = if first { t.untracked } else { 0 };
+                first = false;
+                let traced = left.min(r.remaining);
+                left -= traced;
+                r.remaining -= traced;
+                if traced == 0 {
+                    continue;
+                }
+                let local_owner = e.agent == Some(r.owner)
+                    && self.agents[r.owner].location == Location::Node(r.node);
+                if local_owner && e.kind == "Pickup" {
+                    r.retrieved += traced;
+                    r.first_retrieval.get_or_insert(e.at);
+                } else if local_owner
+                    && matches!(
+                        e.kind.as_str(),
+                        "Consumed" | "CartStarted" | "CrossingDonation"
+                    )
+                {
+                    r.used_locally += traced;
+                } else if local_owner && e.kind == "MarketDeposited" {
+                    r.redeposited += traced;
+                } else {
+                    r.other_removed += traced;
+                }
             }
         }
     }
@@ -211,6 +244,18 @@ impl World {
                 if o.status == "OPEN" {
                     self.market_input(o)?;
                 }
+            }
+        }
+        for (batch, t) in &self.barter.receipt_batches {
+            let tracked: u64 = self
+                .barter
+                .receipts
+                .iter()
+                .filter(|r| r.batch == *batch)
+                .map(|r| r.remaining)
+                .sum();
+            if tracked + t.untracked != self.goods.batches[*batch].quantity {
+                return Err("market pooled receipt accounting".into());
             }
         }
         for r in &self.barter.receipts {
