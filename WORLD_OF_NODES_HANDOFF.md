@@ -323,3 +323,26 @@ without local authority. Existing policy, migration, congestion and starvation p
 prior research files unchanged. New studies have zero material errors and FIFO
 overtakes. Preserve all evidence in research/authority. F11 is not implemented;
 no further institution or behavioral fix is adopted after the F10 report.
+
+
+## Human foundation insertion — current authorization (2026-09-23)
+
+The owner accepted F10 and paused the roadmap before F11. Insert:
+F10 → B0 General Person → B1 Household/Kinship → B2 Relationships/Affect →
+B3 Life Cycle/Reproduction → F11. Military must not resume before these gates pass.
+
+B0 is a behavior-preserving refactor; [registered contract](docs/PERSON_FOUNDATION.md)
+and [architecture](docs/PERSON_ARCHITECTURE.md). One embodied person must support
+existing economic activities and institutional roles through bounded personal
+information and the same action executor. Do not add separate farmer, trader,
+steward or soldier brains. Preserve all old findings, rights and physical rules.
+
+B1 begins with seeded kinship/households, no reproduction/inheritance or household
+super-agent. Care/sharing must be explicit experimental assumptions; family does
+not automatically pool property. B2 requires directed relationship history and
+causal event appraisal, with demonstrated effects on later decisions. No decorative
+emotion values. B3 requires only causal biological/life-cycle variables and an
+explicit time-scale contract; no sex-based psychological or occupational stereotypes.
+Social roles may depend on individual variation, constraints, geography, technology
+and institutions. Culture is accumulated social information, not arbitrary bonuses.
+None of B1–B3 is implemented by the B0 refactor.

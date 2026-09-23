@@ -32,3 +32,8 @@ not optimality, plan completion or general intelligence. Identical observations,
 memory and RNG must produce identical decisions even if hidden world truth changes.
 Evidence: the original interruption/lease/death tests, new reasoning tests, static
 forecast matrix and unchanged-history regression hashes in `research/meals`.
+
+
+## B0 extension (2026-09-23)
+
+The [common person interface](PERSON_ARCHITECTURE.md) now composes these existing distinctions across production, capital, public works and exchange. `Person` remains the same embodied record as `Agent`; roles do not select separate brains. `ActionPlan` is an explicitly one-step proposed command with the current undertaking, not an adopted commitment architecture. Relationships and affect remain B1/B2 work. This refactor preserves historical priorities, random draws, plans, action strings and outcomes.
