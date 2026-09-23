@@ -1,0 +1,105 @@
+
+SOURCE matrix/short_high_available/events.tsv.gz; agent=0
+Event { id: 0, at: 0, agent: Some(0), cause: None, kind: "CapitalForecast", detail: "INVEST demand=480 without_ms=172800000 with_ms=57600000 work_ms=14420000 wood_missing=10" }
+Event { id: 50, at: 0, agent: Some(0), cause: Some(0), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=43200000 starvation_ms=0 reason=personal capital INVEST; conditional demand=480 without_ms=172800000 with_ms=57600000 work_ms=14420000 wood_missing=10" }
+Event { id: 150, at: 2000, agent: Some(0), cause: Some(51), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(0)" }
+Event { id: 200, at: 2000, agent: Some(0), cause: Some(150), kind: "CapitalForecast", detail: "INVEST demand=470 without_ms=169200000 with_ms=57600000 work_ms=14418000 wood_missing=9" }
+Event { id: 250, at: 2000, agent: Some(0), cause: Some(200), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=43198000 starvation_ms=0 reason=personal capital INVEST; conditional demand=470 without_ms=169200000 with_ms=57600000 work_ms=14418000 wood_missing=9" }
+Event { id: 350, at: 4000, agent: Some(0), cause: Some(251), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(0)" }
+Event { id: 400, at: 4000, agent: Some(0), cause: Some(350), kind: "CapitalForecast", detail: "INVEST demand=470 without_ms=169200000 with_ms=57600000 work_ms=14416000 wood_missing=8" }
+Event { id: 450, at: 4000, agent: Some(0), cause: Some(400), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=43196000 starvation_ms=0 reason=personal capital INVEST; conditional demand=470 without_ms=169200000 with_ms=57600000 work_ms=14416000 wood_missing=8" }
+Event { id: 550, at: 6000, agent: Some(0), cause: Some(451), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(0)" }
+Event { id: 600, at: 6000, agent: Some(0), cause: Some(550), kind: "CapitalForecast", detail: "INVEST demand=470 without_ms=169200000 with_ms=57600000 work_ms=14414000 wood_missing=7" }
+Event { id: 800, at: 8000, agent: Some(0), cause: Some(750), kind: "CapitalForecast", detail: "INVEST demand=470 without_ms=169200000 with_ms=57600000 work_ms=14412000 wood_missing=6" }
+Event { id: 2051, at: 20000, agent: Some(0), cause: Some(2050), kind: "CartStarted", detail: "project=0 node=0 wood=10 finished_cart_owner=not_yet_created" }
+Event { id: 26150, at: 14420000, agent: Some(0), cause: Some(26100), kind: "CartCompleted", detail: "cart=0 project=0 owner=Agent(0) capacity=20" }
+Event { id: 26251, at: 14420000, agent: Some(0), cause: Some(26250), kind: "CartHitched", detail: "cart=0" }
+
+SOURCE matrix/long_high_available/events.tsv.gz; agent=20
+Event { id: 20, at: 0, agent: Some(20), cause: None, kind: "CapitalForecast", detail: "INVEST demand=50 without_ms=154000000 with_ms=61600000 work_ms=14420000 wood_missing=10" }
+Event { id: 90, at: 0, agent: Some(20), cause: Some(20), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=43200000 starvation_ms=0 reason=personal capital INVEST; conditional demand=50 without_ms=154000000 with_ms=61600000 work_ms=14420000 wood_missing=10" }
+Event { id: 170, at: 2000, agent: Some(20), cause: Some(91), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(20)" }
+Event { id: 220, at: 2000, agent: Some(20), cause: Some(170), kind: "CapitalForecast", detail: "INVEST demand=50 without_ms=154003890 with_ms=61601556 work_ms=14418000 wood_missing=9" }
+Event { id: 290, at: 2000, agent: Some(20), cause: Some(220), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=43198000 starvation_ms=0 reason=personal capital INVEST; conditional demand=50 without_ms=154003890 with_ms=61601556 work_ms=14418000 wood_missing=9" }
+Event { id: 370, at: 4000, agent: Some(20), cause: Some(291), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(20)" }
+Event { id: 420, at: 4000, agent: Some(20), cause: Some(370), kind: "CapitalForecast", detail: "INVEST demand=50 without_ms=154007780 with_ms=61603112 work_ms=14416000 wood_missing=8" }
+Event { id: 490, at: 4000, agent: Some(20), cause: Some(420), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=43196000 starvation_ms=0 reason=personal capital INVEST; conditional demand=50 without_ms=154007780 with_ms=61603112 work_ms=14416000 wood_missing=8" }
+Event { id: 570, at: 6000, agent: Some(20), cause: Some(491), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(20)" }
+Event { id: 620, at: 6000, agent: Some(20), cause: Some(570), kind: "CapitalForecast", detail: "INVEST demand=50 without_ms=154011670 with_ms=61604668 work_ms=14414000 wood_missing=7" }
+Event { id: 820, at: 8000, agent: Some(20), cause: Some(770), kind: "CapitalForecast", detail: "INVEST demand=50 without_ms=154015560 with_ms=61606224 work_ms=14412000 wood_missing=6" }
+Event { id: 2091, at: 20000, agent: Some(20), cause: Some(2090), kind: "CartStarted", detail: "project=20 node=0 wood=10 finished_cart_owner=not_yet_created" }
+Event { id: 26170, at: 14420000, agent: Some(20), cause: Some(26120), kind: "CartCompleted", detail: "cart=20 project=20 owner=Agent(20) capacity=20" }
+Event { id: 26291, at: 14420000, agent: Some(20), cause: Some(26290), kind: "CartHitched", detail: "cart=20" }
+Event { id: 165868, at: 129600000, agent: Some(20), cause: Some(151928), kind: "CartStranded", detail: "cart=20 cargo_food=0; ownership unchanged location=Edge { edge: 1, from: 1, to: 2, progress: 2565000000000 }" }
+
+SOURCE matrix/discovery_available/events.tsv.gz; agent=0
+Event { id: 0, at: 0, agent: Some(0), cause: None, kind: "CapitalForecast", detail: "NO_KNOWN_DEMAND demand=0 without_ms=0 with_ms=0 work_ms=0 wood_missing=0" }
+Event { id: 2780, at: 3600000, agent: Some(0), cause: Some(2772), kind: "CapitalForecast", detail: "INSUFFICIENT_LOCAL_WOOD demand=230 without_ms=165600000 with_ms=57600000 work_ms=0 wood_missing=10" }
+Event { id: 2966, at: 3780000, agent: Some(0), cause: Some(2921), kind: "CapitalForecast", detail: "INSUFFICIENT_LOCAL_WOOD demand=180 without_ms=162000000 with_ms=54000000 work_ms=0 wood_missing=10" }
+Event { id: 5448, at: 7200000, agent: Some(0), cause: Some(5440), kind: "CapitalForecast", detail: "INSUFFICIENT_LOCAL_WOOD demand=150 without_ms=162000000 with_ms=54000000 work_ms=0 wood_missing=10" }
+Event { id: 5518, at: 7260000, agent: Some(0), cause: Some(5453), kind: "CapitalForecast", detail: "INSUFFICIENT_LOCAL_WOOD demand=110 without_ms=158400000 with_ms=57600000 work_ms=0 wood_missing=10" }
+Event { id: 25520, at: 27450000, agent: Some(0), cause: Some(25512), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=51750000 starvation_ms=0 reason=personal capital INVEST; conditional demand=90 without_ms=135450000 with_ms=45150000 work_ms=15896667 wood_missing=10" }
+Event { id: 25544, at: 27452000, agent: Some(0), cause: Some(25521), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(0)" }
+Event { id: 25552, at: 27452000, agent: Some(0), cause: Some(25548), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=51748000 starvation_ms=0 reason=personal capital INVEST; conditional demand=90 without_ms=135452007 with_ms=45150669 work_ms=15894667 wood_missing=9" }
+Event { id: 25560, at: 27454000, agent: Some(0), cause: Some(25553), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(0)" }
+Event { id: 25568, at: 27454000, agent: Some(0), cause: Some(25564), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=51746000 starvation_ms=0 reason=personal capital INVEST; conditional demand=90 without_ms=135454005 with_ms=45151335 work_ms=15892667 wood_missing=8" }
+Event { id: 25576, at: 27456000, agent: Some(0), cause: Some(25569), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(0)" }
+Event { id: 25853, at: 27544000, agent: Some(0), cause: Some(25852), kind: "CartStarted", detail: "project=0 node=0 wood=10 finished_cart_owner=not_yet_created" }
+Event { id: 47648, at: 43517334, agent: Some(0), cause: Some(47594), kind: "CartCompleted", detail: "cart=0 project=0 owner=Agent(0) capacity=20" }
+Event { id: 47657, at: 43517334, agent: Some(0), cause: Some(47656), kind: "CartHitched", detail: "cart=0" }
+
+SOURCE matrix/wood_contested_available/events.tsv.gz; agent=0
+Event { id: 0, at: 0, agent: Some(0), cause: None, kind: "CapitalForecast", detail: "INVEST demand=480 without_ms=172800000 with_ms=57600000 work_ms=14420000 wood_missing=10" }
+Event { id: 50, at: 0, agent: Some(0), cause: Some(0), kind: "Decision", detail: "intent=Gather { batch: 1, communal: false } nutrition_ms=43200000 starvation_ms=0 reason=personal capital INVEST; conditional demand=480 without_ms=172800000 with_ms=57600000 work_ms=14420000 wood_missing=10" }
+Event { id: 150, at: 2000, agent: Some(0), cause: Some(51), kind: "WoodGathered", detail: "source_batch=1 q=1 owner=Agent(0)" }
+Event { id: 160, at: 2000, agent: Some(0), cause: Some(150), kind: "CapitalForecast", detail: "INSUFFICIENT_LOCAL_WOOD demand=470 without_ms=169200000 with_ms=57600000 work_ms=0 wood_missing=9" }
+Event { id: 1840, at: 1920000, agent: Some(0), cause: Some(1795), kind: "CapitalForecast", detail: "INSUFFICIENT_LOCAL_WOOD demand=370 without_ms=166500000 with_ms=58500000 work_ms=0 wood_missing=9" }
+Event { id: 3704, at: 3602000, agent: Some(0), cause: Some(3696), kind: "CapitalForecast", detail: "INSUFFICIENT_LOCAL_WOOD demand=310 without_ms=167400000 with_ms=59400000 work_ms=0 wood_missing=9" }
+Event { id: 3736, at: 3660000, agent: Some(0), cause: Some(3713), kind: "CapitalForecast", detail: "INSUFFICIENT_LOCAL_WOOD demand=230 without_ms=165600000 with_ms=57600000 work_ms=0 wood_missing=9" }
+All wood gathering events per agent: {'0': 1, '1': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1}
+
+MOVEMENT/JOB SOURCE matrix/short_high_available/events.tsv.gz; agent=0
+Event { id: 26450, at: 14460000, agent: Some(0), cause: Some(26351), kind: "Admitted", detail: "edge=0 from=0 to=1" }
+Event { id: 27098, at: 15360000, agent: Some(0), cause: Some(26450), kind: "Arrived", detail: "node=1 edge=0" }
+Event { id: 27160, at: 15360000, agent: Some(0), cause: Some(27103), kind: "Admitted", detail: "edge=1 from=1 to=2" }
+Event { id: 27752, at: 16260000, agent: Some(0), cause: Some(27160), kind: "Arrived", detail: "node=2 edge=1" }
+Event { id: 28564, at: 17160000, agent: Some(0), cause: Some(28502), kind: "Admitted", detail: "edge=1 from=2 to=1" }
+Event { id: 29236, at: 18060000, agent: Some(0), cause: Some(28564), kind: "Arrived", detail: "node=1 edge=1" }
+Event { id: 29992, at: 18960000, agent: Some(0), cause: Some(29930), kind: "Admitted", detail: "edge=1 from=1 to=2" }
+Event { id: 30680, at: 19860000, agent: Some(0), cause: Some(29992), kind: "Arrived", detail: "node=2 edge=1" }
+Event { id: 42298, at: 31866667, agent: Some(0), cause: Some(42238), kind: "Admitted", detail: "edge=1 from=2 to=1" }
+Event { id: 43280, at: 32866667, agent: Some(0), cause: Some(42298), kind: "Arrived", detail: "node=1 edge=1" }
+Event { id: 43286, at: 32866667, agent: Some(0), cause: Some(43283), kind: "Admitted", detail: "edge=0 from=1 to=0" }
+Event { id: 44160, at: 33866667, agent: Some(0), cause: Some(43286), kind: "Arrived", detail: "node=0 edge=0" }
+Event { id: 44165, at: 33866667, agent: Some(0), cause: Some(44164), kind: "JobAccepted", detail: "board=0 q=30 lease_expires=77066667" }
+Event { id: 44222, at: 33900000, agent: Some(0), cause: Some(44177), kind: "Admitted", detail: "edge=0 from=0 to=1" }
+Event { id: 44920, at: 34900000, agent: Some(0), cause: Some(44222), kind: "Arrived", detail: "node=1 edge=0" }
+Event { id: 50974, at: 43116667, agent: Some(0), cause: Some(50926), kind: "Admitted", detail: "edge=1 from=1 to=2" }
+Event { id: 51890, at: 44300001, agent: Some(0), cause: Some(51018), kind: "Arrived", detail: "node=2 edge=1" }
+Event { id: 229969, at: 172800000, agent: Some(0), cause: Some(229968), kind: "JobCancelled", detail: "request=0; reason=accepted job cannot acquire expected cargo; remote board unchanged" }
+
+MOVEMENT/JOB SOURCE matrix/long_high_available/events.tsv.gz; agent=20
+Event { id: 100926, at: 86928002, agent: Some(20), cause: Some(100872), kind: "Admitted", detail: "edge=0 from=0 to=1" }
+Event { id: 144794, at: 115728002, agent: Some(20), cause: Some(100926), kind: "Arrived", detail: "node=1 edge=0" }
+Event { id: 151928, at: 119340000, agent: Some(20), cause: Some(151852), kind: "Admitted", detail: "edge=1 from=1 to=2" }
+Event { id: 165869, at: 129600000, agent: Some(20), cause: Some(165868), kind: "Died", detail: "cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Edge { edge: 1, from: 1, to: 2, progress: 2565000000000 }" }
+
+MOVEMENT/JOB SOURCE matrix/discovery_available/events.tsv.gz; agent=0
+Event { id: 150, at: 0, agent: Some(0), cause: Some(51), kind: "Admitted", detail: "edge=0 from=0 to=1" }
+Event { id: 1488, at: 1800000, agent: Some(0), cause: Some(150), kind: "Arrived", detail: "node=1 edge=0" }
+Event { id: 1550, at: 1800000, agent: Some(0), cause: Some(1493), kind: "Admitted", detail: "edge=1 from=1 to=2" }
+Event { id: 2772, at: 3600000, agent: Some(0), cause: Some(1550), kind: "Arrived", detail: "node=2 edge=1" }
+Event { id: 4178, at: 5400000, agent: Some(0), cause: Some(4116), kind: "Admitted", detail: "edge=1 from=2 to=1" }
+Event { id: 5440, at: 7200000, agent: Some(0), cause: Some(4178), kind: "Arrived", detail: "node=1 edge=1" }
+Event { id: 8206, at: 10800000, agent: Some(0), cause: Some(8144), kind: "Admitted", detail: "edge=1 from=1 to=2" }
+Event { id: 9580, at: 12600000, agent: Some(0), cause: Some(8206), kind: "Arrived", detail: "node=2 edge=1" }
+Event { id: 21716, at: 23850000, agent: Some(0), cause: Some(21650), kind: "Admitted", detail: "edge=1 from=2 to=1" }
+Event { id: 23908, at: 25650000, agent: Some(0), cause: Some(21716), kind: "Arrived", detail: "node=1 edge=1" }
+Event { id: 23924, at: 25650000, agent: Some(0), cause: Some(23917), kind: "Admitted", detail: "edge=0 from=1 to=0" }
+Event { id: 25504, at: 27450000, agent: Some(0), cause: Some(23924), kind: "Arrived", detail: "node=0 edge=0" }
+Event { id: 47689, at: 43560000, agent: Some(0), cause: Some(47688), kind: "JobAccepted", detail: "board=0 q=30 lease_expires=86760000" }
+Event { id: 47856, at: 43620000, agent: Some(0), cause: Some(47809), kind: "Admitted", detail: "edge=0 from=0 to=1" }
+Event { id: 50634, at: 46020000, agent: Some(0), cause: Some(47856), kind: "Arrived", detail: "node=1 edge=0" }
+Event { id: 60776, at: 54720000, agent: Some(0), cause: Some(60730), kind: "Admitted", detail: "edge=1 from=1 to=2" }
+Event { id: 63191, at: 57120000, agent: Some(0), cause: Some(60776), kind: "Arrived", detail: "node=2 edge=1" }
+Event { id: 266259, at: 169320000, agent: Some(0), cause: Some(266258), kind: "JobCancelled", detail: "request=0; reason=delivery survival-infeasible or cargo predicted spoiled; remote board unchanged" }

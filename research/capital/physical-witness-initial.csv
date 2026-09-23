@@ -1,0 +1,13 @@
+edge_h,demand,cart,delivered,consumed,starvation_h,focal_alive,wood_invested,labor_h,cart_food_quanta_edges,accounting_error,overtakes
+0.25,30,false,0,46,1176,true,0,0,0,0,0
+0.25,30,true,0,46,1176,true,10,4,0,0,0
+0.25,600,false,0,46,1176,true,0,0,0,0,0
+0.25,600,true,0,46,1176,true,10,4,0,0,0
+0.5,30,false,0,46,1176,true,0,0,0,0,0
+0.5,30,true,0,46,1176,true,10,4,0,0,0
+0.5,600,false,0,46,1176,true,0,0,0,0,0
+0.5,600,true,0,46,1176,true,10,4,0,0,0
+2,30,false,0,30,1186.5077777777778,true,0,0,0,0,0
+2,30,true,0,46,1176,true,10,4,0,0,0
+2,600,false,0,30,1186.5077777777778,true,0,0,0,0,0
+2,600,true,0,46,1176,true,10,4,0,0,0

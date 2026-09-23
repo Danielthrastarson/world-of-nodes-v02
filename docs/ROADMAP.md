@@ -18,8 +18,8 @@ and irreversible abstraction choices require a project-owner decision.
 | F2 Autonomous provisioning | PASSED | Trace demand through voluntary undertaking, acquisition, transport, consumption. Compare self-provision, migration, idle and physical controls. Demonstrate a plausible controlled chain or identify behavioral/institutional vs architecture cause of absence. |
 | F3 Renewable production | PASSED | Located fertile land + actual labor + time → harvest. Account for natural transformation; finite initial stock no longer sole possible nourishment. Explain failures; do not guarantee sustainability. |
 | F4 Dynamic labor | PASSED | Known shortages and opportunities alter voluntary production, gathering, carrying, rest, exploration. No worker ratios or omniscient job manager; measure churn. |
-| F5 Capital before money | ACTIVE | One physical capital good, provisionally cart: material/labor cost, location, ownership, custody and carrying effect. Demonstrate short-term cost and context-dependent future benefit/harm. |
-| F6 Construction / settlement | NOT STARTED | Minimal causally necessary storage/sleep/infrastructure uses delivered materials, labor and time. Different geography creates different persistent spatial form. |
+| F5 Capital before money | PASSED | One physical capital good, provisionally cart: material/labor cost, location, ownership, custody and carrying effect. Demonstrate short-term cost and context-dependent future benefit/harm. |
+| F6 Construction / settlement | BLOCKED | Minimal causally necessary storage/sleep/infrastructure uses delivered materials, labor and time. Different geography creates different persistent spatial form. |
 | F7 Emergent infrastructure | NOT STARTED | Actual traffic and maintenance alter traversal/capacity, causing measurable route feedback. No arbitrary economic bonus. |
 | F8 Two settlements | NOT STARTED | Contrasting physical surplus/shortage, local ownership, explicit transfer/exchange institution. Conserved flows or causal explanation of absence; local value differences measurable. |
 | F9 Prices / money decision | NOT STARTED | Diagnose actual exchange/valuation/friction problem before comparing a common account/medium. Money never creates goods. Evidence for adoption OR deferral passes. Owner decides institution. |
@@ -59,6 +59,6 @@ F2 passed: [delivery/control evidence](../research/foundation-provisioning/REPOR
 
 F3 passed: [300-run farming evidence](../research/farming/REPORT.md). Cultivator ownership is provisional; migration, dead-owner losses and low-yield collapse are preserved. F4 subsequently passed the registered pressure-dependent labor study without new institutions.
 
-F4 passed for currently useful activities: [scarcity/geography evidence](../research/labor/REPORT.md). No decorative wood/stone demand was introduced. F5 has a reviewable [cart construction/rights proposal](CAPITAL_RIGHTS_DECISION.md); owner must select private or communal capital access before implementation.
+F4 passed for currently useful activities: [scarcity/geography evidence](../research/labor/REPORT.md). No decorative wood/stone demand was introduced. F5 subsequently received authorization for personal capital with ownership at completion.
 
-F5 active: personal capital authorized, ownership begins at completion; no transfer or inheritance. See [registered study](CAPITAL_EXPERIMENT.md).
+F5 passed: [420-run capital evidence](../research/capital/REPORT.md), [registered study](CAPITAL_EXPERIMENT.md). Costs, delivery gains, worse nourishment, fragmented inputs and dead-owner capital remain preserved. F6 is blocked only on the new fixed-infrastructure access institution: [concrete crossing proposal](INFRASTRUCTURE_RIGHTS_DECISION.md). The roadmap reserves new property/access rules for the owner; personal carts confer no road/land rights.

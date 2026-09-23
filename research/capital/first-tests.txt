@@ -1,0 +1,16 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.89s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 8 tests
+test provisioning::capital::tests::interruption_retains_work_inputs_and_death_does_not_create_cart ... ok
+test provisioning::capital::tests::completed_cart_has_owner_and_separate_user_and_conserved_wood ... ok
+test provisioning::capital::tests::no_wood_or_no_work_cannot_spawn_capital ... ok
+test provisioning::capital::tests::death_mid_edge_keeps_cart_and_cargo_without_inheritance ... ok
+test provisioning::capital::tests::remote_wood_is_not_a_policy_input ... ok
+test provisioning::capital::tests::actual_container_load_parking_travel_fifo_and_age ... ok
+test provisioning::capital::tests::partial_delivery_across_containers_keeps_same_job_until_payload_unloaded ... ok
+test provisioning::capital::tests::frozen_atomic_wood_and_construction_forecast_matches_kernel ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 90 filtered out; finished in 0.00s
+

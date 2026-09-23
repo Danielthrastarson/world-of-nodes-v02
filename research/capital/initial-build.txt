@@ -1,0 +1,16 @@
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error[E0425]: cannot find value `SECOND` in this scope
+   --> src/provisioning/policy/coherent.rs:480:20
+    |
+480 |         s.work(2 * SECOND, Time::MAX / 4);
+    |                    ^^^^^^ not found in this scope
+    |
+help: consider importing this constant
+    |
+  3 + use crate::provisioning::SECOND;
+    |
+
+For more information about this error, try `rustc --explain E0425`.
+error: could not compile `world-of-nodes` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error

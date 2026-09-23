@@ -1,0 +1,10 @@
+{
+  "revision": "8c57a64a6217854f12a09c548db253ca8fd641e1",
+  "seed0_short_high_tables_unchanged": [
+    "runs.csv",
+    "metrics.csv",
+    "people.csv",
+    "carts.csv"
+  ],
+  "matched_scheduler_output_byte_identical": true
+}

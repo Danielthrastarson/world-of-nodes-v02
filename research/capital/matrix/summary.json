@@ -1,0 +1,1619 @@
+{
+  "short_low_unavailable": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2491.0,
+      "mean": 2491.0,
+      "max": 2491.0
+    },
+    "spoiled": {
+      "min": 509.0,
+      "mean": 509.0,
+      "max": 509.0
+    },
+    "delivered": {
+      "min": 33.0,
+      "mean": 33.0,
+      "max": 33.0
+    },
+    "jobs": {
+      "min": 11.0,
+      "mean": 11.0,
+      "max": 11.0
+    },
+    "starvation_hours": {
+      "min": 509.0,
+      "mean": 509.0,
+      "max": 509.0
+    },
+    "queue_hours": {
+      "min": 578.706101944,
+      "mean": 578.706101944,
+      "max": 578.706101944
+    },
+    "agents_considered": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 1026,
+      "mean": 1026,
+      "max": 1026
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "short_low_available": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2491.0,
+      "mean": 2491.0,
+      "max": 2491.0
+    },
+    "spoiled": {
+      "min": 509.0,
+      "mean": 509.0,
+      "max": 509.0
+    },
+    "delivered": {
+      "min": 33.0,
+      "mean": 33.0,
+      "max": 33.0
+    },
+    "jobs": {
+      "min": 11.0,
+      "mean": 11.0,
+      "max": 11.0
+    },
+    "starvation_hours": {
+      "min": 509.0,
+      "mean": 509.0,
+      "max": 509.0
+    },
+    "queue_hours": {
+      "min": 578.706101944,
+      "mean": 578.706101944,
+      "max": 578.706101944
+    },
+    "agents_considered": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 1026,
+      "mean": 1026,
+      "max": 1026
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "gate_INSUFFICIENT_LOCAL_WOOD": {
+      "min": 32822,
+      "mean": 32822,
+      "max": 32822
+    },
+    "gate_NO_KNOWN_DEMAND": {
+      "min": 173978,
+      "mean": 173978,
+      "max": 173978
+    },
+    "gate_NO_TIME_PAYBACK": {
+      "min": 106,
+      "mean": 106,
+      "max": 106
+    },
+    "gate_SIX_HOUR_MARGIN": {
+      "min": 3659,
+      "mean": 3659,
+      "max": 3659
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "short_high_unavailable": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2358.0,
+      "mean": 2358.0,
+      "max": 2358.0
+    },
+    "spoiled": {
+      "min": 642.0,
+      "mean": 642.0,
+      "max": 642.0
+    },
+    "delivered": {
+      "min": 230.0,
+      "mean": 230.0,
+      "max": 230.0
+    },
+    "jobs": {
+      "min": 98.0,
+      "mean": 98.0,
+      "max": 98.0
+    },
+    "starvation_hours": {
+      "min": 642.0,
+      "mean": 642.0,
+      "max": 642.0
+    },
+    "queue_hours": {
+      "min": 1167.329346111,
+      "mean": 1167.329346111,
+      "max": 1167.329346111
+    },
+    "agents_considered": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 3122,
+      "mean": 3122,
+      "max": 3122
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "short_high_available": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2406.0,
+      "mean": 2406.0,
+      "max": 2406.0
+    },
+    "spoiled": {
+      "min": 594.0,
+      "mean": 594.0,
+      "max": 594.0
+    },
+    "delivered": {
+      "min": 286.0,
+      "mean": 286.0,
+      "max": 286.0
+    },
+    "jobs": {
+      "min": 44.0,
+      "mean": 44.0,
+      "max": 44.0
+    },
+    "starvation_hours": {
+      "min": 594.0,
+      "mean": 594.0,
+      "max": 594.0
+    },
+    "queue_hours": {
+      "min": 1031.6333,
+      "mean": 1031.6333,
+      "max": 1031.6333
+    },
+    "agents_considered": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 954,
+      "mean": 954,
+      "max": 954
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 4318,
+      "mean": 4318,
+      "max": 4318
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 4318,
+      "mean": 4318,
+      "max": 4318
+    },
+    "cart_trips_completed": {
+      "min": 688,
+      "mean": 688,
+      "max": 688
+    },
+    "cart_trips_started": {
+      "min": 688,
+      "mean": 688,
+      "max": 688
+    },
+    "completed": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "gate_INVEST": {
+      "min": 12550,
+      "mean": 12550,
+      "max": 12550
+    },
+    "gate_OWNED_CAPITAL": {
+      "min": 202764,
+      "mean": 202764,
+      "max": 202764
+    },
+    "idle_cart_ms": {
+      "min": 11341706544,
+      "mean": 11341706544,
+      "max": 11341706544
+    },
+    "labor_ms": {
+      "min": 720000000,
+      "mean": 720000000,
+      "max": 720000000
+    },
+    "started": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "wood_invested": {
+      "min": 500,
+      "mean": 500,
+      "max": 500
+    },
+    "distinct_histories": 1
+  },
+  "medium_high_unavailable": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2506.0,
+      "mean": 2506.0,
+      "max": 2506.0
+    },
+    "spoiled": {
+      "min": 494.0,
+      "mean": 494.0,
+      "max": 494.0
+    },
+    "delivered": {
+      "min": 60.0,
+      "mean": 60.0,
+      "max": 60.0
+    },
+    "jobs": {
+      "min": 84.0,
+      "mean": 84.0,
+      "max": 84.0
+    },
+    "starvation_hours": {
+      "min": 494.0,
+      "mean": 494.0,
+      "max": 494.0
+    },
+    "queue_hours": {
+      "min": 1340.698982222,
+      "mean": 1340.698982222,
+      "max": 1340.698982222
+    },
+    "agents_considered": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 1442,
+      "mean": 1442,
+      "max": 1442
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "medium_high_available": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2262.0,
+      "mean": 2262.0,
+      "max": 2262.0
+    },
+    "spoiled": {
+      "min": 738.0,
+      "mean": 738.0,
+      "max": 738.0
+    },
+    "delivered": {
+      "min": 432.0,
+      "mean": 432.0,
+      "max": 432.0
+    },
+    "jobs": {
+      "min": 51.0,
+      "mean": 51.0,
+      "max": 51.0
+    },
+    "starvation_hours": {
+      "min": 738.0,
+      "mean": 738.0,
+      "max": 738.0
+    },
+    "queue_hours": {
+      "min": 1058.228596389,
+      "mean": 1058.228596389,
+      "max": 1058.228596389
+    },
+    "agents_considered": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 1257,
+      "mean": 1257,
+      "max": 1257
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 1258,
+      "mean": 1258,
+      "max": 1258
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 1258,
+      "mean": 1258,
+      "max": 1258
+    },
+    "cart_trips_completed": {
+      "min": 416,
+      "mean": 416,
+      "max": 416
+    },
+    "cart_trips_started": {
+      "min": 416,
+      "mean": 416,
+      "max": 416
+    },
+    "completed": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "gate_INVEST": {
+      "min": 12550,
+      "mean": 12550,
+      "max": 12550
+    },
+    "gate_OWNED_CAPITAL": {
+      "min": 203292,
+      "mean": 203292,
+      "max": 203292
+    },
+    "idle_cart_ms": {
+      "min": 11200117793,
+      "mean": 11200117793,
+      "max": 11200117793
+    },
+    "labor_ms": {
+      "min": 720000000,
+      "mean": 720000000,
+      "max": 720000000
+    },
+    "started": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "wood_invested": {
+      "min": 500,
+      "mean": 500,
+      "max": 500
+    },
+    "distinct_histories": 1
+  },
+  "long_high_unavailable": {
+    "alive": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "deaths": {
+      "min": 22.0,
+      "mean": 22.0,
+      "max": 22.0
+    },
+    "consumed": {
+      "min": 1288.0,
+      "mean": 1288.0,
+      "max": 1288.0
+    },
+    "spoiled": {
+      "min": 1712.0,
+      "mean": 1712.0,
+      "max": 1712.0
+    },
+    "delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "jobs": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "starvation_hours": {
+      "min": 920.0,
+      "mean": 920.0,
+      "max": 920.0
+    },
+    "queue_hours": {
+      "min": 809.582222222,
+      "mean": 809.582222222,
+      "max": 809.582222222
+    },
+    "agents_considered": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "long_high_available": {
+    "alive": {
+      "min": 20.0,
+      "mean": 20.0,
+      "max": 20.0
+    },
+    "deaths": {
+      "min": 30.0,
+      "mean": 30.0,
+      "max": 30.0
+    },
+    "consumed": {
+      "min": 880.0,
+      "mean": 880.0,
+      "max": 880.0
+    },
+    "spoiled": {
+      "min": 2120.0,
+      "mean": 2120.0,
+      "max": 2120.0
+    },
+    "delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "jobs": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "starvation_hours": {
+      "min": 1040.0,
+      "mean": 1040.0,
+      "max": 1040.0
+    },
+    "queue_hours": {
+      "min": 841.750748889,
+      "mean": 841.750748889,
+      "max": 841.750748889
+    },
+    "agents_considered": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 44,
+      "mean": 44,
+      "max": 44
+    },
+    "cart_trips_started": {
+      "min": 52,
+      "mean": 52,
+      "max": 52
+    },
+    "completed": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 30,
+      "mean": 30,
+      "max": 30
+    },
+    "gate_INVEST": {
+      "min": 12550,
+      "mean": 12550,
+      "max": 12550
+    },
+    "gate_OWNED_CAPITAL": {
+      "min": 132780,
+      "mean": 132780,
+      "max": 132780
+    },
+    "idle_cart_ms": {
+      "min": 11361187992,
+      "mean": 11361187992,
+      "max": 11361187992
+    },
+    "labor_ms": {
+      "min": 720000000,
+      "mean": 720000000,
+      "max": 720000000
+    },
+    "started": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "wood_invested": {
+      "min": 500,
+      "mean": 500,
+      "max": 500
+    },
+    "distinct_histories": 1
+  },
+  "wood_scarce_unavailable": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2358.0,
+      "mean": 2358.0,
+      "max": 2358.0
+    },
+    "spoiled": {
+      "min": 642.0,
+      "mean": 642.0,
+      "max": 642.0
+    },
+    "delivered": {
+      "min": 230.0,
+      "mean": 230.0,
+      "max": 230.0
+    },
+    "jobs": {
+      "min": 98.0,
+      "mean": 98.0,
+      "max": 98.0
+    },
+    "starvation_hours": {
+      "min": 642.0,
+      "mean": 642.0,
+      "max": 642.0
+    },
+    "queue_hours": {
+      "min": 1167.329346111,
+      "mean": 1167.329346111,
+      "max": 1167.329346111
+    },
+    "agents_considered": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 3122,
+      "mean": 3122,
+      "max": 3122
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "wood_scarce_available": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2358.0,
+      "mean": 2358.0,
+      "max": 2358.0
+    },
+    "spoiled": {
+      "min": 642.0,
+      "mean": 642.0,
+      "max": 642.0
+    },
+    "delivered": {
+      "min": 230.0,
+      "mean": 230.0,
+      "max": 230.0
+    },
+    "jobs": {
+      "min": 98.0,
+      "mean": 98.0,
+      "max": 98.0
+    },
+    "starvation_hours": {
+      "min": 642.0,
+      "mean": 642.0,
+      "max": 642.0
+    },
+    "queue_hours": {
+      "min": 1167.329346111,
+      "mean": 1167.329346111,
+      "max": 1167.329346111
+    },
+    "agents_considered": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 3122,
+      "mean": 3122,
+      "max": 3122
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "gate_INSUFFICIENT_LOCAL_WOOD": {
+      "min": 131796,
+      "mean": 131796,
+      "max": 131796
+    },
+    "gate_NO_KNOWN_DEMAND": {
+      "min": 84274,
+      "mean": 84274,
+      "max": 84274
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "wood_contested_unavailable": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2358.0,
+      "mean": 2358.0,
+      "max": 2358.0
+    },
+    "spoiled": {
+      "min": 642.0,
+      "mean": 642.0,
+      "max": 642.0
+    },
+    "delivered": {
+      "min": 230.0,
+      "mean": 230.0,
+      "max": 230.0
+    },
+    "jobs": {
+      "min": 98.0,
+      "mean": 98.0,
+      "max": 98.0
+    },
+    "starvation_hours": {
+      "min": 642.0,
+      "mean": 642.0,
+      "max": 642.0
+    },
+    "queue_hours": {
+      "min": 1167.329346111,
+      "mean": 1167.329346111,
+      "max": 1167.329346111
+    },
+    "agents_considered": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 3122,
+      "mean": 3122,
+      "max": 3122
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "wood_contested_available": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2410.0,
+      "mean": 2410.0,
+      "max": 2410.0
+    },
+    "spoiled": {
+      "min": 590.0,
+      "mean": 590.0,
+      "max": 590.0
+    },
+    "delivered": {
+      "min": 92.0,
+      "mean": 92.0,
+      "max": 92.0
+    },
+    "jobs": {
+      "min": 84.0,
+      "mean": 84.0,
+      "max": 84.0
+    },
+    "starvation_hours": {
+      "min": 590.0,
+      "mean": 590.0,
+      "max": 590.0
+    },
+    "queue_hours": {
+      "min": 1303.309734444,
+      "mean": 1303.309734444,
+      "max": 1303.309734444
+    },
+    "agents_considered": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 1420,
+      "mean": 1420,
+      "max": 1420
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "gate_INSUFFICIENT_LOCAL_WOOD": {
+      "min": 130060,
+      "mean": 130060,
+      "max": 130060
+    },
+    "gate_INVEST": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "gate_NO_KNOWN_DEMAND": {
+      "min": 80484,
+      "mean": 80484,
+      "max": 80484
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "discovery_unavailable": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2456.0,
+      "mean": 2456.0,
+      "max": 2456.0
+    },
+    "spoiled": {
+      "min": 544.0,
+      "mean": 544.0,
+      "max": 544.0
+    },
+    "delivered": {
+      "min": 24.0,
+      "mean": 24.0,
+      "max": 24.0
+    },
+    "jobs": {
+      "min": 62.0,
+      "mean": 62.0,
+      "max": 62.0
+    },
+    "starvation_hours": {
+      "min": 544.0,
+      "mean": 544.0,
+      "max": 544.0
+    },
+    "queue_hours": {
+      "min": 1310.149792222,
+      "mean": 1310.149792222,
+      "max": 1310.149792222
+    },
+    "agents_considered": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 1186,
+      "mean": 1186,
+      "max": 1186
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "cart_trips_started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "completed": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "idle_cart_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "labor_ms": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "started": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "wood_invested": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "distinct_histories": 1
+  },
+  "discovery_available": {
+    "alive": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "deaths": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "min": 2385.0,
+      "mean": 2385.0,
+      "max": 2385.0
+    },
+    "spoiled": {
+      "min": 615.0,
+      "mean": 615.0,
+      "max": 615.0
+    },
+    "delivered": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "jobs": {
+      "min": 48.0,
+      "mean": 48.0,
+      "max": 48.0
+    },
+    "starvation_hours": {
+      "min": 615.0,
+      "mean": 615.0,
+      "max": 615.0
+    },
+    "queue_hours": {
+      "min": 1127.755833333,
+      "mean": 1127.755833333,
+      "max": 1127.755833333
+    },
+    "agents_considered": {
+      "min": 50,
+      "mean": 50,
+      "max": 50
+    },
+    "backpack_food_quanta_edges_departed": {
+      "min": 1008,
+      "mean": 1008,
+      "max": 1008
+    },
+    "cart_food_quanta_edges_arrived": {
+      "min": 930,
+      "mean": 930,
+      "max": 930
+    },
+    "cart_food_quanta_edges_departed": {
+      "min": 930,
+      "mean": 930,
+      "max": 930
+    },
+    "cart_trips_completed": {
+      "min": 100,
+      "mean": 100,
+      "max": 100
+    },
+    "cart_trips_started": {
+      "min": 100,
+      "mean": 100,
+      "max": 100
+    },
+    "completed": {
+      "min": 22,
+      "mean": 22,
+      "max": 22
+    },
+    "dead_investor_projects": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "dead_owner_carts": {
+      "min": 0,
+      "mean": 0,
+      "max": 0
+    },
+    "gate_INSUFFICIENT_LOCAL_WOOD": {
+      "min": 54928,
+      "mean": 54928,
+      "max": 54928
+    },
+    "gate_INVEST": {
+      "min": 11706,
+      "mean": 11706,
+      "max": 11706
+    },
+    "gate_NO_KNOWN_DEMAND": {
+      "min": 72482,
+      "mean": 72482,
+      "max": 72482
+    },
+    "gate_NO_TIME_PAYBACK": {
+      "min": 1540,
+      "mean": 1540,
+      "max": 1540
+    },
+    "gate_OWNED_CAPITAL": {
+      "min": 72138,
+      "mean": 72138,
+      "max": 72138
+    },
+    "gate_SIX_HOUR_MARGIN": {
+      "min": 1898,
+      "mean": 1898,
+      "max": 1898
+    },
+    "idle_cart_ms": {
+      "min": 4118541272,
+      "mean": 4118541272,
+      "max": 4118541272
+    },
+    "labor_ms": {
+      "min": 549430644,
+      "mean": 549430644,
+      "max": 549430644
+    },
+    "started": {
+      "min": 36,
+      "mean": 36,
+      "max": 36
+    },
+    "wood_invested": {
+      "min": 360,
+      "mean": 360,
+      "max": 360
+    },
+    "distinct_histories": 1
+  }
+}

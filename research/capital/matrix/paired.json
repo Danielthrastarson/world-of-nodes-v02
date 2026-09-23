@@ -1,0 +1,191 @@
+{
+  "short_low": {
+    "alive": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "consumed": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "delivered": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "starvation_hours": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "queue_hours": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    }
+  },
+  "short_high": {
+    "alive": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "consumed": {
+      "mean_difference": 48.0,
+      "min_difference": 48.0,
+      "max_difference": 48.0
+    },
+    "delivered": {
+      "mean_difference": 56.0,
+      "min_difference": 56.0,
+      "max_difference": 56.0
+    },
+    "starvation_hours": {
+      "mean_difference": -48.0,
+      "min_difference": -48.0,
+      "max_difference": -48.0
+    },
+    "queue_hours": {
+      "mean_difference": -135.696046111,
+      "min_difference": -135.696046111,
+      "max_difference": -135.696046111
+    }
+  },
+  "medium_high": {
+    "alive": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "consumed": {
+      "mean_difference": -244.0,
+      "min_difference": -244.0,
+      "max_difference": -244.0
+    },
+    "delivered": {
+      "mean_difference": 372.0,
+      "min_difference": 372.0,
+      "max_difference": 372.0
+    },
+    "starvation_hours": {
+      "mean_difference": 244.0,
+      "min_difference": 244.0,
+      "max_difference": 244.0
+    },
+    "queue_hours": {
+      "mean_difference": -282.47038583300014,
+      "min_difference": -282.47038583300014,
+      "max_difference": -282.47038583300014
+    }
+  },
+  "long_high": {
+    "alive": {
+      "mean_difference": -8.0,
+      "min_difference": -8.0,
+      "max_difference": -8.0
+    },
+    "consumed": {
+      "mean_difference": -408.0,
+      "min_difference": -408.0,
+      "max_difference": -408.0
+    },
+    "delivered": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "starvation_hours": {
+      "mean_difference": 120.0,
+      "min_difference": 120.0,
+      "max_difference": 120.0
+    },
+    "queue_hours": {
+      "mean_difference": 32.168526666999924,
+      "min_difference": 32.168526666999924,
+      "max_difference": 32.168526666999924
+    }
+  },
+  "wood_scarce": {
+    "alive": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "consumed": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "delivered": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "starvation_hours": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "queue_hours": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    }
+  },
+  "wood_contested": {
+    "alive": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "consumed": {
+      "mean_difference": 52.0,
+      "min_difference": 52.0,
+      "max_difference": 52.0
+    },
+    "delivered": {
+      "mean_difference": -138.0,
+      "min_difference": -138.0,
+      "max_difference": -138.0
+    },
+    "starvation_hours": {
+      "mean_difference": -52.0,
+      "min_difference": -52.0,
+      "max_difference": -52.0
+    },
+    "queue_hours": {
+      "mean_difference": 135.98038833300006,
+      "min_difference": 135.98038833300006,
+      "max_difference": 135.98038833300006
+    }
+  },
+  "discovery": {
+    "alive": {
+      "mean_difference": 0.0,
+      "min_difference": 0.0,
+      "max_difference": 0.0
+    },
+    "consumed": {
+      "mean_difference": -71.0,
+      "min_difference": -71.0,
+      "max_difference": -71.0
+    },
+    "delivered": {
+      "mean_difference": 4.0,
+      "min_difference": 4.0,
+      "max_difference": 4.0
+    },
+    "starvation_hours": {
+      "mean_difference": 71.0,
+      "min_difference": 71.0,
+      "max_difference": 71.0
+    },
+    "queue_hours": {
+      "mean_difference": -182.39395888900003,
+      "min_difference": -182.39395888900003,
+      "max_difference": -182.39395888900003
+    }
+  }
+}

@@ -1,0 +1,30 @@
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error: this `if` statement can be collapsed
+   --> src/provisioning/capital.rs:465:13
+    |
+465 | /             if let Some(u) = c.user {
+466 | |                 if !users.insert(u)
+467 | |                     || c.owner != Owner::Agent(u)
+468 | |                     || self.agents[u].action == Action::Dead
+...   |
+473 | |             }
+    | |_____________^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.98.0/index.html#collapsible_if
+    = note: `-D clippy::collapsible-if` implied by `-D warnings`
+    = help: to override `-D warnings` add `#[allow(clippy::collapsible_if)]`
+help: collapse nested if block
+    |
+465 ~             if let Some(u) = c.user
+466 ~                 && (!users.insert(u)
+467 |                     || c.owner != Owner::Agent(u)
+468 |                     || self.agents[u].action == Action::Dead
+469 ~                     || c.location != self.agents[u].location)
+470 |                 {
+471 |                     return Err("cart user/locality/exclusivity".into());
+472 ~                 }
+    |
+
+error: could not compile `world-of-nodes` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error

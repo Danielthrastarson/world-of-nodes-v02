@@ -1,0 +1,6 @@
+{
+  "historical_endpoints_identical": 9,
+  "regression_hourly_comparisons": 1387,
+  "F3_seed0_checkpoints_0_to_168h_identical": true,
+  "F3_state_event_hashes_identical": true
+}
