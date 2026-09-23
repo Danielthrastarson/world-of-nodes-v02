@@ -136,6 +136,15 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 .find(|p| p.cart == Some(c.id))
                 .unwrap();
             let completed: Vec<_> = c.trips.iter().filter(|t| t.arrived.is_some()).collect();
+            // Registered fixtures have only t=0 food, all expiring at 48h;
+            // no food is eaten mid-edge. This matched-capacity witness is not
+            // a causal welfare attribution and must not be used for mixed-age food.
+            assert!(
+                w.batches()
+                    .iter()
+                    .filter(|b| b.material == Material::Food)
+                    .all(|b| b.created_at == 0 && b.expires_at() == 48 * HOUR)
+            );
             let extra: u64 = completed
                 .iter()
                 .map(|t| (t.food_arrived + t.backpack_food).saturating_sub(10))
