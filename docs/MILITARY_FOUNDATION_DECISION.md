@@ -1,11 +1,7 @@
-# F11 entry gate — service obligations
+# F11 service institution — owner decision accepted
 
-B0–B3 have passed their bounded gates. Resume the roadmap at F11, without adding further family complexity. B3's mechanistic generational proof does not imply autonomous demographic sustainability; preserve the readiness and newborn-care failures.
+B3 is accepted at mechanism scope. F11 is split into A mobilization, B formation/movement, C combat. Each later gate depends on the earlier evidence.
 
-The technical boundary is already available: actual Persons, households, directed care/history, physical inventories/carts, finite movement and public infrastructure. An eventual army must reference those people and goods, not spawn a second population or supply stock.
+The owner authorizes **voluntary militia only**. An existing Person may accept a locally observed muster request; only physical arrival activates Soldier(unit). No separate soldier brain/body, compulsory levy, requisition, wages, military food, free equipment, automatic family replacement, or global orders. Existing property, physiology, care and social history continue. Conscription requires a later owner decision.
 
-**Owner decision pending:** what authorizes military service and the obligation to follow an army objective? The owner's F10 specification explicitly deferred conscription, seizure and compulsory labor. Those powers cannot be inferred from a steward office or political identity.
-
-Proposed first institution for approval: voluntary service only. People may refuse enlistment; existing personal goods remain personal; no requisition or inheritance. A later bounded specification must state withdrawal/command commitment explicitly rather than conceal obedience in utility coefficients. The alternatives are to pause here, or separately define a compulsory-service institution with its authority/access limits. No option is selected automatically.
-
-After the decision, register the smallest mobilization/logistics experiment: existing people accept or decline service, physical food/time/transport are consumed, and effects on household labor/care are measured against no mobilization. Do not add combat graphics, free equipment, global orders, military-only roads or magically shared personal property. Player control remains formation/objective level, with actual execution constrained by the same world.
+F11A uses the explicitly provisional bounded policy/institution in [MOBILIZATION_EXPERIMENT.md](MOBILIZATION_EXPERIMENT.md). Service can be declined or ended without legal punishment. Neither an office nor a military role grants property rights. F11B/C and UI remain unimplemented until preceding gates pass.
