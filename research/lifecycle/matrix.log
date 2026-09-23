@@ -1,0 +1,15 @@
+stochastic births 12 generation3 0
+basic births 60 generation3 0
+infertile births 0 generation3 0
+separated births 0 generation3 0
+hungry births 0 generation3 0
+decline births 0 generation3 0
+dependency births 60 generation3 0
+parent_death births 30 generation3 0
+dependency_social births 60 generation3 0
+multiple births 120 generation3 0
+multigeneration births 240 generation3 0
+multigeneration_social births 240 generation3 0
+working births 30 generation3 0
+working_no_birth births 0 generation3 0
+generational_control births 147 generation3 27

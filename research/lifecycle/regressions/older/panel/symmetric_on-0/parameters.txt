@@ -1,0 +1,1 @@
+F9A registered fixture=symmetric seed=0 enabled=true; docs/BARTER_EXPERIMENT.md; no money; own conditional use

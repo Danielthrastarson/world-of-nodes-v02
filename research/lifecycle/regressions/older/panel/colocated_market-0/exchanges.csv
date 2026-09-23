@@ -1,0 +1,2 @@
+seed,at_ms,offer,proposer,taker,node,give,give_q,give_origin,payment,payment_q,payment_origin,give_created,payment_created,give_expiry,payment_expiry,taker_batch,proposer_batch
+0,3780000,31,1,0,0,Wood,10,2,Food,2,0,0,0,9223372036854775807,172800000,36,37

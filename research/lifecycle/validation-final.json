@@ -1,0 +1,46 @@
+{
+  "status": "PASSED at B3 mechanism scope; autonomous demographic sustainability unproven",
+  "core_source": "97b2f33408bc68733de74c52e1619f87fbd56c21",
+  "final_research_source": "9af6d34d8897f668706638d719851751dbf1c22f",
+  "full_suite_tests": 242,
+  "additional_targeted_boundary_test": 1,
+  "lifecycle_targeted_tests": 17,
+  "fmt": "pass",
+  "all_target_clippy": "pass",
+  "historical_executions": 96,
+  "checks": {
+    "runs": 510,
+    "prior_files_unchanged": 6349,
+    "superseded_cases_physically_identical": [
+      "basic",
+      "decline",
+      "dependency",
+      "dependency_social",
+      "generational_control",
+      "hungry",
+      "infertile",
+      "multigeneration",
+      "multigeneration_social",
+      "multiple",
+      "parent_death",
+      "separated",
+      "stochastic",
+      "working",
+      "working_no_birth"
+    ],
+    "accounting_error": 0,
+    "fifo_overtakes": 0,
+    "safety_abort_count": 0,
+    "seed0_child_adult_work_requests": 0
+  },
+  "generation3_controlled_runs": 27,
+  "generation3_less_assisted_runs": 0,
+  "gate_limits": [
+    "controlled lawful support and explicitly seeded descendant Partner relation",
+    "node-delivery convention",
+    "no newborn nutrition reserve",
+    "B2 zero-attachment care failure preserved"
+  ],
+  "f11": "blocked pending owner decision on service obligations; no conscription or seizure inferred",
+  "analyzer_sha256": "509588350efde24aa8dfba43475a8b9bb52d3770164d907d2e23b849f5e2553a"
+}

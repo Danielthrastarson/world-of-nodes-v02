@@ -1,0 +1,2 @@
+seed,case,persons,alive,children_alive,child_deaths,reproductive_adults,conceptions,births,maturations,generation_depth,pregnancies,food_transferred,food_consumed,food_spoiled,starvation_h,adult_h,child_h,reproduction_person_h,unsupported_h,care_travel_h,relationship_edges,peak_persons,initial_state_text_bytes,peak_state_text_bytes,runtime_ms,accounting_error,overtakes,state_hash,event_hash
+0,parent_death,3,0,0,0,0,1,1,1,2,0,12,24,388,24.016667222,32.016667222,24.000000000,2.000000000,22.999999722,0.000000000,0,3,1644,4181,10,0,0,5368a5e814443a82,474e9f76d1634629

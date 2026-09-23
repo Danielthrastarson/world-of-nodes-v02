@@ -1,0 +1,22 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.46s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 14 tests
+test provisioning::lifecycle::tests::consent_does_not_survive_a_separate_command_batch ... ok
+test provisioning::lifecycle::tests::interruption_releases_both_people ... ok
+test provisioning::lifecycle::tests::death_precedes_due_birth ... ok
+test provisioning::lifecycle::tests::bilateral_time_and_birth_are_real ... ok
+test provisioning::lifecycle::tests::birth_extends_all_enabled_memories ... ok
+test provisioning::lifecycle::tests::child_commands_cannot_bypass_capability_gates ... ok
+test provisioning::lifecycle::tests::no_household_merge_no_property_or_remote_need_transfer ... ok
+test provisioning::lifecycle::tests::due_birth_waits_for_node_without_extra_queue_slot ... ok
+test provisioning::lifecycle::tests::known_child_death_uses_existing_attachment_and_remote_death_does_not ... ok
+test provisioning::lifecycle::tests::remote_birth_does_not_create_paternal_social_knowledge ... ok
+test provisioning::lifecycle::tests::maturation_preserves_person_history_and_goods ... ok
+test provisioning::lifecycle::tests::partition_and_submission_order_are_deterministic ... ok
+test provisioning::lifecycle::tests::sex_swap_preserves_nonreproductive_decisions ... ok
+test provisioning::lifecycle::tests::no_colocation_no_consent_and_zero_fertility ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 213 filtered out; finished in 0.18s
+

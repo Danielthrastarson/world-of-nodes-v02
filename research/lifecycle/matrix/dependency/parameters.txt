@@ -1,0 +1,455 @@
+config=Config {
+    lifecycle: Some(
+        Config {
+            people: [
+                Seed {
+                    birth_time: -86400000,
+                    sex: Female,
+                    drive: true,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Male,
+                    drive: true,
+                },
+            ],
+            rules: Rules {
+                adult_age: 86400000,
+                fertile_until: 345600000,
+                gestation: 28800000,
+                undertaking: 3600000,
+                interval: 115200000,
+                conception_per_million: 1000000,
+            },
+        },
+    ),
+    social: None,
+    household: Some(
+        Config {
+            households: [
+                Household {
+                    id: 0,
+                    members: [
+                        0,
+                        1,
+                    ],
+                    home: None,
+                },
+            ],
+            kin: [
+                Relation {
+                    from: 0,
+                    to: 1,
+                    kind: Partner,
+                },
+            ],
+            care: [],
+            enabled: true,
+        },
+    ),
+    authority: None,
+    barter: false,
+    market_nodes: [],
+    paths: None,
+    infrastructure: None,
+    capital: None,
+    farming: None,
+    persistence: None,
+    diagnostic_policy: Current,
+    initial_request: 0,
+    acceptance_audit: false,
+    seed: 0,
+    nodes: 1,
+    edges: [],
+    starts: [
+        0,
+        0,
+    ],
+    food: [],
+    boards: [],
+    communal: false,
+    prior_memory: false,
+    policy_ms: 60000,
+    carrying_capacity: 10,
+    initial_nutrition: 64800000,
+    initial_fatigue: 14400000,
+    reverse_evaluation: false,
+    trace: true,
+    autonomous: true,
+}
+biology=[
+    Biology {
+        birth_time: -86400000,
+        sex: Female,
+        drive: true,
+        rng: 0,
+        next_attempt: 0,
+        pregnancy: None,
+        undertaking: None,
+        parents: None,
+        generation: 1,
+        matured: true,
+    },
+    Biology {
+        birth_time: -86400000,
+        sex: Male,
+        drive: true,
+        rng: 13067915187859978867,
+        next_attempt: 0,
+        pregnancy: None,
+        undertaking: None,
+        parents: None,
+        generation: 1,
+        matured: true,
+    },
+]
+goods=[
+    Batch {
+        id: 0,
+        origin: 0,
+        material: Food,
+        quantity: 6,
+        owner: Agent(
+            0,
+        ),
+        holder: Agent(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 1,
+        origin: 1,
+        material: Food,
+        quantity: 200,
+        owner: Agent(
+            0,
+        ),
+        holder: Loose(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 2,
+        origin: 2,
+        material: Food,
+        quantity: 6,
+        owner: Agent(
+            1,
+        ),
+        holder: Agent(
+            1,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 3,
+        origin: 3,
+        material: Food,
+        quantity: 200,
+        owner: Agent(
+            1,
+        ),
+        holder: Loose(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+]
+final biology / households: config=Config {
+    lifecycle: Some(
+        Config {
+            people: [
+                Seed {
+                    birth_time: -86400000,
+                    sex: Female,
+                    drive: true,
+                },
+                Seed {
+                    birth_time: -86400000,
+                    sex: Male,
+                    drive: true,
+                },
+            ],
+            rules: Rules {
+                adult_age: 86400000,
+                fertile_until: 345600000,
+                gestation: 28800000,
+                undertaking: 3600000,
+                interval: 115200000,
+                conception_per_million: 1000000,
+            },
+        },
+    ),
+    social: None,
+    household: Some(
+        Config {
+            households: [
+                Household {
+                    id: 0,
+                    members: [
+                        0,
+                        1,
+                        2,
+                        3,
+                    ],
+                    home: None,
+                },
+            ],
+            kin: [
+                Relation {
+                    from: 0,
+                    to: 1,
+                    kind: Partner,
+                },
+                Relation {
+                    from: 0,
+                    to: 2,
+                    kind: Parent,
+                },
+                Relation {
+                    from: 1,
+                    to: 2,
+                    kind: Parent,
+                },
+                Relation {
+                    from: 0,
+                    to: 3,
+                    kind: Parent,
+                },
+                Relation {
+                    from: 1,
+                    to: 3,
+                    kind: Parent,
+                },
+            ],
+            care: [
+                Caregiver {
+                    person: 0,
+                    dependent: 2,
+                },
+                Caregiver {
+                    person: 1,
+                    dependent: 2,
+                },
+                Caregiver {
+                    person: 0,
+                    dependent: 3,
+                },
+                Caregiver {
+                    person: 1,
+                    dependent: 3,
+                },
+            ],
+            enabled: true,
+        },
+    ),
+    authority: None,
+    barter: false,
+    market_nodes: [],
+    paths: None,
+    infrastructure: None,
+    capital: None,
+    farming: None,
+    persistence: None,
+    diagnostic_policy: Current,
+    initial_request: 0,
+    acceptance_audit: false,
+    seed: 0,
+    nodes: 1,
+    edges: [],
+    starts: [
+        0,
+        0,
+    ],
+    food: [],
+    boards: [],
+    communal: false,
+    prior_memory: false,
+    policy_ms: 60000,
+    carrying_capacity: 10,
+    initial_nutrition: 64800000,
+    initial_fatigue: 14400000,
+    reverse_evaluation: false,
+    trace: true,
+    autonomous: true,
+}
+biology=[
+    Biology {
+        birth_time: -86400000,
+        sex: Female,
+        drive: true,
+        rng: 8709371129873690708,
+        next_attempt: 277440000,
+        pregnancy: None,
+        undertaking: None,
+        parents: None,
+        generation: 1,
+        matured: true,
+    },
+    Biology {
+        birth_time: -86400000,
+        sex: Male,
+        drive: true,
+        rng: 13067915187859978867,
+        next_attempt: 277440000,
+        pregnancy: None,
+        undertaking: None,
+        parents: None,
+        generation: 1,
+        matured: true,
+    },
+    Biology {
+        birth_time: 32400000,
+        sex: Male,
+        drive: true,
+        rng: 6813609681026735527,
+        next_attempt: 0,
+        pregnancy: None,
+        undertaking: None,
+        parents: Some(
+            [
+                0,
+                1,
+            ],
+        ),
+        generation: 2,
+        matured: true,
+    },
+    Biology {
+        birth_time: 194640000,
+        sex: Male,
+        drive: true,
+        rng: 2737033072810086504,
+        next_attempt: 0,
+        pregnancy: None,
+        undertaking: None,
+        parents: Some(
+            [
+                0,
+                1,
+            ],
+        ),
+        generation: 2,
+        matured: false,
+    },
+]
+goods=[
+    Batch {
+        id: 0,
+        origin: 0,
+        material: Food,
+        quantity: 0,
+        owner: Agent(
+            0,
+        ),
+        holder: Agent(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 1,
+        origin: 1,
+        material: Waste,
+        quantity: 134,
+        owner: Agent(
+            0,
+        ),
+        holder: Loose(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 2,
+        origin: 2,
+        material: Food,
+        quantity: 0,
+        owner: Agent(
+            1,
+        ),
+        holder: Agent(
+            1,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 3,
+        origin: 3,
+        material: Waste,
+        quantity: 134,
+        owner: Agent(
+            1,
+        ),
+        holder: Loose(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 4,
+        origin: 1,
+        material: Waste,
+        quantity: 6,
+        owner: Agent(
+            0,
+        ),
+        holder: Agent(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 5,
+        origin: 3,
+        material: Waste,
+        quantity: 6,
+        owner: Agent(
+            1,
+        ),
+        holder: Agent(
+            1,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 6,
+        origin: 1,
+        material: Food,
+        quantity: 0,
+        owner: Agent(
+            2,
+        ),
+        holder: Loose(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+    Batch {
+        id: 7,
+        origin: 3,
+        material: Food,
+        quantity: 0,
+        owner: Agent(
+            2,
+        ),
+        holder: Loose(
+            0,
+        ),
+        created_at: 0,
+        spoil_after: 172800000,
+    },
+]

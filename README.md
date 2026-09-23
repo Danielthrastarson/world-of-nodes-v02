@@ -174,3 +174,17 @@ python3 scripts/run_affect.py /tmp/won-b2-primary
 python3 scripts/run_affect_cost.py /tmp/won-b2-cost
 python3 scripts/verify_affect.py /tmp/won-b2-regressions
 ```
+
+### B3 embodied generations
+
+[Report](research/lifecycle/REPORT.md) · [registered rules](docs/LIFECYCLE_EXPERIMENT.md) · [causal traces](research/lifecycle/analysis/TRACE_EXCERPTS.md).
+
+Optional accelerated biology adds birth time, child/adult capabilities, mutual timed reproduction, pregnancy, parentage and persistent offspring through the same Person architecture. No automatic food, property pooling, sex-linked psychology or inheritance. Controlled support reaches Generation3 in27/30 seeds; less-assisted worlds remain at Generation2 and zero-prior B2 care can fail newborns. These failures are preserved.
+
+```sh
+cargo build --release --bins
+python3 scripts/run_lifecycle.py /tmp/won-b3-matrix
+python3 scripts/verify_lifecycle.py /tmp/won-b3-regressions
+```
+
+B3 passed at mechanism scope. F11's service institution requires an owner decision before coercive powers or service obligations are introduced.

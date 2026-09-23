@@ -1,0 +1,10 @@
+seed,key,count
+0,completed,5
+0,food_transferred,10
+0,gate:NO_OBSERVED_SEVERE_NEED,317
+0,gate:NO_PERSONAL_CARGO,1818
+0,gate:SELF_SURVIVAL_BUFFER,742
+0,goals,5
+0,observed_opportunities,2565
+0,transfer_attempts,5
+0,transfers,5

@@ -1,0 +1,228 @@
+{
+  "revision": "97b2f33408bc68733de74c52e1619f87fbd56c21",
+  "historical_executions": 62,
+  "b1": [
+    {
+      "name": "caregiver_death_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "caregiver_death_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "colocated_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "colocated_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "construction_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "construction_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "far_known_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "far_known_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "farming_distant_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "farming_distant_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "farming_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "farming_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "multiple_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "multiple_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "near_known_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "near_known_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "nonkin_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "nonkin_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "self_conflict_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "self_conflict_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "unknown_off",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    },
+    {
+      "name": "unknown_on",
+      "csv": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "activity.csv"
+      ],
+      "events_exact": true
+    }
+  ],
+  "prior_files_unchanged": 5469,
+  "parameter_difference": "New optional social: None only. All physical CSVs and events exact."
+}

@@ -1,0 +1,18 @@
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+warning: unused import: `super::*`
+ --> src/provisioning/lifecycle/tests.rs:1:5
+  |
+1 | use super::*;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+error[E0063]: missing field `life` in initializer of `provisioning::person::Capabilities<'_>`
+   --> src/provisioning/person/tests.rs:110:23
+    |
+110 |         capabilities: Capabilities {
+    |                       ^^^^^^^^^^^^ missing `life`
+
+For more information about this error, try `rustc --explain E0063`.
+warning: `world-of-nodes` (lib test) generated 1 warning
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error; 1 warning emitted

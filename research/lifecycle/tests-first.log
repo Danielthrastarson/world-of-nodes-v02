@@ -1,0 +1,28 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error[E0599]: no associated function or constant named `default` found for struct `provisioning::capital::Config` in the current scope
+  --> src/provisioning/lifecycle/tests.rs:85:39
+   |
+85 |     c.capital = Some(capital::Config::default());
+   |                                       ^^^^^^^ associated function or constant not found in `provisioning::capital::Config`
+   |
+  ::: src/provisioning/capital.rs:21:1
+   |
+21 | pub struct Config {
+   | ----------------- associated function or constant `default` not found for this struct
+   |
+   = help: items from traits can only be used if the trait is implemented and in scope
+   = note: the following trait defines an item `default`, perhaps you need to implement it:
+           candidate #1: `Default`
+
+error[E0502]: cannot borrow `w` as immutable because it is also borrowed as mutable
+   --> src/provisioning/lifecycle/tests.rs:150:40
+    |
+150 |     w.agents[2].memory.nodes.insert(0, w.node_view(0));
+    |     --------                 ------    ^ immutable borrow occurs here
+    |     |                        |
+    |     |                        mutable borrow later used by call
+    |     mutable borrow occurs here
+
+Some errors have detailed explanations: E0502, E0599.
+For more information about an error, try `rustc --explain E0502`.
+error: could not compile `world-of-nodes` (lib test) due to 2 previous errors

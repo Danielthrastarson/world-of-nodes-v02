@@ -1,0 +1,11 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error[E0560]: struct `provisioning::capital::Config` has no field named `enabled`
+  --> src/provisioning/lifecycle/tests.rs:85:40
+   |
+85 |     c.capital = Some(capital::Config { enabled: true, wood: vec![], rules: capital::Rules::default() });
+   |                                        ^^^^^^^ `provisioning::capital::Config` does not have this field
+   |
+   = note: all struct fields are already assigned
+
+For more information about this error, try `rustc --explain E0560`.
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error

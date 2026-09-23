@@ -1,0 +1,12 @@
+seed,key,count
+0,social:care_assessments,1
+0,social:care_selected,1
+0,social:observed_evidence,1
+0,care:completed,1
+0,care:food_transferred,6
+0,care:gate:EXISTING_JOB,1542
+0,care:gate:NO_OBSERVED_SEVERE_NEED,1058
+0,care:goals,1
+0,care:observed_opportunities,1
+0,care:transfer_attempts,1
+0,care:transfers,1
