@@ -19,7 +19,7 @@ and irreversible abstraction choices require a project-owner decision.
 | F3 Renewable production | PASSED | Located fertile land + actual labor + time → harvest. Account for natural transformation; finite initial stock no longer sole possible nourishment. Explain failures; do not guarantee sustainability. |
 | F4 Dynamic labor | PASSED | Known shortages and opportunities alter voluntary production, gathering, carrying, rest, exploration. No worker ratios or omniscient job manager; measure churn. |
 | F5 Capital before money | PASSED | One physical capital good, provisionally cart: material/labor cost, location, ownership, custody and carrying effect. Demonstrate short-term cost and context-dependent future benefit/harm. |
-| F6 Construction / settlement | BLOCKED | Minimal causally necessary storage/sleep/infrastructure uses delivered materials, labor and time. Different geography creates different persistent spatial form. |
+| F6 Construction / settlement | ACTIVE | Minimal causally necessary storage/sleep/infrastructure uses delivered materials, labor and time. Different geography creates different persistent spatial form. |
 | F7 Emergent infrastructure | NOT STARTED | Actual traffic and maintenance alter traversal/capacity, causing measurable route feedback. No arbitrary economic bonus. |
 | F8 Two settlements | NOT STARTED | Contrasting physical surplus/shortage, local ownership, explicit transfer/exchange institution. Conserved flows or causal explanation of absence; local value differences measurable. |
 | F9 Prices / money decision | NOT STARTED | Diagnose actual exchange/valuation/friction problem before comparing a common account/medium. Money never creates goods. Evidence for adoption OR deferral passes. Owner decides institution. |
@@ -62,3 +62,5 @@ F3 passed: [300-run farming evidence](../research/farming/REPORT.md). Cultivator
 F4 passed for currently useful activities: [scarcity/geography evidence](../research/labor/REPORT.md). No decorative wood/stone demand was introduced. F5 subsequently received authorization for personal capital with ownership at completion.
 
 F5 passed: [420-run capital evidence](../research/capital/REPORT.md), [registered study](CAPITAL_EXPERIMENT.md). Costs, delivery gains, worse nourishment, fragmented inputs and dead-owner capital remain preserved. F6 is blocked only on the new fixed-infrastructure access institution: [concrete crossing proposal](INFRASTRUCTURE_RIGHTS_DECISION.md). The roadmap reserves new property/access rules for the owner; personal carts confer no road/land rights.
+
+F6 now active: owner selected Commons(0) crossings with public community access. [Rights](INFRASTRUCTURE_RIGHTS_DECISION.md), [registered study](INFRASTRUCTURE_EXPERIMENT.md), [future ruler language](PLAYER_ACTION_LANGUAGE.md). The earlier access fork is resolved.
