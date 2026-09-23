@@ -21,7 +21,7 @@ and irreversible abstraction choices require a project-owner decision.
 | F5 Capital before money | PASSED | One physical capital good, provisionally cart: material/labor cost, location, ownership, custody and carrying effect. Demonstrate short-term cost and context-dependent future benefit/harm. |
 | F6 Construction / settlement | PASSED | Minimal causally necessary storage/sleep/infrastructure uses delivered materials, labor and time. Different geography creates different persistent spatial form. |
 | F7 Emergent infrastructure | PASSED | Completed civilian travel creates paths; continued use maintains them and disuse reverses wear. Effective travel time changes route/traffic outcomes under unchanged capacity and FIFO. Engineered roads and staffed maintenance remain deferred. |
-| F8 Two settlements | NOT STARTED | Contrasting physical surplus/shortage, local ownership, explicit transfer/exchange institution. Conserved flows or causal explanation of absence; local value differences measurable. |
+| F8 Two settlements | ACTIVE | Contrasting physical surplus/shortage, local ownership, existing communal transfers. Conserved flows or causal explanation of absence. No new exchange institution without an owner decision. |
 | F9 Prices / money decision | NOT STARTED | Diagnose actual exchange/valuation/friction problem before comparing a common account/medium. Money never creates goods. Evidence for adoption OR deferral passes. Owner decides institution. |
 | F10 Territory / authority | NOT STARTED | Practical communication, collection, protection, enforcement or administration depends on presence and geography. No arbitrary borders. Owner decides powers. |
 | F11 Security / military economy | NOT STARTED | Mobilization redirects existing people, food, tools, transport and time. Measure civilian consequences; military strength depends on physical economy. |
@@ -77,3 +77,9 @@ engineered roads or staffed maintenance. F8 remains unstarted in this increment.
 The [future army-control architecture](ARMY_PLAYER_CONTROL.md) is documentation
 only; armies must later use the same geography, capacities and travel laws. No
 military systems are authorized during F7.
+
+F8 active: [registered two-settlement coordination study](TWO_SETTLEMENT_EXPERIMENT.md).
+Scarcity, productive capability and allocation remain distinct. Existing Commons(0)
+spans two inhabited locations; crop/cart rights and policy remain unchanged. The
+research observer measures flows, exclusive labor time, migration, capital, local
+need and churn. Barter, money and prices are not presumed solutions.
