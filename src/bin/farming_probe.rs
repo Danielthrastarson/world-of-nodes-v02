@@ -15,9 +15,9 @@ fn output(root: &Path, name: &str) -> std::io::Result<BufWriter<fs::File>> {
 }
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<_> = env::args().skip(1).collect();
-    let map = args
-        .first()
-        .ok_or("farming_probe line|branch none|base|slow|low_yield C|F NEW_DIR [SEEDS]")?;
+    let map = args.first().ok_or(
+        "farming_probe line|branch none|base|slow|low_yield C|F NEW_DIR [SEEDS] [INITIAL_FOOD]",
+    )?;
     let model = args.get(1).ok_or("model")?;
     let site = args.get(2).ok_or("site")?;
     let root = Path::new(args.get(3).ok_or("output directory")?);
@@ -27,6 +27,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         || !["C", "F"].contains(&site.as_str())
     {
         return Err("unregistered fixture".into());
+    }
+    let initial_food: u64 = args.get(5).map(|x| x.parse()).transpose()?.unwrap_or(3000);
+    if initial_food != 3000
+        && (map != "line" || model != "base" || site != "F" || ![300, 6000].contains(&initial_food))
+    {
+        return Err("unregistered labor scarcity intervention".into());
     }
     fs::create_dir_all(root)?;
     let mut runs = output(root, "runs.csv")?;
@@ -49,6 +55,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     for seed in 0..seeds {
         let mut config = geography::configuration(map, seed, seed == 0)?;
         config.initial_request = 0;
+        if initial_food != 3000 {
+            config.food[0].1 = initial_food;
+        }
         if model != "none" {
             let mut rules = farming::Rules::default();
             if model == "slow" {

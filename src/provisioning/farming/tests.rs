@@ -273,3 +273,52 @@ fn food_farming_world_is_not_specific_to_node_labels() {
         }
     }
 }
+
+#[test]
+fn locally_observed_scarcity_changes_voluntary_labor_without_occupations() {
+    let mut c = super::super::Config {
+        nodes: 1,
+        edges: vec![],
+        starts: vec![0],
+        food: vec![],
+        boards: vec![],
+        communal: false,
+        farming: Some(Config {
+            units: vec![0],
+            rules: Rules::default(),
+        }),
+        ..super::super::Config::default()
+    };
+    let mut hungry = World::new(c.clone()).unwrap();
+    c.food = vec![(0, 100, 0, 48 * HOUR)];
+    let mut provisioned = World::new(c).unwrap();
+    hungry.advance_to(0).unwrap();
+    provisioned.advance_to(0).unwrap();
+    assert!(matches!(hungry.agents[0].action, Action::Farm { .. }));
+    assert!(matches!(
+        provisioned.agents[0].action,
+        Action::Gather { .. }
+    ));
+    assert_eq!(hungry.farm.started, 1);
+    assert_eq!(provisioned.farm.started, 0);
+}
+#[test]
+fn remote_scarcity_does_not_leak_into_prearrival_work_decisions() {
+    let mut c = super::super::Config {
+        farming: Some(Config {
+            units: vec![2; 50],
+            rules: Rules::default(),
+        }),
+        ..super::super::Config::default()
+    };
+    c.food[0].1 = 300;
+    let mut scarce = World::new(c.clone()).unwrap();
+    c.food[0].1 = 6000;
+    let mut abundant = World::new(c).unwrap();
+    for hour in 0..4 {
+        scarce.advance_to(hour * HOUR).unwrap();
+        abundant.advance_to(hour * HOUR).unwrap();
+        assert_eq!(scarce.agents, abundant.agents);
+        assert_eq!(scarce.event_hash(), abundant.event_hash());
+    }
+}
