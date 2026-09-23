@@ -1,0 +1,11 @@
+seed,key,count
+0,decision:accept,4
+0,decision:fatigue,1220
+0,decision:hunger,1314
+0,decision:interval,4430
+0,decision:other_priority,236
+0,individual_consents,4
+0,opportunities_observed,7206
+0,undertakings_completed,2
+0,undertakings_started,2
+0,unsuccessful_conception,2

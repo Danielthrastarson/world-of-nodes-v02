@@ -1,0 +1,25 @@
+{
+  "source_revision": "631c76e864dae6c77288901f027372e72add99ff",
+  "historical_executions": 113,
+  "b3_checks": [
+    "basic",
+    "decline",
+    "dependency",
+    "dependency_social",
+    "generational_control",
+    "hungry",
+    "infertile",
+    "multigeneration",
+    "multigeneration_social",
+    "multiple",
+    "parent_death",
+    "seeded_one",
+    "seeded_three",
+    "separated",
+    "stochastic",
+    "working",
+    "working_no_birth"
+  ],
+  "prior_files_unchanged": 7621,
+  "exceptions": "Measured wall runtime is nondeterministic. Optional military: None changes Config debug schema and older B2 research physical_signature; all physical fields, authoritative state/event hashes and raw traces match."
+}

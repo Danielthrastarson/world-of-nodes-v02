@@ -2,7 +2,7 @@
 
 **The simulation is the source of the graphics.** A causal kingdom simulation with primitive rendering of real agents, stocks, movement, work, and observed state.
 
-Current work follows the [gated foundation roadmap](docs/ROADMAP.md). F0–F10 and B0–B3 are complete at their registered scopes; F11A mobilization and F11B physical unit movement have passed mechanism gates. F11A’s protective-benefit gate remains open. F11C begins with a concrete threat/control specification; combat is not implemented. Money remains unjustified and unimplemented. Earlier reports below retain their historical policies and negative findings.
+Current work follows the [gated foundation roadmap](docs/ROADMAP.md). F0–F10, B0–B3 and F11A–F11C have passed their registered mechanism gates. [F11C evidence](research/combat/REPORT.md) demonstrates physical raid protection while preserving civilian costs and failed defenses; it does not establish net military welfare. Money remains unjustified and compulsory service unauthorized. Earlier reports retain their historical policies and negative findings.
 
 - [Current design contract](WORLD_OF_NODES_HANDOFF.md)
 - [Locked provisioning specification](docs/PROVISIONING_SPEC.md)

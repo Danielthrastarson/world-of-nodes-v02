@@ -1,0 +1,5 @@
+seed,person,alive,volunteered,arrived,starvation_h,consumed,location,nutrition_ms,death_ms
+0,0,true,true,true,0.000000000,18,"Node(0)",43200000,
+0,1,true,true,true,0.000000000,18,"Node(0)",43200000,
+0,2,true,true,true,0.000000000,18,"Node(0)",43200000,
+0,3,true,true,true,0.000000000,18,"Node(0)",43200000,

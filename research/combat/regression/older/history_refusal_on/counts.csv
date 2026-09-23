@@ -1,0 +1,9 @@
+seed,key,count,unique_people
+0,INSUFFICIENT_TIME,120,1
+0,PASS,1,1
+0,SIX_HOUR_MARGIN,421,1
+0,TERM_COMPLETED,1,1
+0,arrivals,1,1
+0,evaluations,542,2
+0,observations,3,2
+0,volunteers,1,1

@@ -1,0 +1,5 @@
+seed,person,alive,volunteered,arrived,starvation_h,consumed,location,nutrition_ms,death_ms
+0,0,true,false,false,0.000000000,18,"Edge { edge: 0, from: 0, to: 1, progress: 10740000000000 }",43200000,
+0,1,true,false,false,0.000000000,18,"Edge { edge: 0, from: 0, to: 1, progress: 10740000000000 }",43200000,
+0,2,true,false,false,0.000000000,18,"Edge { edge: 0, from: 0, to: 1, progress: 10740000000000 }",43200000,
+0,3,true,false,false,0.000000000,18,"Edge { edge: 0, from: 0, to: 1, progress: 10740000000000 }",43200000,

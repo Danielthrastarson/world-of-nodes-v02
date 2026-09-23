@@ -1,0 +1,10 @@
+seed,key,count
+0,social:care_assessments,1
+0,social:care_selected,1
+0,social:fear_episodes,1
+0,social:observed_evidence,1
+0,care:cancel:LOCAL_ABSENCE_OR_DEATH,1
+0,care:cancelled,1
+0,care:gate:NO_OBSERVED_SEVERE_NEED,2822
+0,care:goals,1
+0,care:travel_attempts,1

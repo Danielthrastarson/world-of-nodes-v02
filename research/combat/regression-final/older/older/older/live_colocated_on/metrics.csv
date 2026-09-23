@@ -1,0 +1,15 @@
+seed,key,count
+0,social:care_assessments,1
+0,social:care_selected,1
+0,social:fear_episodes,2
+0,social:grief_episodes,1
+0,social:observed_evidence,4
+0,care:completed,1
+0,care:food_transferred,6
+0,care:gate:NO_OBSERVED_SEVERE_NEED,719
+0,care:gate:NO_PERSONAL_CARGO,720
+0,care:gate:SELF_SURVIVAL_BUFFER,1080
+0,care:goals,1
+0,care:observed_opportunities,1801
+0,care:transfer_attempts,1
+0,care:transfers,1

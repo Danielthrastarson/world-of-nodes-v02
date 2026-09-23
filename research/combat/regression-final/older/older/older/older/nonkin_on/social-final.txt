@@ -1,0 +1,2 @@
+person=0 view=Some(PersonalView { households: [], kin: [], dependents: [], memory: Memory { sightings: {}, undertaking: None } })
+person=1 view=Some(PersonalView { households: [], kin: [], dependents: [], memory: Memory { sightings: {}, undertaking: None } })

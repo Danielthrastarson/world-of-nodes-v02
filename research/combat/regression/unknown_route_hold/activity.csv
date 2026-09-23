@@ -1,0 +1,17 @@
+seed,person,activity,hours
+0,0,idle,4.658333333
+0,0,military_duty,11.000000000
+0,0,sleep,2.333333333
+0,0,travel,6.008333333
+0,1,idle,4.658333333
+0,1,military_duty,11.000000000
+0,1,sleep,2.333333333
+0,1,travel,6.008333333
+0,2,idle,4.658333333
+0,2,military_duty,11.000000000
+0,2,sleep,2.333333333
+0,2,travel,6.008333333
+0,3,idle,4.658333333
+0,3,military_duty,11.000000000
+0,3,sleep,2.333333333
+0,3,travel,6.008333333

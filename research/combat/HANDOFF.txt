@@ -1,0 +1,39 @@
+WORLD OF NODES — F11C REPORT
+
+F11C PASSED at registered mechanism scope.
+F11A's open protective-benefit gate is satisfied by controlled evidence.
+
+1,440 runs: 12 cases, four controls, 30 paired seeds, 24h.
+
+LOCAL DEFENSE
+Voluntary muster -> physical movement -> local contact -> theft prevented.
+Food stolen: 30 -> 0 quanta.
+Food remaining at target: 134 -> 164.
+One defender incapacitated, two raiders incapacitated, one raider dead.
+
+NEGATIVE RESULTS PRESERVED
+- Under-strength: one defender dies; theft remains 30.
+- Late arrival: four assemble but no contact; theft remains 30.
+- Hunger: zero assemble; theft remains 30.
+- Congestion: theft remains 24; civilian queue exposure increases.
+- Over-mobilization: six defenders provide no more protection than four.
+- Farming: labor falls 6.667 -> 2.222 person-hours.
+- Household: care food falls 6 -> 0; dependent starvation rises 10 -> 16 hours.
+
+Paths and crossings affect raids and defenders through existing movement/FIFO.
+No military movement shortcut, security bonus or UnitHP was introduced.
+Theft changes physical custody, not legitimate ownership; material and age remain conserved.
+
+VALIDATION
+284 tests passed; 169 historical replays match; 11,261 previous files unchanged.
+All final runs pass accounting with zero FIFO overtakes.
+48 seed-zero traces independently checked for timed local contact/theft.
+Core revision: 631c76e864dae6c77288901f027372e72add99ff.
+
+CONCLUSION
+Military organization can prevent a concrete physical loss.
+That does not establish that protection outweighs all civilian and human costs.
+Food preserved, labor lost, deprivation, injuries and deaths remain separate measures.
+
+No balancing changes, conscription, requisition, conquest or further milestone added.
+Full evidence: research/combat/REPORT.md.

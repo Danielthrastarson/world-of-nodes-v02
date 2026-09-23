@@ -1,0 +1,8 @@
+seed,key,count
+0,decision:accept,1257
+0,decision:drive_disabled,3601
+0,decision:fatigue,1080
+0,decision:hunger,724
+0,decision:other_priority,540
+0,individual_consents,1257
+0,opportunities_observed,7204

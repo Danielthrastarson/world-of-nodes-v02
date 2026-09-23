@@ -1,0 +1,8 @@
+seed,hour,alive,deaths,produced,consumed,spoiled,delivered,jobs,starvation_h,queue_h,food_flows_ab,food_flows_ba,wood_flows_ab,wood_flows_ba,visits,barter_attempts,barter_completed,barter_protocol_present,accounting_error,overtakes,state_hash,event_hash
+0,0,2,0,0,0,0,0,0,0.000000000,0.000000000,0,0,0,0,0,1,0,true,0,0,d9e432e1fb99b183,eddfd4beef5c1529
+0,12,2,0,0,24,0,0,0,0.000000000,0.000000000,0,0,0,0,2,32,1,true,0,0,934d58fe843da063,9128dafa03140507
+0,36,2,0,24,78,0,0,0,0.000000000,0.000000000,0,6,0,0,3,32,1,true,0,0,186dee5d470faee4,67d6442ff64bd9c5
+0,48,2,0,24,98,2926,0,0,0.000000000,0.000000000,0,6,0,0,3,32,1,true,0,0,8d5cfa9b3d049460,d0ca260e16086ff6
+0,72,2,0,48,122,2926,0,0,12.000000000,0.000000000,0,6,0,0,3,32,1,true,0,0,b8031d1251604ba5,b79463ce8af10b3c
+0,120,1,1,96,170,2926,0,0,24.000000000,0.000000000,0,6,0,0,3,32,1,true,0,0,7b201e425eae2802,e81d743c4a342662
+0,168,1,1,144,218,2926,0,0,24.000000000,0.000000000,0,6,0,0,3,32,1,true,0,0,0fb31425d34a528b,20e4feb71ebf7eb6

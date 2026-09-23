@@ -1,0 +1,31 @@
+{
+  "source_revision": "a161e28fcc538f1a728aa796ad8c746f2d012c55",
+  "binary_sha256": "a38b0907bfe3af1f55ccd3b564470ceba91496c3525f958a46a5365a00634b70",
+  "cases": [
+    "local",
+    "under",
+    "over",
+    "late",
+    "bottleneck",
+    "hungry",
+    "congestion",
+    "path_on",
+    "path_off",
+    "crossing",
+    "household",
+    "farming"
+  ],
+  "arms": [
+    "undefended",
+    "defended",
+    "peace",
+    "peace_defended"
+  ],
+  "seeds": [
+    0
+  ],
+  "runs": 48,
+  "duration_h": 24,
+  "initial_conditions": "controlled raider purpose; voluntary defender request; local protect order; disclosed route memories; parameters per arm; crossing constructed through existing actions",
+  "interpretation": "gross theft prevention distinct from net food/household/labor outcomes; no welfare scalar"
+}

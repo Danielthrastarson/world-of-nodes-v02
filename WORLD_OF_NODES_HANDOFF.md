@@ -2,6 +2,10 @@
 
 Updated 2026-09-22 following the owner's design change.
 
+## Latest evidence — F11C
+
+See [the physical raid/protection report](research/combat/REPORT.md) and [copyable handoff](research/combat/HANDOFF.txt). F11C passes at mechanism scope; F11A’s protective-benefit gate is satisfied by actual prevented theft, with household/labor/injury costs preserved. No compulsory service or general welfare conclusion follows. Core source `631c76e`.
+
 ## Current authorization — foundation roadmap
 
 The owner now authorizes [the gated foundation roadmap](docs/ROADMAP.md), starting

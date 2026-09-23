@@ -1,0 +1,60 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 9.68s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 9 tests
+test provisioning::combat::tests::theft_is_timed_conserved_age_preserving_and_capacity_limited ... ok
+test provisioning::combat::tests::target_must_remain_local_and_contact_capable ... FAILED
+test provisioning::combat::tests::defender_arrival_interrupts_unfinished_theft_without_refunding_completed_theft ... FAILED
+test provisioning::combat::tests::raiders_cannot_bypass_theft_with_normal_communal_withdrawal ... ok
+test provisioning::combat::tests::unobserved_remote_opponents_do_not_enter_personal_view ... ok
+test provisioning::combat::tests::own_wound_forecast_matches_actual_travel_and_incapacity_blocks_work ... ok
+test provisioning::combat::tests::service_expiry_invalidates_pending_strike ... FAILED
+test provisioning::combat::tests::strikes_take_time_and_simultaneous_hits_ignore_actor_order ... FAILED
+test provisioning::combat::tests::live_raid_reaches_physical_stock_and_local_defense_prevents_theft ... FAILED
+
+failures:
+
+---- provisioning::combat::tests::target_must_remain_local_and_contact_capable stdout ----
+
+thread 'provisioning::combat::tests::target_must_remain_local_and_contact_capable' (283) panicked at src/provisioning/combat/tests.rs:60:5:
+assertion `left == right` failed
+  left: 0
+ right: 1
+
+---- provisioning::combat::tests::defender_arrival_interrupts_unfinished_theft_without_refunding_completed_theft stdout ----
+
+thread 'provisioning::combat::tests::defender_arrival_interrupts_unfinished_theft_without_refunding_completed_theft' (277) panicked at src/provisioning/combat/tests.rs:124:5:
+assertion `left == right` failed
+  left: 0
+ right: 1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- provisioning::combat::tests::service_expiry_invalidates_pending_strike stdout ----
+
+thread 'provisioning::combat::tests::service_expiry_invalidates_pending_strike' (281) panicked at src/provisioning/combat/tests.rs:167:49:
+called `Option::unwrap()` on a `None` value
+
+---- provisioning::combat::tests::strikes_take_time_and_simultaneous_hits_ignore_actor_order stdout ----
+
+thread 'provisioning::combat::tests::strikes_take_time_and_simultaneous_hits_ignore_actor_order' (282) panicked at src/provisioning/combat/tests.rs:32:5:
+assertion `left == right` failed
+  left: 0
+ right: 1
+
+---- provisioning::combat::tests::live_raid_reaches_physical_stock_and_local_defense_prevents_theft stdout ----
+
+thread 'provisioning::combat::tests::live_raid_reaches_physical_stock_and_local_defense_prevents_theft' (278) panicked at src/provisioning/combat/tests.rs:193:13:
+assertion failed: w.military.journal.count("arrivals") > 0
+
+
+failures:
+    provisioning::combat::tests::defender_arrival_interrupts_unfinished_theft_without_refunding_completed_theft
+    provisioning::combat::tests::live_raid_reaches_physical_stock_and_local_defense_prevents_theft
+    provisioning::combat::tests::service_expiry_invalidates_pending_strike
+    provisioning::combat::tests::strikes_take_time_and_simultaneous_hits_ignore_actor_order
+    provisioning::combat::tests::target_must_remain_local_and_contact_capable
+
+test result: FAILED. 4 passed; 5 failed; 0 ignored; 0 measured; 254 filtered out; finished in 0.52s
+
+error: test failed, to rerun pass `--lib`

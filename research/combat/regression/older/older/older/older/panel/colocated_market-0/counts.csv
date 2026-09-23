@@ -1,0 +1,142 @@
+seed,hour,place,event,count
+0,0,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1
+0,0,0,"CapitalGate:NO_KNOWN_DEMAND",1
+0,12,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",64
+0,12,0,"CapitalGate:NO_KNOWN_DEMAND",1
+0,12,0,"CapitalGate:NO_TIME_PAYBACK",1
+0,12,0,"Consumed",1
+0,12,0,"Queued",2
+0,12,0,"Rejected",1
+0,12,1,"Arrived",2
+0,12,1,"CapitalGate:NO_KNOWN_DEMAND",1
+0,12,1,"Consumed",7
+0,12,1,"Gathered",24
+0,12,2,"Arrived",2
+0,12,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1
+0,12,2,"Queued",2
+0,36,0,"Arrived",1
+0,36,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",82
+0,36,0,"CapitalGate:NO_KNOWN_DEMAND",2
+0,36,0,"CapitalGate:NO_TIME_PAYBACK",1
+0,36,0,"Consumed",4
+0,36,0,"Harvested",1
+0,36,0,"Interrupted:cultivation work",1
+0,36,0,"Interrupted:eat accessible food",1
+0,36,0,"Interrupted:sleep",584
+0,36,0,"Pickup",6
+0,36,0,"Queued",2
+0,36,0,"Rejected",1
+0,36,0,"SleepStarted",586
+0,36,1,"Arrived",2
+0,36,1,"CapitalGate:NO_KNOWN_DEMAND",1
+0,36,1,"Consumed",12
+0,36,1,"Gathered",54
+0,36,1,"Interrupted:eat accessible food",2
+0,36,1,"Interrupted:sleep",360
+0,36,1,"Queued",1
+0,36,1,"SleepStarted",363
+0,36,2,"Arrived",3
+0,36,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1
+0,36,2,"Queued",3
+0,48,0,"Arrived",1
+0,48,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",82
+0,48,0,"CapitalGate:NO_KNOWN_DEMAND",2
+0,48,0,"CapitalGate:NO_TIME_PAYBACK",1
+0,48,0,"Consumed",6
+0,48,0,"Harvested",1
+0,48,0,"Interrupted:cultivation work",1
+0,48,0,"Interrupted:eat accessible food",1
+0,48,0,"Interrupted:sleep",626
+0,48,0,"Pickup",6
+0,48,0,"Queued",2
+0,48,0,"Rejected",1
+0,48,0,"SleepStarted",629
+0,48,1,"Arrived",2
+0,48,1,"CapitalGate:NO_KNOWN_DEMAND",1
+0,48,1,"Consumed",14
+0,48,1,"Gathered",66
+0,48,1,"Interrupted:eat accessible food",4
+0,48,1,"Interrupted:sleep",711
+0,48,1,"Queued",1
+0,48,1,"SleepStarted",715
+0,48,2,"Arrived",3
+0,48,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1
+0,48,2,"Queued",3
+0,48,2,"Spoiled",3
+0,72,0,"Arrived",1
+0,72,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",82
+0,72,0,"CapitalGate:NO_KNOWN_DEMAND",2
+0,72,0,"CapitalGate:NO_TIME_PAYBACK",1
+0,72,0,"Consumed",8
+0,72,0,"Harvested",2
+0,72,0,"Interrupted:cultivation work",2
+0,72,0,"Interrupted:eat accessible food",1
+0,72,0,"Interrupted:sleep",1105
+0,72,0,"Pickup",11
+0,72,0,"Queued",2
+0,72,0,"Rejected",1
+0,72,0,"SleepStarted",1108
+0,72,1,"Arrived",2
+0,72,1,"CapitalGate:NO_KNOWN_DEMAND",1
+0,72,1,"Consumed",14
+0,72,1,"Gathered",66
+0,72,1,"Interrupted:eat accessible food",4
+0,72,1,"Interrupted:sleep",725
+0,72,1,"Queued",1
+0,72,1,"SleepStarted",1081
+0,72,2,"Arrived",3
+0,72,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1
+0,72,2,"Queued",3
+0,72,2,"Spoiled",3
+0,120,0,"Arrived",1
+0,120,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",82
+0,120,0,"CapitalGate:NO_KNOWN_DEMAND",2
+0,120,0,"CapitalGate:NO_TIME_PAYBACK",1
+0,120,0,"Consumed",13
+0,120,0,"Harvested",4
+0,120,0,"Interrupted:cultivation work",4
+0,120,0,"Interrupted:eat accessible food",1
+0,120,0,"Interrupted:sleep",2039
+0,120,0,"Pickup",22
+0,120,0,"Queued",2
+0,120,0,"Rejected",1
+0,120,0,"SleepStarted",2044
+0,120,1,"Arrived",2
+0,120,1,"CapitalGate:NO_KNOWN_DEMAND",1
+0,120,1,"Consumed",14
+0,120,1,"Died",1
+0,120,1,"Gathered",66
+0,120,1,"Interrupted:eat accessible food",4
+0,120,1,"Interrupted:sleep",725
+0,120,1,"Queued",1
+0,120,1,"SleepStarted",1320
+0,120,2,"Arrived",3
+0,120,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1
+0,120,2,"Queued",3
+0,120,2,"Spoiled",3
+0,168,0,"Arrived",1
+0,168,0,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",82
+0,168,0,"CapitalGate:NO_KNOWN_DEMAND",2
+0,168,0,"CapitalGate:NO_TIME_PAYBACK",1
+0,168,0,"Consumed",17
+0,168,0,"Harvested",6
+0,168,0,"Interrupted:cultivation work",6
+0,168,0,"Interrupted:eat accessible food",1
+0,168,0,"Interrupted:sleep",3009
+0,168,0,"Pickup",32
+0,168,0,"Queued",2
+0,168,0,"Rejected",1
+0,168,0,"SleepStarted",3016
+0,168,1,"Arrived",2
+0,168,1,"CapitalGate:NO_KNOWN_DEMAND",1
+0,168,1,"Consumed",14
+0,168,1,"Died",1
+0,168,1,"Gathered",66
+0,168,1,"Interrupted:eat accessible food",4
+0,168,1,"Interrupted:sleep",725
+0,168,1,"Queued",1
+0,168,1,"SleepStarted",1320
+0,168,2,"Arrived",3
+0,168,2,"CapitalGate:INSUFFICIENT_LOCAL_WOOD",1
+0,168,2,"Queued",3
+0,168,2,"Spoiled",3

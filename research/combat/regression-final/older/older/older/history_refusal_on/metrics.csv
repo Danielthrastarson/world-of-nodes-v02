@@ -1,0 +1,6 @@
+seed,key,count
+0,social:care_assessments,2
+0,social:care_refused,2
+0,care:gate:NO_OBSERVED_SEVERE_NEED,60
+0,care:observed_opportunities,2
+0,care:priority:EXISTING_POLICY_PRIORITY,2

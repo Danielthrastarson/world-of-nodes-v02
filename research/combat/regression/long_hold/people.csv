@@ -1,0 +1,5 @@
+seed,person,alive,received,active,assembled_h,departed_h,arrived_h,later_endpoint_h,released_h,release_reason,phase,starvation_h,food,nutrition_h,fatigue_h,location
+0,0,true,false,false,0.016666667,,,,11.016666667,TERM_COMPLETED,RELEASED,0.000000000,6,1.000000000,24.000000000,"Edge { edge: 0, from: 0, to: 1, progress: 25155000000000 }"
+0,1,true,false,false,0.016666667,,,,11.016666667,TERM_COMPLETED,RELEASED,0.000000000,6,1.000000000,24.000000000,"Edge { edge: 0, from: 0, to: 1, progress: 25155000000000 }"
+0,2,true,false,false,0.016666667,,,,11.016666667,TERM_COMPLETED,RELEASED,0.000000000,6,1.000000000,24.000000000,"Edge { edge: 0, from: 0, to: 1, progress: 25155000000000 }"
+0,3,true,false,false,0.016666667,,,,11.016666667,TERM_COMPLETED,RELEASED,0.000000000,6,1.000000000,24.000000000,"Edge { edge: 0, from: 0, to: 1, progress: 25155000000000 }"

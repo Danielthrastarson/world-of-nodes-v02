@@ -1,0 +1,5 @@
+seed,person,alive,received,active,assembled_h,departed_h,arrived_h,later_endpoint_h,released_h,release_reason,phase,starvation_h,food,nutrition_h,fatigue_h,location
+0,0,true,false,false,2.016666667,,,,11.766666667,TERM_COMPLETED,RELEASED,0.000000000,6,3.750000000,12.250000000,"Node(2)"
+0,1,true,false,false,2.016666667,,,,11.766666667,TERM_COMPLETED,RELEASED,0.000000000,6,3.750000000,12.250000000,"Node(2)"
+0,2,true,false,false,,,,,-0.233333333,LOCAL_ADMISSION_CLOSED,RELEASED,0.000000000,6,3.750000000,12.250000000,"Node(2)"
+0,3,true,false,false,,,,,-0.233333333,LOCAL_ADMISSION_CLOSED,RELEASED,0.000000000,6,3.750000000,12.250000000,"Node(2)"

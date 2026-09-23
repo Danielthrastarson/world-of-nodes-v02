@@ -1,0 +1,338 @@
+[
+  {
+    "case_arm": "bottleneck_defended",
+    "seed": 0,
+    "local_timed_hits": 12,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "bottleneck_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "bottleneck_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "bottleneck_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "congestion_defended",
+    "seed": 0,
+    "local_timed_hits": 4,
+    "local_timed_theft": 24,
+    "assembled": 4
+  },
+  {
+    "case_arm": "congestion_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "congestion_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "congestion_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 24,
+    "assembled": 0
+  },
+  {
+    "case_arm": "crossing_defended",
+    "seed": 0,
+    "local_timed_hits": 12,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "crossing_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "crossing_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "crossing_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "farming_defended",
+    "seed": 0,
+    "local_timed_hits": 12,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "farming_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "farming_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "farming_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "household_defended",
+    "seed": 0,
+    "local_timed_hits": 12,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "household_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "household_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "household_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "hungry_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "hungry_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "hungry_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "hungry_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "late_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 4
+  },
+  {
+    "case_arm": "late_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "late_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "late_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "local_defended",
+    "seed": 0,
+    "local_timed_hits": 12,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "local_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "local_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "local_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "over_defended",
+    "seed": 0,
+    "local_timed_hits": 12,
+    "local_timed_theft": 0,
+    "assembled": 6
+  },
+  {
+    "case_arm": "over_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "over_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 6
+  },
+  {
+    "case_arm": "over_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "path_off_defended",
+    "seed": 0,
+    "local_timed_hits": 12,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "path_off_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "path_off_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "path_off_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "path_on_defended",
+    "seed": 0,
+    "local_timed_hits": 12,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "path_on_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "path_on_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 4
+  },
+  {
+    "case_arm": "path_on_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  },
+  {
+    "case_arm": "under_defended",
+    "seed": 0,
+    "local_timed_hits": 4,
+    "local_timed_theft": 30,
+    "assembled": 1
+  },
+  {
+    "case_arm": "under_peace",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 0
+  },
+  {
+    "case_arm": "under_peace_defended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 0,
+    "assembled": 1
+  },
+  {
+    "case_arm": "under_undefended",
+    "seed": 0,
+    "local_timed_hits": 0,
+    "local_timed_theft": 30,
+    "assembled": 0
+  }
+]

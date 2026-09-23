@@ -1,0 +1,11 @@
+seed,person,activity,hours
+0,0,farming,7.368333333
+0,0,idle,33.631666667
+0,0,reproduction,1.000000000
+0,0,sleep,18.000000000
+0,1,farming,7.368333333
+0,1,idle,33.631666667
+0,1,reproduction,1.000000000
+0,1,sleep,18.000000000
+0,2,idle,39.333333333
+0,2,sleep,8.683333333

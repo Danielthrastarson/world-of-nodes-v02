@@ -1,0 +1,7 @@
+seed,person,sex,birth_time_ms,generation,parents,matured,child,alive,nutrition_ms,consumed,starvation_h,death_ms
+0,0,Female,-86400000,1,,true,false,false,0,3,24.000000000,162000000
+0,1,Male,-86400000,1,,true,false,false,0,3,24.000000000,162000000
+0,2,Female,0,2,0:1,true,false,false,0,12,24.016666667,129660000
+0,3,Male,0,2,0:1,true,false,false,0,20,25.050000000,162180000
+0,4,Female,0,2,0:1,true,false,false,0,22,25.083333333,169500000
+0,5,Male,32460000,2,0:1,false,false,false,0,0,24.000000000,118860000

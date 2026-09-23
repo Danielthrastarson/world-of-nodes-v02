@@ -1,0 +1,21 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.99s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 1 test
+
+thread 'provisioning::combat::tests::partitioned_execution_and_reverse_evaluation_preserve_contact_outcomes' (274) panicked at src/provisioning/combat/tests.rs:290:5:
+assertion `left == right` failed
+  left: 6087798112410859481
+ right: 4201470379287829371
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test provisioning::combat::tests::partitioned_execution_and_reverse_evaluation_preserve_contact_outcomes ... FAILED
+
+failures:
+
+failures:
+    provisioning::combat::tests::partitioned_execution_and_reverse_evaluation_preserve_contact_outcomes
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 265 filtered out; finished in 0.42s
+
+error: test failed, to rerun pass `--lib`

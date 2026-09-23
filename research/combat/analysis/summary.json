@@ -1,0 +1,4238 @@
+{
+  "bottleneck": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 134.0,
+      "produced": 0.0,
+      "consumed": 107.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 38.25185111111111,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 53.0,
+      "target_food_remaining_all_custodies": 147.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 78.0,
+      "deaths": 2.0,
+      "starvation_h": 0.0,
+      "queue_h": 6.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 2.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 36.87777777777778,
+      "prospective_defenders_combat_h": 3.1222222222222222,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 3.0,
+      "hits": 12.0,
+      "engaged": 7.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 4.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 40.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 4.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -30.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 30.0,
+        "min": 30.0,
+        "max": 30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 30.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -29.0,
+        "min": -29.0,
+        "max": -29.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -29.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 2.0,
+        "min": 2.0,
+        "max": 2.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 2.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -32.25185111111111,
+        "min": -32.25185111111111,
+        "max": -32.25185111111111,
+        "peace_defense_minus_peace_mean": -5.333333333333333,
+        "interaction": -26.918517777777776
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 2.0,
+        "min": 2.0,
+        "max": 2.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 2.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": -4.033333333333333,
+        "min": -4.033333333333333,
+        "max": -4.033333333333333,
+        "peace_defense_minus_peace_mean": -4.033333333333333,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -5.333333333333333,
+        "min": -5.333333333333333,
+        "max": -5.333333333333333,
+        "peace_defense_minus_peace_mean": -5.333333333333333,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 36.87777777777778,
+        "min": 36.87777777777778,
+        "max": 36.87777777777778,
+        "peace_defense_minus_peace_mean": 40.0,
+        "interaction": -3.12222222222222
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 3.1222222222222222,
+        "min": 3.1222222222222222,
+        "max": 3.1222222222222222,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.1222222222222222
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -17.0,
+        "min": -17.0,
+        "max": -17.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -17.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 17.0,
+        "min": 17.0,
+        "max": 17.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 17.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 12.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 7.0,
+        "min": 7.0,
+        "max": 7.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 7.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "congestion": {
+    "undefended": {
+      "stolen": 24.0,
+      "stock": 0.0,
+      "produced": 0.0,
+      "consumed": 296.56666666666666,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0661111111111111,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.06667,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 0.0,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0661111111111111,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 194.0,
+      "target_food_remaining_all_custodies": 6.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 24.0,
+      "stock": 0.0,
+      "produced": 0.0,
+      "consumed": 252.0,
+      "deaths": 1.0,
+      "starvation_h": 0.0,
+      "queue_h": 27.57111111111111,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 42.0,
+      "prospective_defenders_deaths": 1.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.022223333333333335,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 11.805555555555555,
+      "prospective_defenders_queue_h": 17.266666666666666,
+      "prospective_defenders_military_duty_h": 19.86111111111111,
+      "prospective_defenders_combat_h": 0.25,
+      "other_civilians_queue_h": 10.304444444444444,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 192.0,
+      "target_food_remaining_all_custodies": 8.0,
+      "incapacitations": 1.0,
+      "hits": 4.0,
+      "engaged": 4.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 4.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 0.0,
+      "produced": 0.0,
+      "consumed": 290.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.06667,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 0.0,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 200.0,
+      "target_food_remaining_all_custodies": 0.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 0.0,
+      "produced": 0.0,
+      "consumed": 266.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 12.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 48.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.022223333333333335,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 8.122222222222222,
+      "prospective_defenders_queue_h": 12.0,
+      "prospective_defenders_military_duty_h": 27.877777777777776,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 200.0,
+      "target_food_remaining_all_custodies": 0.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 4.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -44.56666666666667,
+        "min": -45.0,
+        "max": -32.0,
+        "peace_defense_minus_peace_mean": -24.0,
+        "interaction": -20.566666666666666
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": 27.505,
+        "min": 25.05,
+        "max": 31.041666666666668,
+        "peace_defense_minus_peace_mean": 12.0,
+        "interaction": 15.504999999999999
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": -24.0,
+        "interaction": -6.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": -0.04444666666666666,
+        "min": -0.04444666666666666,
+        "max": -0.04444666666666666,
+        "peace_defense_minus_peace_mean": -0.04444666666666666,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": 11.805555555555555,
+        "min": 11.805555555555555,
+        "max": 11.805555555555555,
+        "peace_defense_minus_peace_mean": 8.122222222222222,
+        "interaction": 3.6833333333333336
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": 17.266666666666666,
+        "min": 17.266666666666666,
+        "max": 17.266666666666666,
+        "peace_defense_minus_peace_mean": 12.0,
+        "interaction": 5.266666666666666
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 19.86111111111111,
+        "min": 19.86111111111111,
+        "max": 19.86111111111111,
+        "peace_defense_minus_peace_mean": 27.877777777777776,
+        "interaction": -8.016666666666666
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 0.25,
+        "min": 0.25,
+        "max": 0.25,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.25
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 10.238333333333333,
+        "min": 7.783333333333333,
+        "max": 13.775,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 10.238333333333333
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -2.0,
+        "min": -2.0,
+        "max": -2.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -2.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 2.0,
+        "min": 2.0,
+        "max": 2.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 2.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "crossing": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 136.0,
+      "produced": 0.0,
+      "consumed": 104.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 38.335187777777776,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 70.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.350000555555557,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 50.0,
+      "target_food_remaining_all_custodies": 150.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 78.0,
+      "deaths": 2.0,
+      "starvation_h": 0.0,
+      "queue_h": 6.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 24.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 2.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 36.73888916666667,
+      "prospective_defenders_combat_h": 3.1944441666666665,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 3.0,
+      "hits": 12.0,
+      "engaged": 7.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 4.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 166.0,
+      "produced": 0.0,
+      "consumed": 88.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 70.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.350000555555557,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 34.0,
+      "target_food_remaining_all_custodies": 166.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 24.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 39.93333333333333,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 4.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -30.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 28.0,
+        "min": 28.0,
+        "max": 28.0,
+        "peace_defense_minus_peace_mean": -2.0,
+        "interaction": 30.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -26.0,
+        "min": -26.0,
+        "max": -26.0,
+        "peace_defense_minus_peace_mean": 2.0,
+        "interaction": -28.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 2.0,
+        "min": 2.0,
+        "max": 2.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 2.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -32.335187777777776,
+        "min": -32.335187777777776,
+        "max": -32.335187777777776,
+        "peace_defense_minus_peace_mean": -5.333333333333333,
+        "interaction": -27.001854444444444
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 24.0,
+        "min": 24.0,
+        "max": 24.0,
+        "peace_defense_minus_peace_mean": 24.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 2.0,
+        "min": 2.0,
+        "max": 2.0,
+        "peace_defense_minus_peace_mean": 2.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 2.0,
+        "min": 2.0,
+        "max": 2.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 2.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": -4.016667222222223,
+        "min": -4.016667222222223,
+        "max": -4.016667222222223,
+        "peace_defense_minus_peace_mean": -4.016667222222223,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -5.333333333333333,
+        "min": -5.333333333333333,
+        "max": -5.333333333333333,
+        "peace_defense_minus_peace_mean": -5.333333333333333,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 36.73888916666667,
+        "min": 36.73888916666667,
+        "max": 36.73888916666667,
+        "peace_defense_minus_peace_mean": 39.93333333333333,
+        "interaction": -3.1944441666666634
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 3.1944441666666665,
+        "min": 3.1944441666666665,
+        "max": 3.1944441666666665,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.1944441666666665
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -14.0,
+        "min": -14.0,
+        "max": -14.0,
+        "peace_defense_minus_peace_mean": 2.0,
+        "interaction": -16.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 14.0,
+        "min": 14.0,
+        "max": 14.0,
+        "peace_defense_minus_peace_mean": -2.0,
+        "interaction": 16.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 12.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 7.0,
+        "min": 7.0,
+        "max": 7.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 7.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "farming": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 142.0,
+      "produced": 0.0,
+      "consumed": 100.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 8.066666666666666,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 64.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 6.666666666666667,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 25.3,
+      "prospective_defenders_queue_h": 8.066666666666666,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 46.0,
+      "target_food_remaining_all_custodies": 154.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 0.0,
+      "stock": 168.0,
+      "produced": 0.0,
+      "consumed": 80.0,
+      "deaths": 1.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 68.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 1.0,
+      "prospective_defenders_farming_h": 2.2222222222222223,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.3,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 29.733333333333334,
+      "prospective_defenders_combat_h": 3.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 32.0,
+      "target_food_remaining_all_custodies": 168.0,
+      "incapacitations": 4.0,
+      "hits": 12.0,
+      "engaged": 7.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 4.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 172.0,
+      "produced": 0.0,
+      "consumed": 82.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 8.066666666666666,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 64.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 6.666666666666667,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 25.3,
+      "prospective_defenders_queue_h": 8.066666666666666,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 28.0,
+      "target_food_remaining_all_custodies": 172.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 168.0,
+      "produced": 0.0,
+      "consumed": 86.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 68.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 2.2222222222222223,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.3,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 40.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 32.0,
+      "target_food_remaining_all_custodies": 168.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 4.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -30.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 26.0,
+        "min": 26.0,
+        "max": 26.0,
+        "peace_defense_minus_peace_mean": -4.0,
+        "interaction": 30.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -20.0,
+        "min": -20.0,
+        "max": -20.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": -24.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -8.066666666666666,
+        "min": -8.066666666666666,
+        "max": -8.066666666666666,
+        "peace_defense_minus_peace_mean": -8.066666666666666,
+        "interaction": 0.0
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": -4.444444444444445,
+        "min": -4.444444444444445,
+        "max": -4.444444444444445,
+        "peace_defense_minus_peace_mean": -4.444444444444445,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": -8.0,
+        "min": -8.0,
+        "max": -8.0,
+        "peace_defense_minus_peace_mean": -8.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -8.066666666666666,
+        "min": -8.066666666666666,
+        "max": -8.066666666666666,
+        "peace_defense_minus_peace_mean": -8.066666666666666,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 29.733333333333334,
+        "min": 29.733333333333334,
+        "max": 29.733333333333334,
+        "peace_defense_minus_peace_mean": 40.0,
+        "interaction": -10.266666666666666
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.0
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -14.0,
+        "min": -14.0,
+        "max": -14.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": -18.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 14.0,
+        "min": 14.0,
+        "max": 14.0,
+        "peace_defense_minus_peace_mean": -4.0,
+        "interaction": 18.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 12.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 7.0,
+        "min": 7.0,
+        "max": 7.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 7.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "household": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 128.0,
+      "produced": 0.0,
+      "consumed": 114.0,
+      "deaths": 0.0,
+      "starvation_h": 10.0,
+      "queue_h": 2.6666666666666665,
+      "care_food": 6.0,
+      "household_separation_h": 21.983333333333334,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 16.016666666666666,
+      "prospective_defenders_queue_h": 2.6666666666666665,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 10.0,
+      "target_food_consumed": 60.0,
+      "target_food_remaining_all_custodies": 140.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 84.0,
+      "deaths": 1.0,
+      "starvation_h": 16.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 22.9,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 1.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 29.733333333333334,
+      "prospective_defenders_combat_h": 3.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 16.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 4.0,
+      "hits": 12.0,
+      "engaged": 7.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 4.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 158.0,
+      "produced": 0.0,
+      "consumed": 96.0,
+      "deaths": 0.0,
+      "starvation_h": 10.0,
+      "queue_h": 2.6666666666666665,
+      "care_food": 6.0,
+      "household_separation_h": 21.983333333333334,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 16.016666666666666,
+      "prospective_defenders_queue_h": 2.6666666666666665,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 10.0,
+      "target_food_consumed": 42.0,
+      "target_food_remaining_all_custodies": 158.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 16.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 22.9,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 40.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 16.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 4.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -30.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 36.0,
+        "min": 36.0,
+        "max": 36.0,
+        "peace_defense_minus_peace_mean": 6.0,
+        "interaction": 30.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": -6.0,
+        "interaction": -24.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 6.0,
+        "min": 6.0,
+        "max": 6.0,
+        "peace_defense_minus_peace_mean": 6.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -2.6666666666666665,
+        "min": -2.6666666666666665,
+        "max": -2.6666666666666665,
+        "peace_defense_minus_peace_mean": -2.6666666666666665,
+        "interaction": 0.0
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": -6.0,
+        "min": -6.0,
+        "max": -6.0,
+        "peace_defense_minus_peace_mean": -6.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.9166666666666643,
+        "min": 0.9166666666666643,
+        "max": 0.9166666666666643,
+        "peace_defense_minus_peace_mean": 0.9166666666666643,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": -2.683333333333332,
+        "min": -2.683333333333332,
+        "max": -2.683333333333332,
+        "peace_defense_minus_peace_mean": -2.683333333333332,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -2.6666666666666665,
+        "min": -2.6666666666666665,
+        "max": -2.6666666666666665,
+        "peace_defense_minus_peace_mean": -2.6666666666666665,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 29.733333333333334,
+        "min": 29.733333333333334,
+        "max": 29.733333333333334,
+        "peace_defense_minus_peace_mean": 40.0,
+        "interaction": -10.266666666666666
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.0
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 6.0,
+        "min": 6.0,
+        "max": 6.0,
+        "peace_defense_minus_peace_mean": 6.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -24.0,
+        "min": -24.0,
+        "max": -24.0,
+        "peace_defense_minus_peace_mean": -6.0,
+        "interaction": -18.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 24.0,
+        "min": 24.0,
+        "max": 24.0,
+        "peace_defense_minus_peace_mean": 6.0,
+        "interaction": 18.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 12.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 7.0,
+        "min": 7.0,
+        "max": 7.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 7.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "hungry": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 0.0,
+      "produced": 0.0,
+      "consumed": 206.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 4.5,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 170.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 14.0,
+      "prospective_defenders_queue_h": 4.5,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 188.0,
+      "target_food_remaining_all_custodies": 12.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 30.0,
+      "stock": 0.0,
+      "produced": 0.0,
+      "consumed": 206.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 4.5,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 170.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 14.0,
+      "prospective_defenders_queue_h": 4.5,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 188.0,
+      "target_food_remaining_all_custodies": 12.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 26.0,
+      "produced": 0.0,
+      "consumed": 192.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 4.5,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 174.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 14.0,
+      "prospective_defenders_queue_h": 4.5,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 174.0,
+      "target_food_remaining_all_custodies": 26.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 26.0,
+      "produced": 0.0,
+      "consumed": 192.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 4.5,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 174.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 14.0,
+      "prospective_defenders_queue_h": 4.5,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 174.0,
+      "target_food_remaining_all_custodies": 26.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "late": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 170.0,
+      "produced": 0.0,
+      "consumed": 72.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 11.933333333333334,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 36.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 47.86666666666667,
+      "prospective_defenders_queue_h": 11.933333333333334,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 18.0,
+      "target_food_remaining_all_custodies": 182.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 30.0,
+      "stock": 146.0,
+      "produced": 0.0,
+      "consumed": 96.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 60.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 56.422222222222224,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 15.511111111111111,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 42.0,
+      "target_food_remaining_all_custodies": 158.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 4.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 200.0,
+      "produced": 0.0,
+      "consumed": 54.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 11.933333333333334,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 36.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 47.86666666666667,
+      "prospective_defenders_queue_h": 11.933333333333334,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 0.0,
+      "target_food_remaining_all_custodies": 200.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 176.0,
+      "produced": 0.0,
+      "consumed": 78.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 60.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 56.422222222222224,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 15.511111111111111,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 24.0,
+      "target_food_remaining_all_custodies": 176.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 4.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": -24.0,
+        "min": -24.0,
+        "max": -24.0,
+        "peace_defense_minus_peace_mean": -24.0,
+        "interaction": 0.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": 24.0,
+        "min": 24.0,
+        "max": 24.0,
+        "peace_defense_minus_peace_mean": 24.0,
+        "interaction": 0.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -11.933333333333334,
+        "min": -11.933333333333334,
+        "max": -11.933333333333334,
+        "peace_defense_minus_peace_mean": -11.933333333333334,
+        "interaction": 0.0
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 24.0,
+        "min": 24.0,
+        "max": 24.0,
+        "peace_defense_minus_peace_mean": 24.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": 8.555555555555557,
+        "min": 8.555555555555557,
+        "max": 8.555555555555557,
+        "peace_defense_minus_peace_mean": 8.555555555555557,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -11.933333333333334,
+        "min": -11.933333333333334,
+        "max": -11.933333333333334,
+        "peace_defense_minus_peace_mean": -11.933333333333334,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 15.511111111111111,
+        "min": 15.511111111111111,
+        "max": 15.511111111111111,
+        "peace_defense_minus_peace_mean": 15.511111111111111,
+        "interaction": 0.0
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": 24.0,
+        "min": 24.0,
+        "max": 24.0,
+        "peace_defense_minus_peace_mean": 24.0,
+        "interaction": 0.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": -24.0,
+        "min": -24.0,
+        "max": -24.0,
+        "peace_defense_minus_peace_mean": -24.0,
+        "interaction": 0.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "local": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 134.0,
+      "produced": 0.0,
+      "consumed": 108.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 54.0,
+      "target_food_remaining_all_custodies": 146.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 84.0,
+      "deaths": 1.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 1.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 29.733333333333334,
+      "prospective_defenders_combat_h": 3.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 4.0,
+      "hits": 12.0,
+      "engaged": 7.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 4.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 40.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 4.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -30.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 30.0,
+        "min": 30.0,
+        "max": 30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 30.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -24.0,
+        "min": -24.0,
+        "max": -24.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -24.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -5.333333333333333,
+        "min": -5.333333333333333,
+        "max": -5.333333333333333,
+        "peace_defense_minus_peace_mean": -5.333333333333333,
+        "interaction": 0.0
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": -4.033333333333333,
+        "min": -4.033333333333333,
+        "max": -4.033333333333333,
+        "peace_defense_minus_peace_mean": -4.033333333333333,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -5.333333333333333,
+        "min": -5.333333333333333,
+        "max": -5.333333333333333,
+        "peace_defense_minus_peace_mean": -5.333333333333333,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 29.733333333333334,
+        "min": 29.733333333333334,
+        "max": 29.733333333333334,
+        "peace_defense_minus_peace_mean": 40.0,
+        "interaction": -10.266666666666666
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.0
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -18.0,
+        "min": -18.0,
+        "max": -18.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -18.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 18.0,
+        "min": 18.0,
+        "max": 18.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 18.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 12.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 7.0,
+        "min": 7.0,
+        "max": 7.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 7.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "over": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 134.0,
+      "produced": 0.0,
+      "consumed": 108.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 54.0,
+      "target_food_remaining_all_custodies": 146.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 84.0,
+      "deaths": 1.0,
+      "starvation_h": 0.0,
+      "queue_h": 4.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 6.0,
+      "receipts": 6.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 1.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 12.0,
+      "prospective_defenders_queue_h": 4.0,
+      "prospective_defenders_military_duty_h": 45.733333333333334,
+      "prospective_defenders_combat_h": 3.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 4.0,
+      "hits": 12.0,
+      "engaged": 7.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 6.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 4.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 6.0,
+      "receipts": 6.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 12.0,
+      "prospective_defenders_queue_h": 4.0,
+      "prospective_defenders_military_duty_h": 56.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 6.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -30.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 30.0,
+        "min": 30.0,
+        "max": 30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 30.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -24.0,
+        "min": -24.0,
+        "max": -24.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -24.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -1.333333333333333,
+        "min": -1.333333333333333,
+        "max": -1.333333333333333,
+        "peace_defense_minus_peace_mean": -1.333333333333333,
+        "interaction": 0.0
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 6.0,
+        "min": 6.0,
+        "max": 6.0,
+        "peace_defense_minus_peace_mean": 6.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 6.0,
+        "min": 6.0,
+        "max": 6.0,
+        "peace_defense_minus_peace_mean": 6.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": -5.366666666666667,
+        "min": -5.366666666666667,
+        "max": -5.366666666666667,
+        "peace_defense_minus_peace_mean": -5.366666666666667,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -1.333333333333333,
+        "min": -1.333333333333333,
+        "max": -1.333333333333333,
+        "peace_defense_minus_peace_mean": -1.333333333333333,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 45.733333333333334,
+        "min": 45.733333333333334,
+        "max": 45.733333333333334,
+        "peace_defense_minus_peace_mean": 56.0,
+        "interaction": -10.266666666666666
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.0
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -18.0,
+        "min": -18.0,
+        "max": -18.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -18.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 18.0,
+        "min": 18.0,
+        "max": 18.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 18.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 12.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 7.0,
+        "min": 7.0,
+        "max": 7.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 7.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 6.0,
+        "min": 6.0,
+        "max": 6.0,
+        "peace_defense_minus_peace_mean": 6.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "path_off": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 134.0,
+      "produced": 0.0,
+      "consumed": 108.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 54.0,
+      "target_food_remaining_all_custodies": 146.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 84.0,
+      "deaths": 1.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 1.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 29.733333333333334,
+      "prospective_defenders_combat_h": 3.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 4.0,
+      "hits": 12.0,
+      "engaged": 7.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 4.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 13.333333333333334,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 40.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 4.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -30.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 30.0,
+        "min": 30.0,
+        "max": 30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 30.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -24.0,
+        "min": -24.0,
+        "max": -24.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -24.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -5.333333333333333,
+        "min": -5.333333333333333,
+        "max": -5.333333333333333,
+        "peace_defense_minus_peace_mean": -5.333333333333333,
+        "interaction": 0.0
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": -4.033333333333333,
+        "min": -4.033333333333333,
+        "max": -4.033333333333333,
+        "peace_defense_minus_peace_mean": -4.033333333333333,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -5.333333333333333,
+        "min": -5.333333333333333,
+        "max": -5.333333333333333,
+        "peace_defense_minus_peace_mean": -5.333333333333333,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 29.733333333333334,
+        "min": 29.733333333333334,
+        "max": 29.733333333333334,
+        "peace_defense_minus_peace_mean": 40.0,
+        "interaction": -10.266666666666666
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.0
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -18.0,
+        "min": -18.0,
+        "max": -18.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -18.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 18.0,
+        "min": 18.0,
+        "max": 18.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 18.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 12.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 7.0,
+        "min": 7.0,
+        "max": 7.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 7.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "path_on": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 134.0,
+      "produced": 0.0,
+      "consumed": 108.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 4.8213333333333335,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 15.254666666666667,
+      "prospective_defenders_queue_h": 4.8213333333333335,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 54.0,
+      "target_food_remaining_all_custodies": 146.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 84.0,
+      "deaths": 1.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 1.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 11.968,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 30.333333333333332,
+      "prospective_defenders_combat_h": 3.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 4.0,
+      "hits": 12.0,
+      "engaged": 7.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 4.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 4.8213333333333335,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 15.254666666666667,
+      "prospective_defenders_queue_h": 4.8213333333333335,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 0.0,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 4.0,
+      "receipts": 4.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 11.968,
+      "prospective_defenders_queue_h": 0.0,
+      "prospective_defenders_military_duty_h": 40.8,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 4.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": -30.0,
+        "min": -30.0,
+        "max": -30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -30.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 30.0,
+        "min": 30.0,
+        "max": 30.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 30.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -24.0,
+        "min": -24.0,
+        "max": -24.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -24.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -4.8213333333333335,
+        "min": -4.8213333333333335,
+        "max": -4.8213333333333335,
+        "peace_defense_minus_peace_mean": -4.8213333333333335,
+        "interaction": 0.0
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": -3.286666666666667,
+        "min": -3.286666666666667,
+        "max": -3.286666666666667,
+        "peace_defense_minus_peace_mean": -3.286666666666667,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -4.8213333333333335,
+        "min": -4.8213333333333335,
+        "max": -4.8213333333333335,
+        "peace_defense_minus_peace_mean": -4.8213333333333335,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 30.333333333333332,
+        "min": 30.333333333333332,
+        "max": 30.333333333333332,
+        "peace_defense_minus_peace_mean": 40.8,
+        "interaction": -10.466666666666665
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 3.0
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -18.0,
+        "min": -18.0,
+        "max": -18.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -18.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 18.0,
+        "min": 18.0,
+        "max": 18.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 18.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 12.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 7.0,
+        "min": 7.0,
+        "max": 7.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 7.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 4.0,
+        "interaction": 0.0
+      }
+    }
+  },
+  "under": {
+    "undefended": {
+      "stolen": 30.0,
+      "stock": 134.0,
+      "produced": 0.0,
+      "consumed": 108.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 54.0,
+      "target_food_remaining_all_custodies": 146.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 0.0
+    },
+    "defended": {
+      "stolen": 30.0,
+      "stock": 140.0,
+      "produced": 0.0,
+      "consumed": 94.0,
+      "deaths": 1.0,
+      "starvation_h": 0.0,
+      "queue_h": 2.6666666666666665,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 1.0,
+      "receipts": 1.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 60.0,
+      "prospective_defenders_deaths": 1.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 16.016666666666666,
+      "prospective_defenders_queue_h": 2.6666666666666665,
+      "prospective_defenders_military_duty_h": 1.9833333333333334,
+      "prospective_defenders_combat_h": 0.25,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 46.0,
+      "target_food_remaining_all_custodies": 154.0,
+      "incapacitations": 1.0,
+      "hits": 4.0,
+      "engaged": 4.0,
+      "attackers_reaching_stock": 3.0,
+      "defenders_arriving_target": 1.0
+    },
+    "peace": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 5.333333333333333,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 0.0,
+      "receipts": 0.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 17.366666666666667,
+      "prospective_defenders_queue_h": 5.333333333333333,
+      "prospective_defenders_military_duty_h": 0.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 0.0
+    },
+    "peace_defended": {
+      "stolen": 0.0,
+      "stock": 164.0,
+      "produced": 0.0,
+      "consumed": 90.0,
+      "deaths": 0.0,
+      "starvation_h": 0.0,
+      "queue_h": 2.6666666666666665,
+      "care_food": 0.0,
+      "household_separation_h": 0.0,
+      "assembled": 1.0,
+      "receipts": 1.0,
+      "military_food": 0.0,
+      "prospective_defenders_food": 72.0,
+      "prospective_defenders_deaths": 0.0,
+      "raiders_deaths": 0.0,
+      "prospective_defenders_farming_h": 0.0,
+      "prospective_defenders_gather_h": 0.0,
+      "prospective_defenders_construction_h": 0.0,
+      "prospective_defenders_travel_h": 16.016666666666666,
+      "prospective_defenders_queue_h": 2.6666666666666665,
+      "prospective_defenders_military_duty_h": 10.0,
+      "prospective_defenders_combat_h": 0.0,
+      "other_civilians_queue_h": 0.0,
+      "other_civilians_starvation_h": 0.0,
+      "target_food_consumed": 36.0,
+      "target_food_remaining_all_custodies": 164.0,
+      "incapacitations": 0.0,
+      "hits": 0.0,
+      "engaged": 0.0,
+      "attackers_reaching_stock": 0.0,
+      "defenders_arriving_target": 1.0
+    },
+    "paired_effects": {
+      "stolen": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "stock": {
+        "defense_minus_undefended_mean": 6.0,
+        "min": 6.0,
+        "max": 6.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 6.0
+      },
+      "produced": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "consumed": {
+        "defense_minus_undefended_mean": -14.0,
+        "min": -14.0,
+        "max": -14.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -14.0
+      },
+      "deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "queue_h": {
+        "defense_minus_undefended_mean": -2.6666666666666665,
+        "min": -2.6666666666666665,
+        "max": -2.6666666666666665,
+        "peace_defense_minus_peace_mean": -2.6666666666666665,
+        "interaction": 0.0
+      },
+      "care_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "household_separation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "assembled": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 1.0,
+        "interaction": 0.0
+      },
+      "receipts": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 1.0,
+        "interaction": 0.0
+      },
+      "military_food": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_food": {
+        "defense_minus_undefended_mean": -12.0,
+        "min": -12.0,
+        "max": -12.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -12.0
+      },
+      "prospective_defenders_deaths": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "raiders_deaths": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_farming_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_gather_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_construction_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "prospective_defenders_travel_h": {
+        "defense_minus_undefended_mean": -1.3500000000000014,
+        "min": -1.3500000000000014,
+        "max": -1.3500000000000014,
+        "peace_defense_minus_peace_mean": -1.3500000000000014,
+        "interaction": 0.0
+      },
+      "prospective_defenders_queue_h": {
+        "defense_minus_undefended_mean": -2.6666666666666665,
+        "min": -2.6666666666666665,
+        "max": -2.6666666666666665,
+        "peace_defense_minus_peace_mean": -2.6666666666666665,
+        "interaction": 0.0
+      },
+      "prospective_defenders_military_duty_h": {
+        "defense_minus_undefended_mean": 1.9833333333333334,
+        "min": 1.9833333333333334,
+        "max": 1.9833333333333334,
+        "peace_defense_minus_peace_mean": 10.0,
+        "interaction": -8.016666666666666
+      },
+      "prospective_defenders_combat_h": {
+        "defense_minus_undefended_mean": 0.25,
+        "min": 0.25,
+        "max": 0.25,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.25
+      },
+      "other_civilians_queue_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "other_civilians_starvation_h": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "target_food_consumed": {
+        "defense_minus_undefended_mean": -8.0,
+        "min": -8.0,
+        "max": -8.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": -8.0
+      },
+      "target_food_remaining_all_custodies": {
+        "defense_minus_undefended_mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 8.0
+      },
+      "incapacitations": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 1.0
+      },
+      "hits": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "engaged": {
+        "defense_minus_undefended_mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 4.0
+      },
+      "attackers_reaching_stock": {
+        "defense_minus_undefended_mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "peace_defense_minus_peace_mean": 0.0,
+        "interaction": 0.0
+      },
+      "defenders_arriving_target": {
+        "defense_minus_undefended_mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "peace_defense_minus_peace_mean": 1.0,
+        "interaction": 0.0
+      }
+    }
+  }
+}

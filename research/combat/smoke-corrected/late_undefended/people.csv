@@ -1,0 +1,10 @@
+seed,person,alive,injuries,nutrition_h,fatigue_h,food,starvation_h,mustered,raid_quantity,location
+0,0,true,0,6.000000000,24.000000000,6,0.000000000,false,0,"Edge { edge: 0, from: 0, to: 2, progress: 25110000000000 }"
+0,1,true,0,6.000000000,24.000000000,6,0.000000000,false,0,"Edge { edge: 0, from: 0, to: 2, progress: 25110000000000 }"
+0,2,true,0,6.000000000,24.000000000,6,0.000000000,false,0,"Edge { edge: 0, from: 0, to: 2, progress: 25110000000000 }"
+0,3,true,0,6.000000000,24.000000000,6,0.000000000,false,0,"Edge { edge: 0, from: 0, to: 2, progress: 25110000000000 }"
+0,4,true,0,6.000000000,10.000000000,6,0.000000000,false,0,"Node(0)"
+0,5,true,0,6.000000000,10.000000000,6,0.000000000,false,0,"Node(0)"
+0,6,true,0,12.000000000,20.400000000,12,0.000000000,false,10,"Node(1)"
+0,7,true,0,12.000000000,20.400000000,12,0.000000000,false,10,"Node(1)"
+0,8,true,0,12.000000000,20.400000000,12,0.000000000,false,10,"Node(1)"

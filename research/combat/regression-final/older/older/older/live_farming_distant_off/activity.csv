@@ -1,0 +1,8 @@
+seed,person,activity,hours
+0,0,farming,5.175000000
+0,0,idle,29.825000000
+0,0,sleep,12.000000000
+0,0,travel,1.000000000
+0,1,idle,20.000000000
+0,1,sleep,2.000000000
+0,1,travel,2.000000000

@@ -1,0 +1,2966 @@
+{
+  "congestion_defended": [
+    {
+      "seed": "0",
+      "id": "7",
+      "time_ms": "0",
+      "person": "Some(0)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "9",
+      "time_ms": "0",
+      "person": "Some(1)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "11",
+      "time_ms": "0",
+      "person": "Some(2)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "13",
+      "time_ms": "0",
+      "person": "Some(3)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "15",
+      "time_ms": "0",
+      "person": "Some(4)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "17",
+      "time_ms": "0",
+      "person": "Some(5)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "39",
+      "time_ms": "60000",
+      "person": "Some(0)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "42",
+      "time_ms": "60000",
+      "person": "Some(1)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "45",
+      "time_ms": "60000",
+      "person": "Some(2)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "48",
+      "time_ms": "60000",
+      "person": "Some(3)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "1163",
+      "time_ms": "3900000",
+      "person": "Some(0)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "1164",
+      "time_ms": "3900000",
+      "person": "Some(1)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "1165",
+      "time_ms": "3900000",
+      "person": "Some(2)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "1166",
+      "time_ms": "3900000",
+      "person": "Some(3)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "1167",
+      "time_ms": "3900000",
+      "person": "None",
+      "kind": "ProtectIssued",
+      "detail": "unit=0 target=2 local_recipients=4"
+    },
+    {
+      "seed": "0",
+      "id": "2930",
+      "time_ms": "11160000",
+      "person": "Some(0)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "3639",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "3640",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "3641",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "3645",
+      "time_ms": "14400000",
+      "person": "Some(0)",
+      "kind": "StrikeStarted",
+      "detail": "target=6 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "3651",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "3653",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "3655",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "3896",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "StrikeHit",
+      "detail": "target=6; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "3897",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "StrikeHit",
+      "detail": "target=0; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "3898",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "StrikeHit",
+      "detail": "target=0; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "3899",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "StrikeHit",
+      "detail": "target=0; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "3900",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "Injured",
+      "detail": "before=0 after=3 hits=3; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "3901",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "3902",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "Died",
+      "detail": "cause=contact nutrition_ms=71100000 starvation_ms=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "3983",
+      "time_ms": "15600000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "3984",
+      "time_ms": "15600000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4062",
+      "time_ms": "15900000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=14 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4063",
+      "time_ms": "15900000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4064",
+      "time_ms": "15900000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4143",
+      "time_ms": "16200000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4144",
+      "time_ms": "16200000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4222",
+      "time_ms": "16500000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=14 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4223",
+      "time_ms": "16500000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4224",
+      "time_ms": "16500000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4362",
+      "time_ms": "17100000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=14 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4494",
+      "time_ms": "17700000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=14 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4638",
+      "time_ms": "18360000",
+      "person": "Some(1)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "5721",
+      "time_ms": "23700000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "5722",
+      "time_ms": "23700000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "6165",
+      "time_ms": "25560000",
+      "person": "Some(2)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "7828",
+      "time_ms": "32466667",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "8010",
+      "time_ms": "33200000",
+      "person": "Some(3)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "12901",
+      "time_ms": "52920000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "12902",
+      "time_ms": "52920000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "13010",
+      "time_ms": "53320000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13011",
+      "time_ms": "53320000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13121",
+      "time_ms": "53720000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13122",
+      "time_ms": "53720000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13225",
+      "time_ms": "54120000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13226",
+      "time_ms": "54120000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13334",
+      "time_ms": "54520000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13335",
+      "time_ms": "54520000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13445",
+      "time_ms": "54920000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13446",
+      "time_ms": "54920000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13541",
+      "time_ms": "55320000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=12 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "13542",
+      "time_ms": "55320000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=1 to=13 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "15317",
+      "time_ms": "64980000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "16751",
+      "time_ms": "68580000",
+      "person": "Some(1)",
+      "kind": "Arrived",
+      "detail": "node=0 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "16752",
+      "time_ms": "68580000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "16753",
+      "time_ms": "68580000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "16754",
+      "time_ms": "68580000",
+      "person": "Some(9)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "16755",
+      "time_ms": "68580000",
+      "person": "Some(13)",
+      "kind": "Arrived",
+      "detail": "node=3 edge=2"
+    },
+    {
+      "seed": "0",
+      "id": "16756",
+      "time_ms": "68580000",
+      "person": "Some(16)",
+      "kind": "Arrived",
+      "detail": "node=3 edge=2"
+    },
+    {
+      "seed": "0",
+      "id": "16829",
+      "time_ms": "68670000",
+      "person": "Some(10)",
+      "kind": "Arrived",
+      "detail": "node=3 edge=2"
+    },
+    {
+      "seed": "0",
+      "id": "16830",
+      "time_ms": "68670000",
+      "person": "Some(11)",
+      "kind": "Arrived",
+      "detail": "node=3 edge=2"
+    }
+  ],
+  "household_defended": [
+    {
+      "seed": "0",
+      "id": "8",
+      "time_ms": "0",
+      "person": "Some(0)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "10",
+      "time_ms": "0",
+      "person": "Some(1)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "12",
+      "time_ms": "0",
+      "person": "Some(2)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "14",
+      "time_ms": "0",
+      "person": "Some(3)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "16",
+      "time_ms": "0",
+      "person": "Some(4)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "18",
+      "time_ms": "0",
+      "person": "Some(5)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "26",
+      "time_ms": "60000",
+      "person": "Some(0)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "29",
+      "time_ms": "60000",
+      "person": "Some(1)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "32",
+      "time_ms": "60000",
+      "person": "Some(2)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "35",
+      "time_ms": "60000",
+      "person": "Some(3)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "701",
+      "time_ms": "3900000",
+      "person": "Some(0)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "702",
+      "time_ms": "3900000",
+      "person": "Some(1)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "703",
+      "time_ms": "3900000",
+      "person": "Some(2)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "704",
+      "time_ms": "3900000",
+      "person": "Some(3)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "705",
+      "time_ms": "3900000",
+      "person": "None",
+      "kind": "ProtectIssued",
+      "detail": "unit=0 target=2 local_recipients=4"
+    },
+    {
+      "seed": "0",
+      "id": "1262",
+      "time_ms": "11160000",
+      "person": "Some(0)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "1263",
+      "time_ms": "11160000",
+      "person": "Some(1)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "1264",
+      "time_ms": "11160000",
+      "person": "Some(2)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "1265",
+      "time_ms": "11160000",
+      "person": "Some(3)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "1656",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1657",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1658",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1665",
+      "time_ms": "14400000",
+      "person": "Some(0)",
+      "kind": "StrikeStarted",
+      "detail": "target=6 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1668",
+      "time_ms": "14400000",
+      "person": "Some(1)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1671",
+      "time_ms": "14400000",
+      "person": "Some(2)",
+      "kind": "StrikeStarted",
+      "detail": "target=8 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1674",
+      "time_ms": "14400000",
+      "person": "Some(3)",
+      "kind": "StrikeStarted",
+      "detail": "target=6 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1678",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "StrikeStarted",
+      "detail": "target=2 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1680",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "StrikeStarted",
+      "detail": "target=3 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1682",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1824",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "StrikeHit",
+      "detail": "target=6; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1825",
+      "time_ms": "15300000",
+      "person": "Some(1)",
+      "kind": "StrikeHit",
+      "detail": "target=7; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1826",
+      "time_ms": "15300000",
+      "person": "Some(2)",
+      "kind": "StrikeHit",
+      "detail": "target=8; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1827",
+      "time_ms": "15300000",
+      "person": "Some(3)",
+      "kind": "StrikeHit",
+      "detail": "target=6; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1828",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "StrikeHit",
+      "detail": "target=2; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1829",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "StrikeHit",
+      "detail": "target=3; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1830",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "StrikeHit",
+      "detail": "target=0; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1831",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1832",
+      "time_ms": "15300000",
+      "person": "Some(2)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1833",
+      "time_ms": "15300000",
+      "person": "Some(3)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1834",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "Injured",
+      "detail": "before=0 after=2 hits=2; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1835",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1836",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1838",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1840",
+      "time_ms": "15300000",
+      "person": "Some(1)",
+      "kind": "StrikeStarted",
+      "detail": "target=8 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1842",
+      "time_ms": "15300000",
+      "person": "Some(2)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1844",
+      "time_ms": "15300000",
+      "person": "Some(3)",
+      "kind": "StrikeStarted",
+      "detail": "target=8 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1849",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "StrikeStarted",
+      "detail": "target=3 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1851",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1993",
+      "time_ms": "16200000",
+      "person": "Some(1)",
+      "kind": "StrikeHit",
+      "detail": "target=8; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1995",
+      "time_ms": "16200000",
+      "person": "Some(8)",
+      "kind": "Injured",
+      "detail": "before=1 after=2 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1998",
+      "time_ms": "16200000",
+      "person": "Some(1)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "2002",
+      "time_ms": "16200000",
+      "person": "Some(3)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "2149",
+      "time_ms": "17100000",
+      "person": "Some(0)",
+      "kind": "StrikeHit",
+      "detail": "target=7; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "2150",
+      "time_ms": "17100000",
+      "person": "Some(1)",
+      "kind": "StrikeHit",
+      "detail": "target=7; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "2151",
+      "time_ms": "17100000",
+      "person": "Some(2)",
+      "kind": "StrikeHit",
+      "detail": "target=7; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "2152",
+      "time_ms": "17100000",
+      "person": "Some(7)",
+      "kind": "StrikeHit",
+      "detail": "target=3; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "2154",
+      "time_ms": "17100000",
+      "person": "Some(3)",
+      "kind": "Injured",
+      "detail": "before=1 after=2 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "2155",
+      "time_ms": "17100000",
+      "person": "Some(7)",
+      "kind": "Injured",
+      "detail": "before=1 after=3 hits=3; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "2156",
+      "time_ms": "17100000",
+      "person": "Some(7)",
+      "kind": "Died",
+      "detail": "cause=contact nutrition_ms=69300000 starvation_ms=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "7254",
+      "time_ms": "52920000",
+      "person": "Some(4)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "7255",
+      "time_ms": "52920000",
+      "person": "Some(5)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    }
+  ],
+  "late_defended": [
+    {
+      "seed": "0",
+      "id": "7",
+      "time_ms": "0",
+      "person": "Some(0)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "9",
+      "time_ms": "0",
+      "person": "Some(1)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "11",
+      "time_ms": "0",
+      "person": "Some(2)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "13",
+      "time_ms": "0",
+      "person": "Some(3)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "15",
+      "time_ms": "0",
+      "person": "Some(4)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "17",
+      "time_ms": "0",
+      "person": "Some(5)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "23",
+      "time_ms": "60000",
+      "person": "Some(0)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "26",
+      "time_ms": "60000",
+      "person": "Some(1)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "29",
+      "time_ms": "60000",
+      "person": "Some(2)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "32",
+      "time_ms": "60000",
+      "person": "Some(3)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "619",
+      "time_ms": "3900000",
+      "person": "Some(0)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "620",
+      "time_ms": "3900000",
+      "person": "Some(1)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "621",
+      "time_ms": "3900000",
+      "person": "Some(2)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "622",
+      "time_ms": "3900000",
+      "person": "Some(3)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "623",
+      "time_ms": "3900000",
+      "person": "None",
+      "kind": "ProtectIssued",
+      "detail": "unit=0 target=2 local_recipients=4"
+    },
+    {
+      "seed": "0",
+      "id": "1167",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1168",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1169",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1198",
+      "time_ms": "14700000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1199",
+      "time_ms": "14700000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1200",
+      "time_ms": "14700000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1229",
+      "time_ms": "15000000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1230",
+      "time_ms": "15000000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1231",
+      "time_ms": "15000000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1260",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1261",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1262",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1291",
+      "time_ms": "15600000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1292",
+      "time_ms": "15600000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1293",
+      "time_ms": "15600000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1543",
+      "time_ms": "22800000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1544",
+      "time_ms": "22800000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1545",
+      "time_ms": "22800000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "2425",
+      "time_ms": "33200000",
+      "person": "Some(0)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "2426",
+      "time_ms": "33200000",
+      "person": "Some(1)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "2427",
+      "time_ms": "33200000",
+      "person": "Some(2)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "2428",
+      "time_ms": "33200000",
+      "person": "Some(3)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "4642",
+      "time_ms": "52920000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "4643",
+      "time_ms": "52920000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "4644",
+      "time_ms": "52920000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "4697",
+      "time_ms": "53320000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4698",
+      "time_ms": "53320000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4699",
+      "time_ms": "53320000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4755",
+      "time_ms": "53720000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4756",
+      "time_ms": "53720000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4757",
+      "time_ms": "53720000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4806",
+      "time_ms": "54120000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4807",
+      "time_ms": "54120000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4808",
+      "time_ms": "54120000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4861",
+      "time_ms": "54520000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4862",
+      "time_ms": "54520000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4863",
+      "time_ms": "54520000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4919",
+      "time_ms": "54920000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4920",
+      "time_ms": "54920000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4921",
+      "time_ms": "54920000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4970",
+      "time_ms": "55320000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4971",
+      "time_ms": "55320000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "4972",
+      "time_ms": "55320000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6359",
+      "time_ms": "68580000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "6360",
+      "time_ms": "68580000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "6361",
+      "time_ms": "68580000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    }
+  ],
+  "local_defended": [
+    {
+      "seed": "0",
+      "id": "7",
+      "time_ms": "0",
+      "person": "Some(0)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "9",
+      "time_ms": "0",
+      "person": "Some(1)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "11",
+      "time_ms": "0",
+      "person": "Some(2)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "13",
+      "time_ms": "0",
+      "person": "Some(3)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "15",
+      "time_ms": "0",
+      "person": "Some(4)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "17",
+      "time_ms": "0",
+      "person": "Some(5)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "23",
+      "time_ms": "60000",
+      "person": "Some(0)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "26",
+      "time_ms": "60000",
+      "person": "Some(1)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "29",
+      "time_ms": "60000",
+      "person": "Some(2)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "32",
+      "time_ms": "60000",
+      "person": "Some(3)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "619",
+      "time_ms": "3900000",
+      "person": "Some(0)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "620",
+      "time_ms": "3900000",
+      "person": "Some(1)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "621",
+      "time_ms": "3900000",
+      "person": "Some(2)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "622",
+      "time_ms": "3900000",
+      "person": "Some(3)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "623",
+      "time_ms": "3900000",
+      "person": "None",
+      "kind": "ProtectIssued",
+      "detail": "unit=0 target=2 local_recipients=4"
+    },
+    {
+      "seed": "0",
+      "id": "1059",
+      "time_ms": "11160000",
+      "person": "Some(0)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "1060",
+      "time_ms": "11160000",
+      "person": "Some(1)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "1061",
+      "time_ms": "11160000",
+      "person": "Some(2)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "1062",
+      "time_ms": "11160000",
+      "person": "Some(3)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "1399",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1400",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1401",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1408",
+      "time_ms": "14400000",
+      "person": "Some(0)",
+      "kind": "StrikeStarted",
+      "detail": "target=6 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1411",
+      "time_ms": "14400000",
+      "person": "Some(1)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1414",
+      "time_ms": "14400000",
+      "person": "Some(2)",
+      "kind": "StrikeStarted",
+      "detail": "target=8 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1417",
+      "time_ms": "14400000",
+      "person": "Some(3)",
+      "kind": "StrikeStarted",
+      "detail": "target=6 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1421",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "StrikeStarted",
+      "detail": "target=2 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1423",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "StrikeStarted",
+      "detail": "target=3 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1425",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1552",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "StrikeHit",
+      "detail": "target=6; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1553",
+      "time_ms": "15300000",
+      "person": "Some(1)",
+      "kind": "StrikeHit",
+      "detail": "target=7; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1554",
+      "time_ms": "15300000",
+      "person": "Some(2)",
+      "kind": "StrikeHit",
+      "detail": "target=8; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1555",
+      "time_ms": "15300000",
+      "person": "Some(3)",
+      "kind": "StrikeHit",
+      "detail": "target=6; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1556",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "StrikeHit",
+      "detail": "target=2; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1557",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "StrikeHit",
+      "detail": "target=3; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1558",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "StrikeHit",
+      "detail": "target=0; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1559",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1560",
+      "time_ms": "15300000",
+      "person": "Some(2)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1561",
+      "time_ms": "15300000",
+      "person": "Some(3)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1562",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "Injured",
+      "detail": "before=0 after=2 hits=2; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1563",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1564",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1566",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1568",
+      "time_ms": "15300000",
+      "person": "Some(1)",
+      "kind": "StrikeStarted",
+      "detail": "target=8 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1570",
+      "time_ms": "15300000",
+      "person": "Some(2)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1572",
+      "time_ms": "15300000",
+      "person": "Some(3)",
+      "kind": "StrikeStarted",
+      "detail": "target=8 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1577",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "StrikeStarted",
+      "detail": "target=3 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1579",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1706",
+      "time_ms": "16200000",
+      "person": "Some(1)",
+      "kind": "StrikeHit",
+      "detail": "target=8; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1708",
+      "time_ms": "16200000",
+      "person": "Some(8)",
+      "kind": "Injured",
+      "detail": "before=1 after=2 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1711",
+      "time_ms": "16200000",
+      "person": "Some(1)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1715",
+      "time_ms": "16200000",
+      "person": "Some(3)",
+      "kind": "StrikeStarted",
+      "detail": "target=7 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1847",
+      "time_ms": "17100000",
+      "person": "Some(0)",
+      "kind": "StrikeHit",
+      "detail": "target=7; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1848",
+      "time_ms": "17100000",
+      "person": "Some(1)",
+      "kind": "StrikeHit",
+      "detail": "target=7; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1849",
+      "time_ms": "17100000",
+      "person": "Some(2)",
+      "kind": "StrikeHit",
+      "detail": "target=7; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1850",
+      "time_ms": "17100000",
+      "person": "Some(7)",
+      "kind": "StrikeHit",
+      "detail": "target=3; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1852",
+      "time_ms": "17100000",
+      "person": "Some(3)",
+      "kind": "Injured",
+      "detail": "before=1 after=2 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1853",
+      "time_ms": "17100000",
+      "person": "Some(7)",
+      "kind": "Injured",
+      "detail": "before=1 after=3 hits=3; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1854",
+      "time_ms": "17100000",
+      "person": "Some(7)",
+      "kind": "Died",
+      "detail": "cause=contact nutrition_ms=69300000 starvation_ms=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "6352",
+      "time_ms": "52920000",
+      "person": "Some(4)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "6353",
+      "time_ms": "52920000",
+      "person": "Some(5)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    }
+  ],
+  "local_undefended": [
+    {
+      "seed": "0",
+      "id": "1809",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1810",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1811",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1860",
+      "time_ms": "14700000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1861",
+      "time_ms": "14700000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1862",
+      "time_ms": "14700000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1911",
+      "time_ms": "15000000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1912",
+      "time_ms": "15000000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1913",
+      "time_ms": "15000000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1962",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1963",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1964",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2013",
+      "time_ms": "15600000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2014",
+      "time_ms": "15600000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2015",
+      "time_ms": "15600000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2745",
+      "time_ms": "22800000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "2746",
+      "time_ms": "22800000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "2747",
+      "time_ms": "22800000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "6196",
+      "time_ms": "52920000",
+      "person": "Some(0)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "6197",
+      "time_ms": "52920000",
+      "person": "Some(1)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "6198",
+      "time_ms": "52920000",
+      "person": "Some(2)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "6199",
+      "time_ms": "52920000",
+      "person": "Some(3)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "6200",
+      "time_ms": "52920000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "6201",
+      "time_ms": "52920000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "6202",
+      "time_ms": "52920000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "6259",
+      "time_ms": "53320000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6260",
+      "time_ms": "53320000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6261",
+      "time_ms": "53320000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6317",
+      "time_ms": "53720000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6318",
+      "time_ms": "53720000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6319",
+      "time_ms": "53720000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6368",
+      "time_ms": "54120000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6369",
+      "time_ms": "54120000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6370",
+      "time_ms": "54120000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6423",
+      "time_ms": "54520000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6424",
+      "time_ms": "54520000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6425",
+      "time_ms": "54520000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6481",
+      "time_ms": "54920000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6482",
+      "time_ms": "54920000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6483",
+      "time_ms": "54920000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6532",
+      "time_ms": "55320000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=10 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6533",
+      "time_ms": "55320000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6534",
+      "time_ms": "55320000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "7217",
+      "time_ms": "64980000",
+      "person": "Some(4)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "7218",
+      "time_ms": "64980000",
+      "person": "Some(5)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "8273",
+      "time_ms": "68580000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "8274",
+      "time_ms": "68580000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "8275",
+      "time_ms": "68580000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    }
+  ],
+  "under_defended": [
+    {
+      "seed": "0",
+      "id": "7",
+      "time_ms": "0",
+      "person": "Some(0)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "9",
+      "time_ms": "0",
+      "person": "Some(1)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "11",
+      "time_ms": "0",
+      "person": "Some(2)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "13",
+      "time_ms": "0",
+      "person": "Some(3)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "15",
+      "time_ms": "0",
+      "person": "Some(4)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "17",
+      "time_ms": "0",
+      "person": "Some(5)",
+      "kind": "Volunteered",
+      "detail": "request=0; previous=Idle; no role or reservation yet"
+    },
+    {
+      "seed": "0",
+      "id": "23",
+      "time_ms": "60000",
+      "person": "Some(0)",
+      "kind": "MusterArrived",
+      "detail": "unit=0; travel_ms=60000; same Person; until=43260000"
+    },
+    {
+      "seed": "0",
+      "id": "619",
+      "time_ms": "3900000",
+      "person": "Some(0)",
+      "kind": "UnitOrderReceived",
+      "detail": "unit=0; serial=0; target=2; no route/stock information supplied"
+    },
+    {
+      "seed": "0",
+      "id": "620",
+      "time_ms": "3900000",
+      "person": "None",
+      "kind": "ProtectIssued",
+      "detail": "unit=0 target=2 local_recipients=1"
+    },
+    {
+      "seed": "0",
+      "id": "1398",
+      "time_ms": "11160000",
+      "person": "Some(0)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "1726",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1727",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1728",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "1732",
+      "time_ms": "14400000",
+      "person": "Some(0)",
+      "kind": "StrikeStarted",
+      "detail": "target=6 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1739",
+      "time_ms": "14400000",
+      "person": "Some(6)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1741",
+      "time_ms": "14400000",
+      "person": "Some(7)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1743",
+      "time_ms": "14400000",
+      "person": "Some(8)",
+      "kind": "StrikeStarted",
+      "detail": "target=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1870",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "StrikeHit",
+      "detail": "target=6; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1871",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "StrikeHit",
+      "detail": "target=0; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1872",
+      "time_ms": "15300000",
+      "person": "Some(7)",
+      "kind": "StrikeHit",
+      "detail": "target=0; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1873",
+      "time_ms": "15300000",
+      "person": "Some(8)",
+      "kind": "StrikeHit",
+      "detail": "target=0; simultaneous pre-damage validation"
+    },
+    {
+      "seed": "0",
+      "id": "1874",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "Injured",
+      "detail": "before=0 after=3 hits=3; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1875",
+      "time_ms": "15300000",
+      "person": "Some(6)",
+      "kind": "Injured",
+      "detail": "before=0 after=1 hits=1; own body; no unit HP"
+    },
+    {
+      "seed": "0",
+      "id": "1876",
+      "time_ms": "15300000",
+      "person": "Some(0)",
+      "kind": "Died",
+      "detail": "cause=contact nutrition_ms=71100000 starvation_ms=0 location=Node(2)"
+    },
+    {
+      "seed": "0",
+      "id": "1922",
+      "time_ms": "15600000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1923",
+      "time_ms": "15600000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1966",
+      "time_ms": "15900000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1967",
+      "time_ms": "15900000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "1968",
+      "time_ms": "15900000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2012",
+      "time_ms": "16200000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2013",
+      "time_ms": "16200000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2056",
+      "time_ms": "16500000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2057",
+      "time_ms": "16500000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2058",
+      "time_ms": "16500000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2126",
+      "time_ms": "17100000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2188",
+      "time_ms": "17700000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "2692",
+      "time_ms": "23700000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "2693",
+      "time_ms": "23700000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "3731",
+      "time_ms": "32466667",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "5371",
+      "time_ms": "52920000",
+      "person": "Some(1)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "5372",
+      "time_ms": "52920000",
+      "person": "Some(2)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "5373",
+      "time_ms": "52920000",
+      "person": "Some(3)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "5374",
+      "time_ms": "52920000",
+      "person": "Some(4)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "5375",
+      "time_ms": "52920000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "5376",
+      "time_ms": "52920000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "5423",
+      "time_ms": "53320000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5424",
+      "time_ms": "53320000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5471",
+      "time_ms": "53720000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5472",
+      "time_ms": "53720000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5513",
+      "time_ms": "54120000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5514",
+      "time_ms": "54120000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5559",
+      "time_ms": "54520000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5560",
+      "time_ms": "54520000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5607",
+      "time_ms": "54920000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5608",
+      "time_ms": "54920000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5649",
+      "time_ms": "55320000",
+      "person": "Some(7)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=11 quantity=1 owner=Commons(0); custody=Agent(7); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "5650",
+      "time_ms": "55320000",
+      "person": "Some(8)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=12 quantity=1 owner=Commons(0); custody=Agent(8); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "6329",
+      "time_ms": "64980000",
+      "person": "Some(5)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=0"
+    },
+    {
+      "seed": "0",
+      "id": "6330",
+      "time_ms": "64980000",
+      "person": "Some(6)",
+      "kind": "Arrived",
+      "detail": "node=2 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "7386",
+      "time_ms": "68580000",
+      "person": "Some(7)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "7387",
+      "time_ms": "68580000",
+      "person": "Some(8)",
+      "kind": "Arrived",
+      "detail": "node=1 edge=1"
+    },
+    {
+      "seed": "0",
+      "id": "7600",
+      "time_ms": "69660000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "7842",
+      "time_ms": "70860000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "8252",
+      "time_ms": "73260000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "8414",
+      "time_ms": "74460000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "10104",
+      "time_ms": "80460000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    },
+    {
+      "seed": "0",
+      "id": "10266",
+      "time_ms": "81660000",
+      "person": "Some(6)",
+      "kind": "FoodStolen",
+      "detail": "from=0 to=13 quantity=1 owner=Commons(0); custody=Agent(6); age retained"
+    }
+  ]
+}
