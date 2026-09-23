@@ -30,6 +30,7 @@ impl World {
             }
         }
         self.admit();
+        self.refresh_authority();
         self.audit()
     }
     pub(super) fn cancel_action(&mut self, id: usize, why: &str) {
@@ -111,6 +112,13 @@ impl World {
             return Err("edge traversal is atomic".into());
         };
         match intent {
+            Intent::AppointSteward {
+                candidate,
+                settlement,
+            } => self.appoint_steward(id, candidate, settlement)?,
+            Intent::CommissionCrossing { office, project } => {
+                self.commission_crossing(id, office, project)?
+            }
             Intent::OfferBarter {
                 batch,
                 quantity,
@@ -554,6 +562,7 @@ impl World {
     }
     fn integrate(&mut self, to: Time) {
         let dt = to - self.now;
+        self.integrate_authority(dt);
         self.integrate_market(dt);
         if let Some(mut journal) = self.settlement_research.take() {
             journal.integrate(self, dt);
@@ -890,6 +899,7 @@ impl World {
                 );
             }
         }
+        self.refresh_authority();
         self.expire_barter();
         if self.config.autonomous {
             if self.now >= self.next_policy {
@@ -899,6 +909,7 @@ impl World {
             self.decisions();
         }
         self.admit();
+        self.refresh_authority();
         if [36 * HOUR, 48 * HOUR, 72 * HOUR].contains(&self.now) {
             self.metrics.survivors.insert(
                 self.now,

@@ -156,6 +156,15 @@ impl World {
             "{:?}|{:?}|{:?}|{:?}|{:?}",
             self.now, self.agents, self.goods, self.boards, self.metrics
         );
+        if self.config.authority.is_some() {
+            text.push_str(&format!(
+                "|authority={:?}|{:?}|{:?}|{:?}",
+                self.config.authority,
+                self.polity(),
+                self.offices(),
+                self.commissions()
+            ));
+        }
         if self.config.farming.is_some() {
             text.push_str(&format!("|farming={:?}", self.farm));
         }

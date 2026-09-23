@@ -152,7 +152,7 @@ impl World {
                 .infrastructure
                 .projects
                 .iter()
-                .filter(|p| p.site.node == node)
+                .filter(|p| p.site.node == node && self.crossing_authorized(p.id))
                 .map(|p| {
                     let worker = self
                         .agents
@@ -205,6 +205,9 @@ impl World {
         {
             return Err("crossing unavailable".into());
         }
+        if !self.crossing_authorized(project) {
+            return Err("local public commission required".into());
+        }
         let p = self
             .infrastructure
             .projects
@@ -245,6 +248,9 @@ impl World {
             return Err("crossing unavailable".into());
         }
         self.infrastructure.attempts += 1;
+        if !self.crossing_authorized(project) {
+            return Err("local public commission required".into());
+        }
         let p = self
             .infrastructure
             .projects

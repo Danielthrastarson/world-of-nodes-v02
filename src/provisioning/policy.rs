@@ -16,6 +16,14 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    AppointSteward {
+        candidate: usize,
+        settlement: usize,
+    },
+    CommissionCrossing {
+        office: usize,
+        project: usize,
+    },
     OfferBarter {
         batch: usize,
         quantity: u64,

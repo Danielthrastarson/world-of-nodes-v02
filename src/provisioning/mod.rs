@@ -1,5 +1,6 @@
 //! Provisioning model P1. The legacy kernel remains available for historical reproduction.
 pub mod acceptance;
+pub mod authority;
 pub mod barter;
 pub mod capital;
 pub mod coherence;
@@ -54,6 +55,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub authority: Option<authority::Config>,
     pub barter: bool,
     /// F9B local market institution. Empty retains historical direct barter.
     pub market_nodes: Vec<usize>,
@@ -84,6 +86,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            authority: None,
             barter: false,
             market_nodes: vec![],
             paths: None,
@@ -295,6 +298,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) authority: authority::State,
     pub(crate) barter: barter::State,
     pub(crate) settlement_research: Option<settlement_research::Journal>,
     pub(crate) paths: paths::State,
@@ -460,7 +464,9 @@ impl World {
             }
         }
         let farm = farming::State::new(config.farming.as_ref(), config.nodes, config.starts.len())?;
+        let authority = authority::State::new(&config)?;
         let mut w = Self {
+            authority,
             barter: barter::State::default(),
             settlement_research: None,
             paths,
@@ -626,6 +632,7 @@ impl World {
         }
     }
     pub fn audit(&self) -> Result<(), String> {
+        self.audit_authority()?;
         self.audit_barter()?;
         self.audit_farming()?;
         self.audit_capital()?;
