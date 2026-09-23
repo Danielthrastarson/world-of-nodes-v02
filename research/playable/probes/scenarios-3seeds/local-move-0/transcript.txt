@@ -1,0 +1,14 @@
+[
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Move,
+            target: 2,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+]

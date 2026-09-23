@@ -1,0 +1,12 @@
+actual_persons=1000
+visible_persons=1000
+frames=240
+snapshot_ms=9.799381
+mean_cpu_draw_ms=1.502183
+max_cpu_draw_ms=172.832519
+fps_including_capture=58.195
+state_unchanged=true
+clock_paused=true
+exit_code=139
+status=FAIL_AT_SHUTDOWN
+cause=thread-local Font GPU handle destructor outlived Macroquad graphics context

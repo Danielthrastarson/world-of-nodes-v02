@@ -1,0 +1,49 @@
+local_undefended exact outcomes/hashes/traces
+local_defended exact outcomes/hashes/traces
+local_peace exact outcomes/hashes/traces
+local_peace_defended exact outcomes/hashes/traces
+under_undefended exact outcomes/hashes/traces
+under_defended exact outcomes/hashes/traces
+under_peace exact outcomes/hashes/traces
+under_peace_defended exact outcomes/hashes/traces
+over_undefended exact outcomes/hashes/traces
+over_defended exact outcomes/hashes/traces
+over_peace exact outcomes/hashes/traces
+over_peace_defended exact outcomes/hashes/traces
+late_undefended exact outcomes/hashes/traces
+late_defended exact outcomes/hashes/traces
+late_peace exact outcomes/hashes/traces
+late_peace_defended exact outcomes/hashes/traces
+bottleneck_undefended exact outcomes/hashes/traces
+bottleneck_peace exact outcomes/hashes/traces
+bottleneck_peace_defended exact outcomes/hashes/traces
+Traceback (most recent call last):
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/verify_information.py", line 214, in <module>
+    main()
+    ~~~~^^
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/verify_information.py", line 169, in main
+    checks = list(pool.map(lambda item: verify_combat(item, temporary), tasks))
+  File "/usr/lib64/python3.14/concurrent/futures/_base.py", line 639, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib64/python3.14/concurrent/futures/_base.py", line 311, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib64/python3.14/concurrent/futures/_base.py", line 450, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib64/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/verify_information.py", line 169, in <lambda>
+    checks = list(pool.map(lambda item: verify_combat(item, temporary), tasks))
+                                        ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/verify_information.py", line 85, in verify_combat
+    require(fields == old_fields and actual == expected, f"{name}/{filename} differs")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/verify_information.py", line 34, in require
+    raise RuntimeError(detail)
+RuntimeError: bottleneck_defended/runs.csv differs

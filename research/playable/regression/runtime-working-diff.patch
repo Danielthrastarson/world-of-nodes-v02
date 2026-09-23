@@ -1,0 +1,250 @@
+diff --git a/src/provisioning/combat.rs b/src/provisioning/combat.rs
+index 9707627..2239b29 100644
+--- a/src/provisioning/combat.rs
++++ b/src/provisioning/combat.rs
+@@ -100,7 +100,12 @@ impl State {
+         })
+     }
+ }
+-pub(crate) fn consider(o: &Observation, m: &PolicyMemory, v: &View) -> Option<Decision> {
++pub(crate) fn consider(
++    o: &Observation,
++    m: &PolicyMemory,
++    v: &View,
++    withdrawing: bool,
++) -> Option<Decision> {
+     let choose = |intent, reason: &str| Decision {
+         intent,
+         reason: format!("contact: {reason}"),
+@@ -111,6 +116,11 @@ pub(crate) fn consider(o: &Observation, m: &PolicyMemory, v: &View) -> Option<De
+             "incapacitated; care and accessible eating remain physical",
+         ));
+     }
++    // A personally received withdrawal lets the ordinary formation undertaking
++    // attempt movement. It does not erase hostile contact or prevent enemy hits.
++    if withdrawing && v.serving && v.raid.is_none() {
++        return None;
++    }
+     let active =
+         v.raid.as_ref().is_some_and(|r| o.now >= r.begins) || (v.protect.is_some() && v.serving);
+     if active && !v.enemies.is_empty() {
+diff --git a/src/provisioning/combat/adapter.rs b/src/provisioning/combat/adapter.rs
+index d6e7301..2d52cc2 100644
+--- a/src/provisioning/combat/adapter.rs
++++ b/src/provisioning/combat/adapter.rs
+@@ -40,6 +40,21 @@ impl World {
+             None
+         }
+     }
++    /// Losing contact is a kernel event, not an observer-polling event. A target
++    /// can depart after the boundary's strike resolution, during action/admission.
++    /// Cancel any now-invalid strike at the next clock instant, not at whichever
++    /// future checkpoint a renderer or research observer happens to request.
++    pub(crate) fn contact_next_boundary(&self, next: Time) -> Time {
++        if self.config.combat.is_some()
++            && self.agents.iter().any(|person| {
++                matches!(person.action, Action::Strike { target, .. } if !self.can_contact(person.id, target))
++            })
++        {
++            next.min(self.now + 1)
++        } else {
++            next
++        }
++    }
+     fn can_contact(&self, a: usize, b: usize) -> bool {
+         let Some(c) = &self.config.combat else {
+             return false;
+diff --git a/src/provisioning/combat/tests.rs b/src/provisioning/combat/tests.rs
+index 12877b9..7ee3b93 100644
+--- a/src/provisioning/combat/tests.rs
++++ b/src/provisioning/combat/tests.rs
+@@ -63,6 +63,38 @@ fn target_must_remain_local_and_contact_capable() {
+     assert!(!matches!(w.agents[0].action, Action::Strike { .. }));
+ }
+ #[test]
++fn contact_loss_has_a_kernel_boundary_without_any_playable_order() {
++    let mut once = manual();
++    once.apply_intents(vec![(6, Intent::Strike { target: 0 })])
++        .unwrap();
++    once.apply_intents(vec![(
++        0,
++        Intent::Travel {
++            edge: 0,
++            target: 0,
++            food: false,
++        },
++    )])
++    .unwrap();
++    assert_eq!(once.agents[0].action, Action::Travel);
++    assert!(once.playable_retreats.is_empty());
++    let start = once.now;
++    let mut sampled = once.clone();
++    once.advance_to(start + 15 * MINUTE).unwrap();
++    for minute in 1..=15 {
++        sampled.advance_to(start + minute * MINUTE).unwrap();
++    }
++    let invalidated = once
++        .events
++        .iter()
++        .find(|event| event.agent == Some(6) && event.kind == "StrikeInvalidated")
++        .unwrap();
++    assert_eq!(invalidated.at, start + 1);
++    assert_eq!(once.state_hash(), sampled.state_hash());
++    assert_eq!(once.event_hash(), sampled.event_hash());
++    assert_eq!(once.body(0).unwrap().injuries, 0);
++}
++#[test]
+ fn theft_is_timed_conserved_age_preserving_and_capacity_limited() {
+     let mut w = research::fixture("local", false, true, 0).unwrap();
+     w.config.autonomous = false;
+diff --git a/src/provisioning/experiment.rs b/src/provisioning/experiment.rs
+index 3819d51..57e7ebb 100644
+--- a/src/provisioning/experiment.rs
++++ b/src/provisioning/experiment.rs
+@@ -180,6 +180,9 @@ impl World {
+                 self.formation.units, self.formation.views, self.formation.next_order
+             ));
+         }
++        if !self.playable_retreats.is_empty() {
++            text.push_str(&format!("|playable_retreats={:?}", self.playable_retreats));
++        }
+         if self.config.military.is_some() {
+             text.push_str(&format!(
+                 "|military={:?}|{:?}",
+diff --git a/src/provisioning/formation/adapter.rs b/src/provisioning/formation/adapter.rs
+index 9c6fc64..e0e0a5f 100644
+--- a/src/provisioning/formation/adapter.rs
++++ b/src/provisioning/formation/adapter.rs
+@@ -62,6 +62,7 @@ impl World {
+         );
+     }
+     pub(crate) fn unit_release(&mut self, id: usize, reason: &str) {
++        self.playable_retreats.remove(&id);
+         if !self.config.formation {
+             return;
+         }
+@@ -232,6 +233,7 @@ impl World {
+                 format!("serial={serial}; physical state only"),
+             );
+         }
++        self.refresh_playable_retreats();
+     }
+     pub(crate) fn integrate_formation(&mut self, dt: Time) {
+         if !self.config.formation {
+diff --git a/src/provisioning/mod.rs b/src/provisioning/mod.rs
+index 47db763..e9b44fb 100644
+--- a/src/provisioning/mod.rs
++++ b/src/provisioning/mod.rs
+@@ -24,6 +24,8 @@ pub mod military;
+ pub mod paths;
+ pub mod persistence;
+ pub mod person;
++/// Optional headless playable-session and read-only presentation boundary.
++pub mod playable;
+ mod policy;
+ pub mod reasoning;
+ mod runtime;
+@@ -348,6 +350,8 @@ pub struct World {
+     pub(crate) commands: commands::State,
+     pub(crate) combat: combat::State,
+     pub(crate) formation: formation::State,
++    /// Opt-in locally received retreat orders. Empty in all historical fixtures.
++    pub(crate) playable_retreats: BTreeMap<usize, u64>,
+     pub(crate) military: military::State,
+     pub(crate) lifecycle: lifecycle::State,
+     pub(crate) social: social::State,
+@@ -541,6 +545,7 @@ impl World {
+             commands,
+             combat,
+             formation,
++            playable_retreats: BTreeMap::new(),
+             military,
+             lifecycle,
+             social,
+diff --git a/src/provisioning/person.rs b/src/provisioning/person.rs
+index 840e2cc..a3b3df5 100644
+--- a/src/provisioning/person.rs
++++ b/src/provisioning/person.rs
+@@ -13,6 +13,8 @@ pub struct Capabilities<'a> {
+     pub information: Option<&'a super::information::Memory>,
+     pub commands: Option<&'a super::commands::Memory>,
+     pub combat: Option<&'a super::combat::View>,
++    /// The person's own locally received retreat order, never unit-wide truth.
++    pub withdrawing: bool,
+     pub formation: Option<&'a super::formation::View>,
+     pub military: Option<&'a super::military::Memory>,
+     pub life: Option<&'a super::lifecycle::View>,
+diff --git a/src/provisioning/person/adapter.rs b/src/provisioning/person/adapter.rs
+index 8954267..7006399 100644
+--- a/src/provisioning/person/adapter.rs
++++ b/src/provisioning/person/adapter.rs
+@@ -4,6 +4,7 @@ use crate::provisioning::{World, authority};
+ impl World {
+     pub(crate) fn person_capabilities(&self, id: usize) -> Capabilities<'_> {
+         Capabilities {
++            withdrawing: self.playable_withdrawing(id),
+             commands: self.config.commands.then(|| &self.commands.memories[id]),
+             information: self
+                 .config
+diff --git a/src/provisioning/person/tests.rs b/src/provisioning/person/tests.rs
+index 1a098ac..738dd1a 100644
+--- a/src/provisioning/person/tests.rs
++++ b/src/provisioning/person/tests.rs
+@@ -108,6 +108,7 @@ fn composed_capabilities_use_personal_history_not_remote_truth() {
+         observation: &o,
+         beliefs: &m,
+         capabilities: Capabilities {
++            withdrawing: false,
+             information: None,
+             commands: None,
+             formation: None,
+diff --git a/src/provisioning/policy.rs b/src/provisioning/policy.rs
+index 83021f4..3d114fb 100644
+--- a/src/provisioning/policy.rs
++++ b/src/provisioning/policy.rs
+@@ -485,6 +485,7 @@ pub(crate) fn decide_with_capabilities(
+         military,
+         formation,
+         combat,
++        withdrawing,
+         cultivation: farm,
+         capital,
+         public_works: infrastructure,
+@@ -564,7 +565,7 @@ pub(crate) fn decide_with_capabilities(
+         return d;
+     }
+     if let Some(view) = combat
+-        && let Some(d) = super::combat::consider(o, m, view)
++        && let Some(d) = super::combat::consider(o, m, view, withdrawing)
+     {
+         return d;
+     }
+diff --git a/src/provisioning/runtime.rs b/src/provisioning/runtime.rs
+index f031293..26e7133 100644
+--- a/src/provisioning/runtime.rs
++++ b/src/provisioning/runtime.rs
+@@ -573,7 +573,7 @@ impl World {
+         }
+     }
+     pub(super) fn next_time(&self, target: Time) -> Time {
+-        let mut next = self.command_next_boundary(self.now, target);
++        let mut next = self.contact_next_boundary(self.command_next_boundary(self.now, target));
+         for v in &self.military.memories {
+             if let Some(u) = &v.undertaking {
+                 let t = u.until.unwrap_or(u.request.expires);
+@@ -1223,6 +1223,7 @@ impl World {
+                 }
+             }
+             let rng_before = self.agents[id].rng;
++            let withdrawing = self.playable_withdrawing(id);
+             let a = &mut self.agents[id];
+             if self.transport_research.audit_forecasts {
+                 let (d, audit) = policy::audit_meals(
+@@ -1234,6 +1235,7 @@ impl World {
+                 self.acceptance.record(&o, &d, audit);
+             }
+             let capabilities = person::Capabilities {
++                withdrawing,
+                 commands: self.config.commands.then(|| &self.commands.memories[id]),
+                 information: self
+                     .config

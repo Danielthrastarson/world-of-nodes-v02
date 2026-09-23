@@ -1,0 +1,52 @@
+scenario=Local
+seed=0
+sim_ms=23220000
+state_hash=259f45bcdc9b16ce
+event_hash=d4c0f4c9ccaefaf7
+replay_equal=true
+frames=1007
+fps=26.119
+last_sim_batch_ms=0.000139
+last_snapshot_ms=0.088568
+last_draw_ms=0.620960
+rss_kib=Some(186052)
+view_mode=Play
+visible_or_remembered_people=17
+commands=[
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Hold,
+            target: 1,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Move,
+            target: 2,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Attack,
+            target: 2,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+]

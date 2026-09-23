@@ -1,0 +1,31 @@
+mode=scenarios
+seeds=0..1
+elapsed_hours=24
+Arms use identical Session setup per Local/Remote seed. Local and Remote differ by the documented initial physical journey. No-command already contains a consenting four-Person militia, so it is not a no-military control. Seeded hostile raid is a controlled threat. Every row is one registered transcript, not an optimized policy.
+Inputs at initial session time; commission_revoke adds revoke at elapsed 2h; hourly read checkpoints; exact transcript replay compared at end.
+No fake render entities; no outcome holds or parameter adjustments.
+Metrics use observer truth; Play snapshots remain bounded.
+base_head=983b5b5b522456358aa9c7f3d7adb408df77a89f
+working_tree_at_run:
+ M .gitignore
+ M src/provisioning/combat.rs
+ M src/provisioning/combat/adapter.rs
+ M src/provisioning/combat/tests.rs
+ M src/provisioning/experiment.rs
+ M src/provisioning/formation/adapter.rs
+ M src/provisioning/mod.rs
+ M src/provisioning/person.rs
+ M src/provisioning/person/adapter.rs
+ M src/provisioning/person/tests.rs
+ M src/provisioning/policy.rs
+ M src/provisioning/runtime.rs
+?? client/
+?? docs/P2_LOCAL_CONTROL.md
+?? docs/PLAYABLE_EXECUTION_PLAN.md
+?? research/playable/
+?? src/bin/playable_probe.rs
+?? src/provisioning/playable.rs
+?? src/provisioning/playable/
+
+all_src_rs_fnv1a64=2b0179bbb2ff86d4
+Timing is wall clock on this host, not a hardware-independent bound.

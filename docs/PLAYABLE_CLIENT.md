@@ -79,8 +79,10 @@ Carts, if present, are actual objects with their own owner and user. The playabl
 scenario does not spawn decorative carts or traffic to populate the scene.
 
 The inspector shows source and observation age. Map-only starting knowledge does
-not mean a place was observed empty. A historical cart/unit marker remains dated;
-it does not claim that the object is still present or the order still active.
+not mean a place was observed empty. A historical cart marker remains dated; it does not claim current presence.
+Unit badges count members in the current view, not global strength or current
+global orders. The unused snapshot field for a remembered unit objective is not
+yet displayed because its own receipt age needs separate presentation.
 DEBUG can inspect true inventories, queues, goals, roles and related diagnostics;
 it is visibly labeled and is not the normal ruler-information view.
 

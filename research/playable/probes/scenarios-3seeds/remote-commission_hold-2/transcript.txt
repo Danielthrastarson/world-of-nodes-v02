@@ -1,0 +1,25 @@
+[
+    CommandRecord {
+        at: 900000,
+        command: Commission {
+            office: 0,
+            project: 0,
+        },
+        outcome: Ok(
+            Order {
+                message: 0,
+                dispatch: WithAgreedCourier,
+            },
+        ),
+    },
+    CommandRecord {
+        at: 900000,
+        command: Unit {
+            verb: Hold,
+            target: 0,
+        },
+        outcome: Err(
+            "commander lacks active voluntary service in the agreed unit",
+        ),
+    },
+]

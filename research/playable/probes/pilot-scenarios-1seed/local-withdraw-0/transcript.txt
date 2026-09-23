@@ -1,0 +1,14 @@
+[
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Withdraw,
+            target: 0,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+]

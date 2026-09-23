@@ -1,0 +1,261 @@
+{
+  "bottleneck_defended": {
+    "method": "Seed0 exact semantic event tuples (time,person,kind,detail), ignoring sequential event ID only for diagnosis; strict full-byte comparison remains FAIL",
+    "removed": [
+      {
+        "time_ms": "29820000",
+        "person": "Some(2)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29820000",
+        "person": "Some(3)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29820000",
+        "person": "Some(2)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29820000",
+        "person": "Some(3)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29820000",
+        "person": "Some(2)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      },
+      {
+        "time_ms": "29820000",
+        "person": "Some(3)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      }
+    ],
+    "added": [
+      {
+        "time_ms": "29800001",
+        "person": "Some(2)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29800001",
+        "person": "Some(3)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29800001",
+        "person": "Some(2)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29800001",
+        "person": "Some(3)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29800001",
+        "person": "Some(2)",
+        "kind": "Decision",
+        "detail": "intent=MilitaryDuty nutrition_ms=56599999 starvation_ms=0 reason=unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29800001",
+        "person": "Some(2)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      },
+      {
+        "time_ms": "29800001",
+        "person": "Some(3)",
+        "kind": "Decision",
+        "detail": "intent=MilitaryDuty nutrition_ms=56599999 starvation_ms=0 reason=unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29800001",
+        "person": "Some(3)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      }
+    ]
+  },
+  "crossing_defended": {
+    "method": "Seed0 exact semantic event tuples (time,person,kind,detail), ignoring sequential event ID only for diagnosis; strict full-byte comparison remains FAIL",
+    "removed": [
+      {
+        "time_ms": "29940001",
+        "person": "Some(1)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29940001",
+        "person": "Some(2)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29940001",
+        "person": "Some(3)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29940001",
+        "person": "Some(1)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29940001",
+        "person": "Some(2)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29940001",
+        "person": "Some(3)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29940001",
+        "person": "Some(1)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      },
+      {
+        "time_ms": "29940001",
+        "person": "Some(2)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      },
+      {
+        "time_ms": "29940001",
+        "person": "Some(3)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      }
+    ],
+    "added": [
+      {
+        "time_ms": "29920001",
+        "person": "Some(1)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(2)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(3)",
+        "kind": "StrikeInvalidated",
+        "detail": "target=8; simultaneous pre-damage validation",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(1)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(2)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(3)",
+        "kind": "UnitActionState",
+        "detail": "ARRIVED; unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(1)",
+        "kind": "Decision",
+        "detail": "intent=MilitaryDuty nutrition_ms=56479999 starvation_ms=0 reason=unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(1)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(2)",
+        "kind": "Decision",
+        "detail": "intent=MilitaryDuty nutrition_ms=56479999 starvation_ms=0 reason=unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(2)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(3)",
+        "kind": "Decision",
+        "detail": "intent=MilitaryDuty nutrition_ms=56479999 starvation_ms=0 reason=unit order 0: at personally received objective",
+        "count": 1
+      },
+      {
+        "time_ms": "29920001",
+        "person": "Some(3)",
+        "kind": "DutyResumed",
+        "detail": "unit=0",
+        "count": 1
+      }
+    ]
+  }
+}

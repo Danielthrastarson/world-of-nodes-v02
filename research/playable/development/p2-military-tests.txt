@@ -1,0 +1,16 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.01s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 9 tests
+test provisioning::playable::military::tests::replacement_cancels_only_old_local_unit_queue_not_atomic_travel ... ok
+test provisioning::playable::military::tests::local_move_uses_existing_persons_and_physics ... ok
+test provisioning::playable::military::tests::incapacity_and_expired_service_prevent_issuance_and_end_retreat ... ok
+test provisioning::playable::military::tests::absent_late_members_do_not_receive_the_command_or_stance ... ok
+test provisioning::playable::military::tests::withdrawal_stops_own_strike_but_does_not_grant_immunity ... ok
+test provisioning::playable::military::tests::invalid_or_unknown_commands_do_not_change_the_world ... ok
+test provisioning::playable::military::tests::withdrawal_preserves_immediate_person_survival_priorities ... ok
+test provisioning::playable::military::tests::withdrawing_people_travel_and_resume_contact_only_after_arrival_or_new_order ... ok
+test provisioning::playable::military::tests::withdrawal_does_not_depend_on_observer_time_partitions ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 343 filtered out; finished in 0.18s
+

@@ -1,0 +1,1145 @@
+{
+  "scope": "All60F11C changedrunhashes. Each run repeated from cleanbaseline983b5b5. Only final Agent.last_event fields replaced after execution; complete statehash then matchescurrent. Noproductioncodechangedforanalysis.",
+  "results": [
+    {
+      "case": "bottleneck",
+      "seed": 0,
+      "baseline_hash": "ce148f69cf3483ea",
+      "current_hash": "25ee15c28b68d3c7",
+      "baseline_after_only_trace_reference_replacement": "25ee15c28b68d3c7",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 1,
+      "baseline_hash": "d89c53774bfb1aaf",
+      "current_hash": "4e091571318a3328",
+      "baseline_after_only_trace_reference_replacement": "4e091571318a3328",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 2,
+      "baseline_hash": "ebec4f4384f10f9e",
+      "current_hash": "edda78d289500375",
+      "baseline_after_only_trace_reference_replacement": "edda78d289500375",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 3,
+      "baseline_hash": "18e27548f8ac28be",
+      "current_hash": "70119f053eb9528f",
+      "baseline_after_only_trace_reference_replacement": "70119f053eb9528f",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 4,
+      "baseline_hash": "c91b5a7591c19c71",
+      "current_hash": "ed209e446eb3cf04",
+      "baseline_after_only_trace_reference_replacement": "ed209e446eb3cf04",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 5,
+      "baseline_hash": "4404e7be1ebe34d4",
+      "current_hash": "cc1468754a3a374d",
+      "baseline_after_only_trace_reference_replacement": "cc1468754a3a374d",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 6,
+      "baseline_hash": "c14125bea88c8cf8",
+      "current_hash": "f8cd9fac409ce1c7",
+      "baseline_after_only_trace_reference_replacement": "f8cd9fac409ce1c7",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 7,
+      "baseline_hash": "49a258a268686253",
+      "current_hash": "c8062abd02443b58",
+      "baseline_after_only_trace_reference_replacement": "c8062abd02443b58",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 8,
+      "baseline_hash": "8a251cf03457cda2",
+      "current_hash": "db8bd152a11dac25",
+      "baseline_after_only_trace_reference_replacement": "db8bd152a11dac25",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 9,
+      "baseline_hash": "745859173205d90a",
+      "current_hash": "8ae2834f5f044d4b",
+      "baseline_after_only_trace_reference_replacement": "8ae2834f5f044d4b",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 10,
+      "baseline_hash": "72d2a1aefa1f443b",
+      "current_hash": "8c2c9f8703279d3e",
+      "baseline_after_only_trace_reference_replacement": "8c2c9f8703279d3e",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 11,
+      "baseline_hash": "27fc76ec38d175bb",
+      "current_hash": "d53245ff051e7c74",
+      "baseline_after_only_trace_reference_replacement": "d53245ff051e7c74",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 12,
+      "baseline_hash": "b6092ab20c5c5ba8",
+      "current_hash": "0f6a65408f1fed13",
+      "baseline_after_only_trace_reference_replacement": "0f6a65408f1fed13",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 13,
+      "baseline_hash": "d2ca8af508072c50",
+      "current_hash": "da829fdfd99d817b",
+      "baseline_after_only_trace_reference_replacement": "da829fdfd99d817b",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 14,
+      "baseline_hash": "a36343f8eefe2deb",
+      "current_hash": "bbdd2f86da928e7a",
+      "baseline_after_only_trace_reference_replacement": "bbdd2f86da928e7a",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 15,
+      "baseline_hash": "1df50f81b68ebb3f",
+      "current_hash": "41d51f98ce7886c8",
+      "baseline_after_only_trace_reference_replacement": "41d51f98ce7886c8",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 16,
+      "baseline_hash": "1ecf5289afb65c8e",
+      "current_hash": "c4c0c56037c2d6e9",
+      "baseline_after_only_trace_reference_replacement": "c4c0c56037c2d6e9",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 17,
+      "baseline_hash": "d380b833de35df94",
+      "current_hash": "589f6a510e262d35",
+      "baseline_after_only_trace_reference_replacement": "589f6a510e262d35",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 18,
+      "baseline_hash": "a07766769c3cffa3",
+      "current_hash": "9d66922c27c51b94",
+      "baseline_after_only_trace_reference_replacement": "9d66922c27c51b94",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 19,
+      "baseline_hash": "19cb5007a814ffbc",
+      "current_hash": "ef7c48d496587f61",
+      "baseline_after_only_trace_reference_replacement": "ef7c48d496587f61",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 20,
+      "baseline_hash": "0353c0c55b26d5fd",
+      "current_hash": "647893ff0d55de28",
+      "baseline_after_only_trace_reference_replacement": "647893ff0d55de28",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 21,
+      "baseline_hash": "19a7ffdffbb447b4",
+      "current_hash": "ecb498fa244c19bb",
+      "baseline_after_only_trace_reference_replacement": "ecb498fa244c19bb",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 22,
+      "baseline_hash": "3094889068a74246",
+      "current_hash": "38a8cc270f5c52d3",
+      "baseline_after_only_trace_reference_replacement": "38a8cc270f5c52d3",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 23,
+      "baseline_hash": "9a603737841d5270",
+      "current_hash": "7b2452b4fbdaebbd",
+      "baseline_after_only_trace_reference_replacement": "7b2452b4fbdaebbd",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 24,
+      "baseline_hash": "95f26bf7da39f07e",
+      "current_hash": "617e7b080701ae5b",
+      "baseline_after_only_trace_reference_replacement": "617e7b080701ae5b",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 25,
+      "baseline_hash": "37daf047344fc182",
+      "current_hash": "efad6540b48d8ba5",
+      "baseline_after_only_trace_reference_replacement": "efad6540b48d8ba5",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 26,
+      "baseline_hash": "bed73adba426cc9b",
+      "current_hash": "8898e8a29e51b0e4",
+      "baseline_after_only_trace_reference_replacement": "8898e8a29e51b0e4",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 27,
+      "baseline_hash": "b595575ef9d2526f",
+      "current_hash": "7f33a92ef5856076",
+      "baseline_after_only_trace_reference_replacement": "7f33a92ef5856076",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 28,
+      "baseline_hash": "b2d7a6793e12e363",
+      "current_hash": "a726971ee5825000",
+      "baseline_after_only_trace_reference_replacement": "a726971ee5825000",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "bottleneck",
+      "seed": 29,
+      "baseline_hash": "0f57c5cbf9d33c72",
+      "current_hash": "3e8ed4a1b2f437ef",
+      "baseline_after_only_trace_reference_replacement": "3e8ed4a1b2f437ef",
+      "references": [
+        "0=11379",
+        "1=11382",
+        "2=11385",
+        "3=11388",
+        "4=11391",
+        "5=11394",
+        "6=1778",
+        "7=2649",
+        "8=11396"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 0,
+      "baseline_hash": "c6d1f452a89b4790",
+      "current_hash": "0592439474bf897d",
+      "baseline_after_only_trace_reference_replacement": "0592439474bf897d",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 1,
+      "baseline_hash": "236d70625044faab",
+      "current_hash": "074cff6a9715e668",
+      "baseline_after_only_trace_reference_replacement": "074cff6a9715e668",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 2,
+      "baseline_hash": "4793156686678b98",
+      "current_hash": "bfcd1c016805b5cf",
+      "baseline_after_only_trace_reference_replacement": "bfcd1c016805b5cf",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 3,
+      "baseline_hash": "689f2e5632319622",
+      "current_hash": "f4446283d6f42177",
+      "baseline_after_only_trace_reference_replacement": "f4446283d6f42177",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 4,
+      "baseline_hash": "e5bbee928909f28f",
+      "current_hash": "22fc867b7f757b3a",
+      "baseline_after_only_trace_reference_replacement": "22fc867b7f757b3a",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 5,
+      "baseline_hash": "8d38bf28328447de",
+      "current_hash": "825a0e98c74dbf6b",
+      "baseline_after_only_trace_reference_replacement": "825a0e98c74dbf6b",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 6,
+      "baseline_hash": "004300dd14fb4bdc",
+      "current_hash": "60707718a25744d3",
+      "baseline_after_only_trace_reference_replacement": "60707718a25744d3",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 7,
+      "baseline_hash": "20a594367fbec915",
+      "current_hash": "a1b107b082f067ce",
+      "baseline_after_only_trace_reference_replacement": "a1b107b082f067ce",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 8,
+      "baseline_hash": "7f25978750f3ffd6",
+      "current_hash": "3b2497f4d92f8c6d",
+      "baseline_after_only_trace_reference_replacement": "3b2497f4d92f8c6d",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 9,
+      "baseline_hash": "3edbf20032ad2112",
+      "current_hash": "58f710ba082885af",
+      "baseline_after_only_trace_reference_replacement": "58f710ba082885af",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 10,
+      "baseline_hash": "23d377b1f06ca3b1",
+      "current_hash": "8604680fa91d7888",
+      "baseline_after_only_trace_reference_replacement": "8604680fa91d7888",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 11,
+      "baseline_hash": "d498f8bc7368ebaf",
+      "current_hash": "af00ceb4407c43e8",
+      "baseline_after_only_trace_reference_replacement": "af00ceb4407c43e8",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 12,
+      "baseline_hash": "39fc0e0160abffc0",
+      "current_hash": "b73c66ec159281eb",
+      "baseline_after_only_trace_reference_replacement": "b73c66ec159281eb",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 13,
+      "baseline_hash": "e735a0e06ac004b2",
+      "current_hash": "f655b4c3d67c5445",
+      "baseline_after_only_trace_reference_replacement": "f655b4c3d67c5445",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 14,
+      "baseline_hash": "2845cb71c5ca9fd3",
+      "current_hash": "4a51ad4ea5687b2a",
+      "baseline_after_only_trace_reference_replacement": "4a51ad4ea5687b2a",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 15,
+      "baseline_hash": "f2c56bcbd4603ced",
+      "current_hash": "10dc31a94f0989a6",
+      "baseline_after_only_trace_reference_replacement": "10dc31a94f0989a6",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 16,
+      "baseline_hash": "8c91129103fbce76",
+      "current_hash": "a0d75aa8daed4889",
+      "baseline_after_only_trace_reference_replacement": "a0d75aa8daed4889",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 17,
+      "baseline_hash": "95e816b35dd1c7c4",
+      "current_hash": "7346991121e2ae51",
+      "baseline_after_only_trace_reference_replacement": "7346991121e2ae51",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 18,
+      "baseline_hash": "60547d2abe9905df",
+      "current_hash": "73effcb3c74c656c",
+      "baseline_after_only_trace_reference_replacement": "73effcb3c74c656c",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 19,
+      "baseline_hash": "c04b1b7a3da3d8c6",
+      "current_hash": "56b476cf82ad6bdf",
+      "baseline_after_only_trace_reference_replacement": "56b476cf82ad6bdf",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 20,
+      "baseline_hash": "298e31e0e5170219",
+      "current_hash": "b8d0819687aa606c",
+      "baseline_after_only_trace_reference_replacement": "b8d0819687aa606c",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 21,
+      "baseline_hash": "d8befa7a2d6d8a9e",
+      "current_hash": "b91a4f5486b69965",
+      "baseline_after_only_trace_reference_replacement": "b91a4f5486b69965",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 22,
+      "baseline_hash": "2837138f1a05b7e2",
+      "current_hash": "32765653fa3471af",
+      "baseline_after_only_trace_reference_replacement": "32765653fa3471af",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 23,
+      "baseline_hash": "8bc476c387e0976a",
+      "current_hash": "ad845d25c69f6f57",
+      "baseline_after_only_trace_reference_replacement": "ad845d25c69f6f57",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 24,
+      "baseline_hash": "6bfe2159221f7698",
+      "current_hash": "e13d62aafb145a05",
+      "baseline_after_only_trace_reference_replacement": "e13d62aafb145a05",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 25,
+      "baseline_hash": "bc5d5d2cef5332aa",
+      "current_hash": "d2ed41748278fd69",
+      "baseline_after_only_trace_reference_replacement": "d2ed41748278fd69",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 26,
+      "baseline_hash": "042e24aa7a59646f",
+      "current_hash": "976c10fa2b7597f4",
+      "baseline_after_only_trace_reference_replacement": "976c10fa2b7597f4",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 27,
+      "baseline_hash": "fedb0ccfef62ed47",
+      "current_hash": "bd92a8e9319f9f32",
+      "baseline_after_only_trace_reference_replacement": "bd92a8e9319f9f32",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 28,
+      "baseline_hash": "39354b114569dfeb",
+      "current_hash": "ab9c7a895c324a74",
+      "baseline_after_only_trace_reference_replacement": "ab9c7a895c324a74",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    },
+    {
+      "case": "crossing",
+      "seed": 29,
+      "baseline_hash": "65e43035580d7608",
+      "current_hash": "450145c64955fb55",
+      "baseline_after_only_trace_reference_replacement": "450145c64955fb55",
+      "references": [
+        "0=11460",
+        "1=11462",
+        "2=11464",
+        "3=11466",
+        "4=11468",
+        "5=11470",
+        "6=1241",
+        "7=2112",
+        "8=11472"
+      ],
+      "equal": true
+    }
+  ]
+}

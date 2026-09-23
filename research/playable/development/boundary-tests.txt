@@ -1,0 +1,37 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 14.73s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 29 tests
+test provisioning::playable::military::tests::replacement_cancels_only_old_local_unit_queue_not_atomic_travel ... ok
+test provisioning::playable::military::tests::local_move_uses_existing_persons_and_physics ... ok
+test provisioning::playable::session::tests::local_command_reaches_an_accepted_office_but_does_not_spawn_crossing ... ok
+test provisioning::playable::session::tests::map_only_initial_knowledge_never_claims_empty_remote_contents ... ok
+test provisioning::playable::military::tests::incapacity_and_expired_service_prevent_issuance_and_end_retreat ... ok
+test provisioning::playable::military::tests::withdrawing_people_travel_and_resume_contact_only_after_arrival_or_new_order ... ok
+test provisioning::playable::military::tests::withdrawal_preserves_immediate_person_survival_priorities ... ok
+test provisioning::playable::military::tests::withdrawal_stops_own_strike_but_does_not_grant_immunity ... ok
+test provisioning::playable::snapshot::tests::invalid_viewer_cannot_be_used_as_global_spectator_in_play ... ok
+test provisioning::playable::snapshot::tests::local_edges_never_reveal_unseen_opposite_bank_queue_or_occupancy ... ok
+test provisioning::playable::snapshot::tests::local_fresh_observation_replaces_ghost_without_mutating_old_memory ... ok
+test provisioning::playable::snapshot::tests::capture_is_pure_for_physics_events_memories_rng_and_institutions ... ok
+test provisioning::playable::snapshot::tests::local_presence_does_not_expose_personal_inventory ... ok
+test provisioning::playable::snapshot::tests::play_hides_other_private_state_and_unseen_people_debug_exposes_truth ... ok
+test provisioning::playable::snapshot::tests::physically_carried_report_retains_author_sender_and_observation_age ... ok
+test provisioning::playable::snapshot::tests::remote_order_completion_is_unknown_to_issuer_until_information_arrives ... ok
+test provisioning::playable::session::tests::ruler_remembers_own_local_handoff_without_reading_remote_outcome ... ok
+test provisioning::playable::snapshot::tests::stale_ghost_and_food_timestamps_do_not_refresh_when_clock_advances ... ok
+test provisioning::playable::snapshot::tests::unseen_remote_truth_and_global_journals_cannot_change_play_snapshot ... ok
+test provisioning::playable::military::tests::absent_late_members_do_not_receive_the_command_or_stance ... ok
+test provisioning::playable::session::tests::local_unit_control_targets_existing_people_and_keeps_physical_travel ... ok
+test provisioning::playable::military::tests::invalid_or_unknown_commands_do_not_change_the_world ... ok
+test provisioning::playable::snapshot::tests::hostility_uses_local_evidence_not_hidden_raid_objectives ... ok
+test provisioning::playable::military::tests::withdrawal_does_not_depend_on_observer_time_partitions ... ok
+test provisioning::playable::session::tests::courier_handoff_does_not_claim_remote_receipt ... ok
+test provisioning::playable::session::tests::remote_order_starts_with_a_physical_courier_not_a_remote_obligation ... ok
+test provisioning::playable::snapshot::tests::render_poll_frequency_does_not_change_integrated_session_history ... ok
+test provisioning::playable::session::tests::command_replay_includes_rejected_inputs_and_exact_hashes ... ok
+test provisioning::playable::session::tests::arbitrary_reader_checkpoints_do_not_schedule_contacts ... ok
+
+test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 327 filtered out; finished in 4.02s
+

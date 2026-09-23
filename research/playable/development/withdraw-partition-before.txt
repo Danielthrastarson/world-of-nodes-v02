@@ -1,0 +1,20 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.01s
+     Running unittests src/lib.rs (/tmp/won-p2-6mtpw_vh/target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 1 test
+
+thread 'provisioning::playable::military::tests::withdrawal_does_not_depend_on_observer_time_partitions' (7) panicked at src/provisioning/playable/military.rs:445:9:
+assertion `left == right` failed: first event difference: Some((Event { id: 658, at: 7260001, agent: Some(6), cause: Some(645), kind: "StrikeInvalidated", detail: "target=2; simultaneous pre-damage validation" }, Event { id: 658, at: 7260000, agent: Some(6), cause: Some(645), kind: "StrikeInvalidated", detail: "target=2; simultaneous pre-damage validation" }))
+  left: 8848713433154228812
+ right: 9790627992222054366
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test provisioning::playable::military::tests::withdrawal_does_not_depend_on_observer_time_partitions ... FAILED
+
+failures:
+
+failures:
+    provisioning::playable::military::tests::withdrawal_does_not_depend_on_observer_time_partitions
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 334 filtered out; finished in 0.18s
+
+error: test failed, to rerun pass `--lib`

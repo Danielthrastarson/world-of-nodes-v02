@@ -1,0 +1,53 @@
+compiled_executable_fnv1a64=Some(df56a30975d7d4f9)
+scenario=Local
+seed=0
+sim_ms=0
+state_hash=d93c2268ecb03a63
+event_hash=ab984bb76f939b18
+replay_equal=true
+frames=576
+fps=102.043
+last_sim_batch_ms=0.000041
+last_snapshot_ms=0.000000
+last_draw_ms=0.328193
+rss_kib=Some(189220)
+view_mode=Play
+visible_or_remembered_people=10
+commands=[
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Hold,
+            target: 1,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Move,
+            target: 2,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Attack,
+            target: 2,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+]

@@ -37,8 +37,13 @@ and irreversible abstraction choices require a project-owner decision.
 | F13A Cross-system readiness | PASSED | 180 paired controls integrate lawful local commissioning, production, households, reports, authority and security. Infrastructure can complete and worsen nourishment. This is research input, not a sovereign command channel. |
 | F13B Scoped command chain | PASSED | 600 paired-condition runs; accepted steward duties, physical orders, Person arbitration and existing commission. Controlled receipt tests cover stale/expired orders and delayed withdrawal; live handoff failures preserved. |
 | F13 Kingdom vertical slice | PASSED — headless command-chain scope | One controlled sovereign order physically reaches an accepted office and causes voluntary crossing construction, altered traffic and household consequences. No final UI, autonomous government or general welfare claim. |
+| P0 Playable interface foundation | PASSED — native graph scope | Optional Macroquad client renders owned authoritative/known snapshots; camera, selection, time and explicit Debug/Play separation. |
+| P1 Ruler command loop | PASSED — local command scope | Actual window input issues scoped crossing orders; physical office/labor/material chain remains real. Remote recipient completion remains unreported without an ACK. |
+| P2 Military control slice | PASSED — local graph scope | Move/Hold/Attack/Withdraw affect actual local voluntary members through shared physics. No remote updates, immunity or continuous formations. |
+| P3 Knowledge/reporting interface | PASSED — dated-observation scope | Author/source/age/receipt are inspectable; stale and map-only knowledge remain distinct from current truth. |
+| P4 Integrated playable scenario | ACTIVE — playable candidate | 18-Person economy/logistics/security scenario, 48 exact replays and actual window tests. Human comprehension, pacing and sustained play remain to be validated. |
 | F14 Target moment | NOT STARTED | Policy effects → households → institutional breakdown/coordination → actual gathering/travel toward castle. No spawn-rebellion shortcut. |
-| F15 Rendering | NOT STARTED | World → observation → render snapshot → screen. Real identities/goods/roads/fields/units. Renderer never owns world state or time. |
+| F15 Rendering | REDESIGNED / partial foundation in P0 | World → observation → render snapshot → screen. Real identities/goods/roads/fields/units. Renderer never owns world state or time. |
 | F16 Physical visual depth | NOT STARTED | Lighting, shadows, particles, fire, weather, limited physics where causally justified, with LOD. Low geometric complexity, high systemic complexity. |
 | F17 Multiplayer foundation | NOT STARTED | Server-compatible kernel, stable IDs, explicit commands, reproducible compact events; small-player correctness before 50–100-player scale. No client-authoritative resources. |
 
@@ -199,3 +204,36 @@ revocation semantics; they do not turn those live failures into successes.
 F14 remains NOT STARTED: collective political coordination would need its own
 causal specification. No rebellion, new coercive institution, UI or further
 milestone is implemented in this increment.
+
+
+## Playable dependency insertion after F13
+
+The owner accepted the headless F13 chain and explicitly authorized an interface
+before further large simulation systems. The active dependency is now:
+
+F13 → P0 observation/snapshot/client → P1 ruler command loop → P2 local unit control
+→ P3 information-interface validation → P4 human playtest.
+
+P3 knowledge boundaries apply from P0, not as a later disclosure patch. This moves
+the minimal portion of former F15 forward; it does not claim F14 political
+coordination, visual depth, browser readiness or multiplayer. The earlier roadmap
+and milestone-status paragraphs remain historical evidence.
+
+Implementation `6c1159e`: [client contract/controls](PLAYABLE_CLIENT.md),
+[execution plan](PLAYABLE_EXECUTION_PLAN.md), [gate/evidence report](../research/playable/REPORT.md),
+[copyable handoff](../research/playable/HANDOFF.txt).
+P0–P3 pass at native technical scope. P4 is an integrated playable candidate,
+not a human-tested complete game loop. The next work is playtest/UX iteration,
+not automatically adding more institutions or resuming the feature roadmap.
+
+The 48-run input panel plus 48 exact replays preserves protection/nourishment
+tradeoffs, rejected remote military commands, stale reports and nonretroactive
+revocation. 369 headless tests pass. All 20,266 old research files remain unchanged.
+All 600 F13B histories reproduce exactly. A proven invalid-contact clock repair
+changes cancellation/duty timing and hashes in 60/1,440 F11C histories; strict
+failures remain recorded, final measured physical outcomes match, and full causal
+attribution is linked in the report. Do not describe historical identity as universal.
+
+No money, coercion, civilian micromanagement, free logistics, new economic behavior,
+Jev, fake graphics entities or renderer authority is introduced. Missing remote
+status acknowledgments, service expiry and ruler mortality remain explicit limits.

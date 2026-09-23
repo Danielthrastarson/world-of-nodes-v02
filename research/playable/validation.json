@@ -1,0 +1,68 @@
+{
+  "implementation_revision": "6c1159e",
+  "gates": {
+    "P0": "PASSED_NATIVE_GRAPH",
+    "P1": "PASSED_LOCAL_COMMAND",
+    "P2": "PASSED_LOCAL_GRAPH",
+    "P3": "PASSED_DATED_OBSERVATION",
+    "P4": "ACTIVE_HUMAN_PLAYTEST_PENDING"
+  },
+  "headless_tests": {
+    "library": 356,
+    "integration": 13,
+    "total": 369,
+    "status": "PASS"
+  },
+  "client_distinct_tests": 3,
+  "client_camera_repeated_in_render_probe": true,
+  "clippy": "PASS_BOTH_CRATES",
+  "format": "PASS_BOTH_CRATES",
+  "scenario_runs": 48,
+  "exact_replays": 48,
+  "window": {
+    "commission-release": {
+      "result": "PASS",
+      "replay_records": {
+        "current.txt": true,
+        "help-no-command.txt": true,
+        "issued.txt": true,
+        "after-running.txt": true,
+        "after-debug.txt": true,
+        "before-camera.txt": true,
+        "after-camera.txt": true
+      },
+      "input": "client/commission-release/input.json"
+    },
+    "military-release": {
+      "result": "PASS",
+      "replay_records": {
+        "current.txt": true,
+        "help-no-command.txt": true,
+        "hold.txt": true,
+        "context-move.txt": true,
+        "attack.txt": true,
+        "after-running.txt": true,
+        "after-debug.txt": true,
+        "withdraw-input.txt": true,
+        "before-camera.txt": true,
+        "after-camera.txt": true
+      },
+      "input": "client/military-release/input.json"
+    }
+  },
+  "matched_remote_play_debug_hashes": "PASS",
+  "historical_identity": "REVIEWED_STRICT_FAILURE_60_OF_1440_F11C",
+  "F13B_exact_runs": 600,
+  "prior_artifact_integrity": {
+    "files": 20266,
+    "changed": [],
+    "status": "PASS"
+  },
+  "render_1000": "client/render-release/1000-persons.txt",
+  "limits": [
+    "P4 requires human comprehension/pacing playtest",
+    "No remote recipient completion ACK",
+    "Remote setup loses military command role",
+    "No integrated1000Person scalability claim"
+  ]
+}

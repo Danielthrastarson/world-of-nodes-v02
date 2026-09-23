@@ -1,0 +1,21 @@
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error: explicit call to `.into_iter()` in function argument accepting `IntoIterator`
+   --> src/bin/playable_probe.rs:101:20
+    |
+101 |             .chain(fs::read(&path)?.into_iter())
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: this parameter accepts any `IntoIterator`, so you don't need to call `.into_iter()`
+   --> library/core/src/iter/traits/iterator.rs:513:11
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.98.0/index.html#useless_conversion
+    = note: `-D clippy::useless-conversion` implied by `-D warnings`
+    = help: to override `-D warnings` add `#[allow(clippy::useless_conversion)]`
+help: consider removing the `.into_iter()`
+    |
+101 -             .chain(fs::read(&path)?.into_iter())
+101 +             .chain(fs::read(&path)?)
+    |
+
+error: could not compile `world-of-nodes` (bin "playable_probe") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `world-of-nodes` (bin "playable_probe" test) due to 1 previous error

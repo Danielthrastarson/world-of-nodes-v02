@@ -1,0 +1,29 @@
+scenario=Local
+seed=0
+sim_ms=0
+state_hash=6143e2a357727777
+event_hash=693aebfd13a7d398
+replay_equal=true
+frames=304
+fps=65.524
+last_sim_batch_ms=0.000055
+last_snapshot_ms=0.000000
+last_draw_ms=0.336702
+rss_kib=Some(283312)
+view_mode=Play
+visible_or_remembered_people=10
+commands=[
+    CommandRecord {
+        at: 0,
+        command: Commission {
+            office: 0,
+            project: 0,
+        },
+        outcome: Ok(
+            Order {
+                message: 0,
+                dispatch: DeliveredLocally,
+            },
+        ),
+    },
+]

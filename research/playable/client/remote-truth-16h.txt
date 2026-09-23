@@ -1,0 +1,29 @@
+scenario=Remote
+seed=0
+sim_ms=57600000
+state_hash=6e663d3e8830f072
+event_hash=ffe174db523c26ce
+replay_equal=true
+frames=120
+fps=88.760
+last_sim_batch_ms=0.000120
+last_snapshot_ms=0.000000
+last_draw_ms=0.352321
+rss_kib=Some(103416)
+view_mode=Debug
+visible_or_remembered_people=18
+commands=[
+    CommandRecord {
+        at: 900000,
+        command: Commission {
+            office: 0,
+            project: 0,
+        },
+        outcome: Ok(
+            Order {
+                message: 0,
+                dispatch: WithAgreedCourier,
+            },
+        ),
+    },
+]

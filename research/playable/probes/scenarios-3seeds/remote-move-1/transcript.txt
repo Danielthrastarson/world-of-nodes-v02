@@ -1,0 +1,12 @@
+[
+    CommandRecord {
+        at: 900000,
+        command: Unit {
+            verb: Move,
+            target: 2,
+        },
+        outcome: Err(
+            "commander lacks active voluntary service in the agreed unit",
+        ),
+    },
+]

@@ -1,0 +1,38 @@
+{
+  "bottleneck": {
+    "baseline_hash": "ce148f69cf3483ea",
+    "current_hash": "25ee15c28b68d3c7",
+    "only_final_Agent_last_event_replacements": [
+      "0=11379",
+      "1=11382",
+      "2=11385",
+      "3=11388",
+      "4=11391",
+      "5=11394",
+      "6=1778",
+      "7=2649",
+      "8=11396"
+    ],
+    "replaced_baseline_hash": "25ee15c28b68d3c7",
+    "equal": true,
+    "meaning": "After cleanbaselineexecution, changing ONLY each finalPerson causal-eventreference reproduces the complete currentWorld statehash. No other hash-covered state replacement needed."
+  },
+  "crossing": {
+    "baseline_hash": "c6d1f452a89b4790",
+    "current_hash": "0592439474bf897d",
+    "only_final_Agent_last_event_replacements": [
+      "0=11460",
+      "1=11462",
+      "2=11464",
+      "3=11466",
+      "4=11468",
+      "5=11470",
+      "6=1241",
+      "7=2112",
+      "8=11472"
+    ],
+    "replaced_baseline_hash": "0592439474bf897d",
+    "equal": true,
+    "meaning": "After cleanbaselineexecution, changing ONLY each finalPerson causal-eventreference reproduces the complete currentWorld statehash. No other hash-covered state replacement needed."
+  }
+}

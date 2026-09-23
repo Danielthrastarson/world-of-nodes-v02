@@ -1,0 +1,30 @@
+compiled_executable_fnv1a64=Some(df56a30975d7d4f9)
+scenario=Local
+seed=0
+sim_ms=23340000
+state_hash=300c525ee1f3c5f5
+event_hash=7db333b627965118
+replay_equal=true
+frames=2006
+fps=111.117
+last_sim_batch_ms=0.000112
+last_snapshot_ms=0.063888
+last_draw_ms=0.275509
+rss_kib=Some(190152)
+view_mode=Play
+visible_or_remembered_people=15
+commands=[
+    CommandRecord {
+        at: 0,
+        command: Commission {
+            office: 0,
+            project: 0,
+        },
+        outcome: Ok(
+            Order {
+                message: 0,
+                dispatch: DeliveredLocally,
+            },
+        ),
+    },
+]

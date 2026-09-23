@@ -1,0 +1,19 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+   Compiling world-of-nodes-client v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e/client)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.50s
+     Running unittests src/bin/render_probe.rs (client/target/debug/deps/render_probe-297a3822432ad875)
+
+running 1 test
+test camera::tests::zoom_keeps_target_under_cursor_and_pan_is_reversible ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (client/target/debug/deps/world_of_nodes_client-29d82048aace47b2)
+
+running 3 tests
+test camera::tests::zoom_keeps_target_under_cursor_and_pan_is_reversible ... ok
+test clock::tests::drawing_cadence_does_not_change_elapsed_simulation_time ... ok
+test clock::tests::overload_retains_backlog_and_pause_never_adds_time ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

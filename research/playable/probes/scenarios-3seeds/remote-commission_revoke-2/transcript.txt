@@ -1,0 +1,27 @@
+[
+    CommandRecord {
+        at: 900000,
+        command: Commission {
+            office: 0,
+            project: 0,
+        },
+        outcome: Ok(
+            Order {
+                message: 0,
+                dispatch: WithAgreedCourier,
+            },
+        ),
+    },
+    CommandRecord {
+        at: 8100000,
+        command: Revoke {
+            command: 0,
+        },
+        outcome: Ok(
+            Revocation {
+                message: 1,
+                dispatch: HeldByIssuer,
+            },
+        ),
+    },
+]

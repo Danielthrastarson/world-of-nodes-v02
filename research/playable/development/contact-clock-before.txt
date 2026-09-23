@@ -1,0 +1,23 @@
+Controlled reproduction: new clock regression test, existing no-playable command mechanics; contact_next_boundary disabled to reproduce pre-correction scheduling.
+
+   Compiling world-of-nodes v0.1.0 (/tmp/won-p2-6mtpw_vh)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.99s
+     Running unittests src/lib.rs (/tmp/won-p2-6mtpw_vh/target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 1 test
+
+thread 'provisioning::combat::tests::contact_loss_has_a_kernel_boundary_without_any_playable_order' (274) panicked at src/provisioning/combat/tests.rs:92:5:
+assertion `left == right` failed
+  left: 8100000
+ right: 7200001
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test provisioning::combat::tests::contact_loss_has_a_kernel_boundary_without_any_playable_order ... FAILED
+
+failures:
+
+failures:
+    provisioning::combat::tests::contact_loss_has_a_kernel_boundary_without_any_playable_order
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 335 filtered out; finished in 0.03s
+
+error: test failed, to rerun pass `--lib`

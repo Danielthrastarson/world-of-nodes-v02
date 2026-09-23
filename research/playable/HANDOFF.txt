@@ -1,0 +1,48 @@
+WORLD OF NODES — FIRST PLAYABLE KINGDOM INTERFACE
+
+Implementation: 6c1159e (baseline 983b5b5).
+
+Run:
+cargo run --release --manifest-path client/Cargo.toml
+
+Start paused. W → 1 → click crossing → Enter issues a real sovereign order.
+Space resumes. Select UNIT 0 for Move / Attack / Hold / Withdraw. Q opens
+observations and reports. F2 explicitly toggles debug truth. Wheel zooms;
+arrows/middle/right drag pan. E/R powers remain deferred.
+
+P0–P3 pass at Local native graph/technical scope.
+P4 is a playable candidate pending human comprehension/pacing playtest.
+
+The Rust client renders owned snapshots. The dependency-free headless kernel
+remains authoritative. No fake traffic, instant construction, hidden normal-play
+knowledge, military teleportation, new money/taxes/coercion or Jev integration.
+
+Evidence:
+- 369 headless tests; three distinct client camera/clock tests; Clippy passes.
+- Actual keyboard/mouse commands replay headlessly with identical hashes.
+- 48 scenarios plus 48 exact dated-input replays; all invariant audits pass.
+- Local Commission: 20 wood + 8.65 person-hours → crossing at 13h01m.
+- No input → Commission: consumption 176→224; starvation 4→0 person-hours.
+- Local Attack: stolen food 30→0, but consumption 176→168 and starvation 4→8.
+  One raider dies; one defender and two raiders remain incapacitated.
+- Remote order takes 15m56.4s to reach the steward through a real courier.
+- Remote military inputs reject because the ruler's initial journey ends service.
+- Revocation does not demolish an already commissioned project.
+- 1,000 real visible Persons rendered at ~123fps in the isolated display test;
+  mean CPU draw 0.622ms. This is a paused render-load test, not integrated scale proof.
+
+Regression disclosure:
+600 F13B runs reproduce exactly. 60/1,440 F11C histories change cancellation/duty
+timing and causal references after a proven contact-clock correction. Strict
+failures remain preserved. Measured physical/welfare outcomes remain unchanged.
+All 20,266 previous research files are intact.
+
+Remaining limits:
+Distant recipient completion has no transported acknowledgment. Unknown status
+remains unknown. The ruler is mortal and service expires; the UI grants no right
+to silently restore control. Human playtest, save/load, browser deployment and
+polished feedback remain open. No further simulation expansion was undertaken.
+
+Detailed report: research/playable/REPORT.md
+Controls: docs/PLAYABLE_CLIENT.md
+Raw evidence: research/playable/probes and research/playable/client

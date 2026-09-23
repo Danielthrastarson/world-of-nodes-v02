@@ -1,0 +1,15 @@
+scenario=Local
+seed=0
+sim_ms=0
+state_hash=d7cef5e2f816c404
+event_hash=4231485af1aa3c8d
+replay_equal=true
+frames=251
+fps=67.224
+last_sim_batch_ms=0.000130
+last_snapshot_ms=0.000000
+last_draw_ms=1.735531
+rss_kib=Some(184632)
+view_mode=Play
+visible_or_remembered_people=10
+commands=[]

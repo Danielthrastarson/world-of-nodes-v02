@@ -1,0 +1,54 @@
+{
+  "baseline_revision": "983b5b5b522456358aa9c7f3d7adb408df77a89f",
+  "status": "REVIEWED_REGRESSION_FAILURE",
+  "full_headless_tests": {
+    "library": 352,
+    "integration": 13,
+    "status": "PASS"
+  },
+  "historical_precombat": {
+    "executions": 169,
+    "status": "PASS"
+  },
+  "historical_217_strict": {
+    "status": "FAIL",
+    "first": "bottleneck_defended/runs.csv",
+    "archive": "historical/failed-replay.tar.gz"
+  },
+  "F13B": {
+    "runs": 600,
+    "files_checked": 3000,
+    "status": "PASS",
+    "differences": 0
+  },
+  "F11C": {
+    "runs": 1440,
+    "strict_status": "FAIL",
+    "changed_runs": 60,
+    "changed_arms": [
+      "bottleneck_defended",
+      "crossing_defended"
+    ],
+    "changed_final_fields": [
+      "combat_h",
+      "prospective_defenders_combat_h",
+      "prospective_defenders_military_duty_h",
+      "state_hash",
+      "event_hash"
+    ],
+    "people_and_timeline_equal_runs": 1440,
+    "goods_trace_samples_equal": 48,
+    "event_trace_samples_changed": 2,
+    "raw_event_and_goods_seed_scope": [
+      0
+    ],
+    "state_hashes_explained_only_by_final_causal_event_refs": 60
+  },
+  "old_artifacts": {
+    "status": "PASS",
+    "unchanged_files": 20266,
+    "manifest": "research/playable/prior-artifacts.json"
+  },
+  "retention": "Exact passing duplicate directories discarded afterallfilehashrecording; changedbaseline/currentrawarms andstrictfailurearchive retained",
+  "review": "REPORT.md"
+}
