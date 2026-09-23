@@ -16,6 +16,12 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    Volunteer {
+        request: usize,
+    },
+    JoinMuster,
+    MilitaryDuty,
+    LeaveService,
     Reproduce {
         partner: usize,
     },
@@ -446,6 +452,7 @@ pub(crate) fn decide_with_capabilities(
 ) -> Decision {
     let super::person::Capabilities {
         life,
+        military,
         cultivation: farm,
         capital,
         public_works: infrastructure,
@@ -506,6 +513,11 @@ pub(crate) fn decide_with_capabilities(
     }
     if let Some(view) = life
         && let Some(d) = super::lifecycle::consider(o, view)
+    {
+        return d;
+    }
+    if let Some(view) = military
+        && let Some(d) = super::military::consider(o, m, view)
     {
         return d;
     }

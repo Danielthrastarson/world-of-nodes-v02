@@ -397,6 +397,11 @@ impl World {
             matured: false,
         });
         self.lifecycle.views.push(View::default());
+        if self.config.military.is_some() {
+            self.military
+                .memories
+                .push(super::super::military::Memory::default());
+        }
         self.household.memories.push(household::Memory::default());
         if self.config.farming.is_some() {
             self.farm.memories.push(farming::Memory::default())

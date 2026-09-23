@@ -4,6 +4,12 @@ use crate::provisioning::{World, authority};
 impl World {
     pub(crate) fn person_capabilities(&self, id: usize) -> Capabilities<'_> {
         Capabilities {
+            military: self
+                .config
+                .military
+                .as_ref()
+                .filter(|c| c.enabled)
+                .map(|_| &self.military.memories[id]),
             life: self
                 .config
                 .lifecycle
@@ -43,6 +49,9 @@ impl World {
     pub fn person_state(&self, id: usize) -> Option<State<'_>> {
         let a = self.agents.get(id)?;
         let mut roles = vec![];
+        if let Some(unit) = self.military_role(id) {
+            roles.push(Role::Soldier { unit });
+        }
         if let Some(p) = self.polity()
             && p.sovereign == id
         {

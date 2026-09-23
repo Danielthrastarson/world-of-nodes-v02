@@ -10,6 +10,7 @@ pub use super::Agent as Person;
 /// Available domain evaluators, not occupations or separate brains.
 #[derive(Clone, Copy, Debug, Default)]
 pub struct Capabilities<'a> {
+    pub military: Option<&'a super::military::Memory>,
     pub life: Option<&'a super::lifecycle::View>,
     pub social: Option<&'a super::social::Memory>,
     pub care: Option<&'a super::household::Memory>,
@@ -19,7 +20,8 @@ pub struct Capabilities<'a> {
 }
 impl Capabilities<'_> {
     pub fn any(&self) -> bool {
-        self.life.is_some()
+        self.military.is_some()
+            || self.life.is_some()
             || self.social.is_some()
             || self.care.is_some()
             || self.cultivation.is_some()
@@ -54,6 +56,9 @@ impl Needs {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Role {
+    Soldier {
+        unit: usize,
+    },
     Sovereign {
         polity: usize,
     },

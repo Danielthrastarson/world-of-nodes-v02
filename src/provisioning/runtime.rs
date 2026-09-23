@@ -45,6 +45,7 @@ impl World {
                 | Action::Sleep { .. }
                 | Action::Farm { .. }
                 | Action::BuildCart { .. }
+                | Action::MilitaryDuty { .. }
                 | Action::BuildCrossing { .. }
         ) {
             if matches!(self.agents[id].action, Action::Farm { .. }) {
@@ -121,7 +122,12 @@ impl World {
         let Location::Node(node) = self.agents[id].location else {
             return Err("edge traversal is atomic".into());
         };
+        self.military_action(id, &intent);
         match intent {
+            Intent::Volunteer { request } => self.volunteer(id, request)?,
+            Intent::JoinMuster => self.join_muster(id)?,
+            Intent::MilitaryDuty => self.begin_duty(id)?,
+            Intent::LeaveService => self.leave_service(id, "VOLUNTARY_WITHDRAWAL"),
             Intent::Reproduce { partner } => self.consent_reproduction(id, partner)?,
             Intent::GiveCareFood {
                 dependent,
@@ -214,6 +220,9 @@ impl World {
                 self.goods.batches[batch].quantity -= quantity;
                 self.goods.consumed += quantity as u128;
                 self.metrics.consumed += quantity;
+                if self.military_role(id).is_some() {
+                    self.military.journal.food += quantity;
+                }
                 if b.owner == Owner::Commons(0) && self.carried_by(id, b.holder) {
                     self.diagnostics.cargo_eaten(id, quantity);
                 }
@@ -511,6 +520,14 @@ impl World {
     }
     pub(super) fn next_time(&self, target: Time) -> Time {
         let mut next = target;
+        for v in &self.military.memories {
+            if let Some(u) = &v.undertaking {
+                let t = u.until.unwrap_or(u.request.expires);
+                if t > self.now {
+                    next = next.min(t)
+                }
+            }
+        }
         if let Some(c) = &self.config.lifecycle {
             next = self.lifecycle.next_boundary(self.now, next, &c.rules);
         }
@@ -604,6 +621,7 @@ impl World {
     }
     fn integrate(&mut self, to: Time) {
         let dt = to - self.now;
+        self.integrate_military(dt);
         self.integrate_lifecycle(dt);
         self.integrate_household(dt);
         self.integrate_authority(dt);
@@ -642,6 +660,7 @@ impl World {
                     Action::Queued { .. } => "queue",
                     Action::Sleep { .. } => "sleep",
                     Action::Reproduce { .. } => "reproduction",
+                    Action::MilitaryDuty { .. } => "military_duty",
                     Action::Idle => "idle",
                     Action::Dead => unreachable!(),
                 };
@@ -733,7 +752,7 @@ impl World {
                     }
                 }
                 Action::Idle => self.metrics.idle_ms += dt as u128,
-                Action::Reproduce { .. } | Action::Dead => {}
+                Action::MilitaryDuty { .. } | Action::Reproduce { .. } | Action::Dead => {}
             }
         }
         if self.config.infrastructure.is_some() {
@@ -882,6 +901,7 @@ impl World {
                 self.social_death(id);
             }
         }
+        self.finish_military();
         self.finish_lifecycle();
         self.finish_farming();
         self.finish_carts();
@@ -1059,6 +1079,7 @@ impl World {
         let mut decisions = vec![];
         let mut stale_events = vec![];
         for id in ids {
+            self.observe_military(id);
             self.observe_lifecycle(id);
             self.observe_social(id);
             self.observe_household(id);
@@ -1114,6 +1135,12 @@ impl World {
                 self.acceptance.record(&o, &d, audit);
             }
             let capabilities = person::Capabilities {
+                military: self
+                    .config
+                    .military
+                    .as_ref()
+                    .filter(|c| c.enabled)
+                    .map(|_| &self.military.memories[id]),
                 life: self
                     .config
                     .lifecycle
@@ -1181,6 +1208,7 @@ impl World {
             } else {
                 self.barter_decision(id, &o, selected.decision)
             };
+            self.record_military_choice(id, &o, &decision);
             self.record_lifecycle_choice(id, &o, &decision);
             self.record_social_choice(id, &o, &decision);
             self.record_care_decision(id, &o, &decision);

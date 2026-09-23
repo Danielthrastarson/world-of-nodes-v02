@@ -156,6 +156,12 @@ impl World {
             "{:?}|{:?}|{:?}|{:?}|{:?}",
             self.now, self.agents, self.goods, self.boards, self.metrics
         );
+        if self.config.military.is_some() {
+            text.push_str(&format!(
+                "|military={:?}|{:?}",
+                self.config.military, self.military.memories
+            ));
+        }
         if self.config.lifecycle.is_some() {
             text.push_str(&format!(
                 "|lifecycle={:?}|{:?}|{:?}|{:?}",

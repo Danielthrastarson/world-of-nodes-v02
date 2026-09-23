@@ -14,6 +14,7 @@ pub mod household;
 pub mod infrastructure;
 pub mod lifecycle;
 pub mod meals;
+pub mod military;
 pub mod paths;
 pub mod persistence;
 pub mod person;
@@ -60,6 +61,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub military: Option<military::Config>,
     pub lifecycle: Option<lifecycle::Config>,
     pub social: Option<social::Config>,
     pub household: Option<household::Config>,
@@ -94,6 +96,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            military: None,
             lifecycle: None,
             social: None,
             household: None,
@@ -151,6 +154,9 @@ pub enum Location {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Action {
+    MilitaryDuty {
+        unit: usize,
+    },
     Reproduce {
         partner: usize,
         until: Time,
@@ -313,6 +319,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) military: military::State,
     pub(crate) lifecycle: lifecycle::State,
     pub(crate) social: social::State,
     pub(crate) household: household::State,
@@ -385,7 +392,8 @@ impl World {
         {
             return Err("invalid provisioning configuration".into());
         }
-        if (config.lifecycle.is_some()
+        if (config.military.is_some()
+            || config.lifecycle.is_some()
             || config.social.is_some()
             || config.household.is_some()
             || config.farming.is_some()
@@ -491,7 +499,9 @@ impl World {
         let household = household::State::new(&config)?;
         let social = social::State::new(&config);
         let lifecycle = lifecycle::State::new(&config)?;
+        let military = military::State::new(&config)?;
         let mut w = Self {
+            military,
             lifecycle,
             social,
             household,
@@ -666,6 +676,7 @@ impl World {
         }
     }
     pub fn audit(&self) -> Result<(), String> {
+        self.audit_military()?;
         self.audit_lifecycle()?;
         self.audit_social()?;
         self.audit_household()?;
