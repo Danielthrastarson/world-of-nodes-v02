@@ -43,7 +43,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     )?;
     writeln!(metrics, "seed,key,count")?;
     writeln!(activities, "seed,hour,agent,activity,hours")?;
-    writeln!(events, "seed,time_ms,agent,kind,detail")?;
+    writeln!(events, "seed\ttime_ms\tagent\tkind\tdetail")?;
     for seed in 0..seeds {
         let mut w = household::research::fixture(case, enabled, seed)?;
         writeln!(
