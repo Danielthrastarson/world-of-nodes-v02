@@ -301,13 +301,19 @@ fn two_willing_local_policies_can_settle_and_use_received_goods() {
     for id in 0..2 {
         let o = w.observe(id).unwrap();
         let a = &mut w.agents[id];
-        let base = policy::decide_capital(
-            &o,
-            &a.memory,
+        let base = person::decide(
+            person::Context {
+                observation: &o,
+                beliefs: &a.memory,
+                capabilities: person::Capabilities {
+                    capital: Some((
+                        &w.capital.memories[id],
+                        &w.config.capital.as_ref().unwrap().rules,
+                    )),
+                    ..person::Capabilities::default()
+                },
+            },
             &mut a.rng,
-            None,
-            &w.capital.memories[id],
-            &w.config.capital.as_ref().unwrap().rules,
         );
         let d = w.barter_decision(id, &o, base);
         if id == 0 {

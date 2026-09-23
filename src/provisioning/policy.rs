@@ -411,30 +411,32 @@ fn decide_impl(
     audit: &mut AcceptanceAudit,
     skip_self_provision: bool,
 ) -> Decision {
-    decide_with_farm(
+    decide_with_capabilities(
         o,
         m,
         rng,
         mode,
         audit,
         skip_self_provision,
-        None,
-        None,
-        None,
+        super::person::Capabilities::default(),
     )
 }
 #[allow(clippy::too_many_arguments)]
-fn decide_with_farm(
+pub(crate) fn decide_with_capabilities(
     o: &Observation,
     m: &PolicyMemory,
     rng: &mut u64,
     mode: ForecastMode,
     audit: &mut AcceptanceAudit,
     skip_self_provision: bool,
-    farm: Option<(&super::farming::Memory, &super::farming::Rules)>,
-    capital: Option<(&super::capital::Memory, &super::capital::Rules)>,
-    infrastructure: Option<(&super::infrastructure::Memory, bool)>,
+    capabilities: super::person::Capabilities<'_>,
 ) -> Decision {
+    let super::person::Capabilities {
+        cultivation: farm,
+        capital,
+        public_works: infrastructure,
+    } = capabilities;
+    let needs = super::person::Needs::from_observation(o);
     if matches!(o.action, Action::Dead | Action::Travel) {
         return choice(Intent::Wait, "atomic traversal or dead");
     }
@@ -443,12 +445,12 @@ fn decide_with_farm(
     }
     let known = sources_for(o, m, mode);
     let feasible = known.iter().find(|s| s.route.starvation < 24 * HOUR);
-    if o.nutrition <= 6 * HOUR
+    if needs.critical_hunger()
         && let Some(s) = feasible
     {
         return acquire(o, s, false);
     }
-    if o.fatigue >= 22 * HOUR
+    if needs.critical_fatigue()
         || (matches!(o.action, Action::Sleep { .. })
             && o.fatigue > 4 * HOUR
             && o.nutrition > 6 * HOUR)
@@ -482,7 +484,7 @@ fn decide_with_farm(
     }
     // A discovered local source provides an opportunity, not a compulsory return home.
     if !skip_self_provision
-        && o.nutrition < 12 * HOUR
+        && needs.self_provision_preferred()
         && let Some(s) = feasible
     {
         return acquire(o, s, false);
@@ -870,68 +872,4 @@ pub(crate) fn coherent_contract(o: &Observation, m: &PolicyMemory, meals: bool) 
     let known = sources_for(o, m, mode);
     forecast::evaluate(o, m, &known, mode, &mut a);
     a
-}
-
-pub(crate) fn decide_farming(
-    o: &Observation,
-    m: &PolicyMemory,
-    rng: &mut u64,
-    farm: &super::farming::Memory,
-    config: &super::farming::Rules,
-) -> Decision {
-    decide_with_farm(
-        o,
-        m,
-        rng,
-        ForecastMode::Coherent,
-        &mut AcceptanceAudit::disabled(),
-        false,
-        Some((farm, config)),
-        None,
-        None,
-    )
-}
-
-pub(crate) fn decide_capital(
-    o: &Observation,
-    m: &PolicyMemory,
-    rng: &mut u64,
-    farm: Option<(&super::farming::Memory, &super::farming::Rules)>,
-    capital: &super::capital::Memory,
-    rules: &super::capital::Rules,
-) -> Decision {
-    decide_with_farm(
-        o,
-        m,
-        rng,
-        ForecastMode::Coherent,
-        &mut AcceptanceAudit::disabled(),
-        false,
-        farm,
-        Some((capital, rules)),
-        None,
-    )
-}
-
-#[allow(clippy::too_many_arguments)]
-pub(crate) fn decide_infrastructure(
-    o: &Observation,
-    m: &PolicyMemory,
-    rng: &mut u64,
-    farm: Option<(&super::farming::Memory, &super::farming::Rules)>,
-    capital: Option<(&super::capital::Memory, &super::capital::Rules)>,
-    memory: &super::infrastructure::Memory,
-    enabled: bool,
-) -> Decision {
-    decide_with_farm(
-        o,
-        m,
-        rng,
-        ForecastMode::Coherent,
-        &mut AcceptanceAudit::disabled(),
-        false,
-        farm,
-        capital,
-        Some((memory, enabled)),
-    )
 }

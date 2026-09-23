@@ -354,13 +354,19 @@ fn unchanged_buyer_policy_can_accept_after_seller_physically_departs() {
     w.agents[1].memory.nodes.insert(0, v);
     let o = w.observe(1).unwrap();
     let a = &mut w.agents[1];
-    let base = policy::decide_capital(
-        &o,
-        &a.memory,
+    let base = person::decide(
+        person::Context {
+            observation: &o,
+            beliefs: &a.memory,
+            capabilities: person::Capabilities {
+                capital: Some((
+                    &w.capital.memories[1],
+                    &w.config.capital.as_ref().unwrap().rules,
+                )),
+                ..person::Capabilities::default()
+            },
+        },
         &mut a.rng,
-        None,
-        &w.capital.memories[1],
-        &w.config.capital.as_ref().unwrap().rules,
     );
     let d = w.barter_decision(1, &o, base);
     assert!(matches!(d.intent, Intent::AcceptBarter { .. }));

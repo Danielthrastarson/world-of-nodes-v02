@@ -986,7 +986,7 @@ impl World {
     fn decisions(&mut self) {
         let mut ids: Vec<_> = std::mem::take(&mut self.wake)
             .into_iter()
-            .filter(|&id| !matches!(self.agents[id].action, Action::Dead | Action::Travel))
+            .filter(|&id| self.agents[id].can_reconsider())
             .filter(|id| {
                 self.transport_research
                     .actors
@@ -1062,60 +1062,52 @@ impl World {
                 );
                 self.acceptance.record(&o, &d, audit);
             }
-            let decision = if let Some(config) = &self.config.infrastructure {
-                policy::decide_infrastructure(
-                    &o,
-                    &a.memory,
-                    &mut a.rng,
-                    self.config
-                        .farming
-                        .as_ref()
-                        .map(|f| (&self.farm.memories[id], &f.rules)),
-                    self.config
-                        .capital
-                        .as_ref()
-                        .map(|c| (&self.capital.memories[id], &c.rules)),
-                    &self.infrastructure.memories[id],
-                    config.enabled,
-                )
-            } else if let Some(config) = &self.config.capital {
-                policy::decide_capital(
-                    &o,
-                    &a.memory,
-                    &mut a.rng,
-                    self.config
-                        .farming
-                        .as_ref()
-                        .map(|f| (&self.farm.memories[id], &f.rules)),
-                    &self.capital.memories[id],
-                    &config.rules,
-                )
-            } else if let Some(config) = &self.config.farming {
-                policy::decide_farming(
-                    &o,
-                    &a.memory,
-                    &mut a.rng,
-                    &self.farm.memories[id],
-                    &config.rules,
-                )
-            } else if let Some(arm) = self.config.persistence {
-                let state = self.persistence.states.entry(id).or_default();
-                let d = policy::decide_persistent(&o, &a.memory, &mut a.rng, arm, state);
-                self.persistence.collect_decision(id);
-                d
-            } else if self.config.acceptance_audit {
-                let (d, audit) = policy::decide_audited(
-                    &o,
-                    &a.memory,
-                    &mut a.rng,
-                    self.config.diagnostic_policy,
-                );
-                self.acceptance.record(&o, &d, audit);
-                d
-            } else {
-                policy::decide_variant(&o, &a.memory, &mut a.rng, self.config.diagnostic_policy)
+            let capabilities = person::Capabilities {
+                cultivation: self
+                    .config
+                    .farming
+                    .as_ref()
+                    .map(|f| (&self.farm.memories[id], &f.rules)),
+                capital: self
+                    .config
+                    .capital
+                    .as_ref()
+                    .map(|c| (&self.capital.memories[id], &c.rules)),
+                public_works: self
+                    .config
+                    .infrastructure
+                    .as_ref()
+                    .map(|c| (&self.infrastructure.memories[id], c.enabled)),
             };
-            let decision = self.barter_decision(id, &o, decision);
+            // No role-specific brain: capabilities are composed for the same person.
+            // Do not create unused diagnostic state in economic-capability worlds.
+            let persistent = if capabilities.any() {
+                None
+            } else {
+                self.config
+                    .persistence
+                    .map(|arm| (arm, self.persistence.states.entry(id).or_default()))
+            };
+            let selected = person::select(
+                person::Context {
+                    observation: &o,
+                    beliefs: &a.memory,
+                    capabilities,
+                },
+                &mut a.rng,
+                self.config.diagnostic_policy,
+                self.config.acceptance_audit,
+                persistent,
+            );
+            if selected.used_persistence {
+                self.persistence.collect_decision(id);
+            }
+            if let Some(audit) = selected.audit {
+                self.acceptance.record(&o, &selected.decision, audit);
+            }
+            let decision = self.barter_decision(id, &o, selected.decision);
+            let plan = person::ActionPlan::new(&o, decision);
+            let decision = plan.proposed;
             self.record_capital_evaluation(id, &o);
             let a = &self.agents[id];
             self.diagnostics.observe(&o, &a.memory, &decision);

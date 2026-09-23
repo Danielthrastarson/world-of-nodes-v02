@@ -2,6 +2,7 @@
 use super::*;
 pub mod market;
 pub mod research;
+pub(crate) mod selection;
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Offer {
     pub id: usize,
@@ -467,123 +468,48 @@ impl World {
         let Some(v) = self.barter_view(id) else {
             return fallback;
         };
-        // Offer observation is local even when an agent has higher-priority work.
-        for f in &v.offers {
-            if f.proposer != id && self.barter.seen.insert((id, f.id)) {
-                self.barter_count("offers_observed");
-            }
-        }
-        if o.action != Action::Idle
-            || o.job.is_some()
-            || matches!(
-                fallback.intent,
-                Intent::Eat { .. } | Intent::Sleep | Intent::Deliver { .. }
-            )
-        {
-            if self.market_enabled() {
-                let why = if o.action != Action::Idle {
-                    "DEFERRED_BUSY"
-                } else if o.job.is_some() {
-                    "DEFERRED_JOB"
-                } else {
-                    "DEFERRED_PRIORITY"
-                };
-                for f in &v.offers {
-                    if f.proposer != id && self.barter.reasons.insert((id, f.id, why.into())) {
+        let owner_views = v
+            .offers
+            .iter()
+            .filter(|f| f.proposer == id)
+            .map(|f| (f.id, self.offer_owner_view(&v, f)))
+            .collect();
+        let input = selection::Input {
+            local: v,
+            owner_views,
+            market: self.market_enabled(),
+        };
+        let chosen = person::select_exchange(&input, o, fallback);
+        // Effects are research/trace bookkeeping, never values supplied to choice.
+        for note in chosen.notes {
+            use selection::Note;
+            match note {
+                Note::Observed(offer) => {
+                    if self.barter.seen.insert((id, offer)) {
+                        self.barter_count("offers_observed");
+                    }
+                }
+                Note::Deferred(offer, why) => {
+                    if self.barter.reasons.insert((id, offer, why.into())) {
                         self.barter_count(why);
                     }
                 }
-            }
-            return fallback;
-        }
-        self.barter_count("eligible_evaluations");
-        if v.needs.wood > 0 {
-            self.barter_count("missing_wood_plan_evaluations");
-        }
-        if v.needs.food > 0 {
-            self.barter_count("unmet_food_evaluations");
-        }
-        let decision = |intent, reason: String| Decision { intent, reason };
-        for f in &v.offers {
-            if f.proposer == id {
-                let own_offer_view = self.offer_owner_view(&v, f);
-                if willingness(&own_offer_view, f.give, f.quantity, f.want, f.want_quantity)
-                    .is_err()
-                {
-                    return decision(
-                        Intent::RevokeBarter { offer: f.id },
-                        format!("own use changed; needs={:?}", v.needs),
-                    );
-                }
-                continue;
-            }
-            let payment = v
-                .own
-                .iter()
-                .find(|b| b.material == f.want && b.quantity >= f.want_quantity);
-            let reason = if v.needs.demand(f.give) == 0 {
-                Some("COUNTERPARTY_DOES_NOT_WANT_GOOD")
-            } else if payment.is_none() {
-                Some("INSUFFICIENT_OWNED_QUANTITY")
-            } else {
-                willingness(&v, f.want, f.want_quantity, f.give, f.quantity).err()
-            };
-            if let Some(reason) = reason {
-                if self.barter.reasons.insert((id, f.id, reason.into())) {
-                    if reason == "INSUFFICIENT_OWNED_QUANTITY"
-                        && research::coincidence_failure(self, &v, f)
-                    {
-                        self.barter_count("research_double_coincidence");
+                Note::Count(key) => self.barter_count(key),
+                Note::Declined(offer, reason) => {
+                    if self.barter.reasons.insert((id, offer, reason.into())) {
+                        let f = input.local.offers.iter().find(|f| f.id == offer).unwrap();
+                        if reason == "INSUFFICIENT_OWNED_QUANTITY"
+                            && research::coincidence_failure(self, &input.local, f)
+                        {
+                            self.barter_count("research_double_coincidence");
+                        }
+                        self.barter_count(&format!("rejected_{reason}"));
+                        self.log(Some(id),"BarterDeclined",format!("offer={} reason={reason} needs={:?}; rejection by taker, offer remains open",f.id,input.local.needs));
                     }
-                    self.barter_count(&format!("rejected_{reason}"));
-                    self.log(Some(id),"BarterDeclined",format!("offer={} reason={reason} needs={:?}; rejection by taker, offer remains open",f.id,v.needs));
                 }
-            } else {
-                return decision(
-                    Intent::AcceptBarter {
-                        offer: f.id,
-                        payment: payment.unwrap().id,
-                    },
-                    format!(
-                        "positive own use; surrender outside protected uses; needs={:?}",
-                        v.needs
-                    ),
-                );
             }
         }
-        if v.offers.iter().any(|f| f.proposer == id) {
-            return fallback;
-        }
-        self.barter_count("formation_evaluations");
-        for (give, want, limit) in [
-            (Material::Food, Material::Wood, 6),
-            (Material::Wood, Material::Food, 10),
-        ] {
-            let q = v.needs.surplus(give).min(limit);
-            let ask = v.needs.demand(want);
-            if q == 0 || ask == 0 {
-                continue;
-            }
-            if let Some(b) = v.own.iter().find(|b| b.material == give) {
-                let q = q.min(b.quantity);
-                if v.people.len() < 2 {
-                    self.barter_count("offer_without_counterparty");
-                }
-                return decision(
-                    Intent::OfferBarter {
-                        batch: b.id,
-                        quantity: q,
-                        want,
-                        want_quantity: ask,
-                    },
-                    format!(
-                        "blocked own use; surplus={q}; no resale assumption; needs={:?}",
-                        v.needs
-                    ),
-                );
-            }
-        }
-        fallback
+        chosen.decision
     }
     pub(super) fn audit_barter(&self) -> Result<(), String> {
         if !self.config.barter
