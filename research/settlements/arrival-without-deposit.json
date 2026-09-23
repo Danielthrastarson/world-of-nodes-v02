@@ -1,0 +1,22 @@
+{
+  "arm": "complementary",
+  "seed": 0,
+  "events": [
+    "Event { id: 389592, at: 333192000, agent: Some(11), cause: Some(385452), kind: \"Arrived\", detail: \"node=2 edge=1\" }",
+    "Event { id: 389593, at: 333192000, agent: Some(13), cause: Some(385453), kind: \"Arrived\", detail: \"node=2 edge=1\" }",
+    "Event { id: 389594, at: 333192000, agent: Some(11), cause: Some(389592), kind: \"CapitalForecast\", detail: \"SIX_HOUR_MARGIN demand=2 without_ms=80304000 with_ms=80304000 work_ms=28343007 wood_missing=10\" }",
+    "Event { id: 389595, at: 333192000, agent: Some(13), cause: Some(389593), kind: \"CapitalForecast\", detail: \"SIX_HOUR_MARGIN demand=2 without_ms=80304000 with_ms=80304000 work_ms=28343007 wood_missing=10\" }",
+    "Event { id: 389596, at: 333192000, agent: Some(11), cause: Some(389594), kind: \"Decision\", detail: \"intent=Eat { batch: 195, quantity: 1 } nutrition_ms=37608000 starvation_ms=0 reason=locally accessible food; exact ownership/ration ceiling\" }",
+    "Event { id: 389597, at: 333192000, agent: Some(11), cause: Some(389596), kind: \"Consumed\", detail: \"batch=195 q=1 owner=Commons(0) nutrition_ms=41208000\" }",
+    "Event { id: 389598, at: 333192000, agent: Some(13), cause: Some(389595), kind: \"Decision\", detail: \"intent=Eat { batch: 196, quantity: 1 } nutrition_ms=37608000 starvation_ms=0 reason=locally accessible food; exact ownership/ration ceiling\" }",
+    "Event { id: 389599, at: 333192000, agent: Some(13), cause: Some(389598), kind: \"Consumed\", detail: \"batch=196 q=1 owner=Commons(0) nutrition_ms=41208000\" }",
+    "Event { id: 389600, at: 333240000, agent: Some(11), cause: Some(389597), kind: \"CapitalForecast\", detail: \"SIX_HOUR_MARGIN demand=2 without_ms=76800000 with_ms=76800000 work_ms=27485007 wood_missing=10\" }",
+    "Event { id: 389601, at: 333240000, agent: Some(13), cause: Some(389599), kind: \"CapitalForecast\", detail: \"SIX_HOUR_MARGIN demand=2 without_ms=76800000 with_ms=76800000 work_ms=27485007 wood_missing=10\" }",
+    "Event { id: 389608, at: 333240000, agent: Some(11), cause: Some(389600), kind: \"Decision\", detail: \"intent=Travel { edge: 1, target: 0, food: true } nutrition_ms=41160000 starvation_ms=0 reason=seek remembered food; source=0 observed_at=315780000 believed_quantity=2 expires_at=458100000; predicted_ms=27435000 arrival_nutrition_ms=13725000 arrival_starvation_ms=0\" }",
+    "Event { id: 389609, at: 333240000, agent: Some(11), cause: Some(389608), kind: \"Queued\", detail: \"edge=1 target=0 remembered_food=true\" }",
+    "Event { id: 389611, at: 333240000, agent: Some(13), cause: Some(389601), kind: \"Decision\", detail: \"intent=Travel { edge: 1, target: 0, food: true } nutrition_ms=41160000 starvation_ms=0 reason=seek remembered food; source=0 observed_at=315780000 believed_quantity=2 expires_at=458100000; predicted_ms=27435000 arrival_nutrition_ms=13725000 arrival_starvation_ms=0\" }",
+    "Event { id: 389612, at: 333240000, agent: Some(13), cause: Some(389611), kind: \"Queued\", detail: \"edge=1 target=0 remembered_food=true\" }",
+    "Event { id: 389633, at: 333240000, agent: Some(11), cause: Some(389609), kind: \"Admitted\", detail: \"edge=1 from=2 to=1\" }",
+    "Event { id: 389634, at: 333240000, agent: Some(13), cause: Some(389612), kind: \"Admitted\", detail: \"edge=1 from=2 to=1\" }"
+  ]
+}

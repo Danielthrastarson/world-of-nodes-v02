@@ -1,0 +1,578 @@
+{
+  "symmetric_minus_complementary": {
+    "alive": {
+      "mean": 2.933333333333333,
+      "min": 1.0,
+      "max": 3.0
+    },
+    "deaths": {
+      "mean": -2.933333333333333,
+      "min": -3.0,
+      "max": -1.0
+    },
+    "produced": {
+      "mean": 882.4,
+      "min": 480.0,
+      "max": 936.0
+    },
+    "consumed": {
+      "mean": 1266.2,
+      "min": 801.0,
+      "max": 1329.0
+    },
+    "spoiled": {
+      "mean": -374.6,
+      "min": -385.0,
+      "max": -307.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "jobs": {
+      "mean": -6.0,
+      "min": -6.0,
+      "max": -6.0
+    },
+    "starvation_h": {
+      "mean": -58.331471704033355,
+      "min": -64.01925666700004,
+      "max": -4.693829444000016
+    },
+    "queue_h": {
+      "mean": -60.10469796329999,
+      "min": -68.07593555599999,
+      "max": -9.179201110999998
+    },
+    "food_flows_ab": {
+      "mean": -16.933333333333334,
+      "min": -20.0,
+      "max": -16.0
+    },
+    "food_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "visits": {
+      "mean": -28.0,
+      "min": -33.0,
+      "max": -27.0
+    }
+  },
+  "high_cost_minus_complementary": {
+    "alive": {
+      "mean": -1.8,
+      "min": -2.0,
+      "max": -1.0
+    },
+    "deaths": {
+      "mean": 1.8,
+      "min": 1.0,
+      "max": 2.0
+    },
+    "produced": {
+      "mean": -386.4,
+      "min": -456.0,
+      "max": -384.0
+    },
+    "consumed": {
+      "mean": -569.2,
+      "min": -686.0,
+      "max": -560.0
+    },
+    "spoiled": {
+      "mean": 192.0,
+      "min": 184.0,
+      "max": 244.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "jobs": {
+      "mean": -6.0,
+      "min": -6.0,
+      "max": -6.0
+    },
+    "starvation_h": {
+      "mean": 30.63741718496665,
+      "min": 25.90098583300005,
+      "max": 42.67505944499999
+    },
+    "queue_h": {
+      "mean": 103.49878351776667,
+      "min": 101.546508888,
+      "max": 115.30102111100001
+    },
+    "food_flows_ab": {
+      "mean": -16.933333333333334,
+      "min": -20.0,
+      "max": -16.0
+    },
+    "food_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "visits": {
+      "mean": -37.733333333333334,
+      "min": -41.0,
+      "max": -37.0
+    }
+  },
+  "low_cost_minus_complementary": {
+    "alive": {
+      "mean": 3.466666666666667,
+      "min": -2.0,
+      "max": 4.0
+    },
+    "deaths": {
+      "mean": -3.466666666666667,
+      "min": -4.0,
+      "max": 2.0
+    },
+    "produced": {
+      "mean": 488.8,
+      "min": -480.0,
+      "max": 648.0
+    },
+    "consumed": {
+      "mean": 720.6,
+      "min": -305.0,
+      "max": 853.0
+    },
+    "spoiled": {
+      "mean": -253.06666666666666,
+      "min": -321.0,
+      "max": -163.0
+    },
+    "delivered": {
+      "mean": 2.7,
+      "min": 0.0,
+      "max": 19.0
+    },
+    "jobs": {
+      "mean": -5.1,
+      "min": -6.0,
+      "max": 1.0
+    },
+    "starvation_h": {
+      "mean": -153.33182733376668,
+      "min": -176.01925666700004,
+      "max": 58.156170556000006
+    },
+    "queue_h": {
+      "mean": -161.8213376114,
+      "min": -235.08565777799998,
+      "max": -74.43000083300001
+    },
+    "food_flows_ab": {
+      "mean": 18.166666666666668,
+      "min": -2.0,
+      "max": 62.0
+    },
+    "food_flows_ba": {
+      "mean": 8.0,
+      "min": 0.0,
+      "max": 42.0
+    },
+    "wood_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "visits": {
+      "mean": 22.333333333333332,
+      "min": 10.0,
+      "max": 38.0
+    }
+  },
+  "no_carts_minus_complementary": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "jobs": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "visits": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "paths_minus_complementary": {
+    "alive": {
+      "mean": -1.5,
+      "min": -2.0,
+      "max": 1.0
+    },
+    "deaths": {
+      "mean": 1.5,
+      "min": -1.0,
+      "max": 2.0
+    },
+    "produced": {
+      "mean": -76.8,
+      "min": -96.0,
+      "max": 48.0
+    },
+    "consumed": {
+      "mean": -83.86666666666666,
+      "min": -104.0,
+      "max": 44.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "jobs": {
+      "mean": -1.7666666666666666,
+      "min": -2.0,
+      "max": -1.0
+    },
+    "starvation_h": {
+      "mean": 15.742485333033285,
+      "min": -24.938666666000017,
+      "max": 21.796053332999918
+    },
+    "queue_h": {
+      "mean": -16.540166009933298,
+      "min": -18.759257222999963,
+      "max": -2.0744908329999703
+    },
+    "food_flows_ab": {
+      "mean": -1.0666666666666667,
+      "min": -8.0,
+      "max": 0.0
+    },
+    "food_flows_ba": {
+      "mean": 0.03333333333333333,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "wood_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "visits": {
+      "mean": 1.2,
+      "min": -4.0,
+      "max": 2.0
+    }
+  },
+  "paths_no_carts_minus_complementary": {
+    "alive": {
+      "mean": -1.5,
+      "min": -2.0,
+      "max": 1.0
+    },
+    "deaths": {
+      "mean": 1.5,
+      "min": -1.0,
+      "max": 2.0
+    },
+    "produced": {
+      "mean": -76.8,
+      "min": -96.0,
+      "max": 48.0
+    },
+    "consumed": {
+      "mean": -83.86666666666666,
+      "min": -104.0,
+      "max": 44.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "jobs": {
+      "mean": -1.7666666666666666,
+      "min": -2.0,
+      "max": -1.0
+    },
+    "starvation_h": {
+      "mean": 15.742485333033285,
+      "min": -24.938666666000017,
+      "max": 21.796053332999918
+    },
+    "queue_h": {
+      "mean": -16.540166009933298,
+      "min": -18.759257222999963,
+      "max": -2.0744908329999703
+    },
+    "food_flows_ab": {
+      "mean": -1.0666666666666667,
+      "min": -8.0,
+      "max": 0.0
+    },
+    "food_flows_ba": {
+      "mean": 0.03333333333333333,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "wood_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "visits": {
+      "mean": 1.2,
+      "min": -4.0,
+      "max": 2.0
+    }
+  },
+  "paths_minus_paths_no_carts": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "deaths": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "produced": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "jobs": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "food_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "visits": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "paths_no_carts_minus_no_carts": {
+    "alive": {
+      "mean": -1.5,
+      "min": -2.0,
+      "max": 1.0
+    },
+    "deaths": {
+      "mean": 1.5,
+      "min": -1.0,
+      "max": 2.0
+    },
+    "produced": {
+      "mean": -76.8,
+      "min": -96.0,
+      "max": 48.0
+    },
+    "consumed": {
+      "mean": -83.86666666666666,
+      "min": -104.0,
+      "max": 44.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "jobs": {
+      "mean": -1.7666666666666666,
+      "min": -2.0,
+      "max": -1.0
+    },
+    "starvation_h": {
+      "mean": 15.742485333033285,
+      "min": -24.938666666000017,
+      "max": 21.796053332999918
+    },
+    "queue_h": {
+      "mean": -16.540166009933298,
+      "min": -18.759257222999963,
+      "max": -2.0744908329999703
+    },
+    "food_flows_ab": {
+      "mean": -1.0666666666666667,
+      "min": -8.0,
+      "max": 0.0
+    },
+    "food_flows_ba": {
+      "mean": 0.03333333333333333,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "wood_flows_ab": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wood_flows_ba": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "visits": {
+      "mean": 1.2,
+      "min": -4.0,
+      "max": 2.0
+    }
+  }
+}

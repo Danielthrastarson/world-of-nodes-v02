@@ -2,7 +2,7 @@
 
 **The simulation is the source of the graphics.** A causal kingdom simulation with primitive rendering of real agents, stocks, movement, work, and observed state.
 
-Current work follows the [gated foundation roadmap](docs/ROADMAP.md): F0–F6 have passed; F7 traffic-driven infrastructure is next. The six tested mechanical forecast corrections are adopted; conditional meal planning remains research-only. Earlier reports below describe their original historical policies. No later systems are implemented before their gates pass.
+Current work follows the [gated foundation roadmap](docs/ROADMAP.md): F0–F8 have passed at their documented scopes. F8 explains two-settlement interaction under existing institutions; barter, prices and money remain unimplemented. The six tested mechanical forecast corrections are adopted; conditional meal planning remains research-only. Earlier reports below describe their original historical policies. No later systems are implemented before their gates pass.
 
 - [Current design contract](WORLD_OF_NODES_HANDOFF.md)
 - [Locked provisioning specification](docs/PROVISIONING_SPEC.md)
@@ -54,7 +54,7 @@ corrections while retaining no-meal planning by default. The gated roadmap conti
 through geography and provisioning diagnostics; each stage records its gate in
 [ROADMAP.md](docs/ROADMAP.md). Historical probe commands stay explicitly reproducible.
 
-Foundation gates F0–F7 passed at their documented scopes. [F1 geography](research/geography/REPORT.md) and
+Foundation gates F0–F8 passed at their documented scopes. [F1 geography](research/geography/REPORT.md) and
 [F2 provisioning](research/foundation-provisioning/REPORT.md) preserve failures and
 explain the first autonomous deliveries. [F3 farming](research/farming/REPORT.md)
 uses cultivator-owned crops without land titles. [F4 labor](research/labor/REPORT.md)
@@ -73,6 +73,13 @@ paths change routes, traffic and nourishment in both favorable and harmful ways.
 The autonomous policy, FIFO and capacities remain unchanged. Engineered roads and
 staffed maintenance are deferred. Reproduce with `cargo build --release --bin paths_probe`
 then `python3 scripts/run_paths.py NEW_OUTPUT_DIRECTORY`.
+
+[F8 two-settlement coordination](research/settlements/REPORT.md) studies existing
+institutions across 210 paired runs. Short routes permit occasional communal food
+deposits; migration dominates, wood exports remain zero, cart projects stay
+incomplete, and dead-owner crops remain inaccessible. No policy, property or F7
+rule changes. Reproduce with `cargo build --release --bin settlement_probe` then
+`python3 scripts/run_settlements.py NEW_OUTPUT_DIRECTORY`.
 
 The [future army-control target](docs/ARMY_PLAYER_CONTROL.md) documents formation
 intent, geometry, stable QWER categories and shared civilian logistics. No military

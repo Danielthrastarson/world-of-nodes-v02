@@ -1,0 +1,34 @@
+{
+  "research/settlements/f7-regression/runs.csv": {
+    "matches": "research/paths/failure-13-enabled/runs.csv",
+    "rows": 6
+  },
+  "research/settlements/f7-regression/surfaces.csv": {
+    "matches": "research/paths/failure-13-enabled/surfaces.csv",
+    "rows": 18
+  },
+  "research/settlements/f7-regression/trips.csv": {
+    "matches": "research/paths/failure-13-enabled/trips.csv",
+    "rows": 703
+  },
+  "research/settlements/f7-regression/people.csv": {
+    "matches": "research/paths/failure-13-enabled/people.csv",
+    "rows": 50
+  },
+  "research/settlements/farming-regression/runs.csv": {
+    "matches": "research/capital/farming-regression/runs.csv",
+    "rows": 6
+  },
+  "research/settlements/farming-regression/crops.csv": {
+    "matches": "research/capital/farming-regression/crops.csv",
+    "rows": 84
+  },
+  "research/settlements/farming-regression/people.csv": {
+    "matches": "research/capital/farming-regression/people.csv",
+    "rows": 300
+  },
+  "research/settlements/farming-regression/activity.csv": {
+    "matches": "research/capital/farming-regression/activity.csv",
+    "rows": 34
+  }
+}

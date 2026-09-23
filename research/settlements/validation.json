@@ -1,0 +1,186 @@
+{
+  "unchanged_checkpoint_histories": 1470,
+  "expiry_reclassifications": [
+    {
+      "arm": "low_cost",
+      "seed": "6",
+      "at_ms": "172800000",
+      "agent": "25",
+      "from": "0",
+      "to": "1",
+      "origin": "0",
+      "material": "Waste",
+      "quantity": "6",
+      "owner": "agent:25",
+      "communal_job": "false",
+      "cart": "false",
+      "expires_ms": "172800000"
+    },
+    {
+      "arm": "low_cost",
+      "seed": "9",
+      "at_ms": "172800000",
+      "agent": "29",
+      "from": "0",
+      "to": "1",
+      "origin": "0",
+      "material": "Waste",
+      "quantity": "6",
+      "owner": "agent:29",
+      "communal_job": "false",
+      "cart": "false",
+      "expires_ms": "172800000"
+    },
+    {
+      "arm": "low_cost",
+      "seed": "10",
+      "at_ms": "172800000",
+      "agent": "25",
+      "from": "0",
+      "to": "1",
+      "origin": "0",
+      "material": "Waste",
+      "quantity": "6",
+      "owner": "agent:25",
+      "communal_job": "false",
+      "cart": "false",
+      "expires_ms": "172800000"
+    },
+    {
+      "arm": "low_cost",
+      "seed": "11",
+      "at_ms": "172800000",
+      "agent": "25",
+      "from": "0",
+      "to": "1",
+      "origin": "0",
+      "material": "Waste",
+      "quantity": "6",
+      "owner": "agent:25",
+      "communal_job": "false",
+      "cart": "false",
+      "expires_ms": "172800000"
+    },
+    {
+      "arm": "low_cost",
+      "seed": "21",
+      "at_ms": "172800000",
+      "agent": "25",
+      "from": "0",
+      "to": "1",
+      "origin": "0",
+      "material": "Waste",
+      "quantity": "6",
+      "owner": "agent:25",
+      "communal_job": "false",
+      "cart": "false",
+      "expires_ms": "172800000"
+    },
+    {
+      "arm": "low_cost",
+      "seed": "22",
+      "at_ms": "172800000",
+      "agent": "27",
+      "from": "0",
+      "to": "1",
+      "origin": "0",
+      "material": "Waste",
+      "quantity": "6",
+      "owner": "agent:27",
+      "communal_job": "false",
+      "cart": "false",
+      "expires_ms": "172800000"
+    },
+    {
+      "arm": "low_cost",
+      "seed": "25",
+      "at_ms": "172800000",
+      "agent": "25",
+      "from": "0",
+      "to": "1",
+      "origin": "0",
+      "material": "Waste",
+      "quantity": "6",
+      "owner": "agent:25",
+      "communal_job": "false",
+      "cart": "false",
+      "expires_ms": "172800000"
+    },
+    {
+      "arm": "low_cost",
+      "seed": "26",
+      "at_ms": "172800000",
+      "agent": "27",
+      "from": "0",
+      "to": "1",
+      "origin": "0",
+      "material": "Waste",
+      "quantity": "6",
+      "owner": "agent:27",
+      "communal_job": "false",
+      "cart": "false",
+      "expires_ms": "172800000"
+    }
+  ],
+  "regressions": {
+    "research/settlements/regressions/historical.csv": {
+      "matches": "research/paths/regressions/historical.csv",
+      "rows": 9
+    },
+    "research/settlements/regressions/adoption-equivalence.csv": {
+      "matches": "research/paths/regressions/adoption-equivalence.csv",
+      "rows": 19
+    },
+    "research/settlements/f7-regression/runs.csv": {
+      "matches": "research/paths/failure-13-enabled/runs.csv",
+      "rows": 6
+    },
+    "research/settlements/f7-regression/surfaces.csv": {
+      "matches": "research/paths/failure-13-enabled/surfaces.csv",
+      "rows": 18
+    },
+    "research/settlements/f7-regression/trips.csv": {
+      "matches": "research/paths/failure-13-enabled/trips.csv",
+      "rows": 703
+    },
+    "research/settlements/f7-regression/people.csv": {
+      "matches": "research/paths/failure-13-enabled/people.csv",
+      "rows": 50
+    },
+    "research/settlements/farming-regression/runs.csv": {
+      "matches": "research/capital/farming-regression/runs.csv",
+      "rows": 6
+    },
+    "research/settlements/farming-regression/crops.csv": {
+      "matches": "research/capital/farming-regression/crops.csv",
+      "rows": 84
+    },
+    "research/settlements/farming-regression/people.csv": {
+      "matches": "research/capital/farming-regression/people.csv",
+      "rows": 300
+    },
+    "research/settlements/farming-regression/activity.csv": {
+      "matches": "research/capital/farming-regression/activity.csv",
+      "rows": 34
+    }
+  },
+  "witness_tables": [
+    "runs.csv",
+    "places.csv",
+    "accounts.csv",
+    "labor.csv",
+    "counts.csv",
+    "people.csv",
+    "inventory.csv",
+    "flows.csv",
+    "transfers.csv",
+    "visits.csv",
+    "carts.csv",
+    "projects.csv",
+    "paths.csv"
+  ],
+  "preserved_prior_files": 1589,
+  "passed_tests": 141,
+  "policy_changed": false,
+  "physical_rules_changed": false
+}

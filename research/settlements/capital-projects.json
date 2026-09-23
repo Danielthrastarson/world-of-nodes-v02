@@ -1,0 +1,1132 @@
+{
+  "arm": "low_cost",
+  "unfinished_projects": 89,
+  "wood_in_projects": 890,
+  "live_investors": 89,
+  "labor_hours": 9.394444484,
+  "completed_carts": 0,
+  "per_seed": {
+    "0": [
+      {
+        "seed": "0",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "0",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "0",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "0",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "1": [
+      {
+        "seed": "1",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "1",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "1",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "2": [
+      {
+        "seed": "2",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "2",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "2",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "3": [
+      {
+        "seed": "3",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "3",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "3",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "4": [
+      {
+        "seed": "4",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "4",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "4",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "4",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "5": [
+      {
+        "seed": "5",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "5",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "5",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "5",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "6": [
+      {
+        "seed": "6",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "6",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "6",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "6",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "7": [
+      {
+        "seed": "7",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "7",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "7",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "7",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "8": [],
+    "9": [
+      {
+        "seed": "9",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "9",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "9",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "9",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "10": [
+      {
+        "seed": "10",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "10",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "10",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "10",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "11": [
+      {
+        "seed": "11",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "11",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "11",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "11",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "12": [],
+    "13": [
+      {
+        "seed": "13",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "13",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "13",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "13",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "14": [],
+    "15": [],
+    "16": [
+      {
+        "seed": "16",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "16",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "16",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "16",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "17": [
+      {
+        "seed": "17",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "17",
+        "hour": "168",
+        "id": "1",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "17",
+        "hour": "168",
+        "id": "2",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "18": [
+      {
+        "seed": "18",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "18",
+        "hour": "168",
+        "id": "1",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "19": [
+      {
+        "seed": "19",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "19",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "19",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "19",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "20": [],
+    "21": [
+      {
+        "seed": "21",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "21",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "21",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "21",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "22": [
+      {
+        "seed": "22",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "22",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "22",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "22",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "23": [
+      {
+        "seed": "23",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "23",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "23",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "23",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "24": [
+      {
+        "seed": "24",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "24",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "24",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "24",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "25": [
+      {
+        "seed": "25",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "25",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "25",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "25",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "26": [
+      {
+        "seed": "26",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "26",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "26",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "26",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "27": [
+      {
+        "seed": "27",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "27",
+        "hour": "168",
+        "id": "1",
+        "investor": "3",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "27",
+        "hour": "168",
+        "id": "2",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "27",
+        "hour": "168",
+        "id": "3",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "28": [
+      {
+        "seed": "28",
+        "hour": "168",
+        "id": "0",
+        "investor": "1",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "28",
+        "hour": "168",
+        "id": "1",
+        "investor": "5",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      },
+      {
+        "seed": "28",
+        "hour": "168",
+        "id": "2",
+        "investor": "7",
+        "place": "1",
+        "wood": "10",
+        "remaining_scaled_ms": "14210000000000",
+        "labor_h": "0.105555556",
+        "cart": "",
+        "owner_alive": "true"
+      }
+    ],
+    "29": []
+  }
+}

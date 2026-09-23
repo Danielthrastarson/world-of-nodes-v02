@@ -1,0 +1,14 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.58s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 6 tests
+test provisioning::settlement_research::tests::spoiled_transit_cargo_is_waste_flow_not_delivered_food ... ok
+test provisioning::settlement_research::tests::observer_accounts_exact_exclusive_labor_and_death_stops_living_time ... ok
+test provisioning::settlement_research::tests::other_owners_food_is_inaccessible_but_own_food_can_enter_legal_communal_job ... ok
+test provisioning::settlement_research::tests::arrived_flow_excludes_food_eaten_at_corridor_and_retains_ownership ... ok
+test provisioning::settlement_research::tests::research_place_labels_do_not_change_decisions ... ok
+test provisioning::settlement_research::tests::journal_never_changes_physics_events_policy_or_rng ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 121 filtered out; finished in 1.13s
+

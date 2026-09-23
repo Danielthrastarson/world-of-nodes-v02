@@ -171,3 +171,30 @@ remain unchanged. Paths improve some outcomes and worsen others; three dead-end
 seeds expose existing queue/exploration/sleep churn with starvation deaths. Preserve
 these findings. Engineered roads, maintenance jobs, F8 and military implementation
 remain deferred. All 1,396 preceding research files retain their checksums.
+
+## Current F8 result — supersedes the F8 deferral above
+
+The owner accepted F7 and authorized two-settlement coordination under existing
+institutions. [F8 evidence](research/settlements/REPORT.md) now passes that bounded
+gate: 210 paired runs with complementary/symmetric resources, travel-cost and
+cart/path controls. No F7 law, autonomous priority, institution or information
+channel changed. All 1,589 preceding research artifacts remain byte-identical.
+
+Both locations are in the existing Commons(0), not newly created sovereign groups.
+Short routes allow voluntary communal deposits in6/30 seeds; no wood exports or
+bilateral barter occur. Migration remains valid and dominant. Food can physically
+arrive but be consumed by its carrier instead of deposited. Paths reduce waiting
+while worsening average nourishment in this geography. No cart completes; some
+low-cost investments remain unfinished. Dead-owner crop claims block production.
+
+Preserve scarcity, productive capability and allocation as different layers.
+Opportunity cost follows from exclusive physical labor/resource uses, not a new
+kernel score. Instrumentation measures outcomes without entering decisions or hashes.
+The observer's exact-arrival/expiry classification defect was repaired; both original
+and corrected research outputs are preserved, with identical physical histories.
+
+No new exchange/property institution was selected. Barter attempts are absent
+because no bilateral protocol exists, not because bargaining was tested and failed.
+Money/prices are not automatically justified. F9 remains unstarted; any barter,
+pooling, lending or abandoned-property recovery rule requires an owner decision.
+Military, final UI, engineered roads and staffed maintenance remain deferred.
