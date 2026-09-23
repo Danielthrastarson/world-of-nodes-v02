@@ -103,3 +103,31 @@ claim of realistic human biology.
 
 F11 remains blocked until B0–B3 gates pass. None of B1–B3, military, culture bonuses,
 new cooperation assumptions, money or additional player powers are implemented by B0.
+
+## B1 extension: structural care, no shared brain
+
+B1 adds optional `person::Capabilities::care` and `person::State::household`.
+The component holds personal sightings and an explicit care undertaking. Household,
+kin and caregiver records are distinct; neither membership nor parenthood silently
+confers access to another person's property. Directed caregiver obligations are
+seeded explicitly. Parent/Child are inverse views; Partner/Sibling are symmetric.
+
+The observation adapter reveals an obligated person's physiology only on physical
+colocation. It can record absence at a remembered meeting place without finding
+the person's new location. Pure care choice receives only this memory and the
+existing personal route/food observations. Research-only separation/loss/activity
+counters are excluded from decisions and state hashes.
+
+The registered bounded evaluator follows existing eating, critical survival, sleep
+and atomic gathering priorities. It precedes economic opportunities; an already
+accepted communal job blocks it. Selected care is protected from the later barter
+stage. `TravelForCare` uses ordinary traversal; `GiveCareFood` validates physical
+colocation, life, ownership and edible cargo, then transfers it into recipient-owned
+loose goods. The recipient's own action must consume it. Care does not mutate
+another person's nutrition, action, beliefs or location.
+
+An undertaking records attempted support independently of the current atomic
+command. It may pause, resume, complete or cancel with explicit reasons; it supplies
+no knowledge and has no guaranteed priority or completion. B2 affect and B3 life
+cycle remain absent. See `HOUSEHOLD_EXPERIMENT.md` for the provisional thresholds,
+initial conditions and limitations rather than treating these as universal behavior.

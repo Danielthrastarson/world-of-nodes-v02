@@ -33,7 +33,11 @@ pub(crate) fn choose(input: &Input, o: &Observation, fallback: Decision) -> Sele
         || o.job.is_some()
         || matches!(
             fallback.intent,
-            Intent::Eat { .. } | Intent::Sleep | Intent::Deliver { .. }
+            Intent::Eat { .. }
+                | Intent::Sleep
+                | Intent::Deliver { .. }
+                | Intent::GiveCareFood { .. }
+                | Intent::TravelForCare { .. }
         )
     {
         if input.market {

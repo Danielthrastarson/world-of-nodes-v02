@@ -112,6 +112,28 @@ impl World {
             return Err("edge traversal is atomic".into());
         };
         match intent {
+            Intent::GiveCareFood {
+                dependent,
+                batch,
+                quantity,
+            } => self.give_care_food(id, dependent, batch, quantity)?,
+            Intent::TravelForCare {
+                dependent,
+                edge,
+                target,
+            } => {
+                if !self.care_relation(id, dependent) {
+                    return Err("NO_CARE_RIGHT".into());
+                }
+                self.execute(
+                    id,
+                    Intent::Travel {
+                        edge,
+                        target,
+                        food: false,
+                    },
+                )?;
+            }
             Intent::AppointSteward {
                 candidate,
                 settlement,
@@ -562,6 +584,7 @@ impl World {
     }
     fn integrate(&mut self, to: Time) {
         let dt = to - self.now;
+        self.integrate_household(dt);
         self.integrate_authority(dt);
         self.integrate_market(dt);
         if let Some(mut journal) = self.settlement_research.take() {
@@ -824,6 +847,7 @@ impl World {
                 self.cancel_job(id, "starvation death");
                 self.agents[id].action = Action::Dead;
                 self.agents[id].death_time = Some(self.now);
+                self.household_death(id);
                 self.metrics.deaths += 1;
                 self.log(
                     Some(id),
@@ -1011,6 +1035,7 @@ impl World {
         let mut decisions = vec![];
         let mut stale_events = vec![];
         for id in ids {
+            self.observe_household(id);
             self.observe_farming(id);
             self.observe_capital(id);
             self.observe_infrastructure(id);
@@ -1063,6 +1088,12 @@ impl World {
                 self.acceptance.record(&o, &d, audit);
             }
             let capabilities = person::Capabilities {
+                care: self
+                    .config
+                    .household
+                    .as_ref()
+                    .filter(|c| c.enabled)
+                    .map(|_| &self.household.memories[id]),
                 cultivation: self
                     .config
                     .farming
@@ -1106,6 +1137,7 @@ impl World {
                 self.acceptance.record(&o, &selected.decision, audit);
             }
             let decision = self.barter_decision(id, &o, selected.decision);
+            self.record_care_decision(id, &o, &decision);
             let plan = person::ActionPlan::new(&o, decision);
             let decision = plan.proposed;
             self.record_capital_evaluation(id, &o);

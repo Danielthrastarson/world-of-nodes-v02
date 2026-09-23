@@ -10,6 +10,7 @@ pub mod experiment;
 pub mod farming;
 pub mod geography;
 mod goods;
+pub mod household;
 pub mod infrastructure;
 pub mod meals;
 pub mod paths;
@@ -57,6 +58,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub household: Option<household::Config>,
     pub authority: Option<authority::Config>,
     pub barter: bool,
     /// F9B local market institution. Empty retains historical direct barter.
@@ -88,6 +90,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            household: None,
             authority: None,
             barter: false,
             market_nodes: vec![],
@@ -300,6 +303,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) household: household::State,
     pub(crate) authority: authority::State,
     pub(crate) barter: barter::State,
     pub(crate) settlement_research: Option<settlement_research::Journal>,
@@ -369,7 +373,10 @@ impl World {
         {
             return Err("invalid provisioning configuration".into());
         }
-        if (config.farming.is_some() || config.capital.is_some() || config.infrastructure.is_some())
+        if (config.household.is_some()
+            || config.farming.is_some()
+            || config.capital.is_some()
+            || config.infrastructure.is_some())
             && (config.persistence.is_some()
                 || config.diagnostic_policy != DiagnosticPolicy::Current
                 || config.acceptance_audit)
@@ -467,7 +474,9 @@ impl World {
         }
         let farm = farming::State::new(config.farming.as_ref(), config.nodes, config.starts.len())?;
         let authority = authority::State::new(&config)?;
+        let household = household::State::new(&config)?;
         let mut w = Self {
+            household,
             authority,
             barter: barter::State::default(),
             settlement_research: None,
@@ -634,6 +643,7 @@ impl World {
         }
     }
     pub fn audit(&self) -> Result<(), String> {
+        self.audit_household()?;
         self.audit_authority()?;
         self.audit_barter()?;
         self.audit_farming()?;

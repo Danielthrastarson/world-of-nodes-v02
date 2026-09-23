@@ -156,6 +156,12 @@ impl World {
             "{:?}|{:?}|{:?}|{:?}|{:?}",
             self.now, self.agents, self.goods, self.boards, self.metrics
         );
+        if self.config.household.is_some() {
+            text.push_str(&format!(
+                "|household={:?}|{:?}",
+                self.config.household, self.household.memories
+            ));
+        }
         if self.config.authority.is_some() {
             text.push_str(&format!(
                 "|authority={:?}|{:?}|{:?}|{:?}",

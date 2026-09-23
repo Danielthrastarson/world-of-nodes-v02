@@ -10,13 +10,17 @@ pub use super::Agent as Person;
 /// Available domain evaluators, not occupations or separate brains.
 #[derive(Clone, Copy, Debug, Default)]
 pub struct Capabilities<'a> {
+    pub care: Option<&'a super::household::Memory>,
     pub cultivation: Option<(&'a farming::Memory, &'a farming::Rules)>,
     pub capital: Option<(&'a capital::Memory, &'a capital::Rules)>,
     pub public_works: Option<(&'a infrastructure::Memory, bool)>,
 }
 impl Capabilities<'_> {
     pub fn any(&self) -> bool {
-        self.cultivation.is_some() || self.capital.is_some() || self.public_works.is_some()
+        self.care.is_some()
+            || self.cultivation.is_some()
+            || self.capital.is_some()
+            || self.public_works.is_some()
     }
 }
 /// Derived from embodied state; not a second mutable hunger/fatigue system.
@@ -65,6 +69,7 @@ pub struct Rights {
 }
 #[derive(Debug)]
 pub struct State<'a> {
+    pub household: Option<super::household::PersonalView<'a>>,
     pub person: &'a Person,
     pub needs: Needs,
     pub reasoning: reasoning::ReasoningState<'a>,

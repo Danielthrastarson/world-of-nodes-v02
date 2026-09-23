@@ -16,6 +16,16 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    GiveCareFood {
+        dependent: usize,
+        batch: usize,
+        quantity: u64,
+    },
+    TravelForCare {
+        dependent: usize,
+        edge: usize,
+        target: usize,
+    },
     AppointSteward {
         candidate: usize,
         settlement: usize,
@@ -435,6 +445,7 @@ pub(crate) fn decide_with_capabilities(
         cultivation: farm,
         capital,
         public_works: infrastructure,
+        care,
     } = capabilities;
     let needs = super::person::Needs::from_observation(o);
     if matches!(o.action, Action::Dead | Action::Travel) {
@@ -459,6 +470,11 @@ pub(crate) fn decide_with_capabilities(
     }
     if matches!(o.action, Action::Gather { .. }) {
         return choice(Intent::Wait, "finish one-quantum atomic gathering");
+    }
+    if let Some(memory) = care
+        && let Some(d) = super::household::consider(o, m, memory)
+    {
+        return d;
     }
     if let Some((memory, enabled)) = infrastructure {
         if let Some(d) = super::infrastructure::consider(o, m, memory, enabled) {
