@@ -378,3 +378,7 @@ changed, no negative finding tuned away, and money remains unjustified.
 B1–B3 remain unimplemented. B1 is the next dependency: seeded household/kinship
 with an explicit bounded care/sharing experiment, not automatic pooling or
 inheritance. F11 remains BLOCKED until B0–B3 pass. No military expansion began.
+
+## Current increment: B1 household and directed care
+
+B0 accepted. B1 is authorized with personal ownership, explicit caregiver obligations, local observation, and voluntary bounded care. No pooling, inheritance, compulsory sharing, emotions, reproduction or military. Registered rules: docs/HOUSEHOLD_EXPERIMENT.md. Historical results remain authoritative evidence, not outcomes to optimize.
