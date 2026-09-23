@@ -234,3 +234,24 @@ fn simultaneous_dead_people_do_not_acquire_grief() {
     assert_eq!(w.agents[1].action, Action::Dead);
     assert_eq!(w.social.memories[1].affect.grief.value(w.now), 0);
 }
+#[test]
+fn cost_audit_measures_physical_sacrifice_separately_from_appraisal_proxy() {
+    for surplus in [false, true] {
+        let mut give = research::cost_fixture(surplus, true, 0).unwrap();
+        let mut keep = research::cost_fixture(surplus, false, 0).unwrap();
+        give.advance_to(48 * HOUR).unwrap();
+        keep.advance_to(48 * HOUR).unwrap();
+        give.audit().unwrap();
+        keep.audit().unwrap();
+        if surplus {
+            assert_ne!(give.agents[0].action, Action::Dead);
+            assert_eq!(give.household.journal.starvation_ms[&0], 0);
+            assert_eq!(keep.household.journal.starvation_ms[&0], 0);
+        } else {
+            assert_eq!(
+                keep.agents[0].death_time.unwrap() - give.agents[0].death_time.unwrap(),
+                6 * HOUR
+            );
+        }
+    }
+}

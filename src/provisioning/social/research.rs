@@ -316,3 +316,49 @@ pub fn enact(w: &mut World, id: usize, d: Decision) -> Result<(), String> {
     w.next_policy = w.now + w.config.policy_ms;
     Ok(())
 }
+/// Isolate the marginal physical cost of one prescribed gift, not a new policy.
+pub fn cost_fixture(surplus: bool, give: bool, seed: u64) -> Result<World, String> {
+    let mut c = config(seed);
+    c.nodes = 1;
+    c.edges.clear();
+    c.starts = vec![0, 0];
+    c.household.as_mut().unwrap().households[0].members = vec![0, 1];
+    c.household.as_mut().unwrap().kin.truncate(1);
+    c.social.as_mut().unwrap().influence = false;
+    let mut w = World::new(c)?;
+    w.agents[0].nutrition = if surplus { 18 * HOUR } else { 7 * HOUR };
+    w.agents[1].nutrition = 0;
+    let b = w.goods.add(
+        Material::Food,
+        6,
+        Owner::Agent(0),
+        Holder::Agent(0),
+        0,
+        48 * HOUR,
+    );
+    if surplus {
+        w.goods.add(
+            Material::Food,
+            60,
+            Owner::Agent(0),
+            Holder::Loose(0),
+            0,
+            48 * HOUR,
+        );
+    }
+    if give {
+        w.apply_intents(vec![(
+            0,
+            Intent::GiveCareFood {
+                dependent: 1,
+                batch: b,
+                quantity: 6,
+            },
+        )])?;
+    }
+    w.config.household.as_mut().unwrap().enabled = false;
+    w.config.autonomous = true;
+    w.next_policy = 0;
+    w.audit()?;
+    Ok(w)
+}

@@ -45,7 +45,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let a: Vec<_> = env::args().skip(1).collect();
     let mode = a
         .first()
-        .ok_or("affect_probe history|live CASE on|off NEW_DIR [SEEDS]")?;
+        .ok_or("affect_probe history|live|cost CASE on|off NEW_DIR [SEEDS]")?;
     let case = a.get(1).ok_or("case")?;
     let enabled = match a.get(2).map(String::as_str) {
         Some("on") => true,
@@ -111,6 +111,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             )?;
             history = Some(h);
             social::research::enact(&mut w, 1, d)?;
+            w
+        } else if mode == "cost" && ["surplus", "scarce"].contains(&case.as_str()) {
+            let w = social::research::cost_fixture(case == "surplus", enabled, seed)?;
+            writeln!(
+                params,
+                "seed={seed} on=prescribed_gift off=no_gift; further care disabled\n{}",
+                social::research::parameters(&w)
+            )?;
             w
         } else if mode == "live"
             && ["colocated", "farming", "farming_distant", "construction"].contains(&case.as_str())
