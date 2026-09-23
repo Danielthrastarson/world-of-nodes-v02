@@ -1,0 +1,22 @@
+{
+  "source_revision": "c35e729c20459301969e26400222a922070bea62",
+  "authority_runs_exact": 187,
+  "historical_panel_runs_exact": 40,
+  "exchange_runs_exact": 360,
+  "total_run_executions": 587,
+  "physical_metric_changes": 0,
+  "state_hash_changes": 0,
+  "event_hash_changes": 0,
+  "prior_files_unchanged": 3638,
+  "tests_passed": 192,
+  "new_person_tests": 9,
+  "clippy": "passed all targets with warnings denied",
+  "formatting": "passed",
+  "covered_command_types": 20,
+  "trace_files": 46,
+  "coverage_parser_repaired": true,
+  "b1_implemented": false,
+  "b2_implemented": false,
+  "b3_implemented": false,
+  "military_implemented": false
+}

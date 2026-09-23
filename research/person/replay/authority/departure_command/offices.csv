@@ -1,0 +1,2 @@
+seed,office,polity,holder,settlement,appointment_ms,first_active_ms,active_h,unadministered_h,death_ms,departures,consumed,travel_h,queue_h,dead_without_replacement
+0,0,17,9,1,0,1800000,1.000000000,71.000000000,129600000,1,0,1.000000000,0.000000000,true

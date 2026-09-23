@@ -135,3 +135,25 @@ python3 scripts/run_authority.py /tmp/won-f10-reproduction
 python3 scripts/analyze_authority.py /tmp/won-f10-reproduction /tmp/won-f10-analysis.json /tmp/won-f10-traces.md
 python3 scripts/verify_authority.py /tmp/won-f10-regressions
 ```
+
+
+### B0: common person foundation before military
+
+[Report](research/person/REPORT.md) · [architecture](docs/PERSON_ARCHITECTURE.md)
+· [exact regression evidence](research/person/replay/validation.json).
+
+One embodied person now exposes a common decision context, needs, existing
+undertakings, next-step action plans, roles and rights. Farming, capital and public
+works compose capabilities; local exchange choice is pure. The existing executor,
+priorities, physical rules and institutions remain unchanged. All 587 registered
+regression executions match their preserved outputs; 192 tests pass.
+
+The roadmap now requires B0 → B1 households → B2 relationships/affect → B3 life cycle
+before F11 military. B0 is passed; B1–B3 are not implemented. No implicit household
+sharing, reproduction, stronger commitment policy or money was introduced.
+
+```sh
+cargo build --release --bins
+python3 scripts/run_person.py /tmp/won-b0-replay
+python3 scripts/analyze_person.py /tmp/won-b0-replay /tmp/won-b0-coverage.json
+```

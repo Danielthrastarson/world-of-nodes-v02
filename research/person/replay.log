@@ -1,0 +1,12 @@
+symmetric_on exact
+complementary_market exact
+complementary_on exact
+symmetric_market exact
+low_cost_on exact
+low_cost_market exact
+colocated_on exact
+colocated_market exact
+separated_on exact
+separated_market exact
+high_cost_on exact
+high_cost_market exact

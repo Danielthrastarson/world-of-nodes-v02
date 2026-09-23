@@ -346,3 +346,35 @@ explicit time-scale contract; no sex-based psychological or occupational stereot
 Social roles may depend on individual variation, constraints, geography, technology
 and institutions. Culture is accumulated social information, not arbitrary bonuses.
 None of B1–B3 is implemented by the B0 refactor.
+
+
+## B0 result — common person foundation
+
+B0 PASSED at behavior-preserving architectural scope. [Report](research/person/REPORT.md),
+[replay validation](research/person/replay/validation.json), [architecture](docs/PERSON_ARCHITECTURE.md).
+Registration `bcc57b6`; core refactor `2c640d2`; replay source `c35e729`.
+
+`Person` is a compatibility alias of the existing embodied `Agent`, not a second
+identity/body. One personal Context composes timestamped capability memories and
+bounded domain opportunity evaluators. Runtime role-like farming/capital/construction
+dispatch is removed. Hunger/fatigue predicates are derived from the same body and
+used at the same priority points. Local barter choice is pure, with research-only
+classification and observer effects applied separately in historical order.
+
+Typed person inspection exposes current needs, beliefs, route goal, undertaking,
+atomic action, own roles and recognized rights without refreshing remote knowledge.
+An ActionPlan represents the selected next command and existing undertaking; it
+does not turn reactive behavior into a newly committed multi-step planner. Shared
+physical/institutional validation remains authoritative. F10 offices still do not
+create an autonomous government policy, forced residence or special physiology.
+
+192 tests pass, including nine new common-person checks. All 587 registered
+regression executions match preserved physical metrics, state/event hashes and
+recorded traces: full F10 (187), historical panel (40), full direct/market comparison
+(360). Panels overlap; do not present this as 587 independent experiments. All
+3,638 prior research files remain byte-identical. No expected physical outcome was
+changed, no negative finding tuned away, and money remains unjustified.
+
+B1–B3 remain unimplemented. B1 is the next dependency: seeded household/kinship
+with an explicit bounded care/sharing experiment, not automatic pooling or
+inheritance. F11 remains BLOCKED until B0–B3 pass. No military expansion began.

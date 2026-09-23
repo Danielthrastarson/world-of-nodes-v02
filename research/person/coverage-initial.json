@@ -1,0 +1,558 @@
+{
+  "source_revision": "c35e729c20459301969e26400222a922070bea62",
+  "run_executions_exact": 587,
+  "trace_files": 46,
+  "coverage_note": "Counts pool only recorded trace seeds and include overlap between regression panels; they are coverage, not independent rates or new experimental outcomes.",
+  "selected_command_counts": {
+    "Gather": 3875,
+    "Eat": 1963,
+    "Wait": 653234,
+    "Travel": 2652,
+    "Sleep": 178620,
+    "ContributeCrossing": 55,
+    "Claim": 53,
+    "CancelJob": 45,
+    "BuildCrossing": 598,
+    "CancelAction": 2,
+    "DiscardWaste": 487,
+    "Deliver": 8
+  },
+  "physical_event_counts": {
+    "StewardAppointed": 14,
+    "Queued": 2670,
+    "Admitted": 769,
+    "Arrived": 767,
+    "PerformanceChanged": 2923,
+    "StarvationStarted": 655,
+    "Died": 610,
+    "Spoiled": 50,
+    "CrossingCommissioned": 3,
+    "GatherStarted": 3741,
+    "Gathered": 3686,
+    "Consumed": 1931,
+    "SleepStarted": 168547,
+    "Rejected": 313,
+    "WoodGathered": 55,
+    "CrossingDonation": 25,
+    "Interrupted": 38103,
+    "JobAccepted": 53,
+    "StaleFoodTrip": 17,
+    "JobCancelled": 45,
+    "LeaseExpired": 34,
+    "CrossingWorkStarted": 3,
+    "CrossingCompleted": 1,
+    "Delivered": 8,
+    "": 13112165
+  },
+  "family_labels": {
+    "farming": {
+      "example_command": "Cultivate",
+      "example_event_name": "Harvested",
+      "command_seen": false,
+      "event_seen": false
+    },
+    "capital": {
+      "example_command": "BuildCart",
+      "example_event_name": "CartCompleted",
+      "command_seen": false,
+      "event_seen": false
+    },
+    "construction": {
+      "example_command": "BuildCrossing",
+      "example_event_name": "CrossingCompleted",
+      "command_seen": true,
+      "event_seen": true
+    },
+    "provisioning": {
+      "example_command": "Deliver",
+      "example_event_name": "Delivered",
+      "command_seen": true,
+      "event_seen": true
+    },
+    "barter": {
+      "example_command": "AcceptBarter",
+      "example_event_name": "BarterSettled",
+      "command_seen": false,
+      "event_seen": false
+    },
+    "market": {
+      "example_command": "OfferBarter",
+      "example_event_name": "MarketDeposited",
+      "command_seen": false,
+      "event_seen": false
+    },
+    "authority": {
+      "example_command": "AppointSteward",
+      "example_event_name": "StewardAppointed",
+      "command_seen": false,
+      "event_seen": true
+    }
+  },
+  "authority_note": "Appointment/commission are controlled institutional commands, not autonomous selections; use StewardAppointed/CrossingCommissioned physical events and authority mechanism tests.",
+  "files": {
+    "authority/bottleneck_command/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "StewardAppointed": 1,
+        "Queued": 9,
+        "Admitted": 9,
+        "Arrived": 8,
+        "PerformanceChanged": 200,
+        "StarvationStarted": 50,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/death_after_command/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "StewardAppointed": 1,
+        "Queued": 1,
+        "Admitted": 1,
+        "Arrived": 1,
+        "PerformanceChanged": 200,
+        "StarvationStarted": 50,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/death_before_command/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "StewardAppointed": 1,
+        "Queued": 1,
+        "Admitted": 1,
+        "PerformanceChanged": 200,
+        "StarvationStarted": 50,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/departure_command/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "StewardAppointed": 1,
+        "Queued": 2,
+        "Admitted": 2,
+        "Arrived": 2,
+        "PerformanceChanged": 200,
+        "StarvationStarted": 50,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/discovery_commissioned/events.tsv.gz": {
+      "selected_commands": {
+        "Gather": 300,
+        "Eat": 100,
+        "Wait": 101150,
+        "Travel": 50,
+        "Sleep": 24000
+      },
+      "physical_events": {
+        "StewardAppointed": 1,
+        "CrossingCommissioned": 1,
+        "GatherStarted": 300,
+        "Gathered": 300,
+        "Consumed": 100,
+        "Queued": 50,
+        "Admitted": 50,
+        "Arrived": 50,
+        "PerformanceChanged": 200,
+        "StarvationStarted": 50,
+        "SleepStarted": 24000,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/discovery_pending/events.tsv.gz": {
+      "selected_commands": {
+        "Gather": 300,
+        "Eat": 100,
+        "Wait": 101150,
+        "Travel": 50,
+        "Sleep": 24000
+      },
+      "physical_events": {
+        "StewardAppointed": 1,
+        "GatherStarted": 300,
+        "Gathered": 300,
+        "Consumed": 100,
+        "Queued": 50,
+        "Admitted": 50,
+        "Arrived": 50,
+        "PerformanceChanged": 200,
+        "StarvationStarted": 50,
+        "SleepStarted": 24000,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/distant_command/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "StewardAppointed": 1,
+        "Queued": 1,
+        "Admitted": 1,
+        "PerformanceChanged": 200,
+        "Arrived": 1,
+        "StarvationStarted": 50,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/local_command/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "StewardAppointed": 1,
+        "Queued": 1,
+        "Admitted": 1,
+        "Arrived": 1,
+        "PerformanceChanged": 200,
+        "StarvationStarted": 50,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/multiple_command/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "StewardAppointed": 2,
+        "Queued": 3,
+        "Admitted": 3,
+        "Arrived": 3,
+        "PerformanceChanged": 200,
+        "StarvationStarted": 50,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/scarce_commissioned/events.tsv.gz": {
+      "selected_commands": {
+        "Gather": 376,
+        "ContributeCrossing": 5,
+        "Eat": 96,
+        "Travel": 284,
+        "Wait": 101256,
+        "Claim": 4,
+        "CancelJob": 4,
+        "Sleep": 24000
+      },
+      "physical_events": {
+        "StewardAppointed": 1,
+        "CrossingCommissioned": 1,
+        "GatherStarted": 305,
+        "Rejected": 71,
+        "WoodGathered": 5,
+        "CrossingDonation": 5,
+        "Gathered": 300,
+        "Consumed": 96,
+        "Queued": 284,
+        "Admitted": 20,
+        "Interrupted": 264,
+        "Arrived": 20,
+        "JobAccepted": 4,
+        "StaleFoodTrip": 4,
+        "JobCancelled": 4,
+        "PerformanceChanged": 224,
+        "LeaseExpired": 1,
+        "StarvationStarted": 50,
+        "SleepStarted": 24000,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/scarce_pending/events.tsv.gz": {
+      "selected_commands": {
+        "Travel": 330,
+        "Gather": 322,
+        "Eat": 92,
+        "Wait": 101220,
+        "Sleep": 24000
+      },
+      "physical_events": {
+        "StewardAppointed": 1,
+        "Queued": 330,
+        "Admitted": 24,
+        "Interrupted": 306,
+        "GatherStarted": 300,
+        "Gathered": 300,
+        "Consumed": 92,
+        "Rejected": 22,
+        "Arrived": 24,
+        "StaleFoodTrip": 4,
+        "PerformanceChanged": 224,
+        "StarvationStarted": 50,
+        "SleepStarted": 24000,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "authority/sufficient_commissioned/events.tsv.gz": {
+      "selected_commands": {
+        "Gather": 2255,
+        "ContributeCrossing": 50,
+        "BuildCrossing": 598,
+        "Eat": 1483,
+        "Travel": 1608,
+        "Wait": 147238,
+        "Claim": 49,
+        "CancelJob": 41,
+        "CancelAction": 2,
+        "DiscardWaste": 487,
+        "Sleep": 58620,
+        "Deliver": 8
+      },
+      "physical_events": {
+        "StewardAppointed": 1,
+        "CrossingCommissioned": 1,
+        "GatherStarted": 2236,
+        "WoodGathered": 50,
+        "CrossingDonation": 20,
+        "Rejected": 198,
+        "CrossingWorkStarted": 3,
+        "Gathered": 2186,
+        "Consumed": 1451,
+        "Queued": 1608,
+        "Admitted": 583,
+        "Interrupted": 37227,
+        "Arrived": 583,
+        "JobAccepted": 49,
+        "StaleFoodTrip": 5,
+        "JobCancelled": 41,
+        "PerformanceChanged": 451,
+        "CrossingCompleted": 1,
+        "LeaseExpired": 33,
+        "StarvationStarted": 55,
+        "SleepStarted": 48547,
+        "Delivered": 8,
+        "Died": 10,
+        "Spoiled": 38
+      }
+    },
+    "authority/sufficient_pending/events.tsv.gz": {
+      "selected_commands": {
+        "Travel": 330,
+        "Gather": 322,
+        "Eat": 92,
+        "Wait": 101220,
+        "Sleep": 24000
+      },
+      "physical_events": {
+        "StewardAppointed": 1,
+        "Queued": 330,
+        "Admitted": 24,
+        "Interrupted": 306,
+        "GatherStarted": 300,
+        "Gathered": 300,
+        "Consumed": 92,
+        "Rejected": 22,
+        "Arrived": 24,
+        "StaleFoodTrip": 4,
+        "PerformanceChanged": 224,
+        "StarvationStarted": 50,
+        "SleepStarted": 24000,
+        "Died": 50,
+        "Spoiled": 1
+      }
+    },
+    "exchange/colocated_market/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 22886
+      }
+    },
+    "exchange/colocated_on/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 13304
+      }
+    },
+    "exchange/complementary_market/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 584676
+      }
+    },
+    "exchange/complementary_on/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 584676
+      }
+    },
+    "exchange/high_cost_market/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 501016
+      }
+    },
+    "exchange/high_cost_on/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 501016
+      }
+    },
+    "exchange/low_cost_market/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 655517
+      }
+    },
+    "exchange/low_cost_on/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 655517
+      }
+    },
+    "exchange/separated_market/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 25705
+      }
+    },
+    "exchange/separated_on/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 14458
+      }
+    },
+    "exchange/symmetric_market/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 701085
+      }
+    },
+    "exchange/symmetric_on/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 701085
+      }
+    },
+    "regressions/colocated_market-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 22886
+      }
+    },
+    "regressions/colocated_on-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 13304
+      }
+    },
+    "regressions/complementary_market-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 584676
+      }
+    },
+    "regressions/complementary_on-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 584676
+      }
+    },
+    "regressions/crossing_bottleneck/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 301515
+      }
+    },
+    "regressions/crossing_closed/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 343627
+      }
+    },
+    "regressions/crossing_discovery/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 150869
+      }
+    },
+    "regressions/crossing_scarce/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 150859
+      }
+    },
+    "regressions/high_cost_market-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 501016
+      }
+    },
+    "regressions/high_cost_on-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 501016
+      }
+    },
+    "regressions/low_cost_market-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 655517
+      }
+    },
+    "regressions/low_cost_market-18/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 626144
+      }
+    },
+    "regressions/low_cost_on-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 655517
+      }
+    },
+    "regressions/low_cost_on-18/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 626004
+      }
+    },
+    "regressions/path_carts/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 338267
+      }
+    },
+    "regressions/path_dead_end/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 333373
+      }
+    },
+    "regressions/path_line/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 319625
+      }
+    },
+    "regressions/separated_market-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 25705
+      }
+    },
+    "regressions/separated_on-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 14458
+      }
+    },
+    "regressions/symmetric_market-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 701085
+      }
+    },
+    "regressions/symmetric_on-0/events.tsv.gz": {
+      "selected_commands": {},
+      "physical_events": {
+        "": 701085
+      }
+    }
+  }
+}
