@@ -1,0 +1,181 @@
+{
+  "frozen": {
+    "events": [
+      {
+        "h": 5.516666666666667,
+        "event": "Event { id: 29652, at: 19860000, agent: Some(49), cause: Some(29651), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }"
+      },
+      {
+        "h": 6.020833333333333,
+        "event": "Event { id: 31175, at: 21675000, agent: Some(49), cause: Some(31066), kind: \"Arrived\", detail: \"node=1 edge=0\" }"
+      },
+      {
+        "h": 6.65,
+        "event": "Event { id: 33168, at: 23940000, agent: Some(49), cause: Some(33166), kind: \"Admitted\", detail: \"edge=0 from=1 to=0\" }"
+      },
+      {
+        "h": 7.275,
+        "event": "Event { id: 35222, at: 26190000, agent: Some(49), cause: Some(33168), kind: \"Arrived\", detail: \"node=0 edge=0\" }"
+      },
+      {
+        "h": 7.275,
+        "event": "Event { id: 35230, at: 26190000, agent: Some(49), cause: Some(35226), kind: \"Admitted\", detail: \"edge=2 from=0 to=3\" }"
+      },
+      {
+        "h": 7.9,
+        "event": "Event { id: 36748, at: 28440000, agent: Some(49), cause: Some(35230), kind: \"Arrived\", detail: \"node=3 edge=2\" }"
+      },
+      {
+        "h": 7.9,
+        "event": "Event { id: 36794, at: 28440000, agent: Some(49), cause: Some(36792), kind: \"Admitted\", detail: \"edge=2 from=3 to=0\" }"
+      },
+      {
+        "h": 8.583333333333334,
+        "event": "Event { id: 38482, at: 30900000, agent: Some(49), cause: Some(37044), kind: \"Arrived\", detail: \"node=0 edge=2\" }"
+      },
+      {
+        "h": 9.828703888888889,
+        "event": "Event { id: 41938, at: 35383334, agent: Some(49), cause: Some(41930), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }"
+      },
+      {
+        "h": 10.523148333333333,
+        "event": "Event { id: 43858, at: 37883334, agent: Some(49), cause: Some(41938), kind: \"Arrived\", detail: \"node=1 edge=0\" }"
+      },
+      {
+        "h": 13.727778055555556,
+        "event": "Event { id: 52616, at: 49420001, agent: Some(49), cause: Some(52602), kind: \"Admitted\", detail: \"edge=1 from=1 to=2\" }"
+      },
+      {
+        "h": 15.06111138888889,
+        "event": "Event { id: 56336, at: 54220001, agent: Some(49), cause: Some(52616), kind: \"Arrived\", detail: \"node=2 edge=1\" }"
+      },
+      {
+        "h": 15.062593055555556,
+        "event": "Event { id: 56366, at: 54225335, agent: Some(49), cause: Some(56365), kind: \"Consumed\", detail: \"batch=62 q=1 owner=Agent(49) nutrition_ms=3600000\" }"
+      },
+      {
+        "h": 24.283333333333335,
+        "event": "Event { id: 110576, at: 87420000, agent: Some(49), cause: Some(110574), kind: \"Admitted\", detail: \"edge=1 from=2 to=1\" }"
+      },
+      {
+        "h": 24.95,
+        "event": "Event { id: 115990, at: 89820000, agent: Some(49), cause: Some(110576), kind: \"Arrived\", detail: \"node=1 edge=1\" }"
+      },
+      {
+        "h": 24.95,
+        "event": "Event { id: 116122, at: 89820000, agent: Some(49), cause: Some(116120), kind: \"Admitted\", detail: \"edge=0 from=1 to=0\" }"
+      },
+      {
+        "h": 25.616666666666667,
+        "event": "Event { id: 119824, at: 92220000, agent: Some(49), cause: Some(116122), kind: \"Arrived\", detail: \"node=0 edge=0\" }"
+      },
+      {
+        "h": 25.633333333333333,
+        "event": "Event { id: 120012, at: 92280000, agent: Some(49), cause: Some(120010), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }"
+      },
+      {
+        "h": 26.3,
+        "event": "Event { id: 123768, at: 94680000, agent: Some(49), cause: Some(120012), kind: \"Arrived\", detail: \"node=1 edge=0\" }"
+      },
+      {
+        "h": 27.5,
+        "event": "Event { id: 131135, at: 99000000, agent: Some(49), cause: Some(131133), kind: \"Admitted\", detail: \"edge=1 from=1 to=2\" }"
+      },
+      {
+        "h": 28.166666666666668,
+        "event": "Event { id: 134469, at: 101400000, agent: Some(49), cause: Some(131135), kind: \"Arrived\", detail: \"node=2 edge=1\" }"
+      },
+      {
+        "h": 29.498333333333335,
+        "event": "Event { id: 139832, at: 106194000, agent: Some(49), cause: Some(139824), kind: \"Admitted\", detail: \"edge=1 from=2 to=1\" }"
+      },
+      {
+        "h": 30.498333333333335,
+        "event": "Event { id: 144490, at: 109794000, agent: Some(49), cause: Some(139832), kind: \"Arrived\", detail: \"node=1 edge=1\" }"
+      }
+    ],
+    "counts": {
+      "Decision": 1993,
+      "Queued": 331,
+      "Interrupted": 837,
+      "interrupt_queue for route": 319,
+      "Admitted": 11,
+      "PerformanceChanged": 6,
+      "Arrived": 11,
+      "StarvationStarted": 1,
+      "GatherStarted": 35,
+      "Gathered": 35,
+      "Consumed": 17,
+      "SleepStarted": 518,
+      "interrupt_sleep": 516,
+      "interrupt_eat accessible food": 2,
+      "JobAccepted": 1
+    },
+    "first_sleep_queue_interruption": []
+  },
+  "enabled": {
+    "events": [
+      {
+        "h": 6.7255,
+        "event": "Event { id: 32938, at: 24211800, agent: Some(49), cause: Some(32921), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }"
+      },
+      {
+        "h": 7.2805,
+        "event": "Event { id: 34313, at: 26209800, agent: Some(49), cause: Some(34312), kind: \"Arrived\", detail: \"node=1 edge=0\" }"
+      },
+      {
+        "h": 17.033333333333335,
+        "event": "Event { id: 61761, at: 61320000, agent: Some(49), cause: Some(61760), kind: \"Admitted\", detail: \"edge=0 from=1 to=0\" }"
+      },
+      {
+        "h": 18.633333333333333,
+        "event": "Event { id: 69281, at: 67080000, agent: Some(49), cause: Some(61761), kind: \"Arrived\", detail: \"node=0 edge=0\" }"
+      },
+      {
+        "h": 18.966666666666665,
+        "event": "Event { id: 72357, at: 68280000, agent: Some(49), cause: Some(72356), kind: \"Admitted\", detail: \"edge=2 from=0 to=3\" }"
+      },
+      {
+        "h": 20.738666666666667,
+        "event": "Event { id: 83402, at: 74659200, agent: Some(49), cause: Some(83401), kind: \"Arrived\", detail: \"node=3 edge=2\" }"
+      },
+      {
+        "h": 21.616666666666667,
+        "event": "Event { id: 90505, at: 77820000, agent: Some(49), cause: Some(90504), kind: \"Admitted\", detail: \"edge=2 from=3 to=0\" }"
+      },
+      {
+        "h": 23.388666666666666,
+        "event": "Event { id: 101781, at: 84199200, agent: Some(49), cause: Some(101780), kind: \"Arrived\", detail: \"node=0 edge=2\" }"
+      },
+      {
+        "h": 24.266666666666666,
+        "event": "Event { id: 106783, at: 87360000, agent: Some(49), cause: Some(106782), kind: \"Admitted\", detail: \"edge=0 from=0 to=1\" }"
+      },
+      {
+        "h": 25.866666666666667,
+        "event": "Event { id: 115983, at: 93120000, agent: Some(49), cause: Some(106783), kind: \"Arrived\", detail: \"node=1 edge=0\" }"
+      },
+      {
+        "h": 36.0,
+        "event": "Event { id: 166913, at: 129600000, agent: Some(49), cause: Some(166903), kind: \"Died\", detail: \"cause=starvation nutrition_ms=0 starvation_ms=86400000 location=Node(1)\" }"
+      }
+    ],
+    "counts": {
+      "Decision": 2204,
+      "Queued": 739,
+      "Interrupted": 1279,
+      "interrupt_queue for route": 737,
+      "PerformanceChanged": 4,
+      "Admitted": 5,
+      "PathTread": 3,
+      "Arrived": 5,
+      "StarvationStarted": 1,
+      "SleepStarted": 546,
+      "interrupt_sleep": 542,
+      "Died": 1
+    },
+    "first_sleep_queue_interruption": [
+      "Event { id: 120306, at: 96004800, agent: Some(49), cause: Some(120305), kind: \"Interrupted\", detail: \"sleep; was=Queued { edge: 1, to: 2, joined: 96000000 }\" }"
+    ]
+  }
+}

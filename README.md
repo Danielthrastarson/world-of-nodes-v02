@@ -54,7 +54,7 @@ corrections while retaining no-meal planning by default. The gated roadmap conti
 through geography and provisioning diagnostics; each stage records its gate in
 [ROADMAP.md](docs/ROADMAP.md). Historical probe commands stay explicitly reproducible.
 
-Foundation gates F0–F6 passed. [F1 geography](research/geography/REPORT.md) and
+Foundation gates F0–F7 passed at their documented scopes. [F1 geography](research/geography/REPORT.md) and
 [F2 provisioning](research/foundation-provisioning/REPORT.md) preserve failures and
 explain the first autonomous deliveries. [F3 farming](research/farming/REPORT.md)
 uses cultivator-owned crops without land titles. [F4 labor](research/labor/REPORT.md)
@@ -65,4 +65,15 @@ worlds remain unchanged; farming and capital require explicit configuration.
 [F6 communal crossings](research/infrastructure/REPORT.md) are physically built and
 shared under finite capacity. The 420-run study preserves incomplete projects,
 unknown-resource inaction and fatal queues. The future [player action language](docs/PLAYER_ACTION_LANGUAGE.md)
-is documentation only; no ruler command API or traffic-generated roads were added.
+is documentation only; no ruler command API or traffic-generated roads were added during F6.
+
+[F7 civilian paths](research/paths/REPORT.md) adds optional use-created ground
+surface state and disuse recovery to the shared transport kernel. Across 420 runs,
+paths change routes, traffic and nourishment in both favorable and harmful ways.
+The autonomous policy, FIFO and capacities remain unchanged. Engineered roads and
+staffed maintenance are deferred. Reproduce with `cargo build --release --bin paths_probe`
+then `python3 scripts/run_paths.py NEW_OUTPUT_DIRECTORY`.
+
+The [future army-control target](docs/ARMY_PLAYER_CONTROL.md) documents formation
+intent, geometry, stable QWER categories and shared civilian logistics. No military
+system, final UI or Jev integration is implemented.

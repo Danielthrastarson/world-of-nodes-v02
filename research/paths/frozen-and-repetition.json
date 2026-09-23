@@ -1,0 +1,11 @@
+{
+  "repeat_seed0_line": {
+    "all_csv_equal": true,
+    "events_equal": true
+  },
+  "frozen_crossing_matches_F6": {
+    "runs": 30,
+    "physical_checkpoints": 180,
+    "event_hashes_equal": true
+  }
+}

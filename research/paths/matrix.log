@@ -1,0 +1,14 @@
+line_enabled complete
+line_frozen complete
+diamond_frozen complete
+detour_frozen complete
+diamond_enabled complete
+detour_enabled complete
+dead_end_enabled complete
+dead_end_frozen complete
+local_food_frozen complete
+local_food_enabled complete
+crossing_frozen complete
+crossing_enabled complete
+carts_frozen complete
+carts_enabled complete

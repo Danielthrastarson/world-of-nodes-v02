@@ -1,0 +1,14 @@
+{
+  "source_revision": "9251917685e6652845a1396440028f34ada83561",
+  "matrix_runs": 420,
+  "material_and_fifo_checkpoints": 2520,
+  "hourly_audits_per_run": 73,
+  "prior_files_unchanged": 1396,
+  "test_count": 134,
+  "clippy": "passed",
+  "repeat_line": "all CSVs and full events identical",
+  "failure13_replay": "all CSVs and state/event hashes identical",
+  "disabled_regressions": "historical, farming, capital and infrastructure matched",
+  "frozen_control": "30 F5 and 30 F6 runs matched physical values and events",
+  "policy_changed": false
+}

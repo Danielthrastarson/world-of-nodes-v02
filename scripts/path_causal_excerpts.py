@@ -19,7 +19,7 @@ for directory in sorted(root.iterdir()):
             counts[kind] += 1
             if kind == 'Spoiled':
                 spoiled[re.search(r'holder=(\w+)', line).group(1)] += int(re.search(r'q=(\d+)', line).group(1))
-            if kind in ['PathTread', 'PathRecovery', 'JobAccepted', 'Delivered', 'CrossingCompleted', 'Death']:
+            if kind in ['PathTread', 'PathRecovery', 'JobAccepted', 'Delivered', 'CrossingCompleted', 'Died']:
                 examples.setdefault(kind, [])
                 if len(examples[kind]) < 4:
                     examples[kind].append(line.strip())

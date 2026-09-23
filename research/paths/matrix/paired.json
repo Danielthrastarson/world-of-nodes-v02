@@ -1,0 +1,436 @@
+{
+  "line": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": -40.0,
+      "min": -40.0,
+      "max": -40.0
+    },
+    "spoiled": {
+      "mean": 40.0,
+      "min": 40.0,
+      "max": 40.0
+    },
+    "delivered": {
+      "mean": 72.0,
+      "min": 72.0,
+      "max": 72.0
+    },
+    "starvation_h": {
+      "mean": 40.0,
+      "min": 40.0,
+      "max": 40.0
+    },
+    "queue_h": {
+      "mean": -13.720693889000131,
+      "min": -13.720693889000131,
+      "max": -13.720693889000131
+    },
+    "sleep_h": {
+      "mean": -2.6504911120000543,
+      "min": -2.6504911120000543,
+      "max": -2.6504911120000543
+    },
+    "visited_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_c": {
+      "mean": 8.0,
+      "min": 8.0,
+      "max": 8.0
+    },
+    "at_food": {
+      "mean": -12.0,
+      "min": -12.0,
+      "max": -12.0
+    },
+    "completed_trips": {
+      "mean": 108.0,
+      "min": 108.0,
+      "max": 108.0
+    },
+    "matched_work_reduction_h": {
+      "mean": 48.382,
+      "min": 48.382,
+      "max": 48.382
+    }
+  },
+  "diamond": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 17.466666666666665,
+      "min": -43.0,
+      "max": 85.0
+    },
+    "spoiled": {
+      "mean": -17.466666666666665,
+      "min": -85.0,
+      "max": 43.0
+    },
+    "delivered": {
+      "mean": 72.46666666666667,
+      "min": -18.0,
+      "max": 128.0
+    },
+    "starvation_h": {
+      "mean": -17.466666666666665,
+      "min": -85.0,
+      "max": 43.0
+    },
+    "queue_h": {
+      "mean": -40.151650592966654,
+      "min": -114.03309111099998,
+      "max": 38.502418055000135
+    },
+    "sleep_h": {
+      "mean": 4.7621841388000155,
+      "min": -0.09699361200000567,
+      "max": 9.497901111000033
+    },
+    "visited_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_c": {
+      "mean": 5.366666666666666,
+      "min": -3.0,
+      "max": 12.0
+    },
+    "at_food": {
+      "mean": 0.9,
+      "min": -10.0,
+      "max": 12.0
+    },
+    "completed_trips": {
+      "mean": 230.53333333333333,
+      "min": 180.0,
+      "max": 269.0
+    },
+    "matched_work_reduction_h": {
+      "mean": 81.13173333333333,
+      "min": 79.962,
+      "max": 83.962
+    }
+  },
+  "detour": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": -14.0,
+      "min": -14.0,
+      "max": -14.0
+    },
+    "spoiled": {
+      "mean": 14.0,
+      "min": 14.0,
+      "max": 14.0
+    },
+    "delivered": {
+      "mean": 43.0,
+      "min": 43.0,
+      "max": 43.0
+    },
+    "starvation_h": {
+      "mean": 14.0,
+      "min": 14.0,
+      "max": 14.0
+    },
+    "queue_h": {
+      "mean": 20.193711945000132,
+      "min": 20.193711945000132,
+      "max": 20.193711945000132
+    },
+    "sleep_h": {
+      "mean": 4.164191943999981,
+      "min": 4.164191943999981,
+      "max": 4.164191943999981
+    },
+    "visited_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_c": {
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    "at_food": {
+      "mean": 2.0,
+      "min": 2.0,
+      "max": 2.0
+    },
+    "completed_trips": {
+      "mean": 61.0,
+      "min": 61.0,
+      "max": 61.0
+    },
+    "matched_work_reduction_h": {
+      "mean": 46.5445,
+      "min": 46.5445,
+      "max": 46.5445
+    }
+  },
+  "dead_end": {
+    "alive": {
+      "mean": -0.1,
+      "min": -1.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 6.033333333333333,
+      "min": -32.0,
+      "max": 80.0
+    },
+    "spoiled": {
+      "mean": -6.033333333333333,
+      "min": -80.0,
+      "max": 32.0
+    },
+    "delivered": {
+      "mean": 42.63333333333333,
+      "min": -6.0,
+      "max": 112.0
+    },
+    "starvation_h": {
+      "mean": -9.633333333333333,
+      "min": -80.0,
+      "max": 32.0
+    },
+    "queue_h": {
+      "mean": 57.94240313883336,
+      "min": -58.00557972299998,
+      "max": 126.97323861099994
+    },
+    "sleep_h": {
+      "mean": 2.4116822313666337,
+      "min": -6.181771111000103,
+      "max": 15.324186666999935
+    },
+    "visited_food": {
+      "mean": -0.1,
+      "min": -1.0,
+      "max": 0.0
+    },
+    "at_c": {
+      "mean": 2.8666666666666667,
+      "min": -5.0,
+      "max": 12.0
+    },
+    "at_food": {
+      "mean": -2.1333333333333333,
+      "min": -11.0,
+      "max": 7.0
+    },
+    "completed_trips": {
+      "mean": 87.53333333333333,
+      "min": 59.0,
+      "max": 117.0
+    },
+    "matched_work_reduction_h": {
+      "mean": 52.99263333333333,
+      "min": 49.825,
+      "max": 56.451
+    }
+  },
+  "local_food": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "spoiled": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "delivered": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "starvation_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "queue_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "sleep_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "visited_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_c": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "completed_trips": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "matched_work_reduction_h": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "crossing": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": -85.0,
+      "min": -85.0,
+      "max": -85.0
+    },
+    "spoiled": {
+      "mean": 85.0,
+      "min": 85.0,
+      "max": 85.0
+    },
+    "delivered": {
+      "mean": 86.0,
+      "min": 86.0,
+      "max": 86.0
+    },
+    "starvation_h": {
+      "mean": 85.0,
+      "min": 85.0,
+      "max": 85.0
+    },
+    "queue_h": {
+      "mean": -132.14898527799994,
+      "min": -132.14898527799994,
+      "max": -132.14898527799994
+    },
+    "sleep_h": {
+      "mean": -10.000998611,
+      "min": -10.000998611,
+      "max": -10.000998611
+    },
+    "visited_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_c": {
+      "mean": 11.0,
+      "min": 11.0,
+      "max": 11.0
+    },
+    "at_food": {
+      "mean": -16.0,
+      "min": -16.0,
+      "max": -16.0
+    },
+    "completed_trips": {
+      "mean": 33.0,
+      "min": 33.0,
+      "max": 33.0
+    },
+    "matched_work_reduction_h": {
+      "mean": 9.1385,
+      "min": 9.1385,
+      "max": 9.1385
+    }
+  },
+  "carts": {
+    "alive": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "consumed": {
+      "mean": 35.0,
+      "min": 35.0,
+      "max": 35.0
+    },
+    "spoiled": {
+      "mean": -35.0,
+      "min": -35.0,
+      "max": -35.0
+    },
+    "delivered": {
+      "mean": -93.0,
+      "min": -93.0,
+      "max": -93.0
+    },
+    "starvation_h": {
+      "mean": -35.0,
+      "min": -35.0,
+      "max": -35.0
+    },
+    "queue_h": {
+      "mean": -0.06395111099982387,
+      "min": -0.06395111099982387,
+      "max": -0.06395111099982387
+    },
+    "sleep_h": {
+      "mean": 2.7467905549999614,
+      "min": 2.7467905549999614,
+      "max": 2.7467905549999614
+    },
+    "visited_food": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "at_c": {
+      "mean": 7.0,
+      "min": 7.0,
+      "max": 7.0
+    },
+    "at_food": {
+      "mean": -7.0,
+      "min": -7.0,
+      "max": -7.0
+    },
+    "completed_trips": {
+      "mean": 68.0,
+      "min": 68.0,
+      "max": 68.0
+    },
+    "matched_work_reduction_h": {
+      "mean": 37.98,
+      "min": 37.98,
+      "max": 37.98
+    }
+  }
+}

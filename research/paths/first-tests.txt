@@ -1,0 +1,17 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.32s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 9 tests
+test provisioning::paths::tests::dead_mid_edge_does_not_complete_a_passage_or_lose_cargo ... ok
+test provisioning::paths::tests::frozen_control_records_use_without_surface_effect_and_remote_memory_stays_stale ... ok
+test provisioning::paths::tests::actual_completed_passages_change_surface_not_idle_or_queued_people ... ok
+test provisioning::paths::tests::path_law_cannot_open_blocked_crossings_or_overlap_constructed_infrastructure ... ok
+test provisioning::paths::tests::fifo_opposite_direction_survives_path_improvement ... ok
+test provisioning::paths::tests::recovery_uses_the_authoritative_clock_and_movement_maintains_surface ... ok
+test provisioning::paths::tests::simultaneous_arrivals_retain_admission_contract_and_saturate_at_twenty_percent ... ok
+test provisioning::paths::tests::movement_and_recovery_are_partition_independent ... ok
+test provisioning::paths::tests::known_surface_forecast_matches_kernel_across_physiology_thresholds ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 111 filtered out; finished in 0.00s
+

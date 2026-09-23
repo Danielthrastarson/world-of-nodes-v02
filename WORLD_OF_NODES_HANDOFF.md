@@ -163,3 +163,11 @@ Separate parameters, state, policies, and seeded randomness. Use small tested co
 ## Current F7 authorization and future army controls
 
 Proceed with [civilian path feedback](docs/PATHS_EXPERIMENT.md), preserving all F6 evidence. [Army player control](docs/ARMY_PLAYER_CONTROL.md) is a future architecture target: formation objectives and geometry, actual mobilized people/resources, stable categories and shared logistics. Do not implement military systems, their UI or a separate military movement layer during F7.
+
+F7 now passes at the minimal use-created path scope: [420-run evidence](research/paths/REPORT.md).
+Completed travel changes ground-edge compaction and later traversal work; disuse
+recovers the surface. Capacity/FIFO, policy, institutions and historical worlds
+remain unchanged. Paths improve some outcomes and worsen others; three dead-end
+seeds expose existing queue/exploration/sleep churn with starvation deaths. Preserve
+these findings. Engineered roads, maintenance jobs, F8 and military implementation
+remain deferred. All 1,396 preceding research files retain their checksums.

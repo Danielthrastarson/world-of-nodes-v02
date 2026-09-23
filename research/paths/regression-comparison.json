@@ -1,0 +1,54 @@
+{
+  "research/paths/capital-regression/runs.csv": {
+    "matches": "research/capital/matrix/medium_high_available/runs.csv",
+    "rows": 6
+  },
+  "research/paths/capital-regression/metrics.csv": {
+    "matches": "research/capital/matrix/medium_high_available/metrics.csv",
+    "rows": 89
+  },
+  "research/paths/capital-regression/people.csv": {
+    "matches": "research/capital/matrix/medium_high_available/people.csv",
+    "rows": 300
+  },
+  "research/paths/capital-regression/carts.csv": {
+    "matches": "research/capital/matrix/medium_high_available/carts.csv",
+    "rows": 50
+  },
+  "research/paths/infrastructure-regression/runs.csv": {
+    "matches": "research/infrastructure/matrix/closed_available/runs.csv",
+    "rows": 6
+  },
+  "research/paths/infrastructure-regression/metrics.csv": {
+    "matches": "research/infrastructure/matrix/closed_available/metrics.csv",
+    "rows": 60
+  },
+  "research/paths/infrastructure-regression/people.csv": {
+    "matches": "research/infrastructure/matrix/closed_available/people.csv",
+    "rows": 50
+  },
+  "research/paths/infrastructure-regression/trips.csv": {
+    "matches": "research/infrastructure/matrix/closed_available/trips.csv",
+    "rows": 564
+  },
+  "research/paths/infrastructure-regression/edges.csv": {
+    "matches": "research/infrastructure/matrix/closed_available/edges.csv",
+    "rows": 2
+  },
+  "research/paths/farming-regression/runs.csv": {
+    "matches": "research/capital/farming-regression/runs.csv",
+    "rows": 6
+  },
+  "research/paths/farming-regression/crops.csv": {
+    "matches": "research/capital/farming-regression/crops.csv",
+    "rows": 84
+  },
+  "research/paths/farming-regression/people.csv": {
+    "matches": "research/capital/farming-regression/people.csv",
+    "rows": 300
+  },
+  "research/paths/farming-regression/activity.csv": {
+    "matches": "research/capital/farming-regression/activity.csv",
+    "rows": 34
+  }
+}
