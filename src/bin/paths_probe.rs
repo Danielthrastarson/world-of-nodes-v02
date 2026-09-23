@@ -106,7 +106,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<_> = env::args().skip(1).collect();
     let name = args
         .first()
-        .ok_or("paths_probe CASE enabled|frozen NEW_DIR [SEEDS]")?;
+        .ok_or("paths_probe CASE enabled|frozen NEW_DIR [SEEDS] [FIRST_SEED]")?;
     let enabled = match args.get(1).map(String::as_str) {
         Some("enabled") => true,
         Some("frozen") => false,
@@ -115,6 +115,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let root = Path::new(args.get(2).ok_or("new output path")?);
     fs::create_dir_all(root)?;
     let seeds: u64 = args.get(3).map(|s| s.parse()).transpose()?.unwrap_or(30);
+    let first_seed: u64 = args.get(4).map(|s| s.parse()).transpose()?.unwrap_or(0);
+    let end_seed = first_seed.checked_add(seeds).ok_or("seed range overflow")?;
     let mut runs = file(root, "runs.csv")?;
     let mut surfaces = file(root, "surfaces.csv")?;
     let mut trips = file(root, "trips.csv")?;
@@ -135,8 +137,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         "seed,agent,edge,from,to,admitted_ms,arrived_ms,nominal_ms,untreated_ms,compaction,food_departed,load_departed"
     )?;
     writeln!(people, "seed,id,alive,nutrition_ms,consumed,location")?;
-    for seed in 0..seeds {
-        let c = configuration(name, seed, enabled)?;
+    for seed in first_seed..end_seed {
+        let mut c = configuration(name, seed, enabled)?;
+        c.trace = seed == first_seed;
         let graph = c.edges.clone();
         let food_node = if name == "diamond" || name == "detour" {
             3
@@ -252,7 +255,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             w.crossing_projects(),
             w.carts()
         )?;
-        if seed == 0 {
+        if seed == first_seed {
             for e in w.events() {
                 writeln!(events, "{e:?}")?;
             }
