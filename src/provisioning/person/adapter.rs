@@ -4,6 +4,12 @@ use crate::provisioning::{World, authority};
 impl World {
     pub(crate) fn person_capabilities(&self, id: usize) -> Capabilities<'_> {
         Capabilities {
+            social: self
+                .config
+                .social
+                .as_ref()
+                .filter(|c| c.influence)
+                .map(|_| &self.social.memories[id]),
             care: self
                 .config
                 .household
@@ -49,6 +55,7 @@ impl World {
             });
         }
         Some(State {
+            social: self.social_memory(id),
             household: self.household_view(id),
             person: a,
             needs: a.needs(),

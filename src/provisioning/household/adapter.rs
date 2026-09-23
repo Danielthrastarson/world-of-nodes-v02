@@ -108,6 +108,7 @@ impl World {
                 self.household
                     .journal
                     .add(&format!("transfer_failed:{e}"), 1);
+                self.social_failed_transfer(id, dependent, e);
                 return Err(e.into());
             }
         };
@@ -128,6 +129,7 @@ impl World {
             "CareCompleted",
             format!("dependent={dependent}; ownership transferred, nourishment not guaranteed"),
         );
+        self.social_food(id, Some(dependent), quantity, self.agents[id].nutrition);
         Ok(())
     }
     pub(crate) fn record_care_decision(&mut self, id: usize, o: &Observation, d: &Decision) {

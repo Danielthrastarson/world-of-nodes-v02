@@ -196,6 +196,9 @@ impl World {
                 {
                     return Err("inedible/unharvested stock or ration limit".into());
                 }
+                let nutrition_before = self.agents[id].nutrition;
+                let personal_carried = b.owner == Owner::Agent(id)
+                    && (self.carried_by(id, b.holder) || self.accessible_cart(id, b.holder));
                 self.cancel_action(id, "eat accessible food");
                 self.goods.batches[batch].quantity -= quantity;
                 self.goods.consumed += quantity as u128;
@@ -214,6 +217,9 @@ impl World {
                         b.owner, self.agents[id].nutrition
                     ),
                 );
+                if personal_carried {
+                    self.social_food(id, None, quantity, nutrition_before);
+                }
             }
             Intent::Gather { batch, communal } => {
                 if matches!(self.agents[id].action,Action::Gather{batch:b,..}if b==batch) {
@@ -857,6 +863,7 @@ impl World {
                         self.agents[id].starvation, self.agents[id].location
                     ),
                 );
+                self.social_death(id);
             }
         }
         self.finish_farming();
@@ -1035,6 +1042,7 @@ impl World {
         let mut decisions = vec![];
         let mut stale_events = vec![];
         for id in ids {
+            self.observe_social(id);
             self.observe_household(id);
             self.observe_farming(id);
             self.observe_capital(id);
@@ -1088,6 +1096,12 @@ impl World {
                 self.acceptance.record(&o, &d, audit);
             }
             let capabilities = person::Capabilities {
+                social: self
+                    .config
+                    .social
+                    .as_ref()
+                    .filter(|c| c.influence)
+                    .map(|_| &self.social.memories[id]),
                 care: self
                     .config
                     .household
@@ -1137,6 +1151,7 @@ impl World {
                 self.acceptance.record(&o, &selected.decision, audit);
             }
             let decision = self.barter_decision(id, &o, selected.decision);
+            self.record_social_choice(id, &o, &decision);
             self.record_care_decision(id, &o, &decision);
             let plan = person::ActionPlan::new(&o, decision);
             let decision = plan.proposed;

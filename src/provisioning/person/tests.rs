@@ -108,6 +108,7 @@ fn composed_capabilities_use_personal_history_not_remote_truth() {
         observation: &o,
         beliefs: &m,
         capabilities: Capabilities {
+            social: None,
             care: None,
             cultivation: Some((&f, &fr)),
             capital: Some((&c, &cr)),

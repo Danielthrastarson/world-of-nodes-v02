@@ -446,6 +446,7 @@ pub(crate) fn decide_with_capabilities(
         capital,
         public_works: infrastructure,
         care,
+        social,
     } = capabilities;
     let needs = super::person::Needs::from_observation(o);
     if matches!(o.action, Action::Dead | Action::Travel) {
@@ -474,7 +475,18 @@ pub(crate) fn decide_with_capabilities(
     if let Some(memory) = care
         && let Some(d) = super::household::consider(o, m, memory)
     {
-        return d;
+        if let Some(social) = social {
+            if let Some(a) = super::social::assess(o, m, memory, social, &d)
+                && a.permits()
+            {
+                return Decision {
+                    reason: format!("{}; social={a:?}", d.reason),
+                    ..d
+                };
+            }
+        } else {
+            return d;
+        }
     }
     if let Some((memory, enabled)) = infrastructure {
         if let Some(d) = super::infrastructure::consider(o, m, memory, enabled) {

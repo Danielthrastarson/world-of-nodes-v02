@@ -131,3 +131,30 @@ command. It may pause, resume, complete or cancel with explicit reasons; it supp
 no knowledge and has no guaranteed priority or completion. B2 affect and B3 life
 cycle remain absent. See `HOUSEHOLD_EXPERIMENT.md` for the provisional thresholds,
 initial conditions and limitations rather than treating these as universal behavior.
+
+## B2 extension: sparse appraisal and transient affect
+
+The optional social component stores directed trust, attachment, grievance and
+obligation independently of three lazy affect pulses (anger/fear/grief). Explicit
+kin/care edges seed sparse records; actual observed support can add a directed
+edge. There is no all-to-all relationship table, friendship score, loyalty flag
+or betrayal command. Relationship records do not decay every tick.
+
+Typed evidence is produced only for locally witnessed food actions, failed local
+care attempts, learned deaths and own observed starvation danger. The appraiser
+cannot inspect World, another person's plan or remote truth. Inferences about
+available alternatives may be wrong. Death visibility uses sparse inverse indexes
+and physical colocation; a distant death cannot trigger even an unrelated fear
+observation in a remote person. A later local visit may reveal a death once.
+
+The common Person capability stage first obtains the unchanged feasible B1 care
+candidate, then compares explicit social support-pressure and sacrifice/reluctance
+terms. Refusal falls through to the existing policy. It does not override eating,
+critical survival, sleep, atomic work, accepted jobs, ownership, travel or FIFO.
+No new rights to give/take resources are created. Disabling B2 preserves B1's exact
+policy. Research matched-state controls copy memories into an identical physical
+snapshot; that facility is outside autonomous policy and is not a runtime command.
+
+See `RELATIONSHIP_EXPERIMENT.md` for the provisional appraisal, affect timescale and
+choice coefficients. They are a bounded behavioral hypothesis, not universal human
+psychology. B3, punishment, revenge, marriage, inheritance and military remain absent.

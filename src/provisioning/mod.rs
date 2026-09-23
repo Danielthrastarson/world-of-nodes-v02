@@ -21,6 +21,7 @@ pub mod reasoning;
 mod runtime;
 pub mod settlement_research;
 pub mod shadow;
+pub mod social;
 use goods::Goods;
 pub use goods::{Batch, Holder, Material, Owner};
 pub use person::Person;
@@ -58,6 +59,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub social: Option<social::Config>,
     pub household: Option<household::Config>,
     pub authority: Option<authority::Config>,
     pub barter: bool,
@@ -90,6 +92,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            social: None,
             household: None,
             authority: None,
             barter: false,
@@ -303,6 +306,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) social: social::State,
     pub(crate) household: household::State,
     pub(crate) authority: authority::State,
     pub(crate) barter: barter::State,
@@ -373,7 +377,8 @@ impl World {
         {
             return Err("invalid provisioning configuration".into());
         }
-        if (config.household.is_some()
+        if (config.social.is_some()
+            || config.household.is_some()
             || config.farming.is_some()
             || config.capital.is_some()
             || config.infrastructure.is_some())
@@ -475,7 +480,9 @@ impl World {
         let farm = farming::State::new(config.farming.as_ref(), config.nodes, config.starts.len())?;
         let authority = authority::State::new(&config)?;
         let household = household::State::new(&config)?;
+        let social = social::State::new(&config);
         let mut w = Self {
+            social,
             household,
             authority,
             barter: barter::State::default(),
@@ -643,6 +650,7 @@ impl World {
         }
     }
     pub fn audit(&self) -> Result<(), String> {
+        self.audit_social()?;
         self.audit_household()?;
         self.audit_authority()?;
         self.audit_barter()?;
