@@ -88,7 +88,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 w.event_hash()
             )?;
             for ((id, a), v) in &j.activity_ms {
-                writeln!(activities, "{seed},{h},{id},{a},{:.9}", *v as f64 / HOUR as f64)?;
+                writeln!(
+                    activities,
+                    "{seed},{h},{id},{a},{:.9}",
+                    *v as f64 / HOUR as f64
+                )?;
             }
             for a in w.agents() {
                 let retained: u64 = w
