@@ -1,0 +1,159 @@
+{
+  "source_revision": "21035f3089aa9ca090cbac0c32027055bd27d51a",
+  "binary_sha256": "84ec40ea70dc9972d462c7fdc1713b9c639e1ff3568f520d0452fb4a7d0cdbcd",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "runs": 900,
+  "arms": [
+    {
+      "name": "history_no_history_off",
+      "runs": 30
+    },
+    {
+      "name": "history_no_history_on",
+      "runs": 30
+    },
+    {
+      "name": "history_help_safe_off",
+      "runs": 30
+    },
+    {
+      "name": "history_help_safe_on",
+      "runs": 30
+    },
+    {
+      "name": "history_help_costly_off",
+      "runs": 30
+    },
+    {
+      "name": "history_help_costly_on",
+      "runs": 30
+    },
+    {
+      "name": "history_failed_attempt_off",
+      "runs": 30
+    },
+    {
+      "name": "history_failed_attempt_on",
+      "runs": 30
+    },
+    {
+      "name": "history_refusal_off",
+      "runs": 30
+    },
+    {
+      "name": "history_refusal_on",
+      "runs": 30
+    },
+    {
+      "name": "history_remote_refusal_off",
+      "runs": 30
+    },
+    {
+      "name": "history_remote_refusal_on",
+      "runs": 30
+    },
+    {
+      "name": "history_asymmetric_off",
+      "runs": 30
+    },
+    {
+      "name": "history_asymmetric_on",
+      "runs": 30
+    },
+    {
+      "name": "history_death_known_off",
+      "runs": 30
+    },
+    {
+      "name": "history_death_known_on",
+      "runs": 30
+    },
+    {
+      "name": "history_death_unknown_off",
+      "runs": 30
+    },
+    {
+      "name": "history_death_unknown_on",
+      "runs": 30
+    },
+    {
+      "name": "history_fear_off",
+      "runs": 30
+    },
+    {
+      "name": "history_fear_on",
+      "runs": 30
+    },
+    {
+      "name": "history_stranger_off",
+      "runs": 30
+    },
+    {
+      "name": "history_stranger_on",
+      "runs": 30
+    },
+    {
+      "name": "live_colocated_off",
+      "runs": 30
+    },
+    {
+      "name": "live_colocated_on",
+      "runs": 30
+    },
+    {
+      "name": "live_farming_off",
+      "runs": 30
+    },
+    {
+      "name": "live_farming_on",
+      "runs": 30
+    },
+    {
+      "name": "live_farming_distant_off",
+      "runs": 30
+    },
+    {
+      "name": "live_farming_distant_on",
+      "runs": 30
+    },
+    {
+      "name": "live_construction_off",
+      "runs": 30
+    },
+    {
+      "name": "live_construction_on",
+      "runs": 30
+    }
+  ]
+}

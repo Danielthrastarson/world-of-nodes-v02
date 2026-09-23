@@ -161,3 +161,16 @@ python3 scripts/analyze_person.py /tmp/won-b0-replay /tmp/won-b0-coverage.json
 ### B1 household / kinship
 
 [Structural care evidence](research/household/REPORT.md) and [registered assumptions](docs/HOUSEHOLD_EXPERIMENT.md): personal property, separate directed caregiver obligations, local need observations and physical voluntary transfers through the common Person interface. Includes 660 paired-condition runs, negative outcomes, opportunity costs and exact historical regression checks. No inheritance, pooled property, emotions or reproduction.
+
+### B2 relationships / appraisal / affect
+
+[Evidence](research/affect/REPORT.md) · [focal causal chains](research/affect/analysis/TRACE_EXCERPTS.md) · [registered rules](docs/RELATIONSHIP_EXPERIMENT.md).
+
+Four sparse directed relationship dimensions and lazy anger/fear/grief feed the common Person care arbitration. Controlled observed history changes a later autonomous choice with identical non-social inputs. Remote events do not update relationships or grief. All four live B1 comparisons preserve physical behavior; no drama or improved welfare is claimed. Historical configurations retain social disabled. No new property rights, reproduction or military.
+
+```sh
+cargo build --release --bins
+python3 scripts/run_affect.py /tmp/won-b2-primary
+python3 scripts/run_affect_cost.py /tmp/won-b2-cost
+python3 scripts/verify_affect.py /tmp/won-b2-regressions
+```

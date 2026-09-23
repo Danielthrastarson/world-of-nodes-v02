@@ -1,0 +1,2 @@
+person=0 view=Some(PersonalView { households: [Household { id: 7, members: [0, 1], home: None }], kin: [Relation { from: 0, to: 1, kind: Parent }], dependents: [1], memory: Memory { sightings: {1: Sighting { person: 1, node: 1, observed_at: 172800000, nutrition: 0, starvation: 0, present: false, alive: true }}, undertaking: None } })
+person=1 view=Some(PersonalView { households: [Household { id: 7, members: [0, 1], home: None }], kin: [Relation { from: 1, to: 0, kind: Child }], dependents: [], memory: Memory { sightings: {}, undertaking: None } })

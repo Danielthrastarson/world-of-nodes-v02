@@ -386,3 +386,15 @@ B0 accepted. B1 is authorized with personal ownership, explicit caregiver obliga
 ### B1 result
 
 B1 PASSED at seeded structural-care scope; research/household/REPORT.md records evidence. Personal property remains separate from household/kinship and directed Caregiver relations. 660 paired-condition runs, 210 tests, 227 exact historical replays and 4,410 unchanged old research files. Care can transfer food, shorten caregiver survival, fail after relatives pass on a road, and redistribute construction work. No pooling, inheritance, compulsory sharing, affect or reproduction. Source79515ee; original negative findings remain intact. B2/B3 and F11 are not implemented.
+
+## B2 result — directed social history and affect
+
+B2 PASSED at bounded mechanism scope; [report](research/affect/REPORT.md), [analysis](research/affect/analysis/analysis.json), [traces](research/affect/analysis/TRACE_EXCERPTS.md). Primary source `21035f3`; follow-up cost-audit source `42c9f75`. No B3/F11 expansion.
+
+Relationships store trust, attachment, grievance, obligation separately from transient anger/fear/grief. Pure appraisal consumes local typed evidence. Sparse contacts and inverse indexes avoid all-pairs social updates. B0 Person reads only personal social memory; B1 physical/legal/survival gates still apply. Social-enabled care uses registered inspectable pressure/reluctance terms. Historical fixtures keep social absent; enabling the new policy is explicit, not a retroactive change to old experiments.
+
+Controlled histories precede research-only matched physical states. The later autonomous choice gives after costly help but waits after locally observed refusal (30/30 paired seeds); unseen refusal and apparent inability do not produce that change. Known attached death causes grief, unknown death does not. Recent fear delays help; the recipient then leaves without eating the transferred food. These are conditional mechanism demonstrations, not claims that the historical episodes arose autonomously. No loyalty/betrayal outcome is scripted.
+
+Four live B1 worlds produce unchanged care allocation, per-person work, nourishment and death under social off/on. No live anger or socially refused care in that primary panel. Preserve this negative finding. A separately registered cost audit shows a scarce six-quanta gift advances giver death37h→31h; an abundant giver has no starvation in either arm, but eating timing differs. Do not confuse the appraisal scarcity proxy with exact opportunity cost.
+
+Validation:225 full-suite passing tests plus one subsequent targeted cost test; fmt/clippy pass;1,020 new runs;zero accounting/FIFO errors;62 exact historical executions;5,469 prior research files unchanged. Appraisal parameters are provisional, sex-neutral and uncalibrated. No inheritance, marriage, pooled ownership, cultural norms, punishment, revenge rights, reproduction or military. B3 requires its own bounded biological/time-scale work; F11 stays blocked.

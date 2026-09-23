@@ -1,0 +1,18 @@
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error: used `assert_eq!` with a literal bool
+   --> src/provisioning/social/tests.rs:247:13
+    |
+247 |             assert_eq!(give.agents[0].action == Action::Dead, false);
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.98.0/index.html#bool_assert_comparison
+    = note: `-D clippy::bool-assert-comparison` implied by `-D warnings`
+    = help: to override `-D warnings` add `#[allow(clippy::bool_assert_comparison)]`
+help: replace it with `assert!(..)`
+    |
+247 -             assert_eq!(give.agents[0].action == Action::Dead, false);
+247 +             assert!(!(give.agents[0].action == Action::Dead));
+    |
+
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...

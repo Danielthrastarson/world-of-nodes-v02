@@ -1,0 +1,23 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.58s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 15 tests
+test provisioning::social::tests::affect_is_lazy_and_grievance_outlasts_anger ... ok
+test provisioning::social::tests::grief_requires_attachment_and_known_death ... ok
+test provisioning::social::tests::costly_help_changes_compressed_history_more_than_safe_help ... ok
+test provisioning::social::tests::hidden_refusal_and_death_do_not_update_remote_beliefs ... ok
+test provisioning::social::tests::each_relational_dimension_has_an_inspectable_effect ... ok
+test provisioning::social::tests::remote_death_does_not_trigger_an_unrelated_self_observation ... ok
+test provisioning::social::tests::self_preservation_is_not_appraised_as_deliberate_harm ... ok
+test provisioning::social::tests::anger_and_grief_can_change_care_without_changing_physics_or_rights ... ok
+test provisioning::social::tests::later_local_arrival_can_reveal_death_once ... ok
+test provisioning::social::tests::simultaneous_dead_people_do_not_acquire_grief ... ok
+test provisioning::social::tests::fear_deduplicates_and_can_change_a_recovered_persons_choice ... ok
+test provisioning::social::tests::same_unmet_need_appraises_alternatives_not_an_outcome_label ... ok
+test provisioning::social::tests::history_changes_later_person_choice_under_identical_physics ... ok
+test provisioning::social::tests::sparse_graph_is_linear_in_explicit_edges_not_population_squared ... ok
+test provisioning::social::tests::dynamics_are_deterministic_and_observer_journal_does_not_drive_choice ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 197 filtered out; finished in 0.10s
+

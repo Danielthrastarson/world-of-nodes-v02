@@ -1,0 +1,10 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error: 7 positional arguments in format string, but there are 6 arguments
+   --> src/provisioning/social/research.rs:249:10
+    |
+249 |         "{:?}|{:?}|{:?}|{:?}|{:?}|{:?}|{:?}",
+    |          ^^^^ ^^^^ ^^^^ ^^^^ ^^^^ ^^^^ ^^^^
+250 |         w.now, agents, w.goods, w.boards, w.metrics, w.household.memories
+    |         -----  ------  -------  --------  ---------  --------------------
+
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error

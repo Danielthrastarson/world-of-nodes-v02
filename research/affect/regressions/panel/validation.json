@@ -1,0 +1,439 @@
+{
+  "revision": "21035f3089aa9ca090cbac0c32027055bd27d51a",
+  "prior_files_unchanged": 3131,
+  "regressions": [
+    {
+      "name": "complementary_on-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "complementary_market-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "symmetric_on-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "symmetric_market-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "high_cost_on-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "high_cost_market-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "low_cost_on-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "low_cost_market-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "colocated_on-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "colocated_market-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "separated_on-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "separated_market-0",
+      "seed": 0,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "low_cost_on-18",
+      "seed": 18,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": false
+    },
+    {
+      "name": "low_cost_market-18",
+      "seed": 18,
+      "csv_files": [
+        "barter_counts.csv",
+        "offers.csv",
+        "exchanges.csv",
+        "market_stocks.csv",
+        "market_receipts.csv",
+        "runs.csv",
+        "places.csv",
+        "accounts.csv",
+        "labor.csv",
+        "counts.csv",
+        "people.csv",
+        "inventory.csv",
+        "flows.csv",
+        "transfers.csv",
+        "visits.csv",
+        "carts.csv",
+        "projects.csv",
+        "paths.csv"
+      ],
+      "seed0_events_exact": false
+    },
+    {
+      "name": "crossing_closed",
+      "seed": 0,
+      "csv_files": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "trips.csv",
+        "edges.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "crossing_bottleneck",
+      "seed": 0,
+      "csv_files": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "trips.csv",
+        "edges.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "crossing_scarce",
+      "seed": 0,
+      "csv_files": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "trips.csv",
+        "edges.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "crossing_discovery",
+      "seed": 0,
+      "csv_files": [
+        "runs.csv",
+        "metrics.csv",
+        "people.csv",
+        "trips.csv",
+        "edges.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "path_line",
+      "seed": 0,
+      "csv_files": [
+        "runs.csv",
+        "surfaces.csv",
+        "trips.csv",
+        "people.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "path_dead_end",
+      "seed": 0,
+      "csv_files": [
+        "runs.csv",
+        "surfaces.csv",
+        "trips.csv",
+        "people.csv"
+      ],
+      "seed0_events_exact": true
+    },
+    {
+      "name": "path_carts",
+      "seed": 0,
+      "csv_files": [
+        "runs.csv",
+        "surfaces.csv",
+        "trips.csv",
+        "people.csv"
+      ],
+      "seed0_events_exact": true
+    }
+  ],
+  "p1_scenarios_exact": 19,
+  "parameter_debug_difference": "New optional authority: None field only; physical/event/state checks exact."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASSED at bounded B2 mechanism scope",
+  "source_revision_primary": "21035f3089aa9ca090cbac0c32027055bd27d51a",
+  "source_revision_cost": "42c9f757c070cc73c0f04fc345a9a1003e2a4c8b",
+  "full_suite_tests": 225,
+  "additional_targeted_cost_test": 1,
+  "fmt": "pass",
+  "all_target_clippy": "pass",
+  "historical_executions": 62,
+  "analysis": {
+    "runs": 1020,
+    "accounting_errors": 0,
+    "queue_overtakes": 0,
+    "historical_files_unchanged": 5469,
+    "matched_physics_equal": true,
+    "live_activity_and_person_physics_equal": true,
+    "live_seed0_physical_traces_equal": true
+  },
+  "analyzer_sha256": "090861b693c266885c5f74a9c6d9a1d4a8852e80811185cc38ccb0b8ba6e1af9",
+  "preserved_default": "social: None in historical configurations",
+  "live_result": "no changed physical metrics, per-person activity or selected physical traces in four B1 worlds",
+  "boundaries": "B3 not started; F11 blocked; no new property, punishment or communication institution"
+}
