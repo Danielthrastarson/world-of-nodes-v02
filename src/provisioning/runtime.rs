@@ -40,6 +40,7 @@ impl World {
                 | Action::Sleep { .. }
                 | Action::Farm { .. }
                 | Action::BuildCart { .. }
+                | Action::BuildCrossing { .. }
         ) {
             if matches!(self.agents[id].action, Action::Farm { .. }) {
                 self.farm.interruptions += 1;
@@ -110,6 +111,12 @@ impl World {
             return Err("edge traversal is atomic".into());
         };
         match intent {
+            Intent::ContributeCrossing {
+                project,
+                batch,
+                quantity,
+            } => self.donate_crossing(id, project, batch, quantity)?,
+            Intent::BuildCrossing { project } => self.begin_crossing(id, project)?,
             Intent::BuildCart => self.begin_cart(id)?,
             Intent::HitchCart { cart } => self.hitch_cart(id, cart)?,
             Intent::ParkCart => self.park_cart(id)?,
@@ -169,7 +176,9 @@ impl World {
                 }
                 let b = self.local_batch(id, batch)?;
                 if !(b.material == Material::Food
-                    || (self.config.capital.is_some() && b.material == Material::Wood && !communal))
+                    || ((self.config.capital.is_some() || self.config.infrastructure.is_some())
+                        && b.material == Material::Wood
+                        && !communal))
                     || b.expires_at() <= self.now
                     || !matches!(b.holder, Holder::Deposit(_))
                     || self.reserved(batch) >= b.quantity
@@ -395,7 +404,7 @@ impl World {
                         && matches!(a.location,Location::Edge{edge:e,..}if e==edge)
                 })
                 .count();
-            let slots = self.config.edges[edge].capacity.saturating_sub(occupied);
+            let slots = self.effective_edge(edge).capacity.saturating_sub(occupied);
             let mut queue: Vec<_> = self
                 .agents
                 .iter()
@@ -426,6 +435,7 @@ impl World {
                     progress: 0,
                 };
                 self.capital_departure(id, from, to);
+                self.infrastructure_departure(id, edge, from, to);
                 self.agents[id].action = Action::Travel;
                 self.sync_carts();
                 self.log(
@@ -485,9 +495,17 @@ impl World {
             match a.action {
                 Action::Travel => {
                     if let Location::Edge { edge, progress, .. } = a.location {
-                        let left = self.config.edges[edge].nominal_ms as u128 * SCALE - progress;
+                        let left = self.traversal_nominal(a.id, edge) as u128 * SCALE - progress;
                         next = next.min(self.now + left.div_ceil(rate) as Time);
                     }
+                }
+                Action::BuildCrossing { project } => {
+                    next = next.min(
+                        self.now
+                            + self.infrastructure.projects[project]
+                                .remaining
+                                .div_ceil(rate) as Time,
+                    );
                 }
                 Action::BuildCart { project } => {
                     let remaining = self.capital.projects[project].remaining;
@@ -538,6 +556,7 @@ impl World {
                         }
                     }
                     Action::BuildCart { .. } => "cart_construction",
+                    Action::BuildCrossing { .. } => "crossing_construction",
                     Action::Gather { .. } => "gather",
                     Action::Travel => "travel",
                     Action::Queued { .. } => "queue",
@@ -547,6 +566,11 @@ impl World {
                 };
                 *self.farm.activity_ms.entry(activity.into()).or_default() += dt as u128;
             }
+            let traversal_work = if let Location::Edge { edge, .. } = self.agents[id].location {
+                self.traversal_nominal(id, edge)
+            } else {
+                0
+            };
             let a = &mut self.agents[id];
             let rate = performance(a.nutrition, a.fatigue);
             self.metrics.physiology_ms += dt as u128;
@@ -592,12 +616,17 @@ impl World {
             }
             match &mut a.action {
                 Action::Travel => {
-                    if let Location::Edge { edge, progress, .. } = &mut a.location {
+                    if let Location::Edge { progress, .. } = &mut a.location {
                         let before = *progress;
-                        *progress = (*progress + rate * dt as u128)
-                            .min(self.config.edges[*edge].nominal_ms as u128 * SCALE);
+                        *progress =
+                            (*progress + rate * dt as u128).min(traversal_work as u128 * SCALE);
                         a.travel_since_food += *progress - before;
                     }
+                }
+                Action::BuildCrossing { project } => {
+                    let p = &mut self.infrastructure.projects[*project];
+                    p.remaining = p.remaining.saturating_sub(rate * dt as u128);
+                    *p.labor_ms.entry(id).or_default() += dt as u128;
                 }
                 Action::BuildCart { project } => {
                     self.capital.projects[*project].remaining = self.capital.projects[*project]
@@ -626,6 +655,22 @@ impl World {
                 Action::Dead => {}
             }
         }
+        if self.config.infrastructure.is_some() {
+            for a in &self.agents {
+                match a.action {
+                    Action::Queued { edge, .. } => {
+                        *self.infrastructure.queue_ms.entry(edge).or_default() += dt as u128
+                    }
+                    Action::Travel => {
+                        if let Location::Edge { edge, .. } = a.location {
+                            *self.infrastructure.occupancy_ms.entry(edge).or_default() +=
+                                dt as u128;
+                        }
+                    }
+                    _ => {}
+                }
+            }
+        }
         self.integrate_capital(dt);
         self.now = to;
         self.sync_carts();
@@ -640,11 +685,12 @@ impl World {
                 && let Location::Edge {
                     edge, to, progress, ..
                 } = self.agents[id].location
-                && progress >= self.config.edges[edge].nominal_ms as u128 * SCALE
+                && progress >= self.traversal_nominal(id, edge) as u128 * SCALE
             {
                 self.agents[id].location = Location::Node(to);
                 self.sync_carts();
                 self.capital_arrival(id);
+                self.infrastructure_arrival(id);
                 self.agents[id].action = Action::Idle;
                 self.wake.insert(id);
                 self.log(Some(id), "Arrived", format!("node={to} edge={edge}"));
@@ -732,6 +778,7 @@ impl World {
                     self.goods.move_part(batch, q, owner, holder);
                 }
                 self.capital_death(id);
+                self.infrastructure.active_trips.remove(&id);
                 self.gather_communal.remove(&id);
                 self.cancel_job(id, "starvation death");
                 self.agents[id].action = Action::Dead;
@@ -749,6 +796,7 @@ impl World {
         }
         self.finish_farming();
         self.finish_carts();
+        self.finish_crossings();
         for id in 0..self.agents.len() {
             match self.agents[id].action.clone() {
                 Action::Gather {
@@ -921,6 +969,7 @@ impl World {
         for id in ids {
             self.observe_farming(id);
             self.observe_capital(id);
+            self.observe_infrastructure(id);
             let o = self.observe(id).unwrap();
             if let Some(local) = &o.local {
                 if self.agents[id].travel_since_food > 0
@@ -969,7 +1018,23 @@ impl World {
                 );
                 self.acceptance.record(&o, &d, audit);
             }
-            let decision = if let Some(config) = &self.config.capital {
+            let decision = if let Some(config) = &self.config.infrastructure {
+                policy::decide_infrastructure(
+                    &o,
+                    &a.memory,
+                    &mut a.rng,
+                    self.config
+                        .farming
+                        .as_ref()
+                        .map(|f| (&self.farm.memories[id], &f.rules)),
+                    self.config
+                        .capital
+                        .as_ref()
+                        .map(|c| (&self.capital.memories[id], &c.rules)),
+                    &self.infrastructure.memories[id],
+                    config.enabled,
+                )
+            } else if let Some(config) = &self.config.capital {
                 policy::decide_capital(
                     &o,
                     &a.memory,

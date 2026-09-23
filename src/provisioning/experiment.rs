@@ -159,6 +159,9 @@ impl World {
         if self.config.farming.is_some() {
             text.push_str(&format!("|farming={:?}", self.farm));
         }
+        if self.config.infrastructure.is_some() {
+            text.push_str(&format!("|infrastructure={:?}", self.infrastructure));
+        }
         if self.config.capital.is_some() {
             text.push_str(&format!("|capital={:?}", self.capital));
         }

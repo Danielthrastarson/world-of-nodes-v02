@@ -16,6 +16,14 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    ContributeCrossing {
+        project: usize,
+        batch: usize,
+        quantity: u64,
+    },
+    BuildCrossing {
+        project: usize,
+    },
     BuildCart,
     HitchCart {
         cart: usize,
@@ -382,7 +390,17 @@ fn decide_impl(
     audit: &mut AcceptanceAudit,
     skip_self_provision: bool,
 ) -> Decision {
-    decide_with_farm(o, m, rng, mode, audit, skip_self_provision, None, None)
+    decide_with_farm(
+        o,
+        m,
+        rng,
+        mode,
+        audit,
+        skip_self_provision,
+        None,
+        None,
+        None,
+    )
 }
 #[allow(clippy::too_many_arguments)]
 fn decide_with_farm(
@@ -394,6 +412,7 @@ fn decide_with_farm(
     skip_self_provision: bool,
     farm: Option<(&super::farming::Memory, &super::farming::Rules)>,
     capital: Option<(&super::capital::Memory, &super::capital::Rules)>,
+    infrastructure: Option<(&super::infrastructure::Memory, bool)>,
 ) -> Decision {
     if matches!(o.action, Action::Dead | Action::Travel) {
         return choice(Intent::Wait, "atomic traversal or dead");
@@ -417,6 +436,17 @@ fn decide_with_farm(
     }
     if matches!(o.action, Action::Gather { .. }) {
         return choice(Intent::Wait, "finish one-quantum atomic gathering");
+    }
+    if let Some((memory, enabled)) = infrastructure {
+        if let Some(d) = super::infrastructure::consider(o, m, memory, enabled) {
+            return d;
+        }
+        if matches!(o.action, Action::BuildCrossing { .. }) {
+            return choice(
+                Intent::CancelAction,
+                "crossing investment paused: current local opportunity/physiology gate",
+            );
+        }
     }
     if let Some((memory, rules)) = capital
         && let Some(d) = super::capital::consider(o, m, memory, rules)
@@ -837,6 +867,7 @@ pub(crate) fn decide_farming(
         false,
         Some((farm, config)),
         None,
+        None,
     )
 }
 
@@ -857,5 +888,29 @@ pub(crate) fn decide_capital(
         false,
         farm,
         Some((capital, rules)),
+        None,
+    )
+}
+
+#[allow(clippy::too_many_arguments)]
+pub(crate) fn decide_infrastructure(
+    o: &Observation,
+    m: &PolicyMemory,
+    rng: &mut u64,
+    farm: Option<(&super::farming::Memory, &super::farming::Rules)>,
+    capital: Option<(&super::capital::Memory, &super::capital::Rules)>,
+    memory: &super::infrastructure::Memory,
+    enabled: bool,
+) -> Decision {
+    decide_with_farm(
+        o,
+        m,
+        rng,
+        ForecastMode::Coherent,
+        &mut AcceptanceAudit::disabled(),
+        false,
+        farm,
+        capital,
+        Some((memory, enabled)),
     )
 }

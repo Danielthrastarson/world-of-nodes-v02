@@ -8,6 +8,7 @@ pub mod experiment;
 pub mod farming;
 pub mod geography;
 mod goods;
+pub mod infrastructure;
 pub mod meals;
 pub mod persistence;
 mod policy;
@@ -50,6 +51,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub infrastructure: Option<infrastructure::Config>,
     pub capital: Option<capital::Config>,
     pub farming: Option<farming::Config>,
     pub persistence: Option<persistence::Arm>,
@@ -75,6 +77,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            infrastructure: None,
             capital: None,
             farming: None,
             persistence: None,
@@ -124,6 +127,9 @@ pub enum Location {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Action {
+    BuildCrossing {
+        project: usize,
+    },
     BuildCart {
         project: usize,
     },
@@ -279,6 +285,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) infrastructure: infrastructure::State,
     pub(crate) capital: capital::State,
     pub(crate) farm: farming::State,
     pub(crate) config: Config,
@@ -341,7 +348,7 @@ impl World {
         {
             return Err("invalid provisioning configuration".into());
         }
-        if (config.farming.is_some() || config.capital.is_some())
+        if (config.farming.is_some() || config.capital.is_some() || config.infrastructure.is_some())
             && (config.persistence.is_some()
                 || config.diagnostic_policy != DiagnosticPolicy::Current
                 || config.acceptance_audit)
@@ -397,6 +404,27 @@ impl World {
         } else {
             vec![]
         };
+        if config.infrastructure.is_some() && !config.communal {
+            return Err("F6 public project requires existing community".into());
+        }
+        let infrastructure = infrastructure::State::new(
+            config.infrastructure.as_ref(),
+            &config.edges,
+            config.starts.len(),
+            config.nodes,
+        )?;
+        if let Some(c) = &config.infrastructure {
+            for &(node, q) in &c.wood {
+                goods.add(
+                    Material::Wood,
+                    q,
+                    Owner::None,
+                    Holder::Deposit(node),
+                    0,
+                    Time::MAX,
+                );
+            }
+        }
         let capital =
             capital::State::new(config.capital.as_ref(), config.nodes, config.starts.len())?;
         if let Some(c) = &config.capital {
@@ -413,6 +441,7 @@ impl World {
         }
         let farm = farming::State::new(config.farming.as_ref(), config.nodes, config.starts.len())?;
         let mut w = Self {
+            infrastructure,
             capital,
             farm,
             shadow: shadow::Journal::default(),
@@ -443,6 +472,15 @@ impl World {
             for a in &mut w.agents {
                 for v in &views {
                     a.memory.nodes.insert(v.node, v.clone());
+                }
+            }
+        }
+        if w.config.prior_memory && w.config.infrastructure.is_some() {
+            // Explicit experimental initial memories, never a live remote update.
+            for id in 0..w.agents.len() {
+                for node in 0..w.config.nodes {
+                    let view = w.infrastructure_view(node, id);
+                    w.infrastructure.memories[id].insert(node, view);
                 }
             }
         }
@@ -488,7 +526,7 @@ impl World {
     }
     fn node_view(&self, node: usize) -> NodeView {
         NodeView{node,observed_at:self.now,food:self.goods.batches.iter().filter(|b|b.quantity>0&&b.material==Material::Food&&matches!(b.holder,Holder::Deposit(n)|Holder::Loose(n)|Holder::Commons(n) if n==node)).map(|b|self.food_view(b)).collect(),
-            edges:self.config.edges.iter().enumerate().filter(|(_,e)|e.a==node||e.b==node).map(|(id,e)|EdgeView{id,edge:e.clone(),queued:self.agents.iter().filter(|a|a.location==Location::Node(node)&&matches!(a.action,Action::Queued{edge,..} if edge==id)).count(),occupied:0}).collect(),
+            edges:self.config.edges.iter().enumerate().filter(|(_,e)|e.a==node||e.b==node).map(|(id,_)|EdgeView{id,edge:self.effective_edge(id),queued:self.agents.iter().filter(|a|a.location==Location::Node(node)&&matches!(a.action,Action::Queued{edge,..} if edge==id)).count(),occupied:0}).collect(),
             board:self.boards.iter().find(|b|b.node==node).cloned(),people:self.agents.iter().filter(|a|a.location==Location::Node(node)&&a.action!=Action::Dead).map(|a|a.id).collect()}
     }
     pub fn observe(&self, id: usize) -> Option<Observation> {
@@ -560,10 +598,11 @@ impl World {
     pub fn audit(&self) -> Result<(), String> {
         self.audit_farming()?;
         self.audit_capital()?;
-        if !self
-            .goods
-            .audit_capital(self.farm.produced as u128, self.capital.embedded_wood())
-        {
+        self.audit_infrastructure()?;
+        if !self.goods.audit_capital(
+            self.farm.produced as u128,
+            self.capital.embedded_wood() + self.infrastructure.embedded_wood(),
+        ) {
             return Err("material accounting error".into());
         }
         for a in &self.agents {
@@ -592,7 +631,8 @@ impl World {
                 return Err("double reservation".into());
             }
         }
-        for (edge, e) in self.config.edges.iter().enumerate() {
+        for edge in 0..self.config.edges.len() {
+            let e = self.effective_edge(edge);
             if self
                 .agents
                 .iter()
