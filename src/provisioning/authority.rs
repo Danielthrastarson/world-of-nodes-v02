@@ -167,6 +167,9 @@ impl World {
         candidate: usize,
         settlement: usize,
     ) -> Result<(), String> {
+        if self.is_child(issuer) || candidate < self.agents.len() && self.is_child(candidate) {
+            return Err("office requires adult capability".into());
+        }
         let p = self.polity().ok_or("no polity")?;
         let a = self.agents.get(candidate).ok_or("unknown candidate")?;
         if issuer != p.sovereign || self.agents[issuer].action == Action::Dead {

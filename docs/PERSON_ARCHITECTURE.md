@@ -158,3 +158,29 @@ snapshot; that facility is outside autonomous policy and is not a runtime comman
 See `RELATIONSHIP_EXPERIMENT.md` for the provisional appraisal, affect timescale and
 choice coefficients. They are a bounded behavioral hypothesis, not universal human
 psychology. B3, punishment, revenge, marriage, inheritance and military remain absent.
+
+## B3 biological capability and joint action
+
+Optional lifecycle state associates birth time, reproductive role, fertility window,
+pregnancy and parentage with stable Person IDs. Age is derived from the authoritative
+clock; a maturation marker exists only to emit the one-time capability transition.
+The ordinary embodied Agent is never replaced. Birth appends one Person and empty
+personal observation stores for every enabled capability. No goods or nutritional
+reserve are manufactured. Historical scenarios retain lifecycle absent.
+
+Person receives a locally refreshed life view: own biological readiness, own
+undertaking and visibly present eligible Partner identities. It cannot inspect the
+partner's private motivation or remotely refresh a pregnancy/child's condition.
+Bilateral same-time consent starts an explicit Reproduce atomic action, with a
+separate persistent joint undertaking and elapsed duration. Another physical action
+interrupts it for both participants; ordinary sleep, food and care arbitration retain
+priority. Biological random draws use a separate deterministic per-person stream,
+so reproductive role does not alter general psychological randomness.
+
+Children use the same Person entry point and executor, with a small capability set
+(eat, sleep, wait, explicit physical travel/cancel). Kernel checks also reject adult
+labor, exchange, reproduction and office actions. Maturation lifts this capability
+restriction without deleting beliefs, social history or possessions. Birth adds true
+kinship, household membership and both caregiver obligations; personal social records
+about new offspring are created only on local encounter and start at zero strength.
+No rights to a parent's property, inheritance or forced care are inferred.

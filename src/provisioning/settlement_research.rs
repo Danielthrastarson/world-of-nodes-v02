@@ -185,6 +185,7 @@ impl Journal {
                 }
                 Action::Queued { .. } => "queue",
                 Action::Sleep { .. } => "sleep",
+                Action::Reproduce { .. } => "reproduction",
                 Action::Idle => "idle",
                 Action::Dead => unreachable!(),
             };

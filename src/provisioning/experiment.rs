@@ -156,6 +156,15 @@ impl World {
             "{:?}|{:?}|{:?}|{:?}|{:?}",
             self.now, self.agents, self.goods, self.boards, self.metrics
         );
+        if self.config.lifecycle.is_some() {
+            text.push_str(&format!(
+                "|lifecycle={:?}|{:?}|{:?}|{:?}",
+                self.config.lifecycle,
+                self.lifecycle.people,
+                self.lifecycle.views,
+                self.lifecycle.consents
+            ));
+        }
         if self.config.social.is_some() {
             text.push_str(&format!(
                 "|social={:?}|{:?}",

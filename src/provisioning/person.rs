@@ -10,6 +10,7 @@ pub use super::Agent as Person;
 /// Available domain evaluators, not occupations or separate brains.
 #[derive(Clone, Copy, Debug, Default)]
 pub struct Capabilities<'a> {
+    pub life: Option<&'a super::lifecycle::View>,
     pub social: Option<&'a super::social::Memory>,
     pub care: Option<&'a super::household::Memory>,
     pub cultivation: Option<(&'a farming::Memory, &'a farming::Rules)>,
@@ -18,7 +19,8 @@ pub struct Capabilities<'a> {
 }
 impl Capabilities<'_> {
     pub fn any(&self) -> bool {
-        self.social.is_some()
+        self.life.is_some()
+            || self.social.is_some()
             || self.care.is_some()
             || self.cultivation.is_some()
             || self.capital.is_some()
@@ -71,6 +73,7 @@ pub struct Rights {
 }
 #[derive(Debug)]
 pub struct State<'a> {
+    pub biology: Option<&'a super::lifecycle::Biology>,
     pub social: Option<&'a super::social::Memory>,
     pub household: Option<super::household::PersonalView<'a>>,
     pub person: &'a Person,

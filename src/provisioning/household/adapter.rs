@@ -234,6 +234,7 @@ impl World {
             }
             *j.starvation_ms.entry(a.id).or_default() += (dt - a.nutrition).max(0) as u128;
             let activity = match a.action {
+                Action::Reproduce { .. } => "reproduction",
                 Action::Travel => "travel",
                 Action::Queued { .. } => "queue",
                 Action::Sleep { .. } => "sleep",

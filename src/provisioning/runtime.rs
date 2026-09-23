@@ -29,11 +29,15 @@ impl World {
                 self.log(Some(id), "Rejected", format!("{intent:?}: {error}"));
             }
         }
+        self.resolve_reproduction();
         self.admit();
         self.refresh_authority();
         self.audit()
     }
     pub(super) fn cancel_action(&mut self, id: usize, why: &str) {
+        if matches!(self.agents[id].action, Action::Reproduce { .. }) {
+            self.interrupt_reproduction(id, why);
+        }
         if matches!(
             self.agents[id].action,
             Action::Queued { .. }
@@ -102,6 +106,12 @@ impl World {
         if self.agents[id].action == Action::Dead {
             return Err("dead agents cannot act".into());
         }
+        if !self.lifecycle_permits(id, &intent) {
+            return Err("child capability restriction".into());
+        }
+        if !matches!(intent, Intent::Wait | Intent::Reproduce { .. }) {
+            self.interrupt_reproduction(id, "another physical action selected");
+        }
         if matches!(intent, Intent::Wait) {
             if matches!(self.agents[id].action, Action::Sleep { until } if until <= self.now) {
                 self.agents[id].action = Action::Idle;
@@ -112,6 +122,7 @@ impl World {
             return Err("edge traversal is atomic".into());
         };
         match intent {
+            Intent::Reproduce { partner } => self.consent_reproduction(id, partner)?,
             Intent::GiveCareFood {
                 dependent,
                 batch,
@@ -500,6 +511,9 @@ impl World {
     }
     pub(super) fn next_time(&self, target: Time) -> Time {
         let mut next = target;
+        if let Some(c) = &self.config.lifecycle {
+            next = self.lifecycle.next_boundary(self.now, next, &c.rules);
+        }
         for offer in &self.barter.offers {
             if offer.status == "OPEN" && offer.expires_at > self.now {
                 next = next.min(offer.expires_at);
@@ -590,6 +604,7 @@ impl World {
     }
     fn integrate(&mut self, to: Time) {
         let dt = to - self.now;
+        self.integrate_lifecycle(dt);
         self.integrate_household(dt);
         self.integrate_authority(dt);
         self.integrate_market(dt);
@@ -626,6 +641,7 @@ impl World {
                     Action::Travel => "travel",
                     Action::Queued { .. } => "queue",
                     Action::Sleep { .. } => "sleep",
+                    Action::Reproduce { .. } => "reproduction",
                     Action::Idle => "idle",
                     Action::Dead => unreachable!(),
                 };
@@ -717,7 +733,7 @@ impl World {
                     }
                 }
                 Action::Idle => self.metrics.idle_ms += dt as u128,
-                Action::Dead => {}
+                Action::Reproduce { .. } | Action::Dead => {}
             }
         }
         if self.config.infrastructure.is_some() {
@@ -866,6 +882,7 @@ impl World {
                 self.social_death(id);
             }
         }
+        self.finish_lifecycle();
         self.finish_farming();
         self.finish_carts();
         self.finish_crossings();
@@ -1042,6 +1059,7 @@ impl World {
         let mut decisions = vec![];
         let mut stale_events = vec![];
         for id in ids {
+            self.observe_lifecycle(id);
             self.observe_social(id);
             self.observe_household(id);
             self.observe_farming(id);
@@ -1096,6 +1114,11 @@ impl World {
                 self.acceptance.record(&o, &d, audit);
             }
             let capabilities = person::Capabilities {
+                life: self
+                    .config
+                    .lifecycle
+                    .as_ref()
+                    .map(|_| &self.lifecycle.views[id]),
                 social: self
                     .config
                     .social
@@ -1150,7 +1173,15 @@ impl World {
             if let Some(audit) = selected.audit {
                 self.acceptance.record(&o, &selected.decision, audit);
             }
-            let decision = self.barter_decision(id, &o, selected.decision);
+            let decision = if self.is_child(id)
+                || self.biology(id).is_some_and(|b| b.undertaking.is_some())
+                || matches!(selected.decision.intent, Intent::Reproduce { .. })
+            {
+                selected.decision
+            } else {
+                self.barter_decision(id, &o, selected.decision)
+            };
+            self.record_lifecycle_choice(id, &o, &decision);
             self.record_social_choice(id, &o, &decision);
             self.record_care_decision(id, &o, &decision);
             let plan = person::ActionPlan::new(&o, decision);
@@ -1232,6 +1263,7 @@ impl World {
                 self.log(Some(id), "Rejected", err);
             }
         }
+        self.resolve_reproduction();
     }
     pub fn advance_to(&mut self, target: Time) -> Result<(), String> {
         if target < self.now {

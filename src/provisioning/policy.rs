@@ -16,6 +16,9 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    Reproduce {
+        partner: usize,
+    },
     GiveCareFood {
         dependent: usize,
         batch: usize,
@@ -442,6 +445,7 @@ pub(crate) fn decide_with_capabilities(
     capabilities: super::person::Capabilities<'_>,
 ) -> Decision {
     let super::person::Capabilities {
+        life,
         cultivation: farm,
         capital,
         public_works: infrastructure,
@@ -454,6 +458,18 @@ pub(crate) fn decide_with_capabilities(
     }
     if let Some(d) = eat(o) {
         return d;
+    }
+    if life.is_some_and(|v| v.child) {
+        return if needs.critical_fatigue()
+            || matches!(o.action, Action::Sleep { .. }) && o.fatigue > 4 * HOUR
+        {
+            choice(Intent::Sleep, "dependent recovery")
+        } else {
+            choice(
+                Intent::Wait,
+                "dependent: accessible food/care required; no adult labor",
+            )
+        };
     }
     let known = sources_for(o, m, mode);
     let feasible = known.iter().find(|s| s.route.starvation < 24 * HOUR);
@@ -487,6 +503,11 @@ pub(crate) fn decide_with_capabilities(
         } else {
             return d;
         }
+    }
+    if let Some(view) = life
+        && let Some(d) = super::lifecycle::consider(o, view)
+    {
+        return d;
     }
     if let Some((memory, enabled)) = infrastructure {
         if let Some(d) = super::infrastructure::consider(o, m, memory, enabled) {

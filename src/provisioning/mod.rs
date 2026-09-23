@@ -12,6 +12,7 @@ pub mod geography;
 mod goods;
 pub mod household;
 pub mod infrastructure;
+pub mod lifecycle;
 pub mod meals;
 pub mod paths;
 pub mod persistence;
@@ -59,6 +60,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub lifecycle: Option<lifecycle::Config>,
     pub social: Option<social::Config>,
     pub household: Option<household::Config>,
     pub authority: Option<authority::Config>,
@@ -92,6 +94,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            lifecycle: None,
             social: None,
             household: None,
             authority: None,
@@ -148,6 +151,10 @@ pub enum Location {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Action {
+    Reproduce {
+        partner: usize,
+        until: Time,
+    },
     BuildCrossing {
         project: usize,
     },
@@ -306,6 +313,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) lifecycle: lifecycle::State,
     pub(crate) social: social::State,
     pub(crate) household: household::State,
     pub(crate) authority: authority::State,
@@ -377,7 +385,8 @@ impl World {
         {
             return Err("invalid provisioning configuration".into());
         }
-        if (config.social.is_some()
+        if (config.lifecycle.is_some()
+            || config.social.is_some()
             || config.household.is_some()
             || config.farming.is_some()
             || config.capital.is_some()
@@ -481,7 +490,9 @@ impl World {
         let authority = authority::State::new(&config)?;
         let household = household::State::new(&config)?;
         let social = social::State::new(&config);
+        let lifecycle = lifecycle::State::new(&config)?;
         let mut w = Self {
+            lifecycle,
             social,
             household,
             authority,
@@ -529,6 +540,11 @@ impl World {
                     let view = w.infrastructure_view(node, id);
                     w.infrastructure.memories[id].insert(node, view);
                 }
+            }
+        }
+        if w.config.lifecycle.is_some() {
+            for id in 0..w.agents.len() {
+                w.observe_lifecycle(id);
             }
         }
         w.audit()?;
@@ -650,6 +666,7 @@ impl World {
         }
     }
     pub fn audit(&self) -> Result<(), String> {
+        self.audit_lifecycle()?;
         self.audit_social()?;
         self.audit_household()?;
         self.audit_authority()?;
