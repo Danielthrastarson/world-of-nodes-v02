@@ -15,8 +15,8 @@ and irreversible abstraction choices require a project-owner decision.
 |---|---|---|
 | F0 Forecast / decision foundation | PASSED | Adopt tested mechanical corrections; isolate conditional meals; distinguish beliefs, goals, undertaking, atomic action. Covered contracts agree with execution; decisions use personal history only; interruption is explicit; invariants hold. Provisioning need not succeed. |
 | F1 Generalized autonomous agent | PASSED | Same policy on line, branch, alternative routes, dead end, bottleneck, unequal sources. Test discovery, memory, physiology, routes, migration, FIFO and interruptions. No geography-specific policy, hidden resources or semantic IDs. |
-| F2 Autonomous provisioning | ACTIVE | Trace demand through voluntary undertaking, acquisition, transport, consumption. Compare self-provision, migration, idle and physical controls. Demonstrate a plausible controlled chain or identify behavioral/institutional vs architecture cause of absence. |
-| F3 Renewable production | NOT STARTED | Located fertile land + actual labor + time → harvest. Account for natural transformation; finite initial stock no longer sole possible nourishment. Explain failures; do not guarantee sustainability. |
+| F2 Autonomous provisioning | PASSED | Trace demand through voluntary undertaking, acquisition, transport, consumption. Compare self-provision, migration, idle and physical controls. Demonstrate a plausible controlled chain or identify behavioral/institutional vs architecture cause of absence. |
+| F3 Renewable production | BLOCKED | Located fertile land + actual labor + time → harvest. Account for natural transformation; finite initial stock no longer sole possible nourishment. Explain failures; do not guarantee sustainability. |
 | F4 Dynamic labor | NOT STARTED | Known shortages and opportunities alter voluntary production, gathering, carrying, rest, exploration. No worker ratios or omniscient job manager; measure churn. |
 | F5 Capital before money | NOT STARTED | One physical capital good, provisionally cart: material/labor cost, location, ownership, custody and carrying effect. Demonstrate short-term cost and context-dependent future benefit/harm. |
 | F6 Construction / settlement | NOT STARTED | Minimal causally necessary storage/sleep/infrastructure uses delivered materials, labor and time. Different geography creates different persistent spatial form. |
@@ -54,3 +54,5 @@ F0 begins at `33dc4b1`; adopted correction and meal study specification:
 F0 passed: [evidence](../research/meals/REPORT.md), [provenance](../research/meals/provenance.json), [decision vocabulary](DECISION_FOUNDATION.md). Conditional meals remain research-only. F1 specification: [GEOGRAPHY_EXPERIMENT.md](GEOGRAPHY_EXPERIMENT.md).
 
 F1 passed: [180-run evidence](../research/geography/REPORT.md). A primary-board node-ID defect was isolated and repaired; negative provisioning and all earlier hashes remain preserved. F2 now examines the full physical chain across travel scales with the same default policy.
+
+F2 passed: [delivery/control evidence](../research/foundation-provisioning/REPORT.md). Compact-world deliveries occur but do not outperform self-only migration. F3 awaits the owner’s [cultivated-crop rights decision](RENEWABLE_PRODUCTION_DECISION.md); no production has been implemented.

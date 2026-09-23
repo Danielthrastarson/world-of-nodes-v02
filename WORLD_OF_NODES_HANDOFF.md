@@ -13,6 +13,22 @@ resumable/committed intentions and new institutions are not default behavior.
 Proceed through passed gates; stop expansion at a failed foundation or an owner-level
 institution/game-design decision. See [the registered F0 study](docs/CONDITIONAL_MEALS.md).
 
+## Foundation status — 2026-09-23
+
+F0, F1 and F2 passed their causal-capability gates. See [the roadmap](docs/ROADMAP.md)
+for evidence and exact definitions. Mechanical forecasting is adopted; meal-aware
+planning is still research-only and worsened the locked fixture. Six geography
+fixtures use one policy; a literal-node-ID request backlog defect was repaired.
+A separately registered compact line yields voluntary communal deliveries, but
+self-only migration still provides better nourishment. No claim of sustainable
+settlement or validated efficient cooperation follows.
+
+F3 is blocked on [cultivated-crop ownership](docs/RENEWABLE_PRODUCTION_DECISION.md),
+an explicit property-rights decision reserved for the owner. Production is not
+implemented. Current normal kernel/policy has no farming, capital, construction,
+trade, money, authority, combat, graphics or multiplayer. All older study scopes
+and failures below remain historical evidence, not current unqualified defaults.
+
 ## Authority and scope
 
 This document supersedes the earlier requirement to implement V0.2 security first. The long-term first slice is a single emergent settlement. The immediate authorized increment is now [local provisioning under scarcity](docs/PROVISIONING_SPEC.md), whose locked rules take precedence for this work. Farming, construction, safety, rendering and later systems remain deferred. Military pressure follows settlement, transport, and economic validation. This is a scope change, not evidence that the security loop passed and not a claim of V0.3 completion.

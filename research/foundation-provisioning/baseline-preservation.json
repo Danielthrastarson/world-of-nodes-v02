@@ -1,0 +1,15 @@
+{
+  "compared_seeds": 30,
+  "fields": [
+    "event_hash",
+    "state_hash",
+    "food_consumed",
+    "food_spoiled",
+    "food_delivered",
+    "starvation_person_hours",
+    "queue_person_hours",
+    "infeasible_abandons"
+  ],
+  "all_equal": true,
+  "reference": "research/meals/live/no_meal-runs.csv"
+}

@@ -655,8 +655,9 @@ pub(crate) fn audit_meals(
     (d, audit)
 }
 
-/// Read-only audit of the *existing* voluntary-job gate, using the same route
-/// estimator and known sources as decide. Never grants information or changes an intent.
+/// Historical decomposition instrument using the LEGACY voluntary-job estimator.
+/// Current acceptance evidence comes from decide_audited/AcceptanceAudit. These
+/// old diagnostic counters never grant information or influence a live intent.
 pub(crate) fn audit_job_gate(o: &Observation, m: &PolicyMemory) -> Vec<(String, String)> {
     if !o.communal || o.job.is_some() {
         return vec![];

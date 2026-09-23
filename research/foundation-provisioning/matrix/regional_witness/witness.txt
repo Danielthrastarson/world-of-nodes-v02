@@ -1,0 +1,3 @@
+Witness { schedule: Schedule { carriers: 4, residents: 46, meal_target_h: 22, rest_at_h: 16, rest_to_h: 4, cargo: 10, rescue_only: false }, delivered: 120, first_delivery: Some(28855556), residents_alive_72: 0, residents_without_starvation_48: 0, resident_starvation_ms: 4073040000, event_hash: 1245184955961340596 }
+This is a feasible kernel schedule, not an optimality certificate.
+Material upper bound on any delivered food: 3000 quanta.

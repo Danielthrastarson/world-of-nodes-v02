@@ -1,0 +1,706 @@
+{
+  "regional_communal": {
+    "survivors_36h": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "survivors_48h": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "survivors_72h": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "jobs_accepted": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_consumed": {
+      "min": 1264.0,
+      "mean": 1264.0,
+      "max": 1264.0
+    },
+    "food_spoiled": {
+      "min": 1736.0,
+      "mean": 1736.0,
+      "max": 1736.0
+    },
+    "starvation_person_hours": {
+      "min": 944.0,
+      "mean": 944.0,
+      "max": 944.0
+    },
+    "queue_person_hours": {
+      "min": 809.582222,
+      "mean": 809.582222,
+      "max": 809.582222
+    },
+    "alive_at_c": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_f": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_started": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_completed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_jobs_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "distinct_event_histories": 1
+  },
+  "regional_self_only": {
+    "survivors_36h": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "survivors_48h": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "survivors_72h": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "jobs_accepted": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_consumed": {
+      "min": 1264.0,
+      "mean": 1264.0,
+      "max": 1264.0
+    },
+    "food_spoiled": {
+      "min": 1736.0,
+      "mean": 1736.0,
+      "max": 1736.0
+    },
+    "starvation_person_hours": {
+      "min": 944.0,
+      "mean": 944.0,
+      "max": 944.0
+    },
+    "queue_person_hours": {
+      "min": 809.582222,
+      "mean": 809.582222,
+      "max": 809.582222
+    },
+    "alive_at_c": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_f": {
+      "min": 28.0,
+      "mean": 28.0,
+      "max": 28.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_started": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_completed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_jobs_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "distinct_event_histories": 1
+  },
+  "regional_idle": {
+    "survivors_36h": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "survivors_48h": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "survivors_72h": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "jobs_accepted": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_consumed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_spoiled": {
+      "min": 3000.0,
+      "mean": 3000.0,
+      "max": 3000.0
+    },
+    "starvation_person_hours": {
+      "min": 1200.0,
+      "mean": 1200.0,
+      "max": 1200.0
+    },
+    "queue_person_hours": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_c": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_f": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_started": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_completed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_jobs_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "distinct_event_histories": 1
+  },
+  "regional_witness": {
+    "survivors_36h": {
+      "min": 9.0,
+      "mean": 9.0,
+      "max": 9.0
+    },
+    "survivors_48h": {
+      "min": 9.0,
+      "mean": 9.0,
+      "max": 9.0
+    },
+    "survivors_72h": {
+      "min": 4.0,
+      "mean": 4.0,
+      "max": 4.0
+    },
+    "jobs_accepted": {
+      "min": 16.0,
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "food_delivered": {
+      "min": 120.0,
+      "mean": 120.0,
+      "max": 120.0
+    },
+    "food_consumed": {
+      "min": 352.0,
+      "mean": 352.0,
+      "max": 352.0
+    },
+    "food_spoiled": {
+      "min": 2648.0,
+      "mean": 2648.0,
+      "max": 2648.0
+    },
+    "starvation_person_hours": {
+      "min": 1139.4,
+      "mean": 1139.4,
+      "max": 1139.4
+    },
+    "queue_person_hours": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_c": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_f": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "min": 16.0,
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "diag_returns_started": {
+      "min": 16.0,
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "diag_returns_completed": {
+      "min": 12.0,
+      "mean": 12.0,
+      "max": 12.0
+    },
+    "diag_jobs_delivered": {
+      "min": 12.0,
+      "mean": 12.0,
+      "max": 12.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "min": 40.0,
+      "mean": 40.0,
+      "max": 40.0
+    },
+    "distinct_event_histories": 1
+  },
+  "compact_communal": {
+    "survivors_36h": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "survivors_48h": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "survivors_72h": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "jobs_accepted": {
+      "min": 62.0,
+      "mean": 62.0,
+      "max": 62.0
+    },
+    "food_delivered": {
+      "min": 24.0,
+      "mean": 24.0,
+      "max": 24.0
+    },
+    "food_consumed": {
+      "min": 2456.0,
+      "mean": 2456.0,
+      "max": 2456.0
+    },
+    "food_spoiled": {
+      "min": 544.0,
+      "mean": 544.0,
+      "max": 544.0
+    },
+    "starvation_person_hours": {
+      "min": 544.0,
+      "mean": 544.0,
+      "max": 544.0
+    },
+    "queue_person_hours": {
+      "min": 1310.149792,
+      "mean": 1310.149792,
+      "max": 1310.149792
+    },
+    "alive_at_c": {
+      "min": 10.0,
+      "mean": 10.0,
+      "max": 10.0
+    },
+    "alive_at_f": {
+      "min": 36.0,
+      "mean": 36.0,
+      "max": 36.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "min": 62.0,
+      "mean": 62.0,
+      "max": 62.0
+    },
+    "diag_returns_started": {
+      "min": 62.0,
+      "mean": 62.0,
+      "max": 62.0
+    },
+    "diag_returns_completed": {
+      "min": 10.0,
+      "mean": 10.0,
+      "max": 10.0
+    },
+    "diag_jobs_delivered": {
+      "min": 6.0,
+      "mean": 6.0,
+      "max": 6.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "min": 328.0,
+      "mean": 328.0,
+      "max": 328.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "distinct_event_histories": 1
+  },
+  "compact_self_only": {
+    "survivors_36h": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "survivors_48h": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "survivors_72h": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "jobs_accepted": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_consumed": {
+      "min": 2524.0,
+      "mean": 2524.0,
+      "max": 2524.0
+    },
+    "food_spoiled": {
+      "min": 476.0,
+      "mean": 476.0,
+      "max": 476.0
+    },
+    "starvation_person_hours": {
+      "min": 476.0,
+      "mean": 476.0,
+      "max": 476.0
+    },
+    "queue_person_hours": {
+      "min": 144.0,
+      "mean": 144.0,
+      "max": 144.0
+    },
+    "alive_at_c": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_f": {
+      "min": 50.0,
+      "mean": 50.0,
+      "max": 50.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_started": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_completed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_jobs_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "distinct_event_histories": 1
+  },
+  "compact_idle": {
+    "survivors_36h": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "survivors_48h": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "survivors_72h": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "jobs_accepted": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_consumed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "food_spoiled": {
+      "min": 3000.0,
+      "mean": 3000.0,
+      "max": 3000.0
+    },
+    "starvation_person_hours": {
+      "min": 1200.0,
+      "mean": 1200.0,
+      "max": 1200.0
+    },
+    "queue_person_hours": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_c": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_f": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_started": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_returns_completed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_jobs_delivered": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "distinct_event_histories": 1
+  },
+  "compact_witness": {
+    "survivors_36h": {
+      "min": 24.0,
+      "mean": 24.0,
+      "max": 24.0
+    },
+    "survivors_48h": {
+      "min": 18.0,
+      "mean": 18.0,
+      "max": 18.0
+    },
+    "survivors_72h": {
+      "min": 14.0,
+      "mean": 14.0,
+      "max": 14.0
+    },
+    "jobs_accepted": {
+      "min": 60.0,
+      "mean": 60.0,
+      "max": 60.0
+    },
+    "food_delivered": {
+      "min": 600.0,
+      "mean": 600.0,
+      "max": 600.0
+    },
+    "food_consumed": {
+      "min": 816.0,
+      "mean": 816.0,
+      "max": 816.0
+    },
+    "food_spoiled": {
+      "min": 2184.0,
+      "mean": 2184.0,
+      "max": 2184.0
+    },
+    "starvation_person_hours": {
+      "min": 1078.55,
+      "mean": 1078.55,
+      "max": 1078.55
+    },
+    "queue_person_hours": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "alive_at_c": {
+      "min": 14.0,
+      "mean": 14.0,
+      "max": 14.0
+    },
+    "alive_at_f": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_jobs_acquiring_cargo": {
+      "min": 60.0,
+      "mean": 60.0,
+      "max": 60.0
+    },
+    "diag_returns_started": {
+      "min": 60.0,
+      "mean": 60.0,
+      "max": 60.0
+    },
+    "diag_returns_completed": {
+      "min": 60.0,
+      "mean": 60.0,
+      "max": 60.0
+    },
+    "diag_jobs_delivered": {
+      "min": 60.0,
+      "mean": 60.0,
+      "max": 60.0
+    },
+    "diag_carrier_cargo_consumed": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "diag_communal_cargo_spoiled_transit": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "distinct_event_histories": 1
+  }
+}

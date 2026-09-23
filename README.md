@@ -53,3 +53,8 @@ The [F0 adoption/conditional-meal report](research/meals/REPORT.md) adopts mecha
 corrections while retaining no-meal planning by default. The gated roadmap continues
 through geography and provisioning diagnostics; each stage records its gate in
 [ROADMAP.md](docs/ROADMAP.md). Historical probe commands stay explicitly reproducible.
+
+Foundation gates F0–F2 passed; [F1 geography](research/geography/REPORT.md) and
+[F2 provisioning](research/foundation-provisioning/REPORT.md) preserve failures and
+explain the first autonomous deliveries. F3 is waiting for the owner’s crop-rights
+decision; no production has been added.

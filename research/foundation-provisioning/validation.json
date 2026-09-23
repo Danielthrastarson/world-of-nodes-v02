@@ -1,0 +1,14 @@
+{
+  "library_tests": 77,
+  "binary_tests": 2,
+  "integration_tests": 10,
+  "fmt": "passed",
+  "clippy": "passed",
+  "material_errors": 0,
+  "fifo_overtakes": 0,
+  "baseline_paired_hash_matches": 30,
+  "prior_artifacts_unchanged": 854,
+  "production_implemented": false,
+  "f3_blocker": "Owner decision: cultivated crop ownership",
+  "source_revision": "ba7f994"
+}

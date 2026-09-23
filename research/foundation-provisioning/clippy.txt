@@ -1,0 +1,27 @@
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error: this `if` statement can be collapsed
+  --> src/provisioning/meals.rs:34:9
+   |
+34 | /         if e.kind == "Consumed" {
+35 | |             if let Some(batch) = value(&e.detail, "batch").and_then(|i| batches.get(i as usize))
+36 | |                 && let Holder::Commons(node) = batch.holder
+...  |
+53 | |         }
+   | |_________^
+   |
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.98.0/index.html#collapsible_if
+   = note: `-D clippy::collapsible-if` implied by `-D warnings`
+   = help: to override `-D warnings` add `#[allow(clippy::collapsible_if)]`
+help: collapse nested if block
+   |
+34 ~         if e.kind == "Consumed"
+35 ~             && let Some(batch) = value(&e.detail, "batch").and_then(|i| batches.get(i as usize))
+36 |                 && let Holder::Commons(node) = batch.holder
+...
+51 |                 }
+52 ~             }
+   |
+
+error: could not compile `world-of-nodes` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error
