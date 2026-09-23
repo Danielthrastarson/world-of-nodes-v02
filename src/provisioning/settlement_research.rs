@@ -160,6 +160,8 @@ impl Journal {
             }
             let place = self.place(&a.location);
             let activity = match a.action {
+                Action::Strike { .. } => "combat",
+                Action::RaidStock { .. } => "raid",
                 Action::Farm { plot } => {
                     if w.farm.plots[plot].crop.as_ref().unwrap().stage == farming::Stage::Sowing {
                         "sow"

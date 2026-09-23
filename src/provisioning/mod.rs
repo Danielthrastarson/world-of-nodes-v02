@@ -4,6 +4,7 @@ pub mod authority;
 pub mod barter;
 pub mod capital;
 pub mod coherence;
+pub mod combat;
 pub mod congestion;
 pub mod decomposition;
 pub mod experiment;
@@ -62,6 +63,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub combat: Option<combat::Config>,
     pub formation: bool,
     pub military: Option<military::Config>,
     pub lifecycle: Option<lifecycle::Config>,
@@ -98,6 +100,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            combat: None,
             formation: false,
             military: None,
             lifecycle: None,
@@ -157,6 +160,14 @@ pub enum Location {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Action {
+    Strike {
+        target: usize,
+        remaining: u128,
+    },
+    RaidStock {
+        batch: usize,
+        remaining: u128,
+    },
     MilitaryDuty {
         unit: usize,
     },
@@ -265,6 +276,8 @@ pub struct NodeView {
 }
 #[derive(Clone, Debug)]
 pub struct Observation {
+    pub body_factor: u128,
+    pub raider: bool,
     pub now: Time,
     pub agent: usize,
     pub location: Location,
@@ -322,6 +335,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) combat: combat::State,
     pub(crate) formation: formation::State,
     pub(crate) military: military::State,
     pub(crate) lifecycle: lifecycle::State,
@@ -505,7 +519,9 @@ impl World {
         let lifecycle = lifecycle::State::new(&config)?;
         let military = military::State::new(&config)?;
         let formation = formation::State::new(&config)?;
+        let combat = combat::State::new(&config)?;
         let mut w = Self {
+            combat,
             formation,
             military,
             lifecycle,
@@ -614,6 +630,8 @@ impl World {
             return None;
         }
         Some(Observation {
+            body_factor: self.body_factor(id),
+            raider: self.is_raider(id),
             now: self.now,
             agent: id,
             location: a.location.clone(),
@@ -683,6 +701,7 @@ impl World {
     }
     pub fn audit(&self) -> Result<(), String> {
         self.audit_formation()?;
+        self.audit_combat()?;
         self.audit_military()?;
         self.audit_lifecycle()?;
         self.audit_social()?;

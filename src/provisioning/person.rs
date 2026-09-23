@@ -10,6 +10,7 @@ pub use super::Agent as Person;
 /// Available domain evaluators, not occupations or separate brains.
 #[derive(Clone, Copy, Debug, Default)]
 pub struct Capabilities<'a> {
+    pub combat: Option<&'a super::combat::View>,
     pub formation: Option<&'a super::formation::View>,
     pub military: Option<&'a super::military::Memory>,
     pub life: Option<&'a super::lifecycle::View>,
@@ -21,7 +22,8 @@ pub struct Capabilities<'a> {
 }
 impl Capabilities<'_> {
     pub fn any(&self) -> bool {
-        self.formation.is_some()
+        self.combat.is_some()
+            || self.formation.is_some()
             || self.military.is_some()
             || self.life.is_some()
             || self.social.is_some()

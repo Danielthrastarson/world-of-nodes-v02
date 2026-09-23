@@ -5,6 +5,7 @@ use forecast::{Plan, TravelStep};
 
 #[derive(Clone, Debug)]
 struct State {
+    factor: u128,
     elapsed: Time,
     nutrition: Time,
     fatigue: Time,
@@ -13,6 +14,7 @@ struct State {
 impl State {
     fn new(o: &Observation) -> Self {
         Self {
+            factor: o.body_factor,
             elapsed: 0,
             nutrition: o.nutrition,
             fatigue: o.fatigue,
@@ -36,7 +38,10 @@ impl State {
     }
     fn work_units(&mut self, mut left: u128, limit: Time) {
         while left > 0 && self.alive() && self.elapsed < limit {
-            let rate = performance(self.nutrition, self.fatigue);
+            let rate = performance(self.nutrition, self.fatigue) * self.factor / SCALE;
+            if rate == 0 {
+                break;
+            }
             let dt = super::super::awake_threshold(self.nutrition, self.fatigue)
                 .min(left.div_ceil(rate) as Time)
                 .min(self.nutrition + 24 * HOUR - self.starvation)
@@ -70,6 +75,9 @@ pub(crate) fn route(o: &Observation, m: &PolicyMemory, target: usize) -> Option<
     route_normalized(&o, &m, target)
 }
 fn route_normalized(o: &Observation, m: &PolicyMemory, target: usize) -> Option<Route> {
+    if o.body_factor == 0 {
+        return None;
+    }
     let Location::Node(start) = o.location else {
         return None;
     };
@@ -171,7 +179,7 @@ pub(super) fn sources(o: &Observation, m: &PolicyMemory) -> Vec<Source> {
             continue;
         };
         for f in &v.food {
-            if f.quantity == 0 || !accessible(f, o.agent) {
+            if f.quantity == 0 || !food_accessible(o, f) {
                 continue;
             }
             let mut body = State::new(o);

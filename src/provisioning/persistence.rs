@@ -181,6 +181,8 @@ impl Journal {
         };
         let a = &agents[id];
         let o = Observation {
+            body_factor: super::SCALE,
+            raider: false,
             now: e.at,
             agent: id,
             location: a.location.clone(),

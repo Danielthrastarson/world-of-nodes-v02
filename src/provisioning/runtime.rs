@@ -41,7 +41,9 @@ impl World {
         }
         if matches!(
             self.agents[id].action,
-            Action::Queued { .. }
+            Action::Strike { .. }
+                | Action::RaidStock { .. }
+                | Action::Queued { .. }
                 | Action::Gather { .. }
                 | Action::Sleep { .. }
                 | Action::Farm { .. }
@@ -93,6 +95,12 @@ impl World {
             }
             _ => false,
         };
+        if self.is_raider(id)
+            && matches!(b.owner, Owner::Commons(_))
+            && !(self.carried_by(id, b.holder) || self.accessible_cart(id, b.holder))
+        {
+            return Err("raider has no lawful commons withdrawal right".into());
+        }
         if !local || b.quantity == 0 {
             return Err("batch not physically accessible".into());
         }
@@ -107,6 +115,14 @@ impl World {
     fn execute(&mut self, id: usize, intent: Intent) -> Result<(), String> {
         if self.agents[id].action == Action::Dead {
             return Err("dead agents cannot act".into());
+        }
+        if self.body_factor(id) == 0
+            && !matches!(
+                intent,
+                Intent::Wait | Intent::Eat { .. } | Intent::Sleep | Intent::CancelAction
+            )
+        {
+            return Err("incapacitated person cannot act".into());
         }
         if !self.lifecycle_permits(id, &intent) {
             return Err("child capability restriction".into());
@@ -125,6 +141,8 @@ impl World {
         };
         self.military_action(id, &intent);
         match intent {
+            Intent::Strike { target } => self.begin_strike(id, target)?,
+            Intent::RaidStock { batch } => self.begin_raid(id, batch)?,
             Intent::Volunteer { request } => self.volunteer(id, request)?,
             Intent::JoinMuster => self.join_muster(id)?,
             Intent::MilitaryDuty => self.begin_duty(id)?,
@@ -569,7 +587,7 @@ impl World {
             if a.action == Action::Dead {
                 continue;
             }
-            let rate = performance(a.nutrition, a.fatigue);
+            let rate = performance(a.nutrition, a.fatigue) * self.body_factor(a.id) / SCALE;
             let threshold = if matches!(a.action, Action::Sleep { .. }) {
                 if a.nutrition > 6 * HOUR {
                     a.nutrition - 6 * HOUR
@@ -586,6 +604,9 @@ impl World {
                 next = next.min(self.now + (24 * HOUR - a.starvation).max(1));
             }
             match a.action {
+                Action::Strike { remaining, .. } | Action::RaidStock { remaining, .. } => {
+                    next = next.min(self.now + remaining.div_ceil(rate.max(1)) as Time)
+                }
                 Action::Travel => {
                     if let Location::Edge { edge, progress, .. } = a.location {
                         let left = self.traversal_nominal(a.id, edge) as u128 * SCALE - progress;
@@ -666,6 +687,8 @@ impl World {
                     Action::Sleep { .. } => "sleep",
                     Action::Reproduce { .. } => "reproduction",
                     Action::MilitaryDuty { .. } => "military_duty",
+                    Action::Strike { .. } => "combat",
+                    Action::RaidStock { .. } => "raid",
                     Action::Idle => "idle",
                     Action::Dead => unreachable!(),
                 };
@@ -676,8 +699,9 @@ impl World {
             } else {
                 0
             };
+            let factor = self.body_factor(id);
             let a = &mut self.agents[id];
-            let rate = performance(a.nutrition, a.fatigue);
+            let rate = performance(a.nutrition, a.fatigue) * factor / SCALE;
             self.metrics.physiology_ms += dt as u128;
             let zero_time = (dt - a.nutrition).max(0);
             self.metrics.deficit_ms += zero_time as u128;
@@ -701,7 +725,7 @@ impl World {
             {
                 self.wake.insert(id);
             }
-            let new_rate = performance(a.nutrition, a.fatigue);
+            let new_rate = performance(a.nutrition, a.fatigue) * factor / SCALE;
             if rate != new_rate && !matches!(a.action, Action::Sleep { .. }) {
                 physiology_events.push((
                     id,
@@ -720,6 +744,14 @@ impl World {
                 ));
             }
             match &mut a.action {
+                Action::Strike { remaining, .. } => {
+                    *remaining = remaining.saturating_sub(rate * dt as u128);
+                    self.combat.journal.combat_ms += dt as u128;
+                }
+                Action::RaidStock { remaining, .. } => {
+                    *remaining = remaining.saturating_sub(rate * dt as u128);
+                    self.combat.journal.theft_ms += dt as u128;
+                }
                 Action::Travel => {
                     if let Location::Edge { progress, .. } = &mut a.location {
                         let before = *progress;
@@ -855,8 +887,12 @@ impl World {
                 }
             }
         }
+        self.resolve_strikes();
         for id in 0..self.agents.len() {
-            if self.agents[id].action != Action::Dead && self.agents[id].starvation >= 24 * HOUR {
+            let combat_death = self.body(id).is_some_and(|b| b.injuries >= 3);
+            if self.agents[id].action != Action::Dead
+                && (self.agents[id].starvation >= 24 * HOUR || combat_death)
+            {
                 let holder = match self.agents[id].location {
                     Location::Node(n) => Holder::Loose(n),
                     Location::Edge {
@@ -890,7 +926,14 @@ impl World {
                 self.infrastructure.active_trips.remove(&id);
                 self.paths.active.remove(&id);
                 self.gather_communal.remove(&id);
-                self.cancel_job(id, "starvation death");
+                self.cancel_job(
+                    id,
+                    if combat_death {
+                        "contact death"
+                    } else {
+                        "starvation death"
+                    },
+                );
                 self.agents[id].action = Action::Dead;
                 self.agents[id].death_time = Some(self.now);
                 self.household_death(id);
@@ -899,14 +942,22 @@ impl World {
                     Some(id),
                     "Died",
                     format!(
-                        "cause=starvation nutrition_ms=0 starvation_ms={} location={:?}",
-                        self.agents[id].starvation, self.agents[id].location
+                        "cause={} nutrition_ms={} starvation_ms={} location={:?}",
+                        if combat_death {
+                            "contact"
+                        } else {
+                            "starvation"
+                        },
+                        self.agents[id].nutrition,
+                        self.agents[id].starvation,
+                        self.agents[id].location
                     ),
                 );
                 self.social_death(id);
             }
         }
         self.finish_military();
+        self.resolve_raids();
         self.finish_lifecycle();
         self.finish_farming();
         self.finish_carts();
@@ -1086,6 +1137,7 @@ impl World {
         let mut stale_events = vec![];
         for id in ids {
             self.observe_military(id);
+            self.observe_combat(id);
             self.observe_lifecycle(id);
             self.observe_social(id);
             self.observe_household(id);
@@ -1141,6 +1193,7 @@ impl World {
                 self.acceptance.record(&o, &d, audit);
             }
             let capabilities = person::Capabilities {
+                combat: self.config.combat.as_ref().map(|_| &self.combat.views[id]),
                 formation: self.config.formation.then(|| &self.formation.views[id]),
                 military: self
                     .config

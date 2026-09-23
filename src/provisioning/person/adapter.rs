@@ -4,6 +4,7 @@ use crate::provisioning::{World, authority};
 impl World {
     pub(crate) fn person_capabilities(&self, id: usize) -> Capabilities<'_> {
         Capabilities {
+            combat: self.config.combat.as_ref().map(|_| &self.combat.views[id]),
             formation: self.config.formation.then(|| &self.formation.views[id]),
             military: self
                 .config
@@ -79,7 +80,7 @@ impl World {
             capabilities: self.person_capabilities(id),
             roles,
             rights: Rights {
-                commons_membership: self.config.communal.then_some(0),
+                commons_membership: (self.config.communal && !self.is_raider(id)).then_some(0),
                 voluntary_goods_exchange: self.config.barter,
                 personal_crop_claims: self.config.farming.is_some(),
                 personal_cart_use: self.config.capital.is_some(),

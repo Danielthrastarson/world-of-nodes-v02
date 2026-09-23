@@ -156,6 +156,12 @@ impl World {
             "{:?}|{:?}|{:?}|{:?}|{:?}",
             self.now, self.agents, self.goods, self.boards, self.metrics
         );
+        if self.config.combat.is_some() {
+            text.push_str(&format!(
+                "|combat={:?}|{:?}|{:?}",
+                self.config.combat, self.combat.bodies, self.combat.views
+            ));
+        }
         if self.config.formation {
             text.push_str(&format!(
                 "|formation={:?}|{:?}|{}",

@@ -32,7 +32,7 @@ and irreversible abstraction choices require a project-owner decision.
 | B3 Life cycle / reproduction | PASSED | Embodied birth, dependency, mutual reproduction and identity-preserving maturation. Controlled Generation3 in27/30; autonomous readiness and newborn-care failures preserved. See research/lifecycle/REPORT.md. |
 | F11A Voluntary mobilization | PASSED | Owner accepts mechanism scope. Full protective/economic gate remains OPEN until F11C; prior results preserved. |
 | F11B Formation / movement | PASSED | 960 paired runs; one locally received order drives real Persons through common FIFO. Separation, missed orders, service expiry and civilian costs preserved. See research/formation/REPORT.md. |
-| F11C Threat / combat | ACTIVE | Opening threat/control specification in THREAT_EXPERIMENT.md. Combat remains unimplemented; F11A protective-benefit gate OPEN. |
+| F11C Threat / combat | ACTIVE | Opt-in graph-local raid/contact implemented under RAID_EXPERIMENT.md; paired panel and historical validation pending. F11A protective-benefit gate remains OPEN until final evidence. |
 | F12 Information network | NOT STARTED | Explicit physical messengers/travelers or constrained signals. Distinguish true from observed state; report delay changes decisions. No global knowledge. |
 | F13 Kingdom vertical slice | NOT STARTED | Multiple settlements, economy, infrastructure, authority, information and security; one ruler decision yields unscripted, traceable second-order effects. Owner decides player powers. |
 | F14 Target moment | NOT STARTED | Policy effects → households → institutional breakdown/coordination → actual gathering/travel toward castle. No spawn-rebellion shortcut. |

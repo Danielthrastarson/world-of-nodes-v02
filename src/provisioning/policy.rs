@@ -16,6 +16,12 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    Strike {
+        target: usize,
+    },
+    RaidStock {
+        batch: usize,
+    },
     Volunteer {
         request: usize,
     },
@@ -121,6 +127,12 @@ fn choice(intent: Intent, reason: impl Into<String>) -> Decision {
         intent,
         reason: reason.into(),
     }
+}
+fn food_accessible(o: &Observation, f: &FoodView) -> bool {
+    accessible(f, o.agent)
+        && (!o.raider
+            || f.owner != Owner::Commons(0)
+            || o.own.iter().any(|carried| carried.batch == f.batch))
 }
 fn accessible(f: &FoodView, id: usize) -> bool {
     matches!(f.owner, Owner::None | Owner::Commons(0)) || f.owner == Owner::Agent(id)
@@ -261,7 +273,7 @@ fn sources(o: &Observation, m: &PolicyMemory) -> Vec<Source> {
             continue;
         };
         for f in &v.food {
-            if f.quantity == 0 || !accessible(f, o.agent) {
+            if f.quantity == 0 || !food_accessible(o, f) {
                 continue;
             }
             let work = if matches!(f.holder, Holder::Deposit(_)) {
@@ -341,7 +353,7 @@ fn eat(o: &Observation) -> Option<Decision> {
     }
     food.sort_by_key(|f| (f.expires_at, f.batch));
     for f in food {
-        if accessible(&f, o.agent) && f.expires_at > o.now {
+        if food_accessible(o, &f) && f.expires_at > o.now {
             let q = super::goods::headroom(o.nutrition, f.owner).min(f.available);
             if q > 0 {
                 return Some(choice(
@@ -454,6 +466,7 @@ pub(crate) fn decide_with_capabilities(
         life,
         military,
         formation,
+        combat,
         cultivation: farm,
         capital,
         public_works: infrastructure,
@@ -466,6 +479,16 @@ pub(crate) fn decide_with_capabilities(
     }
     if let Some(d) = eat(o) {
         return d;
+    }
+    if o.body_factor == 0 {
+        return choice(
+            if needs.critical_fatigue() {
+                Intent::Sleep
+            } else {
+                Intent::Wait
+            },
+            "incapacitated body; no work or movement",
+        );
     }
     if life.is_some_and(|v| v.child) {
         return if needs.critical_fatigue()
@@ -514,6 +537,11 @@ pub(crate) fn decide_with_capabilities(
     }
     if let Some(view) = life
         && let Some(d) = super::lifecycle::consider(o, view)
+    {
+        return d;
+    }
+    if let Some(view) = combat
+        && let Some(d) = super::combat::consider(o, m, view)
     {
         return d;
     }

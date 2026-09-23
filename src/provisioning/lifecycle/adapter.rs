@@ -397,6 +397,14 @@ impl World {
             matured: false,
         });
         self.lifecycle.views.push(View::default());
+        if self.config.combat.is_some() {
+            self.combat
+                .bodies
+                .push(super::super::combat::Body::default());
+            self.combat
+                .views
+                .push(super::super::combat::View::default());
+        }
         if self.config.formation {
             self.formation
                 .views
