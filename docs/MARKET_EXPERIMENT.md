@@ -59,3 +59,19 @@ does not qualify. Research may inspect preferences for diagnosis, never for poli
 Any unsupported monetary inference stays unestablished. Gate: correct physical local
 institution and explainable paired effect. Stop after evidence, regardless of swaps
 or welfare; do not adopt further economic mechanisms.
+
+## Locality audit correction (before final evidence)
+
+An added adversarial test found that the inherited global one-open-offer check
+could reveal remote settlement when the proposer tried to post elsewhere. Preserve
+`research/market/remote-admission-failure.txt`. F9B admission now uses a private
+record of the proposer's outstanding consent. A visit to that market can refresh it;
+the fixed known 12h deadline can expire it. Remote acceptance does neither. The
+formation rule still proposes the same bundles; this corrects institutional
+admission, not motivation. A stale commitment may therefore suppress a new posting.
+No polling, message, knowledge channel, or automatic journey was introduced.
+
+The initially launched matrix is retained at `research/market/matrix`, revision
+76511cc, as pre-repair evidence. Final research reruns the treatment after the fix
+and compares physical event histories and metrics, identifying any changed runs.
+State hashes differ because the repaired private record is now part of state.

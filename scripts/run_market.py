@@ -4,12 +4,13 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 import csv,gzip,hashlib,json,shutil,subprocess,sys
 root=Path(sys.argv[1]);root.mkdir(parents=True,exist_ok=False)
+binary=sys.argv[2] if len(sys.argv)>2 else 'target/release/settlement_probe'
 revision=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 fixtures=['complementary','symmetric','low_cost','high_cost','colocated','separated']
 def run(pair):
     fixture,mode=pair;name=fixture+'_'+mode;out=root/name
     with (root/(name+'.log')).open('w') as log:
-        subprocess.run(['target/release/settlement_probe',fixture,str(out),'30','0',mode],stdout=log,stderr=log,check=True)
+        subprocess.run([binary,fixture,str(out),'30','0',mode],stdout=log,stderr=log,check=True)
     rows=list(csv.DictReader((out/'runs.csv').open()))
     assert len(rows)==210 and all(r['accounting_error']==r['overtakes']=='0' for r in rows)
     if mode=='on':

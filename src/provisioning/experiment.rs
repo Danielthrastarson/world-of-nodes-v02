@@ -170,6 +170,7 @@ impl World {
         }
         if !self.config.market_nodes.is_empty() {
             text.push_str(&format!("|markets={:?}", self.config.market_nodes));
+            text.push_str(&format!("|market_pending={:?}", self.barter.pending));
         }
         if self.config.barter {
             text.push_str(&format!("|barter={:?}", self.barter.offers));

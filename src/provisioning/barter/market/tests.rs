@@ -306,3 +306,84 @@ fn market_replay_is_deterministic() {
     a.audit().unwrap();
     b.audit().unwrap();
 }
+
+#[test]
+fn unchanged_buyer_policy_can_accept_after_seller_physically_departs() {
+    // Conformance witness, not a live outcome: suppress autonomous reconsideration
+    // only to test the executable institution and the unmodified buyer valuation.
+    let mut w = research::market_world("colocated", 0, false).unwrap();
+    w.config.autonomous = false;
+    for id in 0..2 {
+        w.observe_capital(id);
+        let v = w.node_view(0);
+        w.agents[id].memory.nodes.insert(0, v);
+    }
+    let o = w.observe(0).unwrap();
+    let d = w.barter_decision(
+        0,
+        &o,
+        Decision {
+            intent: Intent::Wait,
+            reason: "static conformance".into(),
+        },
+    );
+    assert!(matches!(d.intent, Intent::OfferBarter { .. }));
+    w.apply_intents(vec![(0, d.intent)]).unwrap();
+    w.apply_intents(vec![(
+        0,
+        Intent::Travel {
+            edge: 0,
+            target: 2,
+            food: false,
+        },
+    )])
+    .unwrap();
+    w.advance_to(HOUR).unwrap();
+    assert!(!matches!(w.agents[0].location, Location::Node(0)));
+    w.observe_capital(1);
+    let v = w.node_view(0);
+    w.agents[1].memory.nodes.insert(0, v);
+    let o = w.observe(1).unwrap();
+    let a = &mut w.agents[1];
+    let base = policy::decide_capital(
+        &o,
+        &a.memory,
+        &mut a.rng,
+        None,
+        &w.capital.memories[1],
+        &w.config.capital.as_ref().unwrap().rules,
+    );
+    let d = w.barter_decision(1, &o, base);
+    assert!(matches!(d.intent, Intent::AcceptBarter { .. }));
+    w.apply_intents(vec![(1, d.intent)]).unwrap();
+    assert_eq!(w.barter.exchanges.len(), 1);
+    let x = &w.barter.exchanges[0];
+    assert_eq!(
+        w.goods.batches[x.received_by_proposer].holder,
+        Holder::Loose(0)
+    );
+    assert_eq!(w.goods.batches[x.received_by_proposer].quantity, 10);
+    w.audit().unwrap();
+}
+
+#[test]
+fn remote_settlement_cannot_change_admission_to_another_market() {
+    let mut a = world();
+    a.post_barter(0, 0, 6, Material::Wood, 10).unwrap();
+    a.agents[0].location = Location::Node(2);
+    let batch = a.goods.add(
+        Material::Food,
+        6,
+        Owner::Agent(0),
+        Holder::Loose(2),
+        0,
+        48 * HOUR,
+    );
+    let mut b = a.clone();
+    b.accept_barter(1, 0, 1).unwrap();
+    assert_eq!(
+        a.post_barter(0, batch, 6, Material::Wood, 10),
+        b.post_barter(0, batch, 6, Material::Wood, 10),
+        "one-outstanding-offer admission must depend on the proposer's local record, not remote settlement truth"
+    );
+}

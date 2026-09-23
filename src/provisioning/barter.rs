@@ -33,6 +33,7 @@ pub struct Exchange {
 #[derive(Clone, Debug, Default)]
 pub(crate) struct State {
     pub receipts: Vec<market::Receipt>,
+    pub pending: BTreeMap<usize, market::Pending>,
     pub offers: Vec<Offer>,
     pub exchanges: Vec<Exchange>,
     pub counters: BTreeMap<String, u64>,
@@ -172,16 +173,22 @@ impl World {
         if !acceptable_material(want) || b.material == want || want_quantity == 0 {
             return Err("INVALID_BUNDLE".into());
         }
-        if self
-            .barter
-            .offers
-            .iter()
-            .any(|o| o.proposer == id && o.status == "OPEN" && o.expires_at > self.now)
-        {
+        let market = self.market_enabled();
+        if market {
+            self.refresh_market_record(id);
+        }
+        let existing = if market {
+            self.barter.pending.contains_key(&id)
+        } else {
+            self.barter
+                .offers
+                .iter()
+                .any(|o| o.proposer == id && o.status == "OPEN" && o.expires_at > self.now)
+        };
+        if existing {
             return Err("OFFER_ALREADY_OPEN".into());
         }
         let index = self.barter.offers.len();
-        let market = self.market_enabled();
         let expires_at = if market {
             self.now + 12 * HOUR
         } else {
@@ -210,6 +217,16 @@ impl World {
             location: node,
             status: "OPEN".into(),
         });
+        if market {
+            self.barter.pending.insert(
+                id,
+                market::Pending {
+                    offer: index,
+                    node,
+                    expires_at,
+                },
+            );
+        }
         self.barter_count("offers_created");
         if market {
             self.barter_count("offers_deposited");
@@ -232,6 +249,7 @@ impl World {
         o.status = "REVOKED".into();
         if market {
             self.release_market(offer, "cancelled");
+            self.barter.pending.remove(&id);
         }
         self.barter_count("offers_revoked");
         self.log(Some(id), "BarterRevoked", format!("offer={offer}"));
@@ -458,6 +476,9 @@ impl World {
     ) -> Decision {
         if !self.config.barter {
             return fallback;
+        }
+        if self.market_enabled() {
+            self.refresh_market_record(id);
         }
         let Some(v) = self.barter_view(id) else {
             return fallback;

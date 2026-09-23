@@ -1,5 +1,11 @@
 //! F9B deposited standing consent. No matching, offer motivation, or remote reports.
 use super::*;
+#[derive(Clone, Debug, PartialEq, Eq)]
+pub struct Pending {
+    pub offer: usize,
+    pub node: usize,
+    pub expires_at: Time,
+}
 #[derive(Clone, Debug)]
 pub struct Receipt {
     pub offer: usize,
@@ -19,6 +25,18 @@ pub struct Receipt {
     pub first_retrieval: Option<Time>,
 }
 impl World {
+    /// Private record of consent, never refreshed by a remote acceptance/death.
+    pub(super) fn refresh_market_record(&mut self, id: usize) {
+        let Some(p) = self.barter.pending.get(&id) else {
+            return;
+        };
+        if p.expires_at <= self.now
+            || (self.agents[id].location == Location::Node(p.node)
+                && self.barter.offers[p.offer].status != "OPEN")
+        {
+            self.barter.pending.remove(&id);
+        }
+    }
     pub fn market_enabled(&self) -> bool {
         !self.config.market_nodes.is_empty()
     }

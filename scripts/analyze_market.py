@@ -57,8 +57,23 @@ for fixture in fixtures:
     }
     receipts=read(name,'market_receipts.csv')
     receipt_groups=group(receipts,lambda r:r['kind'],lambda r:int(r['initial']))
+    peaks=[]
+    for seed in range(30):
+        ds=defaultdict(int)
+        for o in offers:
+            if o['seed']!=str(seed) or mode!='market': continue
+            q=int(o['give_q']);ds[int(o['created_ms'])]+=q
+            matched=[x for x in ex if x['seed']==str(seed) and x['offer']==o['id']]
+            released=[x for x in receipts if x['seed']==str(seed) and x['offer']==o['id'] and x['kind'] not in ('purchase','payment')]
+            at=int(matched[0]['at_ms']) if matched else int(released[0]['at_ms']) if released else 168*3600000
+            ds[at]-=q
+        current=peak=0
+        for at,delta in sorted(ds.items()):current+=delta;peak=max(peak,current)
+        peaks.append(peak)
     result[name]['market']={
+      'peak_locked_quanta':dist(peaks),
       'receipt_initial':{k:dist(v) for k,v in receipt_groups.items()},
+      'receipt_by_resource':{k:dist(v) for k,v in group(receipts,lambda r:r['kind']+':'+r['material'],lambda r:int(r['remaining'])).items()},
       'receipt_disposition':{k:dist(v) for k,v in group(receipts,lambda r:r['kind'],lambda r:int(r['remaining'])).items()},
       'retrieved':sum(int(r['retrieved']) for r in receipts),
       'used_locally':sum(int(r['used_locally']) for r in receipts),
