@@ -1,0 +1,5882 @@
+{
+  "line_none_C": {
+    "36": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 928.0,
+        "mean": 928.0,
+        "max": 928.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1264.0,
+        "mean": 1264.0,
+        "max": 1264.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1264.0,
+        "mean": 1264.0,
+        "max": 1264.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 944.0,
+        "mean": 944.0,
+        "max": 944.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 1264.0,
+        "mean": 1264.0,
+        "max": 1264.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 1349.0,
+        "mean": 1349.0,
+        "max": 1349.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 1264.0,
+        "mean": 1264.0,
+        "max": 1264.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 1349.0,
+        "mean": 1349.0,
+        "max": 1349.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "distinct_histories": 1
+  },
+  "line_base_C": {
+    "36": {
+      "alive": {
+        "min": 50.0,
+        "mean": 50.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 14.0,
+        "mean": 14.0,
+        "max": 14.0
+      },
+      "at_f": {
+        "min": 12.0,
+        "mean": 12.0,
+        "max": 12.0
+      },
+      "consumed": {
+        "min": 1260.0,
+        "mean": 1260.0,
+        "max": 1260.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 190.378973333,
+        "mean": 190.47786222226665,
+        "max": 190.64564
+      },
+      "queue_hours": {
+        "min": 891.434938889,
+        "mean": 891.5479944445667,
+        "max": 891.634938889
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 42,
+        "mean": 42,
+        "max": 42
+      },
+      "attempts": {
+        "min": 9872,
+        "mean": 9874.3,
+        "max": 9878
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 34,
+        "mean": 34,
+        "max": 34
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 26,
+        "mean": 26,
+        "max": 26
+      },
+      "labor_ms": {
+        "min": 589770000,
+        "mean": 590027000,
+        "max": 590190000
+      },
+      "matured": {
+        "min": 50,
+        "mean": 50,
+        "max": 50
+      },
+      "output_consumed": {
+        "min": 792,
+        "mean": 792,
+        "max": 792
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 816,
+        "mean": 816,
+        "max": 816
+      },
+      "resumptions": {
+        "min": 26,
+        "mean": 26,
+        "max": 26
+      },
+      "started": {
+        "min": 76,
+        "mean": 76,
+        "max": 76
+      },
+      "stranded_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 50.0,
+        "mean": 50.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 6.0,
+        "mean": 6.0,
+        "max": 6.0
+      },
+      "at_f": {
+        "min": 20.0,
+        "mean": 20.0,
+        "max": 20.0
+      },
+      "consumed": {
+        "min": 1720.0,
+        "mean": 1720.0,
+        "max": 1720.0
+      },
+      "spoiled": {
+        "min": 2240.0,
+        "mean": 2240.0,
+        "max": 2240.0
+      },
+      "starvation_hours": {
+        "min": 402.304996667,
+        "mean": 402.3244411109333,
+        "max": 402.33833
+      },
+      "queue_hours": {
+        "min": 1189.439485556,
+        "mean": 1189.5183928057,
+        "max": 1189.597818889
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 42,
+        "mean": 42,
+        "max": 42
+      },
+      "attempts": {
+        "min": 11174,
+        "mean": 11175.733333333334,
+        "max": 11179
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 40,
+        "mean": 40,
+        "max": 40
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "labor_ms": {
+        "min": 667590000,
+        "mean": 667888200,
+        "max": 668100000
+      },
+      "matured": {
+        "min": 76,
+        "mean": 76,
+        "max": 76
+      },
+      "output_consumed": {
+        "min": 960,
+        "mean": 960,
+        "max": 960
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 960,
+        "mean": 960,
+        "max": 960
+      },
+      "resumptions": {
+        "min": 26,
+        "mean": 26,
+        "max": 26
+      },
+      "started": {
+        "min": 82,
+        "mean": 82,
+        "max": 82
+      },
+      "stranded_crops": {
+        "min": 36,
+        "mean": 36,
+        "max": 36
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 30.0,
+        "mean": 30.0,
+        "max": 30.0
+      },
+      "at_c": {
+        "min": 4.0,
+        "mean": 4.0,
+        "max": 4.0
+      },
+      "at_f": {
+        "min": 26.0,
+        "mean": 26.0,
+        "max": 26.0
+      },
+      "consumed": {
+        "min": 1816.0,
+        "mean": 1816.0,
+        "max": 1816.0
+      },
+      "spoiled": {
+        "min": 2240.0,
+        "mean": 2240.0,
+        "max": 2240.0
+      },
+      "starvation_hours": {
+        "min": 1044.335926667,
+        "mean": 1044.4459266666668,
+        "max": 1044.552593333
+      },
+      "queue_hours": {
+        "min": 1302.139688889,
+        "mean": 1302.2322083611666,
+        "max": 1302.331912222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 42,
+        "mean": 42,
+        "max": 42
+      },
+      "attempts": {
+        "min": 11836,
+        "mean": 11838.166666666666,
+        "max": 11841
+      },
+      "dead_owner_crops": {
+        "min": 20,
+        "mean": 20,
+        "max": 20
+      },
+      "harvested": {
+        "min": 44,
+        "mean": 44,
+        "max": 44
+      },
+      "inaccessible_mature": {
+        "min": 20,
+        "mean": 20,
+        "max": 20
+      },
+      "interruptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "labor_ms": {
+        "min": 707230000,
+        "mean": 707505200,
+        "max": 707680000
+      },
+      "matured": {
+        "min": 82,
+        "mean": 82,
+        "max": 82
+      },
+      "output_consumed": {
+        "min": 1056,
+        "mean": 1056,
+        "max": 1056
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 1056,
+        "mean": 1056,
+        "max": 1056
+      },
+      "resumptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "started": {
+        "min": 86,
+        "mean": 86,
+        "max": 86
+      },
+      "stranded_crops": {
+        "min": 38,
+        "mean": 38,
+        "max": 38
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 4.0,
+        "mean": 4.0,
+        "max": 4.0
+      },
+      "at_c": {
+        "min": 4.0,
+        "mean": 4.0,
+        "max": 4.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 2008.0,
+        "mean": 2008.0,
+        "max": 2008.0
+      },
+      "spoiled": {
+        "min": 2240.0,
+        "mean": 2240.0,
+        "max": 2240.0
+      },
+      "starvation_hours": {
+        "min": 1318.674256667,
+        "mean": 1318.7703677778334,
+        "max": 1318.890923333
+      },
+      "queue_hours": {
+        "min": 1302.139688889,
+        "mean": 1302.2322083611666,
+        "max": 1302.331912222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 42,
+        "mean": 42,
+        "max": 42
+      },
+      "attempts": {
+        "min": 13004,
+        "mean": 13007.266666666666,
+        "max": 13011
+      },
+      "dead_owner_crops": {
+        "min": 38,
+        "mean": 38,
+        "max": 38
+      },
+      "harvested": {
+        "min": 52,
+        "mean": 52,
+        "max": 52
+      },
+      "inaccessible_mature": {
+        "min": 38,
+        "mean": 38,
+        "max": 38
+      },
+      "interruptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "labor_ms": {
+        "min": 777170000,
+        "mean": 777445200,
+        "max": 777620000
+      },
+      "matured": {
+        "min": 90,
+        "mean": 90,
+        "max": 90
+      },
+      "output_consumed": {
+        "min": 1248,
+        "mean": 1248,
+        "max": 1248
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 1248,
+        "mean": 1248,
+        "max": 1248
+      },
+      "resumptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "started": {
+        "min": 94,
+        "mean": 94,
+        "max": 94
+      },
+      "stranded_crops": {
+        "min": 38,
+        "mean": 38,
+        "max": 38
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 4.0,
+        "mean": 4.0,
+        "max": 4.0
+      },
+      "at_c": {
+        "min": 4.0,
+        "mean": 4.0,
+        "max": 4.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 2200.0,
+        "mean": 2200.0,
+        "max": 2200.0
+      },
+      "spoiled": {
+        "min": 2240.0,
+        "mean": 2240.0,
+        "max": 2240.0
+      },
+      "starvation_hours": {
+        "min": 1318.674256667,
+        "mean": 1318.7703677778334,
+        "max": 1318.890923333
+      },
+      "queue_hours": {
+        "min": 1302.139688889,
+        "mean": 1302.2322083611666,
+        "max": 1302.331912222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 42,
+        "mean": 42,
+        "max": 42
+      },
+      "attempts": {
+        "min": 14132,
+        "mean": 14136.233333333334,
+        "max": 14141
+      },
+      "dead_owner_crops": {
+        "min": 38,
+        "mean": 38,
+        "max": 38
+      },
+      "harvested": {
+        "min": 60,
+        "mean": 60,
+        "max": 60
+      },
+      "inaccessible_mature": {
+        "min": 38,
+        "mean": 38,
+        "max": 38
+      },
+      "interruptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "labor_ms": {
+        "min": 844770000,
+        "mean": 845045200,
+        "max": 845220000
+      },
+      "matured": {
+        "min": 98,
+        "mean": 98,
+        "max": 98
+      },
+      "output_consumed": {
+        "min": 1440,
+        "mean": 1440,
+        "max": 1440
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 1440,
+        "mean": 1440,
+        "max": 1440
+      },
+      "resumptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "started": {
+        "min": 102,
+        "mean": 102,
+        "max": 102
+      },
+      "stranded_crops": {
+        "min": 38,
+        "mean": 38,
+        "max": 38
+      }
+    },
+    "distinct_histories": 30
+  },
+  "line_base_F": {
+    "36": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 904.0,
+        "mean": 904.0,
+        "max": 904.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "attempts": {
+        "min": 2392,
+        "mean": 2393,
+        "max": 2396
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 8,
+        "mean": 8,
+        "max": 8
+      },
+      "labor_ms": {
+        "min": 142732002,
+        "mean": 142835669.2,
+        "max": 142882002
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 8,
+        "mean": 8,
+        "max": 8
+      },
+      "started": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1272.0,
+        "mean": 1272.0,
+        "max": 1272.0
+      },
+      "spoiled": {
+        "min": 1728.0,
+        "mean": 1728.0,
+        "max": 1728.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "attempts": {
+        "min": 4220,
+        "mean": 4220.633333333333,
+        "max": 4222
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 4,
+        "mean": 4,
+        "max": 4
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "labor_ms": {
+        "min": 251342002,
+        "mean": 251453669.2,
+        "max": 251485336
+      },
+      "matured": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 96,
+        "mean": 96,
+        "max": 96
+      },
+      "resumptions": {
+        "min": 20,
+        "mean": 20,
+        "max": 20
+      },
+      "started": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1928.0,
+        "mean": 1928.0,
+        "max": 1928.0
+      },
+      "spoiled": {
+        "min": 1728.0,
+        "mean": 1728.0,
+        "max": 1728.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "attempts": {
+        "min": 6884,
+        "mean": 6886.633333333333,
+        "max": 6890
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "labor_ms": {
+        "min": 410820170,
+        "mean": 410860948.3666667,
+        "max": 410896004
+      },
+      "matured": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "output_consumed": {
+        "min": 656,
+        "mean": 656,
+        "max": 656
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 672,
+        "mean": 672,
+        "max": 672
+      },
+      "resumptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "started": {
+        "min": 56,
+        "mean": 56,
+        "max": 56
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 3284.0,
+        "mean": 3284.0,
+        "max": 3284.0
+      },
+      "spoiled": {
+        "min": 1728.0,
+        "mean": 1728.0,
+        "max": 1728.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "attempts": {
+        "min": 15461,
+        "mean": 15464.933333333332,
+        "max": 15470
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 84,
+        "mean": 84,
+        "max": 84
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 240,
+        "mean": 240.3,
+        "max": 242
+      },
+      "labor_ms": {
+        "min": 922316008,
+        "mean": 922411952.2333333,
+        "max": 922482674
+      },
+      "matured": {
+        "min": 84,
+        "mean": 84,
+        "max": 84
+      },
+      "output_consumed": {
+        "min": 2012,
+        "mean": 2012,
+        "max": 2012
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 2016,
+        "mean": 2016,
+        "max": 2016
+      },
+      "resumptions": {
+        "min": 240,
+        "mean": 240.3,
+        "max": 242
+      },
+      "started": {
+        "min": 108,
+        "mean": 108,
+        "max": 108
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 4632.0,
+        "mean": 4632.0,
+        "max": 4632.0
+      },
+      "spoiled": {
+        "min": 1728.0,
+        "mean": 1728.0,
+        "max": 1728.0
+      },
+      "starvation_hours": {
+        "min": 694.481444167,
+        "mean": 694.5044443701333,
+        "max": 694.536444444
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 20,
+        "mean": 20,
+        "max": 20
+      },
+      "attempts": {
+        "min": 24314,
+        "mean": 24320.766666666666,
+        "max": 24332
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 140,
+        "mean": 140,
+        "max": 140
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 248,
+        "mean": 248.3,
+        "max": 250
+      },
+      "labor_ms": {
+        "min": 1451199208,
+        "mean": 1451255952.5,
+        "max": 1451327373
+      },
+      "matured": {
+        "min": 140,
+        "mean": 140,
+        "max": 140
+      },
+      "output_consumed": {
+        "min": 3360,
+        "mean": 3360,
+        "max": 3360
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 3360,
+        "mean": 3360,
+        "max": 3360
+      },
+      "resumptions": {
+        "min": 248,
+        "mean": 248.3,
+        "max": 250
+      },
+      "started": {
+        "min": 160,
+        "mean": 160,
+        "max": 160
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "distinct_histories": 30
+  },
+  "line_slow_C": {
+    "36": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 928.0,
+        "mean": 928.0,
+        "max": 928.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1264.0,
+        "mean": 1264.0,
+        "max": 1264.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1264.0,
+        "mean": 1264.0,
+        "max": 1264.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 944.0,
+        "mean": 944.0,
+        "max": 944.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 1264.0,
+        "mean": 1264.0,
+        "max": 1264.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 1349.0,
+        "mean": 1349.0,
+        "max": 1349.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 1264.0,
+        "mean": 1264.0,
+        "max": 1264.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 1349.0,
+        "mean": 1349.0,
+        "max": 1349.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "distinct_histories": 1
+  },
+  "line_slow_F": {
+    "36": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 928.0,
+        "mean": 928.0,
+        "max": 928.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "attempts": {
+        "min": 1628,
+        "mean": 1629.0333333333333,
+        "max": 1632
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 97034672,
+        "mean": 97040227.4,
+        "max": 97060005
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1264.0,
+        "mean": 1264.0,
+        "max": 1264.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "attempts": {
+        "min": 2144,
+        "mean": 2145.4333333333334,
+        "max": 2149
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 4,
+        "mean": 4,
+        "max": 4
+      },
+      "labor_ms": {
+        "min": 127920006,
+        "mean": 127972673.26666667,
+        "max": 127998674
+      },
+      "matured": {
+        "min": 8,
+        "mean": 8,
+        "max": 8
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1712.0,
+        "mean": 1712.0,
+        "max": 1712.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 760.328888889,
+        "mean": 760.328888889,
+        "max": 760.328888889
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "attempts": {
+        "min": 5364,
+        "mean": 5367.166666666667,
+        "max": 5373
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 20,
+        "mean": 20,
+        "max": 20
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 4,
+        "mean": 4,
+        "max": 4
+      },
+      "labor_ms": {
+        "min": 320856672,
+        "mean": 320944673.26666665,
+        "max": 321047340
+      },
+      "matured": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "output_consumed": {
+        "min": 448,
+        "mean": 448,
+        "max": 448
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 480,
+        "mean": 480,
+        "max": 480
+      },
+      "resumptions": {
+        "min": 4,
+        "mean": 4,
+        "max": 4
+      },
+      "started": {
+        "min": 48,
+        "mean": 48,
+        "max": 48
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 24.0,
+        "mean": 24.0,
+        "max": 24.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 24.0,
+        "mean": 24.0,
+        "max": 24.0
+      },
+      "consumed": {
+        "min": 2416.0,
+        "mean": 2416.0,
+        "max": 2416.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 1114.862222222,
+        "mean": 1114.8877777779,
+        "max": 1114.945555556
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 8,
+        "mean": 8.466666666666667,
+        "max": 10
+      },
+      "attempts": {
+        "min": 13420,
+        "mean": 13424.5,
+        "max": 13431
+      },
+      "dead_owner_crops": {
+        "min": 4,
+        "mean": 4,
+        "max": 4
+      },
+      "harvested": {
+        "min": 48,
+        "mean": 48,
+        "max": 48
+      },
+      "inaccessible_mature": {
+        "min": 4,
+        "mean": 4,
+        "max": 4
+      },
+      "interruptions": {
+        "min": 3526,
+        "mean": 3531.9666666666667,
+        "max": 3534
+      },
+      "labor_ms": {
+        "min": 751623340,
+        "mean": 751719273.2666667,
+        "max": 751796674
+      },
+      "matured": {
+        "min": 52,
+        "mean": 52,
+        "max": 52
+      },
+      "output_consumed": {
+        "min": 1152,
+        "mean": 1152,
+        "max": 1152
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 1152,
+        "mean": 1152,
+        "max": 1152
+      },
+      "resumptions": {
+        "min": 3525,
+        "mean": 3531.5,
+        "max": 3534
+      },
+      "started": {
+        "min": 56,
+        "mean": 56.46666666666667,
+        "max": 58
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 4.0,
+        "mean": 4.0,
+        "max": 4.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 4.0,
+        "mean": 4.0,
+        "max": 4.0
+      },
+      "consumed": {
+        "min": 2512.0,
+        "mean": 2512.0,
+        "max": 2512.0
+      },
+      "spoiled": {
+        "min": 1736.0,
+        "mean": 1736.0,
+        "max": 1736.0
+      },
+      "starvation_hours": {
+        "min": 1683.662222222,
+        "mean": 1683.7038888890334,
+        "max": 1683.762222222
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 4,
+        "mean": 4.466666666666667,
+        "max": 6
+      },
+      "attempts": {
+        "min": 14380,
+        "mean": 14468.5,
+        "max": 14747
+      },
+      "dead_owner_crops": {
+        "min": 4,
+        "mean": 4.466666666666667,
+        "max": 6
+      },
+      "harvested": {
+        "min": 52,
+        "mean": 52,
+        "max": 52
+      },
+      "inaccessible_mature": {
+        "min": 4,
+        "mean": 4.466666666666667,
+        "max": 6
+      },
+      "interruptions": {
+        "min": 4006,
+        "mean": 4045.3,
+        "max": 4166
+      },
+      "labor_ms": {
+        "min": 809223340,
+        "mean": 813208473.2666667,
+        "max": 826052672
+      },
+      "matured": {
+        "min": 56,
+        "mean": 56.46666666666667,
+        "max": 58
+      },
+      "output_consumed": {
+        "min": 1248,
+        "mean": 1248,
+        "max": 1248
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 1248,
+        "mean": 1248,
+        "max": 1248
+      },
+      "resumptions": {
+        "min": 4006,
+        "mean": 4045.3,
+        "max": 4166
+      },
+      "started": {
+        "min": 56,
+        "mean": 56.46666666666667,
+        "max": 58
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "distinct_histories": 30
+  },
+  "line_low_yield_C": {
+    "36": {
+      "alive": {
+        "min": 50.0,
+        "mean": 50.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 22.0,
+        "mean": 22.0,
+        "max": 22.0
+      },
+      "at_f": {
+        "min": 12.0,
+        "mean": 12.0,
+        "max": 12.0
+      },
+      "consumed": {
+        "min": 1056.0,
+        "mean": 1056.0,
+        "max": 1056.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 425.981482222,
+        "mean": 426.1548155556,
+        "max": 426.364815556
+      },
+      "queue_hours": {
+        "min": 899.772993333,
+        "mean": 899.8988822222,
+        "max": 900.011326667
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      },
+      "attempts": {
+        "min": 15533,
+        "mean": 15545,
+        "max": 15556
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 48,
+        "mean": 48,
+        "max": 48
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "labor_ms": {
+        "min": 929430000,
+        "mean": 929644000,
+        "max": 929880000
+      },
+      "matured": {
+        "min": 80,
+        "mean": 80,
+        "max": 80
+      },
+      "output_consumed": {
+        "min": 576,
+        "mean": 576,
+        "max": 576
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 576,
+        "mean": 576,
+        "max": 576
+      },
+      "resumptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "started": {
+        "min": 80,
+        "mean": 80,
+        "max": 80
+      },
+      "stranded_crops": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 50.0,
+        "mean": 50.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 6.0,
+        "mean": 6.0,
+        "max": 6.0
+      },
+      "at_f": {
+        "min": 16.0,
+        "mean": 16.0,
+        "max": 16.0
+      },
+      "consumed": {
+        "min": 1348.0,
+        "mean": 1348.0,
+        "max": 1348.0
+      },
+      "spoiled": {
+        "min": 2276.0,
+        "mean": 2276.0,
+        "max": 2276.0
+      },
+      "starvation_hours": {
+        "min": 560.600297778,
+        "mean": 560.600297778,
+        "max": 560.600297778
+      },
+      "queue_hours": {
+        "min": 1197.769732222,
+        "mean": 1197.9872754445666,
+        "max": 1198.198065556
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      },
+      "attempts": {
+        "min": 16213,
+        "mean": 16225.133333333333,
+        "max": 16236
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 52,
+        "mean": 52,
+        "max": 52
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "labor_ms": {
+        "min": 970256668,
+        "mean": 970471556.9333333,
+        "max": 970706668
+      },
+      "matured": {
+        "min": 80,
+        "mean": 80,
+        "max": 80
+      },
+      "output_consumed": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "resumptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "started": {
+        "min": 84,
+        "mean": 84,
+        "max": 84
+      },
+      "stranded_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 20.0,
+        "mean": 20.0,
+        "max": 20.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 20.0,
+        "mean": 20.0,
+        "max": 20.0
+      },
+      "consumed": {
+        "min": 1348.0,
+        "mean": 1348.0,
+        "max": 1348.0
+      },
+      "spoiled": {
+        "min": 2276.0,
+        "mean": 2276.0,
+        "max": 2276.0
+      },
+      "starvation_hours": {
+        "min": 1477.55,
+        "mean": 1477.7127777777666,
+        "max": 1477.9
+      },
+      "queue_hours": {
+        "min": 1386.301456389,
+        "mean": 1386.5783357129667,
+        "max": 1386.735714444
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      },
+      "attempts": {
+        "min": 16213,
+        "mean": 16225.133333333333,
+        "max": 16236
+      },
+      "dead_owner_crops": {
+        "min": 12,
+        "mean": 12,
+        "max": 12
+      },
+      "harvested": {
+        "min": 52,
+        "mean": 52,
+        "max": 52
+      },
+      "inaccessible_mature": {
+        "min": 12,
+        "mean": 12,
+        "max": 12
+      },
+      "interruptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "labor_ms": {
+        "min": 970256668,
+        "mean": 970471556.9333333,
+        "max": 970706668
+      },
+      "matured": {
+        "min": 84,
+        "mean": 84,
+        "max": 84
+      },
+      "output_consumed": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "resumptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "started": {
+        "min": 84,
+        "mean": 84,
+        "max": 84
+      },
+      "stranded_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 1348.0,
+        "mean": 1348.0,
+        "max": 1348.0
+      },
+      "spoiled": {
+        "min": 2276.0,
+        "mean": 2276.0,
+        "max": 2276.0
+      },
+      "starvation_hours": {
+        "min": 1586.150297778,
+        "mean": 1586.3130755555,
+        "max": 1586.500297778
+      },
+      "queue_hours": {
+        "min": 1386.301456389,
+        "mean": 1386.5783357129667,
+        "max": 1386.735714444
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      },
+      "attempts": {
+        "min": 16213,
+        "mean": 16225.133333333333,
+        "max": 16236
+      },
+      "dead_owner_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      },
+      "harvested": {
+        "min": 52,
+        "mean": 52,
+        "max": 52
+      },
+      "inaccessible_mature": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      },
+      "interruptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "labor_ms": {
+        "min": 970256668,
+        "mean": 970471556.9333333,
+        "max": 970706668
+      },
+      "matured": {
+        "min": 84,
+        "mean": 84,
+        "max": 84
+      },
+      "output_consumed": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "resumptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "started": {
+        "min": 84,
+        "mean": 84,
+        "max": 84
+      },
+      "stranded_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 1348.0,
+        "mean": 1348.0,
+        "max": 1348.0
+      },
+      "spoiled": {
+        "min": 2276.0,
+        "mean": 2276.0,
+        "max": 2276.0
+      },
+      "starvation_hours": {
+        "min": 1586.150297778,
+        "mean": 1586.3130755555,
+        "max": 1586.500297778
+      },
+      "queue_hours": {
+        "min": 1386.301456389,
+        "mean": 1386.5783357129667,
+        "max": 1386.735714444
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      },
+      "attempts": {
+        "min": 16213,
+        "mean": 16225.133333333333,
+        "max": 16236
+      },
+      "dead_owner_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      },
+      "harvested": {
+        "min": 52,
+        "mean": 52,
+        "max": 52
+      },
+      "inaccessible_mature": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      },
+      "interruptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "labor_ms": {
+        "min": 970256668,
+        "mean": 970471556.9333333,
+        "max": 970706668
+      },
+      "matured": {
+        "min": 84,
+        "mean": 84,
+        "max": 84
+      },
+      "output_consumed": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "resumptions": {
+        "min": 2148,
+        "mean": 2151.5,
+        "max": 2155
+      },
+      "started": {
+        "min": 84,
+        "mean": 84,
+        "max": 84
+      },
+      "stranded_crops": {
+        "min": 32,
+        "mean": 32,
+        "max": 32
+      }
+    },
+    "distinct_histories": 30
+  },
+  "line_low_yield_F": {
+    "36": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 904.0,
+        "mean": 904.0,
+        "max": 904.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "attempts": {
+        "min": 2392,
+        "mean": 2393,
+        "max": 2396
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 8,
+        "mean": 8,
+        "max": 8
+      },
+      "labor_ms": {
+        "min": 142732002,
+        "mean": 142835669.2,
+        "max": 142882002
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 8,
+        "mean": 8,
+        "max": 8
+      },
+      "started": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1272.0,
+        "mean": 1272.0,
+        "max": 1272.0
+      },
+      "spoiled": {
+        "min": 1728.0,
+        "mean": 1728.0,
+        "max": 1728.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "attempts": {
+        "min": 4220,
+        "mean": 4220.633333333333,
+        "max": 4222
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 4,
+        "mean": 4,
+        "max": 4
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "labor_ms": {
+        "min": 251342002,
+        "mean": 251453669.2,
+        "max": 251485336
+      },
+      "matured": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 48,
+        "mean": 48,
+        "max": 48
+      },
+      "resumptions": {
+        "min": 20,
+        "mean": 20,
+        "max": 20
+      },
+      "started": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1896.0,
+        "mean": 1896.0,
+        "max": 1896.0
+      },
+      "spoiled": {
+        "min": 1728.0,
+        "mean": 1728.0,
+        "max": 1728.0
+      },
+      "starvation_hours": {
+        "min": 677.0,
+        "mean": 677.0,
+        "max": 677.0
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "attempts": {
+        "min": 11148,
+        "mean": 11151.4,
+        "max": 11156
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 52,
+        "mean": 52,
+        "max": 52
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "labor_ms": {
+        "min": 665857502,
+        "mean": 666026169.2,
+        "max": 666218336
+      },
+      "matured": {
+        "min": 56,
+        "mean": 56,
+        "max": 56
+      },
+      "output_consumed": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 624,
+        "mean": 624,
+        "max": 624
+      },
+      "resumptions": {
+        "min": 28,
+        "mean": 28,
+        "max": 28
+      },
+      "started": {
+        "min": 80,
+        "mean": 80,
+        "max": 80
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 28.0,
+        "mean": 28.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 2616.0,
+        "mean": 2620.0,
+        "max": 2628.0
+      },
+      "spoiled": {
+        "min": 1728.0,
+        "mean": 1728.0,
+        "max": 1728.0
+      },
+      "starvation_hours": {
+        "min": 964.602666667,
+        "mean": 972.426888889,
+        "max": 976.336
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 2,
+        "mean": 3.566666666666667,
+        "max": 5
+      },
+      "attempts": {
+        "min": 22707,
+        "mean": 22923.333333333332,
+        "max": 23222
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 112,
+        "mean": 112.33333333333333,
+        "max": 113
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 3004,
+        "mean": 3006.5,
+        "max": 3012
+      },
+      "labor_ms": {
+        "min": 1318450736,
+        "mean": 1331211874.8666666,
+        "max": 1348943903
+      },
+      "matured": {
+        "min": 112,
+        "mean": 112.33333333333333,
+        "max": 113
+      },
+      "output_consumed": {
+        "min": 1344,
+        "mean": 1348,
+        "max": 1356
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 1344,
+        "mean": 1348,
+        "max": 1356
+      },
+      "resumptions": {
+        "min": 3004,
+        "mean": 3006.5,
+        "max": 3012
+      },
+      "started": {
+        "min": 114,
+        "mean": 115.9,
+        "max": 118
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.3333333333333333,
+        "max": 1.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.3333333333333333,
+        "max": 1.0
+      },
+      "consumed": {
+        "min": 2640.0,
+        "mean": 2662.8,
+        "max": 2688.0
+      },
+      "spoiled": {
+        "min": 1728.0,
+        "mean": 1728.0,
+        "max": 1728.0
+      },
+      "starvation_hours": {
+        "min": 1480.694888889,
+        "mean": 1504.3445925926333,
+        "max": 1529.162666667
+      },
+      "queue_hours": {
+        "min": 809.582222222,
+        "mean": 809.582222222,
+        "max": 809.582222222
+      },
+      "jobs": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 23427,
+        "mean": 24183.333333333332,
+        "max": 24902
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 114,
+        "mean": 115.9,
+        "max": 118
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 3482,
+        "mean": 3835.0333333333333,
+        "max": 4206
+      },
+      "labor_ms": {
+        "min": 1347250736,
+        "mean": 1382571874.8666666,
+        "max": 1420943903
+      },
+      "matured": {
+        "min": 114,
+        "mean": 115.9,
+        "max": 118
+      },
+      "output_consumed": {
+        "min": 1368,
+        "mean": 1390.8,
+        "max": 1416
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 1368,
+        "mean": 1390.8,
+        "max": 1416
+      },
+      "resumptions": {
+        "min": 3482,
+        "mean": 3835.0333333333333,
+        "max": 4206
+      },
+      "started": {
+        "min": 114,
+        "mean": 115.9,
+        "max": 118
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "distinct_histories": 30
+  },
+  "branch_none_C": {
+    "36": {
+      "alive": {
+        "min": 46.0,
+        "mean": 48.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 1.0,
+        "mean": 1.5,
+        "max": 2.0
+      },
+      "at_f": {
+        "min": 26.0,
+        "mean": 27.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1529.0,
+        "mean": 1656.4,
+        "max": 1781.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 142.924444444,
+        "mean": 217.92119402756666,
+        "max": 293.064610278
+      },
+      "queue_hours": {
+        "min": 359.424443889,
+        "mean": 406.20368611116663,
+        "max": 453.239595
+      },
+      "jobs": {
+        "min": 4.0,
+        "mean": 6.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 46.0,
+        "mean": 48.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 22.0,
+        "mean": 23.0,
+        "max": 24.0
+      },
+      "consumed": {
+        "min": 2144.0,
+        "mean": 2266.0333333333333,
+        "max": 2388.0
+      },
+      "spoiled": {
+        "min": 612.0,
+        "mean": 733.9666666666667,
+        "max": 856.0
+      },
+      "starvation_hours": {
+        "min": 142.924444444,
+        "mean": 217.92119402756666,
+        "max": 293.064610278
+      },
+      "queue_hours": {
+        "min": 359.467036667,
+        "mean": 406.2249825001667,
+        "max": 453.239595
+      },
+      "jobs": {
+        "min": 4.0,
+        "mean": 6.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 46.0,
+        "mean": 48.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 2.0,
+        "mean": 10.7,
+        "max": 20.0
+      },
+      "at_f": {
+        "min": 2.0,
+        "mean": 3.0,
+        "max": 4.0
+      },
+      "consumed": {
+        "min": 2144.0,
+        "mean": 2266.0333333333333,
+        "max": 2388.0
+      },
+      "spoiled": {
+        "min": 612.0,
+        "mean": 733.9666666666667,
+        "max": 856.0
+      },
+      "starvation_hours": {
+        "min": 612.0,
+        "mean": 661.9666666666667,
+        "max": 712.0
+      },
+      "queue_hours": {
+        "min": 956.86662,
+        "mean": 980.0570955927667,
+        "max": 1003.429665556
+      },
+      "jobs": {
+        "min": 4.0,
+        "mean": 6.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 2144.0,
+        "mean": 2266.0333333333333,
+        "max": 2388.0
+      },
+      "spoiled": {
+        "min": 612.0,
+        "mean": 733.9666666666667,
+        "max": 856.0
+      },
+      "starvation_hours": {
+        "min": 1342.924444444,
+        "mean": 1369.9211940275668,
+        "max": 1397.064610278
+      },
+      "queue_hours": {
+        "min": 1258.395571111,
+        "mean": 1292.7786921295,
+        "max": 1327.037715278
+      },
+      "jobs": {
+        "min": 4.0,
+        "mean": 6.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 2144.0,
+        "mean": 2266.0333333333333,
+        "max": 2388.0
+      },
+      "spoiled": {
+        "min": 612.0,
+        "mean": 733.9666666666667,
+        "max": 856.0
+      },
+      "starvation_hours": {
+        "min": 1342.924444444,
+        "mean": 1369.9211940275668,
+        "max": 1397.064610278
+      },
+      "queue_hours": {
+        "min": 1258.395571111,
+        "mean": 1292.7786921295,
+        "max": 1327.037715278
+      },
+      "jobs": {
+        "min": 4.0,
+        "mean": 6.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "attempts": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "labor_ms": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "started": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "distinct_histories": 30
+  },
+  "branch_base_C": {
+    "36": {
+      "alive": {
+        "min": 50.0,
+        "mean": 50.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 2.0,
+        "mean": 4.233333333333333,
+        "max": 6.0
+      },
+      "at_f": {
+        "min": 8.0,
+        "mean": 10.566666666666666,
+        "max": 20.0
+      },
+      "consumed": {
+        "min": 1316.0,
+        "mean": 1335.8,
+        "max": 1406.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 123.846924444,
+        "mean": 129.32662154623333,
+        "max": 132.455558889
+      },
+      "queue_hours": {
+        "min": 749.558533611,
+        "mean": 756.2275016111333,
+        "max": 760.80211
+      },
+      "jobs": {
+        "min": 8.0,
+        "mean": 8.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 42,
+        "mean": 42.03333333333333,
+        "max": 43
+      },
+      "attempts": {
+        "min": 6423,
+        "mean": 6530.033333333334,
+        "max": 6547
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 18,
+        "mean": 18,
+        "max": 18
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 12,
+        "mean": 13.8,
+        "max": 14
+      },
+      "labor_ms": {
+        "min": 383320004,
+        "mean": 389631337.3333333,
+        "max": 390400004
+      },
+      "matured": {
+        "min": 50,
+        "mean": 50,
+        "max": 50
+      },
+      "output_consumed": {
+        "min": 432,
+        "mean": 432,
+        "max": 432
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 432,
+        "mean": 432,
+        "max": 432
+      },
+      "resumptions": {
+        "min": 10,
+        "mean": 10,
+        "max": 10
+      },
+      "started": {
+        "min": 60,
+        "mean": 60.03333333333333,
+        "max": 61
+      },
+      "stranded_crops": {
+        "min": 36,
+        "mean": 37.8,
+        "max": 41
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 50.0,
+        "mean": 50.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 6.0,
+        "mean": 9.8,
+        "max": 16.0
+      },
+      "at_f": {
+        "min": 14.0,
+        "mean": 21.266666666666666,
+        "max": 26.0
+      },
+      "consumed": {
+        "min": 1805.0,
+        "mean": 1916.1,
+        "max": 2044.0
+      },
+      "spoiled": {
+        "min": 1530.0,
+        "mean": 1636.7,
+        "max": 1779.0
+      },
+      "starvation_hours": {
+        "min": 191.2498575,
+        "mean": 265.5503272408667,
+        "max": 304.596868889
+      },
+      "queue_hours": {
+        "min": 1048.292163333,
+        "mean": 1085.6661234073667,
+        "max": 1100.896111667
+      },
+      "jobs": {
+        "min": 8.0,
+        "mean": 8.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 13.8,
+        "max": 16.0
+      },
+      "active_crops": {
+        "min": 33,
+        "mean": 44.233333333333334,
+        "max": 46
+      },
+      "attempts": {
+        "min": 7537,
+        "mean": 7707.533333333334,
+        "max": 8315
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 22,
+        "mean": 23.366666666666667,
+        "max": 29
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 22,
+        "mean": 147.06666666666666,
+        "max": 430
+      },
+      "labor_ms": {
+        "min": 450130004,
+        "mean": 459953699.6333333,
+        "max": 496534785
+      },
+      "matured": {
+        "min": 60,
+        "mean": 60.03333333333333,
+        "max": 61
+      },
+      "output_consumed": {
+        "min": 524,
+        "mean": 552.8,
+        "max": 667
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 528,
+        "mean": 560.8,
+        "max": 696
+      },
+      "resumptions": {
+        "min": 14,
+        "mean": 139.56666666666666,
+        "max": 421
+      },
+      "started": {
+        "min": 61,
+        "mean": 67.6,
+        "max": 69
+      },
+      "stranded_crops": {
+        "min": 30,
+        "mean": 35.766666666666666,
+        "max": 40
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 38.0,
+        "mean": 43.333333333333336,
+        "max": 48.0
+      },
+      "at_c": {
+        "min": 3.0,
+        "mean": 6.366666666666666,
+        "max": 8.0
+      },
+      "at_f": {
+        "min": 10.0,
+        "mean": 18.333333333333332,
+        "max": 24.0
+      },
+      "consumed": {
+        "min": 2112.0,
+        "mean": 2174.4666666666667,
+        "max": 2355.0
+      },
+      "spoiled": {
+        "min": 1530.0,
+        "mean": 1636.7,
+        "max": 1779.0
+      },
+      "starvation_hours": {
+        "min": 781.442858056,
+        "mean": 889.8905829906666,
+        "max": 934.08044
+      },
+      "queue_hours": {
+        "min": 1398.345533889,
+        "mean": 1534.3128587778,
+        "max": 1608.611611111
+      },
+      "jobs": {
+        "min": 8.0,
+        "mean": 8.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 13.8,
+        "max": 16.0
+      },
+      "active_crops": {
+        "min": 37,
+        "mean": 40.56666666666667,
+        "max": 44
+      },
+      "attempts": {
+        "min": 10149,
+        "mean": 11489,
+        "max": 13300
+      },
+      "dead_owner_crops": {
+        "min": 2,
+        "mean": 6.2,
+        "max": 9
+      },
+      "harvested": {
+        "min": 30,
+        "mean": 33.833333333333336,
+        "max": 44
+      },
+      "inaccessible_mature": {
+        "min": 2,
+        "mean": 6.2,
+        "max": 9
+      },
+      "interruptions": {
+        "min": 929,
+        "mean": 2171.5,
+        "max": 2693
+      },
+      "labor_ms": {
+        "min": 572189676,
+        "mean": 632893323.3,
+        "max": 735592359
+      },
+      "matured": {
+        "min": 66,
+        "mean": 69.63333333333334,
+        "max": 75
+      },
+      "output_consumed": {
+        "min": 720,
+        "mean": 811.1666666666666,
+        "max": 1056
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 720,
+        "mean": 812,
+        "max": 1056
+      },
+      "resumptions": {
+        "min": 927,
+        "mean": 2168,
+        "max": 2693
+      },
+      "started": {
+        "min": 70,
+        "mean": 74.4,
+        "max": 86
+      },
+      "stranded_crops": {
+        "min": 32,
+        "mean": 35.3,
+        "max": 38
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 0.0,
+        "mean": 2.3333333333333335,
+        "max": 8.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.03333333333333333,
+        "max": 1.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.06666666666666667,
+        "max": 1.0
+      },
+      "consumed": {
+        "min": 2136.0,
+        "mean": 2229.7,
+        "max": 2388.0
+      },
+      "spoiled": {
+        "min": 1530.0,
+        "mean": 1636.7,
+        "max": 1779.0
+      },
+      "starvation_hours": {
+        "min": 1418.53066,
+        "mean": 1502.9919275741,
+        "max": 1545.683472778
+      },
+      "queue_hours": {
+        "min": 1433.438867222,
+        "mean": 1653.8240358332,
+        "max": 1766.891870833
+      },
+      "jobs": {
+        "min": 8.0,
+        "mean": 8.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 13.8,
+        "max": 16.0
+      },
+      "active_crops": {
+        "min": 37,
+        "mean": 43.166666666666664,
+        "max": 45
+      },
+      "attempts": {
+        "min": 10728,
+        "mean": 12325.2,
+        "max": 13636
+      },
+      "dead_owner_crops": {
+        "min": 36,
+        "mean": 41.166666666666664,
+        "max": 44
+      },
+      "harvested": {
+        "min": 30,
+        "mean": 36.1,
+        "max": 44
+      },
+      "inaccessible_mature": {
+        "min": 36,
+        "mean": 41.166666666666664,
+        "max": 44
+      },
+      "interruptions": {
+        "min": 1450,
+        "mean": 2459.233333333333,
+        "max": 3220
+      },
+      "labor_ms": {
+        "min": 586589676,
+        "mean": 679019987.6333333,
+        "max": 744370264
+      },
+      "matured": {
+        "min": 72,
+        "mean": 79.23333333333333,
+        "max": 87
+      },
+      "output_consumed": {
+        "min": 720,
+        "mean": 866.4,
+        "max": 1056
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 720,
+        "mean": 866.4,
+        "max": 1056
+      },
+      "resumptions": {
+        "min": 1447,
+        "mean": 2456.233333333333,
+        "max": 3220
+      },
+      "started": {
+        "min": 72,
+        "mean": 79.26666666666667,
+        "max": 87
+      },
+      "stranded_crops": {
+        "min": 36,
+        "mean": 40.13333333333333,
+        "max": 44
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 0.0,
+        "mean": 0.03333333333333333,
+        "max": 1.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.03333333333333333,
+        "max": 1.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 2136.0,
+        "mean": 2231.3,
+        "max": 2417.0
+      },
+      "spoiled": {
+        "min": 1530.0,
+        "mean": 1636.7,
+        "max": 1779.0
+      },
+      "starvation_hours": {
+        "min": 1430.048117222,
+        "mean": 1518.8971259907,
+        "max": 1603.630792222
+      },
+      "queue_hours": {
+        "min": 1433.438867222,
+        "mean": 1653.8240358332,
+        "max": 1766.891870833
+      },
+      "jobs": {
+        "min": 8.0,
+        "mean": 8.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 13.8,
+        "max": 16.0
+      },
+      "active_crops": {
+        "min": 37,
+        "mean": 43.166666666666664,
+        "max": 45
+      },
+      "attempts": {
+        "min": 10728,
+        "mean": 12339.633333333333,
+        "max": 13636
+      },
+      "dead_owner_crops": {
+        "min": 37,
+        "mean": 43.13333333333333,
+        "max": 45
+      },
+      "harvested": {
+        "min": 30,
+        "mean": 36.166666666666664,
+        "max": 44
+      },
+      "inaccessible_mature": {
+        "min": 37,
+        "mean": 43.13333333333333,
+        "max": 45
+      },
+      "interruptions": {
+        "min": 1450,
+        "mean": 2459.266666666667,
+        "max": 3220
+      },
+      "labor_ms": {
+        "min": 586589676,
+        "mean": 679883507.6333333,
+        "max": 744370264
+      },
+      "matured": {
+        "min": 72,
+        "mean": 79.3,
+        "max": 87
+      },
+      "output_consumed": {
+        "min": 720,
+        "mean": 868,
+        "max": 1056
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 720,
+        "mean": 868,
+        "max": 1056
+      },
+      "resumptions": {
+        "min": 1447,
+        "mean": 2456.266666666667,
+        "max": 3220
+      },
+      "started": {
+        "min": 72,
+        "mean": 79.33333333333333,
+        "max": 87
+      },
+      "stranded_crops": {
+        "min": 36,
+        "mean": 40.13333333333333,
+        "max": 44
+      }
+    },
+    "distinct_histories": 30
+  },
+  "branch_base_F": {
+    "36": {
+      "alive": {
+        "min": 46.0,
+        "mean": 48.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 1.0,
+        "mean": 1.5,
+        "max": 2.0
+      },
+      "at_f": {
+        "min": 26.0,
+        "mean": 27.0,
+        "max": 28.0
+      },
+      "consumed": {
+        "min": 1505.0,
+        "mean": 1638.4,
+        "max": 1769.0
+      },
+      "spoiled": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "starvation_hours": {
+        "min": 142.924444444,
+        "mean": 217.92119402756666,
+        "max": 293.064610278
+      },
+      "queue_hours": {
+        "min": 359.424443889,
+        "mean": 406.20368611116663,
+        "max": 453.239595
+      },
+      "jobs": {
+        "min": 4.0,
+        "mean": 6.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 26,
+        "mean": 27,
+        "max": 28
+      },
+      "attempts": {
+        "min": 2252,
+        "mean": 2315.3,
+        "max": 2380
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 8,
+        "mean": 8,
+        "max": 8
+      },
+      "labor_ms": {
+        "min": 134768002,
+        "mean": 138408313.6,
+        "max": 142056402
+      },
+      "matured": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "resumptions": {
+        "min": 8,
+        "mean": 8,
+        "max": 8
+      },
+      "started": {
+        "min": 26,
+        "mean": 27,
+        "max": 28
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "48": {
+      "alive": {
+        "min": 46.0,
+        "mean": 48.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 24.0,
+        "mean": 24.0,
+        "max": 24.0
+      },
+      "consumed": {
+        "min": 2152.0,
+        "mean": 2272.0333333333333,
+        "max": 2392.0
+      },
+      "spoiled": {
+        "min": 608.0,
+        "mean": 727.9666666666667,
+        "max": 848.0
+      },
+      "starvation_hours": {
+        "min": 142.924444444,
+        "mean": 217.92119402756666,
+        "max": 293.064610278
+      },
+      "queue_hours": {
+        "min": 359.467036667,
+        "mean": 406.2249825001667,
+        "max": 453.239595
+      },
+      "jobs": {
+        "min": 4.0,
+        "mean": 6.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 18,
+        "mean": 21,
+        "max": 24
+      },
+      "attempts": {
+        "min": 4060,
+        "mean": 4164.4,
+        "max": 4269
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 4,
+        "mean": 6,
+        "max": 8
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 20,
+        "mean": 22,
+        "max": 24
+      },
+      "labor_ms": {
+        "min": 242471336,
+        "mean": 248494313.6,
+        "max": 254499736
+      },
+      "matured": {
+        "min": 24,
+        "mean": 24,
+        "max": 24
+      },
+      "output_consumed": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 96,
+        "mean": 144,
+        "max": 192
+      },
+      "resumptions": {
+        "min": 16,
+        "mean": 18,
+        "max": 20
+      },
+      "started": {
+        "min": 26,
+        "mean": 27,
+        "max": 28
+      },
+      "stranded_crops": {
+        "min": 2,
+        "mean": 3,
+        "max": 4
+      }
+    },
+    "72": {
+      "alive": {
+        "min": 46.0,
+        "mean": 48.0,
+        "max": 50.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 6.0,
+        "max": 12.0
+      },
+      "at_f": {
+        "min": 26.0,
+        "mean": 30.0,
+        "max": 34.0
+      },
+      "consumed": {
+        "min": 2808.0,
+        "mean": 2888.0333333333333,
+        "max": 2968.0
+      },
+      "spoiled": {
+        "min": 608.0,
+        "mean": 727.9666666666667,
+        "max": 848.0
+      },
+      "starvation_hours": {
+        "min": 369.635555556,
+        "mean": 407.4791111111667,
+        "max": 445.389333333
+      },
+      "queue_hours": {
+        "min": 632.932242778,
+        "mean": 652.1472749073,
+        "max": 674.590563611
+      },
+      "jobs": {
+        "min": 4.0,
+        "mean": 6.0,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 22,
+        "mean": 25,
+        "max": 28
+      },
+      "attempts": {
+        "min": 6272,
+        "mean": 6678.8,
+        "max": 7087
+      },
+      "dead_owner_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "harvested": {
+        "min": 26,
+        "mean": 27,
+        "max": 28
+      },
+      "inaccessible_mature": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "interruptions": {
+        "min": 24,
+        "mean": 28.1,
+        "max": 32
+      },
+      "labor_ms": {
+        "min": 375042804,
+        "mean": 398894394.03333336,
+        "max": 422751205
+      },
+      "matured": {
+        "min": 26,
+        "mean": 27,
+        "max": 28
+      },
+      "output_consumed": {
+        "min": 576,
+        "mean": 616,
+        "max": 656
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 624,
+        "mean": 648,
+        "max": 672
+      },
+      "resumptions": {
+        "min": 24,
+        "mean": 28.1,
+        "max": 32
+      },
+      "started": {
+        "min": 48,
+        "mean": 52,
+        "max": 56
+      },
+      "stranded_crops": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      }
+    },
+    "120": {
+      "alive": {
+        "min": 18.0,
+        "mean": 19.033333333333335,
+        "max": 21.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 2.0,
+        "mean": 3.0,
+        "max": 4.0
+      },
+      "consumed": {
+        "min": 3496.0,
+        "mean": 3528.3333333333335,
+        "max": 3559.0
+      },
+      "spoiled": {
+        "min": 608.0,
+        "mean": 727.9666666666667,
+        "max": 848.0
+      },
+      "starvation_hours": {
+        "min": 1011.607721389,
+        "mean": 1052.0216384724,
+        "max": 1076.715555556
+      },
+      "queue_hours": {
+        "min": 790.941818611,
+        "mean": 883.959174602,
+        "max": 979.266465556
+      },
+      "jobs": {
+        "min": 5.0,
+        "mean": 6.6,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 19,
+        "mean": 23.5,
+        "max": 28
+      },
+      "attempts": {
+        "min": 9580,
+        "mean": 10491.633333333333,
+        "max": 11524
+      },
+      "dead_owner_crops": {
+        "min": 7,
+        "mean": 7.466666666666667,
+        "max": 8
+      },
+      "harvested": {
+        "min": 49,
+        "mean": 52.53333333333333,
+        "max": 57
+      },
+      "inaccessible_mature": {
+        "min": 7,
+        "mean": 7.466666666666667,
+        "max": 8
+      },
+      "interruptions": {
+        "min": 28,
+        "mean": 30.133333333333333,
+        "max": 33
+      },
+      "labor_ms": {
+        "min": 571836473,
+        "mean": 625958735.5333333,
+        "max": 687391832
+      },
+      "matured": {
+        "min": 61,
+        "mean": 68.53333333333333,
+        "max": 77
+      },
+      "output_consumed": {
+        "min": 1167,
+        "mean": 1256.3,
+        "max": 1368
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 1176,
+        "mean": 1260.8,
+        "max": 1368
+      },
+      "resumptions": {
+        "min": 28,
+        "mean": 30.133333333333333,
+        "max": 33
+      },
+      "started": {
+        "min": 68,
+        "mean": 76.03333333333333,
+        "max": 85
+      },
+      "stranded_crops": {
+        "min": 17,
+        "mean": 20.5,
+        "max": 24
+      }
+    },
+    "168": {
+      "alive": {
+        "min": 0.0,
+        "mean": 1.0,
+        "max": 2.0
+      },
+      "at_c": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "at_f": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "consumed": {
+        "min": 3496.0,
+        "mean": 3556.8333333333335,
+        "max": 3616.0
+      },
+      "spoiled": {
+        "min": 608.0,
+        "mean": 727.9666666666667,
+        "max": 848.0
+      },
+      "starvation_hours": {
+        "min": 1349.792375833,
+        "mean": 1373.3551597220667,
+        "max": 1397.064610278
+      },
+      "queue_hours": {
+        "min": 791.841818611,
+        "mean": 885.7554579352,
+        "max": 984.015965556
+      },
+      "jobs": {
+        "min": 5.0,
+        "mean": 6.6,
+        "max": 8.0
+      },
+      "delivered": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "active_crops": {
+        "min": 19,
+        "mean": 23.9,
+        "max": 28
+      },
+      "attempts": {
+        "min": 9868,
+        "mean": 10667.633333333333,
+        "max": 11524
+      },
+      "dead_owner_crops": {
+        "min": 17,
+        "mean": 22.9,
+        "max": 28
+      },
+      "harvested": {
+        "min": 51,
+        "mean": 53.53333333333333,
+        "max": 57
+      },
+      "inaccessible_mature": {
+        "min": 17,
+        "mean": 22.9,
+        "max": 28
+      },
+      "interruptions": {
+        "min": 28,
+        "mean": 30.133333333333333,
+        "max": 33
+      },
+      "labor_ms": {
+        "min": 588836473,
+        "mean": 636378735.5333333,
+        "max": 687391832
+      },
+      "matured": {
+        "min": 70,
+        "mean": 77.43333333333334,
+        "max": 85
+      },
+      "output_consumed": {
+        "min": 1224,
+        "mean": 1284.8,
+        "max": 1368
+      },
+      "output_spoiled": {
+        "min": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "produced": {
+        "min": 1224,
+        "mean": 1284.8,
+        "max": 1368
+      },
+      "resumptions": {
+        "min": 28,
+        "mean": 30.133333333333333,
+        "max": 33
+      },
+      "started": {
+        "min": 70,
+        "mean": 77.43333333333334,
+        "max": 85
+      },
+      "stranded_crops": {
+        "min": 19,
+        "mean": 23.9,
+        "max": 28
+      }
+    },
+    "distinct_histories": 30
+  }
+}

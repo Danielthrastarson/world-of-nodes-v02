@@ -23,11 +23,11 @@ A separately registered compact line yields voluntary communal deliveries, but
 self-only migration still provides better nourishment. No claim of sustainable
 settlement or validated efficient cooperation follows.
 
-F3 is blocked on [cultivated-crop ownership](docs/RENEWABLE_PRODUCTION_DECISION.md),
-an explicit property-rights decision reserved for the owner. Production is not
-implemented. Current normal kernel/policy has no farming, capital, construction,
-trade, money, authority, combat, graphics or multiplayer. All older study scopes
-and failures below remain historical evidence, not current unqualified defaults.
+F3 now passes under the owner's cultivator-owned crop/output decision, with no land
+title or inheritance. See [production evidence](research/farming/REPORT.md). Output
+requires local labor, growth time and harvest; finite-food controls remain unchanged.
+F4 is active. No capital, construction, trade, money, authority, combat, graphics or
+multiplayer is implemented. Older scope statements below remain historical.
 
 ## Authority and scope
 

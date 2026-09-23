@@ -1,0 +1,21 @@
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error: items after a test module
+   --> src/provisioning/policy/coherent.rs:451:1
+    |
+451 |   mod tests {
+    |   ^^^^^^^^^
+...
+526 | / pub(crate) fn cultivation_forecast(
+527 | |     o: &Observation,
+528 | |     sow: Time,
+529 | |     grow: Time,
+530 | |     harvest: Time,
+531 | | ) -> Option<Time> {
+    | |_________________^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.98.0/index.html#items_after_test_module
+    = note: `-D clippy::items-after-test-module` implied by `-D warnings`
+    = help: to override `-D warnings` add `#[allow(clippy::items_after_test_module)]`
+    = help: move the items to before the test module was defined
+
+error: could not compile `world-of-nodes` (lib test) due to 1 previous error

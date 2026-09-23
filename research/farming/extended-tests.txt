@@ -1,0 +1,19 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.75s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 11 tests
+test provisioning::farming::tests::local_observation_does_not_update_remote_crop_memory ... ok
+test provisioning::farming::tests::active_worker_death_does_not_finish_harvest_or_create_goods ... ok
+test provisioning::farming::tests::death_retains_mature_crop_and_other_agent_cannot_take_it ... ok
+test provisioning::farming::tests::interruption_retains_work_and_claim_but_releases_agent_action ... ok
+test provisioning::farming::tests::no_work_no_output_and_no_land_no_cultivation ... ok
+test provisioning::farming::tests::same_personal_history_same_decision_even_if_hidden_land_changes ... ok
+test provisioning::farming::tests::harvest_age_is_preserved_through_split_carry_and_owner_death ... ok
+test provisioning::farming::tests::ownership_begins_at_investment_excludes_others_and_ends_with_crop_not_land ... ok
+test provisioning::farming::tests::advance_partition_and_submission_order_do_not_change_crop_physics ... ok
+test provisioning::farming::tests::frozen_forecast_matches_executable_labor_growth_physiology ... ok
+test provisioning::farming::tests::food_farming_world_is_not_specific_to_node_labels ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 77 filtered out; finished in 1.39s
+

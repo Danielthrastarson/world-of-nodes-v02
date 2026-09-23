@@ -1,0 +1,15 @@
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error[E0599]: no method named `audit` found for struct `Goods` in the current scope
+   --> src/provisioning/shadow/static_cases.rs:147:24
+    |
+147 |             && w.goods.audit()
+    |                        ^^^^^ method not found in `Goods`
+    |
+   ::: src/provisioning/goods.rs:45:1
+    |
+ 45 | pub(crate) struct Goods {
+    | ----------------------- method `audit` not found for this struct
+
+For more information about this error, try `rustc --explain E0599`.
+error: could not compile `world-of-nodes` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
