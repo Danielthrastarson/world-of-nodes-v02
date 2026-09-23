@@ -4,6 +4,7 @@ pub mod coherence;
 pub mod congestion;
 pub mod decomposition;
 pub mod experiment;
+pub mod geography;
 mod goods;
 pub mod meals;
 pub mod persistence;

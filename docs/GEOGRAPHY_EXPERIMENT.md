@@ -33,3 +33,15 @@ Exploration may select an unknown node but cannot name its hidden resource as mo
 The same policy code must run every map, including depletion, empty branches and
 congestion. Negative outcomes pass when physically/local-causally explained.
 Do not adopt conditional meals or persistent pre-claim intentions in F1.
+
+## Proven defect, before matrix
+
+The unique-line renaming test failed at t=0: request600 became0 when the primary
+board was moved from numeric node0 to node2 without any physical change.
+`refresh_boards` and `Deliver` keyed the scalar fixture backlog to literal0.
+Repair: bind that existing scalar backlog to the first configured board instead.
+This preserves the existing single-primary-board initial-demand protocol; it does
+not add a new institution or distribute/backchannel shortages. All published
+fixtures have their primary board at0, so exact historical hashes must still match.
+Multiple boards continue their existing local shortage/claim mechanics; generalized
+independent persistent external backlogs are not introduced by this fix.

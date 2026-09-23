@@ -312,7 +312,7 @@ impl World {
                 self.goods
                     .move_part(batch, quantity, b.owner, Holder::Commons(node));
                 self.metrics.delivered += quantity;
-                if node == 0 {
+                if self.config.boards.first() == Some(&node) {
                     self.request_backlog = self.request_backlog.saturating_sub(quantity);
                 }
                 if let Some(board) = self.boards.iter_mut().find(|b| b.node == node) {
@@ -779,11 +779,13 @@ impl World {
                 })
                 .map(|b| b.quantity)
                 .sum();
-            let quantity = need.saturating_sub(accessible).max(if node == 0 {
-                self.request_backlog
-            } else {
-                0
-            });
+            let quantity =
+                need.saturating_sub(accessible)
+                    .max(if self.config.boards.first() == Some(&node) {
+                        self.request_backlog
+                    } else {
+                        0
+                    });
             let changed = self.boards[index].quantity != quantity;
             self.boards[index].quantity = quantity;
             self.boards[index].refreshed_at = self.now;
