@@ -1,0 +1,28 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.60s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 20 tests
+test provisioning::information::tests::cancellation_without_information_or_an_undertaking_rejects_without_panicking ... ok
+test provisioning::information::tests::capture_contains_exact_local_evidence_and_no_remote_observation ... ok
+test provisioning::information::tests::cancellation_distinguishes_explicit_choice_from_missing_report ... ok
+test provisioning::information::tests::actual_source_depletion_does_not_mutate_an_old_report ... ok
+test provisioning::information::tests::death_blocks_capture_and_handoff_without_inheriting_knowledge ... ok
+test provisioning::information::tests::equal_timestamp_local_evidence_is_retained ... ok
+test provisioning::information::tests::birth_extends_empty_information_state_without_parental_report_inheritance ... ok
+test provisioning::information::tests::older_report_does_not_overwrite_newer_direct_evidence ... ok
+test provisioning::information::tests::delivery_purpose_creates_no_route_and_cannot_track_an_absent_recipient ... ok
+test provisioning::information::tests::out_of_order_reports_relay_and_duplicates_never_freshen_the_observation ... ok
+test provisioning::information::tests::identical_physical_receiver_can_choose_a_different_route_after_local_receipt ... ok
+test provisioning::information::tests::real_travel_prevents_capture_and_communication_until_node_contact ... ok
+test provisioning::information::tests::remote_world_changes_do_not_refresh_the_report_or_receiver_choice ... ok
+test provisioning::information::tests::already_selected_local_report_handoff_is_not_replaced_by_barter ... ok
+test provisioning::information::tests::unheld_nonlocal_self_and_unknown_handoffs_have_no_receipt_side_effects ... ok
+test provisioning::information::tests::journal_queries_and_disabled_information_do_not_create_permissions_or_state ... ok
+test provisioning::information::tests::sorted_simultaneous_handoffs_reproduce_under_reversed_submission ... ok
+test provisioning::information::tests::active_report_provenance_clears_on_direct_capture_and_runtime_observation ... ok
+test provisioning::information::tests::receipt_and_delivery_start_obey_policy_time_under_irregular_caller_partitions ... ok
+test provisioning::information::tests::discarding_research_journal_does_not_change_courier_or_receiver_execution ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 271 filtered out; finished in 0.05s
+

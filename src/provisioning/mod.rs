@@ -13,6 +13,7 @@ pub mod formation;
 pub mod geography;
 mod goods;
 pub mod household;
+pub mod information;
 pub mod infrastructure;
 pub mod lifecycle;
 pub mod meals;
@@ -63,6 +64,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub information: bool,
     pub combat: Option<combat::Config>,
     pub formation: bool,
     pub military: Option<military::Config>,
@@ -100,6 +102,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            information: false,
             combat: None,
             formation: false,
             military: None,
@@ -335,6 +338,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) information: information::State,
     pub(crate) combat: combat::State,
     pub(crate) formation: formation::State,
     pub(crate) military: military::State,
@@ -520,7 +524,9 @@ impl World {
         let military = military::State::new(&config)?;
         let formation = formation::State::new(&config)?;
         let combat = combat::State::new(&config)?;
+        let information = information::State::new(&config);
         let mut w = Self {
+            information,
             combat,
             formation,
             military,
@@ -702,6 +708,7 @@ impl World {
     pub fn audit(&self) -> Result<(), String> {
         self.audit_formation()?;
         self.audit_combat()?;
+        self.audit_information()?;
         self.audit_military()?;
         self.audit_lifecycle()?;
         self.audit_social()?;

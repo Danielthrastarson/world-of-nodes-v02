@@ -4,6 +4,10 @@ use crate::provisioning::{World, authority};
 impl World {
     pub(crate) fn person_capabilities(&self, id: usize) -> Capabilities<'_> {
         Capabilities {
+            information: self
+                .config
+                .information
+                .then(|| &self.information.memories[id]),
             combat: self.config.combat.as_ref().map(|_| &self.combat.views[id]),
             formation: self.config.formation.then(|| &self.formation.views[id]),
             military: self

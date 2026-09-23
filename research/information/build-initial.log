@@ -1,0 +1,9 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+error[E0616]: field `config` of struct `world_of_nodes::provisioning::World` is private
+  --> src/bin/information_probe.rs:55:19
+   |
+55 |                 w.config,
+   |                   ^^^^^^ private field
+
+For more information about this error, try `rustc --explain E0616`.
+error: could not compile `world-of-nodes` (bin "information_probe") due to 1 previous error

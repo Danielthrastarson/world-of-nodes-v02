@@ -1,0 +1,10 @@
+case,arm,seed,recipient,report,source_node,observed_ms,received_ms,checkpoint_ms,age_at_receipt_h,checkpoint_lag_h,age_at_checkpoint_h,believed_legal_available,true_legal_available,quantity_error,quantity_differs,positive_belief_zero_true_availability
+short,on,0,1,0,2,0,7200000,7200000,2.0,0.0,2.0,60,60,0,0,0
+unknown_route,on,0,1,0,2,0,40920000,40920000,11.366666666666667,0.0,11.366666666666667,60,36,24,1,0
+hunger,on,0,1,0,2,0,7260000,7260000,2.0166666666666666,0.0,2.0166666666666666,60,41,19,1,0
+depleted,on,0,1,0,2,0,7200000,7200000,2.0,0.0,2.0,8,0,8,1,1
+path_on,on,0,1,0,2,0,6480000,6480000,1.8,0.0,1.8,60,60,0,0,0
+path_off,on,0,1,0,2,0,7200000,7200000,2.0,0.0,2.0,60,60,0,0,0
+matched_fresh,on,0,1,0,1,0,3600000,3600000,1.0,0.0,1.0,8,8,0,0,0
+matched_depleted,on,0,1,0,1,0,3600000,3600000,1.0,0.0,1.0,8,0,8,1,1
+matched_spoiled,on,0,1,0,1,0,3600000,3600000,1.0,0.0,1.0,0,0,0,0,0

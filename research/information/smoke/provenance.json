@@ -1,0 +1,74 @@
+{
+  "arms": [
+    "off",
+    "on"
+  ],
+  "binary_sha256": "11e0fc9179e758811dd566a38dfc82dfb36fcecdda3ee38248f03cc5b62df7d8",
+  "cases": [
+    "short",
+    "long",
+    "congestion",
+    "unknown_route",
+    "fatigue",
+    "hunger",
+    "absent",
+    "death",
+    "depleted",
+    "path_on",
+    "path_off",
+    "matched_fresh",
+    "matched_depleted",
+    "matched_spoiled"
+  ],
+  "duration_h": 24,
+  "fixture_source_sha256": "2d40d1cb46273fdd4908927dbba3806fd14563bbaf6f730dc1a5fb8fefc15786",
+  "knowledge": "timestamped source observation remains stale; no future/remote truth supplied",
+  "live_cases": [
+    "short",
+    "long",
+    "congestion",
+    "unknown_route",
+    "fatigue",
+    "hunger",
+    "absent",
+    "death",
+    "depleted",
+    "path_on",
+    "path_off"
+  ],
+  "live_intervention": "on: controlled seeded courier undertaking; off: no undertaking. Recipient deliberation is held by research actor filter until6h in both arms, while ordinary physiology continues. Difference includes courier labor/movement, not solely receipt of information.",
+  "matched_cases": [
+    "matched_fresh",
+    "matched_depleted",
+    "matched_spoiled"
+  ],
+  "matched_intervention": "Identical real physical courier journey followed by legal local report handoff versus no handoff before free autonomy; compare the matched recipient choice.",
+  "runner_sha256": "9aba0484ed308a777cc17e6a94c962ee0c392a9ed14bb47f17ecd6169a11011a",
+  "runs": 28,
+  "seeds": [
+    0
+  ],
+  "source_revision": "2b00dd974a294f589af7be78995a59b58d515d76",
+  "subprocess_timeout_s": 300,
+  "validation": "probe runs kernel audit before emitting each completed result; zero FIFO overtakes required",
+  "working_tree_status_at_start": [
+    " M docs/ROADMAP.md",
+    " M src/provisioning/experiment.rs",
+    " M src/provisioning/lifecycle/adapter.rs",
+    " M src/provisioning/mod.rs",
+    " M src/provisioning/person.rs",
+    " M src/provisioning/person/adapter.rs",
+    " M src/provisioning/person/tests.rs",
+    " M src/provisioning/policy.rs",
+    " M src/provisioning/runtime.rs",
+    "?? docs/INFORMATION_EXECUTION_PLAN.md",
+    "?? docs/INFORMATION_EXPERIMENT.md",
+    "?? research/information/",
+    "?? scripts/analyze_information.py",
+    "?? scripts/run_information.py",
+    "?? scripts/verify_information.py",
+    "?? src/bin/information_probe.rs",
+    "?? src/provisioning/information.rs",
+    "?? src/provisioning/information/"
+  ]
+}

@@ -141,6 +141,30 @@ impl World {
         };
         self.military_action(id, &intent);
         match intent {
+            Intent::ShareReport { report, recipient } => {
+                self.receive_report(id, recipient, report)?
+            }
+            Intent::CancelReportDelivery => {
+                let memory = self
+                    .information
+                    .memories
+                    .get(id)
+                    .ok_or("information institution disabled")?;
+                let undertaking = memory
+                    .delivery
+                    .as_ref()
+                    .ok_or("no report delivery undertaking")?;
+                let reason = if !memory.reports.contains_key(&undertaking.report) {
+                    "REPORT_NOT_HELD"
+                } else if node == undertaking.rendezvous
+                    && !self.node_view(node).people.contains(&undertaking.recipient)
+                {
+                    "RENDEZVOUS_RECIPIENT_ABSENT"
+                } else {
+                    "EXPLICIT_CANCEL"
+                };
+                self.cancel_report_delivery(id, reason);
+            }
             Intent::Strike { target } => self.begin_strike(id, target)?,
             Intent::RaidStock { batch } => self.begin_raid(id, batch)?,
             Intent::Volunteer { request } => self.volunteer(id, request)?,
@@ -922,6 +946,7 @@ impl World {
                     }
                     self.goods.move_part(batch, q, owner, holder);
                 }
+                self.cancel_report_delivery(id, "DEATH");
                 self.capital_death(id);
                 self.infrastructure.active_trips.remove(&id);
                 self.paths.active.remove(&id);
@@ -1180,6 +1205,11 @@ impl World {
                     .memory
                     .nodes
                     .insert(local.node, local.clone());
+                if self.config.information {
+                    self.information.memories[id]
+                        .reported_nodes
+                        .remove(&local.node);
+                }
             }
             let rng_before = self.agents[id].rng;
             let a = &mut self.agents[id];
@@ -1193,6 +1223,10 @@ impl World {
                 self.acceptance.record(&o, &d, audit);
             }
             let capabilities = person::Capabilities {
+                information: self
+                    .config
+                    .information
+                    .then(|| &self.information.memories[id]),
                 combat: self.config.combat.as_ref().map(|_| &self.combat.views[id]),
                 formation: self.config.formation.then(|| &self.formation.views[id]),
                 military: self
@@ -1260,7 +1294,11 @@ impl World {
             if let Some(audit) = selected.audit {
                 self.acceptance.record(&o, &selected.decision, audit);
             }
-            let decision = if self.is_child(id)
+            let selected_report_delivery = self.config.information
+                && self.information.memories[id].delivery.is_some()
+                && selected.decision.reason.starts_with("report ");
+            let decision = if selected_report_delivery
+                || self.is_child(id)
                 || self.biology(id).is_some_and(|b| b.undertaking.is_some())
                 || matches!(selected.decision.intent, Intent::Reproduce { .. })
             {

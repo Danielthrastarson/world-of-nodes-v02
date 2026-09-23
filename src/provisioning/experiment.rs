@@ -156,6 +156,12 @@ impl World {
             "{:?}|{:?}|{:?}|{:?}|{:?}",
             self.now, self.agents, self.goods, self.boards, self.metrics
         );
+        if self.config.information {
+            text.push_str(&format!(
+                "|information={:?}|{}",
+                self.information.memories, self.information.next_report
+            ));
+        }
         if self.config.combat.is_some() {
             text.push_str(&format!(
                 "|combat={:?}|{:?}|{:?}",

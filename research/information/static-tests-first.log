@@ -1,0 +1,178 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 18.31s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 14 tests
+test provisioning::information::tests::capture_contains_exact_local_evidence_and_no_remote_observation ... ok
+test provisioning::information::tests::equal_timestamp_local_evidence_is_retained ... ok
+test provisioning::information::tests::death_blocks_capture_and_handoff_without_inheriting_knowledge ... ok
+test provisioning::information::tests::out_of_order_reports_relay_and_duplicates_never_freshen_the_observation ... ok
+test provisioning::information::tests::actual_source_depletion_does_not_mutate_an_old_report ... ok
+test provisioning::information::tests::older_report_does_not_overwrite_newer_direct_evidence ... ok
+test provisioning::information::tests::real_travel_prevents_capture_and_communication_until_node_contact ... ok
+test provisioning::information::tests::identical_physical_receiver_can_choose_a_different_route_after_local_receipt ... ok
+test provisioning::information::tests::delivery_purpose_creates_no_route_and_cannot_track_an_absent_recipient ... ok
+test provisioning::information::tests::birth_extends_empty_information_state_without_parental_report_inheritance ... ok
+test provisioning::information::tests::unheld_nonlocal_self_and_unknown_handoffs_have_no_receipt_side_effects ... ok
+test provisioning::information::tests::sorted_simultaneous_handoffs_reproduce_under_reversed_submission ... ok
+test provisioning::information::tests::remote_world_changes_do_not_refresh_the_report_or_receiver_choice ... ok
+test provisioning::information::tests::journal_queries_and_disabled_information_do_not_create_permissions_or_state ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 271 filtered out; finished in 0.00s
+
+     Running unittests src/bin/acceptance_probe.rs (target/debug/deps/acceptance_probe-2ca54d01afaf5c57)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/affect_probe.rs (target/debug/deps/affect_probe-de1c7666bd71a1b2)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/authority_probe.rs (target/debug/deps/authority_probe-2429476e8d2a31a0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/capital_probe.rs (target/debug/deps/capital_probe-40a29992827b2253)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/capital_witness.rs (target/debug/deps/capital_witness-6b29f3ecc0ec6207)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.00s
+
+     Running unittests src/bin/coherence_probe.rs (target/debug/deps/coherence_probe-1d53807bc18ea1ad)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/combat_probe.rs (target/debug/deps/combat_probe-c84d0a210ede7c07)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/congestion_probe.rs (target/debug/deps/congestion_probe-5bf7ef8400f2de52)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/delivery_probe.rs (target/debug/deps/delivery_probe-99ed104647872446)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/farming_probe.rs (target/debug/deps/farming_probe-d42b431091921265)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/farming_witness.rs (target/debug/deps/farming_witness-3e7586a587b6dc7d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/formation_probe.rs (target/debug/deps/formation_probe-1bca8704cefd5c11)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/geography_probe.rs (target/debug/deps/geography_probe-c074b5e48120b8ba)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/household_probe.rs (target/debug/deps/household_probe-e9881d2aa886cafa)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/infrastructure_probe.rs (target/debug/deps/infrastructure_probe-7f9f6617545d9254)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/lifecycle_probe.rs (target/debug/deps/lifecycle_probe-266a30f60c16634c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/meal_probe.rs (target/debug/deps/meal_probe-a63b1d546b7f1a8d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/mobilization_probe.rs (target/debug/deps/mobilization_probe-7f30be94045805aa)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/paths_probe.rs (target/debug/deps/paths_probe-2863c37f2b80031d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/persistence_probe.rs (target/debug/deps/persistence_probe-706e2353a8e0aec9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/provisioning_foundation_probe.rs (target/debug/deps/provisioning_foundation_probe-1432fad4a6bc3de3)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/provisioning_probe.rs (target/debug/deps/provisioning_probe-0634b1464b1be6ca)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/settlement_probe.rs (target/debug/deps/settlement_probe-98ff91c4dee104c1)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/shadow_probe.rs (target/debug/deps/shadow_probe-21dea276f006b051)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/transport_probe.rs (target/debug/deps/transport_probe-b08817f9e4add97b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+
+     Running tests/foundation.rs (target/debug/deps/foundation-bb4609be9a2527d0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 10 filtered out; finished in 0.00s
+

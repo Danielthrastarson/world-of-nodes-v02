@@ -16,6 +16,11 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    ShareReport {
+        report: u64,
+        recipient: usize,
+    },
+    CancelReportDelivery,
     Strike {
         target: usize,
     },
@@ -463,6 +468,7 @@ pub(crate) fn decide_with_capabilities(
     capabilities: super::person::Capabilities<'_>,
 ) -> Decision {
     let super::person::Capabilities {
+        information,
         life,
         military,
         formation,
@@ -552,6 +558,11 @@ pub(crate) fn decide_with_capabilities(
     }
     if let Some(view) = military
         && let Some(d) = super::military::consider(o, m, view)
+    {
+        return d;
+    }
+    if let Some(memory) = information
+        && let Some(d) = super::information::consider(o, m, memory)
     {
         return d;
     }

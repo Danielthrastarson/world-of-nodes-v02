@@ -397,6 +397,11 @@ impl World {
             matured: false,
         });
         self.lifecycle.views.push(View::default());
+        if self.config.information {
+            self.information
+                .memories
+                .push(super::super::information::Memory::default());
+        }
         if self.config.combat.is_some() {
             self.combat
                 .bodies
