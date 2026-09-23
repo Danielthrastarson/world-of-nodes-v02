@@ -66,3 +66,5 @@ F5 passed: [420-run capital evidence](../research/capital/REPORT.md), [registere
 F6 passed: owner selected Commons(0) crossings with public community access. [Rights](INFRASTRUCTURE_RIGHTS_DECISION.md), [registered study](INFRASTRUCTURE_EXPERIMENT.md), [future ruler language](PLAYER_ACTION_LANGUAGE.md). The earlier access fork is resolved.
 
 F6 evidence: [420-run shared-crossing study](../research/infrastructure/REPORT.md). Construction and movement pass; unknown-resource inaction, incomplete inputs and fatal congestion remain. Player verbs are documentation only. F7 remains the next dependency gate; no traffic-generated paths or ruler interface are included in F6.
+
+Long-term UX constraint: [stable compositional controls and typed commands](PLAYER_ACTION_LANGUAGE.md). Preserve Q/W/E/R semantic stability, contextual 1–4 choices, player confirmation, information boundaries and kernel authority. Optional Jev ranking does not own command semantics. Exact bindings await play-testing; Jev and final UI implementation remain deferred, with no change to current milestone scope.

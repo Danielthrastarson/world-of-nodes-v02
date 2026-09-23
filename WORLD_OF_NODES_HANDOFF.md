@@ -112,6 +112,8 @@ Low geometric complexity, high physical complexity is the long-term direction. P
 
 Proposed dependency direction: decision policies read observations and submit intents to the world; world advances validated actions and optional physics; observation projection produces snapshots; renderer reads snapshots. Renderer input becomes commands for a future simulation tick. Rendering never advances the world or mutates resources. Fixed simulation ticks share one clock; rendering may interpolate known positions without executing extra actions.
 
+Long-term player control follows the [typed, compositional action language](docs/PLAYER_ACTION_LANGUAGE.md): stable top-level Q/W/E/R semantic categories, contextual 1–4 choices and simple mouse selection/targeting. Exact bindings remain provisional. Optional Jev assistance may rank permitted contextual actions using player knowledge; it cannot redefine core verbs, create semantics, reveal hidden truth or execute unconfirmed commands. This is a future UX architecture constraint, not authorization to implement Jev or the final UI during current simulation milestones.
+
 ## Visual truth and information
 
 - A visible person has a real agent ID. Army formations eventually display actual soldiers at actual positions.
