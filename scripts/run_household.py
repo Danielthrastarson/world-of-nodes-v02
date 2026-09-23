@@ -2,8 +2,10 @@
 """B1 immutable paired experiments. Policy never sees these case labels or analyses."""
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-import csv,gzip,json,subprocess,sys
+import csv,gzip,hashlib,json,subprocess,sys
 root=Path(sys.argv[1]);root.mkdir(parents=True,exist_ok=False)
+revision=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+binary_hash=hashlib.sha256(Path('target/release/household_probe').read_bytes()).hexdigest()
 cases=['colocated','self_conflict','multiple','near_known','far_known','unknown','caregiver_death','nonkin','farming','farming_distant','construction']
 def run(task):
     case,arm=task;dest=root/f'{case}_{arm}'
@@ -19,4 +21,4 @@ def run(task):
     print(case,arm,result['food_transferred']['mean'],flush=True)
     return f'{case}_{arm}',result
 with ThreadPoolExecutor(max_workers=3) as pool: results=dict(pool.map(run,[(c,a) for c in cases for a in ['off','on']]))
-with (root/'summary.json').open('x') as f:json.dump({'source_revision':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'paired_seeds':list(range(30)),'runs':660,'results':results},f,indent=2);f.write('\n')
+with (root/'summary.json').open('x') as f:json.dump({'source_revision':revision,'binary_sha256':binary_hash,'paired_seeds':list(range(30)),'runs':660,'results':results},f,indent=2);f.write('\n')
