@@ -1,0 +1,10 @@
+[package]
+name = "world-of-nodes-client"
+version = "0.1.0"
+edition = "2024"
+publish = false
+default-run = "world-of-nodes-client"
+
+[dependencies]
+world-of-nodes = { path = ".." }
+macroquad = { version = "=0.4.16", default-features = false }

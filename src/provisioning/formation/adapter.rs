@@ -62,6 +62,7 @@ impl World {
         );
     }
     pub(crate) fn unit_release(&mut self, id: usize, reason: &str) {
+        self.playable_retreats.remove(&id);
         if !self.config.formation {
             return;
         }
@@ -232,6 +233,7 @@ impl World {
                 format!("serial={serial}; physical state only"),
             );
         }
+        self.refresh_playable_retreats();
     }
     pub(crate) fn integrate_formation(&mut self, dt: Time) {
         if !self.config.formation {

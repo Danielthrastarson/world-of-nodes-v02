@@ -108,6 +108,7 @@ fn composed_capabilities_use_personal_history_not_remote_truth() {
         observation: &o,
         beliefs: &m,
         capabilities: Capabilities {
+            withdrawing: false,
             information: None,
             commands: None,
             formation: None,

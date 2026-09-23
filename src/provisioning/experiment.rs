@@ -180,6 +180,9 @@ impl World {
                 self.formation.units, self.formation.views, self.formation.next_order
             ));
         }
+        if !self.playable_retreats.is_empty() {
+            text.push_str(&format!("|playable_retreats={:?}", self.playable_retreats));
+        }
         if self.config.military.is_some() {
             text.push_str(&format!(
                 "|military={:?}|{:?}",

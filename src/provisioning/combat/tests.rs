@@ -63,6 +63,38 @@ fn target_must_remain_local_and_contact_capable() {
     assert!(!matches!(w.agents[0].action, Action::Strike { .. }));
 }
 #[test]
+fn contact_loss_has_a_kernel_boundary_without_any_playable_order() {
+    let mut once = manual();
+    once.apply_intents(vec![(6, Intent::Strike { target: 0 })])
+        .unwrap();
+    once.apply_intents(vec![(
+        0,
+        Intent::Travel {
+            edge: 0,
+            target: 0,
+            food: false,
+        },
+    )])
+    .unwrap();
+    assert_eq!(once.agents[0].action, Action::Travel);
+    assert!(once.playable_retreats.is_empty());
+    let start = once.now;
+    let mut sampled = once.clone();
+    once.advance_to(start + 15 * MINUTE).unwrap();
+    for minute in 1..=15 {
+        sampled.advance_to(start + minute * MINUTE).unwrap();
+    }
+    let invalidated = once
+        .events
+        .iter()
+        .find(|event| event.agent == Some(6) && event.kind == "StrikeInvalidated")
+        .unwrap();
+    assert_eq!(invalidated.at, start + 1);
+    assert_eq!(once.state_hash(), sampled.state_hash());
+    assert_eq!(once.event_hash(), sampled.event_hash());
+    assert_eq!(once.body(0).unwrap().injuries, 0);
+}
+#[test]
 fn theft_is_timed_conserved_age_preserving_and_capacity_limited() {
     let mut w = research::fixture("local", false, true, 0).unwrap();
     w.config.autonomous = false;

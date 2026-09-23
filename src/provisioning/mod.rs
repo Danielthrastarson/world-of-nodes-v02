@@ -24,6 +24,8 @@ pub mod military;
 pub mod paths;
 pub mod persistence;
 pub mod person;
+/// Optional headless playable-session and read-only presentation boundary.
+pub mod playable;
 mod policy;
 pub mod reasoning;
 mod runtime;
@@ -348,6 +350,8 @@ pub struct World {
     pub(crate) commands: commands::State,
     pub(crate) combat: combat::State,
     pub(crate) formation: formation::State,
+    /// Opt-in locally received retreat orders. Empty in all historical fixtures.
+    pub(crate) playable_retreats: BTreeMap<usize, u64>,
     pub(crate) military: military::State,
     pub(crate) lifecycle: lifecycle::State,
     pub(crate) social: social::State,
@@ -541,6 +545,7 @@ impl World {
             commands,
             combat,
             formation,
+            playable_retreats: BTreeMap::new(),
             military,
             lifecycle,
             social,

@@ -485,6 +485,7 @@ pub(crate) fn decide_with_capabilities(
         military,
         formation,
         combat,
+        withdrawing,
         cultivation: farm,
         capital,
         public_works: infrastructure,
@@ -564,7 +565,7 @@ pub(crate) fn decide_with_capabilities(
         return d;
     }
     if let Some(view) = combat
-        && let Some(d) = super::combat::consider(o, m, view)
+        && let Some(d) = super::combat::consider(o, m, view, withdrawing)
     {
         return d;
     }

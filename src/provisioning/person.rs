@@ -13,6 +13,8 @@ pub struct Capabilities<'a> {
     pub information: Option<&'a super::information::Memory>,
     pub commands: Option<&'a super::commands::Memory>,
     pub combat: Option<&'a super::combat::View>,
+    /// The person's own locally received retreat order, never unit-wide truth.
+    pub withdrawing: bool,
     pub formation: Option<&'a super::formation::View>,
     pub military: Option<&'a super::military::Memory>,
     pub life: Option<&'a super::lifecycle::View>,

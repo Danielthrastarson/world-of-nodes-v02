@@ -40,6 +40,21 @@ impl World {
             None
         }
     }
+    /// Losing contact is a kernel event, not an observer-polling event. A target
+    /// can depart after the boundary's strike resolution, during action/admission.
+    /// Cancel any now-invalid strike at the next clock instant, not at whichever
+    /// future checkpoint a renderer or research observer happens to request.
+    pub(crate) fn contact_next_boundary(&self, next: Time) -> Time {
+        if self.config.combat.is_some()
+            && self.agents.iter().any(|person| {
+                matches!(person.action, Action::Strike { target, .. } if !self.can_contact(person.id, target))
+            })
+        {
+            next.min(self.now + 1)
+        } else {
+            next
+        }
+    }
     fn can_contact(&self, a: usize, b: usize) -> bool {
         let Some(c) = &self.config.combat else {
             return false;

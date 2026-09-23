@@ -573,7 +573,7 @@ impl World {
         }
     }
     pub(super) fn next_time(&self, target: Time) -> Time {
-        let mut next = self.command_next_boundary(self.now, target);
+        let mut next = self.contact_next_boundary(self.command_next_boundary(self.now, target));
         for v in &self.military.memories {
             if let Some(u) = &v.undertaking {
                 let t = u.until.unwrap_or(u.request.expires);
@@ -1223,6 +1223,7 @@ impl World {
                 }
             }
             let rng_before = self.agents[id].rng;
+            let withdrawing = self.playable_withdrawing(id);
             let a = &mut self.agents[id];
             if self.transport_research.audit_forecasts {
                 let (d, audit) = policy::audit_meals(
@@ -1234,6 +1235,7 @@ impl World {
                 self.acceptance.record(&o, &d, audit);
             }
             let capabilities = person::Capabilities {
+                withdrawing,
                 commands: self.config.commands.then(|| &self.commands.memories[id]),
                 information: self
                     .config

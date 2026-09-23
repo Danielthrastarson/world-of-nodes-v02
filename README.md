@@ -2,6 +2,23 @@
 
 **The simulation is the source of the graphics.** A causal kingdom simulation with primitive rendering of real agents, stocks, movement, work, and observed state.
 
+The first native playable client is now available over the existing headless kernel.
+
+```sh
+cargo run --release --manifest-path client/Cargo.toml
+```
+
+Start paused: **W → 1 → click crossing → Enter**, then **Space**. Select **UNIT 0**
+for Move/Attack/Hold/Withdraw. **Q** opens observations; **F2** explicitly toggles
+debug truth. Normal play uses the embodied ruler's local and dated knowledge.
+
+[Controls and limitations](docs/PLAYABLE_CLIENT.md) ·
+[Playable evidence](research/playable/REPORT.md) ·
+[Copyable report](research/playable/HANDOFF.txt).
+
+The following paragraphs preserve the earlier foundation history; current playable
+scope is recorded separately in the roadmap and report.
+
 Current work follows the [gated foundation roadmap](docs/ROADMAP.md). F0–F12, B0–B3 and F13's headless command-chain gate have passed their registered scopes. [F13B evidence](research/command-chain/REPORT.md) shows a sovereign order physically reaching an accepted steward office, becoming a Person obligation and causing a voluntary public crossing with mixed household consequences. This is not final UI or autonomous government. Money remains unjustified and compulsory service unauthorized. Earlier reports retain their historical policies and negative findings.
 
 [Latest copyable handoff](research/command-chain/HANDOFF.txt) ·

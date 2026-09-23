@@ -100,7 +100,12 @@ impl State {
         })
     }
 }
-pub(crate) fn consider(o: &Observation, m: &PolicyMemory, v: &View) -> Option<Decision> {
+pub(crate) fn consider(
+    o: &Observation,
+    m: &PolicyMemory,
+    v: &View,
+    withdrawing: bool,
+) -> Option<Decision> {
     let choose = |intent, reason: &str| Decision {
         intent,
         reason: format!("contact: {reason}"),
@@ -110,6 +115,11 @@ pub(crate) fn consider(o: &Observation, m: &PolicyMemory, v: &View) -> Option<De
             Intent::Wait,
             "incapacitated; care and accessible eating remain physical",
         ));
+    }
+    // A personally received withdrawal lets the ordinary formation undertaking
+    // attempt movement. It does not erase hostile contact or prevent enemy hits.
+    if withdrawing && v.serving && v.raid.is_none() {
+        return None;
     }
     let active =
         v.raid.as_ref().is_some_and(|r| o.now >= r.begins) || (v.protect.is_some() && v.serving);
