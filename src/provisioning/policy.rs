@@ -453,6 +453,7 @@ pub(crate) fn decide_with_capabilities(
     let super::person::Capabilities {
         life,
         military,
+        formation,
         cultivation: farm,
         capital,
         public_works: infrastructure,
@@ -513,6 +514,11 @@ pub(crate) fn decide_with_capabilities(
     }
     if let Some(view) = life
         && let Some(d) = super::lifecycle::consider(o, view)
+    {
+        return d;
+    }
+    if let Some(view) = formation
+        && let Some(d) = super::formation::consider(o, m, view)
     {
         return d;
     }

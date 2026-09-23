@@ -8,6 +8,7 @@ pub mod congestion;
 pub mod decomposition;
 pub mod experiment;
 pub mod farming;
+pub mod formation;
 pub mod geography;
 mod goods;
 pub mod household;
@@ -61,6 +62,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub formation: bool,
     pub military: Option<military::Config>,
     pub lifecycle: Option<lifecycle::Config>,
     pub social: Option<social::Config>,
@@ -96,6 +98,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            formation: false,
             military: None,
             lifecycle: None,
             social: None,
@@ -319,6 +322,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) formation: formation::State,
     pub(crate) military: military::State,
     pub(crate) lifecycle: lifecycle::State,
     pub(crate) social: social::State,
@@ -500,7 +504,9 @@ impl World {
         let social = social::State::new(&config);
         let lifecycle = lifecycle::State::new(&config)?;
         let military = military::State::new(&config)?;
+        let formation = formation::State::new(&config)?;
         let mut w = Self {
+            formation,
             military,
             lifecycle,
             social,
@@ -676,6 +682,7 @@ impl World {
         }
     }
     pub fn audit(&self) -> Result<(), String> {
+        self.audit_formation()?;
         self.audit_military()?;
         self.audit_lifecycle()?;
         self.audit_social()?;

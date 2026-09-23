@@ -1,0 +1,15 @@
+# F11B physical units
+
+`formation::Unit` is an organizational roster, muster node and latest issued objective. It contains no body, goods, nutrition, pathfinder, autonomous brain or authoritative position. Persons remain the only moving actors. The graph supports edge progress but not battlefield width; `GatherOnGraph` is the only desired-formation representation. Line/column geometry is deferred.
+
+`World::issue_unit_move(unit, issue_node, target)` is a local research/institution entry point, not a remote player API. It creates one serialled Move order and delivers a personal copy only to currently serving members at the issue node. A roster entry alone does not qualify. An absent member neither receives a new order nor learns the unit's current objective/position. A late recruit can remain at muster without knowledge of the departed unit's order.
+
+The received order is a persistent personal undertaking exposed through B0 `Person::Capabilities`. The pure evaluator receives only the person's observation, memories and received order. Route planning reuses the corrected estimator and remembered graph. Unit snapshots/global membership counts never enter decisions.
+
+Existing eating, critical survival, recovery, care and reproduction arbitrate before this undertaking. A temporary interruption retains membership and the order; ordinary civilian opportunity changes cannot erase it. The service term still ends, and explicit withdrawal/death remains possible. Ending service cancels a queued unit journey, but never snaps an atomic traveler to a node. An expired order cannot issue another military movement action. This is an explicit organizational commitment rule authorized for F11B, not retroactive adoption of stronger civilian plan commitment.
+
+The existing `Intent::Travel` and physical scheduler perform every step. Soldiers get no capacity priority, special speed, free supply or other owners' carts. At their personally received target they use existing duty actions. Household and social histories, biological identity and ownership are untouched. Birth extends empty personal unit state and does not inherit service or orders.
+
+Roster history distinguishes enlisted and ever assembled. Live counts distinguish active, moving, queued, recovering, at muster/target and no received order. Dead/released entries remain. Derived node concentration, exact coincident edge-position concentration, off-cluster count, target proximity, coarse graph separation and arrival-time spread are measurements, never combat stats. The exact physical-position measurement is research truth and is not available to members. No casualty/protection mechanism exists in F11B.
+
+Old worlds leave `Config::formation=false`; their authoritative physical state/event hashes remain reproducible. Opting in records Unit state in state hashes. Observer counters do not choose actions or consume RNG. The paired harness reports one local Move versus no movement order after the same autonomous voluntary muster; this isolates movement, not the whole cost of mobilization already studied in F11A.

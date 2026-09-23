@@ -32,6 +32,7 @@ impl World {
         self.resolve_reproduction();
         self.admit();
         self.refresh_authority();
+        self.refresh_formation();
         self.audit()
     }
     pub(super) fn cancel_action(&mut self, id: usize, why: &str) {
@@ -222,6 +223,9 @@ impl World {
                 self.metrics.consumed += quantity;
                 if self.military_role(id).is_some() {
                     self.military.journal.food += quantity;
+                    if self.config.formation {
+                        self.formation.journal.member_food += quantity;
+                    }
                 }
                 if b.owner == Owner::Commons(0) && self.carried_by(id, b.holder) {
                     self.diagnostics.cargo_eaten(id, quantity);
@@ -621,6 +625,7 @@ impl World {
     }
     fn integrate(&mut self, to: Time) {
         let dt = to - self.now;
+        self.integrate_formation(dt);
         self.integrate_military(dt);
         self.integrate_lifecycle(dt);
         self.integrate_household(dt);
@@ -978,6 +983,7 @@ impl World {
         }
         self.admit();
         self.refresh_authority();
+        self.refresh_formation();
         if [36 * HOUR, 48 * HOUR, 72 * HOUR].contains(&self.now) {
             self.metrics.survivors.insert(
                 self.now,
@@ -1135,6 +1141,7 @@ impl World {
                 self.acceptance.record(&o, &d, audit);
             }
             let capabilities = person::Capabilities {
+                formation: self.config.formation.then(|| &self.formation.views[id]),
                 military: self
                     .config
                     .military
@@ -1208,6 +1215,7 @@ impl World {
             } else {
                 self.barter_decision(id, &o, selected.decision)
             };
+            self.record_unit_choice(id, &decision);
             self.record_military_choice(id, &o, &decision);
             self.record_lifecycle_choice(id, &o, &decision);
             self.record_social_choice(id, &o, &decision);

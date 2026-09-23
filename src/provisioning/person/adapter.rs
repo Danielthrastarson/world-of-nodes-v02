@@ -4,6 +4,7 @@ use crate::provisioning::{World, authority};
 impl World {
     pub(crate) fn person_capabilities(&self, id: usize) -> Capabilities<'_> {
         Capabilities {
+            formation: self.config.formation.then(|| &self.formation.views[id]),
             military: self
                 .config
                 .military

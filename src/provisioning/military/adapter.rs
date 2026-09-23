@@ -77,6 +77,16 @@ impl World {
             arrived_at: None,
             until: None,
         });
+        self.unit_enlist(
+            id,
+            request,
+            self.military.memories[id]
+                .undertaking
+                .as_ref()
+                .unwrap()
+                .request
+                .muster,
+        );
         self.military.journal.add("volunteers", id);
         self.log(
             Some(id),
@@ -120,6 +130,7 @@ impl World {
         slot.until = Some(self.now + slot.request.duration);
         self.agents[id].goal = None;
         self.agents[id].action = Action::MilitaryDuty { unit: u.request.id };
+        self.unit_assemble(id);
         self.military.journal.add("arrivals", id);
         self.log(
             Some(id),
@@ -141,7 +152,7 @@ impl World {
             .and_then(|m| m.undertaking.as_ref())
             .ok_or("not serving")?;
         if u.arrived_at.is_none()
-            || self.agents[id].location != Location::Node(u.request.muster)
+            || self.agents[id].location != Location::Node(self.duty_node(id, u.request.muster))
             || u.until.is_none_or(|t| t <= self.now)
         {
             return Err("no current local service".into());
@@ -161,12 +172,13 @@ impl World {
         if let Some(u) = v.undertaking.take() {
             // Ending an office/role must not interrupt unrelated embodied recovery.
             if matches!(self.agents[id].action, Action::MilitaryDuty { .. })
-                || (u.arrived_at.is_none()
+                || ((u.arrived_at.is_none() || self.has_unit_order(id))
                     && matches!(self.agents[id].action, Action::Queued { .. }))
             {
                 self.cancel_action(id, "voluntary service ended");
             }
             self.agents[id].goal = None;
+            self.unit_release(id, reason);
             self.military.journal.add(reason, id);
             self.log(
                 Some(id),
@@ -182,6 +194,9 @@ impl World {
     }
     /// Action arbitration stays common. Eating/sleep pause; a contrary chosen goal withdraws.
     pub(crate) fn military_action(&mut self, id: usize, i: &Intent) {
+        if self.has_unit_order(id) && !matches!(i, Intent::LeaveService) {
+            return;
+        }
         let Some(u) = self
             .military
             .memories
@@ -314,7 +329,14 @@ impl World {
                 && (!u.as_ref().is_some_and(|u| {
                     u.request.id == unit
                         && u.arrived_at.is_some()
-                        && a.location == Location::Node(u.request.muster)
+                        && (a.location == Location::Node(u.request.muster)
+                            || a.location == Location::Node(self.duty_node(a.id, u.request.muster))
+                            || self
+                                .formation
+                                .views
+                                .get(a.id)
+                                .and_then(|v| v.order.as_ref())
+                                .is_some_and(|o| a.location == Location::Node(o.issued_at_node)))
                 }) || self.is_child(a.id))
             {
                 return Err("invalid duty".into());

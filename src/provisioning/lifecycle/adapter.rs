@@ -397,6 +397,11 @@ impl World {
             matured: false,
         });
         self.lifecycle.views.push(View::default());
+        if self.config.formation {
+            self.formation
+                .views
+                .push(super::super::formation::View::default());
+        }
         if self.config.military.is_some() {
             self.military
                 .memories
