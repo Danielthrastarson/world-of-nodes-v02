@@ -28,7 +28,7 @@ and irreversible abstraction choices require a project-owner decision.
 | F10 Territory / authority | PASSED | Physical sovereign/steward appointments, presence-derived administration and local public commissions. Seven mechanism controls + 180 paired runs expose distance, congestion, death and absence; no coercive powers, forced residence or autonomous government planner. |
 | B0 General person | PASSED | One person interface, capability arbitration and pure local exchange selection. 192 tests and 587 exact regression executions preserve actions, hashes, rights and physical outcomes. Social behavior remains B1–B3. |
 | B1 Household / kinship | PASSED | Directed voluntary care through Person; personal property intact. 660 paired-condition runs, 210 tests, 227 exact historical replays. Care can sacrifice nourishment, miss migrating dependents and redistribute work. No inheritance/affect/reproduction. |
-| B2 Relationships / affect | NOT STARTED | Minimal directed social history and event appraisal must causally affect later decisions. No decorative emotion meters. |
+| B2 Relationships / affect | ACTIVE | Minimal directed social history and event appraisal must causally affect later decisions. No decorative emotion meters. |
 | B3 Life cycle / reproduction | NOT STARTED | Minimal causal age, fertility, pregnancy, birth, dependency and maturation; no sex-based psychological or occupational rules. Requires explicit biological/institutional experiment assumptions. |
 | F11 Security / military economy | BLOCKED | B0–B3 must pass before military resumes. Mobilization redirects existing people, food, tools, transport and time. Measure civilian consequences; military strength depends on physical economy. |
 | F12 Information network | NOT STARTED | Explicit physical messengers/travelers or constrained signals. Distinguish true from observed state; report delay changes decisions. No global knowledge. |
@@ -139,3 +139,5 @@ B0 passed at behavior-preserving scope: [report](../research/person/REPORT.md), 
 B1 owner authorization: directed voluntary care, personal property unchanged. See [registered household experiment](HOUSEHOLD_EXPERIMENT.md). No B2/B3 or military implementation in this increment.
 
 B1 passed at registered seeded-household scope: [evidence](../research/household/REPORT.md), [paired analysis](../research/household/analysis/paired.json). Source `79515ee`; 4,410 prior research files unchanged. Care is a provisional bounded obligation, not household pooling or perfect altruism. B2/B3 remain NOT STARTED and F11 BLOCKED.
+
+B1 accepted. B2 authorized at bounded appraisal scope: [registered rules](RELATIONSHIP_EXPERIMENT.md). No B3, punishment, revenge rights, marriage, inheritance, sex-linked psychology or military.
