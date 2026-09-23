@@ -32,7 +32,9 @@ impl State {
         self.elapsed += dt;
     }
     fn work(&mut self, nominal: Time, limit: Time) {
-        let mut left = nominal as u128 * SCALE;
+        self.work_units(nominal as u128 * SCALE, limit);
+    }
+    fn work_units(&mut self, mut left: u128, limit: Time) {
         while left > 0 && self.alive() && self.elapsed < limit {
             let rate = performance(self.nutrition, self.fatigue);
             let dt = super::super::awake_threshold(self.nutrition, self.fatigue)
@@ -466,6 +468,22 @@ pub(crate) fn cultivation_forecast(
     }
     s.work(harvest, Time::MAX / 4);
     s.alive().then_some(s.elapsed)
+}
+
+pub(crate) fn capital_work(
+    o: &Observation,
+    wood: u64,
+    remaining: u128,
+) -> Option<(Time, Time, Time)> {
+    let mut s = State::new(o);
+    for _ in 0..wood {
+        s.work(2000, Time::MAX / 4);
+        if !s.alive() {
+            return None;
+        }
+    }
+    s.work_units(remaining, Time::MAX / 4);
+    s.alive().then_some((s.elapsed, s.nutrition, s.fatigue))
 }
 
 #[cfg(test)]

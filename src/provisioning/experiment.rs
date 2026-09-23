@@ -159,6 +159,9 @@ impl World {
         if self.config.farming.is_some() {
             text.push_str(&format!("|farming={:?}", self.farm));
         }
+        if self.config.capital.is_some() {
+            text.push_str(&format!("|capital={:?}", self.capital));
+        }
         let mut h = 0xcbf29ce484222325u64;
         for byte in text.bytes() {
             h ^= byte as u64;

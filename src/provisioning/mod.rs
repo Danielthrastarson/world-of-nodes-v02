@@ -1,5 +1,6 @@
 //! Provisioning model P1. The legacy kernel remains available for historical reproduction.
 pub mod acceptance;
+pub mod capital;
 pub mod coherence;
 pub mod congestion;
 pub mod decomposition;
@@ -49,6 +50,7 @@ pub enum DiagnosticPolicy {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Config {
+    pub capital: Option<capital::Config>,
     pub farming: Option<farming::Config>,
     pub persistence: Option<persistence::Arm>,
     pub diagnostic_policy: DiagnosticPolicy,
@@ -73,6 +75,7 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            capital: None,
             farming: None,
             persistence: None,
             diagnostic_policy: DiagnosticPolicy::Current,
@@ -121,6 +124,9 @@ pub enum Location {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Action {
+    BuildCart {
+        project: usize,
+    },
     Farm {
         plot: usize,
     },
@@ -273,6 +279,7 @@ pub struct Event {
 }
 #[derive(Clone, Debug)]
 pub struct World {
+    pub(crate) capital: capital::State,
     pub(crate) farm: farming::State,
     pub(crate) config: Config,
     pub(crate) now: Time,
@@ -334,7 +341,7 @@ impl World {
         {
             return Err("invalid provisioning configuration".into());
         }
-        if config.farming.is_some()
+        if (config.farming.is_some() || config.capital.is_some())
             && (config.persistence.is_some()
                 || config.diagnostic_policy != DiagnosticPolicy::Current
                 || config.acceptance_audit)
@@ -390,8 +397,23 @@ impl World {
         } else {
             vec![]
         };
+        let capital =
+            capital::State::new(config.capital.as_ref(), config.nodes, config.starts.len())?;
+        if let Some(c) = &config.capital {
+            for &(node, q) in &c.wood {
+                goods.add(
+                    Material::Wood,
+                    q,
+                    Owner::None,
+                    Holder::Deposit(node),
+                    0,
+                    Time::MAX,
+                );
+            }
+        }
         let farm = farming::State::new(config.farming.as_ref(), config.nodes, config.starts.len())?;
         let mut w = Self {
+            capital,
             farm,
             shadow: shadow::Journal::default(),
             coherence: coherence::Journal::default(),
@@ -487,12 +509,14 @@ impl World {
                 .batches
                 .iter()
                 .filter(|b| {
-                    b.holder == Holder::Agent(id) && b.quantity > 0 && b.material == Material::Food
+                    (self.carried_by(id, b.holder) || self.accessible_cart(id, b.holder))
+                        && b.quantity > 0
+                        && b.material == Material::Food
                 })
                 .map(|b| self.food_view(b))
                 .collect(),
-            load: self.goods.load(id),
-            capacity: self.config.carrying_capacity,
+            load: self.carrier_load(id),
+            capacity: self.carrier_capacity(id),
             local: if let Location::Node(n) = a.location {
                 Some(self.node_view(n))
             } else {
@@ -535,7 +559,11 @@ impl World {
     }
     pub fn audit(&self) -> Result<(), String> {
         self.audit_farming()?;
-        if !self.goods.audit_production(self.farm.produced as u128) {
+        self.audit_capital()?;
+        if !self
+            .goods
+            .audit_capital(self.farm.produced as u128, self.capital.embedded_wood())
+        {
             return Err("material accounting error".into());
         }
         for a in &self.agents {
@@ -543,7 +571,7 @@ impl World {
                 return Err("load limit".into());
             }
             if matches!(a.action, Action::Gather { .. })
-                && self.goods.load(a.id) >= self.config.carrying_capacity
+                && self.carrier_load(a.id) >= self.carrier_capacity(a.id)
             {
                 return Err("reserved load limit".into());
             }

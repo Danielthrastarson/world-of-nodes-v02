@@ -16,6 +16,15 @@ pub struct PolicyMemory {
 }
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Intent {
+    BuildCart,
+    HitchCart {
+        cart: usize,
+    },
+    ParkCart,
+    Drop {
+        batch: usize,
+        quantity: u64,
+    },
     Cultivate {
         plot: usize,
     },
@@ -373,7 +382,7 @@ fn decide_impl(
     audit: &mut AcceptanceAudit,
     skip_self_provision: bool,
 ) -> Decision {
-    decide_with_farm(o, m, rng, mode, audit, skip_self_provision, None)
+    decide_with_farm(o, m, rng, mode, audit, skip_self_provision, None, None)
 }
 #[allow(clippy::too_many_arguments)]
 fn decide_with_farm(
@@ -384,6 +393,7 @@ fn decide_with_farm(
     audit: &mut AcceptanceAudit,
     skip_self_provision: bool,
     farm: Option<(&super::farming::Memory, &super::farming::Rules)>,
+    capital: Option<(&super::capital::Memory, &super::capital::Rules)>,
 ) -> Decision {
     if matches!(o.action, Action::Dead | Action::Travel) {
         return choice(Intent::Wait, "atomic traversal or dead");
@@ -407,6 +417,11 @@ fn decide_with_farm(
     }
     if matches!(o.action, Action::Gather { .. }) {
         return choice(Intent::Wait, "finish one-quantum atomic gathering");
+    }
+    if let Some((memory, rules)) = capital
+        && let Some(d) = super::capital::consider(o, m, memory, rules)
+    {
+        return d;
     }
     if o.job.is_none()
         && let Some((memory, config)) = farm
@@ -821,5 +836,26 @@ pub(crate) fn decide_farming(
         &mut AcceptanceAudit::disabled(),
         false,
         Some((farm, config)),
+        None,
+    )
+}
+
+pub(crate) fn decide_capital(
+    o: &Observation,
+    m: &PolicyMemory,
+    rng: &mut u64,
+    farm: Option<(&super::farming::Memory, &super::farming::Rules)>,
+    capital: &super::capital::Memory,
+    rules: &super::capital::Rules,
+) -> Decision {
+    decide_with_farm(
+        o,
+        m,
+        rng,
+        ForecastMode::Coherent,
+        &mut AcceptanceAudit::disabled(),
+        false,
+        farm,
+        Some((capital, rules)),
     )
 }

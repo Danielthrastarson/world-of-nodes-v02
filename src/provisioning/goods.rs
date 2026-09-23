@@ -15,6 +15,7 @@ pub enum Owner {
 }
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Holder {
+    Cart(usize),
     Deposit(usize),
     Loose(usize),
     Agent(usize),
@@ -112,7 +113,10 @@ impl Goods {
         self.audit_production(0)
     }
     pub fn audit_production(&self, produced: u128) -> bool {
-        let mut current = [self.consumed, 0, 0];
+        self.audit_capital(produced, 0)
+    }
+    pub fn audit_capital(&self, produced: u128, embedded_wood: u128) -> bool {
+        let mut current = [self.consumed, embedded_wood, 0];
         for b in &self.batches {
             current[match b.material {
                 Material::Food | Material::Waste => 0,

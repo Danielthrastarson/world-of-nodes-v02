@@ -39,6 +39,7 @@ impl World {
                 | Action::Gather { .. }
                 | Action::Sleep { .. }
                 | Action::Farm { .. }
+                | Action::BuildCart { .. }
         ) {
             if matches!(self.agents[id].action, Action::Farm { .. }) {
                 self.farm.interruptions += 1;
@@ -79,7 +80,8 @@ impl World {
         let local = match self.agents[id].location {
             Location::Node(n) => {
                 matches!(b.holder,Holder::Deposit(x)|Holder::Loose(x)|Holder::Commons(x)if n==x)
-                    || b.holder == Holder::Agent(id)
+                    || self.carried_by(id, b.holder)
+                    || self.accessible_cart(id, b.holder)
             }
             _ => false,
         };
@@ -108,6 +110,23 @@ impl World {
             return Err("edge traversal is atomic".into());
         };
         match intent {
+            Intent::BuildCart => self.begin_cart(id)?,
+            Intent::HitchCart { cart } => self.hitch_cart(id, cart)?,
+            Intent::ParkCart => self.park_cart(id)?,
+            Intent::Drop { batch, quantity } => {
+                let b = self.local_batch(id, batch)?;
+                if !self.carried_by(id, b.holder)
+                    || b.owner != Owner::Agent(id)
+                    || quantity == 0
+                    || quantity > b.quantity
+                {
+                    return Err("invalid personal drop".into());
+                }
+                self.cancel_action(id, "drop personal goods");
+                self.goods
+                    .move_part(batch, quantity, b.owner, Holder::Loose(node));
+                self.log(Some(id), "Dropped", format!("batch={batch} q={quantity}"));
+            }
             Intent::Cultivate { plot } => self.begin_farm(id, plot)?,
             Intent::Wait => {}
             Intent::CancelAction => {
@@ -129,7 +148,7 @@ impl World {
                 self.goods.batches[batch].quantity -= quantity;
                 self.goods.consumed += quantity as u128;
                 self.metrics.consumed += quantity;
-                if b.owner == Owner::Commons(0) && b.holder == Holder::Agent(id) {
+                if b.owner == Owner::Commons(0) && self.carried_by(id, b.holder) {
                     self.diagnostics.cargo_eaten(id, quantity);
                 }
                 self.agents[id].nutrition += quantity as Time * HOUR;
@@ -149,11 +168,12 @@ impl World {
                     return Ok(());
                 }
                 let b = self.local_batch(id, batch)?;
-                if b.material != Material::Food
+                if !(b.material == Material::Food
+                    || (self.config.capital.is_some() && b.material == Material::Wood && !communal))
                     || b.expires_at() <= self.now
                     || !matches!(b.holder, Holder::Deposit(_))
                     || self.reserved(batch) >= b.quantity
-                    || self.goods.load(id) >= self.config.carrying_capacity
+                    || self.carrier_load(id) >= self.carrier_capacity(id)
                 {
                     return Err("gather inputs/capacity unavailable".into());
                 }
@@ -188,7 +208,7 @@ impl World {
                     || quantity == 0
                     || quantity > b.quantity
                     || quantity > job.target.saturating_sub(job.acquired)
-                    || self.goods.load(id) + quantity > self.config.carrying_capacity
+                    || self.carrier_load(id) + quantity > self.carrier_capacity(id)
                     || b.material != Material::Food
                     || b.expires_at() <= self.now
                     || !matches!(b.holder, Holder::Loose(_) | Holder::Commons(_))
@@ -196,8 +216,7 @@ impl World {
                     return Err("cargo loading precondition".into());
                 }
                 self.cancel_action(id, "load communal cargo");
-                self.goods
-                    .move_part(batch, quantity, Owner::Commons(0), Holder::Agent(id));
+                self.load_carrier(id, batch, quantity, Owner::Commons(0));
                 self.agents[id].job.as_mut().unwrap().acquired += quantity;
                 self.log(
                     Some(id),
@@ -211,13 +230,12 @@ impl World {
                     || matches!(b.owner, Owner::Commons(_))
                     || quantity == 0
                     || quantity > b.quantity
-                    || self.goods.load(id) + quantity > self.config.carrying_capacity
+                    || self.carrier_load(id) + quantity > self.carrier_capacity(id)
                 {
                     return Err("invalid personal pickup".into());
                 }
                 self.cancel_action(id, "pickup");
-                self.goods
-                    .move_part(batch, quantity, Owner::Agent(id), Holder::Agent(id));
+                self.load_carrier(id, batch, quantity, Owner::Agent(id));
                 self.log(Some(id), "Pickup", format!("batch={batch} q={quantity}"));
             }
             Intent::Travel { edge, target, food } => {
@@ -267,7 +285,7 @@ impl World {
                     || board != node
                     || self.agents[id].job.is_some()
                     || quantity == 0
-                    || quantity > self.config.carrying_capacity - self.goods.load(id)
+                    || quantity > self.carrier_capacity(id) - self.carrier_load(id)
                 {
                     return Err("claim precondition".into());
                 }
@@ -303,7 +321,7 @@ impl World {
             }
             Intent::Deliver { batch, quantity } => {
                 let b = self.local_batch(id, batch)?;
-                if b.holder != Holder::Agent(id)
+                if !self.carried_by(id, b.holder)
                     || b.owner != Owner::Commons(0)
                     || b.material != Material::Food
                     || quantity == 0
@@ -326,7 +344,17 @@ impl World {
                     board.quantity = board.quantity.saturating_sub(quantity);
                     board.claims.retain(|c| c.agent != id);
                 }
-                self.agents[id].job = None;
+                // New cart payload may span both backpack and cart containers.
+                let remainder = self.config.capital.is_some()
+                    && self.goods.batches.iter().any(|b| {
+                        self.carried_by(id, b.holder)
+                            && b.owner == Owner::Commons(0)
+                            && b.material == Material::Food
+                            && b.quantity > 0
+                    });
+                if !remainder {
+                    self.agents[id].job = None;
+                }
                 self.log(
                     Some(id),
                     "Delivered",
@@ -343,7 +371,7 @@ impl World {
                     .batches
                     .iter()
                     .filter(|b| {
-                        b.holder == Holder::Agent(id)
+                        self.carried_by(id, b.holder)
                             && b.material == Material::Waste
                             && b.quantity > 0
                     })
@@ -397,7 +425,9 @@ impl World {
                     to,
                     progress: 0,
                 };
+                self.capital_departure(id, from, to);
                 self.agents[id].action = Action::Travel;
+                self.sync_carts();
                 self.log(
                     Some(id),
                     "Admitted",
@@ -459,6 +489,10 @@ impl World {
                         next = next.min(self.now + left.div_ceil(rate) as Time);
                     }
                 }
+                Action::BuildCart { project } => {
+                    let remaining = self.capital.projects[project].remaining;
+                    next = next.min(self.now + remaining.div_ceil(rate) as Time);
+                }
                 Action::Farm { plot } => {
                     let remaining = self.farm.plots[plot].crop.as_ref().unwrap().remaining;
                     next = next.min(self.now + remaining.div_ceil(rate) as Time);
@@ -491,7 +525,7 @@ impl World {
             if self.agents[id].action == Action::Dead {
                 continue;
             }
-            let loaded = self.goods.load(id) > 0;
+            let loaded = self.carrier_load(id) > 0;
             if self.config.farming.is_some() {
                 let activity = match self.agents[id].action {
                     Action::Farm { plot } => {
@@ -503,6 +537,7 @@ impl World {
                             "harvest"
                         }
                     }
+                    Action::BuildCart { .. } => "cart_construction",
                     Action::Gather { .. } => "gather",
                     Action::Travel => "travel",
                     Action::Queued { .. } => "queue",
@@ -564,6 +599,12 @@ impl World {
                         a.travel_since_food += *progress - before;
                     }
                 }
+                Action::BuildCart { project } => {
+                    self.capital.projects[*project].remaining = self.capital.projects[*project]
+                        .remaining
+                        .saturating_sub(rate * dt as u128);
+                    self.capital.projects[*project].labor_ms += dt as u128;
+                }
                 Action::Farm { plot } => {
                     let crop = self.farm.plots[*plot].crop.as_mut().unwrap();
                     crop.remaining = crop.remaining.saturating_sub(rate * dt as u128);
@@ -585,7 +626,9 @@ impl World {
                 Action::Dead => {}
             }
         }
+        self.integrate_capital(dt);
         self.now = to;
+        self.sync_carts();
         for (id, kind, detail) in physiology_events {
             self.log(Some(id), kind, detail);
         }
@@ -600,6 +643,8 @@ impl World {
                 && progress >= self.config.edges[edge].nominal_ms as u128 * SCALE
             {
                 self.agents[id].location = Location::Node(to);
+                self.sync_carts();
+                self.capital_arrival(id);
                 self.agents[id].action = Action::Idle;
                 self.wake.insert(id);
                 self.log(Some(id), "Arrived", format!("node={to} edge={edge}"));
@@ -621,7 +666,12 @@ impl World {
             if matches!(b.holder, Holder::Commons(_)) {
                 self.metrics.spoiled_commons += b.quantity;
             }
-            if let Holder::Agent(id) = b.holder
+            let carrier = match b.holder {
+                Holder::Agent(id) => Some(id),
+                Holder::Cart(c) => self.capital.carts[c].user,
+                _ => None,
+            };
+            if let Some(id) = carrier
                 && matches!(
                     self.agents[id].action,
                     Action::Travel | Action::Queued { .. }
@@ -681,6 +731,7 @@ impl World {
                     }
                     self.goods.move_part(batch, q, owner, holder);
                 }
+                self.capital_death(id);
                 self.gather_communal.remove(&id);
                 self.cancel_job(id, "starvation death");
                 self.agents[id].action = Action::Dead;
@@ -697,6 +748,7 @@ impl World {
             }
         }
         self.finish_farming();
+        self.finish_carts();
         for id in 0..self.agents.len() {
             match self.agents[id].action.clone() {
                 Action::Gather {
@@ -709,16 +761,19 @@ impl World {
                     } else {
                         Owner::Agent(id)
                     };
-                    self.goods.move_part(batch, 1, owner, Holder::Agent(id));
+                    self.load_carrier(id, batch, 1, owner);
                     self.agents[id].action = Action::Idle;
                     if communal && let Some(j) = &mut self.agents[id].job {
                         j.acquired += 1;
                     }
-                    self.metrics.gathered += 1;
+                    let food = self.goods.batches[batch].material == Material::Food;
+                    if food {
+                        self.metrics.gathered += 1;
+                    }
                     self.wake.insert(id);
                     self.log(
                         Some(id),
-                        "Gathered",
+                        if food { "Gathered" } else { "WoodGathered" },
                         format!("source_batch={batch} q=1 owner={owner:?}"),
                     );
                 }
@@ -793,7 +848,7 @@ impl World {
                         .batches
                         .iter()
                         .filter(|b| {
-                            b.holder == Holder::Agent(a.id)
+                            self.carried_by(a.id, b.holder)
                                 && b.owner == Owner::Agent(a.id)
                                 && b.material == Material::Food
                                 && b.expires_at() > self.now
@@ -865,6 +920,7 @@ impl World {
         let mut stale_events = vec![];
         for id in ids {
             self.observe_farming(id);
+            self.observe_capital(id);
             let o = self.observe(id).unwrap();
             if let Some(local) = &o.local {
                 if self.agents[id].travel_since_food > 0
@@ -913,7 +969,19 @@ impl World {
                 );
                 self.acceptance.record(&o, &d, audit);
             }
-            let decision = if let Some(config) = &self.config.farming {
+            let decision = if let Some(config) = &self.config.capital {
+                policy::decide_capital(
+                    &o,
+                    &a.memory,
+                    &mut a.rng,
+                    self.config
+                        .farming
+                        .as_ref()
+                        .map(|f| (&self.farm.memories[id], &f.rules)),
+                    &self.capital.memories[id],
+                    &config.rules,
+                )
+            } else if let Some(config) = &self.config.farming {
                 policy::decide_farming(
                     &o,
                     &a.memory,
@@ -938,6 +1006,8 @@ impl World {
             } else {
                 policy::decide_variant(&o, &a.memory, &mut a.rng, self.config.diagnostic_policy)
             };
+            self.record_capital_evaluation(id, &o);
+            let a = &self.agents[id];
             self.diagnostics.observe(&o, &a.memory, &decision);
             self.meals.observe(
                 &o,
