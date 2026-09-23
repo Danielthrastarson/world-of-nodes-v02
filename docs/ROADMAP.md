@@ -30,8 +30,8 @@ and irreversible abstraction choices require a project-owner decision.
 | B1 Household / kinship | PASSED | Directed voluntary care through Person; personal property intact. 660 paired-condition runs, 210 tests, 227 exact historical replays. Care can sacrifice nourishment, miss migrating dependents and redistribute work. No inheritance/affect/reproduction. |
 | B2 Relationships / affect | PASSED | Sparse directed appraisal changes matched later autonomous choices. 1,020 runs; live B1 physical behavior unchanged. See research/affect/REPORT.md. |
 | B3 Life cycle / reproduction | PASSED | Embodied birth, dependency, mutual reproduction and identity-preserving maturation. Controlled Generation3 in27/30; autonomous readiness and newborn-care failures preserved. See research/lifecycle/REPORT.md. |
-| F11A Voluntary mobilization | BLOCKED | Mobilization mechanism validated:720 paired runs, physical/household costs. Gate9 protective benefit unverified without threat mechanics. See research/mobilization/REPORT.md. |
-| F11B Formation / movement | NOT STARTED | Requires F11A gate. |
+| F11A Voluntary mobilization | PASSED | Owner accepts mechanism scope. Full protective/economic gate remains OPEN until F11C; prior results preserved. |
+| F11B Formation / movement | ACTIVE | Local unit objective over embodied Persons; FORMATION_EXPERIMENT.md. No combat or fake continuous geometry. |
 | F11C Combat | NOT STARTED | Requires F11B gate. |
 | F12 Information network | NOT STARTED | Explicit physical messengers/travelers or constrained signals. Distinguish true from observed state; report delay changes decisions. No global knowledge. |
 | F13 Kingdom vertical slice | NOT STARTED | Multiple settlements, economy, infrastructure, authority, information and security; one ruler decision yields unscripted, traceable second-order effects. Owner decides player powers. |
