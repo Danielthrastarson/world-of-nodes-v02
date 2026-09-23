@@ -410,14 +410,37 @@ pub struct Witness {
 /// Executes each move, reservation, meal and transfer through the existing kernel.
 /// Iterates exact engine event boundaries; no time, goods or physiology mutation.
 pub fn schedule_witness(p: Schedule, trace: bool) -> Result<(Witness, World), String> {
+    schedule_witness_in_world(
+        p,
+        Config {
+            autonomous: false,
+            initial_request: 600,
+            trace,
+            ..Config::default()
+        },
+    )
+}
+/// Same research controller on a registered line-world travel scale; never NPC policy.
+pub fn schedule_witness_in_world(p: Schedule, config: Config) -> Result<(Witness, World), String> {
+    if config.nodes != 3
+        || config.starts != vec![0; 50]
+        || config.boards != vec![0]
+        || config.edges.len() != 2
+        || (config.edges[0].a, config.edges[0].b) != (0, 1)
+        || (config.edges[1].a, config.edges[1].b) != (1, 2)
+        || config.food != vec![(2, 3000, 0, 48 * HOUR)]
+        || config.carrying_capacity != 10
+        || config.edges.iter().any(|e| e.capacity != 4)
+    {
+        return Err("research scheduler requires registered locked-stock line geometry".into());
+    }
+    let latest_launch = 48 * HOUR - 2 * config.edges.iter().map(|e| e.nominal_ms).sum::<Time>();
     if p.carriers + p.residents > 50 || p.cargo > 10 || p.cargo == 0 {
         return Err("invalid research allocation".into());
     }
     let mut w = World::new(Config {
         autonomous: false,
-        initial_request: 600,
-        trace,
-        ..Config::default()
+        ..config
     })?;
     let mut returning = [false; 50];
     let mut resting = [false; 50];
@@ -526,7 +549,7 @@ pub fn schedule_witness(p: Schedule, trace: bool) -> Result<(Witness, World), St
                 }
                 // Even at perfect speed a new C-F-C cycle now misses expiry.
                 // This is global research scheduling, never an autonomous rule.
-                if node == 0 && w.now >= 40 * HOUR {
+                if node == 0 && w.now >= latest_launch {
                     intents.push((id, Intent::Sleep));
                     continue;
                 }

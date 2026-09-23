@@ -13,19 +13,43 @@ pub(crate) struct Journal {
     decisions: BTreeMap<(Time, usize), String>,
     board_bound: BTreeSet<usize>,
     sources: BTreeSet<usize>,
+    stock_consumers: BTreeSet<usize>,
+    deliverers: BTreeSet<usize>,
     seen: BTreeSet<(usize, String)>,
 }
 impl Journal {
     fn count(&mut self, k: impl Into<String>) {
         *self.counts.entry(k.into()).or_default() += 1;
     }
-    pub(crate) fn event(&mut self, e: &Event, agents: &[Agent]) {
+    pub(crate) fn event(&mut self, e: &Event, agents: &[Agent], batches: &[Batch]) {
         if !self.enabled {
             return;
         }
         let Some(id) = e.agent else {
             return;
         };
+        if e.kind == "Delivered" && self.deliverers.insert(id) {
+            self.count("unique_deliverers");
+        }
+        if e.kind == "Consumed"
+            && let Some(batch) = value(&e.detail, "batch").and_then(|i| batches.get(i as usize))
+            && let Holder::Commons(node) = batch.holder
+        {
+            let q = value(&e.detail, "q").unwrap() as u64;
+            *self
+                .counts
+                .entry("communal_stock_consumed_quanta".into())
+                .or_default() += q;
+            if self.stock_consumers.insert(id) {
+                self.count("unique_communal_stock_consumers");
+            }
+            if self.detailed {
+                self.rows.push(format!(
+                    "STOCK_CONSUMED\t{}\t{id}\tnode={node}\tq={q}",
+                    e.at
+                ));
+            }
+        }
         if e.kind == "Arrived" {
             if agents[id].location == Location::Node(2) && self.sources.insert(id) {
                 self.count("unique_f_arrivals");

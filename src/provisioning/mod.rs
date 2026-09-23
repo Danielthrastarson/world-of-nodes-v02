@@ -500,7 +500,7 @@ impl World {
         };
         self.shadow.event(&e, &self.agents, &self.goods);
         self.coherence.event(&e, &self.agents);
-        self.meals.event(&e, &self.agents);
+        self.meals.event(&e, &self.agents, &self.goods.batches);
         self.diagnostics.event(&e);
         if self.config.persistence.is_some() {
             self.persistence.event(&e, &self.agents);
