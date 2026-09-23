@@ -2,7 +2,11 @@
 
 Updated 2026-09-22 following the owner's design change.
 
-## Latest evidence — F11C
+## Latest evidence — F12
+
+[Local report evidence](research/information/REPORT.md):840 final controlled runs,304 tests,217 exact historical replays; all15,388 previous artifacts unchanged. Source `4c84081`. Information is physically carried and remains dated; receiving a report neither creates authority nor guarantees useful new knowledge. F12 passes at mechanism scope. F13A research-only integration can use existing local steward commissioning; full ruler-command powers remain an owner decision. Earlier sections below preserve their historical scopes.
+
+## Prior evidence — F11C
 
 See [the physical raid/protection report](research/combat/REPORT.md) and [copyable handoff](research/combat/HANDOFF.txt). F11C passes at mechanism scope; F11A’s protective-benefit gate is satisfied by actual prevented theft, with household/labor/injury costs preserved. No compulsory service or general welfare conclusion follows. Core source `631c76e`.
 

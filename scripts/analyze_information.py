@@ -6,6 +6,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+import re
 import statistics
 import sys
 
@@ -98,6 +99,38 @@ def truth_comparisons(root, case, arm, seeds, runs):
     return result, records
 
 
+def matched_destinations(root, case, arm, seeds, runs):
+    """This registered matched fixture emits typed Travel decisions in Rust Debug form.
+
+    Intent change includes the food-purpose flag; destination change is narrower.
+    Refuse an unexpected schema rather than silently treating it as no change.
+    """
+    path = root / f"{case}_{arm}" / "decisions.tsv.gz"
+    with gzip.open(path, "rt", newline="") as f:
+        rows = list(csv.DictReader(f, delimiter="\t"))
+    require([int(row["seed"]) for row in rows] == seeds, f"{case}/{arm}: unmatched decision seeds")
+    pattern = re.compile(r"intent: Travel \{ edge: (\d+), target: (\d+), food: (true|false) \}")
+    details = []
+    for row in rows:
+        before, after = (pattern.search(row[key]) for key in ("before", "after"))
+        require(before is not None and after is not None, f"{case}/{arm}: unexpected matched decision schema")
+        seed = int(row["seed"])
+        intent_changed = before.groups() != after.groups()
+        require(int(intent_changed) == int(runs[seed]["matched_choice_changed"]), f"{case}/{arm}: decision counter differs from trace")
+        details.append({
+            "seed": seed, "before_edge": int(before[1]), "after_edge": int(after[1]),
+            "before_target": int(before[2]), "after_target": int(after[2]),
+            "before_food_purpose": before[3] == "true", "after_food_purpose": after[3] == "true",
+            "intent_changed": intent_changed, "destination_changed": before[2] != after[2],
+        })
+    return {
+        "destination_changed_runs": sum(row["destination_changed"] for row in details),
+        "intent_changed_runs": sum(row["intent_changed"] for row in details),
+        "per_seed": details, "input": str(path),
+        "input_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+    }
+
+
 def main():
     if len(sys.argv) != 3:
         raise SystemExit("analyze_information.py PANEL_DIRECTORY NEW_ANALYSIS_DIRECTORY")
@@ -147,15 +180,25 @@ def main():
                 differences.append(delta)
                 rows_out.append({"case": case, "seed": seed, "metric": metric, "off": off, "on": on, "on_minus_off": delta})
             paired[metric] = {**describe(differences), "changed_seeds": changed}
+        # Equality covers only these aggregate columns. Route order, endpoint,
+        # decision meaning and full physical execution can still differ.
         physical_changed = sum(any(
             number(arms["on"][seed][metric]) != number(arms["off"][seed][metric])
             for metric in PHYSICAL
         ) for seed in seeds)
+        destination_choices = {}
+        if case in provenance["matched_cases"]:
+            for arm in ("off", "on"):
+                detail = matched_destinations(root, case, arm, seeds, arms[arm])
+                destination_choices[arm] = detail
+                input_hashes[detail["input"]] = detail["input_sha256"]
         pairs[case] = {
             "comparison_scope": "matched physical state, handoff only" if case in provenance["matched_cases"] else "seeded courier undertaking plus downstream information effects",
             "runs_with_receipt": {arm: sum(int(arms[arm][seed]["received"]) > 0 for seed in seeds) for arm in ("off", "on")},
             "matched_choice_changed_runs": {arm: sum(int(arms[arm][seed]["matched_choice_changed"]) for seed in seeds) for arm in ("off", "on")},
-            "physical_outcome_changed_pairs": physical_changed,
+            "matched_destination_choices": destination_choices,
+            "selected_physical_aggregate_changed_pairs": physical_changed,
+            "aggregate_scope": sorted(PHYSICAL),
             "paired_metrics": paired,
         }
     summary = {
@@ -169,6 +212,7 @@ def main():
             "Live arm comparisons include controlled courier assignment and its physical costs; they do not isolate information alone.",
             "Recipients are experimentally held until6h in live fixtures; this is not spontaneous waiting for reports.",
             "Matched arms share the same physical journey; immediate recipient-choice differences isolate local handoff under that controlled state.",
+            "Selected physical aggregate equality does not imply identical paths, endpoint locations or execution. A changed Travel food-purpose flag counts as intent change even when immediate destination is unchanged.",
             "Receipt age is observed_at to received_at, not freshness guaranteed by delivery. Missing receipt times are undefined, never zero-delay deliveries.",
             "Truth is sampled immediately for matched handoffs or at the first live minute checkpoint at/after receipt. Checkpoint lag is reported; mismatch is not automatically evidence of arithmetic error or proof of exact hidden state at receipt.",
             "Positive believed legal availability with zero true legal availability does not imply all physical food disappeared: ownership/access, depletion or spoilage can make remembered food unavailable.",
@@ -196,15 +240,18 @@ def main():
         "# F12 paired information results", "",
         f"{provenance['runs']} runs; {len(seeds)} paired seeds per arm and fixture. Deltas are on minus off; hours are person-hours where accumulated.", "",
         "Live comparisons include seeded courier work and movement. Both arms hold recipient deliberation until6h while physiology continues. Matched comparisons differ only in local receipt after an identical real journey. These are controlled experiments, not autonomous messenger recruitment.", "",
-        "| Case | On runs receiving report | Mean receipt age h, received only | Matched immediate choices changed on/off | Physical outcome pairs changed | Δ total starvation h | Δ consumed | Δ deaths |",
-        "|---|---:|---:|---:|---:|---:|---:|---:|",
+        "| Case | On runs receiving report | Mean receipt age h, received only | Matched intents changed on/off | Matched destinations changed on/off | Selected physical aggregates differ | Δ total starvation h | Δ consumed | Δ deaths |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for case in provenance["cases"]:
         p, s = pairs[case], summaries[case]
         d = p["paired_metrics"]
         changed = p["matched_choice_changed_runs"]
         immediate = f"{changed['on']}/{changed['off']}" if case in provenance["matched_cases"] else "not a matched test"
-        lines.append(f"| {case} | {p['runs_with_receipt']['on']}/{len(seeds)} | {fmt(s['on']['report_age_h']['mean'])} | {immediate} | {p['physical_outcome_changed_pairs']}/{len(seeds)} | {fmt(d['starvation_h']['mean'])} | {fmt(d['consumed']['mean'])} | {fmt(d['deaths']['mean'])} |")
+        destinations = p["matched_destination_choices"]
+        target_changes = f"{destinations['on']['destination_changed_runs']}/{destinations['off']['destination_changed_runs']}" if destinations else "not a matched test"
+        lines.append(f"| {case} | {p['runs_with_receipt']['on']}/{len(seeds)} | {fmt(s['on']['report_age_h']['mean'])} | {immediate} | {target_changes} | {p['selected_physical_aggregate_changed_pairs']}/{len(seeds)} | {fmt(d['starvation_h']['mean'])} | {fmt(d['consumed']['mean'])} | {fmt(d['deaths']['mean'])} |")
+    lines += ["", "Aggregate equality is not execution equality: the measured columns omit route order and final node. In matched fresh/depleted fixtures, intent can switch from exploration to food seeking while retaining the same immediate destination, or reorder equally long trips. `matched_destination_choices` separately records each typed Travel target and purpose flag."]
     lines += [
         "", "Research-only truth comparison at receipt checkpoint (on arm; both arms retained in JSON). No report means no comparison, not an accurate prediction:", "",
         "| Case | Reports compared | Unequal available quantities | Positive belief / zero true availability | Mean observation age at receipt h | Maximum checkpoint lag h |",

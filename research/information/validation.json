@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "implementation_revision": "4c84081dd62b837c2798d72398b32ad3491da465",
+  "tests": 304,
+  "focused_information_tests": 20,
+  "final_runs": 840,
+  "regression_executions": 217,
+  "previous_research_files_unchanged": 15388,
+  "scope": "F12 local truthful reports and controlled embodied carriage; no autonomous recruitment or command rights",
+  "analysis": "analysis-reviewed/summary.json",
+  "not_independent_evidence": "smoke panel, repeated deterministic fixture seeds, and regression replays are not separate worlds",
+  "logs_sha256": {
+    "research/information/full-tests-final.log": "7d13d6d8cdd2e94834e7e51e5d6b0cf31f7f2bbbce31831c1d26770e51f5c49c",
+    "research/information/clippy-final.log": "99f71393b9903dca098310bb446022a4bdee195ea9996f351a787195555210a6",
+    "research/information/regression/validation.json": "e18d192fca2efa37c04273cbbd5de245ffcfc3b311e20823611d5fb3d19e6ab8"
+  }
+}

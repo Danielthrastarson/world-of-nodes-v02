@@ -33,8 +33,8 @@ and irreversible abstraction choices require a project-owner decision.
 | F11A Voluntary mobilization | PASSED | Mechanism and controlled protective-benefit gates passed; F11C shows real harm prevention with costs. General welfare is not established. |
 | F11B Formation / movement | PASSED | 960 paired runs; one locally received order drives real Persons through common FIFO. Separation, missed orders, service expiry and civilian costs preserved. See research/formation/REPORT.md. |
 | F11C Threat / combat | PASSED | 1,440 paired runs demonstrate physical theft prevention, failed defenses and civilian costs. F11A protective-benefit requirement satisfied; no general welfare claim. |
-| F12 Information network | ACTIVE | Explicit physical messengers/travelers or constrained signals. Distinguish true from observed state; report delay changes decisions. No global knowledge. |
-| F13 Kingdom vertical slice | NOT STARTED | Multiple settlements, economy, infrastructure, authority, information and security; one ruler decision yields unscripted, traceable second-order effects. Owner decides player powers. |
+| F12 Information network | PASSED | Explicit physical messengers/travelers or constrained signals. Distinguish true from observed state; report delay changes decisions. No global knowledge. |
+| F13 Kingdom vertical slice | ACTIVE — readiness only | Multiple settlements, economy, infrastructure, authority, information and security; one ruler decision yields unscripted, traceable second-order effects. Owner decides player powers. |
 | F14 Target moment | NOT STARTED | Policy effects → households → institutional breakdown/coordination → actual gathering/travel toward castle. No spawn-rebellion shortcut. |
 | F15 Rendering | NOT STARTED | World → observation → render snapshot → screen. Real identities/goods/roads/fields/units. Renderer never owns world state or time. |
 | F16 Physical visual depth | NOT STARTED | Lighting, shadows, particles, fire, weather, limited physics where causally justified, with LOD. Low geometric complexity, high systemic complexity. |
@@ -159,3 +159,8 @@ F11C passed at registered graph-local raid/contact scope: [report](../research/c
 ## Post-F11C audit and F12 split
 
 Baseline `2b00dd9` confirmed clean. F12 remains the next dependency; its internal sequence is F12A report provenance/local handoff → F12B embodied delivery → F12C delayed-information decisions. See [execution plan](INFORMATION_EXECUTION_PLAN.md) and [registered experiment](INFORMATION_EXPERIMENT.md). F13 requires a separate command-authority contract: the current research unit-order API has no sovereign issuer authorization. Reports convey beliefs, not new institutional powers.
+
+
+F12 passed at bounded local-report scope: [840-run evidence](../research/information/REPORT.md), [contracts](INFORMATION_ARCHITECTURE.md), [217 historical replays](../research/information/regression/validation.json). Source `4c84081`;304 tests and15,388 unchanged prior files. Unknown-route handoff can occur because the recipient reaches the carrier; stale evidence may redirect action without improved nourishment. No spontaneous courier recruitment, command authority or global map is claimed.
+
+Dependency refinement after audit: F12 → F13A cross-system readiness using an already lawful **local steward commission** → owner decision about the ruler's command interface/authority → full F13. The earlier statement that F13 needs command authority applies to sovereign instructions or army control, not to safe integration tests of existing local powers. F13A may proceed without granting new rights; its controlled local commission is not proof of ruler-controlled delegation. Preserve that distinction.

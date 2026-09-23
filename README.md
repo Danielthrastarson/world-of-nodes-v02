@@ -204,3 +204,19 @@ cargo run --release --bin formation_probe -- short hold /tmp/f11b-short-hold 30
 ```
 
 `python3 scripts/run_formation.py NEW_DIRECTORY` runs the full paired panel after building release binaries. Output creation refuses to overwrite preserved evidence.
+
+
+### F12 embodied information transport
+
+[Evidence](research/information/REPORT.md) · [architecture](docs/INFORMATION_ARCHITECTURE.md) · [registered study](docs/INFORMATION_EXPERIMENT.md).
+
+Optional dated local reports preserve original observations across physical handoff and ordinary courier travel.840 controlled runs distinguish accurate receipt followed by world change, information already stale at receipt, and redundant handoff. Information can change routes without improving nourishment. No remote authority, compulsory courier labor or automatic messenger network is introduced. Historical defaults and217 representative replays remain exact.
+
+```sh
+cargo build --release --bins
+python3 scripts/run_information.py NEW_PANEL 30
+python3 scripts/analyze_information.py NEW_PANEL NEW_ANALYSIS
+python3 scripts/verify_information.py NEW_REGRESSION
+```
+
+F13 proceeds through a research-only integration control using existing local stewardship powers. Full ruler-command semantics remain unresolved; research unit orders are not royal authority.

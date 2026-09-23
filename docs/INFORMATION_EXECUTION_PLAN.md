@@ -15,3 +15,7 @@ F12C tests information alone with matched physical pre-receipt states, and the f
 F13 preparation may document typed command boundaries, but the existing research unit-order entry has no issuer/office authority check. Before exposing it as sovereign power, ask who may command voluntarily serving people and what their service consent authorizes. No courier labor entitlement, remote commission power or military compulsion is inferred from report transport. Stop at that real owner boundary after F12's evidence is complete.
 
 Engineering debt is tracked separately: existing per-person world observation and combat scans can be quadratic. Communication adds no all-to-all exchange scan or global dissemination. No claim of population-scale performance follows from small fixtures.
+
+## Dependency refinement after F12 evidence
+
+F12's840-run panel and217 historical replays pass. Proceed through an F13A research-only cross-system readiness control using an already authorized local steward commission. This safe integration does not need new royal command rights. Then stop at the concrete player/authority contract: appointment currently assigns an office but does not command residence, labor or project execution; the unit-order research API likewise has no sovereign issuer check. Full F13 remains open until a selected lawful player action is defined. The original plan above records the initial broader boundary; this refinement avoids treating it as a blanket block on integration work.
