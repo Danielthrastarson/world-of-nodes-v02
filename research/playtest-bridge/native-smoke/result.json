@@ -1,0 +1,251 @@
+{
+  "result": "PASS",
+  "display": ":101",
+  "journal_off": {
+    "sim_ms": 0,
+    "state_hash": "f7f9b9c20768162c",
+    "event_hash": "2c45f6fda58c68c5",
+    "commands": 2
+  },
+  "journal_on": {
+    "schema_version": 1,
+    "status": "verified_complete",
+    "complete": true,
+    "partial_trailing_line": false,
+    "scenario": "Local",
+    "seed": 0,
+    "sim_ms": 0,
+    "commands": 2,
+    "rejected_commands": 1,
+    "checkpoints_verified": 6,
+    "state_hash": "f7f9b9c20768162c",
+    "event_hash": "2c45f6fda58c68c5",
+    "rejections": [
+      {
+        "command_index": 1,
+        "sim_ms": 0,
+        "reason": "withdrawal needs a different known destination"
+      }
+    ],
+    "requests_rejected": 6,
+    "status_frames_observed": 3,
+    "event_rows": 122
+  },
+  "inputs": [
+    {
+      "key": "F1"
+    },
+    {
+      "key": "w"
+    },
+    {
+      "key": "1"
+    },
+    {
+      "key": "Return"
+    },
+    {
+      "key": "Escape"
+    },
+    {
+      "key": "e"
+    },
+    {
+      "key": "1"
+    },
+    {
+      "key": "q"
+    },
+    {
+      "click": [
+        382,
+        349,
+        1
+      ]
+    },
+    {
+      "key": "w"
+    },
+    {
+      "key": "4"
+    },
+    {
+      "click": [
+        395,
+        435,
+        1
+      ]
+    },
+    {
+      "key": "Return"
+    },
+    {
+      "key": "w"
+    },
+    {
+      "key": "3"
+    },
+    {
+      "key": "Return"
+    },
+    {
+      "click": [
+        860,
+        53,
+        1
+      ]
+    },
+    {
+      "click": [
+        910,
+        53,
+        1
+      ]
+    },
+    {
+      "click": [
+        800,
+        53,
+        1
+      ]
+    },
+    {
+      "click": [
+        795,
+        435,
+        1
+      ]
+    },
+    {
+      "click": [
+        600,
+        500,
+        4
+      ]
+    },
+    {
+      "key": "Right"
+    },
+    {
+      "key": "Down"
+    },
+    {
+      "key": "F2"
+    },
+    {
+      "key": "F2"
+    },
+    {
+      "key": "F12"
+    },
+    {
+      "window": "WM_DELETE_WINDOW"
+    },
+    {
+      "key": "F1"
+    },
+    {
+      "key": "w"
+    },
+    {
+      "key": "1"
+    },
+    {
+      "key": "Return"
+    },
+    {
+      "key": "Escape"
+    },
+    {
+      "key": "e"
+    },
+    {
+      "key": "1"
+    },
+    {
+      "key": "q"
+    },
+    {
+      "click": [
+        382,
+        349,
+        1
+      ]
+    },
+    {
+      "key": "w"
+    },
+    {
+      "key": "4"
+    },
+    {
+      "click": [
+        395,
+        435,
+        1
+      ]
+    },
+    {
+      "key": "Return"
+    },
+    {
+      "key": "w"
+    },
+    {
+      "key": "3"
+    },
+    {
+      "key": "Return"
+    },
+    {
+      "click": [
+        860,
+        53,
+        1
+      ]
+    },
+    {
+      "click": [
+        910,
+        53,
+        1
+      ]
+    },
+    {
+      "click": [
+        800,
+        53,
+        1
+      ]
+    },
+    {
+      "click": [
+        795,
+        435,
+        1
+      ]
+    },
+    {
+      "click": [
+        600,
+        500,
+        4
+      ]
+    },
+    {
+      "key": "Right"
+    },
+    {
+      "key": "Down"
+    },
+    {
+      "key": "F2"
+    },
+    {
+      "key": "F2"
+    },
+    {
+      "window": "WM_DELETE_WINDOW"
+    }
+  ]
+}

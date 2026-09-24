@@ -1,11 +1,39 @@
 use macroquad::prelude::*;
-use std::cell::Cell;
+use std::cell::{Cell, RefCell};
 use std::sync::OnceLock;
 // Process-lifetime renderer asset. Avoid a thread-local GPU destructor running
 // after Macroquad has destroyed the graphics context on native window exit.
 static UI_FONT: OnceLock<Font> = OnceLock::new();
 thread_local! {
     static BLOCK_INPUT: Cell<bool> = const { Cell::new(false) };
+    static CAPTURE_INPUT: Cell<bool> = const { Cell::new(false) };
+    static INTERACTIONS: RefCell<Vec<Interaction>> = const { RefCell::new(Vec::new()) };
+}
+#[derive(Debug)]
+pub struct Interaction {
+    pub label: String,
+    pub enabled: bool,
+    pub blocked_help: bool,
+}
+pub fn capture_interactions(enabled: bool) {
+    CAPTURE_INPUT.with(|value| value.set(enabled));
+}
+pub fn take_interactions() -> Vec<Interaction> {
+    INTERACTIONS.with(|events| std::mem::take(&mut *events.borrow_mut()))
+}
+fn record_interaction(rect: Rect, label: &str, enabled: bool) {
+    if CAPTURE_INPUT.with(Cell::get)
+        && rect.contains(vec2(mouse_position().0, mouse_position().1))
+        && is_mouse_button_pressed(MouseButton::Left)
+    {
+        INTERACTIONS.with(|events| {
+            events.borrow_mut().push(Interaction {
+                label: label.into(),
+                enabled,
+                blocked_help: BLOCK_INPUT.with(Cell::get),
+            })
+        });
+    }
 }
 pub fn install_font(font: Font) {
     assert!(
@@ -81,6 +109,7 @@ pub fn paragraph(
     y + lines.len().min(max_lines) as f32 * (size + 5.0)
 }
 pub fn button(rect: Rect, label: &str, active: bool, enabled: bool) -> bool {
+    record_interaction(rect, label, enabled);
     let mouse = vec2(mouse_position().0, mouse_position().1);
     let hover = rect.contains(mouse);
     let fill = if active {
@@ -140,11 +169,13 @@ pub fn fitted(s: &str, x: f32, y: f32, width: f32, size: f32, color: Color) {
     text(&format!("{shortened}…"), x, y, size, color);
 }
 pub fn clicked(rect: Rect) -> bool {
+    record_interaction(rect, "map concern", true);
     !BLOCK_INPUT.with(Cell::get)
         && rect.contains(vec2(mouse_position().0, mouse_position().1))
         && is_mouse_button_pressed(MouseButton::Left)
 }
 pub fn card(rect: Rect, title: &str, detail: &str, accent: Color, enabled: bool) -> bool {
+    record_interaction(rect, &format!("{title}: {detail}"), enabled);
     let hover = rect.contains(vec2(mouse_position().0, mouse_position().1));
     draw_rectangle(
         rect.x,
@@ -181,5 +212,5 @@ pub fn card(rect: Rect, title: &str, detail: &str, accent: Color, enabled: bool)
         MUTED,
         2,
     );
-    enabled && clicked(rect)
+    enabled && !BLOCK_INPUT.with(Cell::get) && hover && is_mouse_button_pressed(MouseButton::Left)
 }

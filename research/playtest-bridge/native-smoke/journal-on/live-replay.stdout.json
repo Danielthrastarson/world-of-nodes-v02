@@ -1,0 +1,1 @@
+{"schema_version":1,"status":"verified_prefix","complete":false,"partial_trailing_line":false,"scenario":"Local","seed":0,"sim_ms":0,"commands":2,"rejected_commands":1,"checkpoints_verified":5,"state_hash":"f7f9b9c20768162c","event_hash":"2c45f6fda58c68c5","rejections":[{"command_index":1,"sim_ms":0,"reason":"withdrawal needs a different known destination"}]}

@@ -1,0 +1,17 @@
+{
+  "base_revision": "d3958d5cc8eb0a711351d59d8ae036f0aa476271",
+  "binary_sha256": {
+    "client/target/release/world-of-nodes-client": "999f7e7f7d2534c72903b6f6ec09aaba4f7689322724cc0cd455c8435ce36338",
+    "client/target/release/playtest_replay": "46e96c90500f8acdc31d4513cacca1bb8668ed98846426bc9af415d145ea3a72"
+  },
+  "authoritative_source_unchanged": true,
+  "kernel_check": "git diff --exit-code d3958d5 -- src Cargo.toml Cargo.lock client/Cargo.toml client/Cargo.lock",
+  "validation": [
+    "cargo test --offline: passed full root suite",
+    "cargo test --manifest-path client/Cargo.toml --offline: 24 main tests, 5 replay tests, 12 duplicate render-probe tests passed",
+    "cargo clippy --manifest-path client/Cargo.toml --offline --all-targets -- -D warnings: passed",
+    "native XTest journal on/off: passed",
+    "four-hour Local/Remote journal on/off: passed"
+  ],
+  "cache": "CARGO_HOME=/tmp/world-of-nodes-cargo"
+}

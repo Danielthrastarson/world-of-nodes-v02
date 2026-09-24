@@ -1,0 +1,51 @@
+compiled_executable_fnv1a64=Some(51bce7ad23eb35ec)
+scenario=Local
+seed=0
+sim_ms=0
+state_hash=f7f9b9c20768162c
+event_hash=2c45f6fda58c68c5
+replay_equal=true
+frames=687
+fps=139.827
+last_sim_batch_ms=0.000125
+last_snapshot_ms=0.078948
+last_draw_ms=0.587628
+rss_kib=Some(184808)
+view_mode=Play
+visible_or_remembered_people=10
+commands=[
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Withdraw,
+            target: 1,
+        },
+        outcome: Err(
+            "withdrawal needs a different known destination",
+        ),
+    },
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Hold,
+            target: 1,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+]
+ui_selection=Some(Node(2))
+ui_verb=Order
+ui_draft=None
+ui_tab=0
+ui_notice=PLAY · local and dated personal knowledge only.
+known_matter=Observed request: 60 food | Observed locally now
+known_matter=Crossing site known | Observed locally now
+known_matter=No office order recorded | Own command record
+ui_action=1 | Commission crossing | enabled=true | Choose a known site; accepted office scope is checked on confirmation
+ui_action=2 | Send revocation | enabled=false | Select an order issued by this ruler
+ui_action=3 | Other projects | enabled=false | No other public project command exists yet
+ui_action=4 | Other orders | enabled=false | Arbitrary commands to people are not authorized

@@ -1,0 +1,65 @@
+{
+  "Local": {
+    "off": {
+      "sim_ms": "14400000",
+      "state_hash": "56580759d1a77ea6",
+      "event_hash": "4085c1f659f2670c",
+      "commands": 1
+    },
+    "on": {
+      "sim_ms": "14400000",
+      "state_hash": "56580759d1a77ea6",
+      "event_hash": "4085c1f659f2670c",
+      "commands": 1,
+      "replay": {
+        "schema_version": 1,
+        "status": "verified_complete",
+        "complete": true,
+        "partial_trailing_line": false,
+        "scenario": "Local",
+        "seed": 0,
+        "sim_ms": 14400000,
+        "commands": 1,
+        "rejected_commands": 0,
+        "checkpoints_verified": 2,
+        "state_hash": "56580759d1a77ea6",
+        "event_hash": "4085c1f659f2670c",
+        "rejections": []
+      }
+    }
+  },
+  "Remote": {
+    "off": {
+      "sim_ms": "14400000",
+      "state_hash": "f88b3c9fc98eea09",
+      "event_hash": "8b0dcdf416979400",
+      "commands": 1
+    },
+    "on": {
+      "sim_ms": "14400000",
+      "state_hash": "f88b3c9fc98eea09",
+      "event_hash": "8b0dcdf416979400",
+      "commands": 1,
+      "replay": {
+        "schema_version": 1,
+        "status": "verified_complete",
+        "complete": true,
+        "partial_trailing_line": false,
+        "scenario": "Remote",
+        "seed": 0,
+        "sim_ms": 14400000,
+        "commands": 1,
+        "rejected_commands": 0,
+        "checkpoints_verified": 2,
+        "state_hash": "f88b3c9fc98eea09",
+        "event_hash": "8b0dcdf416979400",
+        "rejections": []
+      }
+    }
+  },
+  "missing_journal_argument": {
+    "exit_code": 1,
+    "stderr": "--journal requires a fresh directory path; recording did not start.\n"
+  },
+  "result": "PASS"
+}

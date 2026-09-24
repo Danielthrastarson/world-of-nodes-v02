@@ -1,8 +1,10 @@
 mod camera;
 mod chrome;
 mod clock;
+mod journal;
 mod metrics;
 mod presentation;
+mod recording;
 mod scene;
 mod widgets;
 use camera::MapCamera;
@@ -160,7 +162,12 @@ fn dispatch_text(d: DispatchState) -> &'static str {
 }
 fn conf() -> Conf {
     Conf {
-        window_title: "World of Nodes · First Kingdom".into(),
+        window_title: if std::env::args().any(|a| a == "--journal") {
+            "World of Nodes · Recorded playtest"
+        } else {
+            "World of Nodes · First Kingdom"
+        }
+        .into(),
         window_width: 1440,
         window_height: 900,
         high_dpi: true,
@@ -184,19 +191,24 @@ struct Options {
     frames: Option<u64>,
     capture: Option<String>,
     evidence: Option<String>,
+    journal: Option<String>,
 }
 fn options() -> Options {
     let mut o = Options::default();
     let args: Vec<_> = std::env::args().collect();
     let mut i = 1;
     while i < args.len() {
+        if args[i] == "--journal" && args.get(i + 1).is_none_or(|value| value.starts_with("--")) {
+            eprintln!("--journal requires a fresh directory path; recording did not start.");
+            std::process::exit(1);
+        }
         match args[i].as_str() {
             "--remote" => o.scenario = ScenarioKind::Remote,
             "--debug" => o.debug = true,
             "--run" => o.run = true,
             "--commission" => o.commission = true,
             "--reports" => o.reports = true,
-            "--seed" | "--hour" | "--frames" | "--capture" | "--evidence" => {
+            "--seed" | "--hour" | "--frames" | "--capture" | "--evidence" | "--journal" => {
                 if i + 1 < args.len() {
                     i += 1;
                     match args[i - 1].as_str() {
@@ -204,13 +216,14 @@ fn options() -> Options {
                         "--hour" => o.hour = args[i].parse().ok(),
                         "--frames" => o.frames = args[i].parse().ok(),
                         "--capture" => o.capture = Some(args[i].clone()),
+                        "--journal" => o.journal = Some(args[i].clone()),
                         _ => o.evidence = Some(args[i].clone()),
                     }
                 }
             }
             "--help" => {
                 println!(
-                    "World of Nodes: --remote --seed N --debug --run --commission --reports --hour H --frames N --capture PATH --evidence PATH\nQ/W/E/R verbs;1-4 options;LMB select;RMB context/cancel;Enter confirm;Space pause;F1 help;F2 debug;arrows/MMB/RMBdrag pan;wheel zoom."
+                    "World of Nodes: --remote --seed N --debug --run --commission --reports --hour H --frames N --capture PATH --evidence PATH --journal NEW_DIRECTORY\nQ/W/E/R verbs;1-4 options;LMB select;RMB context/cancel;Enter confirm;Space pause;F1 help;F2 debug;arrows/MMB/RMBdrag pan;wheel zoom."
                 );
                 std::process::exit(0);
             }
@@ -228,6 +241,17 @@ async fn main() {
             .expect("bundled UI font"),
     );
     let options = options();
+    let mut recording = options.journal.as_ref().map(|path| {
+        recording::Recording::open(std::path::Path::new(path), options.seed, options.scenario)
+            .unwrap_or_else(|error| {
+                eprintln!("Cannot start recorded playtest: {error}");
+                std::process::exit(1);
+            })
+    });
+    if recording.is_some() {
+        prevent_quit();
+        capture_interactions(true);
+    }
     let mut session = Session::new(options.seed, options.scenario).expect("scenario");
     let mut ui = Ui::default();
     if options.reports {
@@ -257,6 +281,13 @@ async fn main() {
     let mut metrics = Metrics::default();
     let mut hits: Vec<Hit> = vec![];
     loop {
+        if let Some(recorder) = &mut recording
+            && is_quit_requested()
+        {
+            // Handle native close before another input or simulation step.
+            recorder.finish(&ui, &clock, &session, &metrics);
+            break;
+        }
         let mouse = vec2(mouse_position().0, mouse_position().1);
         let sidebar_width = 390.0_f32.min(screen_width() * 0.36);
         let view = Rect::new(
@@ -270,6 +301,9 @@ async fn main() {
         metrics.snapshot_ms = capture_started.elapsed().as_secs_f64() * 1000.;
         let was_paused = clock.paused;
         metrics.frame(f64::from(get_frame_time()));
+        if let Some(recorder) = &mut recording {
+            recorder.inputs(&ui, &session, metrics.frame_count, view, &hits);
+        }
         if is_key_pressed(KeyCode::Escape) {
             ui.draft = None;
             ui.help = false;
@@ -449,12 +483,18 @@ async fn main() {
         {
             write_evidence(path, &session, &snap, &metrics, &options, &ui);
         }
+        if let Some(recorder) = &mut recording {
+            recorder.after_frame(&ui, &clock, &session, &metrics);
+        }
         if options.frames.is_some_and(|n| metrics.frame_count >= n) && metrics.frame_count > 2 {
             if let Some(path) = &options.capture {
                 get_screen_data().export_png(path);
             }
             if let Some(path) = &options.evidence {
                 write_evidence(path, &session, &snap, &metrics, &options, &ui);
+            }
+            if let Some(recorder) = &mut recording {
+                recorder.finish(&ui, &clock, &session, &metrics);
             }
             break;
         }

@@ -5,6 +5,10 @@ the kernel or the historical research programs. The root crate still has no
 graphics dependencies. This is a graph-based playable prototype, not a finished
 game or a continuous battlefield.
 
+Optional human-session recording and the local diagnostic connection are
+documented in [PLAYTEST_BRIDGE.md](PLAYTEST_BRIDGE.md). The ordinary launch below
+keeps recording disabled; the recorded launcher preserves a fresh session.
+
 ```sh
 cargo run --release --manifest-path client/Cargo.toml
 ```
