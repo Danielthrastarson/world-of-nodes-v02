@@ -634,7 +634,7 @@ pub(super) fn footer(
         ),
     }
     text(
-        "Space pause · wheel zoom · arrows / middle drag pan · RMB context / back · F1 controls",
+        "Space pause · wheel zoom · arrows / middle drag pan · RMB context / back · F9 world view · F1 controls",
         x,
         screen_height() - 10.,
         12.,

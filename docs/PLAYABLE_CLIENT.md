@@ -60,6 +60,7 @@ is no scripted victory, free supply, automatic defense or tuned optimal opening.
 | E / R | Stable Govern / Allocate categories, visibly deferred in this slice |
 | F1 / Escape | Help; dismiss help or command composition |
 | F2 | Explicit DEBUG truth toggle; grants no command rights |
+| F9 | Hide/restore panels and labels; knowledge mode stays unchanged |
 | F10 | Save a screenshot; optional `--capture PATH` sets destination |
 | F12 | With `--evidence PATH`, save inputs, metrics and independent replay comparison |
 
@@ -70,17 +71,25 @@ frames retain backlog. The UI displays that backlog rather than dropping events.
 
 ## What the map means
 
-Filled dots are currently observable Persons. Hollow dots are last-seen Persons,
-not live tracking. A gold ring identifies the embodied ruler. Teal marks observed
-unit membership; red requires locally recognized hostility, unless DEBUG is on.
+Solid figures are currently observable Persons. Faded outline figures are last-seen
+Persons, not live tracking. Gold identifies the embodied ruler. Military cloth
+and shields mark observed unit membership; red requires locally recognized
+hostility, unless DEBUG is on.
 Node packing and the map layout are schematic; they are not continuous physical
 positions or invented formation geometry. Progress along an edge is physical.
 
-Boxes represent real public goods batches; field patterns represent actual
-cultivation units; a crop has its actual owner. Crossing markers represent an
-existing site/project. Line width reflects observed path wear where known.
+The roof/place symbol marks a known public institutional location, not new housing.
+Arable patches represent actual cultivation units; planted rows require an actual
+crop. Stock glyphs vary with known quantity; wood-deposit canopy symbols represent
+finite resources, not simulated trees. A gap and partial timbers mark an existing
+crossing site/project; only a completed crossing gets a full deck. Curved route
+width reflects observed path wear where known.
 Carts, if present, are actual objects with their own owner and user. The playable
 scenario does not spawn decorative carts or traffic to populate the scene.
+
+F9 gives a world-only view with a persistent knowledge-mode watermark. The V0/V1
+[projection contract](SPATIAL_PROJECTION.md) distinguishes display geometry from
+physical state. No water, land use or unknown remote contents are inferred for art.
 
 The inspector shows source and observation age. Map-only starting knowledge does
 not mean a place was observed empty. A historical cart marker remains dated; it does not claim current presence.
@@ -133,7 +142,7 @@ xvfb-run -a -s '-screen 0 1440x900x24' python3 scripts/playable_clarity_smoke.py
 xvfb-run -a -s '-screen 0 1440x900x24' python3 scripts/playable_clarity_smoke.py /tmp/won-army-ui-new military
 ```
 
-`--seed N`, `--hour H`, `--commission`, `--debug`, `--reports`, `--run`, `--frames N`,
+`--seed N`, `--hour H`, `--commission`, `--debug`, `--reports`, `--map-only`, `--run`, `--frames N`,
 `--capture PATH` and `--evidence PATH` support reproducible research captures.
 `--commission` dispatches the same typed command as the UI; it is not an instant
 construction switch. `--hour` advances the ordinary Session to that checkpoint.

@@ -2,10 +2,14 @@
 #![allow(dead_code)]
 #[path = "../camera.rs"]
 mod camera;
+#[path = "../glyphs.rs"]
+mod glyphs;
 #[path = "../presentation.rs"]
 mod presentation;
 #[path = "../scene.rs"]
 mod scene;
+#[path = "../spatial.rs"]
+mod spatial;
 #[path = "../widgets.rs"]
 mod widgets;
 use macroquad::prelude::*;

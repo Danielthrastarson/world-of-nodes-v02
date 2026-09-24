@@ -42,6 +42,11 @@ and irreversible abstraction choices require a project-owner decision.
 | P2 Military control slice | PASSED — local graph scope | Move/Hold/Attack/Withdraw affect actual local voluntary members through shared physics. No remote updates, immunity or continuous formations. |
 | P3 Knowledge/reporting interface | PASSED — dated-observation scope | Author/source/age/receipt are inspectable; stale and map-only knowledge remain distinct from current truth. |
 | P4 Integrated playable scenario | ACTIVE — playable candidate | 18-Person economy/logistics/security scenario, 48 exact replays and actual window tests. Human comprehension, pacing and sustained play remain to be validated. |
+| V0 Spatial world projection | ACTIVE — ready for owner visual review | Existing graph and permitted snapshot projected as places, land, fields, resource zones, routes, crossing and people. No connectivity or physical changes. |
+| V1 Visual grammar | ACTIVE — ready for owner visual review | State-backed figures, stock, crops, infrastructure and military grouping; exact counts remain inspectable. UI-hidden captures await human judgment. |
+| V2 Mouse-first interaction | NOT STARTED | Preserve stable Q/W/E/R; expand intuitive mouse interaction only after projection review. |
+| V3 Knowledge visualization | NOT STARTED | Extend visual provenance without erasing stale knowledge or adding remote truth. Existing Play/Debug boundaries apply throughout. |
+| V4 Motion / atmosphere / audio | NOT STARTED | Only after V0–V3 readability; no new physical state invented for effects. |
 | F14 Target moment | NOT STARTED | Policy effects → households → institutional breakdown/coordination → actual gathering/travel toward castle. No spawn-rebellion shortcut. |
 | F15 Rendering | REDESIGNED / partial foundation in P0 | World → observation → render snapshot → screen. Real identities/goods/roads/fields/units. Renderer never owns world state or time. |
 | F16 Physical visual depth | NOT STARTED | Lighting, shadows, particles, fire, weather, limited physics where causally justified, with LOD. Low geometric complexity, high systemic complexity. |
@@ -254,3 +259,23 @@ feedback are clearer. The authoritative root is unchanged. 369 headless tests,
 explicit historical evidence. Unknown remote completion, service expiry, ruler
 mortality and schematic display limitations are preserved rather than repaired
 through simulation convenience.
+
+## Presentation dependency insertion after human play
+
+P4.1 was accepted. P4.2 froze implementation `243d07b` and evidence `d3958d5` for
+human play. The owner subsequently reported: “The simulation is technically
+playable but the world is still too visually unreadable to evaluate the deeper
+gameplay fairly.” This is direct human evidence and supersedes further simulation
+expansion as the immediate priority. It does not establish that the deeper game
+loop has passed or failed.
+
+The new active dependency is P4 human finding → V0 spatial projection + V1 visual
+grammar → owner screenshot review → V2 mouse-first interaction → V3 knowledge
+visualization → V4 atmosphere. The original F14–F17 history remains above. Major
+simulation systems, coercive powers, new economic behavior, Jev and deployment
+work are frozen during this presentation phase.
+
+V0/V1 [contract](SPATIAL_PROJECTION.md) and
+[evidence](../research/spatial-projection/REPORT.md) preserve the distinction
+between schematic art and authoritative state. This increment ends at visual
+review; mechanical parity alone cannot pass a new-player readability gate.

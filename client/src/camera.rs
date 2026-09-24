@@ -8,8 +8,8 @@ pub struct MapCamera {
 impl Default for MapCamera {
     fn default() -> Self {
         Self {
-            center: vec2(470.0, 310.0),
-            zoom: 1.0,
+            center: vec2(625.0, 340.0),
+            zoom: 1.05,
         }
     }
 }
@@ -33,11 +33,11 @@ impl MapCamera {
 /// Display layout only. The graph's travel times/capacities remain authoritative.
 pub fn node_position(id: usize) -> Vec2 {
     match id {
-        0 => vec2(70.0, 310.0),
-        1 => vec2(340.0, 310.0),
-        2 => vec2(740.0, 310.0),
-        3 => vec2(535.0, 75.0),
-        4 => vec2(920.0, 95.0),
+        0 => vec2(90.0, 385.0),
+        1 => vec2(430.0, 395.0),
+        2 => vec2(960.0, 405.0),
+        3 => vec2(710.0, 90.0),
+        4 => vec2(1200.0, 160.0),
         n => vec2(
             80.0 + (n % 6) as f32 * 155.0,
             520.0 + (n / 6) as f32 * 130.0,

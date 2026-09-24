@@ -1,10 +1,12 @@
+//! Spatial projection of known authoritative objects; no World or Session access.
 use crate::camera::{MapCamera, node_name, node_position};
 use crate::widgets::*;
 use crate::widgets::{GOLD, RED};
+use crate::{glyphs, spatial};
 use macroquad::prelude::*;
 use std::collections::{BTreeMap, BTreeSet};
 use world_of_nodes::provisioning::playable::snapshot::*;
-use world_of_nodes::provisioning::{Location, SCALE};
+use world_of_nodes::provisioning::{Holder, Location, SCALE};
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Selection {
@@ -24,450 +26,416 @@ pub struct Hit {
     pub selection: Selection,
     pub point: Vec2,
     pub radius: f32,
+    pub rect: Option<Rect>,
 }
-
-fn current(e: &Evidence) -> bool {
-    matches!(
-        e.source,
-        KnowledgeSource::Local | KnowledgeSource::SelfKnowledge | KnowledgeSource::Debug
+fn visible(p: Vec2, v: Rect) -> bool {
+    v.contains(p)
+}
+fn label(value: &str, p: Vec2, size: f32, color: Color) -> Rect {
+    let width = text_width(value, size);
+    draw_rectangle(
+        p.x - width * 0.5 - 7.,
+        p.y - size - 1.,
+        width + 14.,
+        size + 9.,
+        Color::new(0.12, 0.18, 0.15, 0.83),
+    );
+    text(value, p.x - width * 0.5, p.y, size, color);
+    Rect::new(
+        p.x - width * 0.5 - 7.,
+        p.y - size - 1.,
+        width + 14.,
+        size + 9.,
     )
 }
-fn faded(c: Color, e: &Evidence) -> Color {
-    if current(e) {
-        c
-    } else {
-        Color::new(c.r * 0.65, c.g * 0.65, c.b * 0.65, 1.0)
-    }
-}
-pub fn person_position(p: &PersonSnapshot) -> Vec2 {
-    match p.location {
-        Location::Node(n) => {
-            // Stable schematic packing; this is not continuous physical geometry.
-            let (a, radius) = if p.id < 12 {
-                (p.id as f32 * std::f32::consts::TAU / 12.0, 37.0)
-            } else {
-                // Area grows with count; avoid radial spokes for dense crowds.
-                let index = (p.id - 12) as f32;
-                (index * 2.399_963_1, 60.0 + index.sqrt() * 11.0)
-            };
-            node_position(n) + vec2(a.cos(), a.sin()) * radius
-        }
-        Location::Edge {
-            from, to, progress, ..
-        } => {
-            let work = p.traversal_nominal_ms.unwrap_or(1).max(1) as f64 * SCALE as f64;
-            let t = (progress as f64 / work).clamp(0., 1.) as f32;
-            let a = node_position(from);
-            let b = node_position(to);
-            let tangent = (b - a).normalize_or_zero();
-            a.lerp(b, t) + vec2(-tangent.y, tangent.x) * ((p.id % 5) as f32 - 2.) * 4.
-        }
-    }
-}
-fn visible(p: Vec2, viewport: Rect) -> bool {
-    viewport.contains(p)
-}
-fn dashed(a: Vec2, b: Vec2, width: f32, color: Color) {
-    let length = a.distance(b);
-    let direction = (b - a).normalize_or_zero();
-    let mut at = 0.0;
-    while at < length {
-        let x = a + direction * at;
-        let y = a + direction * (at + 8.).min(length);
-        draw_line(x.x, x.y, y.x, y.y, width, color);
-        at += 15.;
-    }
-}
-
-// Icons describe known places and objects, not additional simulated buildings.
-fn place_outline(p: Vec2, radius: f32, width: f32, color: Color) {
-    draw_poly_lines(p.x, p.y, 6, radius, 30., width, color);
-}
-fn centered_label(label: &str, p: Vec2, size: f32, color: Color) {
-    // Approximate centering is display-only; the bundled UI font has a similar
-    // average advance. Hit positions never depend on rendered text width.
-    text(
-        label,
-        p.x - label.chars().count() as f32 * size * 0.25,
-        p.y,
-        size,
-        color,
+fn bounds_mask(viewport: Rect) {
+    draw_rectangle(0., 0., screen_width(), viewport.y, PANEL);
+    draw_rectangle(
+        viewport.right(),
+        viewport.y,
+        (screen_width() - viewport.right()).max(0.),
+        screen_height() - viewport.y,
+        PANEL,
+    );
+    draw_rectangle(
+        0.,
+        viewport.bottom(),
+        screen_width(),
+        (screen_height() - viewport.bottom()).max(0.),
+        PANEL,
     );
 }
-fn quiet(color: Color, strength: f32) -> Color {
-    Color::new(color.r, color.g, color.b, strength)
-}
-fn selection_box(p: Vec2, half: Vec2) {
-    draw_rectangle_lines(
-        p.x - half.x - 4.,
-        p.y - half.y - 4.,
-        2. * half.x + 8.,
-        2. * half.y + 8.,
-        5.,
-        quiet(GOLD, 0.13),
-    );
-    draw_rectangle_lines(
-        p.x - half.x - 2.,
-        p.y - half.y - 2.,
-        2. * half.x + 4.,
-        2. * half.y + 4.,
-        2.,
-        GOLD,
-    );
-}
-fn short_resource(material: &str) -> &str {
-    if material.contains("Food") {
-        "Food"
-    } else if material.contains("Wood") {
-        "Wood"
-    } else if material.contains("Stone") {
-        "Stone"
-    } else {
-        material
-    }
-}
-
+/// Normal play includes quiet place labels and compact group markers.
 pub fn draw(
-    snapshot: &Snapshot,
+    s: &Snapshot,
     previous: Option<&Snapshot>,
     alpha: f32,
     camera: &MapCamera,
     viewport: Rect,
     selection: Option<Selection>,
 ) -> Vec<Hit> {
+    draw_world(s, previous, alpha, camera, viewport, selection, true)
+}
+/// Screenshot/exploration projection with no panels, labels, IDs or quantities.
+pub fn draw_unlabelled(
+    s: &Snapshot,
+    previous: Option<&Snapshot>,
+    alpha: f32,
+    camera: &MapCamera,
+    viewport: Rect,
+    selection: Option<Selection>,
+) -> Vec<Hit> {
+    draw_world(s, previous, alpha, camera, viewport, selection, false)
+}
+fn draw_world(
+    s: &Snapshot,
+    previous: Option<&Snapshot>,
+    alpha: f32,
+    camera: &MapCamera,
+    viewport: Rect,
+    selection: Option<Selection>,
+    labels: bool,
+) -> Vec<Hit> {
     let mut hits = Vec::new();
-    let old_people: BTreeMap<_, _> = previous
-        .into_iter()
-        .flat_map(|s| s.persons.iter())
-        .filter(|p| current(&p.evidence))
-        .map(|p| (p.id, p))
-        .collect();
-    draw_rectangle(viewport.x, viewport.y, viewport.w, viewport.h, BG);
-    // A low-contrast drafting grid belongs to the camera, never to terrain truth.
-    let grid = Color::new(0.10, 0.16, 0.18, 0.24);
-    for x in (0..(viewport.w as usize)).step_by(64) {
-        draw_line(
-            viewport.x + x as f32,
-            viewport.y,
-            viewport.x + x as f32,
-            viewport.bottom(),
-            1.,
-            grid,
-        );
-    }
-    for y in (0..(viewport.h as usize)).step_by(64) {
-        draw_line(
-            viewport.x,
-            viewport.y + y as f32,
-            viewport.right(),
-            viewport.y + y as f32,
-            1.,
-            grid,
-        );
-    }
-    // Connections are the quietest meaningful layer. Only selected routes show
-    // timing/capacity; visible queue pressure remains noticeable without hover.
-    for e in &snapshot.edges {
-        let a = camera.project(node_position(e.a), viewport);
-        let b = camera.project(node_position(e.b), viewport);
-        if !visible(a, viewport) && !visible(b, viewport) {
-            continue;
-        }
+    let z = camera.zoom;
+    spatial::ground(s, camera, viewport);
+    // Only known graph edges create routes. Width means observed path wear;
+    // screen length, texture and curvature have no effect on travel/capacity.
+    for e in &s.edges {
         let selected = selection == Some(Selection::Edge(e.id));
+        let historical = !spatial::current(&e.evidence);
         let width = match e.path_stage.as_deref() {
-            Some("worn_path") => 4.,
-            Some("trail") => 2.7,
-            _ => 1.5,
-        };
-        let color = if selected {
-            GOLD
-        } else {
-            quiet(
-                faded(
-                    if e.capacity == 0 {
-                        MUTED
-                    } else {
-                        Color::new(0.43, 0.50, 0.43, 1.)
-                    },
-                    &e.evidence,
-                ),
-                0.65,
-            )
+            Some("worn_path") => 11.,
+            Some("trail") => 7.,
+            _ => 4.,
         };
         if selected {
-            draw_line(a.x, a.y, b.x, b.y, width + 7., quiet(GOLD, 0.10));
+            spatial::route_line(
+                e.a,
+                e.b,
+                (width + 8.) * z,
+                Color::new(1., 0.84, 0.34, 0.45),
+                camera,
+                viewport,
+                false,
+            );
         }
-        if e.capacity == 0 || !current(&e.evidence) {
-            dashed(a, b, width, color);
+        if e.capacity > 0 {
+            if historical {
+                spatial::route_line(
+                    e.a,
+                    e.b,
+                    2.0 * z.max(0.7),
+                    Color::new(0.26, 0.32, 0.26, 0.55),
+                    camera,
+                    viewport,
+                    true,
+                );
+            } else {
+                spatial::route_line(
+                    e.a,
+                    e.b,
+                    (width + 3.) * z,
+                    Color::new(0.32, 0.35, 0.24, 0.60),
+                    camera,
+                    viewport,
+                    false,
+                );
+                spatial::route_line(e.a, e.b, width * z, spatial::SAND, camera, viewport, false);
+                spatial::route_line(
+                    e.a,
+                    e.b,
+                    (width * 0.32).max(1.) * z,
+                    Color::new(0.76, 0.70, 0.51, 0.40),
+                    camera,
+                    viewport,
+                    false,
+                );
+            }
         } else {
-            draw_line(a.x, a.y, b.x, b.y, width, color);
+            spatial::route_line(
+                e.a,
+                e.b,
+                2. * z,
+                Color::new(0.27, 0.32, 0.24, 0.50),
+                camera,
+                viewport,
+                true,
+            );
         }
-        let m = a.lerp(b, 0.5);
-        if visible(m, viewport) {
-            if selected || camera.zoom > 1.65 {
-                let label = if e.capacity == 0 {
-                    "Route unopened".into()
-                } else {
-                    format!("{} · capacity {}", hours(e.nominal_ms), e.capacity)
-                };
-                centered_label(
-                    &label,
-                    m + vec2(0., -19.),
-                    13.,
-                    if selected { GOLD } else { MUTED },
-                );
-                if selected && !current(&e.evidence) {
-                    centered_label(
-                        &format!("Last seen {}", age(snapshot.now, e.evidence.observed_at)),
-                        m + vec2(0., 36.),
-                        12.,
-                        MUTED,
-                    );
-                }
+        for i in 2..15 {
+            let p = camera.project(spatial::route_point(e.a, e.b, i as f32 / 16.), viewport);
+            if visible(p, viewport) {
+                hits.push(Hit {
+                    selection: Selection::Edge(e.id),
+                    point: p,
+                    radius: (9. * z).max(6.),
+                    rect: None,
+                });
             }
-            if let Some(q) = e.queued.filter(|&q| q > 0) {
-                centered_label(
-                    &format!("{q} queued"),
-                    m + vec2(0., 20.),
-                    14.,
-                    faded(GOLD, &e.evidence),
+        }
+        if selected && labels {
+            let p = camera.project(spatial::route_point(e.a, e.b, 0.5), viewport);
+            let value = if e.capacity == 0 {
+                "Unopened route".into()
+            } else {
+                format!("{} · capacity {}", hours(e.nominal_ms), e.capacity)
+            };
+            label(&value, p + vec2(0., -25.), 13., GOLD);
+            if let Some(q) = e.queued.filter(|q| *q > 0) {
+                label(
+                    &format!("{q} queued · observed bank"),
+                    p + vec2(0., 25.),
+                    12.,
+                    INK,
                 );
             }
-            hits.push(Hit {
-                selection: Selection::Edge(e.id),
-                point: m,
-                radius: 18.,
-            });
         }
     }
-    for n in &snapshot.nodes {
-        let p = camera.project(node_position(n.id), viewport);
-        if !visible(p, viewport) {
+    for n in &s.nodes {
+        let at = camera.project(node_position(n.id), viewport);
+        if !visible(at, viewport) {
             continue;
         }
-        let selected = selection == Some(Selection::Node(n.id));
-        let local = current(&n.evidence);
-        let settlement = n.board_quantity.is_some();
-        let radius = (if settlement { 29. } else { 22. }) * camera.zoom.clamp(0.8, 1.35);
-        let color = if selected {
-            GOLD
-        } else if settlement {
-            faded(TEAL, &n.evidence)
-        } else {
-            faded(MUTED, &n.evidence)
-        };
-        if selected {
-            draw_poly(p.x, p.y, 6, radius + 9., 30., quiet(GOLD, 0.08));
-            place_outline(p, radius + 7., 2., GOLD);
-        }
-        draw_poly(p.x, p.y, 6, radius, 30., if local { PANEL } else { BG });
-        place_outline(
-            p,
-            radius,
-            if local { 1.8 } else { 1. },
-            quiet(color, if local { 1. } else { 0.6 }),
+        spatial::place(
+            n,
+            camera,
+            viewport,
+            selection == Some(Selection::Node(n.id)),
         );
-        if settlement {
-            // A roof-like civic marker means a known local request institution;
-            // it is not a claim that a physical house/building was created.
-            draw_line(p.x - 12., p.y - 3., p.x, p.y - 13., 2., color);
-            draw_line(p.x, p.y - 13., p.x + 12., p.y - 3., 2., color);
-            draw_rectangle_lines(p.x - 9., p.y - 3., 18., 15., 1.5, color);
-            draw_rectangle(p.x - 2.5, p.y + 3., 5., 9., color);
-        } else {
-            draw_circle_lines(p.x, p.y, 4.5, 1.3, color);
-            if local {
-                draw_circle(p.x, p.y, 2., color);
-            }
-        }
-        centered_label(
-            &node_name(n.id),
-            p + vec2(0., 66.),
-            if settlement || selected { 19. } else { 16. },
-            color,
-        );
-        if selected || !local {
-            let detail = if !n.contents_known {
-                "Map knowledge only".into()
-            } else if local {
-                "Observed here".into()
+        if labels {
+            let selected = selection == Some(Selection::Node(n.id));
+            let name = node_name(n.id);
+            if n.board_quantity.is_some() || selected {
+                label(
+                    &name,
+                    at + vec2(-10., 106. * z),
+                    17.,
+                    if selected { GOLD } else { INK },
+                );
             } else {
-                format!("Last seen {}", age(snapshot.now, n.evidence.observed_at))
-            };
-            centered_label(&detail, p + vec2(0., 84.), 12., quiet(MUTED, 0.8));
+                text(
+                    &name,
+                    at.x - text_width(&name, 13.) * 0.5,
+                    at.y + 32. * z,
+                    13.,
+                    spatial::tint(spatial::INK, &n.evidence),
+                );
+            }
         }
         hits.push(Hit {
             selection: Selection::Node(n.id),
-            point: p,
-            radius: radius + 4.,
+            point: at,
+            radius: 32. * z.max(0.65),
+            rect: None,
         });
     }
-    // Use node-local packing: discovering goods/fields elsewhere must not shift
-    // the icons attached to a different location.
     let mut field_slots = BTreeMap::<usize, usize>::new();
-    for f in &snapshot.fields {
+    for f in &s.fields {
         let slot = field_slots.entry(f.node).or_default();
-        let base = node_position(f.node)
-            + vec2(
-                -70. + (*slot % 3) as f32 * 30.,
-                -81. - (*slot / 3) as f32 * 23.,
-            );
+        let at = camera.project(spatial::field_position(f.node, *slot), viewport);
         *slot += 1;
-        let p = camera.project(base, viewport);
-        if !visible(p, viewport) {
+        if !visible(at, viewport) {
             continue;
         }
         let selected = selection == Some(Selection::Field(f.id));
-        let green = faded(
-            if f.crop.is_some() {
-                Color::new(0.48, 0.62, 0.33, 1.)
-            } else {
-                MUTED
-            },
-            &f.evidence,
-        );
-        draw_rectangle(p.x - 12., p.y - 8., 24., 16., BG);
-        draw_rectangle_lines(p.x - 12., p.y - 8., 24., 16., 1., green);
-        for x in 0..4 {
-            draw_line(
-                p.x - 9. + x as f32 * 6.,
-                p.y - 6.,
-                p.x - 9. + x as f32 * 6.,
-                p.y + 6.,
-                1.,
-                green,
+        glyphs::field(f, at, z, selected);
+        if selected && labels {
+            label(
+                &format!("Plot · {}", f.stage),
+                at + vec2(0., -25. * z),
+                13.,
+                GOLD,
             );
-        }
-        if selected {
-            selection_box(p, vec2(12., 8.));
         }
         hits.push(Hit {
             selection: Selection::Field(f.id),
-            point: p,
-            radius: 14.,
+            point: at,
+            radius: 29. * z,
+            rect: None,
         });
     }
-    let mut goods_slots = BTreeMap::<usize, usize>::new();
-    for g in snapshot.goods.iter().filter(|g| g.node.is_some()) {
+    let mut stock_slots = BTreeMap::<usize, usize>::new();
+    let mut wood_slots = BTreeMap::<usize, usize>::new();
+    for g in s.goods.iter().filter(|g| g.node.is_some()) {
         let node = g.node.unwrap();
-        let slot = goods_slots.entry(node).or_default();
-        let p = camera.project(
-            node_position(node)
-                + vec2(
-                    69. + (*slot % 2) as f32 * 87.,
-                    -34. - (*slot / 2) as f32 * 27.,
-                ),
-            viewport,
-        );
+        let wood = matches!(g.holder, Holder::Deposit(_)) && g.material.contains("Wood");
+        let slot = if wood {
+            wood_slots.entry(node).or_default()
+        } else {
+            stock_slots.entry(node).or_default()
+        };
+        let at = camera.project(spatial::goods_position(node, *slot, wood), viewport);
         *slot += 1;
-        if !visible(p, viewport) {
+        if !visible(at, viewport) {
             continue;
         }
+        spatial::wood_zone(g, at, z);
         let selected = selection == Some(Selection::Goods(g.id));
-        let details = selected || selection == Some(Selection::Node(node)) || camera.zoom > 1.45;
-        let name = short_resource(&g.material);
-        let color = faded(
-            match name {
-                "Food" => GOLD,
-                "Wood" => Color::new(0.62, 0.46, 0.32, 1.),
-                _ => MUTED,
-            },
-            &g.evidence,
-        );
-        draw_rectangle(p.x - 7., p.y - 7., 14., 14., BG);
-        if current(&g.evidence) {
-            draw_rectangle(p.x - 6., p.y - 6., 12., 12., quiet(color, 0.22));
-        }
-        draw_rectangle_lines(p.x - 7., p.y - 7., 14., 14., 1.5, color);
-        draw_line(p.x - 5., p.y + 4., p.x + 5., p.y - 4., 1., color);
-        if details {
-            text(
-                &format!("{} {}", g.quantity, name),
-                p.x + 12.,
-                p.y + 5.,
-                13.,
-                color,
+        glyphs::goods(g, at, z, selected);
+        if labels && selected {
+            let kind = if wood {
+                "Wood source"
+            } else {
+                g.material.as_str()
+            };
+            label(
+                &format!("{} {}", g.quantity, kind),
+                at + vec2(0., 25. * z),
+                12.,
+                if selected { GOLD } else { INK },
             );
-        }
-        if selected {
-            selection_box(p, vec2(8., 8.));
         }
         hits.push(Hit {
             selection: Selection::Goods(g.id),
-            point: p,
-            radius: 12.,
+            point: at,
+            radius: 20. * z,
+            rect: None,
         });
     }
-    for c in &snapshot.crossings {
-        let p = if let Some(e) = c
-            .edge
-            .and_then(|id| snapshot.edges.iter().find(|e| e.id == id))
-        {
-            camera.project(node_position(e.a).lerp(node_position(e.b), 0.5), viewport)
-        } else {
-            camera.project(node_position(c.node) + vec2(90., 40.), viewport)
-        };
-        if !visible(p, viewport) {
+    for c in &s.crossings {
+        let at = camera.project(spatial::crossing_position(c, s), viewport);
+        if !visible(at, viewport) {
             continue;
         }
+        // Explicit schematic barrier. No unmodeled river, hydrology or extra
+        // blocked edges are invented. Only this known crossing spans the gap.
+        let gap = spatial::tint(Color::new(0.22, 0.27, 0.20, 1.), &c.evidence);
+        // Irregular bank cut, not a pond or a claim of modeled water.
+        let left = [
+            vec2(-13., -48.),
+            vec2(-21., -27.),
+            vec2(-18., -7.),
+            vec2(-22., 18.),
+            vec2(-12., 45.),
+        ];
+        let right = [
+            vec2(12., -48.),
+            vec2(21., -27.),
+            vec2(18., -7.),
+            vec2(23., 18.),
+            vec2(14., 45.),
+        ];
+        for i in 0..4 {
+            let a = at + left[i] * z;
+            let b = at + right[i] * z;
+            let p3 = at + left[i + 1] * z;
+            let d = at + right[i + 1] * z;
+            draw_triangle(a, b, p3, gap);
+            draw_triangle(b, p3, d, gap);
+            let bank = spatial::tint(Color::new(0.65, 0.60, 0.43, 1.), &c.evidence);
+            draw_line(a.x, a.y, p3.x, p3.y, 3. * z, bank);
+            draw_line(b.x, b.y, d.x, d.y, 3. * z, bank);
+        }
         let selected = selection == Some(Selection::Crossing(c.id));
-        let color = faded(
-            if c.completed == Some(true) {
-                TEAL
+        glyphs::crossing(c, at, z, selected);
+        if labels {
+            let state = if c.completed == Some(true) {
+                "Crossing open"
+            } else if c.authorized == Some(true) {
+                "Crossing · work site"
             } else {
-                GOLD
-            },
-            &c.evidence,
-        );
-        draw_rectangle(p.x - 31., p.y - 17., 62., 34., BG);
-        if selected {
-            selection_box(p, vec2(32., 18.));
-        }
-        draw_line(p.x - 24., p.y - 9., p.x + 24., p.y - 9., 2.5, color);
-        draw_line(p.x - 24., p.y + 9., p.x + 24., p.y + 9., 2.5, color);
-        for x in -2..=2 {
-            draw_line(
-                p.x + x as f32 * 9.,
-                p.y - 8.,
-                p.x + x as f32 * 9.,
-                p.y + 8.,
-                1.,
-                color,
-            );
-        }
-        for x in [-28., 28.] {
-            draw_rectangle(p.x + x - 3., p.y - 14., 6., 28., color);
-        }
-        let label = if c.completed == Some(true) {
-            "Crossing open"
-        } else if c.authorized == Some(true) {
-            "Crossing commissioned"
-        } else {
-            "Crossing site"
-        };
-        centered_label(
-            label,
-            p + vec2(0., 42.),
-            15.,
-            if selected { GOLD } else { color },
-        );
-        if selected && !current(&c.evidence) {
-            centered_label(
-                &format!("Last seen {}", age(snapshot.now, c.evidence.observed_at)),
-                p + vec2(0., 59.),
-                12.,
-                MUTED,
+                "Crossing opportunity"
+            };
+            label(
+                state,
+                at + vec2(0., 62. * z),
+                14.,
+                if selected { GOLD } else { INK },
             );
         }
         hits.push(Hit {
             selection: Selection::Crossing(c.id),
-            point: p,
-            radius: 32.,
+            point: at,
+            radius: 36. * z,
+            rect: None,
         });
     }
-    for c in &snapshot.carts {
-        let position = match c.location {
-            Location::Node(n) => node_position(n) + vec2(-60., 20. + (c.id % 4) as f32 * 17.),
+    let poses = spatial::person_positions(s);
+    let old_poses = previous.map(spatial::person_positions).unwrap_or_default();
+    let old_current: BTreeSet<_> = previous
+        .into_iter()
+        .flat_map(|s| &s.persons)
+        .filter(|p| spatial::current(&p.evidence))
+        .map(|p| p.id)
+        .collect();
+    let selected_members: BTreeSet<_> = selection
+        .and_then(|sel| {
+            if let Selection::Unit(id) = sel {
+                s.units.iter().find(|u| u.id == id)
+            } else {
+                None
+            }
+        })
+        .into_iter()
+        .flat_map(|u| u.member_ids.iter().copied())
+        .collect();
+    let mut drawn = BTreeMap::new();
+    for p in &s.persons {
+        let mut pos = poses[&p.id];
+        if spatial::current(&p.evidence)
+            && old_current.contains(&p.id)
+            && let Some(old) = old_poses.get(&p.id)
+        {
+            pos = old.lerp(pos, alpha.clamp(0., 1.));
+        }
+        let at = camera.project(pos, viewport);
+        drawn.insert(p.id, at);
+        if !visible(at, viewport) {
+            continue;
+        }
+        if selected_members.contains(&p.id) {
+            draw_circle_lines(at.x, at.y, 12. * z, 1.5, GOLD);
+        }
+        glyphs::person(
+            p,
+            at,
+            z,
+            p.id == s.viewer,
+            selection == Some(Selection::Person(p.id)),
+        );
+        // Known action marks describe the real current action, never extra work.
+        if spatial::current(&p.evidence) {
+            let mark = match p.action.as_deref() {
+                Some("sleeping") => Some("z"),
+                Some("queued") => Some("· ·"),
+                Some("striking") => Some("×"),
+                _ => None,
+            };
+            if labels && let Some(mark) = mark {
+                text(
+                    mark,
+                    at.x + 7. * z,
+                    at.y - 9. * z,
+                    12.,
+                    if p.action.as_deref() == Some("striking") {
+                        RED
+                    } else {
+                        spatial::INK
+                    },
+                );
+            }
+        }
+        if labels && (selection == Some(Selection::Person(p.id)) || camera.zoom > 1.8) {
+            label(
+                &format!("Person {}", p.id),
+                at + vec2(0., -22. * z),
+                12.,
+                GOLD,
+            );
+        }
+        hits.push(Hit {
+            selection: Selection::Person(p.id),
+            point: at,
+            radius: (10. * z).max(5.),
+            rect: None,
+        });
+    }
+    let people: BTreeMap<_, _> = s.persons.iter().map(|p| (p.id, p)).collect();
+    let edge_times: BTreeMap<_, _> = s.edges.iter().map(|e| (e.id, e.nominal_ms)).collect();
+    for c in &s.carts {
+        let pos = match c.location {
+            Location::Node(n) => node_position(n) + vec2(-114., 35. + (c.id % 4) as f32 * 22.),
             Location::Edge {
                 edge,
                 from,
@@ -477,189 +445,137 @@ pub fn draw(
             } => {
                 let nominal = c
                     .user
-                    .and_then(|id| snapshot.persons.iter().find(|p| p.id == id))
+                    .and_then(|id| people.get(&id))
                     .and_then(|p| p.traversal_nominal_ms)
-                    .or_else(|| {
-                        snapshot
-                            .edges
-                            .iter()
-                            .find(|e| e.id == edge)
-                            .map(|e| e.nominal_ms)
-                    })
+                    .or_else(|| edge_times.get(&edge).copied())
                     .unwrap_or(1)
                     .max(1);
-                let fraction =
-                    (progress as f64 / (nominal as f64 * SCALE as f64)).clamp(0., 1.) as f32;
-                node_position(from).lerp(node_position(to), fraction)
+                spatial::route_point(
+                    from,
+                    to,
+                    (progress as f64 / (nominal as f64 * SCALE as f64)).clamp(0., 1.) as f32,
+                )
             }
         };
-        let p = camera.project(position, viewport);
-        if !visible(p, viewport) {
-            continue;
-        }
-        let color = faded(GOLD, &c.evidence);
-        draw_rectangle_lines(p.x - 10., p.y - 6., 20., 12., 1.5, color);
-        draw_circle_lines(p.x - 7., p.y + 8., 3., 1.5, color);
-        draw_circle_lines(p.x + 7., p.y + 8., 3., 1.5, color);
-        if selection == Some(Selection::Cart(c.id)) {
-            selection_box(p, vec2(12., 12.));
-        }
-        hits.push(Hit {
-            selection: Selection::Cart(c.id),
-            point: p,
-            radius: 14.,
-        });
-    }
-    let selected_members: BTreeSet<_> = selection
-        .and_then(|s| match s {
-            Selection::Unit(id) => snapshot.units.iter().find(|u| u.id == id),
-            _ => None,
-        })
-        .into_iter()
-        .flat_map(|u| u.member_ids.iter().copied())
-        .collect();
-    let mut drawn_people = BTreeMap::new();
-    for p in &snapshot.persons {
-        let mut pos = person_position(p);
-        if current(&p.evidence)
-            && let Some(old) = old_people.get(&p.id)
-        {
-            // Both poses have already executed; no extrapolation or movement law.
-            pos = person_position(old).lerp(pos, alpha.clamp(0., 1.));
-        }
         let at = camera.project(pos, viewport);
-        drawn_people.insert(p.id, at);
         if !visible(at, viewport) {
             continue;
         }
-        let dead = p.action.as_deref().is_some_and(|a| a == "dead");
-        let color = if p.id == snapshot.viewer {
-            GOLD
-        } else if dead {
-            MUTED
-        } else if p.hostile == Some(true) {
-            RED
-        } else if p.unit.is_some() {
-            TEAL
-        } else {
-            INK
-        };
-        let radius = (4.7 * camera.zoom.sqrt()).clamp(3., 8.);
-        if selected_members.contains(&p.id) {
-            draw_circle_lines(at.x, at.y, radius + 5., 1.4, quiet(GOLD, 0.65));
-        }
-        if current(&p.evidence) {
-            draw_circle(at.x, at.y, radius, color);
-        } else {
-            draw_circle_lines(
-                at.x,
-                at.y,
-                radius,
-                1.,
-                quiet(faded(color, &p.evidence), 0.65),
-            );
-        }
-        if dead {
-            draw_line(at.x - 4., at.y - 4., at.x + 4., at.y + 4., 1., BG);
-        }
-        if p.id == snapshot.viewer {
-            draw_circle_lines(at.x, at.y, radius + 3.5, 1.3, GOLD);
-        }
-        if selection == Some(Selection::Person(p.id)) {
-            draw_circle_lines(at.x, at.y, radius + 8., 3., quiet(GOLD, 0.18));
-            draw_circle_lines(at.x, at.y, radius + 7., 2., GOLD);
-        }
-        if snapshot.mode == ViewMode::Debug || camera.zoom > 1.6 {
-            text(&p.id.to_string(), at.x + 7., at.y - 5., 12., MUTED);
-        }
+        glyphs::cart(c, at, z, selection == Some(Selection::Cart(c.id)));
         hits.push(Hit {
-            selection: Selection::Person(p.id),
+            selection: Selection::Cart(c.id),
             point: at,
-            radius: radius + 5.,
+            radius: 20. * z,
+            rect: None,
         });
     }
-    for u in &snapshot.units {
-        let points: Vec<_> = u
-            .member_ids
-            .iter()
-            .filter_map(|id| drawn_people.get(id).copied())
-            .collect();
-        if points.is_empty() {
-            continue;
+    // One marker per actually observed same-location group. No badge floats
+    // at a fictitious global army centroid across different nodes/edges.
+    for u in &s.units {
+        let mut clusters = BTreeMap::<(u8, usize, usize, u8), Vec<Vec2>>::new();
+        for id in &u.member_ids {
+            let Some(p) = people.get(id) else {
+                continue;
+            };
+            let Some(at) = drawn.get(id) else {
+                continue;
+            };
+            let key = match p.location {
+                Location::Node(n) => (0, n, 0, 0),
+                Location::Edge {
+                    edge,
+                    from,
+                    progress,
+                    ..
+                } => {
+                    let work = p.traversal_nominal_ms.unwrap_or(1).max(1) as f64 * SCALE as f64;
+                    (
+                        1,
+                        edge,
+                        from,
+                        ((progress as f64 / work).clamp(0., 0.999) * 4.) as u8,
+                    )
+                }
+            };
+            clusters.entry(key).or_default().push(*at);
         }
-        let mean = points.iter().copied().fold(Vec2::ZERO, |a, b| a + b) / points.len() as f32;
-        let p = mean + vec2(0., -73.);
-        if !visible(p, viewport) {
-            continue;
-        }
-        let selected = selection == Some(Selection::Unit(u.id));
-        let color = if selected { GOLD } else { TEAL };
-        // A leader line links the badge to observed members, not a territory or
-        // continuous formation boundary. No unseen member contributes a point.
-        draw_line(p.x, p.y + 24., mean.x, mean.y - 13., 1., quiet(color, 0.4));
-        draw_rectangle(p.x - 90., p.y - 31., 180., 62., PANEL);
-        draw_rectangle_lines(
-            p.x - 90.,
-            p.y - 31.,
-            180.,
-            62.,
-            if selected { 2. } else { 1. },
-            color,
-        );
-        if selected {
-            selection_box(p, vec2(91., 32.));
-        }
-        let flag = p + vec2(-75., -14.);
-        draw_line(flag.x, flag.y - 3., flag.x, flag.y + 18., 1.5, color);
-        draw_triangle(
-            flag + vec2(0., -3.),
-            flag + vec2(13., 1.),
-            flag + vec2(0., 6.),
-            color,
-        );
-        text(&format!("UNIT {}", u.id), p.x - 52., p.y - 10., 17., color);
-        text(
-            &format!("{} in view", u.member_ids.len()),
-            p.x - 52.,
-            p.y + 7.,
-            12.,
-            MUTED,
-        );
-        let state = crate::presentation::unit_state(snapshot, u.id);
-        fitted(&state, p.x - 79., p.y + 24., 158., 12., MUTED);
-        // Overlapping hit disks cover the full badge without turning the space
-        // between badge and soldiers into an oversized invisible button.
-        for x in [-58., 0., 58.] {
+        for (cluster, points) in &clusters {
+            let mean = points.iter().copied().fold(Vec2::ZERO, |a, b| a + b) / points.len() as f32;
+            let at = mean + vec2(-34., -12.) * z;
+            if !visible(at, viewport) {
+                continue;
+            }
+            let selected = selection == Some(Selection::Unit(u.id));
+            let color = if selected { GOLD } else { TEAL };
+            draw_line(
+                at.x,
+                at.y - 9. * z,
+                at.x,
+                at.y + 23. * z,
+                3. * z,
+                spatial::INK,
+            );
+            draw_triangle(
+                at + vec2(1., -8.) * z,
+                at + vec2(23., -2.) * z,
+                at + vec2(1., 9.) * z,
+                spatial::INK,
+            );
+            draw_triangle(
+                at + vec2(3., -6.) * z,
+                at + vec2(19., -2.) * z,
+                at + vec2(3., 6.) * z,
+                color,
+            );
+            if labels {
+                let suffix = if cluster.0 == 0 { "here" } else { "on route" };
+                let area = label(
+                    &format!("Unit {} · {} {suffix}", u.id, points.len()),
+                    at + vec2(-18., -22.) * z,
+                    13.,
+                    color,
+                );
+                hits.push(Hit {
+                    selection: Selection::Unit(u.id),
+                    point: area.center(),
+                    radius: 1.,
+                    rect: Some(area),
+                });
+                if selected {
+                    label(
+                        &crate::presentation::unit_state(s, u.id),
+                        mean + vec2(0., 42. * z),
+                        12.,
+                        INK,
+                    );
+                }
+            }
+            if selected {
+                draw_circle_lines(at.x + 8. * z, at.y, 19. * z, 2., GOLD);
+            }
             hits.push(Hit {
                 selection: Selection::Unit(u.id),
-                point: p + vec2(x, 0.),
-                radius: 34.,
+                point: at + vec2(8., 0.) * z,
+                radius: 20. * z.max(0.65),
+                rect: None,
             });
         }
     }
-    // Inspectors and command bars own pixels outside the schematic map.
-    draw_rectangle(0., 0., screen_width(), viewport.y, PANEL);
-    draw_rectangle(
-        viewport.right(),
-        viewport.y,
-        screen_width() - viewport.right(),
-        screen_height() - viewport.y,
-        PANEL,
-    );
-    draw_rectangle(
-        0.,
-        viewport.bottom(),
-        screen_width(),
-        screen_height() - viewport.bottom(),
-        PANEL,
-    );
+    bounds_mask(viewport);
     hits
 }
 
 pub fn hit_test(hits: &[Hit], mouse: Vec2) -> Option<Selection> {
+    if let Some(hit) = hits
+        .iter()
+        .rev()
+        .find(|h| h.rect.is_some_and(|r| r.contains(mouse)))
+    {
+        return Some(hit.selection);
+    }
     hits.iter()
         .rev()
-        .filter(|h| h.point.distance(mouse) <= h.radius)
+        .filter(|h| h.rect.is_none() && h.point.distance(mouse) <= h.radius)
         .min_by(|a, b| {
             (a.point.distance(mouse) / a.radius).total_cmp(&(b.point.distance(mouse) / b.radius))
         })

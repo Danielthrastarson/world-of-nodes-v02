@@ -1,11 +1,13 @@
 mod camera;
 mod chrome;
 mod clock;
+mod glyphs;
 mod journal;
 mod metrics;
 mod presentation;
 mod recording;
 mod scene;
+mod spatial;
 mod widgets;
 use camera::MapCamera;
 use chrome::{footer, header, matters, sidebar};
@@ -36,6 +38,7 @@ struct Ui {
     camera: MapCamera,
     mode: ViewMode,
     help: bool,
+    map_only: bool,
     tab: usize,
     scroll: usize,
     notice: String,
@@ -46,7 +49,7 @@ struct Ui {
 }
 impl Default for Ui {
     fn default() -> Self {
-        Self{selection:Some(Selection::Node(1)),verb:Verb::Observe,draft:None,camera:MapCamera::default(),mode:ViewMode::Play,help:false,tab:0,scroll:0,notice:"PAUSED · Accepted steward duties and voluntary militia are initial conditions. No order issued.".into(),mouse:Vec2::ZERO,right_origin:None,dragged:false,last_unit_order:None}
+        Self{selection:Some(Selection::Node(1)),verb:Verb::Observe,draft:None,camera:MapCamera::default(),mode:ViewMode::Play,help:false,map_only:false,tab:0,scroll:0,notice:"PAUSED · Accepted steward duties and voluntary militia are initial conditions. No order issued.".into(),mouse:Vec2::ZERO,right_origin:None,dragged:false,last_unit_order:None}
     }
 }
 impl Ui {
@@ -192,6 +195,7 @@ struct Options {
     capture: Option<String>,
     evidence: Option<String>,
     journal: Option<String>,
+    map_only: bool,
 }
 fn options() -> Options {
     let mut o = Options::default();
@@ -208,6 +212,7 @@ fn options() -> Options {
             "--run" => o.run = true,
             "--commission" => o.commission = true,
             "--reports" => o.reports = true,
+            "--map-only" => o.map_only = true,
             "--seed" | "--hour" | "--frames" | "--capture" | "--evidence" | "--journal" => {
                 if i + 1 < args.len() {
                     i += 1;
@@ -223,7 +228,7 @@ fn options() -> Options {
             }
             "--help" => {
                 println!(
-                    "World of Nodes: --remote --seed N --debug --run --commission --reports --hour H --frames N --capture PATH --evidence PATH --journal NEW_DIRECTORY\nQ/W/E/R verbs;1-4 options;LMB select;RMB context/cancel;Enter confirm;Space pause;F1 help;F2 debug;arrows/MMB/RMBdrag pan;wheel zoom."
+                    "World of Nodes: --remote --seed N --debug --run --commission --reports --map-only --hour H --frames N --capture PATH --evidence PATH --journal NEW_DIRECTORY\nQ/W/E/R verbs;1-4 options;LMB select;RMB context/cancel;Enter confirm;Space pause;F1 help;F2 debug;F9 world view;arrows/MMB/RMBdrag pan;wheel zoom."
                 );
                 std::process::exit(0);
             }
@@ -253,7 +258,13 @@ async fn main() {
         capture_interactions(true);
     }
     let mut session = Session::new(options.seed, options.scenario).expect("scenario");
-    let mut ui = Ui::default();
+    let mut ui = Ui {
+        map_only: options.map_only,
+        ..Default::default()
+    };
+    if ui.map_only {
+        ui.selection = None;
+    }
     if options.reports {
         ui.tab = 2;
     }
@@ -289,13 +300,21 @@ async fn main() {
             break;
         }
         let mouse = vec2(mouse_position().0, mouse_position().1);
+        if is_key_pressed(KeyCode::F9) {
+            ui.map_only = !ui.map_only;
+            hits.clear();
+        }
         let sidebar_width = 390.0_f32.min(screen_width() * 0.36);
-        let view = Rect::new(
-            0.,
-            148.,
-            (screen_width() - sidebar_width).max(200.),
-            (screen_height() - 326.).max(200.),
-        );
+        let view = if ui.map_only {
+            Rect::new(0., 0., screen_width(), screen_height())
+        } else {
+            Rect::new(
+                0.,
+                148.,
+                (screen_width() - sidebar_width).max(200.),
+                (screen_height() - 326.).max(200.),
+            )
+        };
         let capture_started = Instant::now();
         let known = session.snapshot(ViewMode::Play);
         metrics.snapshot_ms = capture_started.elapsed().as_secs_f64() * 1000.;
@@ -450,7 +469,12 @@ async fn main() {
         metrics.simulation_ms = t.elapsed().as_secs_f64() * 1000.;
         let t = Instant::now();
         clear_background(BG);
-        hits = scene::draw(
+        let draw_world = if ui.map_only {
+            scene::draw_unlabelled
+        } else {
+            scene::draw
+        };
+        hits = draw_world(
             &snap,
             previous.as_ref(),
             if clock.paused { 1. } else { clock.fraction() },
@@ -461,10 +485,30 @@ async fn main() {
         let capture_started = Instant::now();
         let known = session.snapshot(ViewMode::Play);
         metrics.snapshot_ms += capture_started.elapsed().as_secs_f64() * 1000.;
-        header(&mut ui, &mut clock, &snap, &metrics, view);
-        matters(&mut ui, &known, view);
-        sidebar(&mut ui, &snap, &known, view);
-        footer(&mut ui, &mut session, &mut snap, &known, view);
+        if ui.map_only {
+            // Keep the information mode explicit even in label-free review captures.
+            draw_rectangle(12., 12., 390., 32., BG);
+            text(
+                if ui.mode == ViewMode::Debug {
+                    "DEBUG TRUTH · schematic world · F9 panels"
+                } else {
+                    "RULER KNOWLEDGE · schematic world · F9 panels"
+                },
+                22.,
+                34.,
+                15.,
+                if ui.mode == ViewMode::Debug {
+                    RED
+                } else {
+                    TEAL
+                },
+            );
+        } else {
+            header(&mut ui, &mut clock, &snap, &metrics, view);
+            matters(&mut ui, &known, view);
+            sidebar(&mut ui, &snap, &known, view);
+            footer(&mut ui, &mut session, &mut snap, &known, view);
+        }
         if was_paused != clock.paused {
             previous = None;
         }
@@ -525,7 +569,7 @@ fn help() {
     for line in [
         "Start paused. W → 1 → click crossing site → Enter issues an order. Space resumes. A completed commission still needs voluntary materials and work.",
         "Select UNIT 0. W offers Move / Attack / Hold / Withdraw. Right-click a place to move. Only members beside the embodied ruler receive orders. Absent people retain their previous undertaking.",
-        "Q opens observations and reports. Filled dots are observed now; hollow dots are last-seen people. Unknown is not zero. The graph is a schematic, not physical terrain coordinates.",
+        "Q opens observations and reports. Solid figures are observed now; faded outlines are remembered. Unknown is not zero. The landscape projects the graph; its distances are schematic. F9 hides/restores panels and labels.",
         "F2 enters DEBUG OMNISCIENCE. It reveals private state for research but grants no command rights. F1 or Esc closes help. E/R remain reserved; no new law or coercion is added.",
         "Initial conditions: accepted steward duties; four voluntary militia members including the ruler; a finite willing courier agreement; a seeded raid threat. These are not autonomous political emergence.",
         "The ruler remains hungry, tired and mortal. Local command reach follows their body. Orders, reports, food and people must travel.",

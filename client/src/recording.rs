@@ -338,7 +338,7 @@ fn camera_json(ui: &Ui) -> String {
 }
 fn ui_fields(ui: &Ui, clock: &Playback) -> String {
     format!(
-        "\"view_mode\":{},\"paused\":{},\"speed\":{},\"selection\":{},\"verb\":{},\"draft\":{},\"tab\":{},\"scroll\":{},\"help\":{},\"notice\":{}",
+        "\"view_mode\":{},\"paused\":{},\"speed\":{},\"selection\":{},\"verb\":{},\"draft\":{},\"tab\":{},\"scroll\":{},\"help\":{},\"map_only\":{},\"notice\":{}",
         quote(&format!("{:?}", ui.mode)),
         clock.paused,
         clock.speed,
@@ -348,6 +348,7 @@ fn ui_fields(ui: &Ui, clock: &Playback) -> String {
         ui.tab,
         ui.scroll,
         ui.help,
+        ui.map_only,
         quote(&ui.notice)
     )
 }
