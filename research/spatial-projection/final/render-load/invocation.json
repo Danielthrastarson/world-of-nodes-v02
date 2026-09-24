@@ -1,0 +1,14 @@
+{
+  "command": [
+    "xvfb-run",
+    "-a",
+    "-s",
+    "-screen 0 1440x900x24",
+    "/home/lemanruss/Documents/ChatGPT/Gam,e/client/target/release/render_probe",
+    "/home/lemanruss/Documents/ChatGPT/Gam,e/research/spatial-projection/final/render-load"
+  ],
+  "started_at": "2026-09-24T17:35:44.111619+00:00",
+  "isolated_display": true,
+  "exit_code": 0,
+  "elapsed_seconds": 6.7916529630019795
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "scripts/run_command_chain.py",
+    "/tmp/won-spatial-commands-wfaoiagh/replay",
+    "30",
+    "--workers",
+    "2",
+    "--compress-traces"
+  ],
+  "error": "CalledProcessError(1, ['/usr/bin/python3', 'scripts/run_command_chain.py', '/tmp/won-spatial-commands-wfaoiagh/replay', '30', '--workers', '2', '--compress-traces'])",
+  "raw": "failed-output.tar.gz",
+  "status": "FAIL"
+}

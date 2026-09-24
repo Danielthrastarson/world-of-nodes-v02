@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "sim_ms": 0,
+  "frame": 43,
+  "knowledge_mode": "Play",
+  "view_mode": "Play",
+  "paused": true,
+  "speed": 1,
+  "selection": "Some(Unit(0))",
+  "verb": "Observe",
+  "draft": "None",
+  "tab": 0,
+  "scroll": 0,
+  "help": false,
+  "map_only": false,
+  "notice": "PAUSED \u00b7 Accepted steward duties and voluntary militia are initial conditions. No order issued.",
+  "camera": {
+    "x": 625,
+    "y": 340,
+    "zoom": 1.05
+  },
+  "known": {
+    "nodes": [
+      {
+        "id": 0,
+        "source": "Memory",
+        "observed_at": -3600000,
+        "food_request": null,
+        "people_seen": 0,
+        "contents_known": false
+      },
+      {
+        "id": 1,
+        "source": "Local",
+        "observed_at": 0,
+        "food_request": 60,
+        "people_seen": 10,
+        "contents_known": true
+      },
+      {
+        "id": 2,
+        "source": "Memory",
+        "observed_at": -3600000,
+        "food_request": null,
+        "people_seen": 0,
+        "contents_known": false
+      },
+      {
+        "id": 3,
+        "source": "Memory",
+        "observed_at": -3600000,
+        "food_request": null,
+        "people_seen": 0,
+        "contents_known": false
+      },
+      {
+        "id": 4,
+        "source": "Memory",
+        "observed_at": -3600000,
+        "food_request": null,
+        "people_seen": 0,
+        "contents_known": false
+      }
+    ],
+    "orders": [],
+    "reports": [],
+    "matters": [
+      {
+        "title": "Observed request: 60 food",
+        "detail": "The board at node 1 requests food. This is an observed request, not a diagnosis of private hunger.",
+        "evidence": "Observed locally now"
+      },
+      {
+        "title": "Crossing site known",
+        "detail": "A scoped commission can request this project. Materials and participation are not guaranteed.",
+        "evidence": "Observed locally now"
+      },
+      {
+        "title": "No office order recorded",
+        "detail": "A known crossing can be commissioned through an accepted office. Unit orders are separate.",
+        "evidence": "Own command record"
+      }
+    ],
+    "actions": [
+      {
+        "slot": 1,
+        "label": "Inspect",
+        "enabled": true,
+        "reason": "Inspect only currently known evidence"
+      },
+      {
+        "slot": 2,
+        "label": "Reports",
+        "enabled": true,
+        "reason": "Read carried reports with their original dates"
+      },
+      {
+        "slot": 3,
+        "label": "Record observation",
+        "enabled": true,
+        "reason": "Record what the ruler can observe here; no remote query"
+      },
+      {
+        "slot": 4,
+        "label": "Controls",
+        "enabled": true,
+        "reason": "Stable verbs: Q Observe, W Order, E Govern, R Allocate"
+      }
+    ],
+    "selected_panel": "Panel { title: \"Unit 0\", subtitle: \"Local presence, not global readiness\", sections: [Section { heading: \"Presence / objective\", lines: [\"Gathered at node 1\", \"Members observed: 4\"] }, Section { heading: \"Observed condition\", lines: [\"Ruler nutrition: 24h\", \"Ruler fatigue: 4h\", \"Other members' private needs are unknown.\"] }, Section { heading: \"Command reach\", lines: [\"Local instruction available to present members.\"] }, Section { heading: \"Limits\", lines: [\"Unseen members and new remote orders are unknown. A known route does not guarantee capacity, supplies or arrival.\"] }, Section { heading: \"Evidence / time\", lines: [\"Observed locally now\", \"Evidence timestamp: T+00:00:00.000\"] }] }",
+    "snapshot_details": "Snapshot { now: 0, viewer: 0, mode: Play, nodes: [NodeSnapshot { id: 0, contents_known: false, people_seen: 0, board_quantity: None, evidence: Evidence { source: Memory, observed_at: -3600000, received_at: None, author: None, sender: None }, inspect_lines: [\"Seeded map knowledge only; people, goods and requests unobserved\"] }, NodeSnapshot { id: 1, contents_known: true, people_seen: 10, board_quantity: Some(60), evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"10 people observed at t=0\"] }, NodeSnapshot { id: 2, contents_known: false, people_seen: 0, board_quantity: None, evidence: Evidence { source: Memory, observed_at: -3600000, received_at: None, author: None, sender: None }, inspect_lines: [\"Seeded map knowledge only; people, goods and requests unobserved\"] }, NodeSnapshot { id: 3, contents_known: false, people_seen: 0, board_quantity: None, evidence: Evidence { source: Memory, observed_at: -3600000, received_at: None, author: None, sender: None }, inspect_lines: [\"Seeded map knowledge only; people, goods and requests unobserved\"] }, NodeSnapshot { id: 4, contents_known: false, people_seen: 0, board_quantity: None, evidence: Evidence { source: Memory, observed_at: -3600000, received_at: None, author: None, sender: None }, inspect_lines: [\"Seeded map knowledge only; people, goods and requests unobserved\"] }], edges: [EdgeSnapshot { id: 0, a: 0, b: 1, nominal_ms: 900000, capacity: 4, queued: Some(0), queue_scope_node: Some(1), occupied: None, path_stage: Some(\"bare\"), evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None } }, EdgeSnapshot { id: 1, a: 1, b: 2, nominal_ms: 900000, capacity: 0, queued: Some(0), queue_scope_node: Some(1), occupied: None, path_stage: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None } }, EdgeSnapshot { id: 2, a: 1, b: 3, nominal_ms: 7200000, capacity: 4, queued: Some(0), queue_scope_node: Some(1), occupied: None, path_stage: Some(\"bare\"), evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None } }, EdgeSnapshot { id: 3, a: 3, b: 2, nominal_ms: 7200000, capacity: 4, queued: None, queue_scope_node: None, occupied: None, path_stage: None, evidence: Evidence { source: Memory, observed_at: -3600000, received_at: None, author: None, sender: None } }, EdgeSnapshot { id: 4, a: 4, b: 2, nominal_ms: 7200000, capacity: 4, queued: None, queue_scope_node: None, occupied: None, path_stage: None, evidence: Evidence { source: Memory, observed_at: -3600000, received_at: None, author: None, sender: None } }], persons: [PersonSnapshot { id: 0, location: Node(1), action: Some(\"military duty\"), role: Some(\"[Soldier { unit: 0 }, Sovereign { polity: 17 }]\"), unit: Some(0), hostile: Some(false), nutrition: Some(86400000), fatigue: Some(14400000), starvation: Some(0), traversal_nominal_ms: None, evidence: Evidence { source: SelfKnowledge, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 0; military duty\", \"Goal None; job None\", \"Personal memory: 5 nodes\", \"Physical body: Some(Body { injuries: 0 })\"] }, PersonSnapshot { id: 1, location: Node(1), action: Some(\"idle\"), role: Some(\"Steward(1)\"), unit: None, hostile: None, nutrition: None, fatigue: None, starvation: None, traversal_nominal_ms: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 1; idle\"] }, PersonSnapshot { id: 3, location: Node(1), action: Some(\"idle\"), role: None, unit: None, hostile: None, nutrition: None, fatigue: None, starvation: None, traversal_nominal_ms: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 3; idle\"] }, PersonSnapshot { id: 4, location: Node(1), action: Some(\"idle\"), role: None, unit: None, hostile: None, nutrition: None, fatigue: None, starvation: None, traversal_nominal_ms: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 4; idle\"] }, PersonSnapshot { id: 5, location: Node(1), action: Some(\"idle\"), role: None, unit: None, hostile: None, nutrition: None, fatigue: None, starvation: None, traversal_nominal_ms: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 5; idle\"] }, PersonSnapshot { id: 6, location: Node(1), action: Some(\"military duty\"), role: Some(\"Soldier(0)\"), unit: Some(0), hostile: Some(false), nutrition: None, fatigue: None, starvation: None, traversal_nominal_ms: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 6; military duty\"] }, PersonSnapshot { id: 7, location: Node(1), action: Some(\"military duty\"), role: Some(\"Soldier(0)\"), unit: Some(0), hostile: Some(false), nutrition: None, fatigue: None, starvation: None, traversal_nominal_ms: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 7; military duty\"] }, PersonSnapshot { id: 8, location: Node(1), action: Some(\"military duty\"), role: Some(\"Soldier(0)\"), unit: Some(0), hostile: Some(false), nutrition: None, fatigue: None, starvation: None, traversal_nominal_ms: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 8; military duty\"] }, PersonSnapshot { id: 16, location: Node(1), action: Some(\"idle\"), role: None, unit: None, hostile: None, nutrition: None, fatigue: None, starvation: None, traversal_nominal_ms: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 16; idle\"] }, PersonSnapshot { id: 17, location: Node(1), action: Some(\"idle\"), role: None, unit: None, hostile: None, nutrition: None, fatigue: None, starvation: None, traversal_nominal_ms: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None }, inspect_lines: [\"Person 17; idle\"] }], goods: [GoodsSnapshot { id: 0, material: \"Food\", quantity: 24, available: Some(24), owner: None, holder: Deposit(1), node: Some(1), expires_at: Some(172800000), evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None } }, GoodsSnapshot { id: 1, material: \"Wood\", quantity: 100, available: None, owner: None, holder: Deposit(1), node: Some(1), expires_at: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None } }, GoodsSnapshot { id: 3, material: \"Food\", quantity: 6, available: Some(6), owner: Agent(0), holder: Agent(0), node: None, expires_at: Some(172800000), evidence: Evidence { source: SelfKnowledge, observed_at: 0, received_at: None, author: None, sender: None } }], fields: [FieldSnapshot { id: 0, node: 1, crop: None, owner: None, stage: \"available\", ready_at: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None } }, FieldSnapshot { id: 1, node: 1, crop: None, owner: None, stage: \"available\", ready_at: None, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None } }], crossings: [CrossingSnapshot { id: 0, node: 1, edge: Some(1), owner: Some(Commons(0)), wood_committed: Some(0), wood_required: Some(20), work_remaining: Some(28800000000000), completed: Some(false), authorized: Some(false), evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None } }], carts: [], units: [UnitSnapshot { id: 0, member_ids: [0, 6, 7, 8], global_member_count: None, objective: None, muster: None, local_only: true, evidence: Evidence { source: Local, observed_at: 0, received_at: None, author: None, sender: None } }], orders: [], reports: [], inspect_lines: [\"Local office 0: steward 1 at settlement 1\"], debug: None }"
+  },
+  "performance": {
+    "fps": 116.5866908102391,
+    "last_sim_batch_ms": 0.000153,
+    "last_draw_ms": 3.247147,
+    "rss_kib": 97556
+  },
+  "logger_error": null
+}

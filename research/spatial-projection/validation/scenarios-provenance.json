@@ -1,0 +1,10 @@
+{
+  "baseline_revision": "37652d1",
+  "binary": "target/release/playable_probe",
+  "binary_sha256": "8a78b02024ab3ad10907b0335c8492d80daf46a5b7b8e205261d6c2bc048ada7",
+  "head": "37652d1a5933dd980d22fd4b2bb8ba67df3f9534",
+  "reference": "research/playable/probes/scenarios-3seeds",
+  "root_source_manifest": "root-source-baseline.json",
+  "scope": "Headless regression only. No new autonomous-behavior claim or UI comprehension claim.",
+  "validator_sha256": "709e9b344c73c2e8b6f46c8a33a6076d32ee06f2f75346adf5efe4c35e901746"
+}

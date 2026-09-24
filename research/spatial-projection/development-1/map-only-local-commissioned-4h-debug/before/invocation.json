@@ -1,0 +1,25 @@
+{
+  "command": [
+    "xvfb-run",
+    "-a",
+    "-s",
+    "-screen 0 1440x900x24",
+    "/home/lemanruss/Documents/ChatGPT/Gam,e/client/target/p42-frozen-243d07b/world-of-nodes-client",
+    "--commission",
+    "--hour",
+    "4",
+    "--debug",
+    "--seed",
+    "0",
+    "--frames",
+    "5",
+    "--capture",
+    "/home/lemanruss/Documents/ChatGPT/Gam,e/research/spatial-projection/development-1/map-only-local-commissioned-4h-debug/before/world.png",
+    "--evidence",
+    "/home/lemanruss/Documents/ChatGPT/Gam,e/research/spatial-projection/development-1/map-only-local-commissioned-4h-debug/before/evidence.txt"
+  ],
+  "started_at": "2026-09-24T17:22:10.636426+00:00",
+  "isolated_display": true,
+  "exit_code": 0,
+  "elapsed_seconds": 3.6214477400062606
+}

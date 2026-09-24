@@ -1,0 +1,65 @@
+local_control_001: audited
+local_control_000: audited
+local_control_002: audited
+local_control_003: audited
+local_control_004: audited
+local_control_005: audited
+local_control_006: audited
+local_control_007: audited
+local_control_008: audited
+local_control_009: audited
+local_control_010: audited
+local_control_011: audited
+local_control_012: audited
+local_control_013: audited
+local_control_014: audited
+local_control_016: audited
+local_control_015: audited
+Traceback (most recent call last):
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/run_command_chain.py", line 129, in main
+    completed[task] = future.result()
+                      ~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib64/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/run_command_chain.py", line 84, in run
+    subprocess.run([str(binary), case, arm, str(seed), str(output)],
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                   stdout=log, stderr=log, check=True, timeout=args.timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.14/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['target/release/command_chain_probe', 'local', 'control', '17', '/tmp/won-spatial-commands-wfaoiagh/replay/local_control_017']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/run_command_chain.py", line 156, in <module>
+    main()
+    ~~~~^^
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/run_command_chain.py", line 147, in main
+    write_json(root / "failure.json", {
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+        "status": "INCOMPLETE", "error": repr(error),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "completed_runs_validated": len(completed),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "retention": "All completed and partial outputs retained; no new cases scheduled after detected failure.",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/run_command_chain.py", line 28, in write_json
+    with path.open("x") as stream:
+         ~~~~~~~~~^^^^^
+OSError: [Errno 122] Disk quota exceeded

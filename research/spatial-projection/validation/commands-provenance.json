@@ -1,0 +1,10 @@
+{
+  "baseline_revision": "37652d1",
+  "binary": "target/release/command_chain_probe",
+  "binary_sha256": "7f586d13307d8ae1c0f4ce2d8d240b8aa345a9d6ac0c4f8757a08176a1b803ba",
+  "head": "37652d1a5933dd980d22fd4b2bb8ba67df3f9534",
+  "reference": "research/command-chain/matrix",
+  "root_source_manifest": "root-source-baseline.json",
+  "scope": "Headless regression only. No new autonomous-behavior claim or UI comprehension claim.",
+  "validator_sha256": "709e9b344c73c2e8b6f46c8a33a6076d32ee06f2f75346adf5efe4c35e901746"
+}

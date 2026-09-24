@@ -1,0 +1,9 @@
+{
+  "baseline_revision": "37652d1a5933dd980d22fd4b2bb8ba67df3f9534",
+  "root_source_files": 113,
+  "root_content_changes": [],
+  "prior_tracked_research_files": 21659,
+  "tracked_protected_differences": [],
+  "interpretation": "git diff compares every tracked prior artifact and protected source/dependency file against the baseline; new spatial-projection evidence and pre-existing untracked human playtest sessions are not prior tracked research.",
+  "status": "PASS"
+}
