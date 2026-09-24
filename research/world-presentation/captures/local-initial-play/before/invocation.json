@@ -1,0 +1,21 @@
+{
+  "command": [
+    "xvfb-run",
+    "-a",
+    "-s",
+    "-screen 0 1440x900x24",
+    "/home/lemanruss/Documents/ChatGPT/Gam,e/client/target/w0-frozen/world-of-nodes-client",
+    "--seed",
+    "0",
+    "--frames",
+    "5",
+    "--capture",
+    "/home/lemanruss/Documents/ChatGPT/Gam,e/research/world-presentation/captures/local-initial-play/before/world.png",
+    "--evidence",
+    "/home/lemanruss/Documents/ChatGPT/Gam,e/research/world-presentation/captures/local-initial-play/before/evidence.txt"
+  ],
+  "started_at": "2026-09-24T18:06:34.138587+00:00",
+  "isolated_display": true,
+  "exit_code": 0,
+  "elapsed_seconds": 3.4712782120041084
+}

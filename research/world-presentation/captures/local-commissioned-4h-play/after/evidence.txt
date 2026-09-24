@@ -1,0 +1,53 @@
+compiled_executable_fnv1a64=Some(f6a5761f7b22d206)
+scenario=Local
+seed=0
+sim_ms=14400000
+state_hash=56580759d1a77ea6
+event_hash=4085c1f659f2670c
+replay_equal=true
+frames=5
+fps=21.012
+last_sim_batch_ms=0.000102
+last_snapshot_ms=0.081077
+last_draw_ms=0.689476
+rss_kib=Some(98688)
+view_mode=Play
+visible_or_remembered_people=15
+commands=[
+    CommandRecord {
+        at: 0,
+        command: Commission {
+            office: 0,
+            project: 0,
+        },
+        outcome: Ok(
+            Order {
+                message: 0,
+                dispatch: DeliveredLocally,
+            },
+        ),
+    },
+]
+ui_selection=Some(Node(1))
+ui_verb=Observe
+ui_draft=None
+ui_tab=0
+ui_notice=0.00h · ORDER 0 ISSUED · handed over at physical contact
+known_matter=Order 0 · decision unknown | Issued 4h ago
+known_matter=Observed request: 60 food | Observed locally now
+known_matter=Project authorization observed | Observed locally now
+known_matter=Dated report · node 2 | Report 4h old
+known_order=0 | Received; decision unreported
+ui_action=1 | Inspect | enabled=true | Inspect only currently known evidence
+ui_action=2 | Reports | enabled=true | Read carried reports with their original dates
+ui_action=3 | Record observation | enabled=true | Record what the ruler can observe here; no remote query
+ui_action=4 | Controls | enabled=true | Stable verbs: Q Observe, W Order, E Govern, R Allocate
+projection_cpu_ms=0.007801000000000001
+visible_persons=15
+effect_cues=0
+visible_effects=0
+gpu_frame_ms=unavailable
+batch_count=on-demand benchmark only
+layer_cpu_ms=[0.0027879999999999997, 0.00025, 0.016054, 0.017079, 0.018588, 0.041049, 7.8e-5, 9.800000000000001e-5, 0.023230999999999998, 3.7e-5]
+ambient=0.9812436
+solar_phase=0.16666667

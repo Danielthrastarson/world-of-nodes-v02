@@ -1,0 +1,44 @@
+compiled_executable_fnv1a64=Some(e6c9c6979867271)
+scenario=Local
+seed=0
+sim_ms=14400000
+state_hash=56580759d1a77ea6
+event_hash=4085c1f659f2670c
+replay_equal=true
+frames=5
+fps=17.021
+last_sim_batch_ms=0.000107
+last_snapshot_ms=0.137508
+last_draw_ms=2.624524
+rss_kib=Some(111564)
+view_mode=Debug
+visible_or_remembered_people=18
+commands=[
+    CommandRecord {
+        at: 0,
+        command: Commission {
+            office: 0,
+            project: 0,
+        },
+        outcome: Ok(
+            Order {
+                message: 0,
+                dispatch: DeliveredLocally,
+            },
+        ),
+    },
+]
+ui_selection=Some(Node(1))
+ui_verb=Observe
+ui_draft=None
+ui_tab=0
+ui_notice=0.00h · ORDER 0 ISSUED · handed over at physical contact
+known_matter=Order 0 · decision unknown | Issued 4h ago
+known_matter=Observed request: 60 food | Observed locally now
+known_matter=Project authorization observed | Observed locally now
+known_matter=Dated report · node 2 | Report 4h old
+known_order=0 | Received; decision unreported
+ui_action=1 | Inspect | enabled=true | Inspect only currently known evidence
+ui_action=2 | Reports | enabled=true | Read carried reports with their original dates
+ui_action=3 | Record observation | enabled=true | Record what the ruler can observe here; no remote query
+ui_action=4 | Controls | enabled=true | Stable verbs: Q Observe, W Order, E Govern, R Allocate

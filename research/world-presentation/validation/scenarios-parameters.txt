@@ -1,0 +1,26 @@
+mode=scenarios
+seeds=0..3
+elapsed_hours=24
+Arms use identical Session setup per Local/Remote seed. Local and Remote differ by the documented initial physical journey. No-command already contains a consenting four-Person militia, so it is not a no-military control. Seeded hostile raid is a controlled threat. Every row is one registered transcript, not an optimized policy.
+Inputs at initial session time; commission_revoke adds revoke at elapsed 2h; hourly read checkpoints; exact transcript replay compared at end.
+No fake render entities; no outcome holds or parameter adjustments.
+Metrics use observer truth; Play snapshots remain bounded.
+base_head=645e6191cf9ad68cb91ac165cc62cb4e593234c4
+compiled_executable_fnv1a64=e7eecdb28ef2b3bd
+working_tree_at_run:
+ M client/src/bin/render_probe.rs
+ M client/src/camera.rs
+ M client/src/main.rs
+ M client/src/metrics.rs
+ M client/src/recording.rs
+ M client/src/scene.rs
+ M client/src/spatial.rs
+?? client/src/bin/world_motion_probe.rs
+?? client/src/bin/world_render_probe.rs
+?? client/src/world_presentation.rs
+?? research/human-playtest/
+?? research/world-presentation/
+?? scripts/world_render_bench.py
+
+all_src_rs_fnv1a64=92e310a1fbe5f6d1
+Timing is wall clock on this host, not a hardware-independent bound.

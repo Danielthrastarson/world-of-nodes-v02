@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "created_at": "2026-09-24T18:22:55.989142+00:00",
+  "implementation_revision": "7e3bcc6d2496a6548f73b7946428b05582afa866",
+  "starting_revision": "645e6191cf9ad68cb91ac165cc62cb4e593234c4",
+  "runs_before_commit": true,
+  "note": "release-* evidence source_revision is the baseline HEAD because tests ran with the implementation uncommitted. The source below is the exact committed implementation; binaries were not rebuilt after capture. Earlier development evidence remains separately labelled.",
+  "source_sha256": {
+    "client/Cargo.lock": "92fd17a07a16400376098393c072ee4afd2f3a3aa31602fcde85d2ccb260496b",
+    "client/Cargo.toml": "bbc15fd3430fc25e10dbb9862fe3fadc1db1a5a5eabeb7f5cbc7eee49bcfcf23",
+    "client/src/bin/playtest_replay.rs": "8fb2af9e0371226810c8005f0accbef6c8b8790718b36919940a3ed7cd09d1e3",
+    "client/src/bin/render_probe.rs": "5ee5a4eb3933cf8fb978ccb5b1bb489a5889980d9d002af3d28b53c18906269d",
+    "client/src/bin/world_motion_probe.rs": "d44fa204e1f491d86c7245a89f6da456026500b6e1898a8f9d2dc4b77a8fd6e4",
+    "client/src/bin/world_render_probe.rs": "93bac7d7d7db9f70441229669f394a5a711db04e6856ebe78f78da3cf08f651b",
+    "client/src/camera.rs": "163e90f7e5045bd79b324200bd743d1140fab25ccd45f28f43d8b2ee289e4f9e",
+    "client/src/chrome.rs": "7d44b613747ef75294e203ec786b3414a49ccb1603d369ceff39085541d632ea",
+    "client/src/clock.rs": "a29ef30571bde8ccf2f06ddbe316d6f67df8a84ee46e6202def30e239994a018",
+    "client/src/glyphs.rs": "e660f2a170b2a3309f8ce8664b2d015885edbce027f67e4b36768632b411ce72",
+    "client/src/journal.rs": "e7d12260bae605f94a8396f896144249c14f41ee8d987399006c2d04e244f4d1",
+    "client/src/main.rs": "6afa01612be7e479f0c48ba0db2068bf3f680d891c082415ba850753a153c3ee",
+    "client/src/metrics.rs": "5fb89fdb4e7a633c4ef9e09e5ed6045ac36e6a6b7a0555cda00d7383b42cafb7",
+    "client/src/presentation.rs": "dc0d96598ddacf239104ef90bd46588c8cfc0433732d40547149d3a013856351",
+    "client/src/recording.rs": "0ce3b39c55586d93df0e6e0152971d7c700c8cd80cd40837c1a35b7d43fd2545",
+    "client/src/scene.rs": "5804ca608b01d20409ad4e017a7d9a60389f691c7858323bc5bf725878b378f9",
+    "client/src/spatial.rs": "6af61c05749a9c92cc52dbdf622e7d5f5d3dd9b306c0c1aa925b9cd581e96e30",
+    "client/src/widgets.rs": "02f56a81cc8a7984795b2167c43a49ac227688f7159e7b858900553115011a0d",
+    "client/src/world_presentation.rs": "f2402ffd9cc853317f10bd49c3debd54d38deda1ced530c7dac26d95657f162b",
+    "scripts/world_render_bench.py": "1e6dec63d924a2e3aa7c0c30400ac1cf6356e9062f276dc90766475890479f3d"
+  },
+  "binary_sha256": {
+    "world-of-nodes-client": "bc7bbb0fc1b256f5e967830d8a97c02b820ee9661cc95522caceb74ed1d5d26e",
+    "world_render_probe": "bd9f06a5a4d8cffe77e1f2083e3dd651c1bbffb19e46bfd5f3567d7317f94594",
+    "world_motion_probe": "c43546a02459f69c2c9e24c1e767d404f7f23bb9fb42f9149a6ec035249e2490"
+  },
+  "frozen_v0_binary_sha256": "ce13b97ead524f45e58e45e0c35aff2c03e0c978d0446859088476a08735945d",
+  "platform": "Linux-7.1.8-200.fc44.x86_64-x86_64-with-glibc2.43",
+  "rustc": "rustc 1.98.1 (48a229cea 2026-09-01) (Fedora 1.98.1-1.fc44)",
+  "rendering": "1440x900 Xvfb with LIBGL_ALWAYS_SOFTWARE=1; cases sequential; no human window manipulation",
+  "video": {
+    "encoder": "libvpx-vp9",
+    "frames": 240,
+    "fps": 15,
+    "simulated_minutes": 60,
+    "command": "ffmpeg -nostdin -n -loglevel warning -framerate 15 -i release-motion/frame-%04d.png -c:v libvpx-vp9 -crf 32 -b:v 0 -cpu-used 4 -row-mt 1 -threads 2 -pix_fmt yuv420p motion.webm"
+  },
+  "status": "TECHNICAL_VALIDATION_COMPLETE_OWNER_VISUAL_REVIEW_PENDING"
+}

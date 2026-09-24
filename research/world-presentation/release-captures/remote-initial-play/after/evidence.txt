@@ -1,0 +1,35 @@
+compiled_executable_fnv1a64=Some(cc79ff453300422)
+scenario=Remote
+seed=0
+sim_ms=900000
+state_hash=8090c6788c548aa5
+event_hash=d1423bb3d839df89
+replay_equal=true
+frames=5
+fps=44.041
+last_sim_batch_ms=0.000141
+last_snapshot_ms=0.048289
+last_draw_ms=1.175731
+rss_kib=Some(97824)
+view_mode=Play
+visible_or_remembered_people=2
+commands=[]
+ui_selection=Some(Node(1))
+ui_verb=Observe
+ui_draft=None
+ui_tab=0
+ui_notice=PAUSED · Accepted steward duties and voluntary militia are initial conditions. No order issued.
+known_matter=No office order recorded | Own command record
+ui_action=1 | Inspect | enabled=true | Inspect only currently known evidence
+ui_action=2 | Reports | enabled=true | Read carried reports with their original dates
+ui_action=3 | Record observation | enabled=true | Record what the ruler can observe here; no remote query
+ui_action=4 | Controls | enabled=true | Stable verbs: Q Observe, W Order, E Govern, R Allocate
+projection_cpu_ms=0.00588
+visible_persons=0
+effect_cues=0
+visible_effects=0
+gpu_frame_ms=unavailable
+batch_count=on-demand benchmark only
+layer_cpu_ms=[0.001339, 0.00013199999999999998, 0.000133, 0.013307, 0.016651, 0.0019010000000000001, 0.000174, 0.000136, 0.021348, 4.6e-5]
+ambient=0.8691565
+solar_phase=0.010416667

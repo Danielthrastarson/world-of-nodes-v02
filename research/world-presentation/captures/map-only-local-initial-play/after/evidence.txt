@@ -1,0 +1,37 @@
+compiled_executable_fnv1a64=Some(f6a5761f7b22d206)
+scenario=Local
+seed=0
+sim_ms=0
+state_hash=d7cef5e2f816c404
+event_hash=4231485af1aa3c8d
+replay_equal=true
+frames=5
+fps=72.388
+last_sim_batch_ms=0.000164
+last_snapshot_ms=0.084487
+last_draw_ms=0.126731
+rss_kib=Some(97420)
+view_mode=Play
+visible_or_remembered_people=10
+commands=[]
+ui_selection=None
+ui_verb=Observe
+ui_draft=None
+ui_tab=0
+ui_notice=PAUSED · Accepted steward duties and voluntary militia are initial conditions. No order issued.
+known_matter=Observed request: 60 food | Observed locally now
+known_matter=Crossing site known | Observed locally now
+known_matter=No office order recorded | Own command record
+ui_action=1 | Inspect | enabled=false | Select a known object
+ui_action=2 | Reports | enabled=true | Read carried reports with their original dates
+ui_action=3 | Record observation | enabled=true | Record what the ruler can observe here; no remote query
+ui_action=4 | Controls | enabled=true | Stable verbs: Q Observe, W Order, E Govern, R Allocate
+projection_cpu_ms=0.009019
+visible_persons=10
+effect_cues=0
+visible_effects=0
+gpu_frame_ms=unavailable
+batch_count=on-demand benchmark only
+layer_cpu_ms=[0.003304, 0.000334, 0.011447, 0.018221, 0.005412999999999999, 0.025425, 5.2000000000000004e-5, 0.00019, 0.000531, 2.8e-5]
+ambient=0.86
+solar_phase=0
