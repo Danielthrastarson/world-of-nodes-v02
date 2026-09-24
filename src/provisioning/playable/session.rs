@@ -4,6 +4,7 @@
 //! setup every Person uses the normal policy. There are no research actor holds,
 //! scripted project completions, protection orders, or outcome interventions.
 use super::super::*;
+pub mod embodied;
 use super::military::{self as player_military, MilitaryAgreement, MilitaryOrder};
 
 pub const RULER: usize = 0;
@@ -125,7 +126,10 @@ pub struct Session {
 
 impl Session {
     pub fn new(seed: u64, scenario: ScenarioKind) -> Result<Self, String> {
-        let mut world = scenario_world(seed, scenario)?;
+        Self::from_world(seed, scenario, scenario_world(seed, scenario)?)
+    }
+
+    fn from_world(seed: u64, scenario: ScenarioKind, mut world: World) -> Result<Self, String> {
         if scenario == ScenarioKind::Remote {
             // This is a physical starting journey by the two consenting actors,
             // not a location rewrite. Any subsequent autonomous choice remains.
@@ -441,7 +445,16 @@ impl Session {
 /// Same physical quantities and capabilities as F13A's alternate-route world.
 /// This constructor intentionally does not reuse its research Run controller.
 fn scenario_world(seed: u64, scenario: ScenarioKind) -> Result<World, String> {
-    let mut starts = vec![1; 18];
+    scenario_world_population(seed, scenario, 18)
+}
+
+fn scenario_world_population(
+    seed: u64,
+    scenario: ScenarioKind,
+    population: usize,
+) -> Result<World, String> {
+    let embodied = population != 18;
+    let mut starts = vec![1; population];
     starts[REPORT_COURIER] = 2;
     starts[9..12].fill(4);
     starts[12..16].fill(2);
@@ -489,6 +502,7 @@ fn scenario_world(seed: u64, scenario: ScenarioKind) -> Result<World, String> {
         boards: vec![1],
         initial_request: 60,
         initial_nutrition: 24 * HOUR,
+        initial_fatigue: if embodied { 0 } else { 4 * HOUR },
         authority: Some(authority::Config {
             polity_id: 17,
             sovereign: RULER,
@@ -505,6 +519,10 @@ fn scenario_world(seed: u64, scenario: ScenarioKind) -> Result<World, String> {
                 opened_nominal_ms: HOUR / 4,
                 opened_capacity: 4,
             }],
+        }),
+        capital: embodied.then(|| capital::Config {
+            rules: capital::Rules::default(),
+            wood: vec![],
         }),
         paths: Some(paths::Config::ground(vec![0, 2, 3, 4], true)),
         farming: Some(farming::Config {
@@ -550,9 +568,13 @@ fn scenario_world(seed: u64, scenario: ScenarioKind) -> Result<World, String> {
         }),
         social: Some(social::Config::default()),
         lifecycle: Some(lifecycle::Config {
-            people: (0..18)
+            people: (0..population)
                 .map(|id| lifecycle::Seed {
-                    birth_time: if id >= 16 { 0 } else { -24 * HOUR },
+                    birth_time: if (16..18).contains(&id) {
+                        0
+                    } else {
+                        -24 * HOUR
+                    },
                     sex: if id % 2 == 0 {
                         lifecycle::Sex::Male
                     } else {
@@ -572,7 +594,7 @@ fn scenario_world(seed: u64, scenario: ScenarioKind) -> Result<World, String> {
                 attendance: 4,
                 opens: 0,
                 expires: 60 * HOUR,
-                duration: 12 * HOUR,
+                duration: if embodied { 18 * HOUR } else { 12 * HOUR },
                 objective: military::Objective::ProtectCrossing,
             }],
         }),
@@ -601,8 +623,8 @@ fn scenario_world(seed: u64, scenario: ScenarioKind) -> Result<World, String> {
         0,
         48 * HOUR,
     );
-    for id in 0..18 {
-        if id >= 16 {
+    for id in 0..population {
+        if (16..18).contains(&id) {
             world.agents[id].nutrition = 8 * HOUR;
         } else {
             world.goods.add(
@@ -615,6 +637,30 @@ fn scenario_world(seed: u64, scenario: ScenarioKind) -> Result<World, String> {
             );
         }
     }
+    if embodied {
+        // E0 controlled initial property, consumed through ordinary construction.
+        world.goods.add(
+            Material::Wood,
+            10,
+            Owner::Agent(18),
+            Holder::Loose(1),
+            0,
+            Time::MAX / 4,
+        );
+        world.apply_intents(vec![(18, Intent::BuildCart)])?;
+        // Explicit E0 starting endowments; no generated construction resources.
+        for donor in 19..24 {
+            world.goods.add(
+                Material::Wood,
+                4,
+                Owner::Agent(donor),
+                Holder::Agent(donor),
+                0,
+                Time::MAX / 4,
+            );
+        }
+        world.log(None,"EmbodiedInitialConditions",format!("{population} real Persons; one investor owns10 loose wood; initial fatigue0; voluntary service18h; five donors each own4 carried wood; no new physics"));
+    }
     // Remembered visits describe adjacency, never present remote stocks/people.
     for node in 0..world.config.nodes {
         let mut view = world.node_view(node);
@@ -626,9 +672,11 @@ fn scenario_world(seed: u64, scenario: ScenarioKind) -> Result<World, String> {
             person.memory.nodes.insert(node, view.clone());
         }
     }
-    world.log(None, "PlayableInitialConditions", format!(
+    if !embodied {
+        world.log(None, "PlayableInitialConditions", format!(
         "scenario={scenario:?};18 existing Persons;F13A alternate physical parameters;old adjacency-only visits;seeded raiders/kin/goods;locally consented steward;voluntary assembled militia0,6,7,8 accepted ruler0 as local commander;courier5 agreed to at most2 physical round trips;no actor hold/no scheduled protection/no outcome intervention"
     ));
+    }
     world.apply_intents(vec![(
         RULER,
         Intent::AppointSteward {

@@ -99,3 +99,12 @@ view and night, plus one short accelerated day-to-night clip. Assess:
 Human judgment chooses the direction. Screenshot generation does not pass that
 art gate. Stop before adding renderer features, spreading the treatment across
 the map, adding simulation systems or beginning another art iteration.
+
+## E0 alternative: embodied miniature study
+
+The owner subsequently authorized a bounded 3D embodiment experiment. It tests
+simple low-poly people/buildings in the same muted material vocabulary, with an
+elevated strategic camera and a following ruler camera. This does not overwrite
+W1 or adopt a production 3D art pipeline. See [E0](EMBODIED_WORLD.md). Both lighting
+props and terrain embedding remain explicitly labelled presentation studies;
+actual Persons, crops, carts and crossings retain their simulation identities.

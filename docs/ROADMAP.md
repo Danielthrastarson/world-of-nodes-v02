@@ -308,3 +308,16 @@ The river and stationary light study props are explicitly authored presentation
 state, not new water/fire mechanics. [Review evidence](../research/hero-scene/REPORT.md)
 contains five final screenshots and one day-to-night clip. Stop for visual review;
 do not generalize the treatment across the world yet.
+
+## E0 — bounded embodied-ruler hypothesis
+
+The owner requested a reversible third-person experiment after W1. This is an
+alternative presentation hypothesis, not approval of full 3D production. The
+[contract](EMBODIED_WORLD.md) retains the original strategic client and adds a
+separate Macroquad binary with two cameras over one authoritative Session.
+Forty actual Persons, existing institutions, physical construction prehistory,
+local detail walking and ordinary graph travel form the controlled scene.
+[E0 evidence](../research/embodied-world/REPORT.md) separates mechanical validation
+from the still-open human presence/preference gate. Stop after the playable build,
+screenshots and motion capture. No first person, personal combat, new simulation
+systems or engine migration until the owner plays and evaluates this hypothesis.
