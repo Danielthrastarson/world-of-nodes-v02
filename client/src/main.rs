@@ -1,12 +1,16 @@
 mod camera;
+mod chrome;
 mod clock;
 mod metrics;
+mod presentation;
 mod scene;
 mod widgets;
 use camera::MapCamera;
+use chrome::{footer, header, matters, sidebar};
 use clock::Playback;
 use macroquad::prelude::*;
 use metrics::Metrics;
+use presentation::{ActionKind, Verb};
 use scene::{Hit, Selection};
 use std::time::Instant;
 use widgets::*;
@@ -17,14 +21,7 @@ use world_of_nodes::provisioning::playable::{
 };
 use world_of_nodes::provisioning::{HOUR, Location};
 
-#[derive(Clone, Copy, PartialEq, Eq)]
-enum Verb {
-    Observe,
-    Order,
-    Govern,
-    Allocate,
-}
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 enum Draft {
     Crossing,
     Unit(MilitaryOrder),
@@ -43,14 +40,16 @@ struct Ui {
     mouse: Vec2,
     right_origin: Option<Vec2>,
     dragged: bool,
+    last_unit_order: Option<(MilitaryOrder, usize, i64, usize)>,
 }
 impl Default for Ui {
     fn default() -> Self {
-        Self{selection:Some(Selection::Node(1)),verb:Verb::Observe,draft:None,camera:MapCamera::default(),mode:ViewMode::Play,help:false,tab:0,scroll:0,notice:"PAUSED · Accepted steward duties and voluntary militia are initial conditions. No order issued.".into(),mouse:Vec2::ZERO,right_origin:None,dragged:false}
+        Self{selection:Some(Selection::Node(1)),verb:Verb::Observe,draft:None,camera:MapCamera::default(),mode:ViewMode::Play,help:false,tab:0,scroll:0,notice:"PAUSED · Accepted steward duties and voluntary militia are initial conditions. No order issued.".into(),mouse:Vec2::ZERO,right_origin:None,dragged:false,last_unit_order:None}
     }
 }
 impl Ui {
     fn issue(&mut self, session: &mut Session, command: PlayerCommand) {
+        let issued = command.clone();
         let result = match session.dispatch(command) {
             Ok(CommandResult::Order { message, dispatch }) => {
                 format!("ORDER {message} ISSUED · {}", dispatch_text(dispatch))
@@ -58,9 +57,14 @@ impl Ui {
             Ok(CommandResult::Revocation { message, dispatch }) => {
                 format!("REVOCATION {message} ISSUED · {}", dispatch_text(dispatch))
             }
-            Ok(CommandResult::Unit { receivers }) => format!(
-                "Unit intention received by {receivers} local members. Execution remains physical."
-            ),
+            Ok(CommandResult::Unit { receivers }) => {
+                if let PlayerCommand::Unit { verb, target } = issued {
+                    self.last_unit_order = Some((verb, target, session.now(), receivers));
+                }
+                format!(
+                    "UNIT ORDER RECEIVED · {receivers} local members. Physical execution may be delayed."
+                )
+            }
             Ok(CommandResult::Report { report }) => {
                 format!("Local observation recorded as report {report}. No distant state revealed.")
             }
@@ -71,23 +75,27 @@ impl Ui {
     }
     fn choose(&mut self, index: usize, s: &Snapshot) {
         self.scroll = 0;
-        match self.verb {
-            Verb::Observe => {
-                self.tab = if index == 1 { 2 } else { 0 };
-                if index == 2 {
-                    self.draft = Some(Draft::Confirm(PlayerCommand::ObserveReport));
-                }
-                if index == 3 {
-                    self.help = !self.help;
-                }
+        let actions = presentation::contextual_actions(s, self.selection, self.verb);
+        let Some(action) = actions.get(index) else {
+            return;
+        };
+        if !action.enabled {
+            self.notice = format!("UNAVAILABLE · {}", action.reason);
+            return;
+        }
+        self.draft = None;
+        match action.kind {
+            ActionKind::Inspect => self.tab = 0,
+            ActionKind::Reports => self.tab = 2,
+            ActionKind::CaptureReport => {
+                self.draft = Some(Draft::Confirm(PlayerCommand::ObserveReport))
             }
-            Verb::Order if self.selection == Some(Selection::Unit(0)) => {
-                let verb = [
-                    MilitaryOrder::Move,
-                    MilitaryOrder::Attack,
-                    MilitaryOrder::Hold,
-                    MilitaryOrder::Withdraw,
-                ][index];
+            ActionKind::Help => self.help = true,
+            ActionKind::Commission { .. } => self.draft = Some(Draft::Crossing),
+            ActionKind::Revoke {
+                command: Some(command),
+            } => self.draft = Some(Draft::Confirm(PlayerCommand::Revoke { command })),
+            ActionKind::Unit(verb) => {
                 if verb == MilitaryOrder::Hold {
                     if let Some(target) =
                         s.persons
@@ -99,40 +107,19 @@ impl Ui {
                             })
                     {
                         self.draft = Some(Draft::Confirm(PlayerCommand::Unit { verb, target }));
-                    } else {
-                        self.notice =
-                            "Hold requires the embodied commander to arrive at a node.".into();
                     }
                 } else {
                     self.draft = Some(Draft::Unit(verb));
                 }
             }
-            Verb::Order => {
-                if index == 0 {
-                    self.draft = Some(Draft::Crossing);
-                } else if index == 1 {
-                    if let Some(Selection::Order(command)) = self.selection {
-                        self.draft = Some(Draft::Confirm(PlayerCommand::Revoke { command }));
-                    } else {
-                        self.notice =
-                            "Select an order in the Orders panel before sending revocation.".into();
-                    }
-                } else {
-                    self.notice = "This institutional power is not implemented.".into();
-                }
-            }
-            _ => {
-                self.notice =
-                    "Reserved verb. No new coercive powers or allocation rights are introduced."
-                        .into()
-            }
+            _ => self.notice = action.reason.clone(),
         }
     }
     fn target(&mut self, hit: Selection, s: &Snapshot, office: usize) {
         match self.draft.clone() {
             Some(Draft::Crossing) => {
                 let id = match hit {
-                    Selection::Crossing(n) => Some(n),
+                    Selection::Crossing(n) => s.crossings.iter().find(|p| p.id == n).map(|p| p.id),
                     Selection::Node(n) => s.crossings.iter().find(|c| c.node == n).map(|c| c.id),
                     Selection::Edge(n) => {
                         s.crossings.iter().find(|c| c.edge == Some(n)).map(|c| c.id)
@@ -271,13 +258,16 @@ async fn main() {
     let mut hits: Vec<Hit> = vec![];
     loop {
         let mouse = vec2(mouse_position().0, mouse_position().1);
-        let sidebar_width = 340.0_f32.min(screen_width() * 0.36);
+        let sidebar_width = 390.0_f32.min(screen_width() * 0.36);
         let view = Rect::new(
             0.,
-            104.,
+            148.,
             (screen_width() - sidebar_width).max(200.),
-            (screen_height() - 270.).max(200.),
+            (screen_height() - 326.).max(200.),
         );
+        let capture_started = Instant::now();
+        let known = session.snapshot(ViewMode::Play);
+        metrics.snapshot_ms = capture_started.elapsed().as_secs_f64() * 1000.;
         let was_paused = clock.paused;
         metrics.frame(f64::from(get_frame_time()));
         if is_key_pressed(KeyCode::Escape) {
@@ -322,7 +312,7 @@ async fn main() {
                 .enumerate()
             {
                 if is_key_pressed(*key) {
-                    ui.choose(i, &snap);
+                    ui.choose(i, &known);
                 }
             }
             if is_key_pressed(KeyCode::Enter)
@@ -355,10 +345,11 @@ async fn main() {
                             ui.draft = None;
                         } else if ui.selection == Some(Selection::Unit(0))
                             && let Some(hit) = scene::hit_test(&hits, mouse)
-                            && let Some(target) = scene::selected_node(&snap, hit)
+                            && let Some(target) = scene::selected_node(&known, hit)
                         {
                             let enemy = if let Selection::Person(id) = hit {
-                                snap.persons
+                                known
+                                    .persons
                                     .iter()
                                     .find(|p| p.id == id)
                                     .is_some_and(|p| p.hostile == Some(true))
@@ -384,7 +375,7 @@ async fn main() {
                 if is_mouse_button_pressed(MouseButton::Left)
                     && let Some(hit) = scene::hit_test(&hits, mouse)
                 {
-                    ui.target(hit, &snap, session.office());
+                    ui.target(hit, &known, session.office());
                 }
             } else if wheel > 0. {
                 ui.scroll = ui.scroll.saturating_sub(2);
@@ -420,7 +411,7 @@ async fn main() {
             metrics.simulated_steps += 1;
             let q = Instant::now();
             snap = session.snapshot(ui.mode);
-            metrics.snapshot_ms = q.elapsed().as_secs_f64() * 1000.;
+            metrics.snapshot_ms += q.elapsed().as_secs_f64() * 1000.;
         }
         metrics.simulation_ms = t.elapsed().as_secs_f64() * 1000.;
         let t = Instant::now();
@@ -433,9 +424,13 @@ async fn main() {
             view,
             ui.selection,
         );
+        let capture_started = Instant::now();
+        let known = session.snapshot(ViewMode::Play);
+        metrics.snapshot_ms += capture_started.elapsed().as_secs_f64() * 1000.;
         header(&mut ui, &mut clock, &snap, &metrics, view);
-        sidebar(&mut ui, &snap, view);
-        footer(&mut ui, &mut session, &mut snap, view);
+        matters(&mut ui, &known, view);
+        sidebar(&mut ui, &snap, &known, view);
+        footer(&mut ui, &mut session, &mut snap, &known, view);
         if was_paused != clock.paused {
             previous = None;
         }
@@ -452,349 +447,19 @@ async fn main() {
         if is_key_pressed(KeyCode::F12)
             && let Some(path) = &options.evidence
         {
-            write_evidence(path, &session, &snap, &metrics, &options);
+            write_evidence(path, &session, &snap, &metrics, &options, &ui);
         }
         if options.frames.is_some_and(|n| metrics.frame_count >= n) && metrics.frame_count > 2 {
             if let Some(path) = &options.capture {
                 get_screen_data().export_png(path);
             }
             if let Some(path) = &options.evidence {
-                write_evidence(path, &session, &snap, &metrics, &options);
+                write_evidence(path, &session, &snap, &metrics, &options, &ui);
             }
             break;
         }
         next_frame().await;
     }
-}
-fn header(ui: &mut Ui, clock: &mut Playback, s: &Snapshot, m: &Metrics, v: Rect) {
-    text("WORLD OF NODES", 24., 34., 27., INK);
-    text("FIRST KINGDOM / causal interface", 25., 57., 15., MUTED);
-    text(
-        if s.mode == ViewMode::Play {
-            "PLAY · RULER KNOWLEDGE"
-        } else {
-            "DEBUG · OMNISCIENT TRUTH"
-        },
-        25.,
-        84.,
-        17.,
-        if s.mode == ViewMode::Play { TEAL } else { RED },
-    );
-    let x = (v.w - 390.).max(330.);
-    text(
-        &format!(
-            "Day {}  {:02}:{:02}",
-            s.now / (24 * HOUR) + 1,
-            (s.now / HOUR) % 24,
-            (s.now / 60_000) % 60
-        ),
-        x,
-        31.,
-        24.,
-        GOLD,
-    );
-    if button(
-        Rect::new(x, 43., 90., 32.),
-        if clock.paused { "RESUME" } else { "PAUSE" },
-        !clock.paused,
-        true,
-    ) {
-        clock.paused = !clock.paused;
-    }
-    for (i, speed) in [1, 4, 16].iter().enumerate() {
-        if button(
-            Rect::new(x + 97. + i as f32 * 64., 43., 58., 32.),
-            &format!("{speed}x"),
-            clock.speed == *speed,
-            true,
-        ) {
-            clock.speed = *speed;
-        }
-    }
-    text(
-        &format!(
-            "1x = 2 sim min / sec · backlog {:.0} min",
-            clock.backlog_ms() / 60_000.
-        ),
-        x,
-        94.,
-        14.,
-        MUTED,
-    );
-    let x = v.right() + 18.;
-    text(
-        &format!("{} visible / remembered people", s.persons.len()),
-        x,
-        31.,
-        17.,
-        INK,
-    );
-    text(
-        &format!(
-            "{:.0} fps · sim {:.2}ms · draw {:.2}ms",
-            m.fps(),
-            m.simulation_ms,
-            m.draw_ms
-        ),
-        x,
-        55.,
-        14.,
-        MUTED,
-    );
-    text(
-        &format!(
-            "F1 help · F2 {}",
-            if ui.mode == ViewMode::Play {
-                "debug truth"
-            } else {
-                "return to play"
-            }
-        ),
-        x,
-        82.,
-        15.,
-        if ui.mode == ViewMode::Play {
-            MUTED
-        } else {
-            RED
-        },
-    );
-    rule(0., 103., screen_width());
-}
-fn sidebar(ui: &mut Ui, s: &Snapshot, v: Rect) {
-    let x = v.right() + 18.;
-    let width = screen_width() - x - 18.;
-    draw_line(v.right(), 104., v.right(), screen_height(), 1., LINE);
-    for (i, label) in ["Inspect", "Orders", "Reports"].iter().enumerate() {
-        if button(
-            Rect::new(x + i as f32 * width / 3., 119., width / 3. - 5., 31.),
-            label,
-            ui.tab == i,
-            true,
-        ) {
-            ui.tab = i;
-            ui.scroll = 0;
-        }
-    }
-    let mut y = 180.;
-    if ui.tab == 0 {
-        let (title, lines) = scene::inspect(s, ui.selection);
-        text(&title, x, y, 24., INK);
-        y += 33.;
-        for line in lines.iter().skip(ui.scroll) {
-            if y > screen_height() - 45. {
-                break;
-            }
-            y = paragraph(line, x, y, width, 17., MUTED, 5) + 12.;
-        }
-        if let Some(d) = &s.debug {
-            y += 10.;
-            rule(x, y, width);
-            y += 28.;
-            text("DEBUG STATE", x, y, 15., RED);
-            y += 26.;
-            for (k, value) in d.metrics.iter().take(7) {
-                if y > screen_height() - 24. {
-                    break;
-                }
-                y = paragraph(&format!("{k}: {value}"), x, y, width, 15., MUTED, 4) + 12.;
-            }
-        }
-    } else if ui.tab == 1 {
-        text("Scoped orders", x, y, 24., INK);
-        y += 28.;
-        y = paragraph(
-            "Handoff does not prove distant completion. Select a record to inspect or revoke.",
-            x,
-            y,
-            width,
-            16.,
-            MUTED,
-            4,
-        ) + 14.;
-        if s.orders.is_empty() {
-            paragraph(
-                "No personally known orders. W → 1 to commission a crossing.",
-                x,
-                y,
-                width,
-                17.,
-                MUTED,
-                4,
-            );
-        }
-        for o in s.orders.iter().rev().skip(ui.scroll) {
-            if y > screen_height() - 95. {
-                break;
-            }
-            if button(
-                Rect::new(x, y, width, 34.),
-                &format!("Order {} · {}", o.id, age(s.now, o.issued_at)),
-                ui.selection == Some(Selection::Order(o.id)),
-                true,
-            ) {
-                ui.selection = Some(Selection::Order(o.id));
-                ui.tab = 0;
-                ui.scroll = 0;
-            }
-            y += 57.;
-            y = paragraph(&o.status, x + 8., y, width - 16., 15., TEAL, 3) + 10.;
-        }
-    } else {
-        text("Dated reports", x, y, 24., INK);
-        y += 28.;
-        y = paragraph(
-            "Old observations remain old even when reality changes.",
-            x,
-            y,
-            width,
-            16.,
-            MUTED,
-            4,
-        ) + 14.;
-        if s.reports.is_empty() {
-            paragraph(
-                "No reports held. Q → 3 records your local observation; it cannot query distant places.",
-                x,
-                y,
-                width,
-                17.,
-                MUTED,
-                5,
-            );
-        }
-        for r in s.reports.iter().rev().skip(ui.scroll) {
-            if y > screen_height() - 95. {
-                break;
-            }
-            if button(
-                Rect::new(x, y, width, 34.),
-                &format!("Report {} · {}", r.id, age(s.now, r.observed_at)),
-                ui.selection == Some(Selection::Report(r.id)),
-                true,
-            ) {
-                ui.selection = Some(Selection::Report(r.id));
-                ui.tab = 0;
-                ui.scroll = 0;
-            }
-            y += 55.;
-            text(
-                &format!(
-                    "Person {} / node {} / food {}",
-                    r.author, r.node, r.food_quantity
-                ),
-                x + 8.,
-                y,
-                15.,
-                MUTED,
-            );
-            y += 27.;
-        }
-    }
-}
-fn footer(ui: &mut Ui, session: &mut Session, s: &mut Snapshot, v: Rect) {
-    let top = v.bottom() + 14.;
-    let width = v.w - 42.;
-    let x = 21.;
-    for (i, (verb, label)) in [
-        (Verb::Observe, "Q OBSERVE"),
-        (Verb::Order, "W ORDER"),
-        (Verb::Govern, "E GOVERN"),
-        (Verb::Allocate, "R ALLOCATE"),
-    ]
-    .iter()
-    .enumerate()
-    {
-        if button(
-            Rect::new(x + i as f32 * width / 4., top, width / 4. - 8., 34.),
-            label,
-            ui.verb == *verb,
-            true,
-        ) {
-            ui.verb = *verb;
-            ui.draft = None;
-        }
-    }
-    let labels = match ui.verb {
-        Verb::Observe => ["1 Inspect", "2 Reports", "3 Record local", "4 Help"],
-        Verb::Order if ui.selection == Some(Selection::Unit(0)) => {
-            ["1 Move", "2 Attack", "3 Hold", "4 Withdraw"]
-        }
-        Verb::Order => [
-            "1 Crossing",
-            "2 Revoke order",
-            "3 Unavailable",
-            "4 Unavailable",
-        ],
-        _ => ["1 Deferred", "2 Deferred", "3 Deferred", "4 Deferred"],
-    };
-    for (i, label) in labels.iter().enumerate() {
-        if button(
-            Rect::new(x + i as f32 * width / 4., top + 41., width / 4. - 8., 29.),
-            label,
-            false,
-            true,
-        ) {
-            ui.choose(i, s);
-        }
-    }
-    let y = top + 98.;
-    match ui.draft.clone() {
-        Some(Draft::Crossing) => text(
-            "CHOOSE CROSSING · LMB target · RMB cancels",
-            x,
-            y,
-            18.,
-            GOLD,
-        ),
-        Some(Draft::Unit(verb)) => text(
-            &format!("{verb:?} · choose known location · RMB cancels"),
-            x,
-            y,
-            18.,
-            GOLD,
-        ),
-        Some(Draft::Confirm(cmd)) => {
-            let label = match cmd {
-                PlayerCommand::Commission { .. } => "ISSUE ORDER · no workers/resources assigned",
-                PlayerCommand::Revoke { .. } => "SEND REVOCATION · effect waits for receipt",
-                PlayerCommand::Unit { .. } => "ISSUE UNIT INTENT · local members only",
-                PlayerCommand::ObserveReport => "RECORD LOCAL OBSERVATION",
-            };
-            text(label, x, y, 16., GOLD);
-            if button(
-                Rect::new(x + width - 143., y - 20., 143., 30.),
-                "ENTER / CONFIRM",
-                true,
-                true,
-            ) {
-                ui.issue(session, cmd);
-                *s = session.snapshot(ui.mode);
-            }
-        }
-        None => {
-            paragraph(
-                &ui.notice,
-                x,
-                y,
-                width,
-                16.,
-                if ui.notice.contains("NOT ISSUED") {
-                    RED
-                } else {
-                    MUTED
-                },
-                2,
-            );
-        }
-    }
-    text(
-        "Wheel zoom · arrows / middle drag pan · right drag pan · hollow = last seen",
-        x,
-        screen_height() - 13.,
-        13.,
-        MUTED,
-    );
 }
 fn help() {
     draw_rectangle(
@@ -828,7 +493,7 @@ fn help() {
         at = paragraph(line, x + 30., at, w - 60., 18., INK, 5) + 20.;
     }
 }
-fn write_evidence(path: &str, session: &Session, s: &Snapshot, m: &Metrics, o: &Options) {
+fn write_evidence(path: &str, session: &Session, s: &Snapshot, m: &Metrics, o: &Options, ui: &Ui) {
     let replay = Session::replay(o.seed, o.scenario, session.command_log(), session.now());
     let equal = replay.as_ref().is_ok_and(|r| {
         r.world().state_hash() == session.world().state_hash()
@@ -842,7 +507,7 @@ fn write_evidence(path: &str, session: &Session, s: &Snapshot, m: &Metrics, o: &
                 (h ^ u64::from(b)).wrapping_mul(0x100000001b3)
             })
         });
-    let output = format!(
+    let mut output = format!(
         "compiled_executable_fnv1a64={executable_hash:x?}\nscenario={:?}\nseed={}\nsim_ms={}\nstate_hash={:016x}\nevent_hash={:016x}\nreplay_equal={}\nframes={}\nfps={:.3}\nlast_sim_batch_ms={:.6}\nlast_snapshot_ms={:.6}\nlast_draw_ms={:.6}\nrss_kib={:?}\nview_mode={:?}\nvisible_or_remembered_people={}\ncommands={:#?}\n",
         o.scenario,
         o.seed,
@@ -860,5 +525,49 @@ fn write_evidence(path: &str, session: &Session, s: &Snapshot, m: &Metrics, o: &
         s.persons.len(),
         session.command_log()
     );
+    // UI evidence is opt-in and read-only. Never used to make simulation decisions.
+    let known = session.snapshot(ViewMode::Play);
+    output.push_str(&format!(
+        "ui_selection={:?}\nui_verb={:?}\nui_draft={:?}\nui_tab={}\nui_notice={}\n",
+        ui.selection, ui.verb, ui.draft, ui.tab, ui.notice
+    ));
+    for matter in presentation::concerns(&known) {
+        output.push_str(&format!(
+            "known_matter={} | {}\n",
+            matter.title, matter.evidence
+        ));
+    }
+    for order in &known.orders {
+        output.push_str(&format!(
+            "known_order={} | {}\n",
+            order.id,
+            presentation::order_stage(&known, order).label
+        ));
+    }
+    for action in presentation::contextual_actions(&known, ui.selection, ui.verb) {
+        output.push_str(&format!(
+            "ui_action={} | {} | enabled={} | {}\n",
+            action.slot, action.label, action.enabled, action.reason
+        ));
+    }
     std::fs::write(path, output).expect("explicit research evidence path");
+}
+
+#[cfg(test)]
+mod interface_tests {
+    use super::*;
+    #[test]
+    fn debug_only_crossing_cannot_become_a_play_command_target() {
+        let session = Session::new(0, ScenarioKind::Local).unwrap();
+        let mut known = session.snapshot(ViewMode::Play);
+        known.crossings.clear();
+        let mut ui = Ui {
+            draft: Some(Draft::Crossing),
+            ..Default::default()
+        };
+        ui.target(Selection::Crossing(0), &known, session.office());
+        assert!(matches!(ui.draft, Some(Draft::Crossing)));
+        assert!(ui.notice.contains("known crossing"));
+        assert!(session.command_log().is_empty());
+    }
 }

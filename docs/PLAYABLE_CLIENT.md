@@ -23,7 +23,7 @@ assembled. The office acceptance, courier agreement, old map knowledge, househol
 structure, resources and raiders are explicit initial conditions. They are not
 evidence of spontaneous political organization.
 
-1. Press **W**, then **1**, click the crossing marker, then **Enter**. This issues
+1. With Hearth selected, click **Commission crossing** in the right panel (or **W → 1**), click the crossing marker, then **Enter**. This issues
    an office-scoped order; it assigns no workers and creates no infrastructure.
 2. Press **Space** to run. Click **4x** or **16x** to advance faster. Inspect the
    crossing and the Orders panel. Wood, labor and voluntary participation still
@@ -81,8 +81,9 @@ scenario does not spawn decorative carts or traffic to populate the scene.
 The inspector shows source and observation age. Map-only starting knowledge does
 not mean a place was observed empty. A historical cart marker remains dated; it does not claim current presence.
 Unit badges count members in the current view, not global strength or current
-global orders. The unused snapshot field for a remembered unit objective is not
-yet displayed because its own receipt age needs separate presentation.
+global orders. A remembered unit target is explicitly labeled with its unavailable receipt date;
+it is not a current global order. A separate **Last issued by you** record shows
+the exact local command time and recipient count, without asserting later execution.
 DEBUG can inspect true inventories, queues, goals, roles and related diagnostics;
 it is visibly labeled and is not the normal ruler-information view.
 
@@ -124,8 +125,8 @@ cargo run --release --bin playable_probe -- scenarios /tmp/won-play-new 3 24
 cargo run --release --bin playable_probe -- performance /tmp/won-scale-new 1000
 
 # Actual keyboard/mouse events in a separate X server; no desktop manipulation.
-xvfb-run -a -s '-screen 0 1440x900x24' python3 scripts/playable_window_smoke.py /tmp/won-ui-new commission
-xvfb-run -a -s '-screen 0 1440x900x24' python3 scripts/playable_window_smoke.py /tmp/won-army-ui-new military
+xvfb-run -a -s '-screen 0 1440x900x24' python3 scripts/playable_clarity_smoke.py /tmp/won-ui-new commission
+xvfb-run -a -s '-screen 0 1440x900x24' python3 scripts/playable_clarity_smoke.py /tmp/won-army-ui-new military
 ```
 
 `--seed N`, `--hour H`, `--commission`, `--debug`, `--reports`, `--run`, `--frames N`,
@@ -137,3 +138,24 @@ Research captures and replay hashes are explicitly outside normal player knowled
 No save/load format, polished tutorial, audio, binding remap, final accessibility
 pass or browser release is claimed. Human play-testing is still needed to evaluate
 comprehension and pacing; automated input tests are not evidence of enjoyment.
+
+## P4.1 clarity pass
+
+Start at 1440×900 where possible. Gold outlines connect map selection with the
+inspection title; teal identifies observed friendly organization, and recognized
+hostility remains red. The Current matters strip lists up to four items derived
+from ruler-visible evidence. Click a matter to inspect its subject. An observed
+food request is not a diagnosis of every resident's private hunger.
+
+The right panel leads with status and available actions. Disabled controls keep
+the reason visible; the authoritative command handler still validates an attempted
+command. Q/W/E/R meanings stay fixed. Map-only and remembered objects are muted
+and hollow; select/scroll to Evidence / time for exact original timestamps.
+
+Orders show Issued → Handoff → Received → Obligation → Result. Filled steps have
+evidence; hollow steps remain unknown. A local handoff never fills the obligation
+or physical-result step automatically. Debug has a red banner, and even there
+command composition uses the separate Play snapshot. Debug-visible unknown
+crossings cannot become Play targets.
+
+The interface pass changes no kernel or policy. [Evidence and limits](../research/playable-clarity/REPORT.md).

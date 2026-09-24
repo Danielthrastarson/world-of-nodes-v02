@@ -99,10 +99,11 @@ pub fn button(rect: Rect, label: &str, active: bool, enabled: bool) -> bool {
         1.0,
         if active { TEAL } else { LINE },
     );
-    text(
+    fitted(
         label,
         rect.x + 12.0,
         rect.y + rect.h * 0.5 + 5.0,
+        rect.w - 20.0,
         18.0,
         if enabled { INK } else { MUTED },
     );
@@ -121,4 +122,64 @@ pub fn age(now: i64, at: i64) -> String {
     } else {
         format!("{:.1}h old", elapsed as f64 / 3_600_000.0)
     }
+}
+
+pub fn text_width(s: &str, size: f32) -> f32 {
+    measure_text(s, UI_FONT.get(), size as u16, 1.0).width
+}
+/// Keep compact titles inside their card; the complete wording remains in inspection.
+pub fn fitted(s: &str, x: f32, y: f32, width: f32, size: f32, color: Color) {
+    if text_width(s, size) <= width {
+        text(s, x, y, size, color);
+        return;
+    }
+    let mut shortened = s.to_string();
+    while !shortened.is_empty() && text_width(&format!("{shortened}…"), size) > width {
+        shortened.pop();
+    }
+    text(&format!("{shortened}…"), x, y, size, color);
+}
+pub fn clicked(rect: Rect) -> bool {
+    !BLOCK_INPUT.with(Cell::get)
+        && rect.contains(vec2(mouse_position().0, mouse_position().1))
+        && is_mouse_button_pressed(MouseButton::Left)
+}
+pub fn card(rect: Rect, title: &str, detail: &str, accent: Color, enabled: bool) -> bool {
+    let hover = rect.contains(vec2(mouse_position().0, mouse_position().1));
+    draw_rectangle(
+        rect.x,
+        rect.y,
+        rect.w,
+        rect.h,
+        if hover && enabled {
+            Color::new(0.12, 0.19, 0.20, 1.)
+        } else {
+            PANEL
+        },
+    );
+    draw_rectangle(
+        rect.x,
+        rect.y,
+        3.,
+        rect.h,
+        if enabled { accent } else { LINE },
+    );
+    fitted(
+        title,
+        rect.x + 12.,
+        rect.y + 23.,
+        rect.w - 24.,
+        18.,
+        if enabled { INK } else { MUTED },
+    );
+    paragraph(
+        detail,
+        rect.x + 12.,
+        rect.y + 44.,
+        rect.w - 24.,
+        13.,
+        MUTED,
+        2,
+    );
+    enabled && clicked(rect)
 }

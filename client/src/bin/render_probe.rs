@@ -2,6 +2,8 @@
 #![allow(dead_code)]
 #[path = "../camera.rs"]
 mod camera;
+#[path = "../presentation.rs"]
+mod presentation;
 #[path = "../scene.rs"]
 mod scene;
 #[path = "../widgets.rs"]
