@@ -1,0 +1,77 @@
+compiled_executable_fnv1a64=Some(1395370384ff6031)
+scenario=Local
+seed=0
+sim_ms=23340000
+state_hash=b4b9b9894b8569f5
+event_hash=7e50f7334986113e
+replay_equal=true
+frames=2220
+fps=119.432
+last_sim_batch_ms=0.000095
+last_snapshot_ms=0.152065
+last_draw_ms=0.797398
+rss_kib=Some(314572)
+view_mode=Play
+visible_or_remembered_people=17
+commands=[
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Hold,
+            target: 1,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Move,
+            target: 2,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+    CommandRecord {
+        at: 0,
+        command: Unit {
+            verb: Attack,
+            target: 2,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+    CommandRecord {
+        at: 23340000,
+        command: Unit {
+            verb: Withdraw,
+            target: 0,
+        },
+        outcome: Ok(
+            Unit {
+                receivers: 4,
+            },
+        ),
+    },
+]
+ui_selection=Some(Unit(0))
+ui_verb=Order
+ui_draft=None
+ui_tab=0
+ui_notice=Screenshot: /home/lemanruss/Documents/ChatGPT/Gam,e/research/playable-clarity/final/military/current.png
+known_matter=Observed request: 60 food | Seen 6h 29m ago
+known_matter=Dated report · node 2 | Report 6h 29m old
+known_matter=No office order recorded | Own command record
+ui_action=1 | Move | enabled=true | Choose a known node. Only present members hear this order; absent members are not updated
+ui_action=2 | Attack | enabled=true | Approach a known node and engage recognized threats. Only present members hear this order; absent members are not updated
+ui_action=3 | Hold here | enabled=true | Protect the commander's current node. Only present members hear this order; absent members are not updated
+ui_action=4 | Withdraw | enabled=true | Choose a different known node; movement remains physical. Only present members hear this order; absent members are not updated

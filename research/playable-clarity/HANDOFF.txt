@@ -1,0 +1,42 @@
+WORLD OF NODES — P4.1 INTERFACE CLARITY REPORT
+
+Implementation revision: 243d07b
+Baseline: 0f8c18b
+Status: bounded UI clarity pass complete. Stopped before further milestones.
+
+CHANGES
+- Strong gold selection and clearer settlement, crossing and unit symbols.
+- Quieter map, fewer floating labels, named resource quantities.
+- Contextual actions and disabled reasons, preserving Q/W/E/R.
+- Up to four current matters based only on ruler-visible evidence.
+- Decision-first inspection with unit presence, condition and command reach.
+- Clear order stages; receipt does not imply execution or construction.
+- Solid/hollow freshness cues with exact evidence timestamps in inspection.
+- Strong debug banner; command targets still use Play knowledge.
+
+WHY
+The previous interface described state with similar visual weight. The revised
+interface first shows what matters, what is selected, and what can be attempted.
+Mouse-only crossing commission was exercised through the real command chain.
+
+VALIDATION
+369 headless tests pass.
+15 distinct client tests pass; Clippy and formatting pass.
+48 preserved scenarios plus 48 exact replays match.
+600 F13B histories match exactly.
+113 root source/dependency files and 21,439 prior research files are unchanged.
+Actual window inputs match independent headless replay.
+Existing historical F11C strict exceptions remain preserved, not renamed PASS.
+
+LIMITS / TRADEOFFS
+Remote status remains unknown without legitimate information. Construction is
+inspected separately from office-obligation status. Dense labels and long panels
+still need zoom/scroll. Some compact text is abbreviated. A crossing marker can
+shift to a node-associated fallback when remembered edge geometry is absent.
+1440x900 was visually reviewed; first-time human comprehension is not yet proven.
+
+No simulation system, policy, physical parameter or institution was changed.
+P4 human playtesting remains open. No further milestone was started.
+
+Full report: research/playable-clarity/REPORT.md
+Final screenshots: research/playable-clarity/final/

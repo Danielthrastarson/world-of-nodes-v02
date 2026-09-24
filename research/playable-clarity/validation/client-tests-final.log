@@ -1,0 +1,41 @@
+   Compiling world-of-nodes-client v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e/client)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.90s
+     Running unittests src/bin/render_probe.rs (client/target/debug/deps/render_probe-297a3822432ad875)
+
+running 12 tests
+test camera::tests::zoom_keeps_target_under_cursor_and_pan_is_reversible ... ok
+test presentation::tests::hidden_world_differences_cannot_change_any_play_presentation ... ok
+test presentation::tests::map_only_nodes_are_not_presented_as_empty_settlements ... ok
+test presentation::tests::stable_top_level_verbs_do_not_depend_on_predicted_context ... ok
+test presentation::tests::dated_reports_and_ghosts_never_become_current_by_formatting ... ok
+test scene::tests::composing_target_never_promotes_a_node_absent_from_supplied_knowledge ... ok
+test presentation::tests::unit_badge_uses_observed_actions_not_last_issued_global_intent ... ok
+test presentation::tests::accepted_role_and_survival_have_distinct_ui_meanings ... ok
+test presentation::tests::node_zero_is_a_real_known_route_not_a_false_boolean_target ... ok
+test presentation::tests::actual_remote_setup_cannot_offer_military_commands_after_service_ended ... ok
+test presentation::tests::courier_handoff_and_elapsed_deadline_do_not_imply_remote_receipt ... ok
+test presentation::tests::physically_witnessed_handoff_does_not_claim_decision_or_construction ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+     Running unittests src/main.rs (client/target/debug/deps/world_of_nodes_client-29d82048aace47b2)
+
+running 15 tests
+test clock::tests::drawing_cadence_does_not_change_elapsed_simulation_time ... ok
+test camera::tests::zoom_keeps_target_under_cursor_and_pan_is_reversible ... ok
+test clock::tests::overload_retains_backlog_and_pause_never_adds_time ... ok
+test presentation::tests::hidden_world_differences_cannot_change_any_play_presentation ... ok
+test interface_tests::debug_only_crossing_cannot_become_a_play_command_target ... ok
+test presentation::tests::map_only_nodes_are_not_presented_as_empty_settlements ... ok
+test presentation::tests::accepted_role_and_survival_have_distinct_ui_meanings ... ok
+test presentation::tests::node_zero_is_a_real_known_route_not_a_false_boolean_target ... ok
+test presentation::tests::dated_reports_and_ghosts_never_become_current_by_formatting ... ok
+test presentation::tests::stable_top_level_verbs_do_not_depend_on_predicted_context ... ok
+test presentation::tests::unit_badge_uses_observed_actions_not_last_issued_global_intent ... ok
+test scene::tests::composing_target_never_promotes_a_node_absent_from_supplied_knowledge ... ok
+test presentation::tests::courier_handoff_and_elapsed_deadline_do_not_imply_remote_receipt ... ok
+test presentation::tests::actual_remote_setup_cannot_offer_military_commands_after_service_ended ... ok
+test presentation::tests::physically_witnessed_handoff_does_not_claim_decision_or_construction ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+

@@ -1,0 +1,28 @@
+compiled_executable_fnv1a64=Some(1395370384ff6031)
+scenario=Local
+seed=0
+sim_ms=0
+state_hash=d7cef5e2f816c404
+event_hash=4231485af1aa3c8d
+replay_equal=true
+frames=275
+fps=121.356
+last_sim_batch_ms=0.000095
+last_snapshot_ms=0.107733
+last_draw_ms=0.916545
+rss_kib=Some(188192)
+view_mode=Play
+visible_or_remembered_people=10
+commands=[]
+ui_selection=Some(Node(1))
+ui_verb=Observe
+ui_draft=None
+ui_tab=0
+ui_notice=Screenshot: /home/lemanruss/Documents/ChatGPT/Gam,e/research/playable-clarity/final/commission/current.png
+known_matter=Observed request: 60 food | Observed locally now
+known_matter=Crossing site known | Observed locally now
+known_matter=No office order recorded | Own command record
+ui_action=1 | Inspect | enabled=true | Inspect only currently known evidence
+ui_action=2 | Reports | enabled=true | Read carried reports with their original dates
+ui_action=3 | Record observation | enabled=true | Record what the ruler can observe here; no remote query
+ui_action=4 | Controls | enabled=true | Stable verbs: Q Observe, W Order, E Govern, R Allocate

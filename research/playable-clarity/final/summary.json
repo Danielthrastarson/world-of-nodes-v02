@@ -1,0 +1,154 @@
+{
+  "implementation_revision": "243d07b",
+  "replay_evidence_count": 24,
+  "all_replays_equal": true,
+  "matched_remote_play_debug_hashes": true,
+  "records": [
+    {
+      "path": "commission/after-camera.txt",
+      "state_hash": "300c525ee1f3c5f5",
+      "event_hash": "7db333b627965118",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "commission/after-debug.txt",
+      "state_hash": "300c525ee1f3c5f5",
+      "event_hash": "7db333b627965118",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "commission/after-running.txt",
+      "state_hash": "300c525ee1f3c5f5",
+      "event_hash": "7db333b627965118",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "commission/before-camera.txt",
+      "state_hash": "300c525ee1f3c5f5",
+      "event_hash": "7db333b627965118",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "commission/current.txt",
+      "state_hash": "300c525ee1f3c5f5",
+      "event_hash": "7db333b627965118",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "commission/disabled-govern.txt",
+      "state_hash": "d7cef5e2f816c404",
+      "event_hash": "4231485af1aa3c8d",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "commission/help-no-command.txt",
+      "state_hash": "d7cef5e2f816c404",
+      "event_hash": "4231485af1aa3c8d",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "commission/initial.txt",
+      "state_hash": "d7cef5e2f816c404",
+      "event_hash": "4231485af1aa3c8d",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "commission/issued.txt",
+      "state_hash": "6143e2a357727777",
+      "event_hash": "693aebfd13a7d398",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "local-built.txt",
+      "state_hash": "87bbffcb3f2db018",
+      "event_hash": "615ffb48c07ef3c7",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/after-camera.txt",
+      "state_hash": "b4b9b9894b8569f5",
+      "event_hash": "7e50f7334986113e",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/after-debug.txt",
+      "state_hash": "b880de56771ac117",
+      "event_hash": "7de439d11b157eab",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/after-running.txt",
+      "state_hash": "b880de56771ac117",
+      "event_hash": "7de439d11b157eab",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/attack.txt",
+      "state_hash": "d93c2268ecb03a63",
+      "event_hash": "ab984bb76f939b18",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/before-camera.txt",
+      "state_hash": "b4b9b9894b8569f5",
+      "event_hash": "7e50f7334986113e",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/context-move.txt",
+      "state_hash": "ed38e38f38a76aeb",
+      "event_hash": "4c77505c40afb070",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/current.txt",
+      "state_hash": "b4b9b9894b8569f5",
+      "event_hash": "7e50f7334986113e",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/disabled-govern.txt",
+      "state_hash": "d7cef5e2f816c404",
+      "event_hash": "4231485af1aa3c8d",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/help-no-command.txt",
+      "state_hash": "d7cef5e2f816c404",
+      "event_hash": "4231485af1aa3c8d",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/hold.txt",
+      "state_hash": "f7f9b9c20768162c",
+      "event_hash": "2c45f6fda58c68c5",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/initial.txt",
+      "state_hash": "d7cef5e2f816c404",
+      "event_hash": "4231485af1aa3c8d",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "military/withdraw-input.txt",
+      "state_hash": "b4b9b9894b8569f5",
+      "event_hash": "7e50f7334986113e",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "remote-debug.txt",
+      "state_hash": "6e663d3e8830f072",
+      "event_hash": "ffe174db523c26ce",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    },
+    {
+      "path": "remote-play.txt",
+      "state_hash": "6e663d3e8830f072",
+      "event_hash": "ffe174db523c26ce",
+      "executable": "Some(5b0977cb2eb3cdad)"
+    }
+  ],
+  "kernel_changed": false,
+  "human_playtest_claimed": false
+}

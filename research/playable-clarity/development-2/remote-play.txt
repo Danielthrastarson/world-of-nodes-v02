@@ -1,0 +1,44 @@
+compiled_executable_fnv1a64=Some(1395370384ff6031)
+scenario=Remote
+seed=0
+sim_ms=57600000
+state_hash=6e663d3e8830f072
+event_hash=ffe174db523c26ce
+replay_equal=true
+frames=30
+fps=34.495
+last_sim_batch_ms=0.000042
+last_snapshot_ms=0.044315
+last_draw_ms=0.498350
+rss_kib=Some(102828)
+view_mode=Play
+visible_or_remembered_people=15
+commands=[
+    CommandRecord {
+        at: 900000,
+        command: Commission {
+            office: 0,
+            project: 0,
+        },
+        outcome: Ok(
+            Order {
+                message: 0,
+                dispatch: WithAgreedCourier,
+            },
+        ),
+    },
+]
+ui_selection=Some(Node(1))
+ui_verb=Observe
+ui_draft=None
+ui_tab=2
+ui_notice=0.25h · ORDER 0 ISSUED · with agreed courier; distant receipt unknown
+known_matter=Order 0 · Courier handoff known; receipt unknown | Issued 15h 45m ago
+known_matter=Observed request: 60 food | Seen 3h 38m ago
+known_matter=Project authorization observed | Seen 3h 38m ago
+known_matter=Dated report · node 2 | Report 16h old
+known_order=0 | Courier handoff known; receipt unknown
+ui_action=1 | Inspect | enabled=true | Inspect only currently known evidence
+ui_action=2 | Reports | enabled=true | Read carried reports with their original dates
+ui_action=3 | Record observation | enabled=false | Arrive at a node to issue a local instruction
+ui_action=4 | Controls | enabled=true | Stable verbs: Q Observe, W Order, E Govern, R Allocate

@@ -237,3 +237,20 @@ attribution is linked in the report. Do not describe historical identity as univ
 No money, coercion, civilian micromanagement, free logistics, new economic behavior,
 Jev, fake graphics entities or renderer authority is introduced. Missing remote
 status acknowledgments, service expiry and ruler mortality remain explicit limits.
+
+## P4.1 — interface clarity, bounded completion
+
+Owner requested a clarity pass before further simulation expansion. Implementation
+`243d07b` completes the native interface iteration: [evidence](../research/playable-clarity/REPORT.md),
+[copyable handoff](../research/playable-clarity/HANDOFF.txt),
+[final screenshots](../research/playable-clarity/final/).
+P4.1 is PASSED at bounded technical/visual-review scope; P4 remains ACTIVE for
+first-time human playtest. No higher milestone begins here.
+
+Selection, contextual actions, known matters, information age and order-stage
+feedback are clearer. The authoritative root is unchanged. 369 headless tests,
+15 distinct client tests, 48 scenario/replay pairs and all 600 F13B histories pass;
+21,439 prior research files remain intact. Earlier F11C strict exceptions remain
+explicit historical evidence. Unknown remote completion, service expiry, ruler
+mortality and schematic display limitations are preserved rather than repaired
+through simulation convenience.

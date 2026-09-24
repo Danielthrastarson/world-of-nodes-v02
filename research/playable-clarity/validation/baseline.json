@@ -1,0 +1,10 @@
+{
+  "revision": "0f8c18bc9b16f47dbf75276f577e20f850518f36",
+  "status_at_registration": [
+    "?? research/playable-clarity/"
+  ],
+  "root_source_files": 113,
+  "prior_research_files": 21439,
+  "scope": "P4.1 presentation-only validation; no source/client modifications by this validation subtask",
+  "existing_baseline_exception": "The60F11C hash/activity differences documented in research/playable/regression/REPORT.md precede0f8c18b and remain strictfailures. They are not reclassified."
+}

@@ -1,0 +1,44 @@
+compiled_executable_fnv1a64=Some(5b0977cb2eb3cdad)
+scenario=Local
+seed=0
+sim_ms=23340000
+state_hash=300c525ee1f3c5f5
+event_hash=7db333b627965118
+replay_equal=true
+frames=1925
+fps=81.963
+last_sim_batch_ms=0.000042
+last_snapshot_ms=0.081374
+last_draw_ms=0.503216
+rss_kib=Some(212056)
+view_mode=Play
+visible_or_remembered_people=15
+commands=[
+    CommandRecord {
+        at: 0,
+        command: Commission {
+            office: 0,
+            project: 0,
+        },
+        outcome: Ok(
+            Order {
+                message: 0,
+                dispatch: DeliveredLocally,
+            },
+        ),
+    },
+]
+ui_selection=Some(Crossing(0))
+ui_verb=Order
+ui_draft=None
+ui_tab=1
+ui_notice=Screenshot: /home/lemanruss/Documents/ChatGPT/Gam,e/research/playable-clarity/final/commission/current.png
+known_matter=Order 0 · decision unknown | Issued 6h 29m ago
+known_matter=Observed request: 60 food | Observed locally now
+known_matter=Project authorization observed | Observed locally now
+known_matter=Dated report · node 2 | Report 6h 29m old
+known_order=0 | Received; decision unreported
+ui_action=1 | Commission crossing | enabled=true | Choose a known site; accepted office scope is checked on confirmation
+ui_action=2 | Send revocation | enabled=false | Select an order issued by this ruler
+ui_action=3 | Other projects | enabled=false | No other public project command exists yet
+ui_action=4 | Other orders | enabled=false | Arbitrary commands to people are not authorized

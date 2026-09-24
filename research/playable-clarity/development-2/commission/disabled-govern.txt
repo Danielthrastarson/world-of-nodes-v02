@@ -1,0 +1,28 @@
+compiled_executable_fnv1a64=Some(1395370384ff6031)
+scenario=Local
+seed=0
+sim_ms=0
+state_hash=d7cef5e2f816c404
+event_hash=4231485af1aa3c8d
+replay_equal=true
+frames=554
+fps=122.731
+last_sim_batch_ms=0.000092
+last_snapshot_ms=0.080524
+last_draw_ms=0.583469
+rss_kib=Some(193432)
+view_mode=Play
+visible_or_remembered_people=10
+commands=[]
+ui_selection=Some(Node(1))
+ui_verb=Govern
+ui_draft=None
+ui_tab=0
+ui_notice=Screenshot: /home/lemanruss/Documents/ChatGPT/Gam,e/research/playable-clarity/final/commission/current.png
+known_matter=Observed request: 60 food | Observed locally now
+known_matter=Crossing site known | Observed locally now
+known_matter=No office order recorded | Own command record
+ui_action=1 | Not available | enabled=false | No new law or coercive power is implemented
+ui_action=2 | Not available | enabled=false | No new law or coercive power is implemented
+ui_action=3 | Not available | enabled=false | No new law or coercive power is implemented
+ui_action=4 | Not available | enabled=false | No new law or coercive power is implemented

@@ -1,0 +1,48 @@
+{
+  "F11C": "Not rerun because all authoritative code/dependencies are byte-identical. Existing60/1440 strictfailures remain preserved asbaseline, notrelabeledpassed.",
+  "F13B": {
+    "aggregate_csv_checks": 1,
+    "exceptions": [],
+    "native_artifacts": 3000,
+    "runs": 600,
+    "status": "PASS"
+  },
+  "baseline_revision": "0f8c18bc9b16f47dbf75276f577e20f850518f36",
+  "headless_tests": {
+    "integration": 13,
+    "library": 356,
+    "status": "PASS",
+    "total": 369
+  },
+  "integrity": {
+    "baseline_revision": "0f8c18bc9b16f47dbf75276f577e20f850518f36",
+    "git_diff_root_vs_baseline_bytes": 0,
+    "git_head": "0f8c18bc9b16f47dbf75276f577e20f850518f36",
+    "prior_research": {
+      "differences": [],
+      "files": 21439,
+      "status": "PASS"
+    },
+    "root_source": {
+      "differences": [],
+      "extra_root_source_files": [],
+      "files": 113,
+      "missing_root_source_files": [],
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "playable_scenarios": {
+    "additional_replays": 48,
+    "artifact_checks": 193,
+    "exceptions": [
+      "results.csv/run_wall_ns",
+      "results.csv/replay_wall_ns"
+    ],
+    "runs": 48,
+    "status": "PASS"
+  },
+  "report": "REPORT.md",
+  "retention": "Exact successfulduplicate raw outputs discarded afterfullcomparison/fingerprinting. Originalreferencesremain unchanged.",
+  "status": "PASS_NO_NEW_HEADLESS_REGRESSION"
+}

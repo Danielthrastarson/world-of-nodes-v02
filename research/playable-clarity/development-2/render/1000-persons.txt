@@ -1,0 +1,9 @@
+actual_persons=1000
+visible_persons=1000
+frames=240
+snapshot_ms=5.926056
+mean_cpu_draw_ms=0.898713
+max_cpu_draw_ms=75.140258
+fps_including_capture=136.642
+state_unchanged=true
+clock_paused=true
