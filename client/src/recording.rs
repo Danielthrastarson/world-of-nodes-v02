@@ -310,7 +310,7 @@ impl Recording {
     }
     fn current(&self, ui: &Ui, clock: &Playback, s: &Snapshot, metrics: &Metrics) -> String {
         format!(
-            "{{\"schema\":1,\"sim_ms\":{},\"frame\":{},\"knowledge_mode\":\"Play\",{},\"camera\":{},\"known\":{},\"performance\":{{\"fps\":{},\"last_sim_batch_ms\":{},\"last_draw_ms\":{},\"rss_kib\":{}}},\"logger_error\":{}}}\n",
+            "{{\"schema\":1,\"sim_ms\":{},\"frame\":{},\"knowledge_mode\":\"Play\",{},\"camera\":{},\"known\":{},\"performance\":{{\"fps\":{},\"last_sim_batch_ms\":{},\"last_draw_ms\":{},\"projection_cpu_ms\":{},\"visible_persons\":{},\"effect_cues\":{},\"visible_effects\":{},\"gpu_frame_ms\":null,\"captured_batches\":null,\"layer_cpu_ms\":{:?},\"rss_kib\":{}}},\"logger_error\":{}}}\n",
             s.now,
             metrics.frame_count,
             ui_fields(ui, clock),
@@ -319,6 +319,11 @@ impl Recording {
             metrics.fps(),
             metrics.simulation_ms,
             metrics.draw_ms,
+            metrics.projection_ms,
+            metrics.visible_persons,
+            metrics.effect_cues,
+            metrics.visible_effects,
+            metrics.layer_ms,
             metrics
                 .rss_kib
                 .map(|v| v.to_string())

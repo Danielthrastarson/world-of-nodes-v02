@@ -9,6 +9,7 @@ mod recording;
 mod scene;
 mod spatial;
 mod widgets;
+mod world_presentation;
 use camera::MapCamera;
 use chrome::{footer, header, matters, sidebar};
 use clock::Playback;
@@ -196,6 +197,7 @@ struct Options {
     evidence: Option<String>,
     journal: Option<String>,
     map_only: bool,
+    zoom: Option<f32>,
 }
 fn options() -> Options {
     let mut o = Options::default();
@@ -213,10 +215,17 @@ fn options() -> Options {
             "--commission" => o.commission = true,
             "--reports" => o.reports = true,
             "--map-only" => o.map_only = true,
-            "--seed" | "--hour" | "--frames" | "--capture" | "--evidence" | "--journal" => {
+            "--seed" | "--hour" | "--frames" | "--capture" | "--evidence" | "--journal"
+            | "--zoom" => {
                 if i + 1 < args.len() {
                     i += 1;
                     match args[i - 1].as_str() {
+                        "--zoom" => {
+                            o.zoom = args[i]
+                                .parse::<f32>()
+                                .ok()
+                                .filter(|v| v.is_finite() && *v >= 0.25 && *v <= 4.)
+                        }
                         "--seed" => o.seed = args[i].parse().unwrap_or(0),
                         "--hour" => o.hour = args[i].parse().ok(),
                         "--frames" => o.frames = args[i].parse().ok(),
@@ -228,7 +237,7 @@ fn options() -> Options {
             }
             "--help" => {
                 println!(
-                    "World of Nodes: --remote --seed N --debug --run --commission --reports --map-only --hour H --frames N --capture PATH --evidence PATH --journal NEW_DIRECTORY\nQ/W/E/R verbs;1-4 options;LMB select;RMB context/cancel;Enter confirm;Space pause;F1 help;F2 debug;F9 world view;arrows/MMB/RMBdrag pan;wheel zoom."
+                    "World of Nodes: --remote --seed N --debug --run --commission --reports --map-only --zoom Z --hour H --frames N --capture PATH --evidence PATH --journal NEW_DIRECTORY\nQ/W/E/R verbs;1-4 options;LMB select;RMB context/cancel;Enter confirm;Space pause;F1 help;F2 debug;F9 world view;arrows/MMB/RMBdrag pan;wheel zoom."
                 );
                 std::process::exit(0);
             }
@@ -262,6 +271,9 @@ async fn main() {
         map_only: options.map_only,
         ..Default::default()
     };
+    if let Some(zoom) = options.zoom {
+        ui.camera.zoom = zoom;
+    }
     if ui.map_only {
         ui.selection = None;
     }
@@ -291,6 +303,7 @@ async fn main() {
     let mut previous: Option<Snapshot> = None;
     let mut metrics = Metrics::default();
     let mut hits: Vec<Hit> = vec![];
+    let geography = world_presentation::Geography::default();
     loop {
         if let Some(recorder) = &mut recording
             && is_quit_requested()
@@ -469,19 +482,28 @@ async fn main() {
         metrics.simulation_ms = t.elapsed().as_secs_f64() * 1000.;
         let t = Instant::now();
         clear_background(BG);
-        let draw_world = if ui.map_only {
-            scene::draw_unlabelled
-        } else {
-            scene::draw
-        };
-        hits = draw_world(
+        let project_started = Instant::now();
+        let render_snapshot = world_presentation::RenderSnapshot::project(
             &snap,
             previous.as_ref(),
             if clock.paused { 1. } else { clock.fraction() },
+            &geography,
+        );
+        metrics.projection_ms = project_started.elapsed().as_secs_f64() * 1000.;
+        let result = scene::render(
+            &render_snapshot,
             &ui.camera,
             view,
             ui.selection,
+            !ui.map_only,
         );
+        metrics.ambient = render_snapshot.lighting.ambient;
+        metrics.solar_phase = render_snapshot.lighting.phase;
+        metrics.visible_persons = result.stats.visible_persons;
+        metrics.effect_cues = result.stats.effect_cues;
+        metrics.visible_effects = result.stats.visible_effects;
+        metrics.layer_ms = result.stats.layer_ms;
+        hits = result.hits;
         let capture_started = Instant::now();
         let known = session.snapshot(ViewMode::Play);
         metrics.snapshot_ms += capture_started.elapsed().as_secs_f64() * 1000.;
@@ -634,6 +656,11 @@ fn write_evidence(path: &str, session: &Session, s: &Snapshot, m: &Metrics, o: &
             action.slot, action.label, action.enabled, action.reason
         ));
     }
+    output.push_str(&format!("projection_cpu_ms={}\nvisible_persons={}\neffect_cues={}\nvisible_effects={}\ngpu_frame_ms=unavailable\nbatch_count=on-demand benchmark only\nlayer_cpu_ms={:?}\n",m.projection_ms,m.visible_persons,m.effect_cues,m.visible_effects,m.layer_ms));
+    output.push_str(&format!(
+        "ambient={}\nsolar_phase={}\n",
+        m.ambient, m.solar_phase
+    ));
     std::fs::write(path, output).expect("explicit research evidence path");
 }
 

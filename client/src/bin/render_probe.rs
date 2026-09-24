@@ -12,6 +12,8 @@ mod scene;
 mod spatial;
 #[path = "../widgets.rs"]
 mod widgets;
+#[path = "../world_presentation.rs"]
+mod world_presentation;
 use macroquad::prelude::*;
 use std::time::Instant;
 use world_of_nodes::provisioning::playable::snapshot::{ViewMode, capture};
@@ -42,7 +44,7 @@ async fn main() {
     let snapshot = capture(&world, 0, ViewMode::Play);
     let snapshot_ms = t.elapsed().as_secs_f64() * 1000.;
     let camera = camera::MapCamera {
-        center: camera::node_position(0),
+        center: spatial::v(world_presentation::Geography::default().node(0)),
         zoom: 0.72,
     };
     let start = Instant::now();
@@ -52,14 +54,17 @@ async fn main() {
     for frame in 0..240 {
         let t = Instant::now();
         clear_background(widgets::BG);
-        let hits = scene::draw(
-            &snapshot,
-            None,
-            1.,
+        let geography = world_presentation::Geography::default();
+        let render_frame =
+            world_presentation::RenderSnapshot::project(&snapshot, None, 1., &geography);
+        let hits = scene::render(
+            &render_frame,
             &camera,
             Rect::new(0., 104., 1440., 730.),
             None,
-        );
+            true,
+        )
+        .hits;
         visible = hits
             .iter()
             .filter(|h| matches!(h.selection, scene::Selection::Person(_)))

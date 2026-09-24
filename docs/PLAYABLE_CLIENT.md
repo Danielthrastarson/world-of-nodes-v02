@@ -91,6 +91,13 @@ F9 gives a world-only view with a persistent knowledge-mode watermark. The V0/V1
 [projection contract](SPATIAL_PROJECTION.md) distinguishes display geometry from
 physical state. No water, land use or unknown remote contents are inferred for art.
 
+W0 moves coordinates, route sampling and presentation data into a backend-neutral
+[world presentation contract](WORLD_PRESENTATION_ENGINE.md). At close zoom people
+use figures, at medium zoom compact markers, and at far zoom tiny individual
+marks with fewer labels. These are the same known Persons. A restrained ambient
+cycle and simple body shadows use simulation time; they do not change knowledge
+or gameplay. No torches, particles or water sources are fabricated.
+
 The inspector shows source and observation age. Map-only starting knowledge does
 not mean a place was observed empty. A historical cart marker remains dated; it does not claim current presence.
 Unit badges count members in the current view, not global strength or current
@@ -142,7 +149,7 @@ xvfb-run -a -s '-screen 0 1440x900x24' python3 scripts/playable_clarity_smoke.py
 xvfb-run -a -s '-screen 0 1440x900x24' python3 scripts/playable_clarity_smoke.py /tmp/won-army-ui-new military
 ```
 
-`--seed N`, `--hour H`, `--commission`, `--debug`, `--reports`, `--map-only`, `--run`, `--frames N`,
+`--seed N`, `--hour H`, `--commission`, `--debug`, `--reports`, `--map-only`, `--zoom Z`, `--run`, `--frames N`,
 `--capture PATH` and `--evidence PATH` support reproducible research captures.
 `--commission` dispatches the same typed command as the UI; it is not an instant
 construction switch. `--hour` advances the ordinary Session to that checkpoint.

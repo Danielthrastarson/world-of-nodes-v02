@@ -44,6 +44,7 @@ and irreversible abstraction choices require a project-owner decision.
 | P4 Integrated playable scenario | ACTIVE — playable candidate | 18-Person economy/logistics/security scenario, 48 exact replays and actual window tests. Human comprehension, pacing and sustained play remain to be validated. |
 | V0 Spatial world projection | ACTIVE — ready for owner visual review | Existing graph and permitted snapshot projected as places, land, fields, resource zones, routes, crossing and people. No connectivity or physical changes. |
 | V1 Visual grammar | ACTIVE — ready for owner visual review | State-backed figures, stock, crops, infrastructure and military grouping; exact counts remain inspectable. UI-hidden captures await human judgment. |
+| W0 World presentation engine | ACTIVE — technical implementation, review pending | Keep Macroquad; stable continuous presentation coordinates, backend-neutral RenderSnapshot, ordered passes, LOD, route interpolation, lighting/effect seams and isolated scale measurements. Kernel unchanged. |
 | V2 Mouse-first interaction | NOT STARTED | Preserve stable Q/W/E/R; expand intuitive mouse interaction only after projection review. |
 | V3 Knowledge visualization | NOT STARTED | Extend visual provenance without erasing stale knowledge or adding remote truth. Existing Play/Debug boundaries apply throughout. |
 | V4 Motion / atmosphere / audio | NOT STARTED | Only after V0–V3 readability; no new physical state invented for effects. |
@@ -279,3 +280,19 @@ V0/V1 [contract](SPATIAL_PROJECTION.md) and
 [evidence](../research/spatial-projection/REPORT.md) preserve the distinction
 between schematic art and authoritative state. This increment ends at visual
 review; mechanical parity alone cannot pass a new-player readability gate.
+
+## W0 — deliberate presentation architecture
+
+The owner reported improvement after V0/V1 and selected Macroquad as the current
+backend, with a future wgpu decision based on measured limits. W0 now precedes
+further interaction/atmosphere expansion: V0/V1 → W0 coordinates/snapshot/layers/
+LOD/motion/instrumentation → owner screenshot and motion review. This preserves
+the earlier V0–V4 history; it does not authorize a game-engine migration.
+
+The [W0 contract](WORLD_PRESENTATION_ENGINE.md) separates presentation geometry
+from authoritative graph topology. Water/torch/fire/effect interfaces create no
+new sources. Stress records remain outside World, and no simulated population is
+enlarged to meet a rendering benchmark. [Evidence](../research/world-presentation/REPORT.md)
+distinguishes mechanical gates, synthetic rendering load, actual-Person motion
+and unresolved human readability. Stop before advanced lighting, particles,
+physics, new simulation systems or a renderer replacement.
