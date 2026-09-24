@@ -111,3 +111,9 @@ labelled. Human sessions receive no scripted input.
 
 Owner playtest must judge presence, strategy, pacing and desire to continue. Neither
 a screenshot nor mechanical parity proves those experiential gates.
+
+The five E0 node centres are shared integer embedding metadata between adapter and
+renderer. A conservative river-bank exclusion also covers the detour's local cell;
+local walking cannot enter the headwaters. The full graph route remains the only
+way to traverse a crossing. This closes a presentation/control geometry mismatch,
+not a change to the physical kernel's geography.

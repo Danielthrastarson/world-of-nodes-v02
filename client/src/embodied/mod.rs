@@ -1,19 +1,21 @@
 //! E0 3D projection only. No World access; no separate simulation or character AI.
 use crate::world_presentation::{Geography, Point, RenderSnapshot, current};
 use macroquad::{camera::Camera, prelude::*};
-use world_of_nodes::provisioning::playable::session::embodied::Pose;
+use world_of_nodes::provisioning::playable::session::embodied::{LOCAL_CENTERS_MM, Pose};
 use world_of_nodes::provisioning::playable::snapshot::*;
 use world_of_nodes::provisioning::{HOUR, Holder, Location};
 pub fn geography() -> Geography {
     Geography {
-        nodes: [
-            (0, Point::new(60., 760.)),
-            (1, Point::new(460., 540.)),
-            (2, Point::new(1200., 540.)),
-            (3, Point::new(880., 140.)),
-            (4, Point::new(1510., 265.)),
-        ]
-        .into(),
+        nodes: LOCAL_CENTERS_MM
+            .iter()
+            .enumerate()
+            .map(|(id, &(x, z))| {
+                (
+                    id,
+                    Point::new(460. + x as f32 / 100., 540. + z as f32 / 100.),
+                )
+            })
+            .collect(),
         route_bends: [((1, 2), 25.), ((1, 3), -80.), ((2, 3), 60.)].into(),
     }
 }

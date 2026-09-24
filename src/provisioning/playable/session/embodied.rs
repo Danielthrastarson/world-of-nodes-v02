@@ -20,6 +20,14 @@ pub struct Pose {
     pub x_mm: i32,
     pub z_mm: i32,
 }
+/// E0 embedding metadata, shared with its renderer; millimetres in world space.
+pub const LOCAL_CENTERS_MM: [(i32, i32); 5] = [
+    (-40000, 22000),
+    (0, 0),
+    (74000, 0),
+    (42000, -40000),
+    (105000, -27500),
+];
 pub struct EmbodiedSession {
     session: Session,
     pose: Pose,
@@ -252,6 +260,15 @@ impl EmbodiedSession {
 /// A local detail cell is not permission to cross node boundaries. These
 /// prototype footprints are shared with the 3D embedding; no hidden NPC data.
 pub fn walkable(node: usize, x: i32, z: i32) -> bool {
+    let Some(&(cx, cz)) = LOCAL_CENTERS_MM.get(node) else {
+        return false;
+    };
+    let (wx, wz) = (i64::from(cx) + i64::from(x), i64::from(cz) + i64::from(z));
+    // Conservative river/bank exclusion, including headwaters near node3.
+    // Crossing travel happens only through authoritative graph traversal.
+    if (31000..=43000).contains(&wx) && wz > -26000 {
+        return false;
+    }
     let radius2 = i64::from(x) * i64::from(x) + i64::from(z) * i64::from(z);
     radius2 <= 18_000_i64.pow(2)
         && !(node == 1 && (-14000..=-3000).contains(&x) && (-12000..=-4000).contains(&z))
@@ -290,6 +307,8 @@ mod tests {
         assert!(!walkable(1, -8000, -8000));
         assert!(!walkable(1, 19000, 0));
         assert!(walkable(1, 0, 0));
+        assert!(!walkable(3, -7000, 15500)); // headwater inside detour detail cell
+        assert!(walkable(3, 0, 0));
         let mut s = EmbodiedSession::new(0).unwrap();
         s.pose.x_mm = 10000;
         assert!(s.dispatch(Input::Travel { target: 2 }).is_err());
