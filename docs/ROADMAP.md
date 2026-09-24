@@ -45,6 +45,7 @@ and irreversible abstraction choices require a project-owner decision.
 | V0 Spatial world projection | ACTIVE — ready for owner visual review | Existing graph and permitted snapshot projected as places, land, fields, resource zones, routes, crossing and people. No connectivity or physical changes. |
 | V1 Visual grammar | ACTIVE — ready for owner visual review | State-backed figures, stock, crops, infrastructure and military grouping; exact counts remain inspectable. UI-hidden captures await human judgment. |
 | W0 World presentation engine | ACTIVE — technical implementation, review pending | Keep Macroquad; stable continuous presentation coordinates, backend-neutral RenderSnapshot, ordered passes, LOD, route interpolation, lighting/effect seams and isolated scale measurements. Kernel unchanged. |
+| W1 Isolated art direction | ACTIVE — prototype ready for owner review | One illustrated medieval hero scene, five zoom/knowledge/night screenshots and a day-to-night capture. No integration into the playable client or general renderer feature expansion. See ART_DIRECTION.md. |
 | V2 Mouse-first interaction | NOT STARTED | Preserve stable Q/W/E/R; expand intuitive mouse interaction only after projection review. |
 | V3 Knowledge visualization | NOT STARTED | Extend visual provenance without erasing stale knowledge or adding remote truth. Existing Play/Debug boundaries apply throughout. |
 | V4 Motion / atmosphere / audio | NOT STARTED | Only after V0–V3 readability; no new physical state invented for effects. |
@@ -296,3 +297,14 @@ enlarged to meet a rendering benchmark. [Evidence](../research/world-presentatio
 distinguishes mechanical gates, synthetic rendering load, actual-Person motion
 and unresolved human readability. Stop before advanced lighting, particles,
 physics, new simulation systems or a renderer replacement.
+
+## W1 — isolated visual choice before further renderer development
+
+The owner stopped renderer feature expansion and requested one authored hero
+scene to choose the visual direction. [Art direction](ART_DIRECTION.md) defines
+the proposed illustrated top-down 2.5D grammar. The prototype consumes the W0
+RenderSnapshot in a separate binary; no general renderer or kernel code changes.
+The river and stationary light study props are explicitly authored presentation
+state, not new water/fire mechanics. [Review evidence](../research/hero-scene/REPORT.md)
+contains five final screenshots and one day-to-night clip. Stop for visual review;
+do not generalize the treatment across the world yet.
