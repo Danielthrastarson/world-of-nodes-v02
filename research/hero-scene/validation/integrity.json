@@ -1,0 +1,7 @@
+{
+  "baseline": "42cde88",
+  "tracked_research_files_unchanged": 22755,
+  "tracked_kernel_client_dependency_research_diff": "",
+  "note": "Only new isolated W1 source files and evidence were added; normal client and W0 renderer are unchanged.",
+  "status": "PASS"
+}
