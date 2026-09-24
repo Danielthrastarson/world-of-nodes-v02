@@ -1,0 +1,3 @@
+    Finished `release` profile [optimized] target(s) in 0.00s
+     Running `target/release/embodied_probe research/embodied-world/setup-final`
+E0 setup recorded without advancing or modifying it

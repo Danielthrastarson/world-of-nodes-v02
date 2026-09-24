@@ -1,0 +1,24 @@
+local none seed=0 ruler_alive=true crossing=0 stolen=30 replay=true
+local commission seed=0 ruler_alive=true crossing=1 stolen=30 replay=true
+local hold seed=0 ruler_alive=true crossing=0 stolen=30 replay=true
+local move seed=0 ruler_alive=true crossing=0 stolen=30 replay=true
+local withdraw seed=0 ruler_alive=true crossing=0 stolen=30 replay=true
+local attack seed=0 ruler_alive=true crossing=0 stolen=0 replay=true
+local commission_hold seed=0 ruler_alive=true crossing=1 stolen=30 replay=true
+local commission_revoke seed=0 ruler_alive=true crossing=1 stolen=30 replay=true
+local none seed=1 ruler_alive=true crossing=0 stolen=30 replay=true
+local commission seed=1 ruler_alive=true crossing=1 stolen=30 replay=true
+local hold seed=1 ruler_alive=true crossing=0 stolen=30 replay=true
+local move seed=1 ruler_alive=true crossing=0 stolen=30 replay=true
+local withdraw seed=1 ruler_alive=true crossing=0 stolen=30 replay=true
+local attack seed=1 ruler_alive=true crossing=0 stolen=0 replay=true
+local commission_hold seed=1 ruler_alive=true crossing=1 stolen=30 replay=true
+local commission_revoke seed=1 ruler_alive=true crossing=1 stolen=30 replay=true
+local none seed=2 ruler_alive=true crossing=0 stolen=30 replay=true
+local commission seed=2 ruler_alive=true crossing=1 stolen=30 replay=true
+local hold seed=2 ruler_alive=true crossing=0 stolen=30 replay=true
+local move seed=2 ruler_alive=true crossing=0 stolen=30 replay=true
+local withdraw seed=2 ruler_alive=true crossing=0 stolen=30 replay=true
+local attack seed=2 ruler_alive=true crossing=0 stolen=0 replay=true
+local commission_hold seed=2 ruler_alive=true crossing=1 stolen=30 replay=true
+Error: Os { code: 122, kind: QuotaExceeded, message: "Disk quota exceeded" }

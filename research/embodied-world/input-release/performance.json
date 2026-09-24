@@ -1,0 +1,26 @@
+{
+  "frames": 352,
+  "GPU_ms": null,
+  "scope": "Software OpenGL/Xvfb, actual input smoke without capture or parallel validation; mostly paused, including4s stationary sample; not large-population benchmark",
+  "sim_cpu_ms": {
+    "mean": 0.005338664772727273,
+    "p95": 0.000148,
+    "max": 0.34951699999999997
+  },
+  "render_cpu_ms": {
+    "mean": 1.9270919573863636,
+    "p95": 2.846738,
+    "max": 6.988984
+  },
+  "fps": {
+    "mean": 40.8125,
+    "p95": 46.0,
+    "max": 60.0
+  },
+  "visible_people": {
+    "mean": 28.321022727272727,
+    "p95": 36.0,
+    "max": 36.0
+  },
+  "rss_kib_max": 325896
+}

@@ -1,0 +1,41 @@
+{
+  "comparison": "prior camera/render capture; simulation state/event/pose/time across all360 frames exact; image bytes need not be deterministic",
+  "screenshots": {
+    "view-020.png": {
+      "decoded_pixels_equal": false,
+      "difference_bounds": [
+        55,
+        47,
+        672,
+        784
+      ]
+    },
+    "view-065.png": {
+      "decoded_pixels_equal": false,
+      "difference_bounds": [
+        55,
+        47,
+        672,
+        784
+      ]
+    },
+    "view-200.png": {
+      "decoded_pixels_equal": false,
+      "difference_bounds": [
+        71,
+        47,
+        672,
+        787
+      ]
+    },
+    "view-300.png": {
+      "decoded_pixels_equal": false,
+      "difference_bounds": [
+        98,
+        47,
+        672,
+        784
+      ]
+    }
+  }
+}

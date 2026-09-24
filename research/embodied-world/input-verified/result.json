@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "isolated_display": ":101",
+  "stages": [
+    {
+      "name": "initial",
+      "state": {
+        "frame": "3",
+        "sim_ms": "50400000",
+        "third_person": "false",
+        "paused": "true",
+        "speed": "1",
+        "selected": "None",
+        "pose": "Pose { node: 1, x_mm: 0, z_mm: 0 }",
+        "state_hash": "1dad7ba251e1bf6f",
+        "event_hash": "a999d9adc753255b",
+        "sim_cpu_ms": "0.000115",
+        "render_cpu_ms": "1.946745",
+        "visible_people": "36",
+        "fps": "44",
+        "rss_kib": "Some(320368)"
+      }
+    },
+    {
+      "name": "entered",
+      "state": {
+        "frame": "10",
+        "sim_ms": "50400000",
+        "third_person": "true",
+        "paused": "true",
+        "speed": "1",
+        "selected": "None",
+        "pose": "Pose { node: 1, x_mm: 0, z_mm: 0 }",
+        "state_hash": "1dad7ba251e1bf6f",
+        "event_hash": "a999d9adc753255b",
+        "sim_cpu_ms": "0.000055",
+        "render_cpu_ms": "1.66005",
+        "visible_people": "36",
+        "fps": "42",
+        "rss_kib": "Some(320468)"
+      }
+    },
+    {
+      "name": "walked",
+      "state": {
+        "frame": "95",
+        "sim_ms": "50407000",
+        "third_person": "true",
+        "paused": "true",
+        "speed": "1",
+        "selected": "None",
+        "pose": "Pose { node: 1, x_mm: -870, z_mm: 636 }",
+        "state_hash": "aaab76d8f0d4a3ce",
+        "event_hash": "a999d9adc753255b",
+        "sim_cpu_ms": "0.000049000000000000005",
+        "render_cpu_ms": "1.558746",
+        "visible_people": "23",
+        "fps": "41",
+        "rss_kib": "Some(320468)"
+      }
+    },
+    {
+      "name": "inspect",
+      "state": {
+        "frame": "113",
+        "sim_ms": "50407000",
+        "third_person": "true",
+        "paused": "true",
+        "speed": "1",
+        "selected": "Some(0)",
+        "pose": "Pose { node: 1, x_mm: -870, z_mm: 636 }",
+        "state_hash": "aaab76d8f0d4a3ce",
+        "event_hash": "a999d9adc753255b",
+        "sim_cpu_ms": "0.000223",
+        "render_cpu_ms": "1.3295169999999998",
+        "visible_people": "23",
+        "fps": "42",
+        "rss_kib": "Some(320468)"
+      }
+    },
+    {
+      "name": "order-and-speed",
+      "state": {
+        "frame": "189",
+        "sim_ms": "50407000",
+        "third_person": "false",
+        "paused": "true",
+        "speed": "4",
+        "selected": "Some(0)",
+        "pose": "Pose { node: 1, x_mm: -870, z_mm: 636 }",
+        "state_hash": "3c1c663c78f2765e",
+        "event_hash": "5c7d36aea418c617",
+        "sim_cpu_ms": "0.000059",
+        "render_cpu_ms": "2.187401",
+        "visible_people": "36",
+        "fps": "32",
+        "rss_kib": "Some(325644)"
+      }
+    }
+  ],
+  "replay": {
+    "replay_equal": true,
+    "persons": 40,
+    "now": 50407000,
+    "frames": 359,
+    "state_hash": "3c1c663c78f2765e",
+    "event_hash": "5c7d36aea418c617",
+    "same_ruler_id": 0,
+    "GPU_ms": null
+  }
+}

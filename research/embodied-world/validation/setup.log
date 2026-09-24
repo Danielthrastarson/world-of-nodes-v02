@@ -1,0 +1,4 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `release` profile [optimized] target(s) in 20.87s
+     Running `target/release/embodied_probe research/embodied-world/setup`
+E0 setup recorded without advancing or modifying it

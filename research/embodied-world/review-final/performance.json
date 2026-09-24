@@ -1,0 +1,26 @@
+{
+  "sim_cpu_ms": {
+    "mean": 1.0498383833333333,
+    "p95": 2.175378,
+    "maximum": 4.141939
+  },
+  "render_cpu_ms": {
+    "mean": 1.7124588194444443,
+    "p95": 2.551879,
+    "maximum": 6.753088
+  },
+  "fps": {
+    "mean": 25.997222222222224,
+    "p95": 30.0,
+    "maximum": 60.0
+  },
+  "visible_people": {
+    "mean": 18.47222222222222,
+    "p95": 35.0,
+    "maximum": 36.0
+  },
+  "rss_kib_max": 207368,
+  "frames": 360,
+  "GPU_frame_ms": null,
+  "scope": "Software OpenGL / Xvfb; PNG readback affects FPS; draw CPU excludes GPU completion and UI."
+}

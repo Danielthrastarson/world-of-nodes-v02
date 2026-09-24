@@ -1,0 +1,30 @@
+{
+  "frames": 365,
+  "scope": "Xvfb software OpenGL, isolated actual input smoke, no screenshot readback; mostly paused including4s stationary sample; not a population benchmark",
+  "GPU_ms": null,
+  "sim_cpu_ms": {
+    "mean": 0.006676657534246576,
+    "p95": 0.000211,
+    "maximum": 0.6480490000000001,
+    "minimum": 3.1e-05
+  },
+  "render_cpu_ms": {
+    "mean": 1.9121234602739725,
+    "p95": 3.045071,
+    "maximum": 7.988344,
+    "minimum": 1.338411
+  },
+  "fps": {
+    "mean": 41.15890410958904,
+    "p95": 45.0,
+    "maximum": 60.0,
+    "minimum": 0.0
+  },
+  "visible_people": {
+    "mean": 26.663013698630138,
+    "p95": 36.0,
+    "maximum": 36.0,
+    "minimum": 10.0
+  },
+  "rss_kib_max": 227804
+}

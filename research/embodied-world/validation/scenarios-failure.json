@@ -1,0 +1,12 @@
+{
+  "command": [
+    "target/release/playable_probe",
+    "scenarios",
+    "/tmp/won-spatial-scenarios-m9173igv/replay",
+    "3",
+    "24"
+  ],
+  "error": "CalledProcessError(1, ['target/release/playable_probe', 'scenarios', '/tmp/won-spatial-scenarios-m9173igv/replay', '3', '24'])",
+  "raw": "failed-output.tar.gz",
+  "status": "FAIL"
+}

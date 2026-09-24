@@ -1,0 +1,83 @@
+[
+    Record {
+        at: 50402000,
+        input: Walk {
+            x: -807,
+            z: 590,
+        },
+        result: Ok(
+            "Local walk within current authoritative node",
+        ),
+    },
+    Record {
+        at: 50403000,
+        input: Walk {
+            x: -807,
+            z: 590,
+        },
+        result: Ok(
+            "Local walk within current authoritative node",
+        ),
+    },
+    Record {
+        at: 50404000,
+        input: Walk {
+            x: -807,
+            z: 590,
+        },
+        result: Ok(
+            "Local walk within current authoritative node",
+        ),
+    },
+    Record {
+        at: 50405000,
+        input: Walk {
+            x: -807,
+            z: 590,
+        },
+        result: Ok(
+            "Local walk within current authoritative node",
+        ),
+    },
+    Record {
+        at: 50406000,
+        input: Walk {
+            x: -807,
+            z: 590,
+        },
+        result: Ok(
+            "Local walk within current authoritative node",
+        ),
+    },
+    Record {
+        at: 50407000,
+        input: Walk {
+            x: -807,
+            z: 590,
+        },
+        result: Ok(
+            "Local walk within current authoritative node",
+        ),
+    },
+    Record {
+        at: 50407000,
+        input: Institutional(
+            ObserveReport,
+        ),
+        result: Ok(
+            "Report { report: 2 }",
+        ),
+    },
+    Record {
+        at: 50407000,
+        input: Institutional(
+            Commission {
+                office: 0,
+                project: 0,
+            },
+        ),
+        result: Ok(
+            "Order { message: 1, dispatch: DeliveredLocally }",
+        ),
+    },
+]

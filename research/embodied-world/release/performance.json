@@ -1,0 +1,26 @@
+{
+  "frames": 360,
+  "GPU_ms": null,
+  "scope": "Software OpenGL/Xvfb. CPU simulation batch advances10 one-second steps; night time skip excluded. PNG readback affects FPS. Draw CPU excludes GPU completion and UI.",
+  "sim_cpu_ms": {
+    "mean": 1.0228224722222221,
+    "p95": 2.141557,
+    "max": 4.535727
+  },
+  "render_cpu_ms": {
+    "mean": 1.7144789861111112,
+    "p95": 2.6899659999999996,
+    "max": 6.731045
+  },
+  "fps": {
+    "mean": 26.238888888888887,
+    "p95": 30.0,
+    "max": 60.0
+  },
+  "visible_people": {
+    "mean": 18.47222222222222,
+    "p95": 35.0,
+    "max": 36.0
+  },
+  "rss_kib_max": 207560
+}

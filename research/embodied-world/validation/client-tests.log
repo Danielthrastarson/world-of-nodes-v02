@@ -1,0 +1,164 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+   Compiling world-of-nodes-client v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e/client)
+    Finished `release` profile [optimized] target(s) in 32.65s
+     Running unittests src/bin/embodied_client.rs (client/target/release/deps/embodied_client-aa6523df737dc0c1)
+
+running 6 tests
+test world_presentation::tests::coordinate_and_clock_do_not_depend_on_view_order_or_wall_time ... ok
+test world_presentation::tests::node_edge_boundaries_are_continuous_and_never_extrapolate ... ok
+test world_presentation::tests::curved_motion_stays_on_route_and_memory_does_not_move ... ok
+test world_presentation::tests::movement_effect_requires_known_travel_not_a_body_left_on_an_edge ... ok
+test world_presentation::tests::changing_projection_or_prior_debug_cannot_change_known_world ... ok
+test world_presentation::tests::projection_is_pure_and_never_fills_remote_contents ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/hero_scene.rs (client/target/release/deps/hero_scene-bd3d402cfe32eaa5)
+
+running 8 tests
+test camera::tests::zoom_keeps_target_under_cursor_and_pan_is_reversible ... ok
+test world_presentation::tests::coordinate_and_clock_do_not_depend_on_view_order_or_wall_time ... ok
+test world_presentation::tests::curved_motion_stays_on_route_and_memory_does_not_move ... ok
+test world_presentation::tests::node_edge_boundaries_are_continuous_and_never_extrapolate ... ok
+test world_presentation::tests::movement_effect_requires_known_travel_not_a_body_left_on_an_edge ... ok
+test world_presentation::tests::changing_projection_or_prior_debug_cannot_change_known_world ... ok
+test hero::tests::authored_river_does_not_imply_an_extra_crossing ... ok
+test world_presentation::tests::projection_is_pure_and_never_fills_remote_contents ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/playtest_replay.rs (client/target/release/deps/playtest_replay-989f47b04c0afd86)
+
+running 5 tests
+test tests::json_escapes_control_characters_and_quotes ... ok
+test tests::live_and_partial_prefix_are_not_complete ... ok
+test tests::malformed_mismatched_and_uncertified_end_are_rejected ... ok
+test tests::local_exact_inputs_hashes_and_rejections ... ok
+test tests::remote_exact_inputs_hashes_and_rejections ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/bin/render_probe.rs (client/target/release/deps/render_probe-6f835d36ad4cf610)
+
+running 22 tests
+test glyphs::tests::crossing_never_shows_completed_from_material_alone ... ok
+test camera::tests::zoom_keeps_target_under_cursor_and_pan_is_reversible ... ok
+test glyphs::tests::unknown_crossing_materials_do_not_create_timbers ... ok
+test glyphs::tests::stock_marks_are_bounded_and_zero_stays_empty ... ok
+test glyphs::tests::stock_quantity_changes_remain_visible_before_saturation ... ok
+test presentation::tests::hidden_world_differences_cannot_change_any_play_presentation ... ok
+test presentation::tests::accepted_role_and_survival_have_distinct_ui_meanings ... ok
+test presentation::tests::map_only_nodes_are_not_presented_as_empty_settlements ... ok
+test presentation::tests::dated_reports_and_ghosts_never_become_current_by_formatting ... ok
+test world_presentation::tests::coordinate_and_clock_do_not_depend_on_view_order_or_wall_time ... ok
+test presentation::tests::node_zero_is_a_real_known_route_not_a_false_boolean_target ... ok
+test scene::tests::composing_target_never_promotes_a_node_absent_from_supplied_knowledge ... ok
+test presentation::tests::unit_badge_uses_observed_actions_not_last_issued_global_intent ... ok
+test world_presentation::tests::movement_effect_requires_known_travel_not_a_body_left_on_an_edge ... ok
+test presentation::tests::stable_top_level_verbs_do_not_depend_on_predicted_context ... ok
+test world_presentation::tests::curved_motion_stays_on_route_and_memory_does_not_move ... ok
+test world_presentation::tests::node_edge_boundaries_are_continuous_and_never_extrapolate ... ok
+test world_presentation::tests::projection_is_pure_and_never_fills_remote_contents ... ok
+test world_presentation::tests::changing_projection_or_prior_debug_cannot_change_known_world ... ok
+test presentation::tests::actual_remote_setup_cannot_offer_military_commands_after_service_ended ... ok
+test presentation::tests::courier_handoff_and_elapsed_deadline_do_not_imply_remote_receipt ... ok
+test presentation::tests::physically_witnessed_handoff_does_not_claim_decision_or_construction ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/main.rs (client/target/release/deps/world_of_nodes_client-192b6cc5bd738e9c)
+
+running 34 tests
+test camera::tests::zoom_keeps_target_under_cursor_and_pan_is_reversible ... ok
+test glyphs::tests::stock_marks_are_bounded_and_zero_stays_empty ... ok
+test clock::tests::drawing_cadence_does_not_change_elapsed_simulation_time ... ok
+test clock::tests::overload_retains_backlog_and_pause_never_adds_time ... ok
+test glyphs::tests::crossing_never_shows_completed_from_material_alone ... ok
+test glyphs::tests::unknown_crossing_materials_do_not_create_timbers ... ok
+test glyphs::tests::stock_quantity_changes_remain_visible_before_saturation ... ok
+test journal::tests::event_sequence_and_frame_are_strings_and_cannot_be_replaced ... ok
+test journal::tests::json_quotes_controls_and_preserves_unicode ... ok
+test journal::tests::caller_export_failure_stops_clean_completion ... ok
+test journal::tests::failed_finish_cannot_publish_clean_status_or_replay_end ... ok
+test journal::tests::requires_fresh_directory_and_private_permissions ... ok
+test interface_tests::debug_only_crossing_cannot_become_a_play_command_target ... ok
+test journal::tests::publications_replace_atomically_and_failures_stop_future_writes ... ok
+test journal::tests::canonical_transcript_records_each_attempt_once_and_clean_end ... ok
+test presentation::tests::hidden_world_differences_cannot_change_any_play_presentation ... ok
+test presentation::tests::accepted_role_and_survival_have_distinct_ui_meanings ... ok
+test presentation::tests::dated_reports_and_ghosts_never_become_current_by_formatting ... ok
+test presentation::tests::stable_top_level_verbs_do_not_depend_on_predicted_context ... ok
+test presentation::tests::map_only_nodes_are_not_presented_as_empty_settlements ... ok
+test world_presentation::tests::coordinate_and_clock_do_not_depend_on_view_order_or_wall_time ... ok
+test scene::tests::composing_target_never_promotes_a_node_absent_from_supplied_knowledge ... ok
+test presentation::tests::unit_badge_uses_observed_actions_not_last_issued_global_intent ... ok
+test journal::tests::request_protocol_is_bounded_and_read_only ... ok
+test presentation::tests::node_zero_is_a_real_known_route_not_a_false_boolean_target ... ok
+test world_presentation::tests::changing_projection_or_prior_debug_cannot_change_known_world ... ok
+test world_presentation::tests::curved_motion_stays_on_route_and_memory_does_not_move ... ok
+test world_presentation::tests::movement_effect_requires_known_travel_not_a_body_left_on_an_edge ... ok
+test world_presentation::tests::node_edge_boundaries_are_continuous_and_never_extrapolate ... ok
+test world_presentation::tests::projection_is_pure_and_never_fills_remote_contents ... ok
+test presentation::tests::actual_remote_setup_cannot_offer_military_commands_after_service_ended ... ok
+test presentation::tests::courier_handoff_and_elapsed_deadline_do_not_imply_remote_receipt ... ok
+test recording::tests::exported_knowledge_stays_play_when_interface_is_debug ... ok
+test presentation::tests::physically_witnessed_handoff_does_not_claim_decision_or_construction ... ok
+
+test result: ok. 34 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/bin/world_motion_probe.rs (client/target/release/deps/world_motion_probe-ebe253d49d6d2735)
+
+running 22 tests
+test camera::tests::zoom_keeps_target_under_cursor_and_pan_is_reversible ... ok
+test glyphs::tests::crossing_never_shows_completed_from_material_alone ... ok
+test glyphs::tests::unknown_crossing_materials_do_not_create_timbers ... ok
+test glyphs::tests::stock_marks_are_bounded_and_zero_stays_empty ... ok
+test glyphs::tests::stock_quantity_changes_remain_visible_before_saturation ... ok
+test presentation::tests::hidden_world_differences_cannot_change_any_play_presentation ... ok
+test presentation::tests::accepted_role_and_survival_have_distinct_ui_meanings ... ok
+test presentation::tests::dated_reports_and_ghosts_never_become_current_by_formatting ... ok
+test presentation::tests::map_only_nodes_are_not_presented_as_empty_settlements ... ok
+test presentation::tests::node_zero_is_a_real_known_route_not_a_false_boolean_target ... ok
+test world_presentation::tests::coordinate_and_clock_do_not_depend_on_view_order_or_wall_time ... ok
+test presentation::tests::stable_top_level_verbs_do_not_depend_on_predicted_context ... ok
+test presentation::tests::unit_badge_uses_observed_actions_not_last_issued_global_intent ... ok
+test world_presentation::tests::movement_effect_requires_known_travel_not_a_body_left_on_an_edge ... ok
+test world_presentation::tests::node_edge_boundaries_are_continuous_and_never_extrapolate ... ok
+test scene::tests::composing_target_never_promotes_a_node_absent_from_supplied_knowledge ... ok
+test world_presentation::tests::curved_motion_stays_on_route_and_memory_does_not_move ... ok
+test world_presentation::tests::changing_projection_or_prior_debug_cannot_change_known_world ... ok
+test world_presentation::tests::projection_is_pure_and_never_fills_remote_contents ... ok
+test presentation::tests::courier_handoff_and_elapsed_deadline_do_not_imply_remote_receipt ... ok
+test presentation::tests::actual_remote_setup_cannot_offer_military_commands_after_service_ended ... ok
+test presentation::tests::physically_witnessed_handoff_does_not_claim_decision_or_construction ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/bin/world_render_probe.rs (client/target/release/deps/world_render_probe-078748d3d17ba57e)
+
+running 22 tests
+test camera::tests::zoom_keeps_target_under_cursor_and_pan_is_reversible ... ok
+test glyphs::tests::stock_marks_are_bounded_and_zero_stays_empty ... ok
+test glyphs::tests::unknown_crossing_materials_do_not_create_timbers ... ok
+test glyphs::tests::crossing_never_shows_completed_from_material_alone ... ok
+test glyphs::tests::stock_quantity_changes_remain_visible_before_saturation ... ok
+test presentation::tests::hidden_world_differences_cannot_change_any_play_presentation ... ok
+test presentation::tests::accepted_role_and_survival_have_distinct_ui_meanings ... ok
+test presentation::tests::dated_reports_and_ghosts_never_become_current_by_formatting ... ok
+test presentation::tests::map_only_nodes_are_not_presented_as_empty_settlements ... ok
+test presentation::tests::node_zero_is_a_real_known_route_not_a_false_boolean_target ... ok
+test presentation::tests::stable_top_level_verbs_do_not_depend_on_predicted_context ... ok
+test scene::tests::composing_target_never_promotes_a_node_absent_from_supplied_knowledge ... ok
+test world_presentation::tests::coordinate_and_clock_do_not_depend_on_view_order_or_wall_time ... ok
+test world_presentation::tests::curved_motion_stays_on_route_and_memory_does_not_move ... ok
+test presentation::tests::unit_badge_uses_observed_actions_not_last_issued_global_intent ... ok
+test world_presentation::tests::movement_effect_requires_known_travel_not_a_body_left_on_an_edge ... ok
+test world_presentation::tests::node_edge_boundaries_are_continuous_and_never_extrapolate ... ok
+test world_presentation::tests::projection_is_pure_and_never_fills_remote_contents ... ok
+test world_presentation::tests::changing_projection_or_prior_debug_cannot_change_known_world ... ok
+test presentation::tests::courier_handoff_and_elapsed_deadline_do_not_imply_remote_receipt ... ok
+test presentation::tests::actual_remote_setup_cannot_offer_military_commands_after_service_ended ... ok
+test presentation::tests::physically_witnessed_handoff_does_not_claim_decision_or_construction ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+

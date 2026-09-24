@@ -1,0 +1,30 @@
+{
+  "release/view-020.png": {
+    "sha256": "de2476e89f01160c600c42a1ad9e38a85411fbf497d7f7477b33c6364ffacc53",
+    "bytes": 355493
+  },
+  "release/view-065.png": {
+    "sha256": "4f8bf41e4ada95c3a84c26f9a5566b748ccaf023229528e5233a84e5b70603ef",
+    "bytes": 243043
+  },
+  "release/view-200.png": {
+    "sha256": "97e23e4b64799f95f5725c04f7391aa2d3681a6e8b6f51f2b014852e55f0b38e",
+    "bytes": 354603
+  },
+  "release/view-300.png": {
+    "sha256": "aa9c339e7f2c62296a072a607fc0f6023cbe41be047149a4180720ddb1ef763c",
+    "bytes": 207360
+  },
+  "E0-review.webm": {
+    "sha256": "9b5abfa9453a82427076b3e9215f94e2aaa0f720ea3f5e65c906494920d25502",
+    "bytes": 918436
+  },
+  "release-motion.webm": {
+    "sha256": "8632187850db3ec198658106dd9bdb6066cfcf866c3428600e7458323c350bae",
+    "bytes": 861623
+  },
+  "REPORT.md": {
+    "sha256": "ce0be8ff9c3a7678fdb818776f361d193541f8001174de61eb2291375704ecc4",
+    "bytes": 11567
+  }
+}

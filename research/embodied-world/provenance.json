@@ -1,0 +1,29 @@
+{
+  "implementation_revision": "ec11ad432fd42082be88befbe2c8b51934a18997",
+  "seed": 0,
+  "person_count": 40,
+  "hand_off_ms": 50400000,
+  "renderer": "pinned Macroquad 0.4.16 / Miniquad 0.4.11; isolated Xvfb software OpenGL",
+  "sources": {
+    "src/provisioning/playable/session.rs": "75d10f347a0ca53c8497e78a7f96331e7f96b2430ef5cbdae761568e941306e5",
+    "src/provisioning/playable/session/embodied.rs": "3151890e7e4226708730320834022a85eb9af643bc8d9cf9b1c3016def683dc0",
+    "src/bin/embodied_probe.rs": "38bbed99519e45c7df2bd7cd2946cc760d523e0456ad5e435a3c1b232b7558e0",
+    "client/src/bin/embodied_client.rs": "57b4f1ba20949d056c812215cd2767995164e4817d12b471ae8cfbb80ea0f018",
+    "client/src/embodied/mod.rs": "df53fc41250b60fda42d91c519a3e97b4dcc519818d9eec4510497fa5089fbe1",
+    "client/src/world_presentation.rs": "f2402ffd9cc853317f10bd49c3debd54d38deda1ced530c7dac26d95657f162b",
+    "scripts/embodied_input_smoke.py": "1275c6e4ef43d1eafd3efe97094fd3d1eb364879f7def31314c689bf0c5153ee",
+    "scripts/start_embodied_playtest.py": "0023889cb2dd89ab3d14652ef785aa1beeeaf4f3748d180f65132502ad62d79c",
+    "client/Cargo.lock": "92fd17a07a16400376098393c072ee4afd2f3a3aa31602fcde85d2ccb260496b",
+    "Cargo.lock": "19be594b4937fce67798cac715585ac2080689221b2451412a6544fe783f52ca"
+  },
+  "binary_sha256": "967b3c4c602380187020f85c27f1769ab160d6065027425eb14fab7bf00e4455",
+  "prior_research_modified": [],
+  "changed_source_paths": [
+    "client/src/bin/embodied_client.rs",
+    "client/src/embodied/mod.rs",
+    "src/bin/embodied_probe.rs",
+    "src/provisioning/playable/session.rs",
+    "src/provisioning/playable/session/embodied.rs"
+  ],
+  "final_review": "release/ + E0-review.webm (captioned release-motion.webm); input-release/"
+}

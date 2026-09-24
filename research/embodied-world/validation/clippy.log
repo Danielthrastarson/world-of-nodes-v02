@@ -1,0 +1,77 @@
+    Checking simd-adler32 v0.3.10
+    Checking adler2 v2.0.1
+    Checking cfg-if v1.0.5
+    Checking equivalent v1.0.2
+    Checking allocator-api2 v0.2.21
+    Checking bitflags v1.3.2
+    Checking foldhash v0.1.5
+    Checking bytemuck v1.25.2
+    Checking libm v0.2.16
+    Checking libc v0.2.189
+    Checking byteorder v1.5.0
+    Checking num-traits v0.2.19
+    Checking crc32fast v1.5.2
+    Checking color_quant v1.1.0
+    Checking glam v0.27.0
+    Checking quad-rand v0.2.3
+    Checking world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Checking miniz_oxide v0.9.1
+    Checking miniz_oxide v0.8.9
+    Checking fdeflate v0.3.7
+    Checking hashbrown v0.15.5
+    Checking flate2 v1.1.10
+    Checking png v0.17.16
+    Checking miniquad v0.4.11
+    Checking core_maths v0.1.1
+    Checking ttf-parser v0.25.1
+    Checking image v0.24.9
+    Checking fontdue v0.9.4
+    Checking macroquad v0.4.16
+    Checking world-of-nodes-client v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e/client)
+error: this `if` statement can be collapsed
+   --> src/bin/embodied_client.rs:312:9
+    |
+312 | /         if !third && is_mouse_button_pressed(MouseButton::Right) {
+313 | |             if let Some((node, _)) = current
+314 | |                 .nodes
+315 | |                 .iter()
+...   |
+331 | |         }
+    | |_________^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.98.0/index.html#collapsible_if
+    = note: `-D clippy::collapsible-if` implied by `-D warnings`
+    = help: to override `-D warnings` add `#[allow(clippy::collapsible_if)]`
+help: collapse nested if block
+    |
+312 ~         if !third && is_mouse_button_pressed(MouseButton::Right)
+313 ~             && let Some((node, _)) = current
+314 |                 .nodes
+...
+329 |                 notice = format!("{:?}", session.dispatch(Input::Travel { target: node }));
+330 ~             }
+    |
+
+error: this `if` statement can be collapsed
+   --> src/bin/embodied_client.rs:482:9
+    |
+482 | /         if let Some(id) = selected {
+483 | |             if let Some(p) = current.persons.iter().find(|p| p.id == id) {
+484 | |                 draw_rectangle(
+485 | |                     screen_width() - 335.,
+...   |
+524 | |         }
+    | |_________^
+    |
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.98.0/index.html#collapsible_if
+help: collapse nested if block
+    |
+482 ~         if let Some(id) = selected
+483 ~             && let Some(p) = current.persons.iter().find(|p| p.id == id) {
+484 |                 draw_rectangle(
+...
+522 |                 );
+523 ~             }
+    |
+
+error: could not compile `world-of-nodes-client` (bin "embodied_client") due to 2 previous errors

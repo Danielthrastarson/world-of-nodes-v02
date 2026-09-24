@@ -1,0 +1,23 @@
+mode=scenarios
+seeds=0..3
+elapsed_hours=24
+Arms use identical Session setup per Local/Remote seed. Local and Remote differ by the documented initial physical journey. No-command already contains a consenting four-Person militia, so it is not a no-military control. Seeded hostile raid is a controlled threat. Every row is one registered transcript, not an optimized policy.
+Inputs at initial session time; commission_revoke adds revoke at elapsed 2h; hourly read checkpoints; exact transcript replay compared at end.
+No fake render entities; no outcome holds or parameter adjustments.
+Metrics use observer truth; Play snapshots remain bounded.
+base_head=1d36ebff1f2de0082a10d604f02ea73e14533b09
+compiled_executable_fnv1a64=d888d7e1fe626f4e
+working_tree_at_run:
+ M src/provisioning/playable/session.rs
+?? .e0-tmp/
+?? client/src/bin/embodied_client.rs
+?? client/src/embodied/
+?? docs/EMBODIED_WORLD.md
+?? research/embodied-world/
+?? research/human-playtest/
+?? scripts/start_embodied_playtest.py
+?? src/bin/embodied_probe.rs
+?? src/provisioning/playable/session/
+
+all_src_rs_fnv1a64=7f6edda3ad46a533
+Timing is wall clock on this host, not a hardware-independent bound.

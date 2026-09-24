@@ -1,0 +1,16 @@
+{
+  "mechanical_status": "PASS",
+  "experiential_gate": "OPEN - OWNER PLAYTEST REQUIRED",
+  "headless_tests": 374,
+  "client_target_suites": 7,
+  "historical_scenarios": 48,
+  "historical_input_replays": 48,
+  "historical_artifacts": 193,
+  "final_river_boundary_tests": "PASS",
+  "graphical_capture_replay": "PASS",
+  "native_keyboard_mouse_replay": "PASS",
+  "prior_research_changed": false,
+  "new_simulation_systems": false,
+  "human_playtest_data_touched": false,
+  "stop": "No next milestone or engine migration"
+}

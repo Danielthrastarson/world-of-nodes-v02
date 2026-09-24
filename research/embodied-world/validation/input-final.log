@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/embodied_input_smoke.py", line 36, in <module>
+    window=wait(lambda:xd('search','--name','E0 embodied ruler prototype').splitlines()[0]);xd('windowfocus',window)
+  File "/home/lemanruss/Documents/ChatGPT/Gam,e/scripts/embodied_input_smoke.py", line 20, in wait
+    raise RuntimeError('timed out')
+RuntimeError: timed out

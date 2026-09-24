@@ -1,0 +1,14 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `release` profile [optimized] target(s) in 18.48s
+     Running unittests src/lib.rs (target/release/deps/world_of_nodes-e7700d757caa9382)
+
+running 6 tests
+test provisioning::person::tests::person_is_the_same_embodied_record_not_a_second_agent ... ok
+test provisioning::playable::session::embodied::tests::no_time_no_walk_no_remote_or_closed_travel ... ok
+test provisioning::playable::session::embodied::tests::local_cell_blocks_buildings_water_and_teleport ... ok
+test provisioning::playable::session::embodied::tests::mortality_and_time_partition ... ok
+test provisioning::playable::session::embodied::tests::personal_route_travel_uses_existing_person_and_replays ... ok
+test provisioning::playable::session::embodied::tests::real_population_cart_bridge_and_replay ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 355 filtered out; finished in 2.56s
+

@@ -1,0 +1,23 @@
+   Compiling world-of-nodes v0.1.0 (/home/lemanruss/Documents/ChatGPT/Gam,e)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.68s
+     Running unittests src/lib.rs (target/debug/deps/world_of_nodes-9e7d7f6bf23721b0)
+
+running 5 tests
+test provisioning::person::tests::person_is_the_same_embodied_record_not_a_second_agent ... ok
+
+thread 'provisioning::playable::session::embodied::tests::real_population_cart_bridge_and_replay' (278) panicked at src/provisioning/playable/session/embodied.rs:232:9:
+[Project { id: 0, site: Site { edge: 1, node: 1, wood_cost: 20, work_ms: 28800000, opened_nominal_ms: 900000, opened_capacity: 4 }, owner: Commons(0), wood: 20, remaining: 9180000000000, started_at: Some(14462000), completed_at: None, completed_by: None, donors: {2: 20}, labor_ms: {2: 20340000} }]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test provisioning::playable::session::embodied::tests::real_population_cart_bridge_and_replay ... FAILED
+test provisioning::playable::session::embodied::tests::local_cell_blocks_buildings_water_and_teleport ... ok
+test provisioning::playable::session::embodied::tests::no_time_no_walk_no_remote_or_closed_travel ... ok
+test provisioning::playable::session::embodied::tests::mortality_and_time_partition ... ok
+
+failures:
+
+failures:
+    provisioning::playable::session::embodied::tests::real_population_cart_bridge_and_replay
+
+test result: FAILED. 4 passed; 1 failed; 0 ignored; 0 measured; 355 filtered out; finished in 17.98s
+
+error: test failed, to rerun pass `--lib`
