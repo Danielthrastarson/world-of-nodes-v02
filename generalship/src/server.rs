@@ -1,4 +1,4 @@
-use crate::{model::*, sim::Game};
+use crate::{bot::Bot, model::*, sim::Game};
 use axum::{
     Json, Router,
     extract::{
@@ -22,6 +22,7 @@ use std::{
 use tokio::sync::Mutex;
 
 pub struct Room {
+    pub bot: Option<Bot>,
     pub game: Game,
     pub tokens: [String; 2],
     pub invite: Option<String>,
@@ -31,6 +32,31 @@ pub struct Room {
     pub generation: u64,
     pub created: Instant,
     pub written: bool,
+}
+impl Room {
+    fn enable_bot(&mut self) {
+        self.invite = None;
+        self.bot = Some(Bot::default());
+        let _ = self.game.input(1, Input::Connection { connected: true });
+        let _ = self.game.input(1, Input::Ready);
+    }
+    fn reset(&mut self) {
+        self.game = Game::new(self.game.seed, self.game.config.clone());
+        for side in 0..2 {
+            let _ = self.game.input(
+                side,
+                Input::Connection {
+                    connected: self.active[side],
+                },
+            );
+        }
+        if self.bot.is_some() {
+            self.enable_bot();
+        }
+        self.rematch = [false; 2];
+        self.generation += 1;
+        self.written = false;
+    }
 }
 #[derive(Clone)]
 pub struct App {
@@ -102,6 +128,8 @@ struct Create {
     host_code: String,
     #[serde(default)]
     seed: u64,
+    #[serde(default)]
+    bot: bool,
 }
 async fn create(State(app): State<App>, Json(req): Json<Create>) -> Response {
     if !equal(&req.host_code, &app.host_code) {
@@ -131,21 +159,23 @@ async fn create(State(app): State<App>, Json(req): Json<Create>) -> Response {
     let room = token();
     let tokens = [token(), token()];
     let invite = token();
-    let reply = json!({"room":room,"token":tokens[0],"invite":format!("{room}.{invite}"),"side":0,"boot":app.boot});
-    rooms.insert(
-        room,
-        Arc::new(Mutex::new(Room {
-            game: Game::new(req.seed, Config::default()),
-            tokens,
-            invite: Some(invite),
-            active: [false; 2],
-            sequences: [0; 2],
-            rematch: [false; 2],
-            generation: 0,
-            created: Instant::now(),
-            written: false,
-        })),
-    );
+    let reply = json!({"room":room,"token":tokens[0],"invite":if req.bot {None} else {Some(format!("{room}.{invite}"))},"side":0,"boot":app.boot,"opponent":if req.bot {"bot"} else {"human"}});
+    let mut new_room = Room {
+        bot: None,
+        game: Game::new(req.seed, Config::default()),
+        tokens,
+        invite: Some(invite),
+        active: [false; 2],
+        sequences: [0; 2],
+        rematch: [false; 2],
+        generation: 0,
+        created: Instant::now(),
+        written: false,
+    };
+    if req.bot {
+        new_room.enable_bot();
+    }
+    rooms.insert(room, Arc::new(Mutex::new(new_room)));
     Json(reply).into_response()
 }
 #[derive(Deserialize)]
@@ -221,6 +251,14 @@ async fn connection(mut socket: WebSocket, app: App) {
             return;
         };
         seat = s;
+        if seat == 1 && r.bot.is_some() {
+            send(
+                &mut socket,
+                json!({"type":"error","message":"This seat belongs to the practice bot"}),
+            )
+            .await;
+            return;
+        }
         if r.active[seat] {
             send(
                 &mut socket,
@@ -243,7 +281,7 @@ async fn connection(mut socket: WebSocket, app: App) {
             _=snapshots.tick()=>{
                 if heartbeat.elapsed()>Duration::from_secs(25){break;}
                 let r=room.lock().await;
-                json!({"type":"view","boot":app.boot,"generation":r.generation,"last_sequence":r.sequences[seat],"rematch":r.rematch,"view":r.game.view(seat)})
+                json!({"type":"view","boot":app.boot,"generation":r.generation,"last_sequence":r.sequences[seat],"rematch":r.rematch,"opponent":if r.bot.is_some(){"bot"}else{"human"},"can_add_bot":seat==0&&r.invite.is_some()&&r.game.status==Status::Lobby,"view":r.game.view(seat)})
             },
             incoming=rx.next()=>{
                 let Some(Ok(incoming))=incoming else{break};heartbeat=Instant::now();
@@ -252,9 +290,13 @@ async fn connection(mut socket: WebSocket, app: App) {
                     let Ok(v)=serde_json::from_str::<Value>(&raw)else{break};
                     if v["type"]=="ping"{continue;}
                     let mut r=room.lock().await;
-                    if v["type"]=="rematch"{
+                    if v["type"]=="add_bot"{
+                        if seat!=0||r.game.status!=Status::Lobby||r.invite.is_none()||r.active[1]{json!({"type":"error","message":"A bot can only fill an unclaimed opponent seat before a match"})}
+                        else{r.enable_bot();let _=r.game.input(0,Input::Ready);json!({"type":"receipt","message":"Practice started against the bot"})}
+                    }else if v["type"]=="rematch"{
                         if !matches!(r.game.status,Status::Finished{..}){json!({"type":"error","message":"Finish the current match first"})}
-                        else{r.rematch[seat]=true;if r.rematch==[true;2]{let seed=r.game.seed;let config=r.game.config.clone();r.game=Game::new(seed,config);for s in 0..2{let c=r.active[s];let _=r.game.input(s,Input::Connection{connected:c});}r.rematch=[false;2];r.generation+=1;r.written=false;}json!({"type":"receipt","message":"Rematch requested"})}
+                        else{r.rematch[seat]=true;if r.bot.is_some(){r.rematch[1]=true;}
+                        if r.rematch==[true;2]{r.reset();}json!({"type":"receipt","message":"Rematch requested"})}
                     }else if v["type"]=="replay"{
                         if matches!(r.game.status,Status::Finished{..}){json!({"type":"replay","replay":r.game.replay()})}else{json!({"type":"error","message":"Omniscient replay is available only after the match ends"})}
                     }else{
@@ -300,6 +342,15 @@ pub async fn ticker(app: App) {
         for (id, room) in rooms {
             let start = Instant::now();
             let mut r = room.lock().await;
+            if r.bot.is_some() && r.game.status == Status::Running && r.game.tick.is_multiple_of(30)
+            {
+                let snapshot = r.game.view(1);
+                let inputs = r.bot.as_mut().unwrap().decide(snapshot);
+                for input in inputs {
+                    // Same validation, physical delivery, costs, and replay recording as a human.
+                    let _ = r.game.input(1, input);
+                }
+            }
             r.game.step();
             if matches!(r.game.status, Status::Finished { .. }) && !r.written {
                 let path = app.data_dir.join(format!("{id}-{}.json", r.generation));

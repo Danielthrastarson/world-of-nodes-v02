@@ -39,3 +39,16 @@ No two-human fun test has occurred. No claims about balance, readability under p
 | General loss and replacement | Was recovery costly but understandable? | Pending humans |
 | Feint / misread | Could players explain their inference afterward? | Pending humans |
 | Command friction | How often did players correct the same order? | Pending humans |
+
+## Solo bot extension — 2026-10-05
+
+Added private dev practice with a bot in the East seat and one-player rematches. The bot receives only `Game::view(1)` and uses the same validated, recorded inputs and physical communications as a human. No economy, combat, observation, or movement balance was changed.
+
+- 37 existing simulation tests, two new bot tests, and three network tests pass (42 total). The optional real-time twenty-minute soak was not repeated for this extension.
+- The bot test runs up to ten simulated minutes and verifies an actual bridge crossing, a ford flank, damage to a passive player, resource conservation, and identical replay hashes.
+- Changing hidden enemy health, positions, or plans leaves the bot input unchanged.
+- Network tests verify bot readiness, real orders, reconnect, solo rematch, protection of the bot seat, invitation invalidation, and refusal to replace a reserved human seat.
+- Clippy with warnings denied and JavaScript syntax validation pass.
+- The opponent is a simple practice policy; human difficulty and fun remain untested.
+
+Final bot build URL: **https://campaign-part-mlb-kelkoo.trycloudflare.com** (replaces the earlier temporary links). The browser verified creating a bot room, starting its clock, surrender, one-player rematch, and reconnect to the solo lobby. A fresh bot room is left at 00:00 for the user. The HTTPS/WSS two-human smoke test also passed on this extension before the final CSS-only change: 80 ms measured order RTT, 27,469-byte maximum sampled snapshot.

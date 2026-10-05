@@ -7,6 +7,118 @@ use tokio::{
 };
 use tokio_tungstenite::{MaybeTlsStream, WebSocketStream, connect_async, tungstenite::Message};
 type Socket = WebSocketStream<MaybeTlsStream<TcpStream>>;
+#[tokio::test]
+async fn solo_bot_ready_orders_reconnect_rematch_and_seat_protection() {
+    let app = server::app("test-only-host-code".into(), std::env::temp_dir());
+    let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
+    let addr = listener.local_addr().unwrap();
+    let svc = tokio::spawn(axum::serve(listener, server::router(app.clone())).into_future());
+    let ticker = tokio::spawn(server::ticker(app.clone()));
+    let (code, seat) = post(
+        addr,
+        "/api/create",
+        json!({"host_code":"test-only-host-code","bot":true}),
+    )
+    .await;
+    assert_eq!(code, 200);
+    assert!(seat["invite"].is_null());
+    let room = app.rooms.lock().await[seat["room"].as_str().unwrap()].clone();
+    let bot_token = room.lock().await.tokens[1].clone();
+    let mut intruder = auth(addr, &json!({"room":seat["room"],"token":bot_token})).await;
+    assert!(
+        receive(&mut intruder, "error").await["message"]
+            .as_str()
+            .unwrap()
+            .contains("bot")
+    );
+    let mut human = auth(addr, &seat).await;
+    let view = receive(&mut human, "view").await;
+    assert_eq!(view["opponent"], "bot");
+    assert_eq!(view["view"]["ready"], json!([false, true]));
+    assert!(!view.to_string().contains(&bot_token));
+    write(
+        &mut human,
+        json!({"sequence":1,"generation":0,"input":{"type":"ready"}}),
+    )
+    .await;
+    receive(&mut human, "receipt").await;
+    tokio::time::sleep(std::time::Duration::from_millis(250)).await;
+    assert!(
+        room.lock()
+            .await
+            .game
+            .inputs
+            .iter()
+            .any(|i| i.side == 1 && matches!(i.input, generalship_g0::model::Input::Order { .. }))
+    );
+    human.close(None).await.unwrap();
+    tokio::time::sleep(std::time::Duration::from_millis(150)).await;
+    assert_eq!(room.lock().await.game.connected, [false, true]);
+    let mut human = auth(addr, &seat).await;
+    assert_eq!(receive(&mut human, "view").await["opponent"], "bot");
+    write(
+        &mut human,
+        json!({"sequence":2,"generation":0,"input":{"type":"surrender"}}),
+    )
+    .await;
+    receive(&mut human, "receipt").await;
+    write(&mut human, json!({"type":"rematch"})).await;
+    receive(&mut human, "receipt").await;
+    assert_eq!(room.lock().await.generation, 1);
+    assert_eq!(room.lock().await.game.ready, [false, true]);
+    write(
+        &mut human,
+        json!({"sequence":3,"generation":1,"input":{"type":"ready"}}),
+    )
+    .await;
+    receive(&mut human, "receipt").await;
+    assert_eq!(room.lock().await.game.status, Status::Running);
+    svc.abort();
+    ticker.abort();
+}
+
+#[tokio::test]
+async fn bot_can_fill_only_an_unclaimed_invitation() {
+    let app = server::app("test-only-host-code".into(), std::env::temp_dir());
+    let listener = tokio::net::TcpListener::bind("127.0.0.1:0").await.unwrap();
+    let addr = listener.local_addr().unwrap();
+    let svc = tokio::spawn(axum::serve(listener, server::router(app.clone())).into_future());
+    let (_, seat) = post(
+        addr,
+        "/api/create",
+        json!({"host_code":"test-only-host-code"}),
+    )
+    .await;
+    let mut human = auth(addr, &seat).await;
+    write(&mut human, json!({"type":"add_bot"})).await;
+    receive(&mut human, "receipt").await;
+    assert_eq!(
+        post(addr, "/api/join", json!({"invite":seat["invite"]}))
+            .await
+            .0,
+        401
+    );
+    let room = app.rooms.lock().await[seat["room"].as_str().unwrap()].clone();
+    assert_eq!(room.lock().await.game.status, Status::Running);
+    let (_, second) = post(
+        addr,
+        "/api/create",
+        json!({"host_code":"test-only-host-code"}),
+    )
+    .await;
+    assert_eq!(
+        post(addr, "/api/join", json!({"invite":second["invite"]}))
+            .await
+            .0,
+        200
+    );
+    let mut host = auth(addr, &second).await;
+    write(&mut host, json!({"type":"add_bot"})).await;
+    receive(&mut host, "error").await;
+    let room = app.rooms.lock().await[second["room"].as_str().unwrap()].clone();
+    assert!(room.lock().await.bot.is_none());
+    svc.abort();
+}
 async fn post(addr: std::net::SocketAddr, path: &str, value: Value) -> (u16, Value) {
     let mut tcp = TcpStream::connect(addr).await.unwrap();
     let body = value.to_string();

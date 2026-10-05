@@ -10,9 +10,15 @@ Open the deployed service, enter the private host code, and choose **Create priv
 
 The current temporary Internet URL and verification record are in `generalship/PLAYTEST_RESULTS.md`. The game server runs on this computer, reached through a Cloudflare Quick Tunnel; it is not an always-on cloud deployment. The host code must remain outside Git. A service process restart aborts its rooms without awarding a winner. A disconnected browser has sixty seconds to return while standing orders continue. Both players can request a rematch after the result.
 
+## Solo developer practice
+
+Choose **Play vs bot · dev mode** using the same private host code, then **Start practice**. A multiplayer lobby with an unclaimed invitation also offers **Play vs bot**; choosing it starts practice and invalidates that invitation. A joined human cannot be replaced by a bot. You command West; the bot commands East. **Surrender → Play again vs bot → Start practice** resets the same room without a second person. Reconnection uses the same sixty-second grace as multiplayer.
+
+The practice opponent uses only its filtered player snapshot and submits ordinary validated inputs. Its accepted decisions enter the replay journal, so replay does not depend on running the AI again. It pushes line/ranged infantry toward the bridge, sends light infantry by the ford, accompanies columns with physical generals, reacts to recent reports, withdraws depleted formations, assigns finite food routes, and attempts costly general replacement. It receives no map reveal, resource bonus, immediate orders, or casualty immunity. Its simple fixed opening is for testing controls and tactics, not a substitute for multiplayer balance testing. It does not build or upgrade outposts.
+
 ## Temporary Internet playtest
 
-The current public link is **https://ben-cutting-explorer-son.trycloudflare.com**. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
+The current public link is **https://campaign-part-mlb-kelkoo.trycloudflare.com**. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
 
 From the repository root:
 
@@ -78,7 +84,7 @@ Use the committed lockfile. The browser assets are embedded in the executable, s
 | Move a general | Select general → Move selected general → click |
 | Reassign support duty | Select people → standing duty → Assign → click |
 | Select infrastructure | Click its square; selected workers remain selected |
-| End / repeat | Surrender; both players Request rematch |
+| End / repeat | Surrender; both players Request rematch, or Play again vs bot in solo practice |
 | Download full replay | Available after the result only |
 
 Changing a preset affects future dispatches only. Choose either a follow-up or a fallback, not both. MOVE can end in HOLD or OBSERVE. An optional fallback triggers below 60% of strength at acceptance using locally confirmed casualties. Fallback defaults to headquarters until a custom point is selected. Command and troop-group single-character keys are editable; group recall adds Alt, and assignment adds Ctrl+Alt.
@@ -101,7 +107,7 @@ Support duties take priority over infantry orders: use the duty controls to rout
 
 ## Architecture and information boundary
 
-`model.rs` defines integer quantities, configuration, plans, inputs, reports, personnel, missions, and replay records. `terrain.rs` owns deterministic pathfinding and line of sight. `sim.rs` owns the sole authoritative `Game`, accepted inputs, accounting, and tick sequence. `policies.rs` implements local steering, duties, and logistics; `communications.rs` delivers physical orders and reports; `observation.rs` filters knowledge; `combat.rs` resolves damage and outcomes. `server.rs` owns Axum HTTP/WebSocket transport, seats, timing, reconnect, and room lifecycle. `web/` renders received views and submits intentions; it runs no simulation.
+`model.rs` defines integer quantities, configuration, plans, inputs, reports, personnel, missions, and replay records. `terrain.rs` owns deterministic pathfinding and line of sight. `sim.rs` owns the sole authoritative `Game`, accepted inputs, accounting, and tick sequence. `policies.rs` implements local steering, duties, and logistics; `communications.rs` delivers physical orders and reports; `observation.rs` filters knowledge; `combat.rs` resolves damage and outcomes. `bot.rs` contains the deterministic practice policy, isolated behind the serialized player-view boundary. `server.rs` owns Axum HTTP/WebSocket transport, seats, timing, reconnect, and room lifecycle. `web/` renders received views and submits intentions; it runs no simulation.
 
 All gameplay advances on one 100 ms clock. Pathfinding uses deterministic ties. Damage is accumulated before applying casualties. Every accepted input records its execution tick; replays store scenario, seed, ordered inputs, a SHA-256 state checkpoint every ten seconds, and the final state hash. Network sequence numbers reject duplicates; rematch generations reject delayed commands from previous games. In-world order sequence numbers prevent an older delivered order replacing a newer one.
 

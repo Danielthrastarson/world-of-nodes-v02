@@ -1,3 +1,4 @@
+pub mod bot;
 pub mod model;
 pub mod server;
 pub mod sim;
