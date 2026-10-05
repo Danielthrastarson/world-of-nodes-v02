@@ -114,7 +114,11 @@ async fn create(State(app): State<App>, Json(req): Json<Create>) -> Response {
     let mut rooms = app.rooms.lock().await;
     let mut expired = vec![];
     for (id, r) in rooms.iter() {
-        if r.lock().await.created.elapsed() > Duration::from_secs(3600) {
+        let room = r.lock().await;
+        if room.created.elapsed() > Duration::from_secs(3600)
+            && room.active == [false; 2]
+            && room.game.status != Status::Running
+        {
             expired.push(id.clone());
         }
     }

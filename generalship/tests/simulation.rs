@@ -655,3 +655,56 @@ fn specified_rendezvous_is_fixed_even_when_recipient_memory_moves() {
     advance(&mut g, 10);
     assert_eq!(g.missions[0].destination, point);
 }
+
+#[test]
+fn capture_interruption_resets_progress_and_simultaneous_capture_draws() {
+    let mut g = running();
+    for p in &mut g.people {
+        p.role = Role::Scout;
+        p.pos = Point::new(if p.side == 0 { 2000 } else { 88000 }, 55000);
+        p.plan = Plan::hold(p.pos);
+    }
+    for id in 2..7 {
+        g.people[id].role = Role::Line;
+        g.people[id].pos = g.terrain.headquarters[1];
+        g.people[id].plan = Plan::hold(g.people[id].pos);
+    }
+    advance(&mut g, 150);
+    assert_eq!(g.capture[0], 150);
+    g.people[50].role = Role::Line;
+    g.people[50].pos = g.terrain.headquarters[1];
+    g.people[50].plan = Plan::hold(g.people[50].pos);
+    g.step();
+    assert_eq!(g.capture[0], 0);
+    for id in 50..55 {
+        g.people[id].role = Role::Line;
+        g.people[id].pos = g.terrain.headquarters[0];
+        g.people[id].plan = Plan::hold(g.people[id].pos);
+    }
+    advance(&mut g, 299);
+    assert_eq!(g.status, Status::Running);
+    g.step();
+    assert!(
+        matches!(g.status,Status::Finished{winner:None,ref reason} if reason=="simultaneous capture")
+    );
+}
+#[test]
+fn relay_upgrade_is_installed_by_physical_deliveries_and_local_labor() {
+    let mut g = running();
+    advance(&mut g, 11);
+    g.input(
+        0,
+        Input::Upgrade {
+            post: 0,
+            people: vec![46, 47],
+        },
+    )
+    .unwrap();
+    advance(&mut g, 20);
+    assert!(!g.posts[0].upgraded);
+    assert_eq!(g.posts[0].stock[1], 0);
+    advance(&mut g, 3000);
+    assert!(g.posts[0].upgraded);
+    assert_eq!(g.consumed[0][1], 10);
+    g.audit().unwrap();
+}

@@ -6,9 +6,33 @@ The research kernel, provisioning policies, experiments, saved results, and base
 
 ## Start a private game
 
-Open the deployed service, enter the private host code, and choose **Create private match**. Send the generated one-use invitation to one opponent. Both players press **Ready**. Each browser holds its own reconnect credential in session storage; keep that tab available. The host code is for creating rooms, not joining an opponent's seat.
+Open the deployed service, enter the private host code, and choose **Create private match**. Send the generated one-use invitation to one opponent. Both players press **Ready**. The Reported personnel list allows individual selection and shows dated health/food information. Each browser holds its own reconnect credential in session storage; keep that tab available. The host code is for creating rooms, not joining an opponent's seat.
 
-Deployment URL and the final verification record are recorded in `generalship/PLAYTEST_RESULTS.md`. The host code must remain outside Git. A service process restart aborts its rooms without awarding a winner. A disconnected browser has sixty seconds to return while standing orders continue. Both players can request a rematch after the result.
+The current temporary Internet URL and verification record are in `generalship/PLAYTEST_RESULTS.md`. The game server runs on this computer, reached through a Cloudflare Quick Tunnel; it is not an always-on cloud deployment. The host code must remain outside Git. A service process restart aborts its rooms without awarding a winner. A disconnected browser has sixty seconds to return while standing orders continue. Both players can request a rematch after the result.
+
+## Temporary Internet playtest
+
+The current public link is **https://ben-cutting-explorer-son.trycloudflare.com**. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
+
+From the repository root:
+
+```bash
+python3 generalship/playtest.py status
+python3 generalship/playtest.py stop
+python3 generalship/playtest.py start
+```
+
+Starting prints a fresh public URL. `start` builds the Rust executable, starts it on localhost, and opens the tunnel. Ctrl+C stops both processes. `status` and `stop` should run in a normal host terminal; an isolated sandbox cannot see the host's process table. Python 3 and the official `cloudflared` binary at `generalship/runtime/cloudflared` are required. The locally installed binary is Cloudflare release 2026.10.0, checked against its published SHA-256 digest; the binary and host code are ignored by Git. On another computer, obtain the appropriate binary from [Cloudflare's downloads](https://developers.cloudflare.com/tunnel/downloads/).
+
+A reusable external test uses Node.js 22 or later:
+
+```bash
+node generalship/internet-smoke.mjs https://YOUR-CURRENT-URL.trycloudflare.com
+```
+
+It creates two test seats and verifies HTTPS, secure WebSockets, ownership isolation, a one-use invitation, movement, reconnect, surrender, rematch, and post-match replay download. It reads the local host-code file or `G0_HOST_CODE`; it does not print credentials. Run the replay verifier below against `generalship/runtime/internet-replay.json` afterward.
+
+Cloudflare Quick Tunnels are temporary development links, with no uptime guarantee; the hostname changes on restart. [Provider documentation](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/). Render service creation was rejected because Render could not fetch the private repository. No Render service was created, and no hosting was purchased. The Render configuration remains available if permanent hosting is chosen later.
 
 ## Exact local launch
 
@@ -77,7 +101,7 @@ Support duties take priority over infantry orders: use the duty controls to rout
 
 ## Architecture and information boundary
 
-`model.rs` defines integer quantities, configuration, plans, inputs, reports, personnel, missions, and replay records. `terrain.rs` owns deterministic pathfinding and line of sight. `sim.rs` owns the sole authoritative `Game`, local decision policies, logistics, communications, combat, and filtered knowledge. `server.rs` owns Axum HTTP/WebSocket transport, seats, timing, reconnect, and room lifecycle. `web/` renders received views and submits intentions; it runs no simulation.
+`model.rs` defines integer quantities, configuration, plans, inputs, reports, personnel, missions, and replay records. `terrain.rs` owns deterministic pathfinding and line of sight. `sim.rs` owns the sole authoritative `Game`, accepted inputs, accounting, and tick sequence. `policies.rs` implements local steering, duties, and logistics; `communications.rs` delivers physical orders and reports; `observation.rs` filters knowledge; `combat.rs` resolves damage and outcomes. `server.rs` owns Axum HTTP/WebSocket transport, seats, timing, reconnect, and room lifecycle. `web/` renders received views and submits intentions; it runs no simulation.
 
 All gameplay advances on one 100 ms clock. Pathfinding uses deterministic ties. Damage is accumulated before applying casualties. Every accepted input records its execution tick; replays store scenario, seed, ordered inputs, a SHA-256 state checkpoint every ten seconds, and the final state hash. Network sequence numbers reject duplicates; rematch generations reject delayed commands from previous games. In-world order sequence numbers prevent an older delivered order replacing a newer one.
 
@@ -107,7 +131,7 @@ cargo build --locked --release --manifest-path generalship/Cargo.toml --bin gene
 
 Start `generalship/target/release/generalship-server`. Set `G0_BIND=0.0.0.0`, `G0_HOST_CODE` to a private generated secret, `G0_DATA_DIR=/tmp/generalship-replays`, and `RUST_VERSION=1.98.0`. Render supplies `PORT`. Health path: `/health`. Use one service instance: memory is authoritative and is not shared between instances. HTTPS and WSS use the same public port. An optional Dockerfile is included for other environments.
 
-The service allows four private rooms, with one-hour room retention, no public lobby, no accounts, no chat, no spectators, and no matchmaking. Download finished replays before the process restarts. Free-service filesystem contents and in-memory matches are ephemeral. Free idle spin-down can delay the first page load; service interruption produces an aborted match, never a fabricated victory. Do not deploy changes during a human match.
+The service allows four private rooms, with one-hour retention for disconnected inactive rooms, no public lobby, no accounts, no chat, no spectators, and no matchmaking. Download finished replays before the process restarts. Free-service filesystem contents and in-memory matches are ephemeral. Free idle spin-down can delay the first page load; service interruption produces an aborted match, never a fabricated victory. Do not deploy changes during a human match.
 
 Provider references: [WebSockets](https://render.com/docs/websocket), [free-service limits](https://render.com/docs/free), [Axum WebSockets](https://docs.rs/axum/latest/axum/extract/ws/index.html).
 
@@ -115,6 +139,6 @@ Provider references: [WebSockets](https://render.com/docs/websocket), [free-serv
 
 This is an inspection client with dots, terrain, and information ages. It has no art pass, 3D camera, production economy, farming, settlement autonomy, ranked play, persistent campaign, or technology tree beyond one relay upgrade. There is no full rigid-body collision: individuals can overlap outside the capacity-controlled bridge. Keep-together is local steering, not a formation physics system. Fixed construction sites replace arbitrary building placement. Destroyed-post and body cargo remains conserved in place; scavenging is not implemented. There is no loading a live match from a replay or recovering a match across server restart.
 
-Orders normally target their recipients' dispatch-time reported centroid. Use **Set next delivery rendezvous** to specify a fixed alternative for one order. Simulation subsystems share one file, separated by functions rather than independent policy crates. These checks do not establish fun or production readiness.
+Orders normally target their recipients' dispatch-time reported centroid. Use **Set next delivery rendezvous** to specify a fixed alternative for one order. These checks do not establish fun or production readiness.
 
 Two human players must still test a visible threat, a concealed flank, relay disruption, and general loss/replacement. After each match, record what each thought the other was doing, the evidence used, one misread they can explain, whether a feint worked, and whether repeated corrective clicking felt necessary. Save the replay and do not call automated success a positive fun test. Use those observations to decide the next balance and interface iteration.

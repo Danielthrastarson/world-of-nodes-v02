@@ -2,19 +2,30 @@
 
 Date: 2026-10-05. Branch: `codex/generalship-g0`. Baseline: `8072a4152f1557c4fef24f74b260c003438aec7d`.
 
+## Internet playtest
+
+Temporary URL: **https://ben-cutting-explorer-son.trycloudflare.com**. The actual Rust server runs on the user's computer through Cloudflare Quick Tunnel. It is usable over the public Internet while both processes and this computer remain running. This is not permanent cloud hosting.
+
+Render creation failed with `repository URL is invalid or unfetchable` for the private repository. The user requested an alternative. No Render service or paid hosting was created.
+
 ## Completed
 
 - Original research crate: 66 tests passed; original tracked files preserved.
-- Simulation: deterministic replay, resource/personnel conservation, hidden-state filtering, physical orders, missing couriers, relay breaks, simultaneous damage, bridge capacity, initial scouting within one minute, construction, replacement, and capture covered by automated checks.
-- Multiplayer integration: one-use invitations, isolated seats, invalid credentials, ownership, duplicate inputs, simulated 150 ms application round-trip delay, brief disconnect/reconnect, surrender, replay access, rematch, and stale process identity passed.
+- Simulation: **37 tests passed**. Deterministic replay, resource/personnel conservation, hidden-state filtering, physical orders, missing couriers, relay breaks, simultaneous damage, bridge capacity, initial scouting within one minute, construction, replacement, and capture covered by automated checks.
+- Multiplayer integration: **passed on the final modular server**. One-use invitations, isolated seats, invalid credentials, ownership, duplicate inputs, simulated 150 ms application round-trip delay, brief disconnect/reconnect, surrender, replay access, rematch, and stale process identity passed.
 - Accelerated twenty-minute simulation completes with no stock/personnel accounting error.
-- JavaScript syntax check passed.
+- JavaScript syntax and Rust Clippy checks passed without warnings.
+- A real twenty-minute two-WebSocket clock soak passed: 12,000 simulation ticks in 1,200.100 seconds, 12,001 snapshots received by each seat, no reported slow simulation ticks. This was the initial networking milestone; subsequent rule/interface/module changes passed the final simulation and integration suites. The explicit soak command is available for subsequent builds.
+- Two browser tabs verified invitation, readiness, group selection, dispatch/acknowledgement, general movement, combat, general death, stale relay information, custom command/group keys, and reconnect. The final interface also verified individual personnel selection, two HQ guards becoming builders and then staff after construction, surrender, and rematch to fresh forces. No browser warnings/errors were recorded in the final walkthrough.
+- Actual public HTTPS/WSS test passed with two independent protocol clients: host-code rejection, no repository-file route, one-use invite, seat isolation, command, reconnect, surrender, rematch, replay. Observed order acknowledgement RTT: 21 ms on this route. Largest snapshot: 27,368 bytes. These are a single test's observations, not global latency guarantees.
+- Public-test replay reproduced tick 19 and SHA-256 `c002637f042b03c45a7e9a3f400fb3e160d55a0eb80c96dc59ce93ad2011acfe` with the release replay verifier.
+- Public page opened successfully in the browser.
 
-## In progress
+## Remaining
 
-- Actual twenty-minute, two-WebSocket, wall-clock soak.
-- Final two-browser interface walkthrough.
-- Render free-service creation and public HTTPS/WSS verification.
+- Permanent cloud deployment, if required instead of the temporary computer-hosted link.
+- Real two-human playtests and balance/readability evaluation. The browser sessions above were operated by the implementation agent.
+- A real shaped-network packet-loss test has not been performed. The local test adds 75 ms outbound and 75 ms inbound application delay and separately closes/reconnects sockets; the public test uses the actual network path.
 
 ## Human playtest record
 

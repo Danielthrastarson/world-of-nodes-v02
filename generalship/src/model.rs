@@ -288,6 +288,7 @@ pub struct Contact {
     pub pos: Point,
     pub hp: i32,
     pub cargo: Option<Stock>,
+    pub missed_meals: Option<u32>,
     pub received_order: Option<u64>,
     pub observed: Tick,
     pub received: Tick,
