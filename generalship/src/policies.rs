@@ -1,5 +1,4 @@
 //! Policies operates on the single authoritative Game.
-use crate::terrain::Terrain;
 use crate::{model::*, sim::Game};
 impl Game {
     pub(crate) fn local_enemies(&self, id: usize) -> Vec<usize> {
@@ -42,69 +41,11 @@ impl Game {
             / 100
     }
     pub(crate) fn move_toward(&mut self, id: usize, target: Point) {
-        if !self.terrain.walkable(target) {
-            return;
-        }
-        let p = &self.people[id];
-        if p.pos.near(target, self.config.arrival_radius) {
-            return;
-        }
-        if p.path_goal
-            .is_none_or(|old| Terrain::cell(old) != Terrain::cell(target))
-            || p.path.is_empty()
-        {
-            let path = self.terrain.path(p.pos, target);
-            self.people[id].path = path;
-            self.people[id].path_goal = Some(target);
-        }
-        let p = &self.people[id];
-        let Some(next) = p.path.first().copied() else {
-            return;
-        };
-        let speed = self.speed(p).max(1);
-        let dx = next.x - p.pos.x;
-        let dy = next.y - p.pos.y;
-        let dist = ((dx as i64 * dx as i64 + dy as i64 * dy as i64) as u64)
-            .isqrt()
-            .max(1) as i32;
-        let candidate = if dist <= speed {
-            next
-        } else {
-            Point::new(p.pos.x + dx * speed / dist, p.pos.y + dy * speed / dist)
-        };
-        // FIFO bridge admission, shared across both travel directions.
-        if self.terrain.kind(candidate) == 4 && self.terrain.kind(p.pos) != 4 {
-            self.bridge_queue.entry(id).or_insert(self.tick);
-            let occupants = self
-                .people
-                .iter()
-                .filter(|q| q.alive() && self.terrain.kind(q.pos) == 4)
-                .count();
-            let head = self
-                .bridge_queue
-                .iter()
-                .min_by_key(|&(who, when)| (*when, *who))
-                .map(|(&who, _)| who);
-            if occupants >= self.config.bridge_capacity || head != Some(id) {
-                return;
-            }
-            self.bridge_queue.remove(&id);
-        }
-        let p = &mut self.people[id];
-        p.pos = candidate;
-        if candidate == next {
-            p.path.remove(0);
+        if self.terrain.walkable(target) {
+            self.movement_intents[id] = Some(target);
         }
     }
     pub(crate) fn work_and_move(&mut self) {
-        // Queue entries cannot retain priority after an actor dies or changes route.
-        self.bridge_queue.retain(|id, _| {
-            self.people[*id].alive()
-                && self.people[*id]
-                    .path
-                    .first()
-                    .is_some_and(|p| self.terrain.kind(*p) == 4)
-        });
         for id in 0..self.people.len() {
             if !self.people[id].alive() {
                 continue;
@@ -546,7 +487,7 @@ impl Game {
                 }
             }
         }
-        if p.pos.near(target, self.config.waypoint_radius) {
+        if self.arrived(id, target, self.config.waypoint_radius) {
             if (plan.verb == Verb::Move && p.route_index < plan.route.len())
                 || (plan.verb == Verb::Observe && plan.area_radius > 0)
             {

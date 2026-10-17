@@ -536,7 +536,9 @@ fn mutual_lethal_attacks_resolve_together_and_keep_dropped_cargo() {
 fn shared_bridge_capacity_never_admits_a_fifth_person() {
     let mut g = running();
     for id in 2..12 {
-        g.people[id].pos = Point::new(43500, 27500);
+        // A physical queue, rather than ten invalid overlapping spawn points.
+        let slot = (id - 2) as i32;
+        g.people[id].pos = Point::new(43500 - (slot / 3) * 800, 26600 + (slot % 3) * 800);
         g.people[id].plan = march(Point::new(48000, 27500));
     }
     for _ in 0..400 {
@@ -804,7 +806,7 @@ fn carriers_wait_at_headquarters_until_a_physical_route_arrives() {
     for p in &game.people[32..36] {
         assert!(
             p.pos
-                .near(game.terrain.headquarters[0], game.config.arrival_radius)
+                .near(game.terrain.headquarters[0], game.config.logistics_radius)
         );
         assert_eq!(p.cargo[0], 2);
         assert_eq!(p.sequence, 0);

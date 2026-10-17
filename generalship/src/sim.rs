@@ -25,6 +25,10 @@ pub struct Game {
     pub disconnected_at: [Option<Tick>; 2],
     pub capture: [Tick; 2],
     pub bridge_queue: BTreeMap<usize, Tick>,
+    #[serde(default)]
+    pub local_deliveries: Vec<LocalDelivery>,
+    #[serde(skip)]
+    pub(crate) movement_intents: Vec<Option<Point>>,
     #[serde(skip)]
     pub inputs: Vec<InputRecord>,
     #[serde(skip)]
@@ -146,6 +150,7 @@ impl Game {
                     last_report: 0,
                     report_returning: false,
                     material_quota: 0,
+                    order_packet: None,
                 });
             }
         }
@@ -175,9 +180,12 @@ impl Game {
             disconnected_at: [None; 2],
             capture: [0; 2],
             bridge_queue: BTreeMap::new(),
+            local_deliveries: vec![],
+            movement_intents: vec![],
             inputs: vec![],
             checkpoints: vec![],
         };
+        g.place_deployment();
         // Explicit prior briefing of our starting deployment, never enemy deployment.
         for side in 0..2 {
             let reports: Vec<_> = g
@@ -348,6 +356,7 @@ impl Game {
                         recipients: recipients.clone(),
                         plan: plan.clone(),
                         status: "Dispatched; awaiting acknowledgement".into(),
+                        confirmed: vec![],
                     });
                     self.dispatch(
                         side,
@@ -570,6 +579,7 @@ impl Game {
         for (n, &i) in ids.iter().enumerate() {
             let p = &mut self.people[i];
             p.role = Role::Builder;
+            p.order_packet = None;
             p.post = Some(post);
             p.task = None;
             p.escort = None;
@@ -588,7 +598,10 @@ impl Game {
         self.meals();
         self.deliver_signals();
         self.communications();
+        self.relay_formation_orders();
+        self.movement_intents = vec![None; self.people.len()];
         self.work_and_move();
+        self.resolve_movement();
         self.combat();
         self.sense();
         self.victory();

@@ -1,4 +1,4 @@
-use crate::model::{Config, Point};
+use crate::model::{Config, Point, segment_clear};
 use serde::{Deserialize, Serialize};
 use std::cmp::Reverse;
 use std::collections::BinaryHeap;
@@ -101,6 +101,22 @@ impl Terrain {
         true
     }
     pub fn path(&self, a: Point, b: Point) -> Vec<Point> {
+        self.path_avoiding(a, b, &[], 0)
+    }
+    pub(crate) fn path_avoiding(
+        &self,
+        a: Point,
+        b: Point,
+        occupied: &[Point],
+        clearance: i32,
+    ) -> Vec<Point> {
+        let mut crowded = vec![false; W * H];
+        for &p in occupied {
+            let (x, y) = Self::cell(p);
+            if let Some(i) = Self::index(x, y) {
+                crowded[i] = true;
+            }
+        }
         if !self.walkable(b) {
             return vec![];
         }
@@ -153,7 +169,27 @@ impl Terrain {
                     _ => 10,
                 };
                 let step = if dx != 0 && dy != 0 { 14 } else { 10 };
-                let c = cost[i] + step * terrain;
+                let from = if i == start {
+                    a
+                } else {
+                    Point::new(x * CELL + CELL / 2, y * CELL + CELL / 2)
+                };
+                let to = if j == end {
+                    b
+                } else {
+                    Point::new((x + dx) * CELL + CELL / 2, (y + dy) * CELL + CELL / 2)
+                };
+                let obstructed = occupied.iter().any(|&p| {
+                    from.distance2(p) >= i64::from(clearance).pow(2)
+                        && !segment_clear(from, to, p, clearance)
+                });
+                let c = cost[i]
+                    + step * terrain
+                    + if obstructed || crowded[j] && j != end {
+                        2000
+                    } else {
+                        0
+                    };
                 if c < cost[j] {
                     cost[j] = c;
                     parent[j] = i;

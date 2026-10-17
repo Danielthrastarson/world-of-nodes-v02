@@ -78,6 +78,12 @@ pub struct Config {
     pub cohesion_radius: i32,
     #[serde(default)]
     pub formation_spacing: i32,
+    #[serde(default)]
+    pub person_radius: i32,
+    #[serde(default)]
+    pub formation_relay_radius: i32,
+    #[serde(default)]
+    pub formation_relay_ticks: Tick,
     pub pursuit_radius: i32,
     pub hold_radius: i32,
     pub waypoint_radius: i32,
@@ -100,7 +106,7 @@ pub struct Config {
 }
 impl Default for Config {
     fn default() -> Self {
-        serde_json::from_str(include_str!("../scenarios/g0-v3.json"))
+        serde_json::from_str(include_str!("../scenarios/g0-v4.json"))
             .expect("valid committed scenario")
     }
 }
@@ -266,6 +272,9 @@ pub struct Person {
     pub last_report: Tick,
     pub report_returning: bool,
     pub material_quota: u64,
+    // Immutable received instruction; local execution may change plan afterward.
+    #[serde(default)]
+    pub order_packet: Option<Payload>,
 }
 impl Person {
     pub fn alive(&self) -> bool {
@@ -348,6 +357,8 @@ pub struct OrderRecord {
     pub recipients: Vec<usize>,
     pub plan: Plan,
     pub status: String,
+    #[serde(default)]
+    pub confirmed: Vec<usize>,
 }
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(tag = "kind", rename_all = "snake_case")]
@@ -423,4 +434,28 @@ pub enum Status {
         winner: Option<usize>,
         reason: String,
     },
+}
+
+#[derive(Clone, Debug, Serialize, Deserialize)]
+pub struct LocalDelivery {
+    pub sender: usize,
+    pub recipient: usize,
+    pub sequence: u64,
+    pub due: Tick,
+}
+
+pub(crate) fn segment_clear(a: Point, b: Point, p: Point, distance: i32) -> bool {
+    let (dx, dy) = ((b.x - a.x) as i64, (b.y - a.y) as i64);
+    let (px, py) = ((p.x - a.x) as i64, (p.y - a.y) as i64);
+    let length = dx * dx + dy * dy;
+    let along = px * dx + py * dy;
+    let limit = i64::from(distance).pow(2);
+    if length == 0 || along <= 0 {
+        a.distance2(p) >= limit
+    } else if along >= length {
+        b.distance2(p) >= limit
+    } else {
+        let cross = px * dy - py * dx;
+        i128::from(cross).pow(2) >= i128::from(limit) * i128::from(length)
+    }
 }

@@ -2,6 +2,104 @@
 use crate::{model::*, sim::Game};
 
 impl Game {
+    fn accept_formation_order(&mut self, who: usize, packet: &Payload) -> bool {
+        let Payload::Order {
+            sequence,
+            recipients,
+            plan,
+            ..
+        } = packet
+        else {
+            return false;
+        };
+        let p = &mut self.people[who];
+        if p.sequence >= *sequence
+            || !p.alive()
+            || p.task.is_some()
+            || !matches!(
+                p.role,
+                Role::Line | Role::Ranged | Role::Light | Role::Guard
+            )
+            || !recipients.contains(&who)
+        {
+            return false;
+        }
+        p.sequence = *sequence;
+        p.plan = plan.clone();
+        p.route_index = 0;
+        p.path_goal = None;
+        p.path.clear();
+        p.accepted_group = recipients.clone();
+        p.accepted_group.sort_unstable();
+        p.accepted_strength = recipients.len();
+        p.order_packet = Some(packet.clone());
+        true
+    }
+    pub(crate) fn relay_formation_orders(&mut self) {
+        let radius = self.config.formation_relay_radius;
+        if radius == 0 {
+            return;
+        }
+        let mut waiting = vec![];
+        for delivery in std::mem::take(&mut self.local_deliveries) {
+            let sender = &self.people[delivery.sender];
+            let recipient = &self.people[delivery.recipient];
+            if !sender.alive()
+                || !matches!(
+                    sender.role,
+                    Role::Line | Role::Ranged | Role::Light | Role::Guard
+                )
+                || !recipient.alive()
+                || sender.sequence != delivery.sequence
+                || recipient.sequence >= delivery.sequence
+                || !sender.pos.near(recipient.pos, radius)
+                || !self.terrain.sight(sender.pos, recipient.pos)
+            {
+                continue;
+            }
+            if delivery.due > self.tick {
+                waiting.push(delivery);
+                continue;
+            }
+            if let Some(packet) = sender.order_packet.clone() {
+                self.accept_formation_order(delivery.recipient, &packet);
+            }
+        }
+        for recipient in &self.people {
+            if !recipient.alive()
+                || !matches!(
+                    recipient.role,
+                    Role::Line | Role::Ranged | Role::Light | Role::Guard
+                )
+            {
+                continue;
+            }
+            let best = self.people.iter().filter(|sender| {
+                sender.alive() && matches!(sender.role, Role::Line | Role::Ranged | Role::Light | Role::Guard)
+                    && sender.side == recipient.side && sender.sequence > recipient.sequence
+                    && sender.pos.near(recipient.pos, radius)
+                    && self.terrain.sight(sender.pos, recipient.pos)
+                    && matches!(&sender.order_packet, Some(Payload::Order {sequence, recipients, ..})
+                        if *sequence == sender.sequence && recipients.contains(&recipient.id))
+            }).max_by_key(|sender| (sender.sequence, std::cmp::Reverse(sender.id)));
+            if let Some(sender) = best {
+                if waiting
+                    .iter()
+                    .any(|d| d.recipient == recipient.id && d.sequence >= sender.sequence)
+                {
+                    continue;
+                }
+                waiting.retain(|d| d.recipient != recipient.id);
+                waiting.push(LocalDelivery {
+                    sender: sender.id,
+                    recipient: recipient.id,
+                    sequence: sender.sequence,
+                    due: self.tick + self.config.formation_relay_ticks.max(1),
+                });
+            }
+        }
+        self.local_deliveries = waiting;
+    }
     pub(crate) fn source_pos(&self, side: usize, s: &Source) -> Result<Point, String> {
         match s {
             Source::Hq => Ok(self.terrain.headquarters[side]),
@@ -128,44 +226,23 @@ impl Game {
         payload: &Payload,
     ) -> Option<(u64, String)> {
         match payload {
-            Payload::Order {
-                id,
-                sequence,
-                recipients,
-                plan,
-            } => {
+            Payload::Order { id, recipients, .. } => {
                 let present: Vec<_> = recipients
                     .iter()
                     .copied()
                     .filter(|&i| {
                         self.people[i].alive()
                             && self.people[i].pos.near(pos, self.config.exchange_radius)
+                            && self.terrain.sight(pos, self.people[i].pos)
                     })
                     .collect();
                 if present.is_empty() {
                     return None;
                 }
-                let mut received = 0;
-                for &i in &present {
-                    let p = &mut self.people[i];
-                    if p.sequence >= *sequence
-                        || !matches!(
-                            p.role,
-                            Role::Line | Role::Ranged | Role::Light | Role::Guard
-                        )
-                        || p.task.is_some()
-                    {
-                        continue;
-                    }
-                    p.sequence = *sequence;
-                    p.plan = plan.clone();
-                    p.route_index = 0;
-                    p.path_goal = None;
-                    p.path.clear();
-                    p.accepted_group = present.clone();
-                    p.accepted_strength = present.len();
-                    received += 1;
-                }
+                let received = present
+                    .iter()
+                    .filter(|&&i| self.accept_formation_order(i, payload))
+                    .count();
                 Some((
                     *id,
                     format!(
@@ -188,6 +265,7 @@ impl Game {
                     .filter(|&i| {
                         self.people[i].alive()
                             && self.people[i].pos.near(pos, self.config.exchange_radius)
+                            && self.terrain.sight(pos, self.people[i].pos)
                     })
                     .collect();
                 if present.is_empty() {
@@ -200,6 +278,7 @@ impl Game {
                         continue;
                     }
                     p.sequence = *sequence;
+                    p.order_packet = None;
                     p.role = *role;
                     p.duty_target = *target;
                     p.post = *post;
@@ -257,14 +336,36 @@ impl Game {
                     self.missions[idx] = m;
                     continue;
                 }
-                if !self.people[id]
-                    .pos
-                    .near(m.destination, self.config.courier_arrival_radius)
-                {
+                let at = self.people[id].pos;
+                // Couriers can recognize their addressed people locally on the route.
+                // The travel destination remains the dispatch-time rendezvous.
+                let encounter = !m.returning
+                    && m.recipients.iter().any(|&recipient| {
+                        let p = &self.people[recipient];
+                        p.alive()
+                            && p.pos.near(at, self.config.exchange_radius)
+                            && self.terrain.sight(at, p.pos)
+                    });
+                if m.returning && self.deliver_to_command(m.side, at, &m.payload) {
+                    m.finished = true;
+                    self.people[id].task = None;
+                    self.people[id].path_goal = None;
                     self.missions[idx] = m;
                     continue;
                 }
-            } else if !m.source.near(m.destination, self.config.exchange_radius) {
+                if !encounter && !at.near(m.destination, self.config.courier_arrival_radius) {
+                    self.missions[idx] = m;
+                    continue;
+                }
+            } else if !m.source.near(m.destination, self.config.exchange_radius)
+                && !m.recipients.iter().any(|&id| {
+                    self.people[id].alive()
+                        && self.people[id]
+                            .pos
+                            .near(m.source, self.config.exchange_radius)
+                        && self.terrain.sight(m.source, self.people[id].pos)
+                })
+            {
                 if let Some(p) = self.people.iter_mut().find(|p| {
                     p.side == m.side
                         && p.alive()

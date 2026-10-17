@@ -18,14 +18,14 @@ The practice opponent uses only its filtered player snapshot and submits ordinar
 
 ## Temporary Internet playtest
 
-The current public link is **https://alternate-paintball-beginners-korean.trycloudflare.com**. This build runs on local port 8083 so the prior build can finish its existing matches. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
+The current public link is **https://gmt-applications-built-heritage.trycloudflare.com**. This build runs on local port 8084 so the prior build can finish its existing matches. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
 
 From the repository root:
 
 ```bash
-python3 generalship/playtest.py status 8083
-python3 generalship/playtest.py stop 8083
-python3 generalship/playtest.py start 8083
+python3 generalship/playtest.py status 8084
+python3 generalship/playtest.py stop 8084
+python3 generalship/playtest.py start 8084
 ```
 
 Omitting the optional port selects 8080; each port has its own supervisor and log files. Starting prints a fresh public URL. `start` builds the Rust executable, starts it on localhost, and opens the tunnel. Ctrl+C stops both processes. `status` and `stop` should run in a normal host terminal; an isolated sandbox cannot see the host's process table. Python 3 and the official `cloudflared` binary at `generalship/runtime/cloudflared` are required. The locally installed binary is Cloudflare release 2026.10.0, checked against its published SHA-256 digest; the binary and host code are ignored by Git. On another computer, obtain the appropriate binary from [Cloudflare's downloads](https://developers.cloudflare.com/tunnel/downloads/).
@@ -82,11 +82,21 @@ The collapsible Command desk has Orders, People, Works, and Reports. Details bes
 
 This is a client interface change on scenario g0.3. Simulation and network rules are unchanged.
 
+## Command structure and physical movement — G0.4
+
+Ordinary commands do not require construction. A general or headquarters hands an order to locally present addressed people. For infantry orders, those recipients pass the original instruction to other addressed formation members within 30 metres and line of sight, taking 300 ms per link. A broken link or a newer received sequence stops the older handoff. Detached people retain their standing orders until a message actually reaches them. The original addressed group supplies stable formation slots and declared strength; local execution and follow-ups do not mutate the instruction being passed.
+
+Couriers still travel at 8 m/s on open ground (10 m/s on roads), compared with 4.5 m/s for line infantry. Their dispatch-time destination stays fixed. They can hand over to addressed recipients they physically encounter on the route, and return acknowledgements when they locally reach headquarters, a living general, or a connected post. They do not chase hidden coordinates. Receipt counts combine returned acknowledgements with received observations of friendly order sequences; they never read unseen current state.
+
+Build and staff outposts to extend a command network into positions that generals cannot cover. Posts require their existing two staff and functioning signal chain. A forward post also needs a courier nearby to dispatch beyond local exchange distance. Upgrades improve signal range and transmission, while isolated detachments still depend on physical messengers. These costs and the existing construction and supply rules remain in force.
+
+All roles now share one physical movement resolver. Starting deployment reserves room for each body; policies submit destinations, then deterministic routing and swept separation checks resolve movement. Nearby visible people influence route costs. Short clear sections of the navigation corridor are smoothed so cell centres do not become compulsory pile-up points. Rotating tie priority, local passing, terrain clearance, and shared FIFO bridge admission preserve physical capacity. Occupied rendezvous are approached with space around them. The six-metre minimum centre spacing is recorded by `person_radius: 300` (centimetres) in the versioned scenario, alongside local relay range and time. The legacy scenarios remain as records; replays require the matching engine revision.
+
 ## Five-minute introduction
 
 **0:00–1:00 — Read your information.** The green people belong to you; orange people are observed enemies. Diamonds are generals, squares are outposts, dashed squares are potential building sites. Faded dots are timestamped reports. A hollow contact means a later observation found its old location empty; it does not mean death. Scouts begin on the approaches and return reports. Terrain is common knowledge, enemy deployment is not.
 
-**1:00–2:00 — Give one deliberate order.** Recall Group 3 (light infantry), press 1, and click near the bridge. Watch the order acknowledgement. “Accepted by server” is only a network receipt. An in-world acknowledgement arrives after delivery. Headquarters and generals exchange orders within 30 metres. Distant units need a courier to visit their last reported position; repeated clicking sends more work.
+**1:00–2:00 — Give one deliberate order.** Recall Group 3 (light infantry), press 1, and click near the bridge. Watch the order acknowledgement. “Accepted by server” is only a network receipt. An in-world acknowledgement arrives after delivery. Headquarters and generals exchange orders within 30 metres; addressed troops pass the instruction through nearby formation members. Distant or detached units need a courier to visit their last reported position or encounter them locally; repeated clicking sends more work.
 
 **2:00–3:00 — Put a general where a decision matters.** Select a general, then right-click a destination or use MOVE. Both generals and headquarters provide live local information. An escort follows only while it can locally see its general. To move couriers forward, select them, open **Details**, choose **Courier at rendezvous**, press **Assign on map**, and click the rendezvous. Keep some couriers at headquarters for remote dispatches.
 
@@ -124,7 +134,7 @@ Scouts, couriers, and carriers accept MOVE as a duty-rendezvous assignment. Othe
 
 ## Rules and scenario
 
-`generalship/scenarios/g0-v3.json` contains the versioned balance settings and local steering values; `Config` loads that committed file. Every replay includes the full configuration. Map topology, fixed roster layout, and bounded input limits are code-versioned. G0 currently uses one fixed mirrored map; the recorded seed is reserved for future deterministic scenario variants and does not randomize this map.
+`generalship/scenarios/g0-v4.json` contains the versioned balance settings and local steering values; `Config` loads that committed file. Every replay includes the full configuration. Map topology, fixed roster layout, and bounded input limits are code-versioned. G0 currently uses one fixed mirrored map; the recorded seed is reserved for future deterministic scenario variants and does not randomize this map.
 
 - 900 × 600 metre map, 10 metre navigation grid, continuous integer centimetre positions. Roads speed movement; woods slow movement and block long sightlines. Both bridge directions share a four-person admission queue. The ford is slower and further away.
 - Each side has 48 identifiable people: two generals, three ten-person infantry formations, four carriers, four couriers, two scouts, two post staff, two escorts, and two HQ guards. Scouts start forward; infantry and support begin around HQ; post staff start at their post.
@@ -138,7 +148,7 @@ Scouts, couriers, and carriers accept MOVE as a duty-rendezvous assignment. Othe
 
 ## Architecture and information boundary
 
-`model.rs` defines integer quantities, configuration, plans, inputs, reports, personnel, missions, and replay records. `terrain.rs` owns deterministic pathfinding and line of sight. `sim.rs` owns the sole authoritative `Game`, accepted inputs, accounting, and tick sequence. `policies.rs` implements local steering, duties, and logistics; `communications.rs` delivers physical orders and reports; `observation.rs` filters knowledge; `combat.rs` resolves damage and outcomes. `bot.rs` contains the deterministic practice policy, isolated behind the serialized player-view boundary. `server.rs` owns Axum HTTP/WebSocket transport, seats, timing, reconnect, and room lifecycle. `web/` renders received views and submits intentions; it runs no simulation.
+`model.rs` defines integer quantities, configuration, plans, inputs, reports, personnel, missions, and replay records. `terrain.rs` owns deterministic pathfinding and line of sight. `sim.rs` owns the sole authoritative `Game`, accepted inputs, accounting, and tick sequence. `policies.rs` requests movement and implements duties and logistics; `movement.rs` resolves physical space and travel for every living person; `communications.rs` delivers physical orders and reports; `observation.rs` filters knowledge; `combat.rs` resolves damage and outcomes. `bot.rs` contains the deterministic practice policy, isolated behind the serialized player-view boundary. `server.rs` owns Axum HTTP/WebSocket transport, seats, timing, reconnect, and room lifecycle. `web/` renders received views and submits intentions; it runs no simulation.
 
 All gameplay advances on one 100 ms clock. Pathfinding uses deterministic ties. Damage is accumulated before applying casualties. Every accepted input records its execution tick; replays store scenario, seed, ordered inputs, a SHA-256 state checkpoint every ten seconds, and the final state hash. Network sequence numbers reject duplicates; rematch generations reject delayed commands from previous games. In-world order sequence numbers prevent an older delivered order replacing a newer one.
 
@@ -175,7 +185,7 @@ Provider references: [WebSockets](https://render.com/docs/websocket), [free-serv
 
 ## Deliberate simplifications and remaining acceptance
 
-This is an inspection client with dots, terrain, and information ages. It has no art pass, 3D camera, production economy, farming, settlement autonomy, ranked play, persistent campaign, or technology tree beyond one relay upgrade. There is no full rigid-body collision: individuals can overlap outside the capacity-controlled bridge. Keep-together is local steering, not a formation physics system. Fixed construction sites replace arbitrary building placement. Destroyed-post and body cargo remains conserved in place; scavenging is not implemented. There is no loading a live match from a replay or recovering a match across server restart.
+This is an inspection client with dots, terrain, and information ages. It has no art pass, 3D camera, production economy, farming, settlement autonomy, ranked play, persistent campaign, or technology tree beyond one relay upgrade. Living people have a shared three-metre-radius movement footprint. This is deterministic crowd navigation and space reservation, without rigid-body forces, pushing, or mass-based formation physics. Congestion can delay travel; this is not a globally optimal traffic solver. Casualties leave cargo in place but do not block movement. Dated observation markers and larger general symbols are still abstractions and can visually overlap even though living people occupy separate physical positions. Fixed construction sites replace arbitrary building placement. Destroyed-post and body cargo remains conserved in place; scavenging is not implemented. There is no loading a live match from a replay or recovering a match across server restart.
 
 Orders normally target their recipients' dispatch-time reported centroid. Use **Set next delivery rendezvous** to specify a fixed alternative for one order. These checks do not establish fun or production readiness.
 

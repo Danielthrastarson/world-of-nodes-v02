@@ -6,5 +6,6 @@ pub mod terrain;
 
 mod combat;
 mod communications;
+mod movement;
 mod observation;
 mod policies;

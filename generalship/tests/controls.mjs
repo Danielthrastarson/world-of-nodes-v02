@@ -43,3 +43,13 @@ test('delivery feedback distinguishes confirmed partial delivery from pending or
  assert.equal(orderSummary({...order,status:'Dispatched; awaiting acknowledgement'}).kind,'pending');
  assert.equal(orderSummary({...order,status:'Returned undelivered: recipient not found at rendezvous'}).kind,'failed');
 });
+test('received observation evidence improves an older partial acknowledgement',()=>{
+ const order={recipients:[2,3,4],status:'Acknowledged locally by 1 people; execution is not confirmed complete',confirmed:[2,3,4]};
+ assert.equal(orderSummary(order).kind,'delivered');assert.match(orderSummary(order).text,/3\/3/);
+ assert.equal(orderSummary({...order,confirmed:[2,3]}).kind,'partial');
+});
+test('a nearby member can accept for the addressed formation even when its centre is distant',()=>{
+ const v=view();v.people[0].pos=point(30000);v.people[1].pos=point(32000);
+ v.people.push({id:3,side:0,role:'line',hp:100,pos:point(38000),observed:0});
+ assert.deepEqual(chooseSource(v,[2,3]),{kind:'general',id:0});
+});

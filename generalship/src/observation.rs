@@ -182,6 +182,19 @@ impl Game {
         }
         for p in &mut report.people {
             p.received = self.tick;
+            // Receipt evidence reaches the player only through this actual report.
+            if p.side == side {
+                for order in &mut k.orders {
+                    if p.received_order == Some(order.id / 2)
+                        && p.observed >= order.issued
+                        && order.recipients.contains(&p.id)
+                        && !order.confirmed.contains(&p.id)
+                    {
+                        order.confirmed.push(p.id);
+                        order.confirmed.sort_unstable();
+                    }
+                }
+            }
             if k.people
                 .get(&p.id)
                 .is_none_or(|old| old.observed <= p.observed)

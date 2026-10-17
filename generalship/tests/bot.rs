@@ -46,6 +46,18 @@ fn practice_bot_moves_fights_and_replays_with_conserved_resources() {
             game.input(1, input).unwrap();
         }
         game.step();
+        let spacing2 = i64::from(game.config.person_radius * 2).pow(2);
+        for a in game.people.iter().filter(|p| p.alive()) {
+            for b in game.people.iter().filter(|p| p.alive() && p.id > a.id) {
+                assert!(
+                    a.pos.distance2(b.pos) >= spacing2,
+                    "tick {}: physical overlap between {} and {}",
+                    game.tick,
+                    a.id,
+                    b.id
+                );
+            }
+        }
         crossed |= game
             .people
             .iter()
