@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: world-of-nodes-g0
+    runtime: rust
+    plan: free
+    region: frankfurt
+    branch: codex/generalship-g0
+    buildCommand: cargo build --locked --release --manifest-path generalship/Cargo.toml --bin generalship-server
+    startCommand: generalship/target/release/generalship-server
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: G0_BIND
+        value: 0.0.0.0
+      - key: G0_HOST_CODE
+        generateValue: true
+      - key: G0_DATA_DIR
+        value: /tmp/generalship-replays
+      - key: RUST_VERSION
+        value: 1.98.0

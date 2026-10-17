@@ -1,0 +1,7 @@
+.git
+target
+generalship/target
+generalship/runtime
+research
+.env
+.env.*
