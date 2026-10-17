@@ -6,7 +6,7 @@ The research kernel, provisioning policies, experiments, saved results, and base
 
 ## Start a private game
 
-Open the deployed service, enter the private host code, and choose **Create private match**. Send the generated one-use invitation to one opponent. Both players press **Ready**. The Reported personnel list allows individual selection and shows dated health/food information. Each browser holds its own reconnect credential in session storage; keep that tab available. The host code is for creating rooms, not joining an opponent's seat.
+Open the deployed service, enter the private host code, and choose **Create private match**. Send the generated one-use invitation to one opponent. Both players press **Ready**. Command desk → People → Reported personnel allows individual selection and shows dated health/food information. Each browser holds its own reconnect credential in session storage; keep that tab available. The host code is for creating rooms, not joining an opponent's seat.
 
 The current temporary Internet URL and verification record are in `generalship/PLAYTEST_RESULTS.md`. The game server runs on this computer, reached through a Cloudflare Quick Tunnel; it is not an always-on cloud deployment. The host code must remain outside Git. A service process restart aborts its rooms without awarding a winner. A disconnected browser has sixty seconds to return while standing orders continue. Both players can request a rematch after the result.
 
@@ -18,14 +18,14 @@ The practice opponent uses only its filtered player snapshot and submits ordinar
 
 ## Temporary Internet playtest
 
-The current public link is **https://struggle-apnic-wishes-scanners.trycloudflare.com**. This build runs on local port 8081 so the prior build can finish its existing matches. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
+The current public link is **https://cdna-astronomy-conservation-transportation.trycloudflare.com**. This build runs on local port 8082 so the prior build can finish its existing matches. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
 
 From the repository root:
 
 ```bash
-python3 generalship/playtest.py status 8081
-python3 generalship/playtest.py stop 8081
-python3 generalship/playtest.py start 8081
+python3 generalship/playtest.py status 8082
+python3 generalship/playtest.py stop 8082
+python3 generalship/playtest.py start 8082
 ```
 
 Omitting the optional port selects 8080; each port has its own supervisor and log files. Starting prints a fresh public URL. `start` builds the Rust executable, starts it on localhost, and opens the tunnel. Ctrl+C stops both processes. `status` and `stop` should run in a normal host terminal; an isolated sandbox cannot see the host's process table. Python 3 and the official `cloudflared` binary at `generalship/runtime/cloudflared` are required. The locally installed binary is Cloudflare release 2026.10.0, checked against its published SHA-256 digest; the binary and host code are ignored by Git. On another computer, obtain the appropriate binary from [Cloudflare's downloads](https://developers.cloudflare.com/tunnel/downloads/).
@@ -72,13 +72,23 @@ The renderer now buffers 200 ms of authorized snapshots, advances a monotonic di
 
 Scenario g0.3 samples connected outposts every tick (10 Hz), retaining the one-second base delay per link and 300 ms upgraded delay. The new `relay_report_ticks` configuration records that cadence; older configurations default to their former ten-tick interval. Terrain is drawn once into a cached layer instead of redrawing 5,400 cells every animation frame. See the dated playtest record for tests and deployment checks.
 
+## Compact command interface
+
+The battlefield now spans the window. General and formation shortcuts sit along its upper edge. Selecting living people opens a compact five-command bar in the lower left, with a short selection summary and delivery status. Buttons show the custom key, verb, and an icon; hover text retains execution modifiers and follow-up details. Unsupported commands for generals or support roles are dimmed with an explanation.
+
+Choosing a command tucks the bar away and shows a targeting prompt with Cancel. Clicking a destination restores the bar. This also keeps the ford accessible in smaller windows. Right-click MOVE and the existing 1–5, Alt+1–5, and Ctrl+Alt+1–5 bindings remain available.
+
+The collapsible Command desk has Orders, People, Works, and Reports. Details beside a selection opens People; the delivery arrow opens Orders; the contact indicator opens Reports; clicking a post or hill site opens Works. Starting a map assignment closes the desk. Esc cancels targeting first, then closes the desk, then clears selection; none of those actions cancels a dispatched order. Match surrender is under Reports, while start and rematch remain in the top bar.
+
+This is a client interface change on scenario g0.3. Simulation and network rules are unchanged.
+
 ## Five-minute introduction
 
 **0:00–1:00 — Read your information.** The green people belong to you; orange people are observed enemies. Diamonds are generals, squares are outposts, dashed squares are potential building sites. Faded dots are timestamped reports. A hollow contact means a later observation found its old location empty; it does not mean death. Scouts begin on the approaches and return reports. Terrain is common knowledge, enemy deployment is not.
 
 **1:00–2:00 — Give one deliberate order.** Recall Group 3 (light infantry), press 1, and click near the bridge. Watch the order acknowledgement. “Accepted by server” is only a network receipt. An in-world acknowledgement arrives after delivery. Headquarters and generals exchange orders within 30 metres. Distant units need a courier to visit their last reported position; repeated clicking sends more work.
 
-**2:00–3:00 — Put a general where a decision matters.** Use a general-selection button, then **Move selected general**, then click a destination. Both generals and headquarters provide live local information. An escort follows only while it can locally see its general. To move couriers forward, select them, choose **Courier at rendezvous**, press **Assign**, and click the rendezvous. Keep some couriers at headquarters for remote dispatches.
+**2:00–3:00 — Put a general where a decision matters.** Select a general, then right-click a destination or use MOVE. Both generals and headquarters provide live local information. An escort follows only while it can locally see its general. To move couriers forward, select them, open **Details**, choose **Courier at rendezvous**, press **Assign on map**, and click the rendezvous. Keep some couriers at headquarters for remote dispatches.
 
 **3:00–4:00 — Make your opponent interpret a choice.** Show a line formation near the bridge while sending light infantry toward the longer ford. A MOVE can finish in HOLD or OBSERVE; ENGAGE fights only locally observed opponents. WITHDRAW uses an explicit fallback. An OBSERVE formation reports through nearby command equipment or an available courier; it has no telepathy.
 
@@ -99,13 +109,13 @@ Scenario g0.3 samples connected outposts every tick (10 Hz), retaining the one-s
 | Default slots | 1 MOVE, 2 HOLD, 3 ENGAGE, 4 OBSERVE, 5 WITHDRAW |
 | Route | MOVE, then Shift-click up to eight waypoints, then click destination |
 | Target area | HOLD/OBSERVE/ENGAGE, then Ctrl-drag from centre to radius |
-| Cancel targeting | Escape |
-| Customize slots / command keys | Controls / help → Customize commands / keys |
+| Cancel targeting / close desk / clear selection | Escape (in that order), or the visible Cancel / close buttons |
+| Customize slots / command keys | Help or Command desk → Orders → Customize commands / keys |
 | Set a fallback | Preset editor → Set fallback on map |
 | Move a general | Select general → Move selected general → click |
-| Reassign support duty | Select people → standing duty → Assign → click |
+| Reassign support duty | Select people → Details → standing duty → Assign on map → click |
 | Select infrastructure | Click its square; selected workers remain selected |
-| End / repeat | Surrender; both players Request rematch, or Play again vs bot in solo practice |
+| End / repeat | Command desk → Reports → Surrender; then Request rematch, or Play again vs bot |
 | Download full replay | Available after the result only |
 
 Changing a preset affects future dispatches only. Choose either a follow-up or a fallback, not both. MOVE can end in HOLD or OBSERVE. An optional fallback triggers below 60% of strength at acceptance using locally confirmed casualties. Fallback defaults to headquarters until a custom point is selected. Command and troop-group single-character keys are editable; group recall adds Alt, and assignment adds Ctrl+Alt.
