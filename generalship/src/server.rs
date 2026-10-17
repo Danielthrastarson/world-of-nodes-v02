@@ -90,10 +90,13 @@ pub fn router(state: App) -> Router {
         .route("/app.js", get(js))
         .route("/controls.mjs", get(controls))
         .route("/motion.mjs", get(motion))
+        .route("/field.mjs", get(field))
         .route("/style.css", get(css))
         .route(
             "/health",
-            get(|| async { Json(json!({"ok":true,"version":"g0.3"})) }),
+            get(|| async {
+                Json(json!({"ok":true,"version":"g0.4","presentation":"field-map-1"}))
+            }),
         )
         .route("/api/create", post(create))
         .route("/api/join", post(join))
@@ -141,6 +144,15 @@ async fn motion() -> impl IntoResponse {
             (header::CACHE_CONTROL, "no-cache"),
         ],
         include_str!("../web/motion.mjs"),
+    )
+}
+async fn field() -> impl IntoResponse {
+    (
+        [
+            (header::CONTENT_TYPE, "text/javascript"),
+            (header::CACHE_CONTROL, "no-cache"),
+        ],
+        include_str!("../web/field.mjs"),
     )
 }
 #[derive(Deserialize)]

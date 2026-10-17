@@ -18,14 +18,14 @@ The practice opponent uses only its filtered player snapshot and submits ordinar
 
 ## Temporary Internet playtest
 
-The current public link is **https://gmt-applications-built-heritage.trycloudflare.com**. This build runs on local port 8084 so the prior build can finish its existing matches. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
+The current public link is **https://officially-yearly-assist-definitely.trycloudflare.com**. This build runs on local port 8085 so the prior build can finish its existing matches. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
 
 From the repository root:
 
 ```bash
-python3 generalship/playtest.py status 8084
-python3 generalship/playtest.py stop 8084
-python3 generalship/playtest.py start 8084
+python3 generalship/playtest.py status 8085
+python3 generalship/playtest.py stop 8085
+python3 generalship/playtest.py start 8085
 ```
 
 Omitting the optional port selects 8080; each port has its own supervisor and log files. Starting prints a fresh public URL. `start` builds the Rust executable, starts it on localhost, and opens the tunnel. Ctrl+C stops both processes. `status` and `stop` should run in a normal host terminal; an isolated sandbox cannot see the host's process table. Python 3 and the official `cloudflared` binary at `generalship/runtime/cloudflared` are required. The locally installed binary is Cloudflare release 2026.10.0, checked against its published SHA-256 digest; the binary and host code are ignored by Git. On another computer, obtain the appropriate binary from [Cloudflare's downloads](https://developers.cloudflare.com/tunnel/downloads/).
@@ -81,6 +81,16 @@ Choosing a command tucks the bar away and shows a targeting prompt with Cancel. 
 The collapsible Command desk has Orders, People, Works, and Reports. Details beside a selection opens People; the delivery arrow opens Orders; the contact indicator opens Reports; clicking a post or hill site opens Works. Starting a map assignment closes the desk. Esc cancels targeting first, then closes the desk, then clears selection; none of those actions cancels a dispatched order. Match surrender is under Reports, and rematch remains in the top bar. Before the round starts, a central start screen explains that the field is paused and presents Start practice or I’m ready. Battlefield controls stay unavailable until the server confirms the round is running. A lost connection displays a reconnect screen while standing orders continue; unsent orders are not presented as successful dispatches.
 
 This is a client interface change on scenario g0.3. Simulation and network rules are unchanged.
+
+## Visual presentation — field-map-1
+
+The renderer remains an inspection surface for the simulation. `web/field.mjs` draws only the authorized player view and positions supplied by `motion.mjs`; it cannot access the server world, issue orders, or change physical positions. The existing 200 ms observation buffer remains intact. This pass changes no scenario values, simulation rules, or navigation cells.
+
+The field uses a quiet survey-map palette, exact cell boundaries, static woods/water hatching, bridge decking, a 100-metre grid, coordinates, and a zoom-aware distance scale. Terrain is common prior knowledge. These patterns are map symbols, not simulated individual trees, currents, or elevation contours. Static terrain is cached at 1800×1200 and reused between frames.
+
+People remain dots. Generals are diamonds, ranged infantry has a dark inner ring, and supply personnel have small duty marks. Filled dots denote recent observations; hollow, faded dots denote reports at least three seconds old or a contact known to have left the observed area. Hover shows identity, recorded health, and report age. No observed person acquires invented motion. Selection brackets surround the reported bounds of the selected people. Plan lines are explicitly labelled PLAN; they do not claim confirmed pathfinding or completion. Broad circular vision washes were removed because they falsely implied unobstructed sight through woods.
+
+Screen-size labels remain readable at every zoom. A narrow force rail, compact resource strip, selection-only command dock, on-demand map key, and collapsible Command desk keep the battlefield central. Tablet/phone layouts reflow the force buttons across the top. The map key and command dock tuck away during targeting; keyboard and pointer commands retain their previous meanings.
 
 ## Command structure and physical movement — G0.4
 
@@ -162,7 +172,8 @@ A client's camera and selection have no authority. A seat is derived from its ra
 cargo test --locked
 cargo test --locked --release --manifest-path generalship/Cargo.toml
 node --check generalship/web/app.js
-node --test generalship/tests/controls.mjs generalship/tests/motion.mjs
+node --check generalship/web/field.mjs
+node --test generalship/tests/controls.mjs generalship/tests/motion.mjs generalship/tests/field.mjs
 cargo test --locked --release --manifest-path generalship/Cargo.toml --test network twenty_minute_two_socket_clock_soak -- --ignored --nocapture
 cargo run --locked --release --manifest-path generalship/Cargo.toml -- --replay /absolute/path/to/downloaded-replay.json
 ```
@@ -185,7 +196,7 @@ Provider references: [WebSockets](https://render.com/docs/websocket), [free-serv
 
 ## Deliberate simplifications and remaining acceptance
 
-This is an inspection client with dots, terrain, and information ages. It has no art pass, 3D camera, production economy, farming, settlement autonomy, ranked play, persistent campaign, or technology tree beyond one relay upgrade. Living people have a shared three-metre-radius movement footprint. This is deterministic crowd navigation and space reservation, without rigid-body forces, pushing, or mass-based formation physics. Congestion can delay travel; this is not a globally optimal traffic solver. Casualties leave cargo in place but do not block movement. Dated observation markers and larger general symbols are still abstractions and can visually overlap even though living people occupy separate physical positions. Fixed construction sites replace arbitrary building placement. Destroyed-post and body cargo remains conserved in place; scavenging is not implemented. There is no loading a live match from a replay or recovering a match across server restart.
+This is a primitive tactical-map client with dots, terrain hatching, and information ages. It has no illustrated units, 3D camera, production economy, farming, settlement autonomy, ranked play, persistent campaign, or technology tree beyond one relay upgrade. Living people have a shared three-metre-radius movement footprint. This is deterministic crowd navigation and space reservation, without rigid-body forces, pushing, or mass-based formation physics. Congestion can delay travel; this is not a globally optimal traffic solver. Casualties leave cargo in place but do not block movement. Dated observation markers and larger general symbols are still abstractions and can visually overlap even though living people occupy separate physical positions. Fixed construction sites replace arbitrary building placement. Destroyed-post and body cargo remains conserved in place; scavenging is not implemented. There is no loading a live match from a replay or recovering a match across server restart.
 
 Orders normally target their recipients' dispatch-time reported centroid. Use **Set next delivery rendezvous** to specify a fixed alternative for one order. These checks do not establish fun or production readiness.
 

@@ -1,5 +1,7 @@
 # G0 verification record
 
+Current visual build (2026-10-17): **https://officially-yearly-assist-definitely.trycloudflare.com** — temporary service on port 8085. Earlier entries below are historical verification records.
+
 Date: 2026-10-05. Branch: `codex/generalship-g0`. Baseline: `8072a4152f1557c4fef24f74b260c003438aec7d`.
 
 ## Internet playtest
@@ -144,3 +146,19 @@ The pre-final public HTTPS/WSS check passed seat isolation, one-use invitations,
 Final service: **https://gmt-applications-built-heritage.trycloudflare.com**, local port 8084. Older services remain available for their existing matches. A fresh bot room is prepared at the Start practice screen. This remains a temporary link dependent on this computer and its supervisor.
 
 The final HTTPS/WSS check also passed seat isolation, one-use invitations, reconnect, surrender, and rematch: 80 ms sampled order RTT, maximum sampled snapshot 27,506 bytes. Its downloaded replay verified at tick 23 (`40459487d7dec406a9b80a777c9d673bae0b60b3e5f02892490cdc41c6b63b7c`). The final browser confirmed a connected bot lobby at 00:00 with the Start practice action and no console errors.
+
+
+## Simulation-first visual upgrade — 2026-10-17
+
+The user asked for a substantial visual upgrade while retaining dots and a renderer that exposes the simulation. The presentation now separates map rendering into `web/field.mjs`. Terrain boundaries and hatching derive from actual public navigation cells; no decorative world objects or artificial unit offsets were introduced. Fixed screen-size labels, formation selection brackets, a metric map scale, clearer old-report symbols, and a compact force rail replace the flat terrain and zoom-scaled labels. Circular vision washes were removed rather than suggesting visibility through terrain. All gameplay rules and g0.4 configuration remain unchanged.
+
+Verification:
+
+- 52 Rust checks passed (41 simulation, six physical command, two bot, three network). The first network attempt was blocked from binding sockets inside the sandbox; all three passed on the host. Clippy with warnings denied, formatting, and JavaScript syntax passed. The twenty-minute wall-clock soak was not repeated.
+- 18 host Node checks passed, including four new checks for exact terrain boundaries, separate terrain landmarks, aged/absent observation styling, and invertible fitted/zoomed map coordinates. Existing input and buffered-motion regressions passed.
+- Browser practice verified start gating, selection, right-click movement, a ten-person MOVE received by all ten, combat casualties, readable labels while zooming, Fit map, map-key toggle, command targeting/cancellation, and the personnel drawer. Browser error logs were empty.
+- Layouts checked at 1280×720, 800×600, and 390×844. No horizontal page overflow. At 800×600 the command dock is 492×128, hidden during targeting; it adapts to 366 pixels wide at 390×844. The viewport override was reset.
+- Final public HTTPS/WSS smoke passed ownership/seat isolation, one-use invitation, movement, reconnect, surrender, rematch, and replay download. Sampled acknowledgement RTT: 81 ms; largest sampled snapshot: 27,506 bytes. Replay verified at tick 23, hash `40459487d7dec406a9b80a777c9d673bae0b60b3e5f02892490cdc41c6b63b7c`.
+- The final public server reports `g0.4` / `field-map-1`. All six served HTML/CSS/JavaScript assets were compared with the local source and matched exactly.
+
+Final URL: **https://officially-yearly-assist-definitely.trycloudflare.com**. Port 8084 and the user's existing match were left running. This remains temporary computer-hosted playtesting. These are agent-operated technical checks; the visual direction and gameplay feel still need the user's judgement.
