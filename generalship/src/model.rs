@@ -41,6 +41,8 @@ pub struct Config {
     pub relay_range: i32,
     pub upgraded_range: i32,
     pub relay_ticks: Tick,
+    #[serde(default = "legacy_relay_report_ticks")]
+    pub relay_report_ticks: Tick,
     pub upgraded_ticks: Tick,
     pub local_exchange_ticks: Tick,
     pub courier_wait: Tick,
@@ -98,9 +100,12 @@ pub struct Config {
 }
 impl Default for Config {
     fn default() -> Self {
-        serde_json::from_str(include_str!("../scenarios/g0-v2.json"))
+        serde_json::from_str(include_str!("../scenarios/g0-v3.json"))
             .expect("valid committed scenario")
     }
+}
+fn legacy_relay_report_ticks() -> Tick {
+    10
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]

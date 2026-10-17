@@ -175,6 +175,27 @@ fn upgraded_relay_changes_transmission_not_sight() {
     g.posts[0].upgraded = false;
     assert!(!g.relay(0).contains_key(&0));
 }
+
+#[test]
+fn connected_outpost_streams_each_tick_with_unchanged_link_delay() {
+    let mut g = running();
+    let delay = g.relay(0)[&0].0;
+    assert_eq!(delay, 10);
+    advance(&mut g, 20);
+    for _ in 0..15 {
+        g.step();
+        let report = g.knowledge[0]
+            .reports
+            .iter()
+            .find(|r| r.source == "outpost:0")
+            .unwrap();
+        assert_eq!(report.received, g.tick);
+        assert_eq!(report.observed + delay, g.tick);
+    }
+    // Loading an older scenario retains its former sampling cadence.
+    let legacy: Config = serde_json::from_str(include_str!("../scenarios/g0-v2.json")).unwrap();
+    assert_eq!(legacy.relay_report_ticks, 10);
+}
 #[test]
 fn reassignment_waits_for_receipt_and_preserves_people() {
     let mut g = running();

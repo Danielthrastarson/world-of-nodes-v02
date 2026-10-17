@@ -18,17 +18,17 @@ The practice opponent uses only its filtered player snapshot and submits ordinar
 
 ## Temporary Internet playtest
 
-The current public link is **https://evaluated-weighted-lottery-specialists.trycloudflare.com**. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
+The current public link is **https://struggle-apnic-wishes-scanners.trycloudflare.com**. This build runs on local port 8081 so the prior build can finish its existing matches. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
 
 From the repository root:
 
 ```bash
-python3 generalship/playtest.py status
-python3 generalship/playtest.py stop
-python3 generalship/playtest.py start
+python3 generalship/playtest.py status 8081
+python3 generalship/playtest.py stop 8081
+python3 generalship/playtest.py start 8081
 ```
 
-Starting prints a fresh public URL. `start` builds the Rust executable, starts it on localhost, and opens the tunnel. Ctrl+C stops both processes. `status` and `stop` should run in a normal host terminal; an isolated sandbox cannot see the host's process table. Python 3 and the official `cloudflared` binary at `generalship/runtime/cloudflared` are required. The locally installed binary is Cloudflare release 2026.10.0, checked against its published SHA-256 digest; the binary and host code are ignored by Git. On another computer, obtain the appropriate binary from [Cloudflare's downloads](https://developers.cloudflare.com/tunnel/downloads/).
+Omitting the optional port selects 8080; each port has its own supervisor and log files. Starting prints a fresh public URL. `start` builds the Rust executable, starts it on localhost, and opens the tunnel. Ctrl+C stops both processes. `status` and `stop` should run in a normal host terminal; an isolated sandbox cannot see the host's process table. Python 3 and the official `cloudflared` binary at `generalship/runtime/cloudflared` are required. The locally installed binary is Cloudflare release 2026.10.0, checked against its published SHA-256 digest; the binary and host code are ignored by Git. On another computer, obtain the appropriate binary from [Cloudflare's downloads](https://developers.cloudflare.com/tunnel/downloads/).
 
 A reusable external test uses Node.js 22 or later:
 
@@ -63,6 +63,14 @@ Formation buttons now stay above the battlefield, and double-clicking a troop se
 Delivery status stays beneath the field and distinguishes pending, failed, and partial delivery. Estimates use the last reported recipient position and fastest configured ground speed; they are a lower bound, not a promise. Group labels and counts use reported people, health bars use observed health, and death notices appear only when received. Scroll over the field to zoom; Fit map resets the view.
 
 Scenario g0.2 adds seven-metre formation arrival spacing and makes carriers wait at HQ until assigned. This preserves people, resource totals, courier delay, fog of war, combat values, the bridge capacity, and the twenty-minute match clock. The earlier g0-v1.json remains as a balance record; replays require their matching engine revision.
+
+## Smooth movement — G0.3
+
+The previous renderer restarted a 100 ms animation on every snapshot arrival. Uneven delivery could interrupt the animation or make it pause; labels used unsmoothed positions. Outposts also sampled only once per second and bypassed interpolation entirely.
+
+The renderer now buffers 200 ms of authorized snapshots, advances a monotonic display clock, and moves dots, labels, range rings, and selection targets together. Duplicate snapshots do not restart motion. It never extrapolates beyond received positions; old courier reports, lost contacts, casualties, and changed signal delays remain explicit report updates. A connection stall exhausts the buffer and holds the last authorized position. This small display delay trades immediacy for steadier movement; orders still send immediately.
+
+Scenario g0.3 samples connected outposts every tick (10 Hz), retaining the one-second base delay per link and 300 ms upgraded delay. The new `relay_report_ticks` configuration records that cadence; older configurations default to their former ten-tick interval. Terrain is drawn once into a cached layer instead of redrawing 5,400 cells every animation frame. See the dated playtest record for tests and deployment checks.
 
 ## Five-minute introduction
 
@@ -106,7 +114,7 @@ Scouts, couriers, and carriers accept MOVE as a duty-rendezvous assignment. Othe
 
 ## Rules and scenario
 
-`generalship/scenarios/g0-v2.json` contains the versioned balance settings and local steering values; `Config` loads that committed file. Every replay includes the full configuration. Map topology, fixed roster layout, and bounded input limits are code-versioned. G0 currently uses one fixed mirrored map; the recorded seed is reserved for future deterministic scenario variants and does not randomize this map.
+`generalship/scenarios/g0-v3.json` contains the versioned balance settings and local steering values; `Config` loads that committed file. Every replay includes the full configuration. Map topology, fixed roster layout, and bounded input limits are code-versioned. G0 currently uses one fixed mirrored map; the recorded seed is reserved for future deterministic scenario variants and does not randomize this map.
 
 - 900 × 600 metre map, 10 metre navigation grid, continuous integer centimetre positions. Roads speed movement; woods slow movement and block long sightlines. Both bridge directions share a four-person admission queue. The ford is slower and further away.
 - Each side has 48 identifiable people: two generals, three ten-person infantry formations, four carriers, four couriers, two scouts, two post staff, two escorts, and two HQ guards. Scouts start forward; infantry and support begin around HQ; post staff start at their post.
@@ -134,7 +142,7 @@ A client's camera and selection have no authority. A seat is derived from its ra
 cargo test --locked
 cargo test --locked --release --manifest-path generalship/Cargo.toml
 node --check generalship/web/app.js
-node generalship/tests/controls.mjs
+node --test generalship/tests/controls.mjs generalship/tests/motion.mjs
 cargo test --locked --release --manifest-path generalship/Cargo.toml --test network twenty_minute_two_socket_clock_soak -- --ignored --nocapture
 cargo run --locked --release --manifest-path generalship/Cargo.toml -- --replay /absolute/path/to/downloaded-replay.json
 ```

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run/stop the temporary Internet playtest; serves only the game on localhost:8080."""
+"""Run/stop a temporary Internet playtest, optionally on a separate local port."""
 import json
 import os
 from pathlib import Path
@@ -14,7 +14,6 @@ import urllib.request
 
 ROOT = Path(__file__).resolve().parent.parent
 RUNTIME = ROOT / 'generalship/runtime'
-STATE = RUNTIME / 'playtest.json'
 CODE = RUNTIME / 'host-code.txt'
 
 
@@ -27,8 +26,13 @@ def process_stamp(pid):
 
 
 def main():
+    port = int(sys.argv[2]) if len(sys.argv) > 2 else 8080
+    if not 1024 <= port <= 65535:
+        raise SystemExit('Choose a local port between 1024 and 65535.')
+    suffix = '' if port == 8080 else f'-{port}'
+    state_path = RUNTIME / f'playtest{suffix}.json'
     RUNTIME.mkdir(exist_ok=True)
-    state = json.loads(STATE.read_text()) if STATE.exists() else {}
+    state = json.loads(state_path.read_text()) if state_path.exists() else {}
     alive = bool(state.get('pid') and process_stamp(state['pid']) == state.get('stamp'))
     action = sys.argv[1] if len(sys.argv) > 1 else 'start'
     if action == 'status':
@@ -42,15 +46,15 @@ def main():
             print('No running playtest supervisor.')
         return
     if action != 'start':
-        raise SystemExit('Usage: python3 generalship/playtest.py [start|status|stop]')
+        raise SystemExit('Usage: python3 generalship/playtest.py [start|status|stop] [local-port]')
     if alive:
         raise SystemExit('Playtest is already running. Use status or stop.')
     tunnel_binary = RUNTIME / 'cloudflared'
     if not tunnel_binary.is_file():
         raise SystemExit('Place the official cloudflared Linux binary at generalship/runtime/cloudflared. See GENERALSHIP_F0.md.')
     with socket.socket() as check:
-        if check.connect_ex(('127.0.0.1', 8080)) == 0:
-            raise SystemExit('Port 8080 is in use. Stop the existing local server first.')
+        if check.connect_ex(('127.0.0.1', port)) == 0:
+            raise SystemExit(f'Port {port} is in use. Stop the existing local server first.')
     subprocess.run(['cargo', 'build', '--locked', '--release', '--manifest-path', 'generalship/Cargo.toml', '--bin', 'generalship-server'], cwd=ROOT, check=True)
     if not CODE.exists():
         with os.fdopen(os.open(CODE, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600), 'w') as f:
@@ -58,38 +62,38 @@ def main():
     code = CODE.read_text().strip()
     if len(code) < 12:
         raise SystemExit('The private host code is too short.')
-    env = dict(os.environ, G0_HOST_CODE=code, G0_BIND='127.0.0.1', PORT='8080', G0_DATA_DIR=str(RUNTIME))
+    env = dict(os.environ, G0_HOST_CODE=code, G0_BIND='127.0.0.1', PORT=str(port), G0_DATA_DIR=str(RUNTIME))
     children = []
     log_files = []
-    state = {'pid': os.getpid(), 'stamp': process_stamp(os.getpid()), 'url': None, 'started': time.time()}
-    STATE.write_text(json.dumps(state))
-    os.chmod(STATE, 0o600)
+    state = {'pid': os.getpid(), 'stamp': process_stamp(os.getpid()), 'url': None, 'started': time.time(), 'port': port}
+    state_path.write_text(json.dumps(state))
+    os.chmod(state_path, 0o600)
 
     def stop(_signum, _frame):
         raise KeyboardInterrupt
 
     signal.signal(signal.SIGTERM, stop)
     try:
-        server_log = (RUNTIME / 'server.log').open('w')
+        server_log = (RUNTIME / f'server{suffix}.log').open('w')
         log_files.append(server_log)
         server = subprocess.Popen([str(ROOT / 'generalship/target/release/generalship-server')], cwd=ROOT, env=env, stdout=server_log, stderr=subprocess.STDOUT)
         children.append(server)
         for attempt in range(50):
             if server.poll() is not None:
-                raise RuntimeError('Game server stopped. Check generalship/runtime/server.log.')
+                raise RuntimeError(f'Game server stopped. Check generalship/runtime/server{suffix}.log.')
             try:
-                with urllib.request.urlopen('http://127.0.0.1:8080/health', timeout=1) as response:
+                with urllib.request.urlopen(f'http://127.0.0.1:{port}/health', timeout=1) as response:
                     if json.load(response).get('ok'):
                         break
             except OSError:
                 time.sleep(0.1)
         else:
             raise RuntimeError('Local server did not become ready.')
-        log_path = RUNTIME / 'cloudflare.log'
+        log_path = RUNTIME / f'cloudflare{suffix}.log'
         tunnel_log = log_path.open('w')
         log_files.append(tunnel_log)
         tunnel_env = {k: v for k, v in os.environ.items() if not k.startswith('TUNNEL_')}
-        tunnel = subprocess.Popen([str(tunnel_binary), 'tunnel', '--config', '/dev/null', '--no-autoupdate', '--metrics', '127.0.0.1:0', '--url', 'http://127.0.0.1:8080'], cwd=ROOT, env=tunnel_env, stdout=tunnel_log, stderr=subprocess.STDOUT)
+        tunnel = subprocess.Popen([str(tunnel_binary), 'tunnel', '--config', '/dev/null', '--no-autoupdate', '--metrics', '127.0.0.1:0', '--url', f'http://127.0.0.1:{port}'], cwd=ROOT, env=tunnel_env, stdout=tunnel_log, stderr=subprocess.STDOUT)
         children.append(tunnel)
         print(f'Host code file: {CODE}', flush=True)
         print('Temporary playtest: keep this process and computer running. Ctrl+C stops both services.', flush=True)
@@ -98,7 +102,7 @@ def main():
                 match = re.search(r'https://[a-z0-9-]+\.trycloudflare\.com', log_path.read_text())
                 if match:
                     state['url'] = match.group(0)
-                    STATE.write_text(json.dumps(state))
+                    state_path.write_text(json.dumps(state))
                     print(f"PLAYTEST URL: {state['url']}", flush=True)
             time.sleep(1)
         raise RuntimeError('A playtest process stopped; check the runtime logs.')

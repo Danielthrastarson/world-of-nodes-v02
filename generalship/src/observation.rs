@@ -235,7 +235,10 @@ impl Game {
             for r in direct {
                 self.receive(side, r);
             }
-            if self.tick.is_multiple_of(10) {
+            if self
+                .tick
+                .is_multiple_of(self.config.relay_report_ticks.max(1))
+            {
                 for (id, (delay, path)) in self.relay(side) {
                     let post = &self.posts[id];
                     let report = self.observe(
