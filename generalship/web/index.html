@@ -5,12 +5,17 @@
   <section class="field" aria-label="Battlefield">
     <div id="topbar">
       <span id="clock">00:00</span><span id="resources"></span>
-      <button id="ready">Ready</button><button id="addBot" hidden>Play vs bot</button>
+      <button id="addBot" hidden>Play vs bot</button>
       <button id="rematch" hidden>Request rematch</button><button id="replay" hidden>Download replay</button>
       <button id="deskButton" aria-expanded="false" aria-controls="commandDesk">Command desk <span aria-hidden="true">☷</span></button>
     </div>
     <div id="inviteArea" hidden><label>Opponent invitation<input id="invite" readonly></label><button id="copyInvite">Copy</button></div>
     <div id="canvasWrap">
+      <div id="startGate"><section class="startCard" aria-labelledby="startTitle">
+        <div role="status"><span id="startMode">COMMAND ROOM</span><h2 id="startTitle">Connecting to the field…</h2><p id="startMessage">Waiting for your command connection.</p></div>
+        <button id="ready" disabled>Connecting…</button>
+        <ol id="startGuide" hidden><li>Select <b>Line</b> or a general.</li><li><b>Right-click</b> a destination to move.</li><li>Use <b>1–5</b> for your other commands.</li></ol>
+      </section></div>
       <canvas id="field" width="1200" height="800" tabindex="0" aria-label="Battlefield. Select people, then choose a command or right-click to move."></canvas>
       <div id="forceBar"><div id="generals" aria-label="Generals"></div><div id="groups" aria-label="Formation groups"></div></div>
       <div id="mapTools"><button id="fitMap" title="Restore the full battlefield">Fit map</button><button id="intelButton" title="Open received reports"><span id="intelStatus">No contacts</span></button></div>

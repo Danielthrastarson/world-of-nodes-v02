@@ -100,3 +100,23 @@ Agent-operated browser verification covered 1280×720 and 800×600 layouts, form
 The 12 existing client control/motion checks passed, as did host JavaScript syntax and DOM-ID/reference checks. No simulation code changed in this interface pass; the previously recorded Rust suite was not repeated. The final build is available at **https://cdna-astronomy-conservation-transportation.trycloudflare.com**, running separately on local port 8082. A fresh bot lobby is ready at 00:00, with the Command desk closed. This remains a temporary development link.
 
 The public HTTPS/WSS multiplayer check passed on this interface revision before the final general-label-only correction: seat isolation, one-use invites, reconnect, surrender, and rematch; 82 ms measured order RTT and 27,430-byte maximum sampled snapshot. The downloaded replay verified at tick 22 (`108072e62a75f5190f0bd302a2394a12efea5c88870751b085776b9910ab072b`). The final hostname was checked by loading the browser client and creating a fresh bot room.
+
+
+## Start-state usability correction — 2026-10-17
+
+The user reported that nothing worked. On the exact public tab, the round was still in its lobby at 00:00. The battlefield and command controls looked usable, but the small Start practice button had not been pressed; attempted orders were rejected. Starting that existing round immediately enabled direct general movement and a ten-person formation MOVE. This was a misleading interface state.
+
+The start action now occupies a clear pre-round card with a short control guide. Map selection and command shortcuts remain unavailable until an authenticated snapshot confirms a running round. Multiplayer explicitly says it is waiting for both commanders. Disconnects display a reconnect state, and failed transport sends no longer count as successful dispatches. The card disappears during play, preserving the compact battlefield layout. This change does not alter the simulation or scenario.
+
+Agent-operated browser checks on the corrected public build verified:
+
+- Bot lobby at 00:00, inactive command desk, and no selection/targeting from Alt+1 / 1 before starting.
+- Start practice, advancing clock, general MOVE through key 1, and right-click infantry movement with delivery to all ten recipients.
+- HOLD, OBSERVE, ENGAGE, and WITHDRAW dispatch through the compact buttons/keys. Local exchanges correctly showed partial delivery (7/10, 6/10, and 4/10); the ranged withdrawal reached 10/10 via courier. These acknowledgements do not imply that every recipient completed its maneuver.
+- Fresh enemy reports, combat casualties, an observed general-loss notice, reload/reconnect to the running practice round, surrender, and rematch back to a fresh start screen.
+- Two separate human seats: the first ready player remained at 00:00, joining the second seat did not start the round, and the second readiness action unlocked both clients and advanced their clock.
+- No browser console errors during the practice walkthrough.
+
+The 12 existing client control/motion tests, host Node syntax validation, and whitespace checks passed. No Rust simulation code changed; the full simulation suite and twenty-minute soak were not repeated. The public HTTPS/WSS smoke passed seat isolation, one-use invitations, reconnect, surrender, and rematch, with 21 ms sampled order RTT and a 27,452-byte maximum sampled snapshot. Its replay verified at tick 18 with hash `c388729998c9a37ea5d53caa66f949be06b6defc9824bfae6aface6c87e58464`.
+
+Current corrected build: **https://alternate-paintball-beginners-korean.trycloudflare.com**, on local port 8083. Earlier services were preserved to avoid aborting their matches. The current browser is left with a fresh bot room and a prominent Start practice action. The link still depends on this computer and the temporary tunnel remaining running. This was functional testing by the agent, not human gameplay acceptance.

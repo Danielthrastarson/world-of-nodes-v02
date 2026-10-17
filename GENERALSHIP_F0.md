@@ -6,7 +6,7 @@ The research kernel, provisioning policies, experiments, saved results, and base
 
 ## Start a private game
 
-Open the deployed service, enter the private host code, and choose **Create private match**. Send the generated one-use invitation to one opponent. Both players press **Ready**. Command desk → People → Reported personnel allows individual selection and shows dated health/food information. Each browser holds its own reconnect credential in session storage; keep that tab available. The host code is for creating rooms, not joining an opponent's seat.
+Open the deployed service, enter the private host code, and choose **Create private match**. Send the generated one-use invitation to one opponent. Both players press **I’m ready** on the start screen. The battlefield controls unlock when the server starts the round. Command desk → People → Reported personnel allows individual selection and shows dated health/food information. Each browser holds its own reconnect credential in session storage; keep that tab available. The host code is for creating rooms, not joining an opponent's seat.
 
 The current temporary Internet URL and verification record are in `generalship/PLAYTEST_RESULTS.md`. The game server runs on this computer, reached through a Cloudflare Quick Tunnel; it is not an always-on cloud deployment. The host code must remain outside Git. A service process restart aborts its rooms without awarding a winner. A disconnected browser has sixty seconds to return while standing orders continue. Both players can request a rematch after the result.
 
@@ -18,14 +18,14 @@ The practice opponent uses only its filtered player snapshot and submits ordinar
 
 ## Temporary Internet playtest
 
-The current public link is **https://cdna-astronomy-conservation-transportation.trycloudflare.com**. This build runs on local port 8082 so the prior build can finish its existing matches. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
+The current public link is **https://alternate-paintball-beginners-korean.trycloudflare.com**. This build runs on local port 8083 so the prior build can finish its existing matches. It works while this computer, the Rust server, and the tunnel remain running. It exposes the game HTTP/WebSocket routes, not the repository filesystem. Match creation still needs the private host code in `generalship/runtime/host-code.txt`. Share the generated opponent invitation instead of that code.
 
 From the repository root:
 
 ```bash
-python3 generalship/playtest.py status 8082
-python3 generalship/playtest.py stop 8082
-python3 generalship/playtest.py start 8082
+python3 generalship/playtest.py status 8083
+python3 generalship/playtest.py stop 8083
+python3 generalship/playtest.py start 8083
 ```
 
 Omitting the optional port selects 8080; each port has its own supervisor and log files. Starting prints a fresh public URL. `start` builds the Rust executable, starts it on localhost, and opens the tunnel. Ctrl+C stops both processes. `status` and `stop` should run in a normal host terminal; an isolated sandbox cannot see the host's process table. Python 3 and the official `cloudflared` binary at `generalship/runtime/cloudflared` are required. The locally installed binary is Cloudflare release 2026.10.0, checked against its published SHA-256 digest; the binary and host code are ignored by Git. On another computer, obtain the appropriate binary from [Cloudflare's downloads](https://developers.cloudflare.com/tunnel/downloads/).
@@ -78,7 +78,7 @@ The battlefield now spans the window. General and formation shortcuts sit along 
 
 Choosing a command tucks the bar away and shows a targeting prompt with Cancel. Clicking a destination restores the bar. This also keeps the ford accessible in smaller windows. Right-click MOVE and the existing 1–5, Alt+1–5, and Ctrl+Alt+1–5 bindings remain available.
 
-The collapsible Command desk has Orders, People, Works, and Reports. Details beside a selection opens People; the delivery arrow opens Orders; the contact indicator opens Reports; clicking a post or hill site opens Works. Starting a map assignment closes the desk. Esc cancels targeting first, then closes the desk, then clears selection; none of those actions cancels a dispatched order. Match surrender is under Reports, while start and rematch remain in the top bar.
+The collapsible Command desk has Orders, People, Works, and Reports. Details beside a selection opens People; the delivery arrow opens Orders; the contact indicator opens Reports; clicking a post or hill site opens Works. Starting a map assignment closes the desk. Esc cancels targeting first, then closes the desk, then clears selection; none of those actions cancels a dispatched order. Match surrender is under Reports, and rematch remains in the top bar. Before the round starts, a central start screen explains that the field is paused and presents Start practice or I’m ready. Battlefield controls stay unavailable until the server confirms the round is running. A lost connection displays a reconnect screen while standing orders continue; unsent orders are not presented as successful dispatches.
 
 This is a client interface change on scenario g0.3. Simulation and network rules are unchanged.
 
