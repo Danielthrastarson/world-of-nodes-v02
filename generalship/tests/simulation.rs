@@ -212,6 +212,20 @@ fn carrier_meals_and_transfers_conserve_every_unit() {
         p.pos = Point::new(30000, 28000);
         p.plan = Plan::hold(p.pos);
     }
+    // G0.2 requires an explicit supply route instead of automatically sending
+    // all carriers to the front before the commander has assigned them.
+    g.input(
+        0,
+        Input::Assign {
+            source: Source::Hq,
+            people: (32..36).collect(),
+            role: Role::Carrier,
+            target: Point::new(30000, 28000),
+            post: None,
+            escort: None,
+        },
+    )
+    .unwrap();
     advance(&mut g, 3600);
     g.audit().unwrap();
     assert_eq!(g.consumed[0][0], 144);
@@ -707,4 +721,89 @@ fn relay_upgrade_is_installed_by_physical_deliveries_and_local_labor() {
     assert!(g.posts[0].upgraded);
     assert_eq!(g.consumed[0][1], 10);
     g.audit().unwrap();
+}
+
+#[test]
+fn reported_support_and_generals_do_not_accept_silent_noop_orders() {
+    let mut game = running();
+    for id in [0, 32, 36, 40, 42] {
+        let result = game.input(
+            0,
+            Input::Order {
+                rendezvous: None,
+                source: Source::Hq,
+                recipients: vec![id],
+                plan: march(Point::new(20000, 28000)),
+            },
+        );
+        assert!(result.is_err());
+    }
+    assert!(game.knowledge[0].orders.is_empty());
+}
+
+#[test]
+fn a_delivered_formation_arrives_as_distinct_people_and_replays() {
+    let mut game = running();
+    let target = Point::new(20000, 28000);
+    game.input(
+        0,
+        Input::Order {
+            rendezvous: None,
+            source: Source::Hq,
+            recipients: (2..12).collect(),
+            plan: march(target),
+        },
+    )
+    .unwrap();
+    advance(&mut game, 700);
+    let arrived: Vec<_> = game.people[2..12].iter().map(|p| p.pos).collect();
+    assert!(
+        arrived.iter().all(|p| p.near(target, 2500)),
+        "formation failed to arrive: {arrived:?}"
+    );
+    for i in 0..arrived.len() {
+        for j in i + 1..arrived.len() {
+            assert!(
+                !arrived[i].near(arrived[j], 300),
+                "two people collapsed into one point"
+            );
+        }
+    }
+    game.audit().unwrap();
+    assert_eq!(
+        Game::replay_run(&game.replay()).unwrap().hash(),
+        game.hash()
+    );
+}
+
+#[test]
+fn carriers_wait_at_headquarters_until_a_physical_route_arrives() {
+    let mut game = running();
+    advance(&mut game, 600);
+    for p in &game.people[32..36] {
+        assert!(
+            p.pos
+                .near(game.terrain.headquarters[0], game.config.arrival_radius)
+        );
+        assert_eq!(p.cargo[0], 2);
+        assert_eq!(p.sequence, 0);
+    }
+    assert_eq!(game.stock[0][0], 600);
+    game.input(
+        0,
+        Input::Assign {
+            source: Source::Hq,
+            people: vec![32],
+            role: Role::Carrier,
+            target: Point::new(20000, 28000),
+            post: None,
+            escort: None,
+        },
+    )
+    .unwrap();
+    assert_eq!(game.people[32].duty_target, game.terrain.headquarters[0]);
+    advance(&mut game, 200);
+    assert_eq!(game.people[32].duty_target, Point::new(20000, 28000));
+    assert!(game.people[32].pos.x > 12000);
+    game.audit().unwrap();
 }

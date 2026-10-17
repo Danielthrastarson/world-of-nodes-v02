@@ -125,6 +125,8 @@ impl Game {
                     next_attack: 0,
                     duty_target: if role == Role::Courier {
                         pos
+                    } else if role == Role::Carrier {
+                        hq
                     } else {
                         Point::new(if side == 0 { 31000 } else { 59000 }, 28000)
                     },
@@ -318,6 +320,18 @@ impl Game {
                     }
                     if !self.owned(side, recipients) {
                         return Err("Invalid recipients".into());
+                    }
+                    // Validate reported duties only: a remote, unseen reassignment must
+                    // not become a new source of information in a rejection message.
+                    if recipients.iter().any(|id| {
+                        self.knowledge[side].people.get(id).is_some_and(|p| {
+                            !matches!(
+                                p.role,
+                                Role::Line | Role::Ranged | Role::Light | Role::Guard
+                            )
+                        })
+                    }) {
+                        return Err("Use direct movement for generals or a duty assignment for support personnel".into());
                     }
                     let pos = self.source_pos(side, source)?;
                     let dest = match rendezvous {

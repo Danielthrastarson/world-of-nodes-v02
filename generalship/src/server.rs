@@ -88,10 +88,11 @@ pub fn router(state: App) -> Router {
     Router::new()
         .route("/", get(index))
         .route("/app.js", get(js))
+        .route("/controls.mjs", get(controls))
         .route("/style.css", get(css))
         .route(
             "/health",
-            get(|| async { Json(json!({"ok":true,"version":"g0.1"})) }),
+            get(|| async { Json(json!({"ok":true,"version":"g0.2"})) }),
         )
         .route("/api/create", post(create))
         .route("/api/join", post(join))
@@ -121,6 +122,15 @@ async fn css() -> impl IntoResponse {
     (
         [(header::CONTENT_TYPE, "text/css")],
         include_str!("../web/style.css"),
+    )
+}
+async fn controls() -> impl IntoResponse {
+    (
+        [
+            (header::CONTENT_TYPE, "text/javascript"),
+            (header::CACHE_CONTROL, "no-cache"),
+        ],
+        include_str!("../web/controls.mjs"),
     )
 }
 #[derive(Deserialize)]

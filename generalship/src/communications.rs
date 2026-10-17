@@ -149,7 +149,10 @@ impl Game {
                 for &i in &present {
                     let p = &mut self.people[i];
                     if p.sequence >= *sequence
-                        || matches!(p.role, Role::General | Role::Trainee)
+                        || !matches!(
+                            p.role,
+                            Role::Line | Role::Ranged | Role::Light | Role::Guard
+                        )
                         || p.task.is_some()
                     {
                         continue;

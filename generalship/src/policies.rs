@@ -170,6 +170,12 @@ impl Game {
     pub(crate) fn carrier(&mut self, id: usize) {
         let p = self.people[id].clone();
         let hq = self.terrain.headquarters[p.side];
+        // An unassigned carrier waits at headquarters. Do not spend cargo or
+        // march into a battle until a physical route assignment arrives.
+        if p.duty_target == hq {
+            self.move_toward(id, hq);
+            return;
+        }
         if p.pos.near(hq, self.config.logistics_radius) {
             let room = self.config.carrier_capacity - p.cargo.iter().sum::<u64>();
             let amount = room.min(self.stock[p.side][0]);
@@ -457,6 +463,30 @@ impl Game {
         } else {
             plan.target
         };
+        // Keep individual identities readable at the destination. Slot assignments use
+        // the received group, not unseen current membership. Marching still uses the
+        // shared navigation grid and its capacity-controlled crossings.
+        if self.config.formation_spacing > 0
+            && p.accepted_group.len() > 1
+            && matches!(
+                p.role,
+                Role::Line | Role::Ranged | Role::Light | Role::Guard
+            )
+            && (plan.verb != Verb::Move || p.route_index >= plan.route.len())
+            && p.pos.near(plan.target, self.config.exchange_radius * 2)
+            && let Some(slot) = p.accepted_group.iter().position(|&member| member == id)
+        {
+            let columns = p.accepted_group.len().min(5) as i32;
+            let rows = p.accepted_group.len().div_ceil(5) as i32;
+            let spacing = self.config.formation_spacing;
+            let candidate = Point::new(
+                target.x + (slot as i32 % columns) * spacing - (columns - 1) * spacing / 2,
+                target.y + (slot as i32 / columns) * spacing - (rows - 1) * spacing / 2,
+            );
+            if self.terrain.walkable(candidate) {
+                target = candidate;
+            }
+        }
         if plan.verb == Verb::Hold
             && p.pos
                 .near(target, plan.area_radius.max(self.config.hold_radius))

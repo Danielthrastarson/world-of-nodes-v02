@@ -74,6 +74,8 @@ pub struct Config {
     pub avoidance_radius: i32,
     pub avoidance_step: i32,
     pub cohesion_radius: i32,
+    #[serde(default)]
+    pub formation_spacing: i32,
     pub pursuit_radius: i32,
     pub hold_radius: i32,
     pub waypoint_radius: i32,
@@ -96,7 +98,7 @@ pub struct Config {
 }
 impl Default for Config {
     fn default() -> Self {
-        serde_json::from_str(include_str!("../scenarios/g0-v1.json"))
+        serde_json::from_str(include_str!("../scenarios/g0-v2.json"))
             .expect("valid committed scenario")
     }
 }

@@ -52,3 +52,29 @@ Added private dev practice with a bot in the East seat and one-player rematches.
 - The opponent is a simple practice policy; human difficulty and fun remain untested.
 
 Final bot build URL: **https://campaign-part-mlb-kelkoo.trycloudflare.com** (replaces the earlier temporary links). The browser verified creating a bot room, starting its clock, surrender, one-player rematch, and reconnect to the solo lobby. A fresh bot room is left at 00:00 for the user. The HTTPS/WSS two-human smoke test also passed on this extension before the final CSS-only change: 80 ms measured order RTT, 27,469-byte maximum sampled snapshot.
+
+## Gameplay feel pass — 2026-10-17
+
+This was an agent-operated browser playtest, not a human fun/balance study. Separate bot rounds were used for before/after inspection.
+
+Observed before changes:
+
+- Selecting a general and using the ordinary MOVE slot created a courier order eventually acknowledged by zero recipients. The general stayed still.
+- The user-visible order history contained repeated undelivered single-person moves. Formation selection was difficult, selection labels overlapped, and delivery status was below the visible sidebar.
+- Groups converged on a single destination point. Enemy formations could appear to be only a few dots.
+- A forward general's death only removed its selection button. Dead selected people remained in the selection summary.
+- All four unassigned supply carriers marched toward the front and were reported killed during the revised opening.
+
+Changes:
+
+- Regular MOVE and right-click now route generals to direct movement, infantry to bounded orders, and scouts/couriers/carriers to physical duty assignments. Unsupported orders are explained, and the server rejects silent no-op orders using reported duties.
+- Named formation buttons sit above the field; double-click selects a formation. Auto source chooses from authorized observations.
+- Pending/partial/failed delivery is visible beneath the battlefield; remembered positions are explicitly dated. Map labels have a readable minimum size, troop arrival positions are spaced, overlapping enemy contacts show counts, observed damage has a brief flash, and observed health has bars.
+- Zoom and Fit map work without changing observation permissions. A received general loss creates a clear notice. Confirmed casualties are removed from the active selection.
+- Carriers now remain at HQ until an actual route assignment arrives. Food and combat numbers, signal rules, and clock rate were not changed. Scenario version is g0.2.
+
+Verification: 40 simulation tests, two bot tests, three network tests, and six client-control tests (51 total). Added regression coverage for separate formation arrival positions with replay equality, support/general no-op rejection, carrier standby and physical assignment, direct general movement routing, support duties, water rejection, ownership, auto source, and partial delivery feedback. The twenty-minute wall-clock soak was not repeated.
+
+The browser walkthrough verified starting a bot round, regular MOVE on a general, right-click line/ranged moves, double-click selection of ten light infantry, zoom, Fit map, and delivered-to-10/10 feedback. A coordinated line/ranged opening showed separate formation positions and fresh enemy reports.
+
+Published G0.2 at **https://evaluated-weighted-lottery-specialists.trycloudflare.com**, replacing previous temporary links. The public HTTPS/WSS check passed seat isolation, one-use invitations, reconnect, surrender, and rematch: 102 ms measured order RTT and 27,435-byte maximum sampled snapshot. Its downloaded replay verified at tick 22 with hash `a79dd6499e6f4e0c8e63f022e5457d979a15fde68293b49732eacc4cc43fda81`. The public browser loaded the revised controls and created a fresh bot lobby at 00:00, with 600 HQ food and all four supply carriers. Start practice is ready for the user. The computer and supervisor must remain running for this temporary link to work.
